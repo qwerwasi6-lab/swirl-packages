@@ -1,0 +1,10 @@
+{
+  "name": "welcome",
+  "category": "custom",
+  "summary": "a welcome message for spm",
+  "usage": "welcome",
+  "engine": "pipeline",
+  "steps": [
+    { "print": "Welcome to spm! search with spm search, install with spm install and spm help for more help.", "color": "accent" }
+  ]
+}

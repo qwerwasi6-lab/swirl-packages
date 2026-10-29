@@ -1,0 +1,10 @@
+{
+  "name": "welcome",
+  "version": "1.0.0",
+  "description": "Adds a 'welcome' terminal command with a short intro to spm.",
+  "author": "qwerwasi6-lab",
+  "deps": [],
+  "files": [
+    { "src": "welcome.json", "dest": "/system/gterm/welcome.json" }
+  ]
+}

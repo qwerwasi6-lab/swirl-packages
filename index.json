@@ -1,0 +1,18 @@
+{
+  "spm": 1,
+  "packages": {
+    "welcome": {
+      "version": "1.0.0",
+      "description": "Adds a 'welcome' terminal command with a short intro to spm.",
+      "author": "qwerwasi6-lab",
+      "files": [
+        {
+          "path": "packages/welcome/welcome.json",
+          "dest": "/system/gterm/welcome.json",
+          "sha256": "b9b649e8e76e36d26780775a4a8021943a36e9a71b50dc2473d0c4431bd6e3b9",
+          "size": 285
+        }
+      ]
+    }
+  }
+}
