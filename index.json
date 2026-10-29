@@ -91,6 +91,33 @@
         }
       ]
     },
+    "swirl-upgrade": {
+      "version": "1.0.0",
+      "description": "Bridge for older installs: adds a 'swirl-upgrade' terminal command that updates the whole system to the latest release.",
+      "author": "Swirl",
+      "title": "SwirlOS Upgrade (r61/r62)",
+      "category": "Tools",
+      "tagline": "Update an old install in place - keeps your files.",
+      "long": "Installs from before r63 cannot update themselves: they have no system manifest and an older spm. This package brings the new spm and one terminal command, swirl-upgrade. It compares every system file by content, downloads only what changed, verifies each file and swaps them in safely (a failed update rolls back). Your files in /home/user and your settings are never touched.\\nYou must boot a SwirlOS r63+ ISO first - the kernel lives on the boot medium and cannot be updated from inside the OS.",
+      "publisher": "Swirl",
+      "license": "MIT",
+      "color": "7C5CE0",
+      "glyph": "tool",
+      "files": [
+        {
+          "path": "packages/swirl-upgrade/swirl-upgrade.elf",
+          "dest": "/system/apps/swirl-upgrade.elf",
+          "sha256": "e1a92d580a0091d7858213f4fb432f2a2a8b287b3f2b644dae0d81a758831933",
+          "size": 525360
+        },
+        {
+          "path": "packages/swirl-upgrade/swirl-upgrade.json",
+          "dest": "/system/gterm/swirl-upgrade.json",
+          "sha256": "8faec17e9e72c95ca9e26591dcae1815dbe1149942142ba08a1d7c01e2007a62",
+          "size": 838
+        }
+      ]
+    },
     "welcome": {
       "version": "1.0.0",
       "description": "Adds a 'welcome' terminal command with a short intro to spm.",
@@ -114,10 +141,10 @@
   },
   "os": {
     "name": "SwirlOS",
-    "version": "r63",
-    "abi": 1,
+    "version": "r64",
+    "abi": 2,
     "date": "2026-10-29",
-    "notes": "First release with system updates: spm os, Settings > Software Update, repair of system files, crash-safe installs.",
+    "notes": "r64: bridge for r61/r62 installs (swirl-upgrade package), kernel ABI 2, spm os works without a manifest.",
     "files": [
       {
         "path": "os/7e/7eac1ad1bc5ac61f8d3f727a87cd61a126401d4f",
@@ -228,10 +255,10 @@
         "size": 9744
       },
       {
-        "path": "os/9e/9e430980e9d7da518ff1d9a9850195a13c07e853",
+        "path": "os/e1/e1a92d580a0091d7858213f4fb432f2a2a8b287b",
         "dest": "/system/apps/spm.elf",
-        "sha256": "9e430980e9d7da518ff1d9a9850195a13c07e853e0aeb77175b464e101f14ef5",
-        "size": 525328
+        "sha256": "e1a92d580a0091d7858213f4fb432f2a2a8b287b3f2b644dae0d81a758831933",
+        "size": 525360
       },
       {
         "path": "os/1a/1a698557a287cea192d40b223a7b0d85b1a94c9a",
@@ -538,10 +565,10 @@
         "size": 2155
       },
       {
-        "path": "os/55/553cb79eff18134d0dfd8f5ad01bfb26464734eb",
+        "path": "os/73/73b0f28b11bc2a5225dfa4f1930a6aec62fde266",
         "dest": "/system/doc/spm.txt",
-        "sha256": "553cb79eff18134d0dfd8f5ad01bfb26464734ebe4cb5d75a0b503a079634bd8",
-        "size": 3206
+        "sha256": "73b0f28b11bc2a5225dfa4f1930a6aec62fde266b14830bc056fbea9b0f403fc",
+        "size": 4017
       },
       {
         "path": "os/9f/9f8ef16e269da68f842e4d94c38695ce04e749e7",

@@ -1,0 +1,17 @@
+{
+  "name": "swirl-upgrade",
+  "category": "system",
+  "summary": "update an older SwirlOS install (r61/r62) to the latest release",
+  "usage": "swirl-upgrade [check|repair]",
+  "args": [ { "name": "action" } ],
+  "engine": "pipeline",
+  "steps": [
+    // This runs the new spm that came with the package (the old /system/apps/spm.elf
+    // on your install does not know about system updates yet). It compares every
+    // system file by content, downloads what differs, verifies SHA-256 and swaps
+    // them in under a journal - a failure at any point rolls back.
+    { "if": "$# >= 1",
+      "then": [ { "spawn": "/system/apps/swirl-upgrade.elf", "arg": "os $1", "follow": "/home/user/.spm/out.log" } ],
+      "else": [ { "spawn": "/system/apps/swirl-upgrade.elf", "arg": "os upgrade", "follow": "/home/user/.spm/out.log" } ] }
+  ]
+}

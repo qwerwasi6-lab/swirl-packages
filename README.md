@@ -52,3 +52,17 @@ never stored or downloaded again) and writes `os/release.json`; `mkindex.py` emb
 under `"os"` in `index.json`. The version comes from the SwirlOS `VERSION` file
 (bump it for each release). A release that needs a newer kernel sets `abi` higher than
 the booted kernel's `SWIRL_ABI` and is refused on older kernels.
+
+## Updating installs from before r63 (r61, r62)
+
+Those installs have no system manifest and an old spm, so `spm upgrade`/`spm os`
+cannot update them. Boot a SwirlOS r63+ ISO (the kernel is on the boot medium) with your
+disk attached, then:
+
+    spm install swirl-upgrade -f
+    swirl-upgrade            # or: swirl-upgrade check
+    # restart
+
+`packages/swirl-upgrade/swirl-upgrade.elf` is the spm built from the same release as
+`os/` (copy `build/spm.elf` there when you publish a release). It compares every system
+file by content, downloads only what differs and installs under the usual journal.

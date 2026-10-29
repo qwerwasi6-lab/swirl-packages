@@ -1,0 +1,19 @@
+{
+  "name": "swirl-upgrade",
+  "version": "1.0.0",
+  "description": "Bridge for older installs: adds a 'swirl-upgrade' terminal command that updates the whole system to the latest release.",
+  "author": "Swirl",
+  "deps": [],
+  "title": "SwirlOS Upgrade (r61/r62)",
+  "category": "Tools",
+  "tagline": "Update an old install in place - keeps your files.",
+  "long": "Installs from before r63 cannot update themselves: they have no system manifest and an older spm. This package brings the new spm and one terminal command, swirl-upgrade. It compares every system file by content, downloads only what changed, verifies each file and swaps them in safely (a failed update rolls back). Your files in /home/user and your settings are never touched.\\nYou must boot a SwirlOS r63+ ISO first - the kernel lives on the boot medium and cannot be updated from inside the OS.",
+  "publisher": "Swirl",
+  "license": "MIT",
+  "color": "7C5CE0",
+  "glyph": "tool",
+  "files": [
+    { "src": "swirl-upgrade.elf",  "dest": "/system/apps/swirl-upgrade.elf" },
+    { "src": "swirl-upgrade.json", "dest": "/system/gterm/swirl-upgrade.json" }
+  ]
+}

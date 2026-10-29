@@ -1,0 +1,71 @@
+spm - the SwirlOS package manager
+=================================
+
+spm installs small packages (terminal commands, data files, anything that is
+just files) from a git repository, over HTTPS, with every file verified
+against a SHA-256 hash from the repository's index.
+
+  spm update               refresh the package index
+  spm search [term]        list or search packages
+  spm info <pkg>           details, files and dependencies
+  spm install <pkg...>     install packages (+ dependencies)
+  spm remove <pkg...>      remove packages (refuses if something needs them)
+  spm upgrade [pkg...]     upgrade installed packages to the index version
+  spm list                 installed packages
+  spm repo [set <src>]     show or change the package source
+  spm os [check|upgrade|verify|repair|status]   SwirlOS system updates (see below)
+  spm repo reset           back to the default source
+
+  -f                       overwrite files not owned by the package / ignore deps
+
+Package sources (spm repo set ...):
+  owner/repo[@branch]      GitHub repository (raw.githubusercontent.com)
+  https://host/path/       any web folder that holds index.json
+  /some/folder             a local folder or USB stick that holds index.json
+
+Default source: qwerwasi6-lab/swirl-packages@main
+
+Safety
+  * HTTPS is verified against the built-in CA bundle (add more roots in
+    /system/spm/ca.pem if you use a private CA).
+  * Files are downloaded to "<dest>.spm-new", hash-checked, and only then
+    moved into place. A failed download never leaves a half-written file.
+  * spm never overwrites a file it does not own (use -f to force) and never
+    writes under /system/kernel or /system/spm.
+
+State lives in /system/spm (index.json, repo, db/<pkg>.json).
+Registry layout and how to publish: see the README in the repository.
+Terminal commands installed by spm go to /system/gterm and work immediately.
+
+System updates (spm os)
+  spm os check             is a newer SwirlOS release available? (Settings > Software Update does this too)
+  spm os upgrade           download ONLY the system files that changed, verify them, install
+  spm os verify            compare every system file with the install record (offline)
+  spm os repair            restore missing or changed system files from the release
+  spm os status            installed version
+  -f                       allow going back to an older release
+
+  * The install record is /system/spm/os.tsv (version + SHA-256 of every system file).
+  * Every file is SHA-256 verified before anything is touched. If a download fails or
+    does not match, nothing changes.
+  * Install is journaled: old files are kept as <file>.spm-old until the whole update
+    is in. A failure or power cut rolls back to the old, working system - at boot, init
+    runs "spm os recover" before the desktop starts.
+  * Files under /system/config are YOURS: they are created when missing and never
+    overwritten by an update.
+  * A release that needs a newer kernel than the one you booted is refused (the kernel
+    lives on the boot medium; boot a newer ISO first). Check with: spm os status.
+  * Restart after an update so running programs (desktop, Settings...) pick up the new files.
+
+Updating an install from before r63 (r61, r62)
+  Old installs have no install record (os.tsv) and an old spm, so "spm upgrade" cannot
+  update them. Bridge:
+    1. boot a SwirlOS r63+ ISO with your disk attached (the kernel is on the ISO)
+    2. spm install swirl-upgrade -f       (the old spm can do this)
+    3. swirl-upgrade                      (check first with: swirl-upgrade check)
+    4. restart
+  swirl-upgrade compares every system file with the release BY CONTENT (no record to
+  trust), downloads only what differs, and installs it under the same journal as
+  "spm os upgrade". It also creates os.tsv, so from then on plain "spm os" works.
+  Your files in /home/user and everything in /system/config stay untouched. Afterwards
+  "spm remove swirl-upgrade" is safe - it owns only its own two files.
