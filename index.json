@@ -68,6 +68,622 @@
         }
       ]
     },
+    "doom": {
+      "version": "1.1.0",
+      "description": "DOOM shareware, episode 1.",
+      "author": "id Software",
+      "title": "DOOM",
+      "category": "Games",
+      "tagline": "Rip and tear. Episode 1, free.",
+      "long": "The game that started it all. Fight through Knee-Deep in the Dead, the shareware episode, using SwirlOS's built-in DOOM engine.\\nArrows to move, Ctrl to fire, Space to open doors, Esc for the menu.",
+      "publisher": "id Software",
+      "license": "Shareware (free to share)",
+      "color": "B3261E",
+      "glyph": "doom",
+      "launch": "/home/user/DOOM/doom1.wad",
+      "featured": 1,
+      "files": [
+        {
+          "path": "packages/doom/doom1.wad",
+          "dest": "/home/user/DOOM/doom1.wad",
+          "sha256": "1d7d43be501e67d927e415e0b8f3e29c3bf33075e859721816f652a526cac771",
+          "size": 4196020
+        },
+        {
+          "path": "packages/doom/logo.rgba",
+          "dest": "/home/user/DOOM/logo.rgba",
+          "sha256": "bddf137aa04885c0733d9037844536e92b31823e5df31ab0f0e6acaafb4c7eb0",
+          "size": 610012
+        }
+      ]
+    },
+    "doukutsu": {
+      "version": "1.0.0",
+      "description": "Cave Story (Doukutsu Monogatari) - the freeware platformer by Studio Pixel.",
+      "author": "Studio Pixel",
+      "title": "Doukutsu",
+      "category": "Games",
+      "tagline": "Cave Story, the legendary freeware platformer.",
+      "long": "Wake up in a cave with no memory, meet the Mimigas, and take on the Doctor. Pixel-perfect run-and-gun exploration by Daisuke 'Pixel' Amaya, running on SwirlOS through SwirlRun.\\nArrows to move, Z to jump, X to shoot, Q for the inventory. This package ships the English v1.2 freeware build; some later stages are not included yet.",
+      "publisher": "Studio Pixel",
+      "license": "Freeware",
+      "color": "F59E0B",
+      "glyph": "cave",
+      "launch": "/home/user/Games/CaveStory/Doukutsu.exe",
+      "featured": 1,
+      "files": [
+        {
+          "path": "packages/doukutsu/Doukutsu.exe",
+          "dest": "/home/user/Games/CaveStory/Doukutsu.exe",
+          "sha256": "fa18379fe942ecb5fd69360ede81675ad6bb8b743bef2120305c4b439c732218",
+          "size": 1478656
+        },
+        {
+          "path": "packages/doukutsu/data/Arms.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Arms.pbm",
+          "sha256": "205e275607749b946a304f3cc9aadd71870aaff43e1c7fd8b86fd2caac44e791",
+          "size": 32126
+        },
+        {
+          "path": "packages/doukutsu/data/ArmsImage.pbm",
+          "dest": "/home/user/Games/CaveStory/data/ArmsImage.pbm",
+          "sha256": "3b6860e0e0a77836937cccb3bfec1a687f3500170093f5687153f6169f4373de",
+          "size": 2174
+        },
+        {
+          "path": "packages/doukutsu/data/ArmsItem.tsc",
+          "dest": "/home/user/Games/CaveStory/data/ArmsItem.tsc",
+          "sha256": "c7f08831795c4dbcb5ca74c74897e0f6cbcdcb57d13a10e69002ea9c82ba0796",
+          "size": 9305
+        },
+        {
+          "path": "packages/doukutsu/data/Bullet.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Bullet.pbm",
+          "sha256": "f6854e74d8880a0bfb1cc26352308a685af25e8673c3cba43221764dd24f3543",
+          "size": 28286
+        },
+        {
+          "path": "packages/doukutsu/data/Caret.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Caret.pbm",
+          "sha256": "86a87b6afe943400d98d83dde0d4fb1a7c1f9d1895f4a14edac0bfc6b7719d59",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Credit.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Credit.tsc",
+          "sha256": "a59b7e75ec0a8dc6ddf7c4732696f0c99c5746074f1cbc40380f5fa09c8cf9d7",
+          "size": 7571
+        },
+        {
+          "path": "packages/doukutsu/data/Face.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Face.pbm",
+          "sha256": "39e65aa651810326f444e46188eb7d2f267099011c5e95c7d130d68dc485f016",
+          "size": 70206
+        },
+        {
+          "path": "packages/doukutsu/data/Fade.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Fade.pbm",
+          "sha256": "d452bb4ee1e792c4f68faebfdbd8a472cb580cf2ac5890af22ee9a4c17cb9782",
+          "size": 1094
+        },
+        {
+          "path": "packages/doukutsu/data/Head.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Head.tsc",
+          "sha256": "df105de490b69d0c41802e7f13e214fb83408cba51cc21d8205ac4b20856c8af",
+          "size": 1461
+        },
+        {
+          "path": "packages/doukutsu/data/ItemImage.pbm",
+          "dest": "/home/user/Games/CaveStory/data/ItemImage.pbm",
+          "sha256": "7c7783331dc2739272f829999b0e579249b1c666fa79c060025c4d59cf2448b2",
+          "size": 16510
+        },
+        {
+          "path": "packages/doukutsu/data/Loading.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Loading.pbm",
+          "sha256": "d40c3902567a35077dc49fae1e6e62d7a1a61a20463b3b2df92f5ac2d74441b5",
+          "size": 134
+        },
+        {
+          "path": "packages/doukutsu/data/MyChar.pbm",
+          "dest": "/home/user/Games/CaveStory/data/MyChar.pbm",
+          "sha256": "2d2d3197856bb0cfd04661a184285ffdd57fd81e9a23bae06cb5727582ebc37c",
+          "size": 6526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/Npc0.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/Npc0.pbm",
+          "sha256": "d8a2a6d6d99357975055f31816b675a5b9e023f39511e2d6a21f74eed8c303cd",
+          "size": 638
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcAlmo1.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcAlmo1.pbm",
+          "sha256": "8f97a244cf8d3f1c5c1cd235a58c8945b8d7bab1f3163e8bb9605639e38732c9",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcAlmo2.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcAlmo2.pbm",
+          "sha256": "9f2a9c015dfd5e3c5624ee1aa512e8aa17cd3a3a77cf8de027ba0e0f69748a44",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcBallos.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcBallos.pbm",
+          "sha256": "9e6dd15069418740ec153bf1ae4b416fad12eacc3b152d65fd236e0d38d082d8",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcBllg.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcBllg.pbm",
+          "sha256": "c78228ad02aa217df283ec27f7130ae7f939a4a2e667e5ce1c20ef7d60a079e8",
+          "size": 15486
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcCemet.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcCemet.pbm",
+          "sha256": "c89145efad7d560f88afe8f170bb20e1cd1f394d16212e108a42643906228c91",
+          "size": 18046
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcCent.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcCent.pbm",
+          "sha256": "3ba00f65e1a67674b096a5af11e5a6c53eda018f4779c6e33773894c45ab95d9",
+          "size": 30846
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcCurly.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcCurly.pbm",
+          "sha256": "3a9ea16bda9d37ce7bfb1d8060ba78740ba2b179ed81f438c6535cce55e8af77",
+          "size": 10366
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcDark.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcDark.pbm",
+          "sha256": "5a3b2f7d400e36db535a30ee7257a7c80a00b8837b0d6ec87b5366c9ac8a57cc",
+          "size": 5246
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcDr.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcDr.pbm",
+          "sha256": "bf97b39e1da6371d5a7ecdddb7c533b9ecf97c90fd67f0e7e8944693f0a6803e",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcEggs1.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcEggs1.pbm",
+          "sha256": "814f9c74407c5cdc9feec56efd6bb917bcb30c775d60c4e918499da87c287a7d",
+          "size": 18046
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcEggs2.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcEggs2.pbm",
+          "sha256": "9d20fa39802fa77d45f634b8ce3bca9f41b728817f159230e45c8131099c7a3d",
+          "size": 20606
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcFrog.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcFrog.pbm",
+          "sha256": "6041972b7811c987dc7d00a4c144af30ba85543b29fe4e385d0703405e54b977",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcGuest.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcGuest.pbm",
+          "sha256": "e8e154ffe216f2ebfacf2d3a51553d2bb90210e06b6c976f771e882ce52050c4",
+          "size": 59966
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcHell.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcHell.pbm",
+          "sha256": "2e5d17539d8972fd52ef2859e3d77e2e9408c4fc6e5c9133ae89b7ee1ae5f4be",
+          "size": 25726
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcHeri.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcHeri.pbm",
+          "sha256": "87ee664d80fe1f262b070ca7e3c6c9445c9aeb6397610d90e8ea5db38d972b59",
+          "size": 20606
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcIronH.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcIronH.pbm",
+          "sha256": "ef48f6177a34b7a356815bd247401e45a89d41ee7e1decc35609b55e18d14efd",
+          "size": 11646
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcIsland.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcIsland.pbm",
+          "sha256": "fdf13b26a9fc629b672349b5bd2863a6ee19cfdc13c4e655b9199dd2cde74533",
+          "size": 12926
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcKings.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcKings.pbm",
+          "sha256": "b9ddd142acf463f46d90cd46e4a2cbf926bbd6619bd052221005ba70ffb4e546",
+          "size": 2430
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcMaze.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcMaze.pbm",
+          "sha256": "4ff5f93ebcd2a0ecedd99d4d8f78f8d7964a9c20b4e90a700855b371a989d82b",
+          "size": 30846
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcMiza.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcMiza.pbm",
+          "sha256": "47a0ace2afac9e0ae2b86c51c11dad11b877411f1d18d103bb1ed9c253ac21a0",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcMoon.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcMoon.pbm",
+          "sha256": "ba53e5e5f115d1318896e451194a997308aa09cf97c863ebbe96298958825c6a",
+          "size": 20606
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcOmg.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcOmg.pbm",
+          "sha256": "ca50d67b3f114439af831c9ee60c6886faaf7551c47e96933f57ec98e130f0c8",
+          "size": 19326
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcPlant.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcPlant.pbm",
+          "sha256": "7c3e98612c640916507705e5f522e638da2c1edb3f435d2b711e1870beacf84b",
+          "size": 7806
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcPress.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcPress.pbm",
+          "sha256": "ceb315104797fb616f20ab392b5a79bddbbbff7e89a1a75f69922a7befa85ba0",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcPriest.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcPriest.pbm",
+          "sha256": "06c9a2d53e06b6ca29be8e3b9857ff0c86f4a3d6eadbd9403d2c61b68bc1ab4d",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcRavil.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcRavil.pbm",
+          "sha256": "72675f503c225fdc74001e3bcb785f24a3d088eb9ecc97005a9621a818b11aef",
+          "size": 27006
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcRed.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcRed.pbm",
+          "sha256": "a02e1e35f9ea369e0d9b70d2dfa04fec467422ccf3e8884eaf5394e018ac5b95",
+          "size": 23166
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcRegu.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcRegu.pbm",
+          "sha256": "a89ab0e586230644be7f1eb7b199b5959ea9e64ba8187da8a9cc7875b9acb426",
+          "size": 77886
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcSand.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcSand.pbm",
+          "sha256": "b85dfd2eb2cef6f9b44bc358f8bd15855093649f92ad0ea6f3b7f94a092351b2",
+          "size": 28286
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcStream.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcStream.pbm",
+          "sha256": "1b5c28fb48ae631dcac09a85473c7fa6e76609bca31b4c97498f60e3632f7ab9",
+          "size": 1150
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcSym.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcSym.pbm",
+          "sha256": "8d42320ad1a21f26fd2c519cea873ad722ba9237fa81baf439d652dae04de1c9",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcToro.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcToro.pbm",
+          "sha256": "3194afbce98e15e9379849bcb3794b847112aa701d6943263cc47774da191863",
+          "size": 23162
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcTwinD.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcTwinD.pbm",
+          "sha256": "156a8b12a09d1304fc122fd72275b4aa42c9310c213ec8b3596f8b54348e400b",
+          "size": 23166
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcWeed.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcWeed.pbm",
+          "sha256": "43318342da68204b70a4bb7a26c39d9544f6bc8ef5f2f26e9d4c9284991d29e2",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcX.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcX.pbm",
+          "sha256": "cfdef076e6b5f7ff60022f534968ea18f235291eb211d2229327edf76985615b",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/0.pxa",
+          "dest": "/home/user/Games/CaveStory/data/Stage/0.pxa",
+          "sha256": "2cd8fd7a99c3a67b877f6d55e15633f380696f678ffb4411fb998220468578fe",
+          "size": 256
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/0.pxe",
+          "dest": "/home/user/Games/CaveStory/data/Stage/0.pxe",
+          "sha256": "8a33ef2220db51636053a23b60d3395ef9d018ca3bd7accfab453f7f32db9abe",
+          "size": 200
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/0.pxm",
+          "dest": "/home/user/Games/CaveStory/data/Stage/0.pxm",
+          "sha256": "d356ad68f314d600ab4746ebd5a37d14e656d0ff87fbbba23b8142d5615c162b",
+          "size": 428
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/0.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Stage/0.tsc",
+          "sha256": "ebe2166688722ebf588a0e0abf4d3c61d32fe362641876504562dfdb4912acd3",
+          "size": 2768
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Cave.pxa",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Cave.pxa",
+          "sha256": "6e3a378d384bc4f74a9d771874f495e11e6bff91844512279fd3277272d7b134",
+          "size": 256
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Cave.pxe",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Cave.pxe",
+          "sha256": "5dc5a46b4f462a46eea3e090b589c406ac9c575da0b195da8094f6029405bd1f",
+          "size": 1064
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Cave.pxm",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Cave.pxm",
+          "sha256": "d9a33bbb29319aaa7d661b15cf24c9f64582af001c73d84d560fcbb1c24683ef",
+          "size": 2708
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Cave.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Cave.tsc",
+          "sha256": "8f625ba4f19dde37822db244d6e39b0febc9aa2a3d27c79ec29bd6d816c54250",
+          "size": 788
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Eggs.pxa",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Eggs.pxa",
+          "sha256": "9decb4bd25bd82ce12a5489931c8c7298addf4de170b789b65fdc2bc900f1769",
+          "size": 256
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Eggs.pxe",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Eggs.pxe",
+          "sha256": "405af4b8dfe8bedb4b306b3e4515271718d89b84e77bad0b5d1f6dc5b0986342",
+          "size": 1280
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Eggs.pxm",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Eggs.pxm",
+          "sha256": "beb024a655f5df28b0ee28b00f0067f57f5741ff69c543962622f7d1b8947f3a",
+          "size": 4808
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Eggs.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Eggs.tsc",
+          "sha256": "5880baadca17938332f5d6066fff41669f10625f49a21dad79fec95d3f8b34c9",
+          "size": 3040
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Kings.pxe",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Kings.pxe",
+          "sha256": "59ad550b93888b403892a25d9af1d1aae868867009295035e1c8964d521e531f",
+          "size": 56
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Kings.pxm",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Kings.pxm",
+          "sha256": "22d430b9ed2e4cfed1d2382b77a20160cf6bafbad09e772175cd5de8cfcf8cb7",
+          "size": 344
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Kings.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Kings.tsc",
+          "sha256": "14fe57f6634dbdbb1d7cb6cc437d4c638b3c106de405eea3f8b7f8e0a7bd4ec7",
+          "size": 359
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Mimi.pxa",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Mimi.pxa",
+          "sha256": "5da7a41f620f3c620e864c3513cc8d19f50547db78f58d223eccd99c5df091cf",
+          "size": 256
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Mimi.pxe",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Mimi.pxe",
+          "sha256": "9294fbc0590712da669712766752567e305503eefad44feb7b9075faa02494ff",
+          "size": 476
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Mimi.pxm",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Mimi.pxm",
+          "sha256": "e370a35180c0ee94a1ab6980413ac1e5cfbfc81a2bb26c77af9b0439fd11755e",
+          "size": 3608
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Mimi.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Mimi.tsc",
+          "sha256": "093fcd58d2f8d49b9958e79601d0158f2650d0f10d37f1b7e3fff84adb1eda90",
+          "size": 7106
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Plant.pxe",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Plant.pxe",
+          "sha256": "6bb92dd64a0cf78c981b7c389660ba88493723f571ca2adfdac3020ca203984a",
+          "size": 284
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Plant.pxm",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Plant.pxm",
+          "sha256": "272932f364869786c3ce1cd6b8d158667065c61ba3e08fa562ad8d914dab0dad",
+          "size": 648
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Plant.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Plant.tsc",
+          "sha256": "2d6b1600e8a32164b8843ada2d2adddc8858cb0b1b2340a38e2607a59b376101",
+          "size": 1323
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Pole.pxe",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Pole.pxe",
+          "sha256": "6812a1556f4822cf7495e676d5b11936302406ca67d21f7f9bb07d47c23fa44f",
+          "size": 104
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Pole.pxm",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Pole.pxm",
+          "sha256": "506ab3856805271902a065fadbc532754cf9574688b482213b09d728b4f0ecf1",
+          "size": 344
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Pole.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Pole.tsc",
+          "sha256": "c7423daff407e861484722004dcd7345a43d7a3ae335a43bb8309b14218983cb",
+          "size": 2540
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Start.pxe",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Start.pxe",
+          "sha256": "cac2811235a4465e2cc3a32b7804dafb2fa80f5dcdd5c241a09f8d51c233f47b",
+          "size": 92
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Start.pxm",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Start.pxm",
+          "sha256": "e4e35b0ddd339a5c60b1cce2943316de9d1df730334793ba3a388d52d59cceff",
+          "size": 344
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Start.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Start.tsc",
+          "sha256": "a00ff3b9835f54d3e56f5cb9ebc75eaca25fad69712a788a1c082ea52c46628d",
+          "size": 380
+        },
+        {
+          "path": "packages/doukutsu/data/StageImage.pbm",
+          "dest": "/home/user/Games/CaveStory/data/StageImage.pbm",
+          "sha256": "354fa1248db942e21a486c4a1e6bd18b3b0881fd1fe68708ff989ac4b13dadad",
+          "size": 2174
+        },
+        {
+          "path": "packages/doukutsu/data/StageSelect.tsc",
+          "dest": "/home/user/Games/CaveStory/data/StageSelect.tsc",
+          "sha256": "4db55bda5698bde79697968861a9c1b2ba7682e1822d8a9e0fed45382a09024c",
+          "size": 275
+        },
+        {
+          "path": "packages/doukutsu/data/TextBox.pbm",
+          "dest": "/home/user/Games/CaveStory/data/TextBox.pbm",
+          "sha256": "a2b2248a520e18308a3541d44430681be20877d36c9c4cc6866701115548fecc",
+          "size": 17982
+        },
+        {
+          "path": "packages/doukutsu/data/Title.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Title.pbm",
+          "sha256": "81ece6bfb001b7df037f1d8e0bbba80961f3b61d7272c86e8cef376fe85b7565",
+          "size": 7806
+        },
+        {
+          "path": "packages/doukutsu/data/bk0.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bk0.pbm",
+          "sha256": "a73dab13480d75b20cc6ff182246ba28913d176a37151ac38818d2c4436cc814",
+          "size": 582
+        },
+        {
+          "path": "packages/doukutsu/data/bkBlack.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkBlack.pbm",
+          "sha256": "bacc18a02df484d2785d94ea868eba1be5f3723eff359cb30655b19a7675e1ed",
+          "size": 582
+        },
+        {
+          "path": "packages/doukutsu/data/bkBlue.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkBlue.pbm",
+          "sha256": "c14276cddcb2c264108ff08833b4b5ded8c60eb981fc368e09559a6fa1fb5c47",
+          "size": 2174
+        },
+        {
+          "path": "packages/doukutsu/data/bkFall.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkFall.pbm",
+          "sha256": "efd190899416fbe1c21171dac8f630593ed4845a12b5619f678bee21bfc0326e",
+          "size": 582
+        },
+        {
+          "path": "packages/doukutsu/data/bkFog.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkFog.pbm",
+          "sha256": "14217abad539683a9135c38744e2aef448f29d18974f5b2e4dec6939cddd0e2e",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/bkGard.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkGard.pbm",
+          "sha256": "cb64e85806b9c806f2e749eca9ac0fbbf9ea60d7810a61242333fa23007a689e",
+          "size": 1662
+        },
+        {
+          "path": "packages/doukutsu/data/bkGray.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkGray.pbm",
+          "sha256": "dd91eed36856f57df431dcafb6b601a6c01273501f3ad08c0d4b9f927e7dbe2e",
+          "size": 2174
+        },
+        {
+          "path": "packages/doukutsu/data/bkGreen.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkGreen.pbm",
+          "sha256": "1d611be08d15d7a3410cc51ba5eea72edb915bb06995ed2d8a3acbe4caa5a9fe",
+          "size": 2174
+        },
+        {
+          "path": "packages/doukutsu/data/bkMaze.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkMaze.pbm",
+          "sha256": "d6d9a2b66d3dfca9d7c1f5e5fac98541aa88d8edd35c731738a12cab88501716",
+          "size": 2174
+        },
+        {
+          "path": "packages/doukutsu/data/bkMoon.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkMoon.pbm",
+          "sha256": "1d5e3e7959e7f87bab1af04aa6881873309cf984911e591016b2baeb2738ca27",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/bkRed.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkRed.pbm",
+          "sha256": "884ed41bec730f5a7f2b69af92dd5afb88ce6280b581ce58e749072fa02b6e3d",
+          "size": 638
+        },
+        {
+          "path": "packages/doukutsu/data/bkWater.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkWater.pbm",
+          "sha256": "45c8b02de19804d723446e6b697b4f25b0c402251284a6025790a9b381090ba7",
+          "size": 894
+        },
+        {
+          "path": "packages/doukutsu/data/casts.pbm",
+          "dest": "/home/user/Games/CaveStory/data/casts.pbm",
+          "sha256": "c279f1ff2fe1f3cf15e55cc24fd38eba31d1fbd5f042e04bc7e516f6b07b4f33",
+          "size": 77886
+        },
+        {
+          "path": "packages/doukutsu/data/npc.tbl",
+          "dest": "/home/user/Games/CaveStory/data/npc.tbl",
+          "sha256": "75b38bb4ab57b50bfc6c3ba77fe670a2eb67301f425aefe96bb1ed87c2b9e2db",
+          "size": 8664
+        }
+      ]
+    },
     "snake": {
       "version": "1.0.0",
       "description": "Eat, grow, don't crash.",
@@ -92,7 +708,7 @@
       ]
     },
     "swirl-upgrade": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Bridge for older installs: adds a 'swirl-upgrade' terminal command that updates the whole system to the latest release.",
       "author": "Swirl",
       "title": "SwirlOS Upgrade (r61/r62)",
@@ -107,7 +723,7 @@
         {
           "path": "packages/swirl-upgrade/swirl-upgrade.elf",
           "dest": "/system/apps/swirl-upgrade.elf",
-          "sha256": "e1a92d580a0091d7858213f4fb432f2a2a8b287b3f2b644dae0d81a758831933",
+          "sha256": "83f9a6c1182c513ebc37ed5abd725aaa7ca0494a892226b2a2ccb4ddabb513a9",
           "size": 525360
         },
         {
@@ -141,10 +757,10 @@
   },
   "os": {
     "name": "SwirlOS",
-    "version": "r64",
+    "version": "r65",
     "abi": 2,
     "date": "2026-10-29",
-    "notes": "r64: bridge for r61/r62 installs (swirl-upgrade package), kernel ABI 2, spm os works without a manifest.",
+    "notes": "r65: Store gets DOOM + Doukutsu; spm adopts identical files.",
     "files": [
       {
         "path": "os/7e/7eac1ad1bc5ac61f8d3f727a87cd61a126401d4f",
@@ -255,9 +871,9 @@
         "size": 9744
       },
       {
-        "path": "os/e1/e1a92d580a0091d7858213f4fb432f2a2a8b287b",
+        "path": "os/83/83f9a6c1182c513ebc37ed5abd725aaa7ca0494a",
         "dest": "/system/apps/spm.elf",
-        "sha256": "e1a92d580a0091d7858213f4fb432f2a2a8b287b3f2b644dae0d81a758831933",
+        "sha256": "83f9a6c1182c513ebc37ed5abd725aaa7ca0494a892226b2a2ccb4ddabb513a9",
         "size": 525360
       },
       {
@@ -357,9 +973,9 @@
         "size": 617080
       },
       {
-        "path": "os/b3/b36464194dc3bee88745bbdba49956a3c351fc5f",
+        "path": "os/6a/6a86fc594496ae381faeeec6d8b954e6bf8be192",
         "dest": "/system/apps/gui/gstore.elf",
-        "sha256": "b36464194dc3bee88745bbdba49956a3c351fc5f14a4fc50ac339d6e05d51b94",
+        "sha256": "6a86fc594496ae381faeeec6d8b954e6bf8be1929a46ad6528e4b74b6a358855",
         "size": 101232
       },
       {
@@ -565,10 +1181,10 @@
         "size": 2155
       },
       {
-        "path": "os/73/73b0f28b11bc2a5225dfa4f1930a6aec62fde266",
+        "path": "os/13/13c06f64ec96218c3bab69f2afed8fe05fd8afc9",
         "dest": "/system/doc/spm.txt",
-        "sha256": "73b0f28b11bc2a5225dfa4f1930a6aec62fde266b14830bc056fbea9b0f403fc",
-        "size": 4017
+        "sha256": "13c06f64ec96218c3bab69f2afed8fe05fd8afc9d93e402f836c24d73e04bd4e",
+        "size": 4445
       },
       {
         "path": "os/9f/9f8ef16e269da68f842e4d94c38695ce04e749e7",

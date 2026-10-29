@@ -1,6 +1,6 @@
 {
   "name": "doom",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "DOOM shareware, episode 1.",
   "author": "id Software",
   "title": "DOOM",
@@ -8,15 +8,19 @@
   "tagline": "Rip and tear. Episode 1, free.",
   "long": "The game that started it all. Fight through Knee-Deep in the Dead, the shareware episode, using SwirlOS's built-in DOOM engine.\\nArrows to move, Ctrl to fire, Space to open doors, Esc for the menu.",
   "publisher": "id Software",
-  "license": "Shareware",
+  "license": "Shareware (free to share)",
   "color": "B3261E",
   "glyph": "doom",
-  "launch": "/home/user/Games/doom/game.wad",
-  "skip_if_missing": true,
+  "launch": "/home/user/DOOM/doom1.wad",
   "files": [
     {
       "src": "doom1.wad",
-      "dest": "/home/user/Games/doom/game.wad"
+      "dest": "/home/user/DOOM/doom1.wad"
+    },
+    {
+      "src": "logo.rgba",
+      "dest": "/home/user/DOOM/logo.rgba"
     }
-  ]
+  ],
+  "featured": true
 }

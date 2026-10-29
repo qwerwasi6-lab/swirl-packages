@@ -1,0 +1,398 @@
+{
+  "name": "doukutsu",
+  "version": "1.0.0",
+  "description": "Cave Story (Doukutsu Monogatari) - the freeware platformer by Studio Pixel.",
+  "author": "Studio Pixel",
+  "title": "Doukutsu",
+  "category": "Games",
+  "tagline": "Cave Story, the legendary freeware platformer.",
+  "long": "Wake up in a cave with no memory, meet the Mimigas, and take on the Doctor. Pixel-perfect run-and-gun exploration by Daisuke 'Pixel' Amaya, running on SwirlOS through SwirlRun.\\nArrows to move, Z to jump, X to shoot, Q for the inventory. This package ships the English v1.2 freeware build; some later stages are not included yet.",
+  "publisher": "Studio Pixel",
+  "license": "Freeware",
+  "color": "F59E0B",
+  "glyph": "cave",
+  "launch": "/home/user/Games/CaveStory/Doukutsu.exe",
+  "featured": true,
+  "files": [
+    {
+      "src": "Doukutsu.exe",
+      "dest": "/home/user/Games/CaveStory/Doukutsu.exe"
+    },
+    {
+      "src": "data/Arms.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Arms.pbm"
+    },
+    {
+      "src": "data/ArmsImage.pbm",
+      "dest": "/home/user/Games/CaveStory/data/ArmsImage.pbm"
+    },
+    {
+      "src": "data/ArmsItem.tsc",
+      "dest": "/home/user/Games/CaveStory/data/ArmsItem.tsc"
+    },
+    {
+      "src": "data/Bullet.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Bullet.pbm"
+    },
+    {
+      "src": "data/Caret.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Caret.pbm"
+    },
+    {
+      "src": "data/Credit.tsc",
+      "dest": "/home/user/Games/CaveStory/data/Credit.tsc"
+    },
+    {
+      "src": "data/Face.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Face.pbm"
+    },
+    {
+      "src": "data/Fade.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Fade.pbm"
+    },
+    {
+      "src": "data/Head.tsc",
+      "dest": "/home/user/Games/CaveStory/data/Head.tsc"
+    },
+    {
+      "src": "data/ItemImage.pbm",
+      "dest": "/home/user/Games/CaveStory/data/ItemImage.pbm"
+    },
+    {
+      "src": "data/Loading.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Loading.pbm"
+    },
+    {
+      "src": "data/MyChar.pbm",
+      "dest": "/home/user/Games/CaveStory/data/MyChar.pbm"
+    },
+    {
+      "src": "data/Npc/Npc0.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/Npc0.pbm"
+    },
+    {
+      "src": "data/Npc/NpcAlmo1.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcAlmo1.pbm"
+    },
+    {
+      "src": "data/Npc/NpcAlmo2.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcAlmo2.pbm"
+    },
+    {
+      "src": "data/Npc/NpcBallos.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcBallos.pbm"
+    },
+    {
+      "src": "data/Npc/NpcBllg.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcBllg.pbm"
+    },
+    {
+      "src": "data/Npc/NpcCemet.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcCemet.pbm"
+    },
+    {
+      "src": "data/Npc/NpcCent.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcCent.pbm"
+    },
+    {
+      "src": "data/Npc/NpcCurly.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcCurly.pbm"
+    },
+    {
+      "src": "data/Npc/NpcDark.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcDark.pbm"
+    },
+    {
+      "src": "data/Npc/NpcDr.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcDr.pbm"
+    },
+    {
+      "src": "data/Npc/NpcEggs1.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcEggs1.pbm"
+    },
+    {
+      "src": "data/Npc/NpcEggs2.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcEggs2.pbm"
+    },
+    {
+      "src": "data/Npc/NpcFrog.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcFrog.pbm"
+    },
+    {
+      "src": "data/Npc/NpcGuest.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcGuest.pbm"
+    },
+    {
+      "src": "data/Npc/NpcHell.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcHell.pbm"
+    },
+    {
+      "src": "data/Npc/NpcHeri.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcHeri.pbm"
+    },
+    {
+      "src": "data/Npc/NpcIronH.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcIronH.pbm"
+    },
+    {
+      "src": "data/Npc/NpcIsland.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcIsland.pbm"
+    },
+    {
+      "src": "data/Npc/NpcKings.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcKings.pbm"
+    },
+    {
+      "src": "data/Npc/NpcMaze.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcMaze.pbm"
+    },
+    {
+      "src": "data/Npc/NpcMiza.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcMiza.pbm"
+    },
+    {
+      "src": "data/Npc/NpcMoon.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcMoon.pbm"
+    },
+    {
+      "src": "data/Npc/NpcOmg.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcOmg.pbm"
+    },
+    {
+      "src": "data/Npc/NpcPlant.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcPlant.pbm"
+    },
+    {
+      "src": "data/Npc/NpcPress.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcPress.pbm"
+    },
+    {
+      "src": "data/Npc/NpcPriest.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcPriest.pbm"
+    },
+    {
+      "src": "data/Npc/NpcRavil.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcRavil.pbm"
+    },
+    {
+      "src": "data/Npc/NpcRed.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcRed.pbm"
+    },
+    {
+      "src": "data/Npc/NpcRegu.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcRegu.pbm"
+    },
+    {
+      "src": "data/Npc/NpcSand.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcSand.pbm"
+    },
+    {
+      "src": "data/Npc/NpcStream.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcStream.pbm"
+    },
+    {
+      "src": "data/Npc/NpcSym.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcSym.pbm"
+    },
+    {
+      "src": "data/Npc/NpcToro.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcToro.pbm"
+    },
+    {
+      "src": "data/Npc/NpcTwinD.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcTwinD.pbm"
+    },
+    {
+      "src": "data/Npc/NpcWeed.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcWeed.pbm"
+    },
+    {
+      "src": "data/Npc/NpcX.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Npc/NpcX.pbm"
+    },
+    {
+      "src": "data/Stage/0.pxa",
+      "dest": "/home/user/Games/CaveStory/data/Stage/0.pxa"
+    },
+    {
+      "src": "data/Stage/0.pxe",
+      "dest": "/home/user/Games/CaveStory/data/Stage/0.pxe"
+    },
+    {
+      "src": "data/Stage/0.pxm",
+      "dest": "/home/user/Games/CaveStory/data/Stage/0.pxm"
+    },
+    {
+      "src": "data/Stage/0.tsc",
+      "dest": "/home/user/Games/CaveStory/data/Stage/0.tsc"
+    },
+    {
+      "src": "data/Stage/Cave.pxa",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Cave.pxa"
+    },
+    {
+      "src": "data/Stage/Cave.pxe",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Cave.pxe"
+    },
+    {
+      "src": "data/Stage/Cave.pxm",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Cave.pxm"
+    },
+    {
+      "src": "data/Stage/Cave.tsc",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Cave.tsc"
+    },
+    {
+      "src": "data/Stage/Eggs.pxa",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Eggs.pxa"
+    },
+    {
+      "src": "data/Stage/Eggs.pxe",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Eggs.pxe"
+    },
+    {
+      "src": "data/Stage/Eggs.pxm",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Eggs.pxm"
+    },
+    {
+      "src": "data/Stage/Eggs.tsc",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Eggs.tsc"
+    },
+    {
+      "src": "data/Stage/Kings.pxe",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Kings.pxe"
+    },
+    {
+      "src": "data/Stage/Kings.pxm",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Kings.pxm"
+    },
+    {
+      "src": "data/Stage/Kings.tsc",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Kings.tsc"
+    },
+    {
+      "src": "data/Stage/Mimi.pxa",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Mimi.pxa"
+    },
+    {
+      "src": "data/Stage/Mimi.pxe",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Mimi.pxe"
+    },
+    {
+      "src": "data/Stage/Mimi.pxm",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Mimi.pxm"
+    },
+    {
+      "src": "data/Stage/Mimi.tsc",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Mimi.tsc"
+    },
+    {
+      "src": "data/Stage/Plant.pxe",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Plant.pxe"
+    },
+    {
+      "src": "data/Stage/Plant.pxm",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Plant.pxm"
+    },
+    {
+      "src": "data/Stage/Plant.tsc",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Plant.tsc"
+    },
+    {
+      "src": "data/Stage/Pole.pxe",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Pole.pxe"
+    },
+    {
+      "src": "data/Stage/Pole.pxm",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Pole.pxm"
+    },
+    {
+      "src": "data/Stage/Pole.tsc",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Pole.tsc"
+    },
+    {
+      "src": "data/Stage/Start.pxe",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Start.pxe"
+    },
+    {
+      "src": "data/Stage/Start.pxm",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Start.pxm"
+    },
+    {
+      "src": "data/Stage/Start.tsc",
+      "dest": "/home/user/Games/CaveStory/data/Stage/Start.tsc"
+    },
+    {
+      "src": "data/StageImage.pbm",
+      "dest": "/home/user/Games/CaveStory/data/StageImage.pbm"
+    },
+    {
+      "src": "data/StageSelect.tsc",
+      "dest": "/home/user/Games/CaveStory/data/StageSelect.tsc"
+    },
+    {
+      "src": "data/TextBox.pbm",
+      "dest": "/home/user/Games/CaveStory/data/TextBox.pbm"
+    },
+    {
+      "src": "data/Title.pbm",
+      "dest": "/home/user/Games/CaveStory/data/Title.pbm"
+    },
+    {
+      "src": "data/bk0.pbm",
+      "dest": "/home/user/Games/CaveStory/data/bk0.pbm"
+    },
+    {
+      "src": "data/bkBlack.pbm",
+      "dest": "/home/user/Games/CaveStory/data/bkBlack.pbm"
+    },
+    {
+      "src": "data/bkBlue.pbm",
+      "dest": "/home/user/Games/CaveStory/data/bkBlue.pbm"
+    },
+    {
+      "src": "data/bkFall.pbm",
+      "dest": "/home/user/Games/CaveStory/data/bkFall.pbm"
+    },
+    {
+      "src": "data/bkFog.pbm",
+      "dest": "/home/user/Games/CaveStory/data/bkFog.pbm"
+    },
+    {
+      "src": "data/bkGard.pbm",
+      "dest": "/home/user/Games/CaveStory/data/bkGard.pbm"
+    },
+    {
+      "src": "data/bkGray.pbm",
+      "dest": "/home/user/Games/CaveStory/data/bkGray.pbm"
+    },
+    {
+      "src": "data/bkGreen.pbm",
+      "dest": "/home/user/Games/CaveStory/data/bkGreen.pbm"
+    },
+    {
+      "src": "data/bkMaze.pbm",
+      "dest": "/home/user/Games/CaveStory/data/bkMaze.pbm"
+    },
+    {
+      "src": "data/bkMoon.pbm",
+      "dest": "/home/user/Games/CaveStory/data/bkMoon.pbm"
+    },
+    {
+      "src": "data/bkRed.pbm",
+      "dest": "/home/user/Games/CaveStory/data/bkRed.pbm"
+    },
+    {
+      "src": "data/bkWater.pbm",
+      "dest": "/home/user/Games/CaveStory/data/bkWater.pbm"
+    },
+    {
+      "src": "data/casts.pbm",
+      "dest": "/home/user/Games/CaveStory/data/casts.pbm"
+    },
+    {
+      "src": "data/npc.tbl",
+      "dest": "/home/user/Games/CaveStory/data/npc.tbl"
+    }
+  ]
+}

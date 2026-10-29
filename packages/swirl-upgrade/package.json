@@ -1,6 +1,6 @@
 {
   "name": "swirl-upgrade",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bridge for older installs: adds a 'swirl-upgrade' terminal command that updates the whole system to the latest release.",
   "author": "Swirl",
   "deps": [],
@@ -13,7 +13,13 @@
   "color": "7C5CE0",
   "glyph": "tool",
   "files": [
-    { "src": "swirl-upgrade.elf",  "dest": "/system/apps/swirl-upgrade.elf" },
-    { "src": "swirl-upgrade.json", "dest": "/system/gterm/swirl-upgrade.json" }
+    {
+      "src": "swirl-upgrade.elf",
+      "dest": "/system/apps/swirl-upgrade.elf"
+    },
+    {
+      "src": "swirl-upgrade.json",
+      "dest": "/system/gterm/swirl-upgrade.json"
+    }
   ]
 }

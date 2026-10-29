@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r64",
+ "version": "r65",
  "abi": 2,
  "date": "2026-10-29",
- "notes": "r64: bridge for r61/r62 installs (swirl-upgrade package), kernel ABI 2, spm os works without a manifest.",
+ "notes": "r65: Store gets DOOM + Doukutsu; spm adopts identical files.",
  "files": [
   {
    "path": "os/7e/7eac1ad1bc5ac61f8d3f727a87cd61a126401d4f",
@@ -114,9 +114,9 @@
    "size": 9744
   },
   {
-   "path": "os/e1/e1a92d580a0091d7858213f4fb432f2a2a8b287b",
+   "path": "os/83/83f9a6c1182c513ebc37ed5abd725aaa7ca0494a",
    "dest": "/system/apps/spm.elf",
-   "sha256": "e1a92d580a0091d7858213f4fb432f2a2a8b287b3f2b644dae0d81a758831933",
+   "sha256": "83f9a6c1182c513ebc37ed5abd725aaa7ca0494a892226b2a2ccb4ddabb513a9",
    "size": 525360
   },
   {
@@ -216,9 +216,9 @@
    "size": 617080
   },
   {
-   "path": "os/b3/b36464194dc3bee88745bbdba49956a3c351fc5f",
+   "path": "os/6a/6a86fc594496ae381faeeec6d8b954e6bf8be192",
    "dest": "/system/apps/gui/gstore.elf",
-   "sha256": "b36464194dc3bee88745bbdba49956a3c351fc5f14a4fc50ac339d6e05d51b94",
+   "sha256": "6a86fc594496ae381faeeec6d8b954e6bf8be1929a46ad6528e4b74b6a358855",
    "size": 101232
   },
   {
@@ -424,10 +424,10 @@
    "size": 2155
   },
   {
-   "path": "os/73/73b0f28b11bc2a5225dfa4f1930a6aec62fde266",
+   "path": "os/13/13c06f64ec96218c3bab69f2afed8fe05fd8afc9",
    "dest": "/system/doc/spm.txt",
-   "sha256": "73b0f28b11bc2a5225dfa4f1930a6aec62fde266b14830bc056fbea9b0f403fc",
-   "size": 4017
+   "sha256": "13c06f64ec96218c3bab69f2afed8fe05fd8afc9d93e402f836c24d73e04bd4e",
+   "size": 4445
   },
   {
    "path": "os/9f/9f8ef16e269da68f842e4d94c38695ce04e749e7",
