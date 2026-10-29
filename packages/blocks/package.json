@@ -1,0 +1,21 @@
+{
+  "name": "blocks",
+  "version": "1.0.0",
+  "description": "Stack, clear, repeat.",
+  "author": "Swirl",
+  "title": "Blocks",
+  "category": "Games",
+  "tagline": "Stack, clear, repeat.",
+  "long": "The falling-block puzzle you know. Rotate and place the pieces to make full lines, which vanish and score points. Every ten lines the pieces fall faster.\\nArrows to move and rotate, Space for a hard drop, P to pause.",
+  "publisher": "Swirl Games",
+  "license": "MIT",
+  "color": "7C5CFF",
+  "glyph": "blocks",
+  "launch": "/home/user/Games/blocks/blocks.elf",
+  "files": [
+    {
+      "src": "blocks.elf",
+      "dest": "/home/user/Games/blocks/blocks.elf"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "snake",
+  "version": "1.0.0",
+  "description": "Eat, grow, don't crash.",
+  "author": "Swirl",
+  "title": "Snake",
+  "category": "Games",
+  "tagline": "Eat, grow, don't crash.",
+  "long": "A classic reborn for SwirlOS. Guide the snake to the berries, grow longer with every bite and steer clear of the walls and your own tail. The faster you eat, the faster it gets.\\nArrow keys or WASD to steer, Space to pause. Your best score is saved.",
+  "publisher": "Swirl Games",
+  "license": "MIT",
+  "color": "2FA866",
+  "glyph": "snake",
+  "launch": "/home/user/Games/snake/snake.elf",
+  "files": [
+    {
+      "src": "snake.elf",
+      "dest": "/home/user/Games/snake/snake.elf"
+    }
+  ],
+  "featured": true
+}

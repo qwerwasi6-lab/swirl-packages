@@ -1,10 +1,107 @@
 {
   "spm": 1,
   "packages": {
+    "2048": {
+      "version": "1.0.0",
+      "description": "Slide, merge, reach the big one.",
+      "author": "Swirl",
+      "title": "2048",
+      "category": "Games",
+      "tagline": "Slide, merge, reach the big one.",
+      "long": "Slide the tiles around the board. Two tiles with the same number merge into one, double the value. Keep going until you reach 2048 - or run out of moves.\\nArrow keys, WASD or a mouse swipe. R restarts. Your best score is saved.",
+      "publisher": "Swirl Games",
+      "license": "MIT",
+      "color": "F59E0B",
+      "glyph": "2048",
+      "launch": "/home/user/Games/2048/2048.elf",
+      "featured": 1,
+      "files": [
+        {
+          "path": "packages/2048/2048.elf",
+          "dest": "/home/user/Games/2048/2048.elf",
+          "sha256": "c8a20c41da3254c0c2e5bea5741f316734deaa2235ab106220e4d317e9b70e51",
+          "size": 61896
+        }
+      ]
+    },
+    "blocks": {
+      "version": "1.0.0",
+      "description": "Stack, clear, repeat.",
+      "author": "Swirl",
+      "title": "Blocks",
+      "category": "Games",
+      "tagline": "Stack, clear, repeat.",
+      "long": "The falling-block puzzle you know. Rotate and place the pieces to make full lines, which vanish and score points. Every ten lines the pieces fall faster.\\nArrows to move and rotate, Space for a hard drop, P to pause.",
+      "publisher": "Swirl Games",
+      "license": "MIT",
+      "color": "7C5CFF",
+      "glyph": "blocks",
+      "launch": "/home/user/Games/blocks/blocks.elf",
+      "files": [
+        {
+          "path": "packages/blocks/blocks.elf",
+          "dest": "/home/user/Games/blocks/blocks.elf",
+          "sha256": "8e2f3b0ac2cc5cfbddf556ca3f38b22acd1c1466559a0acfa0f233db94e5fb07",
+          "size": 62256
+        }
+      ]
+    },
+    "breakout": {
+      "version": "1.0.0",
+      "description": "Paddle, ball, bricks.",
+      "author": "Swirl",
+      "title": "Breakout",
+      "category": "Games",
+      "tagline": "Paddle, ball, bricks.",
+      "long": "Bounce the ball off your paddle and smash every brick. Where the ball hits the paddle changes its angle, so aim your shots. Clear the wall for a faster, trickier next level.\\nMove with the mouse or A and D. Click or Space to launch.",
+      "publisher": "Swirl Games",
+      "license": "MIT",
+      "color": "E5484D",
+      "glyph": "bricks",
+      "launch": "/home/user/Games/breakout/breakout.elf",
+      "files": [
+        {
+          "path": "packages/breakout/breakout.elf",
+          "dest": "/home/user/Games/breakout/breakout.elf",
+          "sha256": "46999dedc0a19f4604a2531bab507baa98d245edde2876913dc17e61b76b9141",
+          "size": 66328
+        }
+      ]
+    },
+    "snake": {
+      "version": "1.0.0",
+      "description": "Eat, grow, don't crash.",
+      "author": "Swirl",
+      "title": "Snake",
+      "category": "Games",
+      "tagline": "Eat, grow, don't crash.",
+      "long": "A classic reborn for SwirlOS. Guide the snake to the berries, grow longer with every bite and steer clear of the walls and your own tail. The faster you eat, the faster it gets.\\nArrow keys or WASD to steer, Space to pause. Your best score is saved.",
+      "publisher": "Swirl Games",
+      "license": "MIT",
+      "color": "2FA866",
+      "glyph": "snake",
+      "launch": "/home/user/Games/snake/snake.elf",
+      "featured": 1,
+      "files": [
+        {
+          "path": "packages/snake/snake.elf",
+          "dest": "/home/user/Games/snake/snake.elf",
+          "sha256": "2ffe9ba6da630fb49ca75adc5bdc11f030bc9d450b68fad99fb3e0b46c20275f",
+          "size": 58048
+        }
+      ]
+    },
     "welcome": {
       "version": "1.0.0",
       "description": "Adds a 'welcome' terminal command with a short intro to spm.",
       "author": "qwerwasi6-lab",
+      "title": "Welcome to spm",
+      "category": "Tools",
+      "tagline": "A friendly intro command for the terminal.",
+      "publisher": "Swirl",
+      "license": "MIT",
+      "color": "3B82F6",
+      "glyph": "tool",
       "files": [
         {
           "path": "packages/welcome/welcome.json",

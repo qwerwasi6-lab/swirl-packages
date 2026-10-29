@@ -5,6 +5,16 @@
   "author": "qwerwasi6-lab",
   "deps": [],
   "files": [
-    { "src": "welcome.json", "dest": "/system/gterm/welcome.json" }
-  ]
+    {
+      "src": "welcome.json",
+      "dest": "/system/gterm/welcome.json"
+    }
+  ],
+  "title": "Welcome to spm",
+  "category": "Tools",
+  "tagline": "A friendly intro command for the terminal.",
+  "publisher": "Swirl",
+  "license": "MIT",
+  "color": "3B82F6",
+  "glyph": "tool"
 }

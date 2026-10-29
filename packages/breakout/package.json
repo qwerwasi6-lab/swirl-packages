@@ -1,0 +1,21 @@
+{
+  "name": "breakout",
+  "version": "1.0.0",
+  "description": "Paddle, ball, bricks.",
+  "author": "Swirl",
+  "title": "Breakout",
+  "category": "Games",
+  "tagline": "Paddle, ball, bricks.",
+  "long": "Bounce the ball off your paddle and smash every brick. Where the ball hits the paddle changes its angle, so aim your shots. Clear the wall for a faster, trickier next level.\\nMove with the mouse or A and D. Click or Space to launch.",
+  "publisher": "Swirl Games",
+  "license": "MIT",
+  "color": "E5484D",
+  "glyph": "bricks",
+  "launch": "/home/user/Games/breakout/breakout.elf",
+  "files": [
+    {
+      "src": "breakout.elf",
+      "dest": "/home/user/Games/breakout/breakout.elf"
+    }
+  ]
+}

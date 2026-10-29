@@ -1,0 +1,2 @@
+Drop the shareware doom1.wad in this folder, run `python3 tools/mkindex.py`, then commit and push.
+Until then mkindex leaves DOOM out of the index so nobody gets a broken install.

@@ -12,7 +12,15 @@ downloads. Commit and push index.json together with the package files.
 package.json:
   { "name": "foo", "version": "1.0.0", "description": "...",
     "author": "you", "deps": ["other-pkg"],
-    "files": [ { "src": "foo.json", "dest": "/system/gterm/foo.json" } ] }
+    "files": [ { "src": "foo.json", "dest": "/system/gterm/foo.json" } ],
+    // optional, shown by Swirl Store:
+    "title": "Foo", "category": "Games|Apps|Tools", "tagline": "one line",
+    "long": "longer description", "publisher": "you", "license": "MIT",
+    "color": "2E86E0", "glyph": "snake|blocks|2048|bricks|doom|bag|tool",
+    "launch": "/home/user/Games/foo/foo.elf", "featured": true,
+    // set on packages that ship a big file you add yourself (e.g. a game's
+    // data): the package is left out of the index until the file exists
+    "skip_if_missing": true }
   - src  = file inside packages/<name>/ (sub-folders are fine)
   - dest = absolute install path on SwirlOS: under /system/ or /home/user/
            (spm refuses /system/kernel/ and /system/spm/)
@@ -66,15 +74,28 @@ def main():
                 die(f"{name}: bad dest '{dest}'")
             fpath = os.path.join(ROOT, rel)
             if not os.path.isfile(fpath):
+                if meta.get("skip_if_missing"):
+                    print(f"mkindex: note: skipping '{name}' (missing {rel}) - add the file and re-run")
+                    files = None
+                    break
                 die(f"{name}: missing file {rel}")
             data = open(fpath, "rb").read()
             files.append({"path": rel, "dest": dest,
                           "sha256": hashlib.sha256(data).hexdigest(), "size": len(data)})
+        if files is None:
+            continue
         if not files:
             die(f"{name}: no files listed")
         entry = {"version": ver, "description": meta.get("description", "")}
         if meta.get("author"):
             entry["author"] = meta["author"]
+        # store listing fields (Swirl Store); all optional
+        for k in ("title", "category", "tagline", "long", "publisher", "license",
+                  "color", "glyph", "launch"):
+            if isinstance(meta.get(k), str) and meta[k]:
+                entry[k] = meta[k]
+        if meta.get("featured"):
+            entry["featured"] = 1
         if meta.get("deps"):
             entry["deps"] = list(meta["deps"])
         entry["files"] = files

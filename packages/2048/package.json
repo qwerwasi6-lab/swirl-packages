@@ -1,0 +1,22 @@
+{
+  "name": "2048",
+  "version": "1.0.0",
+  "description": "Slide, merge, reach the big one.",
+  "author": "Swirl",
+  "title": "2048",
+  "category": "Games",
+  "tagline": "Slide, merge, reach the big one.",
+  "long": "Slide the tiles around the board. Two tiles with the same number merge into one, double the value. Keep going until you reach 2048 - or run out of moves.\\nArrow keys, WASD or a mouse swipe. R restarts. Your best score is saved.",
+  "publisher": "Swirl Games",
+  "license": "MIT",
+  "color": "F59E0B",
+  "glyph": "2048",
+  "launch": "/home/user/Games/2048/2048.elf",
+  "files": [
+    {
+      "src": "2048.elf",
+      "dest": "/home/user/Games/2048/2048.elf"
+    }
+  ],
+  "featured": true
+}
