@@ -1,0 +1,10 @@
+{
+  "name": "reboot",
+  "engine": "pipeline",
+  "category": "system",
+  "usage": "poweroff / reboot",
+  "summary": "also in the start menu",
+  "steps": [
+    { "syscall": "power", "args": [1] }
+]
+}

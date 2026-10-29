@@ -1,0 +1,125 @@
+SDL2 runtime - /system/lib/libsdl2.swo
+========================================
+
+The SDL2-compatible graphics/input runtime is a REAL FILE on the system
+volume, at /system/lib/libsdl2.swo. Applications do not carry SDL code
+inside their binaries; they map this file at runtime.
+
+Why
+---
+Philosophy rule 1 (/system/doc/philosophy.txt): EVERYTHING IS A REAL
+FILE ON A REAL DISK. A library baked into every app binary would be a
+hidden copy - undeletable, unlistable, unreplaceable, and invisible to
+the file manager. libsdl2.swo is the single copy: you can list it in
+Files, checksum it, replace it with a rebuild, or delete it and watch
+every SDL app fail with a clear "cannot load /system/lib/libsdl2.swo"
+instead of pretending nothing happened.
+
+File format
+-----------
+A standard ELF64 shared object (ET_DYN), linked at vaddr 0:
+
+  - position independent,
+  - self-contained: NO undefined symbols (the freestanding formatter,
+    mem/str helpers and allocator forwarding live inside, in
+    sdl_libc.c),
+  - .rela.dyn contains R_X86_64_RELATIVE entries ONLY (a version
+    script exports just the entry symbol, so internal calls bind at
+    link time),
+  - e_entry points at one function:
+
+        const SDL2_Api *sdl2_api_get(const SDL2_Hooks *hooks);
+
+    It receives the consumer's allocator and returns the relocated API
+    table (user/lib/sdl2/sdl2_api.h is the contract).
+
+How apps load it
+----------------
+Apps link the tiny loader stub user/lib/sdl2_dyn.c (~200 lines of
+forwarders) and call, before any other SDL call:
+
+    sdl2_open(0);        /* NULL = /system/lib/libsdl2.swo */
+
+which does:
+  1. SYS_LIB_LOAD(76) -> kernel/dynlib.c maps the file resident (LIB
+     pool, pages tagged PMMO_LIB) and applies the relocations,
+  2. reads e_entry from the same file (the file is the contract),
+  3. calls it with {malloc, free, calloc, realloc} from the app's own
+     allocator (sdl_heap.o for plain apps, the doomcompat allocator
+     for DOOM),
+  4. stores the returned table; every SDL_* forwarder goes through it
+     - the same pattern as SDL's own dynapi.
+
+Consumers on this volume
+------------------------
+  /system/apps/doom.elf      DOOM (doomgeneric_sdl backend)
+  /system/apps/sdltest.elf   video smoke test (surface + renderer)
+  /system/apps/sdlin.elf     input smoke test (keys/mouse/close)
+  /system/apps/gametest.elf  gamelib + IMG + renderer self-test (GAMETEST: ALL PASS)
+  /system/apps/gamedemo.elf  "Orbit Dodge", sample game (see gamelib.txt)
+
+Kernel side: /system/doc/syscall-abi.txt addendum v2, syscall 76.
+Source: user/lib/sdl2/ (the library) and user/lib/sdl2_dyn.c (stub).
+
+What is implemented (r15)
+-------------------------
+  video     windows (one WM window each; OpenGL windows: see OPENGL below), window surface, surfaces
+            (blit/stretch/fill/colorkey/alpha+color mod, BMP load/save)
+  render    software renderer: blend NONE/BLEND/ADD/MOD/MUL, points/lines/
+            rects (int + float), RenderCopy/CopyEx/CopyF/CopyExF (scale, flip,
+            rotation about any pivot, nearest or bilinear), logical size,
+            SetScale, viewport, clip, render targets, streaming textures,
+            ReadPixels. Textures are ARGB8888 internally.
+            Like real SDL2, SDL_RenderClear ignores viewport and clip rect.
+  events    keyboard (scancodes/keycodes/mods/state), mouse, window events,
+            text input, SDL_PushEvent/PeepEvents, user events
+  timers    SDL_AddTimer (run from PumpEvents/Delay - single threaded)
+  files     RWops (file + memory), SDL_LoadFile, GetBasePath/GetPrefPath
+  audio     NULL device only: callbacks run at real time, output is discarded
+            (SwirlOS has no sound-card driver yet). Games run, silently.
+  threads   NOT supported: SDL_CreateThread fails with an error, mutexes and
+            semaphores are single-threaded stubs.
+  not here  GLES, shaders, SDL_ttf, SDL_mixer, joysticks/game controllers.
+            SDL_image-style loading is provided app-side by gameimg.h.
+
+Self-test
+---------
+Set  [test] sdl = gametest  in /system/config/swirl.conf and boot: the serial
+log ends with "GAMETEST: ALL PASS" (or "GAMETEST: n FAILED" + the failing
+check). Use sdltest / sdlin for the original video / input smoke tests.
+
+OPENGL (SDL_GL_*, r15)
+----------------------
+SDL_WINDOW_OPENGL windows + SDL_GL_* are implemented. The GL itself is TinyGL
+(software OpenGL 1.1, fixed function) built INTO libsdl2.swo; a game links
+build/sdlapp/sdl2_gl_dyn.o (gl* forwarders, resolved once through
+SDL_GL_GetProcAddress) and includes <SDL2/SDL_opengl.h> (or <GL/gl.h>).
+
+  SDL_GL_CreateContext / DeleteContext / MakeCurrent / SwapWindow
+  SDL_GL_SetSwapInterval (0 = free run, 1 = ~60 Hz)  SDL_GL_Get/SetAttribute
+  SDL_GL_GetProcAddress  SDL_GL_GetDrawableSize  SDL_GL_Get/ResetAttributes
+  SDL_GL_ExtensionSupported (always false)  SDL_GL_LoadLibrary (no-op)
+
+Rendering goes straight into the WM's tear-free flip buffers (no copy); the
+window cannot also use SDL_GetWindowSurface / SDL_Renderer.
+
+Limits (read before porting a game):
+  - ONE context at a time, GL 1.1 fixed function only. No shaders, no VBOs,
+    no FBOs, no GL_EXT/ARB extensions. Display lists, vertex arrays
+    (FLOAT/DOUBLE/INT/SHORT/BYTE element types, byte strides),
+    lighting, fog calls (ignored), glOrtho/glFrustum, glReadPixels work.
+  - Textures: every glTexImage2D image (RGB/RGBA/BGR/BGRA/LUMINANCE/ALPHA/
+    LUMINANCE_ALPHA, UNSIGNED_BYTE, any size) is resampled to 256x256 and
+    sampled NEAREST + REPEAT. Mip levels > 0 are ignored. 256 KB of heap per
+    texture: the SDL app heap is 3 MB, budget for it.
+  - NO blending. glEnable(GL_BLEND or GL_ALPHA_TEST) turns on 1-bit alpha
+    KEYING for textures (texel alpha >= 128 is drawn, the rest skipped), which
+    covers sprites/fonts/foliage but not translucency. glBlendFunc,
+    glDepthFunc/Mask, glAlphaFunc, glScissor, glColorMask, glPointSize,
+    glLineWidth, glFog* are accepted and ignored.
+  - 16-bit depth buffer, LEQUAL-style test, window width rounded down to a
+    multiple of 4. glTexSubImage2D is not supported (GL_INVALID_OPERATION).
+  - TinyGL never terminates the process: unsupported parameters set a GL
+    error (glGetError) and the call is dropped.
+Self-test + demo: build/gltest.elf, run with  [test] sdl = gltest  (prints
+GLTEST: ... done). NOT yet booted - see CHANGES-r15-wip.md.

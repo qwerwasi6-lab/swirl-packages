@@ -1,0 +1,7 @@
+{
+  "name": "wadinst",
+  "engine": "builtin",
+  "category": "files",
+  "usage": "wadinst [file]",
+  "summary": "game installer wizard (.wad files)"
+}

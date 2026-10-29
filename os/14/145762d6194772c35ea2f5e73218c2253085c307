@@ -1,0 +1,551 @@
+Abort:Annulla
+AbortDownload:Sei sicuro di voler annullare questo trasferimento?
+About:Informazioni
+All:Tutto
+AnimDisable:Disattiva animazioni
+AnimSpeedFrames:fotogrammi al secondo
+AnimSpeedLimit:Limita velocità a
+Animations:Animazioni
+Appearance:Aspetto
+BMPTitle:%s (Immagine BMP %lux%lu pixel)
+Back:Indietro
+BackImg:In sottofondo
+Backtoprevious:Indietro
+Backtosafety:Torna al modo sicuro
+BadBMP:Lettura del file BMP fallita.
+BadGIF:Lettura del file GIF fallita.
+BadICO:Lettura del file ICO fallita.
+BadObject:Errore nell'analisi del tipo di oggetto
+BadRedirect:Errata redirezione dell'URL
+BadSprite:Dati del file Sprite invalidi o corrotti.
+BadURL:The given URL was not able to be parsed
+Behaviour:Comportamento generale
+BlockAds:Nascondi messaggi/banner
+Bottom:Inferiore
+Browser:Strumenti
+Bytes: Byte
+CSSBase:Impossibile caricare il foglio di stile base
+CSSGeneric:Errore nell'elaborazione del CSS
+CacheDisc:Cache su disco
+CacheMemory:Memoria cache
+CacheNative:Versioni cache native
+Cancel:Annulla
+CaseSens:Maiuscole/Minuscole
+Choices:Scegli...
+ClearNS:Annulla selezione
+Clipboard:Clipboard
+ClipboardUTF8:Scrivi testo come UTF-8
+Close:Chiudi
+CloseTab:Chiudi scheda
+CloseWindow:Chiudi finestra
+Collapse:Raggruppa
+CompressPDF:Comprimi PDF
+ConfirmOverwrite:Richiedi conferma prima di sovrascrivere
+ContentBlocking:Blocca contenuti (AdBlock)
+ContentLanguage:Lingua contenuti
+ContextMenu:Menu contestuali
+CookieManagerHTTP:Solo connessioni HTTP
+CookieManagerHTTPS:Solo host sicuri via https
+CookieManagerSecure:Solo host sicuri
+CookieManagerSession:Sessione
+Cookies:Cookie
+Copies:Copie
+CopyClip:Copia nella clipboard
+CopyNS:Copia
+CopyURL:Copia indirizzo link
+CutNS:Taglia
+DPI:DPI
+Date1Week:1 settimana fa
+Date2Days:2 giorni fa
+Date2Week:2 settimane fa
+Date3Days:3 giorni fa
+Date3Week:3 settimane fa
+Date4Days:4 giorni fa
+Date5Days:5 giorni fa
+Date6Days:6 giorni fa
+DateToday:Oggi
+DateYesterday:Ieri
+Days:giorni
+Default:Predefinito
+DefaultFonts:Famiglia Font
+DeleteCookies:Cancella tutti i cookie
+DirectoryError:La directory '%s' è già esistente
+Display:Display
+DomainAll:(Tutti i domini)
+Domains:Domini
+Done:Completato
+DontRemove:Non rimuovere
+DontReplace:Non sostituire
+Download:%s di %s  ��  %s/s  ��  %s al termine
+DownloadDir:Percorso predefinito
+DownloadNotify:Notifica al completamento (Ringhio)
+DownloadU:%s sconosciuto  ��  %s/s  ��  %s totale
+Downloaded:%s completato  ��  average %s/s  ��  %s totale
+Downloads:Trasferimenti
+Duration:Durata
+Edit:Modifica
+EditFolder:Rinomina cartella
+EditLink:Modifica indirizzo
+EditTitle:Modifica titolo
+EditToolbar:Modifica barra strumenti
+EiBytes: EiB
+EmptyError:Il file è vuoto.
+Enable:Attivi
+EnableJS:Attiva JavaScript
+EncNotRec:Tipo di codifica sconosciuta.
+Encoding0:da intestazioni HTTP
+Encoding1:rilevato
+Encoding2:da <meta>
+EncodingUnk:Sconosciuto
+ErrorPage:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Errore nella pagina</title></head><body><h1>Spiacente, NetSurf non è in grado di visualizzare questa pagina.</h1><p><strong>%s</strong></p></body></html>
+Expand:Espandi
+Export:Esporta
+ExternalApp:Apri con applicazione esterna
+FastScrolling:Scrolling veloce
+FetchErrorDescription:Si è verificato un errore durante la connessione a %s
+FetchErrorTitle:Errore durante il recupero della pagina
+FetchFailed:Impossibile ottenere il documento
+FetchFailedToFinish:The fetcher for this request failed to complete
+FetchesCached:Su cache
+FetchesHost:Per host
+FetchesMax:Massima
+Fetching:Ricezione
+FileDate:Data
+FileDirectory:Directory
+FileError:Il file è inesistente:
+FileIndex:Indice di %s
+FileName:Nome
+FileOpenError:Impossibile aprire il file '%s'
+FileParent:^ Livello superiore
+FileSize:Dimensione
+FileTime:Ora
+FileType:Tipo
+FindTextNS:Trova testo...
+FitPage:Adatta pagina
+Folder:Cartella
+Folders:Cartelle
+FontCursive:Corsivo
+FontFamilies:Famiglia Font
+FontFantasy:Fantasia
+FontMono:Monospaziato
+FontSans:Sans-serif
+FontSerif:Serif
+FontSize:Dimensione Font
+Fonts:Font
+ForeImg:In primo piano
+FormBadSubmit:Attenzione: Il form non può essere inviato
+FormButton:Attenzione: il pulsante non può essere attivato
+FormCheckbox:Clicca per scegliere questa opzione
+FormFile:Inserisci un file da inviare qui
+FormRadio:Clicca per selezionare questa opzione
+FormReset:Resetta il form
+FormSelect:Clicca per scegliere un oggetto del form
+FormSubmit:Invia il risultato del form a: %s
+FormTextarea:Clicca per editare il testo
+FormTextbox:Clicca per editare il campo di testo
+Form_Drop:Inserisci un file qui
+Form_Many:(Molti)
+Form_None:
+Form_Reset:Resetta
+Form_Submit:Invia
+Formatting:formattazione del documento in corso...
+Forward:Avanti
+Frame:Frame
+FrameDrag:Ridimensione dei frame
+FrameNewTab:Apri frame in nuova scheda
+FrameNewWin:Apri frame in nuova finestra
+FrameOnly:Apri frame in questa finestra
+Friday:Venerdi
+GBytes: GB
+GIFTitle:%s (Immagine GIF %lux%lu pixel)
+GiBytes: GiB
+GlobalHistory:Cronologia globale
+HTTP0:OK
+HTTP200:OK
+HTTP201:Creato
+HTTP202:Accettato
+HTTP203:Informazione non autorevole
+HTTP204:Nessun contenuto
+HTTP205:Resetta contenuto
+HTTP206:Contenuto parziale
+HTTP300:Scelte multiple
+HTTP301:Rimosso permanentemente
+HTTP302:Trovato
+HTTP303:Mostra altro
+HTTP304:Non modificato
+HTTP305:Usa Proxy
+HTTP307:Redirezione temporanea
+HTTP400:Richiesta errata
+HTTP401:Autorizzazione negata
+HTTP402:Richiesta di pagamento
+HTTP403:Vietato
+HTTP404:Non trovato
+HTTP405:Metodo non permesso
+HTTP406:Non accettabile
+HTTP407:Autentificazione Proxy necessaria
+HTTP408:Timeout della richiesta
+HTTP409:Conflitto
+HTTP410:Irraggiungibile
+HTTP411:Lunghezza richiesta
+HTTP412:Precondizione fallita
+HTTP413:Entità richiesta troppo larga
+HTTP414:Richiesta URI troppo lunga
+HTTP415:Tipo di media non supportato
+HTTP416:Estensione richiesta non soddisfabile
+HTTP417:Previsione fallita
+HTTP500:Errore interno del server
+HTTP501:Non implementata
+HTTP502:Gateway errato
+HTTP503:Servizio non disponibile
+HTTP504:Timeout Gateway
+HTTP505:Versione HTTP non supportata
+Help:Aiuto
+HelpCredits:Ringraziamenti
+HelpLicence:Licenza
+HistGlobalNS:Mostra cronologia globale
+HistLocalNS:Mostra cronologia locale
+History:Cronologia locale
+HistoryAge:Conserva cronologia per
+Home:Pagina iniziale
+HomePageBlank:Usa pagina vuota
+HomePageCurrent:Usa pagina corrente
+HomePageDefault:Usa pagina predefinita
+HomePageURL:URL
+Host:Host
+Hotlist:Segnalibri
+HotlistAdd:Aggiungi
+HotlistContact:Contatta gli sviluppatori di NetSurf
+HotlistDefaultFolderName:Voci non ordinate
+HotlistDocumentation:Documentazione
+HotlistDownloads:Scarica l'ultima versione
+HotlistHomepage:Pagina iniziale di NetSurf
+HotlistSaveError:Non è stato possibile salvare correttamente i segnalibri.
+HotlistShowNS:Mostra
+ICOTitle:%s (Immagine ICO %lux%lu pixel)
+Images:Immagini
+ImgStyle0:Usa OS
+ImgStyle1:Diretto su schermo
+ImgStyle2:Dithered
+ImgStyle3:Errore diffuso
+Info:Informazioni
+InvalidURL:L'indirizzo <em>%s</em> non è stato riconosciuto.
+JPEGTitle:%s (Immagine JPEG %lux%lu pixel)
+KiBytes: KiB
+Languages:Lingua
+Left:Sinistro
+Link:Link
+LinkDload:Scarica file
+LinkNew:Nuova finestra
+LinkNewTab:Apri in nuova scheda
+LinkNewWin:Apri in nuova finestra
+LinkSave:Salva
+LinkText:Testo
+Links:Indirizzi
+LoadError:Il file non può essere caricato a causa di un errore:
+Loading:Caricamento della pagina...
+Login:Login
+LoginAgain:Le credenziali per il sito %s ed il realm "%s" sono state rifiutate.
+LoginDescription:Il sito %s con elementi di tipo realm "%s" richiede delle credenziali per l'accesso.
+LoginTitle:Richiesta di Autentificazione
+MBytes: MB
+MM:mm
+MNGError:Errore durante la conversione MNG/PNG/JNG: %i
+Margins:Margini
+MiBytes: MiB
+Minimum:Minimo
+MiscError:Si è verificato un errore inatteso:
+Miscellaneous:Impostazioni varie
+Monday:Lunedi
+MousePointers:Puntatori del mouse
+Navigate:Visualizza
+NeedRestart:Queste modifiche avranno effetto al prossimo riavvio di NetSurf
+NetSurf:NetSurf
+NetSurfCopyright:© 2003-2023 A cura degli sviluppatori di NetSurf
+New:Nuovo
+NewFolder:Crea nuova cartella
+NewFolderName:Nuova cartella
+NewLink:Crea nuovo indirizzo
+NewTab:Nuova scheda
+NewWindowNS:Nuova finestra
+Next:Successivo
+No:No
+NoDirError:%s non è una directory
+NoDiscSpace:Spazio insufficiente nel disco.
+NoMemory:Memoria insufficiente per l'esecuzione di NetSurf. Per favore liberane un pò e riprova nuovamente.
+NoNameError:Inserisci un nome
+NoTitle:<Senza titolo>
+NoURLError:Inserisci un URL
+None:Nessuna
+Not2xx:Il server ha riportato un errore
+NotCSS:Attenzione: La dicitura "Foglio di stile" non ha nulla a che vedere con i CSS
+NotFavIco:Favicon non supportata
+NotFound:Non trovato
+OK:OK
+OSPointers:Se possibile usa i puntatori del mouse di sistema
+ObjDraw:Draw
+ObjError:Errore nel caricamento dell'oggetto: %s
+ObjInfo:Informazioni
+ObjPrint:Stampa
+ObjReload:Ricarica
+ObjSave:Salva
+ObjShow:Mostra file
+Object:Oggetto
+Open:Apri
+OpenFile:Apri file locale...
+OpenURL:Apri URL
+OptDefault:Salva come predefinito
+OptionNoQuit:Iconifica su AmiDock alla chiusura di NetSurf
+OptionNoWindow:Non aprire la finestra all'avvio (avvio da AmiDock)
+OverwriteFile:Un file con questo nome è già esistente, continuare comporterà la sovrascrittura del file originale.
+PDF:PDF
+PDFNS:PDF...
+PNGError:Errore durante la conversione PNG.
+PNGTitle:%s (Immagine PNG %lux%lu pixel)
+Page:Pagina
+ParsingFail:Analisi del documento fallita.
+Password:Password
+PasteNS:Incolla
+PiBytes: PiB
+Preferences:Preferenze di NetSurf
+Prev:Precedente
+PrintError:Si è verificato un errore durante la stampa:
+PrintNS:Stampa...
+PrintSheetFilled:Il foglio stampato è pieno
+PrintSheetsFilled:I fogli stampati sono pieni
+Printer:Stampante
+Printing:Stampa della pagina
+PrivacyDescription:Si è verificato un errore della privacy durante la comunicazione con %s fai attenzione, questo potrebbe essere un errore di configurazione del sito oppure un tentativo di rubare informazioni private (password, messaggi o numeri di carte di credito)
+PrivacyTitle:Errore della privacy
+Proceed:Procedi
+Processing:elaborazione del documento in corso...
+Progress:%s di %s
+ProgressU:%s
+Proxy:Proxy HTTP
+ProxyBasic:Autentificazione base
+ProxyNTLM:Autentificazione NTLM
+ProxyNoAuth:Semplice
+ProxyNone:Nessuno
+ProxyType:Tipo di Proxy
+Pt:pt
+Quit:Esci
+QuitDownload:Uno o più file si trovano in fase di scaricamento, sei sicuro di voler chiudere NetSurf?
+Realm:Realm
+RecPercent:ricevuti %s (%u%%)
+Received:ricevuti %s
+Redirecting:redirezione in corso...
+Redraw:Ridisegna pagina
+Remove:Rimuovi indirizzo
+RemoveBackground:Rimuovi sfondo
+RemoveHotlist:Sei sicuro di voler rimuovere questo indirizzo dai segnalibri?
+Render:Interprete
+RenderAll:Blocca tutto l'interprete
+RenderAnims:Buffer animazioni
+Replace:Sostituisci il file
+ResetUsage:Resetta statistiche
+Resolution:Risoluzione
+ResolutionX:Orizzontale
+ResolutionY:Verticale
+Right:Destro
+SSLCertErrBadIssuer:L'emittente di questo certificato è sconosciuto. Questo può verificarsi se il browser non è in grado di accedere al pacchetto dell'autorità di certificazione (CA).
+SSLCertErrBadSig:Il certificato non è stato firmato correttamente.
+SSLCertErrCertMissing:Il certificato mancava dalla catena.
+SSLCertErrChainSelfSigned:La catena dei certificati è autofirmata.
+SSLCertErrHostnameMismatch:Il certificato è per un host diverso rispetto al server.
+SSLCertErrOk:Il certificato non contiene errori.
+SSLCertErrRevoked:Il certificato è stato revocato dall'emittente.
+SSLCertErrSelfSigned:Il certificato è autofirmato.
+SSLCertErrTooOld:Il certificato è scaduto.
+SSLCertErrTooYoung:Il certificato non è ancora valido.
+SSLCertErrUnknown:Si è verificato un problema sconosciuto durante l'elaborazione del certificato.
+SSLCerts:Certificati SSL
+SSLError:NetSurf non è stato in grado di verificare l'autenticità di questo certificato SSL, per favore verifica i dettagli presenti di seguito
+SSL_Certificate_Accept:_Accetta
+SSL_Certificate_Issuer:Emittente: %s
+SSL_Certificate_Reject:_Rifiuta
+SSL_Certificate_Serial:Seriale: %ld
+SSL_Certificate_Subject:Soggetto: %s
+SSL_Certificate_Type:Tipo: %i
+SSL_Certificate_ValidFrom:Valido da: %s
+SSL_Certificate_ValidTo:Valido fino a: %s
+SSL_Certificate_Version:Versione: %ld
+Saturday:Sabato
+SaveAs:Salva come...
+SaveAsNS:Salva come
+SaveCompNS:Cartella...
+SaveComplete:Salva tutto...
+SaveDraw:Pagina Web
+SaveError:Il file non può essere salvato a causa di un errore:
+SaveLink:Link
+SaveObject:Oggetto
+SaveSelection:Selezione
+SaveSource:Sorgente
+SaveText:Pagina Web
+SaveURL:Salva indirizzo
+Scale:Scalati
+ScaleDec:Diminuisci
+ScaleInc:Aumenta
+ScaleNS:Scala di zoom
+ScaleNorm:Normale
+ScaleQuality:Massima qualità di visualizzazione
+Scaled:Scalate
+Scaling:Scala
+Screen:Gestione schermi
+ScreenOwn:Schermo proprietario
+Scripting:Scripting
+ScrollBoth:Sposta il mouse tenendo premuto il tasto sinistro per scrollare il contenuto della pagina
+ScrollDown:Clicca sulla freccia per scrollare in basso
+ScrollH:Trascina la barra per scrollare orizzontalmente
+ScrollLeft:Clicca sulla freccia per scrollare a sinistra
+ScrollPDown:Clicca per scrollare in basso di una pagina
+ScrollPLeft:Clicca per scrollare a sinistra di una pagina
+ScrollPRight:Clicca per scrollare a destra di una pagina
+ScrollPUp:Clicca per scrollare in alto di una pagina
+ScrollRight:Clicca sulla freccia per scrollare a destra
+ScrollUp:Clicca sulla freccia per scrollare in alto
+ScrollV:Trascina la barra per scrollare verticalmente
+SearchError:Ricerca non valida.
+SearchProvider:Ricerca su provider
+SearchURL:Ricerca da barra URL
+SearchWeb:Ricerca nel Web
+SelSave:Salva
+SelectAllNS:Seleziona tutto
+SelectClick:Clicca sull'elemento per selezionarlo
+SelectClose:Clicca per chiudere l'elemento selezionato
+SelectFile:Seleziona file...
+SelectMClick:Clicca sull'elemento per selezionarlo, sono supportate le scelte multiple
+SelectMenu:Seleziona
+Selecting:Selezione
+Selection:Seleziona
+SendReferer:Invia informazioni sul referral del sito
+SetPassword:Imposta Password
+Settings:Preferenze
+SettingsEdit:Modifica
+SettingsSave:Salva
+ShowAll:Mostra Tutto
+ShowCookies:Mostra cookie...
+Size:Dimensione
+SnapshotWindow:Fissa finestra
+Source:Sorgente...
+Sprite:Sprite
+SpriteTitle:%s (Immagine Sprite %lux%lu pixel)
+Sticky:Fissi
+Stop:Interrompi
+Stopped:Interrotto
+Sunday:Domenica
+SuppressImages:Sopprimi immagini
+TabActive:Apri le nuove schede in sottofondo
+TabLast:Apri le nuove schede dopo quella corrente
+TabMiddle:Usa tasto centrale del mouse per aprire le schede
+TabbedBrowsing:Navigazione a schede
+TextNS:Testo...
+Theme:Tema grafico
+ThemeApplyErr:Si è verificato un errore durante il tentativo di applicazione del tema
+ThemeInstActive:Il tema è attualmente in fase di scaricamento o di installazione. Attendere il completamente del processo oppure annullare l'intera operazione prima di installare altri temi.
+ThemeInstDown:Per favore attendere lo scaricamento del tema grafico.
+ThemeInstall:Si desidera installare il tema '%s' di %s?
+ThemeInstallErr:Si è verificato un errore durante il tentativo di installazione del tema scaricato
+ThemeInvalid:Il tema scaricato non è compatibile oppure richiede una versione più recente di NetSurf.
+Thursday:Giovedi
+TiBytes: TiB
+Timeout:Questo sito sta impiegando troppo a rispondere
+TimeoutDescription: La connessione a %s non può essere stabilita. Il sito potrebbe essere temporaneamente indisponibile o troppo occupato per rispondere.
+TimeoutTitle:Connessione scaduta
+ToolAddress:Barra indirizzi
+ToolButtons:Pulsanti
+ToolStatus:Barra di stato
+ToolThrob:Indicatore di attività
+Toolbar:Barra strumenti
+Toolbars:Barre strumenti
+Top:Superiore
+Tree:Albero
+TreeAdded:Aggiunto: %s
+TreeClear:Annulla predefinito
+TreeComment:Commento: %s
+TreeDefault:Imposta come predefinito
+TreeDelete:Elimina
+TreeDomain:Dominio: %s%s
+TreeExpires:Scadenza: %s
+TreeExport:Esporta...
+TreeHeaders: (da intestazioni)
+TreeHotlist:Segnalibri di NetSurf
+TreeImport:URL importati
+TreeLast:Ultima visita: %s
+TreeLastUsed:Ultimo utilizzo: %s
+TreeLaunch:Visita URL
+TreeLoadError:L'albero della directory non è stato caricato correttamente.
+TreeNewFolder:Nuova cartella
+TreeNewLink:Nuovo indirizzo
+TreePath:Percorso: %s%s
+TreePersistent:Persistenza: %s
+TreeSecure:Solo host sicuri: %s
+TreeSession:Fine sessione
+TreeUnknown:Sconosciuta/o
+TreeUnused:Inutilizzato
+TreeValue:Valore: %s
+TreeVersion:Versione: %s
+TreeVersion0:Netscape
+TreeVersion1:RFC 2109
+TreeVersion2:RFC 2965
+TreeVisited:Visitato: %s
+TreeVisits:Visite totali: %i
+TreeviewLabelContent:Contenuto:
+TreeviewLabelDomain:Dominio:
+TreeviewLabelDomainFolder:Cartella dominio:
+TreeviewLabelExpires:Scadenza:
+TreeviewLabelFolder:Cartella
+TreeviewLabelIssuer:Emittente
+TreeviewLabelLastUsed:Ultimo utilizzo:
+TreeviewLabelLastVisit:Ultima visita:
+TreeviewLabelName:Nome:
+TreeviewLabelPath:Percorso:
+TreeviewLabelPeriod:Periodo:
+TreeviewLabelPersistent:Persistenza:
+TreeviewLabelRestrictions:Restrizioni:
+TreeviewLabelSerial:Seriale
+TreeviewLabelTitle:Titolo:
+TreeviewLabelType:Tipo
+TreeviewLabelURL:URL:
+TreeviewLabelValidFrom:Valido da
+TreeviewLabelValidUntil:Valido fino a
+TreeviewLabelVersion:Versione:
+TreeviewLabelVisits:Visite:
+TrueColour:True color
+TryAgain:Ricarica
+Tuesday:Martedi
+URIError:NetSurf non è stato in grado di processare questo file URI a causa di un errore di sintassi.
+URLSuggest:URL recenti
+Unwritten:Scrittura dei dati sul file fallita.
+UpLevel:Livello superiore
+Use:Usa
+Username:Nome Utente
+Utilities:Utilità
+View:Mostra
+ViewCertificates:Visualizza i dettagli del certificato
+ViewCertificatesNotPossible:Le informazioni sul certificato non sono disponibili per la visualizzazione
+WebPTitle:%s (Immagine WebP %lux%lu pixel)
+Wednesday:Mercoledi
+Window:Finestra
+WindowReset:Resetta posizione della finestra
+WindowSave:Imposta come posizione predefinita
+WindowSize:Copia posizione della finestra
+WindowStagr:Sfalsa posizione della finestra
+Yes:Si
+con_advanced:Avanzate
+con_cache:Cache
+con_connect:Connessione
+con_content:Contenuto
+con_fonts:Font
+con_general:Generale
+con_home:Pagina iniziale
+con_image:Immagini
+con_inter:Interfaccia
+con_lang:Lingua
+con_memory:Memoria
+con_rendering:Rendering
+con_secure:Sicurezza
+con_theme:Temi
+kBytes: KB
+obj:oggetto
+objs:oggetti
+styl:foglio di stile
+styls:fogli di stile

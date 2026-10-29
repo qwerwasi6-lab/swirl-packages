@@ -1,0 +1,31 @@
+{
+  "name": "cat",
+  "engine": "pipeline",
+  "category": "files",
+  "usage": "cat <file>",
+  "summary": "print a file",
+  "args": [
+    {
+      "name": "file"
+    }
+  ],
+  "steps": [
+    { "if": "$# < 1", "then": [ { "exit": 0 } ] },
+    { "var": "p", "path": "$file" },
+    { "syscall": "open", "args": ["$p", 1], "as": "fd" },
+    { "if": "$fd < 0",
+      "then": [
+        { "print": "cat: cannot open $p", "color": "err" },
+        { "exit": 0 }
+      ] },
+    // read until the kernel returns 0 (EOF); $RET = last syscall return
+    { "loop": { "until": "$RET == 0", "max": 1024 },
+      "steps": [
+        { "syscall": "read", "args": ["$fd", "@buf", 1023], "as": "n" },
+        { "if": "$n > 0",
+          "then": [ { "print_raw": "@buf", "len": "$n" } ] }
+      ] },
+    { "syscall": "close", "args": ["$fd"] },
+    { "print": "" }
+]
+}

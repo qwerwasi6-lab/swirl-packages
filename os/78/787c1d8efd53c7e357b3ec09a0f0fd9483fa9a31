@@ -1,0 +1,21 @@
+{
+  "name": "touch",
+  "engine": "pipeline",
+  "category": "files",
+  "usage": "touch <file>",
+  "summary": "create an empty file",
+  "args": [
+    {
+      "name": "file"
+    }
+  ],
+  "steps": [
+    { "if": "$# < 1", "then": [ { "exit": 0 } ] },
+    { "var": "p", "path": "$file" },
+    // flags: 1=READ 2=WRITE 4=CREATE (see guide.md -> syscalls)
+    { "syscall": "open", "args": ["$p", 6], "as": "fd" },
+    { "if": "$fd < 0",
+      "then": [ { "print": "touch: failed", "color": "err" } ],
+      "else": [ { "syscall": "close", "args": ["$fd"] } ] }
+]
+}

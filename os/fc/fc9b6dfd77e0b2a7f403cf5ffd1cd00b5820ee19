@@ -1,0 +1,56 @@
+SWIRLOS GAME SETUP - LICENSE TERMS AND DISCLAIMER
+==================================================
+
+IMPORTANT - READ CAREFULLY BEFORE INSTALLING.
+
+This Setup Wizard copies a game data file (a "WAD") into your SwirlOS
+Games folder and registers it with the DOOM launcher. The SwirlOS team
+asks you to accept the following terms before the installation starts.
+
+
+1. THE GAMES ARE NOT OURS
+-------------------------
+
+SwirlOS is a hobby operating system. It ships NO games and it does not
+contain any game code. DOOM is a product of id Software and the WAD file
+you are installing is the property of its original author(s) or rights
+holder(s). The SwirlOS team did not make it, does not host it, does not
+sell it, and cannot grant you any right to use it. Any legal question
+about a WAD belongs between you and its rights holder.
+
+
+2. YOU ACCEPT FULL RESPONSIBILITY
+---------------------------------
+
+By selecting "I accept" you confirm that:
+
+  - you already own this WAD file or have the right to use it,
+  - installing and running it on your computer is YOUR decision and
+    YOUR responsibility alone, not SwirlOS's,
+  - you understand the game engine runs on your hardware directly and
+    that third-party game data can contain anything at all.
+
+
+3. NO WARRANTY
+--------------
+
+The Setup Wizard, the DOOM launcher and SwirlOS itself are provided
+"AS IS" without any warranty whatsoever. If a WAD crashes the system,
+eats your save files, sets your cat on fire or does anything else: the
+authors of SwirlOS are not liable, to the maximum extent the law allows.
+
+
+4. WHAT THE WIZARD ACTUALLY DOES
+--------------------------------
+
+  - copies the WAD into /home/user/Games/<name>/game.wad
+  - appends one line to /home/user/Games/games.list
+  - places a real shortcut file (.game) on your Desktop
+  - optionally pins the DOOM launcher to the taskbar
+
+Nothing is deleted except by Uninstall, which removes exactly the
+files listed above. You can read and edit all of them: on SwirlOS,
+everything is a real file.
+
+
+Version 1, September 2026 - SwirlOS "Tornado"

@@ -1,0 +1,7 @@
+{
+  "name": "ping",
+  "engine": "builtin",
+  "category": "network",
+  "usage": "ping <ip>",
+  "summary": "ICMP echo (live, 4 packets)"
+}

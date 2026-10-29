@@ -1,0 +1,7 @@
+{
+  "name": "free",
+  "engine": "builtin",
+  "category": "system",
+  "usage": "uptime / free",
+  "summary": "session time / memory"
+}

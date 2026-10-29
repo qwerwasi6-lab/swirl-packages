@@ -1,0 +1,7 @@
+{
+  "name": "ls",
+  "engine": "builtin",
+  "category": "files",
+  "usage": "ls [-l] [path]",
+  "summary": "list a directory"
+}

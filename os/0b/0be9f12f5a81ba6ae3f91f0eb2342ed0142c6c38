@@ -1,0 +1,7 @@
+{
+  "name": "wifidebug",
+  "engine": "builtin",
+  "category": "network",
+  "usage": "wifidebug",
+  "summary": "network + driver diagnostics"
+}

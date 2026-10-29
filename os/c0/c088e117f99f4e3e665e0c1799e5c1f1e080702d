@@ -1,0 +1,13 @@
+{
+  "name": "uname",
+  "engine": "pipeline",
+  "category": "system",
+  "usage": "uname [-a]",
+  "summary": "kernel name / full line",
+  "steps": [
+    { "syscall": "sysinfo", "as": "si" },
+    { "if": "$1 == -a",
+      "then": [ { "print": "SwirlOS $si.hostname 0.1-tornado x86_64 SwirlFS" } ],
+      "else": [ { "print": "SwirlOS" } ] }
+]
+}

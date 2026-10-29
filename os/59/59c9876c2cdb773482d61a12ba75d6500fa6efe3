@@ -1,0 +1,7 @@
+{
+  "name": "cp",
+  "engine": "builtin",
+  "category": "files",
+  "usage": "cp <src> <dst>",
+  "summary": "copy (dst may be a dir)"
+}

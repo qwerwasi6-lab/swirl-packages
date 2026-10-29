@@ -1,0 +1,10 @@
+{
+  "name": "settings",
+  "engine": "pipeline",
+  "category": "session",
+  "usage": "settings",
+  "summary": "open the Settings app",
+  "steps": [
+    { "spawn": "/system/apps/gui/gsettings.elf" }
+]
+}

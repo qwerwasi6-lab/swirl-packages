@@ -1,0 +1,7 @@
+{
+  "name": "reload",
+  "engine": "builtin",
+  "category": "session",
+  "usage": "reload",
+  "summary": "rescan /system/gterm for new commands"
+}

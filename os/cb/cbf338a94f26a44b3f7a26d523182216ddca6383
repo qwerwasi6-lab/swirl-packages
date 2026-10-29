@@ -1,0 +1,9 @@
+# shell.conf — SwirlOS shell configuration
+# The shell (ring 3) reads this file from /system/config at startup.
+
+prompt     = swirl:/> 
+show-motd  = yes
+motd       = /system/share/motd.txt
+apps-dir   = /system/apps
+autostart  = /system/config/autostart.swirl
+user       = user

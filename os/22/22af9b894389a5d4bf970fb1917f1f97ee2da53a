@@ -1,0 +1,117 @@
+SwirlRun — userspace Win32 PE loader for SwirlOS (r18)
+======================================================
+
+SwirlRun runs real Windows x64 executables (PE32+) on SwirlOS with
+ZERO kernel support for .exe files. The kernel knows nothing about
+PE; SwirlRun is an ordinary ring-3 ELF (like Wine on Linux).
+
+  kernel: no exe logic, no PE parsing, no compat shims.
+          One new GENERIC syscall (79: set ring-3 TLS/GS base).
+  userspace: everything else.
+
+What runs today
+---------------
+  /system/apps/doom.exe   - a real Windows PE built with mingw-w64:
+                            the doomgeneric core + a Win32/GDI backend
+                            (RegisterClassExA, CreateWindowExA,
+                            CreateDIBSection, StretchDIBits, PeekMessage,
+                            timeGetTime). Plays the shareware demo from
+                            C:\DOOM\doom1.wad (= /home/user/DOOM).
+  /system/apps/hello.exe  - console fixture: WriteFile/printf/heap/sin().
+
+Boot one with swirl.conf:
+    [test] exe = doom.exe        (or hello.exe; 0 = off - DOOM autostart
+                                  is OFF by default; launch games from
+                                  Files or the desktop instead)
+
+32-bit (i386 PE32) games run through the w32 layer (r23): kernel32,
+user32, gdi32, shell32, version, shlwapi, imm32, winmm, msvcrt, ddraw,
+dinput, dsound. See Games/README.txt in the home folder.
+
+How it works
+------------
+swirlrun.elf (slot 3, 20 MB static arena) does:
+
+  1. resolve the spawn argument to an exe (Win32-style path mapping:
+     "C:\..." -> /home/user/..., "D:\..." -> /system/..., per-component
+     case-insensitive lookup like Wine's realpath),
+  2. read the whole PE, parse DOS/NT headers (PE32+ x64 only; 32-bit
+     PE and MZ/DOS are rejected with a clear message),
+  3. map sections into the arena, apply DIR64 base relocations,
+  4. bind every IAT entry against builtin "DLLs" implemented in this
+     same process with the Microsoft x64 calling convention
+     (gcc ms_abi):
+        kernel32.dll  memory/files/console/process/timing/sync/TLS
+        msvcrt.dll    heap/stdio(printf family w/ ms varargs)/
+                      string/ctype/math/qsort/CRT startup
+        user32.dll    classes/windows/messages (kernel WM events
+                      translated into real WM_KEYDOWN/MOUSEMOVE/etc),
+        gdi32.dll     CreateDIBSection + StretchDIBits blits into the
+                      WM window canvas + present
+        winmm.dll     timeGetTime (waveOut is a silent stub: SwirlOS
+                      has no audio mixer yet)
+        ntdll/shell32/advapi32  minimal stub tier
+     Unknown functions in known DLLs bind to a warn-once stub (Wine
+     policy); unknown DLLs fail the load loudly,
+  5. build a TEB + PEB in the arena, anchor the TEB at gs:[0] via
+     syscall 79 (SYS_TLS_SET - the arch_prctl(ARCH_SET_GS) of SwirlOS;
+     the scheduler carries the base across context switches),
+  6. run TLS callbacks, then jump to the entry point with RCX = PEB,
+     exactly like Windows. Exit goes through kernel32!ExitProcess.
+
+File paths: Win32 paths are mapped on every file call (CreateFileA,
+fopen, FindFirstFile...). doom.exe searches C:\DOOM\doom1.wad, which
+lands on /home/user/DOOM/doom1.wad - the shareware WAD ships with the
+system.
+
+The doom.exe build
+------------------
+Built by the Makefile with the portable mingw-w64 rootfs
+(tools/mingw-rootfs, extracted from Debian packages - no root needed):
+
+  make build/swirlrun-pe/doom.exe
+
+Sources: the in-tree doomgeneric port (user/doom) + a new Win32
+backend (user/swirlrun/pebuild/doomgeneric_win.c) + doom_main.c
+(GetCommandLineA parsing, -mb 6 -iwad C:\DOOM\doom1.wad defaults).
+
+Important build flags (DOOMPE_CFLAGS in the Makefile):
+  -fno-builtin           REQUIRED. The guest CRT is SwirlRun's msvcrt;
+                         GCC 14's builtin semantics for strncasecmp &
+                         friends miscompile against it (observed: the
+                         R_CheckTextureNumForName chain walk turned
+                         into a jmp-to-self at -O2; the whole PE is
+                         built at -O1 for the same reason).
+  -D__USE_MINGW_ANSI_STDIO=0
+                         printf resolves to msvcrt!printf (ours) rather
+                         than libmingwex's private formatter.
+
+Known limits (v1)
+-----------------
+  - x64 PE32+ only; i386 PE32 and MZ/DOS exes are detected and
+    rejected with an explanatory message.
+  - Single thread: no CreateThread (SwirlOS has no clone). Guests that
+    need threads won't run; DOOM's core does not.
+  - waveOut* are silent (no audio stack in SwirlOS yet).
+  - No LoadLibrary of on-disk DLLs; the builtin registry is fixed.
+  - C++ exceptions / SEH unwinding are stubs: guests must not throw
+    (DOOM doesn't).
+
+Debugging tips
+--------------
+  - Everything logs to the serial console: loader banners, each bound
+    DLL, STUB warnings, load failures with reasons.
+  - The kernel's exception dump gives RIP/CR2; subtract the load base
+    (logged as "image loaded at 0x...") to map onto the exe.
+  - Quick fixture loop: set [test] exe = hello.exe for a 5-second
+    end-to-end check of loader + CRT + console.
+
+DirectDraw (r20)
+  DDRAW.DLL is a builtin: DirectDrawCreate/Ex/Clipper/EnumerateA/ExA, one
+  object model for IDirectDraw/2/4/7 and IDirectDrawSurface/2/3/4/7 (later
+  versions only append methods, so one vtable serves all). Software surfaces in
+  8/16/24/32 bpp, palettes, colour keys, Blt (fill, stretch, key), BltFast,
+  Lock/Unlock, Flip chains. The primary surface is converted to the WM window
+  canvas on Flip/Blt/Unlock. Not yet: GetDC/ReleaseDC, overlays, FourCC/YUV,
+  Direct3D, DirectSound, DirectInput. Layout is x64 (64-bit guests); 32-bit
+  guests need the PE32 layer first.

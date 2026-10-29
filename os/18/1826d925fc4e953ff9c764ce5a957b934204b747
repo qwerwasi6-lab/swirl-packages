@@ -1,0 +1,23 @@
+{
+  "name": "usb",
+  "engine": "pipeline",
+  "category": "system",
+  "usage": "usb",
+  "summary": "USB devices straight from /proc/usb",
+  "steps": [
+    // straight from the kernel's own /proc/usb file
+    { "syscall": "open", "args": ["/proc/usb", 1], "as": "fd" },
+    { "if": "$fd < 0",
+      "then": [
+        { "print": "usb: /proc/usb not available", "color": "err" },
+        { "exit": 0 }
+      ] },
+    { "loop": { "until": "$RET == 0", "max": 64 },
+      "steps": [
+        { "syscall": "read", "args": ["$fd", "@buf", 1023], "as": "n" },
+        { "if": "$n > 0",
+          "then": [ { "print_raw": "@buf", "len": "$n" } ] }
+      ] },
+    { "syscall": "close", "args": ["$fd"] }
+]
+}

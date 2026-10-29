@@ -1,0 +1,7 @@
+{
+  "name": "date",
+  "engine": "builtin",
+  "category": "system",
+  "usage": "date",
+  "summary": "RTC date + time"
+}

@@ -1,0 +1,381 @@
+# gterm custom commands — the GTC guide
+
+Every command in this terminal is a `.json` file. This directory (`/system/gterm/`)
+IS the command set: the terminal reads it at startup, `help` lists what it finds,
+Tab-completion completes what it finds, and you can add your own commands just by
+dropping a new `.json` file here (run `reload`, or just type the command — unknown
+commands trigger a rescan automatically).
+
+This guide teaches the format. You can read it in the OS itself:
+
+    cat /system/gterm/guide.md
+
+...and every shipped command file is a working example — open a few:
+
+    cat /system/gterm/uptime.json
+    cat /system/gterm/kill.json
+
+
+## 1. The idea in one screen
+
+A command file is a JSON object with metadata plus a list of steps. Steps can
+perform real kernel syscalls — the same `int 0x80` calls the C built-ins use —
+so a JSON command is genuine OS code, not a macro.
+
+Minimal custom command (`hello.json`):
+
+```json
+{
+  "name": "hello",
+  "category": "custom",
+  "summary": "say hello",
+  "usage": "hello [name]",
+  "args": [ { "name": "name" } ],
+  "steps": [
+    { "if": "$# >= 1",
+      "then": [ { "print": "hello, $1!" } ],
+      "else": [ { "print": "hello, world" } ] }
+  ]
+}
+```
+
+Drop that file in `/system/gterm/` (or `/home/user/.gterm/` — scanned second, so
+your copy wins on name clashes), type `hello SwirlOS`, and it runs. `help` lists
+it under `custom`, Tab completes it.
+
+
+## 2. Where commands come from
+
+| directory | role |
+|------------|------|
+| `/system/gterm/` | the shipped command set + your additions |
+| `/home/user/.gterm/` | personal commands; same name here overrides the system one |
+
+- Files must end in `.json`; everything else in the directory is ignored
+  (`guide.md` lives here too, harmlessly).
+- One command per file is the convention: the file `ls.json` defines `ls`.
+  The `"name"` field is what actually counts — the file name is only a fallback.
+- Commands are looked up case-insensitively; names are lowercased at load.
+- The `reload` command rescans both directories at any time.
+- A command not found also triggers one rescan before giving up — so a file you
+  just created usually works immediately.
+
+
+## 3. Metadata fields
+
+```json
+{
+  "name":     "mycmd",                  // required (or file name is used)
+  "aliases":  ["mc", "my"],            // extra names, max 4
+  "category": "custom",                // files | system | network | session | custom
+  "summary": "one line for 'help'",    // shown right of the usage column
+  "usage":    "mycmd <thing>",         // shown in 'help'; defaults to the name
+  "args":     [ { "name": "thing" } ], // names for $1.. (optional, cosmetic)
+  "engine":   "pipeline",              // "pipeline" = run the steps below
+                                        // "builtin"  = C code in the terminal
+  "steps":    [ ... ]
+}
+```
+
+- `"engine"`: if you omit it, a file with a `steps` array is a pipeline, anything
+  else is a builtin — but write it out; it documents intent.
+- `"args"` names your positional arguments: with the example above, `$thing`
+  and `$1` are the same, which reads nicer in steps.
+- `//` line comments are allowed anywhere (the parser skips them). Trailing
+  commas are tolerated too.
+
+**Builtins.** A handful of commands (the nano editor, the ping engine, DOOM...)
+are still C code inside the terminal. Their files carry only metadata — but
+they are still the override hook: if you write your own `ls.json` with
+`"engine": "pipeline"`, *yours* runs instead of the C one. The JSON always wins.
+
+
+## 4. Steps
+
+Each step is one object with exactly one action key. They run top to bottom.
+
+### print — output
+```json
+{ "print": "uptime is $si.uptime_cs cs", "color": "ok", "newline": true }
+```
+Colors: `out` (default), `ok`, `err`, `accent`, `prompt`. `"newline": false`
+keeps the cursor on the same line.
+
+### print_raw — exact bytes from the @buf scratch buffer
+```json
+{ "print_raw": "@buf", "len": "$n" }
+```
+No substitution, no auto-newline: this is how file reads are echoed byte-exact.
+
+### var — set a variable
+```json
+{ "var": "p",   "value": "text with $1 inside" }
+{ "var": "kb",  "expr": "($si.mem_used + 1023) / 1024" }
+{ "var": "p",   "path": "notes/todo.txt" }
+```
+`"value"` copies text after substitution; `"expr"` evaluates integer math
+(see §6); `"path"` resolves a relative path against the working directory
+(the same rule the shell uses for its own file commands).
+
+### syscall — call the kernel
+```json
+{ "syscall": "open", "args": ["$p", 1], "as": "fd" }
+```
+`"args"` matches the syscall's argument list (see §7). `"as"` stores the return
+value under a name; when the syscall fills a struct, `"as"` binds the struct
+fields instead and the return lands in `$RET`.
+
+### setbuf — fill the @buf scratch buffer
+```json
+{ "setbuf": "GET / HTTP/1.0\r\n\r\n", "as": "n" }
+```
+Loads text (after substitution) into the 2 KB scratch buffer and stores its
+length. `"as"` is optional. Pair with `write`/`sock_send`.
+
+### if — branch
+```json
+{ "if": "$rc == 0", "then": [ ...steps... ], "else": [ ...steps... ] }
+```
+Both arrays are optional. Nest `if`s inside `else` for multi-way chains (see
+`kill.json`).
+
+### loop — repeat
+```json
+{ "loop": { "until": "$RET == 0", "max": 1024 }, "steps": [ ... ] }
+```
+Other forms: `"while": "$n > 0"`, `"times": 5`. `max` (default 256, hard cap
+4096) protects you from infinite loops. Conditions are checked before each
+iteration.
+
+### spawn — start a program
+```json
+{ "spawn": "/system/apps/gui/gsettings.elf" }
+{ "spawn": "/system/apps/winrun.elf", "arg": "$1", "wait": true, "as": "code" }
+```
+`"arg"` uses the spawn-with-argument call, `"wait"` blocks until it exits and
+`"as"` gets the exit code. On failure a message is printed for you.
+
+`"follow": "<file>"` (with `spawn`) is for text programs: the file is emptied,
+the program is started, and the terminal streams whatever the program appends
+to that file until it exits (Ctrl+C kills it). Lines starting with the marker
+bytes 0x02/0x03/0x04 are shown green/red/accent. This is how `spm` prints.
+```json
+{ "spawn": "/system/apps/spm.elf", "arg": "$@", "follow": "/home/user/.spm/out.log" }
+```
+
+### action — touch shell state
+```json
+{ "action": "cd", "path": "/home/user" }
+{ "action": "clear" }
+{ "action": "close" }
+```
+`cd` runs the shell's own cd (validation, `..` cleanup, tab title updates);
+`clear` wipes the scrollback; `close` closes the terminal window (same as `exit`).
+
+### exit — stop the command
+```json
+{ "exit": 0 }
+```
+Anything after it is skipped. (The number is documentation only.)
+
+
+## 5. Substitution — the `$` language
+
+Inside any string value (print text, paths, args, conditions):
+
+| reference | meaning |
+|-----------|---------|
+| `$0` … `$9` | argv slots; `$0` is the command name itself |
+| `$name` | a named arg from `"args"` or a variable |
+| `$#` | how many arguments the user typed |
+| `$@` | all arguments joined with spaces |
+| `$CWD` | the working directory |
+| `$RET` | the last syscall's return value |
+| `$$` | a literal `$` |
+| `${name:02}` | zero-pad an integer to 2 digits (any width) |
+
+Unknown references are printed **verbatim** (`$typo` stays `$typo`), so a
+mistake is visible instead of silently empty.
+
+Struct fields come from the syscall that produced them (§7):
+
+```json
+{ "syscall": "sysinfo", "as": "si" },     // $si.hostname, $si.mem_total, ...
+{ "syscall": "rtc6",    "as": "now" },    // $now.y $now.mo $now.d $now.h $now.mi $now.s
+{ "syscall": "dir_read", "args": ["$h"], "as": "e" },   // $e.name, $e.type
+{ "syscall": "proc_list", "args": ["@pl", 16], "as": "pl" }
+//   $pl            -> the record count
+//   $pl[2].pid     -> 3rd process: .pid .ppid .state .name
+```
+
+
+## 6. Expressions and conditions
+
+`"expr"` supports integer math on `$refs` and literals:
+`+ - * / %`, parentheses, unary minus, decimal and `0x` hex. Division by zero
+evaluates to 0. Example: `"$si.uptime_cs / 360000"`.
+
+Conditions are `"left OP right"` with spaces (both sides get substituted
+first — quote-like operands don't need quotes, just avoid spaces):
+
+| OP | compares |
+|----|----------|
+| `==` `!=` | numbers if both sides are numeric, else strings |
+| `<` `<=` `>` `>=` | numbers, else alphabetical |
+| `starts` | left begins with right (`"$1 starts /"` = absolute path?) |
+| `contains` | left contains right anywhere |
+
+`"$1 starts -"` is how you detect flags.
+
+
+## 7. The syscall table
+
+These are the calls a command file may make (kernel `int 0x80`, ABI numbers in
+brackets; the full ABI is documented in `/system/doc/syscall-abi.txt`).
+Arg letters: **s** = string, **i** = integer, **B** = the @buf scratch buffer,
+**E/S/T/P** = the kernel fills a struct for you.
+
+| syscall | args | returns |
+|---------|------|---------|
+| `open` [0] | path, flags (1=READ 2=WRITE 4=CREATE 8=TRUNC) | fd |
+| `read` [1] | fd, **B**, max | bytes read (0 = EOF) |
+| `write` [2] | fd, **B**, len | bytes written |
+| `close` [3] | fd | 0 |
+| `seek` [4] | fd, off, whence (0=set 1=cur 2=end) | new offset |
+| `dir_open` [5] | path | handle |
+| `dir_read` [6] | handle, **E** | 1 = entry in `$e`, 0 = end |
+| `spawn` [7] | path | pid |
+| `wait` [8] | pid | exit code |
+| `getpid` [10] / `ppid` [11] / `getring` [20] / `yield` [30] | | id / ring |
+| `sysinfo` [12] | **S** | fills `$si.*` |
+| `mkdir` [17] | path | 0 |
+| `unlink` [18] | path | 0 (-3 = not empty) |
+| `proc_list` [19] | **P**, max | record count |
+| `kill` [28] | pid | 0 / -2 protected / -3 self |
+| `rename` [29] | old, new | 0 |
+| `rtc` [31] | | packed 0x00HHMMSS |
+| `unlink_rec` [32] | path | 0 (recursive delete!) |
+| `rtc6` [35] | **T** | fills `$now.*` |
+| `power` [39] | 0=off 1=reboot | -1 if the machine refused |
+| `wait_nb` [46] | pid | reaped pid or 0 |
+| `clip_get` [48] | **B**, max | clipboard length |
+| `sleep` [49] | ms | 0 (a real park, not a spin) |
+| `spawn_a` [50] | path, arg | pid |
+| `notify_send` [58] | title, body, kind 0..3 | 0 (toast popup) |
+| `beep` [60] | freq Hz, ms | 0 |
+| `setvol` [61] | 0..100 | 0 |
+| `net_ping_start` [67] | ip, count | 0 started |
+| `sock_open` [70] | 1=TCP 2=UDP | handle |
+| `sock_connect` [71] | h, ip, port | 0 |
+| `sock_send` [72] | h, **B**, len | bytes |
+| `sock_recv` [73] | h, **B**, max | bytes (0 = none) |
+| `sock_close` [74] / `sock_poll` [75] | h | |
+| `kbd_mods` [78] | | shift=1 ctrl=2 alt=4 |
+
+`$si.*` fields: `uptime_cs`, `mem_total`, `mem_used`, `nprocs`, `font_size`,
+`cpu_pct`, `hostname`. Error codes overall: -1 bad args, -2 not found,
+-3 no access, -4 exists, -5 no resources.
+
+Window-manager and other dangerous calls are deliberately NOT reachable from
+command files — a broken JSON cannot corrupt this terminal's own window.
+
+
+## 8. Redirection
+
+`command > file` is handled by the engine for pipeline commands: every `print`
+and `print_raw` of that run lands in the file instead (opened WRITE|CREATE|TRUNC
+against the working directory), and a `wrote <path> (N bytes)` line confirms it.
+
+    echo shopping list > notes.txt      # classic usage
+    cat /system/gterm/guide.md > /home/user/guide-copy.txt
+
+
+## 9. Recipes
+
+### beep — one-liner
+```json
+{ "name": "beep", "category": "custom", "summary": "make some noise",
+  "usage": "beep [hz] [ms]", "args": [ { "name": "hz" }, { "name": "ms" } ],
+  "engine": "pipeline", "steps": [
+    { "if": "$# < 1",
+      "then": [ { "syscall": "beep", "args": [880, 120] } ],
+      "else": [ { "syscall": "beep", "args": ["$hz", "$ms"] } ] }
+  ] }
+```
+
+### note — quick file append demo
+```json
+{ "name": "note", "category": "custom", "summary": "write a one-line note",
+  "usage": "note <text>", "engine": "pipeline", "steps": [
+    { "if": "$# < 1",
+      "then": [ { "print": "usage: note <text>", "color": "err" } ],
+      "else": [ { "print": "$@", "newline": true } ] }
+  ] }
+```
+Use it as `note buy coffee > notes.txt` — the engine writes the file.
+
+### dircount — loop over a directory
+```json
+{ "name": "dircount", "category": "custom", "summary": "count entries in a dir",
+  "usage": "dircount [path]", "args": [ { "name": "path" } ],
+  "engine": "pipeline", "steps": [
+    { "var": "p", "path": "$path" },
+    { "syscall": "dir_open", "args": ["$p"], "as": "h" },
+    { "if": "$h < 0",
+      "then": [ { "print": "dircount: cannot open $p", "color": "err" },
+                { "exit": 0 } ] },
+    { "var": "n", "value": "0" },
+    { "loop": { "until": "$RET == 0", "max": 512 }, "steps": [
+        { "syscall": "dir_read", "args": ["$h"], "as": "e" },
+        { "if": "$RET > 0",
+          "then": [ { "var": "n", "expr": "$n + 1" } ] }
+    ] },
+    { "syscall": "close", "args": ["$h"] },
+    { "print": "$p: $n entries", "color": "ok" }
+  ] }
+```
+
+### who — process list from JSON
+```json
+{ "name": "who", "category": "custom", "summary": "pid + name of every process",
+  "usage": "who", "engine": "pipeline", "steps": [
+    { "syscall": "proc_list", "args": ["@pl", 16], "as": "pl" },
+    { "var": "i", "value": "0" },
+    { "loop": { "while": "$i < $pl" }, "steps": [
+        { "print": "  $pl[$i].pid  $pl[$i].name" },
+        { "var": "i", "expr": "$i + 1" }
+    ] }
+  ] }
+```
+`$pl` is the record count, `$pl[i].pid` / `.ppid` / `.state` / `.name` the fields.
+
+### alarm — notify + beep
+```json
+{ "name": "alarm", "category": "custom", "summary": "beep and pop a toast",
+  "usage": "alarm [seconds]", "args": [ { "name": "seconds" } ],
+  "engine": "pipeline", "steps": [
+    { "var": "s", "value": "1" },
+    { "if": "$# >= 1", "then": [ { "var": "s", "value": "$seconds" } ] },
+    { "var": "ms", "expr": "$s * 1000" },
+    { "syscall": "sleep", "args": ["$ms"] },
+    { "syscall": "notify_send", "args": ["alarm", "time is up", 2] },
+    { "syscall": "beep", "args": [880, 400] }
+  ] }
+```
+
+
+## 10. Limits & troubleshooting
+
+- One step can print at most ~500 chars; variables hold up to ~190.
+- A command may run at most 20000 steps and loop at most 4096 times per loop
+  (the interpreter aborts with a visible error instead of hanging the terminal).
+- Files are capped at 8 KB each, 64 commands total, nesting depth 8.
+- A broken file is skipped with a one-line error (shown when it loads or when
+  you run `reload`); the rest keep working. A crashed command at worst takes
+  down its own terminal window — the OS keeps running, that is the point of
+  gterm being its own process.
+- If your command does nothing, check for a `$var` that never got set: unset
+  references print verbatim, so a literal `$fd` in the output is the tell.
+
+The format is parsed by `user/gterm_cmds.c` in the OS source tree — when in
+doubt, that file is the truth. Have fun.

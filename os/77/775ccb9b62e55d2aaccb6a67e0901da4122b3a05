@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "name": "SwirlOS",
+  "base": "default",
+  "colors": {
+    "accent": "#2B7BE4",
+    "window": {
+      "titlebar": null,
+      "titlebar_inactive": null,
+      "title_text": null,
+      "title_text_inactive": null,
+      "border": null,
+      "border_inactive": null,
+      "shadow": null,
+      "minimize": null,
+      "maximize": null,
+      "close": null,
+      "buttons_inactive": null,
+      "minimize_hover": null,
+      "maximize_hover": null,
+      "close_hover": null
+    },
+    "shell": {},
+    "app": {}
+  },
+  "font": {
+    "file": "",
+    "title_size": 14
+  },
+  "window": {
+    "corner_radius": 8,
+    "border_width": 1,
+    "shadow": {
+      "enabled": true,
+      "size": 22,
+      "opacity": 46
+    }
+  },
+  "titlebar": {
+    "align": "left",
+    "button_side": "right",
+    "buttons": ["minimize", "maximize", "close"],
+    "icons": {
+      "minimize": "",
+      "maximize": "",
+      "close": ""
+    }
+  },
+  "transparency": {
+    "active": 100,
+    "inactive": 100,
+    "titlebar": 100,
+    "rules": []
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "format": "gterm-jcmd",
+  "version": 1,
+  "note": "Sample custom commands. This whole directory is scanned at terminal start: drop any .json here (or in /home/user/.gterm) and it becomes a real command. See /system/gterm/guide.md.",
+
+  "commands": [
+    { "name": "hello",
+      "category": "custom",
+      "summary": "the smallest possible custom command",
+      "steps": [
+        { "print": "Hello from a JSON file! No rebuild, no compiler.", "class": "ok" },
+        { "print": "cwd is {cwd}, machine is {host}, today is {date}" }
+      ] },
+
+    { "name": "greet",
+      "category": "custom",
+      "summary": "greet someone (argument demo)",
+      "usage": "<name>",
+      "args": { "min": 1, "max": 1 },
+      "steps": [
+        { "print": "Hello, {arg1}! Nice to meet you.", "class": "ok" },
+        { "print": "(you typed: {arg1|nobody})" }
+      ] },
+
+    { "name": "alarm",
+      "category": "custom",
+      "summary": "wait, then beep three times (loop demo)",
+      "usage": "[delay_ms]",
+      "args": { "min": 0, "max": 1 },
+      "steps": [
+        { "print": "alarm set - waiting {arg1|1000} ms...", "class": "accent" },
+        { "syscall": "SLEEP", "args": [ { "num": "arg1", "default": 1000 } ] },
+        { "set": "i", "value": 0 },
+        { "label": "again" },
+        { "print": "  beep #{i:i} of 3", "class": "ok" },
+        { "syscall": "BEEP", "args": [ 880, 90 ] },
+        { "syscall": "SLEEP", "args": [ 150 ] },
+        { "inc": "i" },
+        { "if": { "left": { "var": "i" }, "op": "<", "right": 3 }, "goto": "again" },
+        { "print": "done - that loop was 100% JSON.", "class": "ok" }
+      ] },
+
+    { "name": "memwatch",
+      "category": "custom",
+      "summary": "watch free memory once a second (live data demo)",
+      "usage": "[seconds]",
+      "args": { "min": 0, "max": 1 },
+      "steps": [
+        { "set": "n", "value": 0 },
+        { "label": "tick" },
+        { "read": "/proc/meminfo", "save": "mi", "max": 512 },
+        { "extract": "mi", "key": "MemTotal:", "save": "tot" },
+        { "extract": "mi", "key": "MemFree:", "save": "fre" },
+        { "math": "used", "left": { "svar": "tot" }, "op": "-", "right": { "svar": "fre" } },
+        { "rtc": true },
+        { "print": "[{s:rtc_h}:{s:rtc_mi}:{s:rtc_s}] used {i:used} kB of {s:tot}" },
+        { "inc": "n" },
+        { "if": { "left": { "var": "n" }, "op": "<", "right": { "num": "arg1", "default": 3 } }, "goto": "wait" },
+        { "print": "memwatch done ({i:n} samples)", "class": "ok" },
+        { "exit": true },
+        { "label": "wait" },
+        { "syscall": "SLEEP", "args": [ 1000 ] },
+        { "goto": "tick" }
+      ] },
+
+    { "name": "notify",
+      "category": "custom",
+      "summary": "post a desktop notification (syscall demo)",
+      "usage": "<title> <body>",
+      "args": { "min": 2, "max": 2 },
+      "steps": [
+        { "syscall": "NOTIFY_SEND", "args": [ { "arg": 1 }, { "arg": 2 } ], "save": "r" },
+        { "if": { "left": { "var": "r" }, "op": "==", "right": 0 },
+          "then": [ { "print": "notification posted: {arg1}", "class": "ok" } ],
+          "else": [ { "print": "notify failed (code {r0})", "class": "err" } ] }
+      ] }
+  ]
+}

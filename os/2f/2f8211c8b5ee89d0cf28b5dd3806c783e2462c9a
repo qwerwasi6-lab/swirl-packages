@@ -1,0 +1,551 @@
+Abort:Abgebrochen
+AbortDownload:Soll das Herunterladen der Datei wirklich abgebrochen werden ?
+About:Über
+All:Alles
+AnimDisable:Animationen abschalten
+AnimSpeedFrames:Bildintervall (Sekunden)
+AnimSpeedLimit:Geschwindigkeit begrenzen
+Animations:Animationen
+Appearance:Aussehen
+BMPTitle:%s (BMP Bild %lux%lu pixels)
+Back:Eine Seite zurück
+BackImg:Hintergrundbilder
+Backtoprevious:Back
+Backtosafety:Zurück zur Sicherheit
+BadBMP:Lesen einer BMP Datei fehlgeschlagen.
+BadGIF:Lesen einer GIF Datei fehlgeschlagen.
+BadICO:Lesen einer ICO Datei fehlgeschlagen.
+BadObject:Warnung: falscher Objekttyp
+BadRedirect:Falsche URL für Redirect
+BadSprite:Ungültiges oder beschädigtes Sprite.
+BadURL:The given URL was not able to be parsed
+Behaviour:Verhalten
+BlockAds:Werbung unterdrücken
+Bottom:Unten
+Browser:Browser
+Bytes: B
+CSSBase:Base stylesheet failed to load
+CSSGeneric:CSS Auswertung klappt nicht
+CacheDisc:Festplatten Cache
+CacheMemory:Arbeitsspeicher Cache
+CacheNative:Originale zwischenspeichern
+Cancel:Abbruch
+CaseSens:Groß-/Kleinschreibung
+Choices:Einstellungen...
+ClearNS:Auswahl rückgängig
+Clipboard:Clipboard
+ClipboardUTF8:Text als UTF-8
+Close:Schließen
+CloseTab:Schließe Tab
+CloseWindow:Schließe Fenster
+Collapse:Zusammenfalten
+CompressPDF:PDF komprimieren
+ConfirmOverwrite:vor Überschreiben nachfragen
+ContentBlocking:Inhalte blockieren
+ContentLanguage:Sprache
+ContextMenu:Kontextmenu
+CookieManagerHTTP:HTTP connections only
+CookieManagerHTTPS:Secure hosts via https only
+CookieManagerSecure:Secure hosts only
+CookieManagerSession:Session
+Cookies:Cookies
+Copies:Kopien
+CopyClip:Inhalt ins Clipboard
+CopyNS:Kopieren
+CopyURL:URL ins Clipboard
+CutNS:Ausschneiden
+DPI:DPI
+Date1Week:vor einer Woche
+Date2Days:vor 2 Tagen
+Date2Week:vor 2 Wochen
+Date3Days:vor 3 Tagen
+Date3Week:vor 3 Wochen
+Date4Days:vor 4 Tagen
+Date5Days:vor 5 Tagen
+Date6Days:vor 6 Tagen
+DateToday:Heute
+DateYesterday:Gestern
+Days:Tage
+Default:Standard
+DefaultFonts:Schriftfamilien
+DeleteCookies:Alle Cookies löschen
+DirectoryError:Verzeichnis '%s' existiert bereits.
+Display:Ausgabe
+DomainAll:(All domains)
+Domains:Domains
+Done:Fertiggestellt
+DontRemove:Behalten
+DontReplace:Abbrechen
+Download:%s von %s • %s/s • noch %s
+DownloadDir:Downloadverzeichnis
+DownloadNotify:Downloadende melden
+DownloadU:%s von unbekannt • %s/s • bisher %s
+Downloaded:%s komplett • etwa %s/s • gesamt %s
+Downloads:Downloads
+Duration:Dauer
+Edit:Bearbeiten
+EditFolder:Verzeichnis umbenennen
+EditLink:Eintrag bearbeiten
+EditTitle:Edit title
+EditToolbar:Symbolleiste bearbeiten
+EiBytes: EiB
+EmptyError:Die Datei ist leer.
+Enable:Erlauben
+EnableJS:JavaScript benutzen
+EncNotRec:Encodierung nicht erkannt.
+Encoding0:aus HTTP Kopfzeilen
+Encoding1:ermittelt
+Encoding2:aus <meta>
+EncodingUnk:Unbekannt
+ErrorPage:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Seitenfehler</title></head><body><h1>NetSurf konnte diese Seite leider nicht darstellen.</h1><p><strong>%s</strong></p></body></html>
+Expand:Expandieren
+Export:Exportieren
+ExternalApp:In externer Anwendung öffnen
+FastScrolling:Schnelles Scrollen
+FetchErrorDescription:An error occurred when connecting to %s
+FetchErrorTitle:Error occurred fetching page
+FetchFailed:Kann Dokument nicht fetchen
+FetchFailedToFinish:The fetcher for this request failed to complete
+FetchesCached:Gehaltene Verbindungen
+FetchesHost:Ladevorgänge pro Host
+FetchesMax:Maximale Anzahl an Ladevorgängen
+Fetching:Fetching
+FileDate:Datum
+FileDirectory:Verzeichnis
+FileError:Datei existiert nicht:
+FileIndex:Inhalt von %s
+FileName:Name
+FileOpenError:Datei ist nicht zu öffnen: '%s'
+FileParent:^ Eine Ebene höher
+FileSize:Größe
+FileTime:Zeit
+FileType:Typ
+FindTextNS:Suchen...
+FitPage:Seite einpassen
+Folder:Verzeichnis
+Folders:Verzeichnisse
+FontCursive:Kursiv
+FontFamilies:Schriftfamilien
+FontFantasy:Fantasy
+FontMono:Monospace
+FontSans:Sans-serif
+FontSerif:Serif
+FontSize:Schriftgröße
+Fonts:Schriften
+ForeImg:Vordergrundbilder
+FormBadSubmit:Achtung: Daten können nicht gesendet werden
+FormButton:Achtung: Schaltknopf kann nicht aktiviert werden
+FormCheckbox:Anklicken um die Option an/abzuschalten
+FormFile:Zum Upload Datei hierhin ziehen und fallenlassen
+FormRadio:Anklicken wählt diese Option
+FormReset:Zurücksetzen (nicht implementiert)
+FormSelect:Anklicken öffnet Auswahlmenü
+FormSubmit:Daten übertragen an %s
+FormTextarea:Anklicken zum Editieren
+FormTextbox:Anklicken zum Bearbeiten des Feldes
+Form_Drop:Datei hier hinziehen
+Form_Many:(Viele)
+Form_None:
+Form_Reset:Zurücksetzen
+Form_Submit:Übertragen
+Formatting:Formatieren
+Forward:Eine Seite vor
+Frame:Frame
+FrameDrag:Frames ändern
+FrameNewTab:In neuem Tab anzeigen
+FrameNewWin:In neuem Fenster anzeigen
+FrameOnly:Nur diesen Frame anzeigen
+Friday:Freitag
+GBytes: GB
+GIFTitle:%s (GIF Bild %lux%lu pixels)
+GiBytes: GiB
+GlobalHistory:History (global)
+HTTP0:OK
+HTTP200:OK
+HTTP201:Created
+HTTP202:Accepted
+HTTP203:Non-authoritative information
+HTTP204:No content
+HTTP205:Reset content
+HTTP206:Partial content
+HTTP300:Multiple choices
+HTTP301:Moved permanently
+HTTP302:Found
+HTTP303:See other
+HTTP304:Not modified
+HTTP305:Use proxy
+HTTP307:Temporary redirect
+HTTP400:Bad request
+HTTP401:Unauthorized
+HTTP402:Payment required
+HTTP403:Forbidden
+HTTP404:Not found
+HTTP405:Method not allowed
+HTTP406:Not acceptable
+HTTP407:Proxy authentication required
+HTTP408:Request timeout
+HTTP409:Conflict
+HTTP410:Gone
+HTTP411:Length required
+HTTP412:Precondition failed
+HTTP413:Request entity too large
+HTTP414:Request-URI too long
+HTTP415:Unsupported media type
+HTTP416:Requested range not satisfiable
+HTTP417:Expectation failed
+HTTP500:Internal server error
+HTTP501:Not implemented
+HTTP502:Bad gateway
+HTTP503:Service unavailable
+HTTP504:Gateway timeout
+HTTP505:HTTP version not supported
+Help:Hilfe
+HelpCredits:Credits
+HelpLicence:Lizenz
+HistGlobalNS:Zeige globale History
+HistLocalNS:Zeige lokale History
+History:History
+HistoryAge:History behalten für
+Home:Homepage
+HomePageBlank:Use blank page
+HomePageCurrent:Aktuelle Seite
+HomePageDefault:Standardseite
+HomePageURL:URL
+Host:Host
+Hotlist:Hotlist
+HotlistAdd:Eintrag hinzufügen
+HotlistContact:Contact the NetSurf developers
+HotlistDefaultFolderName:Unsorted entries
+HotlistDocumentation:Dokumentation
+HotlistDownloads:Download the latest version
+HotlistHomepage:NetSurf Homepage
+HotlistSaveError:Hotlist konnte nicht korrekt gespeichert werden.
+HotlistShowNS:Zeige Hotlist
+ICOTitle:%s (ICO Bild %lux%lu pixels)
+Images:Bilder
+ImgStyle0:RISC OS nutzen
+ImgStyle1:Direktausgabe
+ImgStyle2:Dithern
+ImgStyle3:Error-Diffusion
+Info:Information
+InvalidURL:Die Adresse <em>%s</em> konnte nicht ausgewertet werden.
+JPEGTitle:%s (JPEG Bild %lux%lu pixels)
+KiBytes: KiB
+Languages:Sprachen
+Left:Links
+Link:Link
+LinkDload:Ziel speichern
+LinkNew:Neues Fenster
+LinkNewTab:Öffnen in Tab
+LinkNewWin:Öffnen in Fenster
+LinkSave:Speichern
+LinkText:Text
+Links:Einträge
+LoadError:Die Datei konnte wegen eines Fehlers nicht geladen werden:
+Loading:Laden
+Login:Login
+LoginAgain:The credentials for the site %s and realm "%s" were rejected.
+LoginDescription:The site %s with realm "%s" is requesting credentials for access.
+LoginTitle:Authentication Requested
+MBytes: MB
+MM:mm
+MNGError:MNG Library Fehler: %i
+Margins:Ränder
+MiBytes: MiB
+Minimum:Minimum
+MiscError:Unerwarteter Fehler:
+Miscellaneous:Verschiedenes
+Monday:Montag
+MousePointers:Mauszeiger
+Navigate:Navigieren
+NeedRestart:Diese Optionen werden erst nach einem Neustart von NetSurf aktiviert.
+NetSurf:NetSurf
+NetSurfCopyright:© 2003-2023 die NetSurf Entwickler
+New:Neu
+NewFolder:Verzeichnis anlegen
+NewFolderName:New folder
+NewLink:Neuen Eintrag erstellen
+NewTab:Neuer Tab
+NewWindowNS:Neues Fenster
+Next:Nächster
+No:Nein
+NoDirError:%s ist kein Verzeichnis.
+NoDiscSpace:Nicht genug Speicherplatz auf dem Medium vorhanden.
+NoMemory:Zu wenig Speicher. Bitte mehr Speicher zur Verfügung stellen und erneut versuchen.
+NoNameError:Bitte einen Namen eingeben.
+NoTitle:<No title>
+NoURLError:Bitte eine URL Adresse eingeben.
+None:Keine
+Not2xx:Server meldet Fehler zurück
+NotCSS:Warnung:Stylesheet ist kein CSS
+NotFavIco:Favicon wird nicht unterstützt
+NotFound:nichts
+OK:OK
+OSPointers:Mauszeiger vom OS nutzen, wenn möglich
+ObjDraw:Draw
+ObjError:Fehler beim Laden des Objektes: %s
+ObjInfo:Info
+ObjPrint:Drucken
+ObjReload:erneut laden
+ObjSave:Speichern
+ObjShow:Zeige Objekt
+Object:Objekt
+Open:Öffnen
+OpenFile:Öffne lokale Datei...
+OpenURL:Öffne URL
+OptDefault:als Standard speichern
+OptionNoQuit:Nicht Beenden beim Schließen des letzten Fensters
+OptionNoWindow:Kein Fenster beim Start öffnen
+OverwriteFile:Eine Datei mit diesem Namen existiert bereits und würde überschrieben werden.
+PDF:PDF
+PDFNS:PDF...
+PNGError:Fehler beim PNG konvertieren.
+PNGTitle:%s (PNG Bild %lux%lu pixels)
+Page:Seite
+ParsingFail:Dokumentparsing ist fehlgeschlagen.
+Password:Passwort
+PasteNS:Einfügen
+PiBytes: PiB
+Preferences:Einstellungen
+Prev:Vorheriger
+PrintError:Ein Fehler trat während des Druckens auf:
+PrintNS:Drucken...
+PrintSheetFilled:Druckseite
+PrintSheetsFilled:Druckseiten
+Printer:Drucker
+Printing:Drucke Seite
+PrivacyDescription:A privacy error occurred while communicating with %s this may be a site configuration error or an attempt to steal private information (passwords, messages or credit cards)
+PrivacyTitle:Datenschutzfehler
+Proceed:Vorgehen
+Processing:Auswerten
+Progress:%s von %s
+ProgressU:%s
+Proxy:HTTP Proxy
+ProxyBasic:mit Authentifizierung
+ProxyNTLM:NTLM Authentifizierung
+ProxyNoAuth:normaler Proxy
+ProxyNone:kein Proxy
+ProxyType:Proxytyp
+Pt:pt
+Quit:Beenden
+QuitDownload:Das Herunterladen ein oder mehrerer Dateien wurde noch nicht abgeschlossen. Soll NetSurf trotzdem beendet werden ?
+Realm:Realm
+RecPercent:Empfangen %s (%u%%)
+Received:Empfangen %s
+Redirecting:Umleiten...
+Redraw:Seite neu aufbauen
+Remove:Adresse entfernen
+RemoveBackground:Hintergrund entfernen
+RemoveHotlist:Adresse wirklich aus der Hotlist entfernen?
+Render:Rendern
+RenderAll:Alles zwischenspeichern
+RenderAnims:Animationen zwischenspeichern
+Replace:Überschreiben
+ResetUsage:Statistik zurücksetzen
+Resolution:Auflösung
+ResolutionX:Horizontale Auflösung
+ResolutionY:Vertikale Auflösung
+Right:Rechts
+SSLCertErrBadIssuer:The issuer of this certificate is not known. This may occur if the browser cannot access the certificate authority (CA) bundle.
+SSLCertErrBadSig:The certificate is improperly signed.
+SSLCertErrCertMissing:The certificate was missing from the chain.
+SSLCertErrChainSelfSigned:The certificate chain is self signed.
+SSLCertErrHostnameMismatch:The certificate is for a different host than the server.
+SSLCertErrOk:The certificate has no errors.
+SSLCertErrRevoked:The certificate has been revoked by the issuer.
+SSLCertErrSelfSigned:The certificate is self signed.
+SSLCertErrTooOld:The certificate has expired.
+SSLCertErrTooYoung:The certificate is not yet valid.
+SSLCertErrUnknown:An unknown error occurred while processing the certificate.
+SSLCerts:SSL Zertifikat
+SSLError:NetSurf konnte ein SSL Zertifikat nicht prüfen. Bitte die Details unten beachten.
+SSL_Certificate_Accept:Accept
+SSL_Certificate_Issuer:Issuer: %s
+SSL_Certificate_Reject:Reject
+SSL_Certificate_Serial:Serial: %ld
+SSL_Certificate_Subject:Subject: %s
+SSL_Certificate_Type:Type: %i
+SSL_Certificate_ValidFrom:Valid from: %s
+SSL_Certificate_ValidTo:Valid until: %s
+SSL_Certificate_Version:Version: %ld
+Saturday:Samstag
+SaveAs:Speichern als...
+SaveAsNS:Speichern als
+SaveCompNS:Komplett...
+SaveComplete:Speichern abgeschlossen...
+SaveDraw:Webseite
+SaveError:Die Datei konnte wegen eines Fehlers nicht gespeichert werden:
+SaveLink:Link
+SaveObject:Objekt
+SaveSelection:Auswahl
+SaveSource:Quellcode
+SaveText:Webseite
+SaveURL:URL speichern
+Scale:Skalieren
+ScaleDec:Verkleinern
+ScaleInc:Vergrößern
+ScaleNS:Skalieren
+ScaleNorm:Normal
+ScaleQuality:Skalieren hoher Qualität
+Scaled:Skaliert
+Scaling:Skalierung
+Screen:Ausgabe
+ScreenOwn:Eigener Screen
+Scripting:Scripting
+ScrollBoth:Bewege die Maus bei gedrückten Mausknopf zum Scrollen des Inhalts
+ScrollDown:Pfeil anklicken zum Herunterscrollen
+ScrollH:Ziehen der Leiste scrollt horizontal
+ScrollLeft:Pfeil anklicken scrollt links
+ScrollPDown:Anklicken scrollt eine Seite nach unten
+ScrollPLeft:Anklicken scrollt eine Seite nach links
+ScrollPRight:Anklicken scrollt eine Seite nach rechts
+ScrollPUp:Anklicken scrollt eine Seite hoch
+ScrollRight:Pfeil anklicken scrollt rechts
+ScrollUp:Pfeil anklicken zum Hochscrollen
+ScrollV:Ziehen der Leiste scrollt vertikal
+SearchError:Suche fehlerhaft.
+SearchProvider:Suchmaschine
+SearchURL:Suche über URL Leiste
+SearchWeb:Websuche
+SelSave:Speichern
+SelectAllNS:Alles auswählen
+SelectClick:Anklicken um auszuwählen
+SelectClose:Anklicken zum Schließen des Menus
+SelectFile:Datei auswählen...
+SelectMClick:Anklicken um auszuwählen, auch mehrere Optionen sind auswählbar
+SelectMenu:Auswahl
+Selecting:Auswählen
+Selection:Auswahl
+SendReferer:Seitenreferenzen senden
+SetPassword:Passwort festlegen
+Settings:Einstellungen
+SettingsEdit:Voreinstellungen
+SettingsSave:Einstellungen speichern
+ShowAll:Alle zeigen
+ShowCookies:Cookies verwalten...
+Size:Größe
+SnapshotWindow:Schnappschuß
+Source:Quelle...
+Sprite:Sprite
+SpriteTitle:%s (Sprite Bild %lux%lu pixels)
+Sticky:Klebrig
+Stop:Ladevorgang abbrechen
+Stopped:Angehalten
+Sunday:Sonntag
+SuppressImages:Bilder unterbinden
+TabActive:Neuen Tab im Hintergrund öffnen
+TabLast:Neue Tabs hinter letztem öffnen
+TabMiddle:Mittlere Maustaste öffnet Tab
+TabbedBrowsing:Registernavigation (Tabs)
+TextNS:Text...
+Theme:Thema
+ThemeApplyErr:Beim Versuch der Anwendung eines geladenen Themas trat ein Fehler auf.
+ThemeInstActive:Ein Thema wird gerade geladen oder installiert. Bitte vor Installation weiterer Themen diesen Vorgang abwarten oder beenden.
+ThemeInstDown:Bitte warten bis das Thema vollständig heruntergeladen wurde.
+ThemeInstall:Soll das Thema '%s' von %s installiert werden ?
+ThemeInstallErr:Beim Installieren des geladenen Themas trat ein Fehler auf.
+ThemeInvalid:Das geladene Thema ist fehlerhaft oder benötigt eine neuere Version von NetSurf.
+Thursday:Donnerstag
+TiBytes: TiB
+Timeout:This site took too long to respond
+TimeoutDescription: A connection to %s could not be established. The site may be temporarily unavailable or too busy to respond.
+TimeoutTitle:Connection timed out
+ToolAddress:Adressleiste
+ToolButtons:Knopfgrafiken
+ToolStatus:Statusanzeige
+ToolThrob:Ladeaktivität
+Toolbar:Symbolleiste
+Toolbars:Anzeigen und Leisten
+Top:Oben
+Tree:Tree
+TreeAdded:eingetragen am: %s
+TreeClear:Clear default
+TreeComment:Kommentar: %s
+TreeDefault:Set as default
+TreeDelete:Löschen
+TreeDomain:Domain: %s%s
+TreeExpires:Verfällt: %s
+TreeExport:Export...
+TreeHeaders: (aus Header)
+TreeHotlist:NetSurf Hotlist
+TreeImport:Importierte URL
+TreeLast:letzter Besuch: %s
+TreeLastUsed:Zuletzt genutzt: %s
+TreeLaunch:URL ansehen
+TreeLoadError:The tree was unable to be correctly loaded.
+TreeNewFolder:Neues Verzeichnis
+TreeNewLink:New address
+TreePath:Pfad: %s%s
+TreePersistent:Persistent: %s
+TreeSecure:Nur sichere Hosts: %s
+TreeSession:Sitzungsende
+TreeUnknown:Unbekannt
+TreeUnused:Nicht benutzt
+TreeValue:Eintrag: %s
+TreeVersion:Version: %s
+TreeVersion0:Netscape
+TreeVersion1:RFC 2109
+TreeVersion2:RFC 2965
+TreeVisited:gesehen am: %s
+TreeVisits:Besuche gesamt: %i
+TreeviewLabelContent:Content
+TreeviewLabelDomain:Domain
+TreeviewLabelDomainFolder:Domain folder
+TreeviewLabelExpires:Expires
+TreeviewLabelFolder:Folder
+TreeviewLabelIssuer:Issuer
+TreeviewLabelLastUsed:Last used
+TreeviewLabelLastVisit:Last visit
+TreeviewLabelName:Name
+TreeviewLabelPath:Path
+TreeviewLabelPeriod:Period
+TreeviewLabelPersistent:Persistent
+TreeviewLabelRestrictions:Restrictions
+TreeviewLabelSerial:Serial
+TreeviewLabelTitle:Title
+TreeviewLabelType:Type
+TreeviewLabelURL:URL
+TreeviewLabelValidFrom:Valid from
+TreeviewLabelValidUntil:Valid until
+TreeviewLabelVersion:Version
+TreeviewLabelVisits:Visits
+TrueColour:TrueColour
+TryAgain:Try Again
+Tuesday:Dienstag
+URIError:NetSurf konnte die URI Datei nicht lesen. Syntax Fehler.
+URLSuggest:Aktuelle URLs
+Unwritten:Schreiben der Datei ist fehlgeschlagen.
+UpLevel:Eine Ebene hoch
+Use:Benutzen
+Username:Benutzername
+Utilities:Werkzeuge
+View:Anzeige
+ViewCertificates:Zertifikatdetails anzeigen
+ViewCertificatesNotPossible:Zertifikatinformationen können nicht angezeigt werden
+WebPTitle:%s (WebP Bild %lux%lu pixels)
+Wednesday:Mittwoch
+Window:Fenster
+WindowReset:Fensterposition zurücksetzen
+WindowSave:aktuelle Fensterposition speichern
+WindowSize:Fenstergröße beibehalten
+WindowStagr:neue Fenster versetzen
+Yes:Ja
+con_advanced:Erweitertes
+con_cache:Cache
+con_connect:Verbindung
+con_content:Inhalte
+con_fonts:Schriftarten
+con_general:Allgemeines
+con_home:Homepage
+con_image:Bilder
+con_inter:Nützliches
+con_lang:Sprachen
+con_memory:Speicher
+con_rendering:Rendern
+con_secure:Sicherheit
+con_theme:Themen
+kBytes: kB
+obj:Objekt
+objs:Objekte
+styl:Formatvorlage
+styls:Formatvorlagen

@@ -105,11 +105,23 @@ def main():
             if d not in packages:
                 die(f"{name}: depends on '{d}' which is not in this registry")
     index = {"spm": 1, "packages": packages}
+    # system release written by tools/publish_os.py (spm os check / upgrade)
+    rel_path = os.path.join(ROOT, "os", "release.json")
+    if os.path.isfile(rel_path):
+        with open(rel_path) as f:
+            rel = json.load(f)
+        for e in rel.get("files", []):
+            if not RPATH_RE.match(e["path"]) or not e["dest"].startswith("/system/") or not dest_ok(e["dest"]):
+                die(f"os release: bad entry {e['path']} -> {e['dest']}")
+            if not os.path.isfile(os.path.join(ROOT, e["path"])):
+                die(f"os release: missing blob {e['path']}")
+        index["os"] = rel
     out = os.path.join(ROOT, "index.json")
     with open(out, "w") as f:
         json.dump(index, f, indent=2)
         f.write("\n")
-    print(f"mkindex: wrote index.json with {len(packages)} package(s)")
+    print(f"mkindex: wrote index.json with {len(packages)} package(s)"
+          + (f" + SwirlOS {index['os']['version']} release" if "os" in index else ""))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,214 @@
+{
+  "format": "gterm-jcmd",
+  "version": 1,
+  "note": "The gterm command registry. Every terminal command lives here. Entries with steps run straight from this file; entries with builtin dispatch the compiled C handler of that name. Edit, add, shadow: no rebuild needed. See /system/gterm/guide.md.",
+
+  "commands": [
+    { "name": "beep",
+      "category": "system",
+      "summary": "make the speaker beep",
+      "usage": "[hz] [ms]",
+      "args": { "min": 0, "max": 2 },
+      "steps": [
+        { "print": "beep: {arg1|800} Hz for {arg2|120} ms", "class": "accent" },
+        { "syscall": "BEEP",
+          "args": [ { "num": "arg1", "default": 800 }, { "num": "arg2", "default": 120 } ] }
+      ] },
+
+    { "name": "volume",
+      "category": "system",
+      "summary": "set the master audio volume (0-100)",
+      "usage": "<0-100>",
+      "args": { "min": 1, "max": 1 },
+      "steps": [
+        { "syscall": "SETVOL", "args": [ { "num": "arg1" } ], "save": "r" },
+        { "if": { "left": { "var": "r" }, "op": "==", "right": 0 },
+          "then": [ { "print": "master volume set to {arg1}%", "class": "ok" } ],
+          "else": [ { "print": "volume: SETVOL returned {r0}", "class": "err" } ] }
+      ] },
+
+    { "name": "pid",
+      "category": "system",
+      "summary": "print this terminal's process id",
+      "steps": [
+        { "syscall": "GETPID", "save": "p" },
+        { "print": "gterm runs as pid {i:p} (ring 3, spawned by the desktop)" }
+      ] },
+
+    { "name": "pwd",
+      "category": "files",
+      "summary": "print the working directory",
+      "steps": [ { "print": "{cwd}" } ] },
+
+    { "name": "whoami",
+      "category": "session",
+      "summary": "the current user",
+      "steps": [ { "print": "user" } ] },
+
+    { "name": "hostname",
+      "category": "session",
+      "summary": "this machine's name",
+      "steps": [ { "print": "{host}" } ] },
+
+    { "name": "date",
+      "category": "system",
+      "summary": "RTC date + time",
+      "steps": [
+        { "rtc": true },
+        { "print": "{s:rtc_y}-{s:rtc_mo}-{s:rtc_d}  {s:rtc_h}:{s:rtc_mi}:{s:rtc_s}" }
+      ] },
+
+    { "name": "uptime",
+      "category": "system",
+      "summary": "session time",
+      "steps": [
+        { "read": "/proc/uptime", "save": "up", "max": 128 },
+        { "extract": "up", "key": "", "save": "u" },
+        { "math": "sec", "left": { "svar": "u" }, "op": "*", "right": 1 },
+        { "math": "h", "left": { "var": "sec" }, "op": "/", "right": 3600 },
+        { "math": "m", "left": { "var": "sec" }, "op": "/", "right": 60 },
+        { "math": "m", "left": { "var": "m" }, "op": "%", "right": 60 },
+        { "print": "up {i:h}h {i:m}m" }
+      ] },
+
+    { "name": "free",
+      "category": "system",
+      "summary": "memory",
+      "steps": [
+        { "read": "/proc/meminfo", "save": "mi", "max": 512 },
+        { "extract": "mi", "key": "MemTotal:", "save": "tot" },
+        { "extract": "mi", "key": "MemFree:", "save": "fre" },
+        { "math": "used", "left": { "svar": "tot" }, "op": "-", "right": { "svar": "fre" } },
+        { "math": "pct", "left": { "var": "used" }, "op": "*", "right": 100 },
+        { "math": "pct", "left": { "var": "pct" }, "op": "/", "right": { "svar": "tot" } },
+        { "print": "        total      used", "class": "accent" },
+        { "print": "Mem:  {s:tot}  {i:used} kB  ({i:pct}% used)" }
+      ] },
+
+    { "name": "uname",
+      "category": "system",
+      "summary": "kernel name / full line",
+      "usage": "[-a]",
+      "args": { "min": 0, "max": 1 },
+      "steps": [
+        { "if": { "left": { "arg": 1 }, "op": "==", "right": "-a" },
+          "then": [
+            { "read": "/proc/version", "save": "v", "max": 256 },
+            { "extract": "v", "key": "", "save": "line" },
+            { "print": "{s:line}" }
+          ],
+          "else": [ { "print": "SwirlOS" } ] }
+      ] },
+
+    { "name": "rings",
+      "category": "system",
+      "summary": "which privilege ring am I in",
+      "steps": [
+        { "syscall": "GETRING", "save": "rg" },
+        { "print": "you are executing in ring {i:rg}", "class": "ok" },
+        { "print": "kernel executes in ring 0; the boundary is int 0x80" }
+      ] },
+
+    { "name": "sleep",
+      "category": "session",
+      "summary": "pause the shell",
+      "usage": "<ms>",
+      "args": { "min": 1, "max": 1 },
+      "steps": [ { "syscall": "SLEEP", "args": [ { "num": "arg1" } ] } ] },
+
+    { "name": "sysinfo",
+      "category": "system",
+      "summary": "kernel + memory summary",
+      "steps": [
+        { "read": "/proc/swirl", "save": "sw", "max": 1024 },
+        { "extract": "sw", "key": "os.version", "save": "ver" },
+        { "read": "/proc/uptime", "save": "up", "max": 128 },
+        { "extract": "up", "key": "", "save": "u" },
+        { "math": "sec", "left": { "svar": "u" }, "op": "*", "right": 1 },
+        { "read": "/proc/meminfo", "save": "mi", "max": 512 },
+        { "extract": "mi", "key": "MemTotal:", "save": "tot" },
+        { "extract": "mi", "key": "MemFree:", "save": "fre" },
+        { "math": "used", "left": { "svar": "tot" }, "op": "-", "right": { "svar": "fre" } },
+        { "print": "SwirlOS {s:ver} - {host}", "class": "accent" },
+        { "print": "  uptime : {i:sec} s   memory: {i:used} of {s:tot}" },
+        { "print": "  kernel : ring 0, SwirlFS v1 on ata0, GUI: SwirlWM" },
+        { "print": "  shell  : gterm + jcmd (commands from /system/gterm)" }
+      ] },
+
+    { "name": "ls", "builtin": "ls", "category": "files",
+      "summary": "list a directory", "usage": "[-l] [path]" },
+    { "name": "cd", "builtin": "cd", "category": "files",
+      "summary": "change / print directory", "usage": "<path>" },
+    { "name": "cat", "builtin": "cat", "category": "files",
+      "summary": "print a file", "usage": "<file>" },
+    { "name": "nano", "builtin": "nano", "aliases": ["edit", "kilo"], "category": "files",
+      "summary": "full-screen editor", "usage": "[file]" },
+    { "name": "head", "builtin": "head", "category": "files",
+      "summary": "first N lines of a file", "usage": "[-n N] <file>" },
+    { "name": "wc", "builtin": "wc", "category": "files",
+      "summary": "lines / words / bytes", "usage": "<file>" },
+    { "name": "peek", "builtin": "peek", "category": "files",
+      "summary": "hex dump (first 256 bytes)", "usage": "<file>" },
+    { "name": "tree", "builtin": "tree", "category": "files",
+      "summary": "directory tree", "usage": "[path]" },
+    { "name": "touch", "builtin": "touch", "category": "files",
+      "summary": "create an empty file", "usage": "<file>" },
+    { "name": "mkdir", "builtin": "mkdir", "category": "files",
+      "summary": "create a directory", "usage": "<dir>" },
+    { "name": "rm", "builtin": "rm", "category": "files",
+      "summary": "remove file / empty dir", "usage": "<path>" },
+    { "name": "cp", "builtin": "cp", "category": "files",
+      "summary": "copy (dst may be a dir)", "usage": "<src> <dst>" },
+    { "name": "mv", "builtin": "mv", "category": "files",
+      "summary": "move (copy + remove)", "usage": "<src> <dst>" },
+    { "name": "echo", "builtin": "echo", "category": "files",
+      "summary": "print / write text to a file", "usage": "txt [> file]" },
+    { "name": "bench", "builtin": "bench", "category": "files",
+      "summary": "fs speed test (N small files)", "usage": "[n]" },
+
+    { "name": "fastfetch", "builtin": "fastfetch", "aliases": ["fetch"], "category": "system",
+      "summary": "the pretty system card" },
+    { "name": "swirlfetch", "builtin": "fastfetch", "category": "system",
+      "summary": "the pretty system card (alias family)" },
+    { "name": "ps", "builtin": "ps", "category": "system",
+      "summary": "process table" },
+    { "name": "kill", "builtin": "kill", "category": "system",
+      "summary": "terminate a process", "usage": "<pid>" },
+    { "name": "pkill", "builtin": "pkill", "category": "system",
+      "summary": "terminate by name", "usage": "<name>" },
+    { "name": "taskmgr", "builtin": "taskmgr", "aliases": ["top"], "category": "system",
+      "summary": "open the Task Manager" },
+    { "name": "doom", "builtin": "doom", "category": "system",
+      "summary": "play DOOM (fullscreen, Esc quits)" },
+    { "name": "wadinst", "builtin": "wadinst", "category": "system",
+      "summary": "game installer wizard (DOOM shareware)", "usage": "[file]" },
+    { "name": "usb", "builtin": "usb", "category": "system",
+      "summary": "USB on/off state from /proc/usb" },
+    { "name": "jcmd", "builtin": "jcmd", "category": "system",
+      "summary": "JSON command registry: status | list | reload | syscalls | guide" },
+
+    { "name": "ping", "builtin": "ping", "category": "network",
+      "summary": "ICMP echo (live, 4 packets)", "usage": "<ip>" },
+    { "name": "wifi", "builtin": "wifi", "category": "network",
+      "summary": "Wi-Fi: status | scan | connect | disconnect", "usage": "[subcommand]" },
+    { "name": "wifidebug", "builtin": "wifidebug", "category": "network",
+      "summary": "network + driver diagnostics" },
+    { "name": "drvman", "builtin": "drvman", "category": "network",
+      "summary": "open the Driver Manager" },
+
+    { "name": "history", "builtin": "history", "category": "session",
+      "summary": "recent commands (up/down)" },
+    { "name": "settings", "builtin": "settings", "category": "session",
+      "summary": "open the Settings app" },
+    { "name": "cube", "builtin": "cube", "aliases": ["gl3d"], "category": "session",
+      "summary": "open the 3D Demo (TinyGL)" },
+    { "name": "clear", "builtin": "clear", "category": "session",
+      "summary": "clear (PgUp/PgDn scroll back)" },
+    { "name": "poweroff", "builtin": "poweroff", "category": "session",
+      "summary": "shut the machine down (also in the start menu)" },
+    { "name": "reboot", "builtin": "reboot", "category": "session",
+      "summary": "reboot (also in the start menu)" },
+    { "name": "exit", "builtin": "exit", "category": "session",
+      "summary": "close this terminal" }
+  ]
+}

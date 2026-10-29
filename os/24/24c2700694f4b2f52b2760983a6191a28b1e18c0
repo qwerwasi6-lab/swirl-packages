@@ -1,0 +1,10 @@
+{
+  "name": "clear",
+  "engine": "pipeline",
+  "category": "session",
+  "usage": "clear",
+  "summary": "clear (PgUp/PgDn scroll back)",
+  "steps": [
+    { "action": "clear" }
+]
+}

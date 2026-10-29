@@ -1,0 +1,13 @@
+libswirl — the SwirlOS userspace runtime
+========================================
+
+libswirl.a is the static library every SwirlOS application links against.
+It is a real file on disk at /system/lib/libswirl.a, and it contains:
+
+  - the int 0x80 syscall wrappers (open/read/write/spawn/wait/...)
+  - printf and friends (vsnprintf, integer formatting)
+  - string and memory helpers (memcpy, strlen, strcmp, snprintf)
+  - the process entry point (_start), which calls your main()
+
+Rebuild it from the SwirlOS source tree:  user/lib/
+This directory keeps the copy that shipped with this system image.

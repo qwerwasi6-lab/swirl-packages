@@ -1,0 +1,30 @@
+SwirlyMP - the SwirlOS video player (r47)
+=========================================
+
+Start it from the start menu, or double-click a video in Files.
+It lists the videos it finds in ~/Videos, ~/, ~/desktop and /usb1.
+
+Formats
+  MPEG-1 video in an MPEG program stream (.mpg, .mpeg)
+  Motion-JPEG video in an AVI container (.avi)
+Audio tracks are recognised and skipped (the kernel has no mixer yet); the
+player shows a "video only" notice. MPEG-2, H.264, MP4, MKV, MPEG-TS and
+pictures above 1280x720 are refused with a readable reason.
+
+Keys
+  Space or K       play / pause           Left / Right   -5 s / +5 s
+  J / L            -10 s / +10 s          Down / Up      -30 s / +30 s
+  0                back to the start      R              loop on/off
+  F                theater mode (Esc leaves it)
+  O                open another video     Click the bar  seek
+  Click the picture to play / pause. MPEG seeks land on the nearest keyframe.
+
+Notes
+  - One SwirlyMP window at a time (process slot 18, 16 MB).
+  - Playback follows the wall clock: if the CPU is too slow Motion-JPEG drops
+    frames, MPEG-1 slows down.
+  - Files are streamed from disk, never loaded whole.
+
+Third-party: MPEG-1 decoding uses pl_mpeg (MIT, Dominic Szablewski),
+user/vendor/pl_mpeg.h, licence text in user/vendor/pl_mpeg.LICENSE.
+JPEG frames use the system's IJG libjpeg.

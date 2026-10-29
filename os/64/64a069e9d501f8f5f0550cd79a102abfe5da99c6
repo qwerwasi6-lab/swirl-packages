@@ -1,0 +1,46 @@
+Writing a game for SwirlOS (SDL2 + gamelib)
+===========================================
+
+A game is an ordinary ring-3 ELF that
+  1. links the loader stub + heap (sdl2_dyn.o, sdl_heap.o),
+  2. links the small game C library statically (gamelib.o, optional gameimg.o),
+  3. loads /system/lib/libsdl2.swo at startup with sdl2_open(0).
+
+Minimal main():
+
+    #include "SDL2/SDL.h"
+    #include "gamelib.h"          /* math, rand, stdlib, string, FILE ...   */
+    #include "gameimg.h"          /* IMG_Load / IMG_LoadTexture (optional)  */
+
+    int main(int argc, char **argv) {
+        if (sdl2_open(0) != 0) return 1;          /* load the runtime file   */
+        SDL_Init(SDL_INIT_VIDEO);
+        SDL_Window *w = SDL_CreateWindow("My game", 60, 60, 640, 480, SDL_WINDOW_SHOWN);
+        SDL_Renderer *r = SDL_CreateRenderer(w, -1, SDL_RENDERER_SOFTWARE);
+        srand(game_seed());
+        ...
+    }
+
+Build (Makefile): copy the gamedemo.elf rule in the "SDL2 runtime" section,
+add your .elf to SDL_GAME_ELFS and a cp line to SDL_GAME_INSTALL.
+Compile flags are SDL_APPFLAGS: freestanding, SSE/FPU ON (floats are fine).
+
+gamelib.h   math (sin cos sqrt pow atan2 ... + f variants, no libm needed),
+            PCG32 rand/randf/rand_range, atoi/strtol/strtod/qsort/bsearch,
+            strstr/strdup/strcasecmp/..., ctype, FILE stdio (fopen fread
+            fwrite fgets fprintf fseek ...), file_read_all/file_write_all,
+            game_save_path("mygame","save.dat",buf,sizeof buf) which gives
+            /home/user/saves/mygame/save.dat and creates the folders.
+gameimg.h   IMG_Load(file), IMG_LoadTexture(renderer,file), IMG_Load_RW,
+            IMG_LoadMem. PNG, JPEG, BMP, TGA, GIF (1st frame), PSD, PNM.
+            Needs ~ (w*h*8) bytes of heap while decoding; the app heap is a
+            3 MB arena, so keep sprites/atlases reasonable (<= ~1024x768).
+
+Limits to design around
+  - no threads (do your work in the main loop), no OpenGL, no sound output
+    (the audio device exists but is a null sink), no joystick.
+  - not thread safe, no errno. Memory comes from malloc/free (sdl_heap.o).
+  - game windows are WM windows: SDL_RenderSetLogicalSize() is the easy way
+    to get a fixed-resolution game that scales with the window.
+
+Check your setup first: [test] sdl = gametest (see libsdl2.txt).

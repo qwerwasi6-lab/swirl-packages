@@ -1,0 +1,7 @@
+{
+  "name": "doom",
+  "engine": "builtin",
+  "category": "system",
+  "usage": "doom",
+  "summary": "play DOOM (fullscreen, Esc quits)"
+}

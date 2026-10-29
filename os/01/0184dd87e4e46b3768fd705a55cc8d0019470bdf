@@ -1,0 +1,19 @@
+{
+  "name": "mkdir",
+  "engine": "pipeline",
+  "category": "files",
+  "usage": "mkdir <dir>",
+  "summary": "create a directory",
+  "args": [
+    {
+      "name": "dir"
+    }
+  ],
+  "steps": [
+    { "if": "$# < 1", "then": [ { "exit": 0 } ] },
+    { "var": "p", "path": "$dir" },
+    { "syscall": "mkdir", "args": ["$p"], "as": "rc" },
+    { "if": "$rc != 0",
+      "then": [ { "print": "mkdir: failed (exists?)", "color": "err" } ] }
+]
+}

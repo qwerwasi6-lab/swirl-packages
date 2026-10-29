@@ -1,0 +1,13 @@
+{
+  "name": "taskmgr",
+  "engine": "pipeline",
+  "category": "session",
+  "usage": "taskmgr",
+  "summary": "open the Task Manager",
+  "aliases": [
+    "top"
+  ],
+  "steps": [
+    { "spawn": "/system/apps/gui/gtaskman.elf" }
+]
+}

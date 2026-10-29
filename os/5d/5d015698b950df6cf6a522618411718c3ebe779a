@@ -1,0 +1,7 @@
+{
+  "name": "mv",
+  "engine": "builtin",
+  "category": "files",
+  "usage": "mv <src> <dst>",
+  "summary": "move (copy + remove)"
+}

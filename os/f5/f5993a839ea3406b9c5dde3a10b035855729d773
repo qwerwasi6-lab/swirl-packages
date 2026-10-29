@@ -1,0 +1,14 @@
+{
+  "name": "poweroff",
+  "engine": "pipeline",
+  "category": "system",
+  "usage": "poweroff / reboot",
+  "summary": "also in the start menu",
+  "steps": [
+    { "syscall": "power", "args": [0], "as": "rc" },
+    { "if": "$rc != 0",
+      "then": [
+        { "print": "poweroff: this machine did not power off (no ACPI soft-off; see /proc/acpi)", "color": "err" }
+      ] }
+]
+}

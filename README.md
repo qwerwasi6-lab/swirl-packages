@@ -35,3 +35,20 @@ JSON files in `/system/gterm/` (see `/system/gterm/guide.md` on SwirlOS).
 3. Commit `index.json` together with the package and push to `main`.
 
 Bump `version` when a package changes; `spm upgrade` compares versions.
+
+## System releases (SwirlOS updates)
+
+Besides packages, this registry carries the SwirlOS system itself, so installed
+machines can update with `spm os upgrade` (or Settings > Software Update).
+
+    # in the SwirlOS source tree:  make            (writes build/content_stage + os.tsv)
+    # here:
+    python3 tools/publish_os.py --stage <swirlos>/build/content_stage --notes "What changed."
+    python3 tools/mkindex.py
+    git add -A && git commit -m "SwirlOS <version>" && git push
+
+`publish_os.py` stores every system file once as `os/<aa>/<sha40>` (unchanged files are
+never stored or downloaded again) and writes `os/release.json`; `mkindex.py` embeds it
+under `"os"` in `index.json`. The version comes from the SwirlOS `VERSION` file
+(bump it for each release). A release that needs a newer kernel sets `abi` higher than
+the booted kernel's `SWIRL_ABI` and is refused on older kernels.

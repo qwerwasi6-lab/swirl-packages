@@ -1,0 +1,551 @@
+Abort:Abort
+AbortDownload:Are you sure you wish to abort this download?
+About:About
+All:All
+AnimDisable:Disable animations
+AnimSpeedFrames:seconds between frames
+AnimSpeedLimit:Limit speed to
+Animations:Animations
+Appearance:Appearance
+BMPTitle:%s (BMP image %lux%lu pixels)
+Back:Back one page
+BackImg:Background images
+Backtoprevious:Back
+Backtosafety:Back to safety
+BadBMP:Reading BMP failed.
+BadGIF:Reading GIF failed.
+BadICO:Reading ICO failed.
+BadObject:Warning: bad object type
+BadRedirect:Bad redirect URL
+BadSprite:Invalid or corrupt Sprite data.
+BadURL:The given URL was not able to be parsed
+Behaviour:Behaviour
+BlockAds:Hide advertisements
+Bottom:Bottom
+Browser:Browser
+Bytes: B
+CSSBase:Base stylesheet failed to load
+CSSGeneric:Error processing CSS
+CacheDisc:Disc cache
+CacheMemory:Memory cache
+CacheNative:Cache native versions
+Cancel:Cancel
+CaseSens:Case Sensitive
+Choices:Choices...
+ClearNS:Clear selection
+Clipboard:Clipboard
+ClipboardUTF8:Write text as UTF-8
+Close:Close
+CloseTab:Close tab
+CloseWindow:Close window
+Collapse:Collapse
+CompressPDF:Compress PDF
+ConfirmOverwrite:Request confirmation when overwriting
+ContentBlocking:Content blocking
+ContentLanguage:Content language
+ContextMenu:Context menu
+CookieManagerHTTP:HTTP connections only
+CookieManagerHTTPS:Secure hosts via https only
+CookieManagerSecure:Secure hosts only
+CookieManagerSession:Session
+Cookies:Cookies
+Copies:Copies
+CopyClip:Copy to clipboard
+CopyNS:Copy
+CopyURL:Copy URL to clipboard
+CutNS:Cut
+DPI:DPI
+Date1Week:A week ago
+Date2Days:Two days ago
+Date2Week:Two weeks ago
+Date3Days:Three days ago
+Date3Week:Three weeks ago
+Date4Days:Four days ago
+Date5Days:Five days ago
+Date6Days:Six days ago
+DateToday:Today
+DateYesterday:Yesterday
+Days:days
+Default:Default
+DefaultFonts:Font Families
+DeleteCookies:Delete all cookies
+DirectoryError:directory '%s' already exists
+Display:Display
+DomainAll:(All domains)
+Domains:Domains
+Done:Done
+DontRemove:Don't remove
+DontReplace:Don't replace
+Download:%s of %s  •  %s/s  •  %s remaining
+DownloadDir:Initial download location
+DownloadNotify:Notify on completion
+DownloadU:%s of unknown  •  %s/s  •  %s total
+Downloaded:%s complete  •  average %s/s  •  %s total
+Downloads:Downloads
+Duration:Duration
+Edit:Edit
+EditFolder:Rename directory
+EditLink:Edit address
+EditTitle:Edit title
+EditToolbar:Edit toolbar
+EiBytes: EiB
+EmptyError:file is empty.
+Enable:Enable
+EnableJS:Enable JavaScript
+EncNotRec:Encoding type not recognised.
+Encoding0:from HTTP headers
+Encoding1:detected
+Encoding2:from <meta>
+EncodingUnk:Unknown
+ErrorPage:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Page error</title></head><body><h1>Sorry, NetSurf was unable to display this page</h1><p><strong>%s</strong></p></body></html>
+Expand:Expand
+Export:Export
+ExternalApp:Open in external application
+FastScrolling:Fast scrolling
+FetchErrorDescription:An error occurred when connecting to %s
+FetchErrorTitle:Error occurred fetching page
+FetchFailed:Unable to fetch document
+FetchFailedToFinish:The fetcher for this request failed to complete
+FetchesCached:Cached connections
+FetchesHost:Fetches per host
+FetchesMax:Maximum fetches
+Fetching:Fetching
+FileDate:Date
+FileDirectory:Directory
+FileError:File does not exist:
+FileIndex:Index of %s
+FileName:Name
+FileOpenError:could not open file '%s'
+FileParent:^ Up to parent directory
+FileSize:Size
+FileTime:Time
+FileType:Type
+FindTextNS:Find text...
+FitPage:Fit page
+Folder:Directory
+Folders:Directories
+FontCursive:Cursive
+FontFamilies:Font families
+FontFantasy:Fantasy
+FontMono:Monospaced
+FontSans:Sans-serif
+FontSerif:Serif
+FontSize:Font size
+Fonts:Fonts
+ForeImg:Foreground images
+FormBadSubmit:Warning: form can not be submitted
+FormButton:Warning: button can not be activated
+FormCheckbox:Click to check this option
+FormFile:Drop a file here to upload it
+FormRadio:Click to choose this option
+FormReset:Reset form (not implemented)
+FormSelect:Click to choose a form item
+FormSubmit:Send form to %s
+FormTextarea:Click to edit the text
+FormTextbox:Click to edit this field
+Form_Drop:Drop file here
+Form_Many:(Many)
+Form_None:
+Form_Reset:Reset
+Form_Submit:Submit
+Formatting:Formatting
+Forward:Forward one page
+Frame:Frame
+FrameDrag:Resizing frames
+FrameNewTab:Show in new tab
+FrameNewWin:Show in new window
+FrameOnly:Show only this frame
+Friday:Friday
+GBytes: GB
+GIFTitle:%s (GIF image %lux%lu pixels)
+GiBytes: GiB
+GlobalHistory:Global history
+HTTP0:OK
+HTTP200:OK
+HTTP201:Created
+HTTP202:Accepted
+HTTP203:Non-authoritative information
+HTTP204:No content
+HTTP205:Reset content
+HTTP206:Partial content
+HTTP300:Multiple choices
+HTTP301:Moved permanently
+HTTP302:Found
+HTTP303:See other
+HTTP304:Not modified
+HTTP305:Use proxy
+HTTP307:Temporary redirect
+HTTP400:Bad request
+HTTP401:Unauthorized
+HTTP402:Payment required
+HTTP403:Forbidden
+HTTP404:Not found
+HTTP405:Method not allowed
+HTTP406:Not acceptable
+HTTP407:Proxy authentication required
+HTTP408:Request timeout
+HTTP409:Conflict
+HTTP410:Gone
+HTTP411:Length required
+HTTP412:Precondition failed
+HTTP413:Request entity too large
+HTTP414:Request-URI too long
+HTTP415:Unsupported media type
+HTTP416:Requested range not satisfiable
+HTTP417:Expectation failed
+HTTP500:Internal server error
+HTTP501:Not implemented
+HTTP502:Bad gateway
+HTTP503:Service unavailable
+HTTP504:Gateway timeout
+HTTP505:HTTP version not supported
+Help:Help
+HelpCredits:Credits
+HelpLicence:Licence
+HistGlobalNS:Show global history
+HistLocalNS:Show local history
+History:History
+HistoryAge:Keep history for
+Home:Home page
+HomePageBlank:Use blank page
+HomePageCurrent:Use current page
+HomePageDefault:Use default page
+HomePageURL:URL
+Host:Host
+Hotlist:Hotlist
+HotlistAdd:Add to hotlist
+HotlistContact:Contact the NetSurf developers
+HotlistDefaultFolderName:Unsorted entries
+HotlistDocumentation:Documentation
+HotlistDownloads:Download the latest version
+HotlistHomepage:NetSurf homepage
+HotlistSaveError:The hotlist was unable to be correctly saved.
+HotlistShowNS:Show hotlist
+ICOTitle:%s (ICO image %lux%lu pixels)
+Images:Images
+ImgStyle0:Use OS
+ImgStyle1:Direct to screen
+ImgStyle2:Dithered
+ImgStyle3:Error diffused
+Info:Info
+InvalidURL:The address <em>%s</em> could not be understood.
+JPEGTitle:%s (JPEG image %lux%lu pixels)
+KiBytes: KiB
+Languages:Language
+Left:Left
+Link:Link
+LinkDload:Download target
+LinkNew:New window
+LinkNewTab:Open in new tab
+LinkNewWin:Open in new window
+LinkSave:Save
+LinkText:Text
+Links:Addresses
+LoadError:The file could not be loaded due to an error:
+Loading:Loading
+Login:Login
+LoginAgain:The credentials for the site %s and realm "%s" were rejected.
+LoginDescription:The site %s with realm "%s" is requesting credentials for access.
+LoginTitle:Authentication Requested
+MBytes: MB
+MM:mm
+MNGError:Error converting MNG/PNG/JNG: %i
+Margins:Margins
+MiBytes: MiB
+Minimum:Minimum
+MiscError:An unexpected error occurred:
+Miscellaneous:Miscellaneous
+Monday:Monday
+MousePointers:Mouse pointers
+Navigate:Navigate
+NeedRestart:These options will not take effect until the next time NetSurf is started
+NetSurf:NetSurf
+NetSurfCopyright:© 2003-2023 The NetSurf Developers
+New:New
+NewFolder:Create new directory
+NewFolderName:New folder
+NewLink:Create new address
+NewTab:New tab
+NewWindowNS:New window
+Next:Next
+No:No
+NoDirError:%s is not a directory
+NoDiscSpace:Not enough space available on disc.
+NoMemory:NetSurf is running out of memory. Please free some memory and try again.
+NoNameError:Please enter a name
+NoTitle:<No title>
+NoURLError:Please enter a URL
+None:None
+Not2xx:Server returned an error
+NotCSS:Warning: stylesheet is not CSS
+NotFavIco:Favicon not supported
+NotFound:Not found
+OK:OK
+OSPointers:Use OS mouse pointers when possible
+ObjDraw:Draw
+ObjError:Error loading object: %s
+ObjInfo:Info
+ObjPrint:Print
+ObjReload:Reload
+ObjSave:Save
+ObjShow:Show object
+Object:Object
+Open:Open
+OpenFile:Open local file...
+OpenURL:Open URL
+OptDefault:Save as default
+OptionNoQuit:Do not quit when last window closed
+OptionNoWindow:Do not open window on startup
+OverwriteFile:A file with that name already exists and would be lost.
+PDF:PDF
+PDFNS:PDF...
+PNGError:Error converting PNG.
+PNGTitle:%s (PNG image %lux%lu pixels)
+Page:Page
+ParsingFail:Parsing the document failed.
+Password:Password
+PasteNS:Paste
+PiBytes: PiB
+Preferences:Preferences
+Prev:Previous
+PrintError:An error occurred when printing:
+PrintNS:Print...
+PrintSheetFilled:sheet is filled
+PrintSheetsFilled:sheets are filled
+Printer:Printer
+Printing:Printing page
+PrivacyDescription:A privacy error occurred while communicating with %s this may be a site configuration error or an attempt to steal private information (passwords, messages or credit cards)
+PrivacyTitle:Privacy error
+Proceed:Proceed
+Processing:Processing
+Progress:%s of %s
+ProgressU:%s
+Proxy:HTTP proxy
+ProxyBasic:Basic authentication
+ProxyNTLM:NTLM authentication
+ProxyNoAuth:Simple proxy
+ProxyNone:No proxy
+ProxyType:Proxy type
+Pt:pt
+Quit:Quit
+QuitDownload:One or more downloads are still in progress. Are you sure you wish to quit?
+Realm:Realm
+RecPercent:Received %s (%u%%)
+Received:Received %s
+Redirecting:Redirecting...
+Redraw:Redraw page
+Remove:Remove address
+RemoveBackground:Remove background
+RemoveHotlist:Are you sure you wish to remove this address from the hotlist?
+Render:Render
+RenderAll:Buffer all rendering
+RenderAnims:Buffer animations
+Replace:Replace file
+ResetUsage:Reset statistics
+Resolution:Resolution
+ResolutionX:Horizontal resolution
+ResolutionY:Vertical resolution
+Right:Right
+SSLCertErrBadIssuer:The issuer of this certificate is not known. This may occur if the browser cannot access the certificate authority (CA) bundle.
+SSLCertErrBadSig:The certificate is improperly signed.
+SSLCertErrCertMissing:The certificate was missing from the chain.
+SSLCertErrChainSelfSigned:The certificate chain is self signed.
+SSLCertErrHostnameMismatch:The certificate is for a different host than the server.
+SSLCertErrOk:The certificate has no errors.
+SSLCertErrRevoked:The certificate has been revoked by the issuer.
+SSLCertErrSelfSigned:The certificate is self signed.
+SSLCertErrTooOld:The certificate has expired.
+SSLCertErrTooYoung:The certificate is not yet valid.
+SSLCertErrUnknown:An unknown error occurred while processing the certificate.
+SSLCerts:SSL certificates
+SSLError:NetSurf failed to verify the authenticity of an SSL certificate. Please verify the details presented below.
+SSL_Certificate_Accept:Accept
+SSL_Certificate_Issuer:Issuer: %s
+SSL_Certificate_Reject:Reject
+SSL_Certificate_Serial:Serial: %ld
+SSL_Certificate_Subject:Subject: %s
+SSL_Certificate_Type:Type: %i
+SSL_Certificate_ValidFrom:Valid from: %s
+SSL_Certificate_ValidTo:Valid until: %s
+SSL_Certificate_Version:Version: %ld
+Saturday:Saturday
+SaveAs:Save as...
+SaveAsNS:Save as
+SaveCompNS:Complete...
+SaveComplete:Save complete...
+SaveDraw:Webpage
+SaveError:The file could not be saved due to an error:
+SaveLink:Link
+SaveObject:Object
+SaveSelection:Selection
+SaveSource:Source
+SaveText:Webpage
+SaveURL:Save location
+Scale:Scale
+ScaleDec:Decrease
+ScaleInc:Increase
+ScaleNS:Scale
+ScaleNorm:Normal
+ScaleQuality:Higher quality scaling
+Scaled:Scaled
+Scaling:Scaling
+Screen:Screen
+ScreenOwn:Own screen
+Scripting:Scripting
+ScrollBoth:Move your mouse while keeping the button pressed to scroll the content
+ScrollDown:Click the arrow to scroll down
+ScrollH:Drag the bar to scroll horizontally
+ScrollLeft:Click the arrow to scroll left
+ScrollPDown:Click to scroll down one page
+ScrollPLeft:Click to scroll left one page
+ScrollPRight:Click to scroll right one page
+ScrollPUp:Click to scroll up one page
+ScrollRight:Click the arrow to scroll right
+ScrollUp:Click the arrow to scroll up
+ScrollV:Drag the bar to scroll vertically
+SearchError:Invalid Search.
+SearchProvider:Search provider
+SearchURL:Search from URL bar
+SearchWeb:Web search
+SelSave:Save
+SelectAllNS:Select all
+SelectClick:Click on entry to select it
+SelectClose:Click to close the select menu
+SelectFile:Select file...
+SelectMClick:Click on entry to select it, multiple options can be selected
+SelectMenu:Select
+Selecting:Selecting
+Selection:Selection
+SendReferer:Send site referral information
+SetPassword:Set password
+Settings:Settings
+SettingsEdit:Edit preferences
+SettingsSave:Save settings
+ShowAll:Show All
+ShowCookies:Show cookies...
+Size:Size
+SnapshotWindow:Snapshot window
+Source:Source...
+Sprite:Sprite
+SpriteTitle:%s (Sprite image %lux%lu pixels)
+Sticky:Sticky
+Stop:Stop loading this page
+Stopped:Stopped
+Sunday:Sunday
+SuppressImages:Suppress images
+TabActive:Open new tabs in background
+TabLast:Open new tabs after all existing tabs
+TabMiddle:Middle mouse button opens tabs
+TabbedBrowsing:Tabbed browsing
+TextNS:Text...
+Theme:Theme
+ThemeApplyErr:An error occurred whilst trying to apply the downloaded theme.
+ThemeInstActive:A theme is currently being downloaded or installed. Please wait for it to finish or cancel it before installing more themes.
+ThemeInstDown:Please wait for the theme to download.
+ThemeInstall:Would you like to install the theme '%s' by %s?
+ThemeInstallErr:An error occurred whilst trying to install the downloaded theme.
+ThemeInvalid:The downloaded theme is invalid or requires a newer version of NetSurf.
+Thursday:Thursday
+TiBytes: TiB
+Timeout:This site took too long to respond
+TimeoutDescription: A connection to %s could not be established. The site may be temporarily unavailable or too busy to respond.
+TimeoutTitle:Connection timed out
+ToolAddress:Address bar
+ToolButtons:Buttons
+ToolStatus:Status bar
+ToolThrob:Throbber
+Toolbar:Toolbar
+Toolbars:Toolbars
+Top:Top
+Tree:Tree
+TreeAdded:Added: %s
+TreeClear:Clear default
+TreeComment:Comment: %s
+TreeDefault:Set as default
+TreeDelete:Delete
+TreeDomain:Domain: %s%s
+TreeExpires:Expires: %s
+TreeExport:Export...
+TreeHeaders: (from headers)
+TreeHotlist:NetSurf hotlist
+TreeImport:Imported URL
+TreeLast:Last visited: %s
+TreeLastUsed:Last used: %s
+TreeLaunch:Visit URL
+TreeLoadError:The tree was unable to be correctly loaded.
+TreeNewFolder:New directory
+TreeNewLink:New address
+TreePath:Path: %s%s
+TreePersistent:Persistent: %s
+TreeSecure:Secure hosts only: %s
+TreeSession:Session end
+TreeUnknown:Unknown
+TreeUnused:Unused
+TreeValue:Value: %s
+TreeVersion:Version: %s
+TreeVersion0:Netscape
+TreeVersion1:RFC 2109
+TreeVersion2:RFC 2965
+TreeVisited:Visited: %s
+TreeVisits:Visits: %i
+TreeviewLabelContent:Content
+TreeviewLabelDomain:Domain
+TreeviewLabelDomainFolder:Domain folder
+TreeviewLabelExpires:Expires
+TreeviewLabelFolder:Folder
+TreeviewLabelIssuer:Issuer
+TreeviewLabelLastUsed:Last used
+TreeviewLabelLastVisit:Last visit
+TreeviewLabelName:Name
+TreeviewLabelPath:Path
+TreeviewLabelPeriod:Period
+TreeviewLabelPersistent:Persistent
+TreeviewLabelRestrictions:Restrictions
+TreeviewLabelSerial:Serial
+TreeviewLabelTitle:Title
+TreeviewLabelType:Type
+TreeviewLabelURL:URL
+TreeviewLabelValidFrom:Valid from
+TreeviewLabelValidUntil:Valid until
+TreeviewLabelVersion:Version
+TreeviewLabelVisits:Visits
+TrueColour:True colour
+TryAgain:Try Again
+Tuesday:Tuesday
+URIError:NetSurf was unable to parse this URI file due to a syntax error.
+URLSuggest:Recent URLs
+Unwritten:Writing data to file failed.
+UpLevel:Up one level
+Use:Use
+Username:Username
+Utilities:Utilities
+View:Display
+ViewCertificates:View certificate details
+ViewCertificatesNotPossible:Certificate information is not available for viewing
+WebPTitle:%s (WebP image %lux%lu pixels)
+Wednesday:Wednesday
+Window:Window
+WindowReset:Reset default position
+WindowSave:Set as default position
+WindowSize:Copy window position
+WindowStagr:Stagger window position
+Yes:Yes
+con_advanced:Advanced
+con_cache:Cache
+con_connect:Connection
+con_content:Content
+con_fonts:Fonts
+con_general:General
+con_home:Home page
+con_image:Images
+con_inter:Interface
+con_lang:Language
+con_memory:Memory
+con_rendering:Rendering
+con_secure:Security
+con_theme:Themes
+kBytes: kB
+obj:object
+objs:objects
+styl:stylesheet
+styls:stylesheets

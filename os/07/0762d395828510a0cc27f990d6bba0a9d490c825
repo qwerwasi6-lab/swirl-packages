@@ -1,0 +1,7 @@
+{
+  "name": "pkill",
+  "engine": "builtin",
+  "category": "system",
+  "usage": "pkill <name>",
+  "summary": "terminate by name"
+}

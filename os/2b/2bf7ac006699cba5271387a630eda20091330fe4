@@ -1,0 +1,7 @@
+{
+  "name": "sysinfo",
+  "engine": "builtin",
+  "category": "system",
+  "usage": "sysinfo",
+  "summary": "kernel + memory summary"
+}

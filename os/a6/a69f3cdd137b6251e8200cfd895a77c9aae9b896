@@ -1,0 +1,10 @@
+{
+  "name": "exit",
+  "engine": "pipeline",
+  "category": "session",
+  "usage": "exit",
+  "summary": "close this terminal",
+  "steps": [
+    { "action": "close" }
+]
+}

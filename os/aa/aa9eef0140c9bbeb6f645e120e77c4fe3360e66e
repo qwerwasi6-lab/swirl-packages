@@ -1,0 +1,7 @@
+{
+  "name": "ps",
+  "engine": "builtin",
+  "category": "system",
+  "usage": "ps",
+  "summary": "process table"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "fastfetch",
+  "engine": "builtin",
+  "category": "system",
+  "usage": "fastfetch / fetch / swirlfetch",
+  "summary": "the pretty system card",
+  "aliases": [
+    "fetch",
+    "swirlfetch"
+  ]
+}

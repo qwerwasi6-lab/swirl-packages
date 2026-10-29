@@ -1,0 +1,10 @@
+{
+  "name": "whoami",
+  "engine": "pipeline",
+  "category": "system",
+  "usage": "hostname / whoami",
+  "summary": "machine + user name",
+  "steps": [
+    { "print": "user" }
+]
+}

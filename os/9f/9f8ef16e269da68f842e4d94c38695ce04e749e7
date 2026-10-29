@@ -1,0 +1,60 @@
+SwirlFS v1 — on-disk format specification
+=========================================
+
+SwirlFS is the native filesystem of SwirlOS. It was designed to be small
+enough to specify on one page and simple enough to implement twice (host
+mkfs tool and kernel driver) without disagreement.
+
+Layout
+------
+The disk is a flat array of 4096-byte blocks:
+
+    block 0                    superblock
+    block 1 ..                 block allocation bitmap (1 bit per block)
+    ...                        inode allocation bitmap
+    ...                        inode table (64 bytes per inode)
+    ...                        data area (file contents, directory blocks)
+
+Superblock (block 0)
+--------------------
+    u32  magic            0x53575246 ("SWRF")
+    u32  version          1
+    u32  block_size       4096
+    u32  total_blocks
+    u32  total_inodes
+    u32  block_bm_start   block index of the block bitmap
+    u32  inode_bm_start   block index of the inode bitmap
+    u32  inode_table_start
+    u32  data_start       first block of the data area
+    u32  root_ino         always 1
+    char label[16]
+
+Inode (64 bytes)
+----------------
+    u32  type             0 free, 1 file, 2 directory
+    u32  size             file size in bytes (0 for directories)
+    u32  links
+    u32  direct[12]       direct block pointers
+    u32  indirect         indirect block (1024 block pointers) or 0
+
+Maximum file size: (12 + 1024) * 4096 = 4,218,880 bytes (~4.2 MB).
+
+Directory block
+---------------
+A directory occupies exactly one block, holding up to 64 fixed-size
+entries:
+
+    u32  inode            0 marks end of valid entries
+    u8   type             1 file, 2 directory
+    u8   namelen
+    u8   rsv[2]
+    char name[56]         not NUL-terminated; length in namelen
+
+Rules
+-----
+- Inode number 1 is always the root directory.
+- A freed block or inode has its bitmap bit cleared; directory slots of
+  removed entries are compacted by moving later entries forward.
+- All integers are little-endian. No journaling in v1: unclean shutdown
+  may lose recent writes; the filesystem stays structurally valid because
+  metadata blocks are written after data blocks.

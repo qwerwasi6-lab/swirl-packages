@@ -1,0 +1,6 @@
+# autostart.swirl — commands executed by the shell at session start
+# Lines run in order, exactly as if you typed them.
+sysinfo
+echo Welcome to SwirlOS. Type 'help' for commands, 'rings' to see your privilege level.
+ls /
+ls /system

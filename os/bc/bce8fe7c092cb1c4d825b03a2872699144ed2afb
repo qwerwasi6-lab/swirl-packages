@@ -1,0 +1,11 @@
+{
+  "name": "nano",
+  "engine": "builtin",
+  "category": "files",
+  "usage": "nano [file]",
+  "summary": "full-screen editor (also: edit, kilo)",
+  "aliases": [
+    "edit",
+    "kilo"
+  ]
+}

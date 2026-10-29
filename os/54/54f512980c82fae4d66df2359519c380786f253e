@@ -1,0 +1,7 @@
+{
+  "name": "wifi",
+  "engine": "builtin",
+  "category": "network",
+  "usage": "wifi",
+  "summary": "Wi-Fi: status | scan | connect | disconnect"
+}

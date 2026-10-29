@@ -1,0 +1,1285 @@
+{
+ "name": "SwirlOS",
+ "version": "r63",
+ "abi": 1,
+ "date": "2026-10-29",
+ "notes": "First release with system updates: spm os, Settings > Software Update, repair of system files, crash-safe installs.",
+ "files": [
+  {
+   "path": "os/7e/7eac1ad1bc5ac61f8d3f727a87cd61a126401d4f",
+   "dest": "/system/apps/apps.txt",
+   "sha256": "7eac1ad1bc5ac61f8d3f727a87cd61a126401d4f1c17da0863519dc7e48d58e7",
+   "size": 3511
+  },
+  {
+   "path": "os/af/af4ca98103170f29d2ddb94d8780b7a703172309",
+   "dest": "/system/apps/ddtest.exe",
+   "sha256": "af4ca98103170f29d2ddb94d8780b7a7031723098a169f0b2cec9b13d105afd7",
+   "size": 351458
+  },
+  {
+   "path": "os/d9/d95a9137267473947075be805565f89a26b0b6a1",
+   "dest": "/system/apps/desktop.elf",
+   "sha256": "d95a9137267473947075be805565f89a26b0b6a126e23232c20e8035663f6087",
+   "size": 992064
+  },
+  {
+   "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
+   "dest": "/system/apps/doom.elf",
+   "sha256": "e21d90c66541ace124567386a446d1d58107a20f9bd6b9a738cfb6bed8a871cb",
+   "size": 2136272
+  },
+  {
+   "path": "os/17/1791f9e591a8539a4bcbbcc49fb7be3e89e2db8e",
+   "dest": "/system/apps/files.elf",
+   "sha256": "1791f9e591a8539a4bcbbcc49fb7be3e89e2db8ed9dabb218f60343bd80281ba",
+   "size": 18600
+  },
+  {
+   "path": "os/f9/f9299608830805973c124d54d31459d960bb92ae",
+   "dest": "/system/apps/gamedemo.elf",
+   "sha256": "f9299608830805973c124d54d31459d960bb92aef046d4c87838b5a34fcfb4d6",
+   "size": 23576
+  },
+  {
+   "path": "os/ba/ba733bc57b57fba542205aefefd3a681f159889c",
+   "dest": "/system/apps/gametest.elf",
+   "sha256": "ba733bc57b57fba542205aefefd3a681f159889c9c79586efb911969231a58b4",
+   "size": 91504
+  },
+  {
+   "path": "os/5d/5d1f745d7e05aa8841a19ba512634b4df3310d86",
+   "dest": "/system/apps/gltest.elf",
+   "sha256": "5d1f745d7e05aa8841a19ba512634b4df3310d8635d5d9be2529354b65cc42d7",
+   "size": 19496
+  },
+  {
+   "path": "os/b4/b4248cc4d9c40fc6d05067039181da1eca496fd6",
+   "dest": "/system/apps/hello.elf",
+   "sha256": "b4248cc4d9c40fc6d05067039181da1eca496fd624b040a0d14e121d1b92f4eb",
+   "size": 10264
+  },
+  {
+   "path": "os/04/0467dd7db100a504da7265aafcf3b973c66f3875",
+   "dest": "/system/apps/hello.exe",
+   "sha256": "0467dd7db100a504da7265aafcf3b973c66f387556a05636a353efb330d281a5",
+   "size": 118132
+  },
+  {
+   "path": "os/43/4308c89c7bdc73f0ff3b98361fbab5f11aeb758b",
+   "dest": "/system/apps/init.elf",
+   "sha256": "4308c89c7bdc73f0ff3b98361fbab5f11aeb758b99b57972d09a874ee5f85009",
+   "size": 13920
+  },
+  {
+   "path": "os/5b/5b38af9399c41702104b40a1e570de7d5738cf13",
+   "dest": "/system/apps/netsurf.elf",
+   "sha256": "5b38af9399c41702104b40a1e570de7d5738cf13221dea9ba65621876efc621e",
+   "size": 4109848
+  },
+  {
+   "path": "os/6b/6b89c47d3be71c80b1db3a8de063aa1ce87f7141",
+   "dest": "/system/apps/nettest.elf",
+   "sha256": "6b89c47d3be71c80b1db3a8de063aa1ce87f7141494d6676189aca6d16dc623a",
+   "size": 18800
+  },
+  {
+   "path": "os/5f/5f5e5e9c9d19276c9732dc58d3a115b399cfa55b",
+   "dest": "/system/apps/sdlin.elf",
+   "sha256": "5f5e5e9c9d19276c9732dc58d3a115b399cfa55b8c31fb384cc553b352f91f96",
+   "size": 13176
+  },
+  {
+   "path": "os/a6/a6ebc4da6c1de53af64d895c55c3042f307230c1",
+   "dest": "/system/apps/sdltest.elf",
+   "sha256": "a6ebc4da6c1de53af64d895c55c3042f307230c19f6ff0e9befb620f7ecd2532",
+   "size": 13920
+  },
+  {
+   "path": "os/3f/3fbd80afa8c0c8abd40ef28f512ac5b826e501b0",
+   "dest": "/system/apps/shell.elf",
+   "sha256": "3fbd80afa8c0c8abd40ef28f512ac5b826e501b063a4c27aeb20a2d25c8c52c1",
+   "size": 21072
+  },
+  {
+   "path": "os/51/516005622731cc6d138154121b8a33547c3d1db6",
+   "dest": "/system/apps/sndsdl.elf",
+   "sha256": "516005622731cc6d138154121b8a33547c3d1db625f9509be3b84c8394b4dda4",
+   "size": 12592
+  },
+  {
+   "path": "os/66/665e737697502fffdfbb2ee454d57807404c4223",
+   "dest": "/system/apps/sndtest.elf",
+   "sha256": "665e737697502fffdfbb2ee454d57807404c42233b5c30bce26157b170b06854",
+   "size": 9744
+  },
+  {
+   "path": "os/9e/9e430980e9d7da518ff1d9a9850195a13c07e853",
+   "dest": "/system/apps/spm.elf",
+   "sha256": "9e430980e9d7da518ff1d9a9850195a13c07e853e0aeb77175b464e101f14ef5",
+   "size": 525328
+  },
+  {
+   "path": "os/1a/1a698557a287cea192d40b223a7b0d85b1a94c9a",
+   "dest": "/system/apps/swirlrun.elf",
+   "sha256": "1a698557a287cea192d40b223a7b0d85b1a94c9a335b3d18f531697b6204b104",
+   "size": 923888
+  },
+  {
+   "path": "os/04/04848d9462e28394427e378d3c92337843097dca",
+   "dest": "/system/apps/taskman.elf",
+   "sha256": "04848d9462e28394427e378d3c92337843097dcae4aa2e4221965aaf3c802a42",
+   "size": 12040
+  },
+  {
+   "path": "os/e4/e41168821d3e35da44bc08d7d82472230a3e35e9",
+   "dest": "/system/apps/tcpdns.elf",
+   "sha256": "e41168821d3e35da44bc08d7d82472230a3e35e9164457746e0634ad86d636b8",
+   "size": 13272
+  },
+  {
+   "path": "os/af/af3458315e1fa7457b787477b0f7292702fbabfe",
+   "dest": "/system/apps/terminal.elf",
+   "sha256": "af3458315e1fa7457b787477b0f7292702fbabfe10c94b9e0f13f6f1c851298b",
+   "size": 19648
+  },
+  {
+   "path": "os/a0/a069065ecfa6fe1dbbbc16f0755850267055914f",
+   "dest": "/system/apps/w32test.exe",
+   "sha256": "a069065ecfa6fe1dbbbc16f0755850267055914ffeedff693039885557eb4adc",
+   "size": 11744
+  },
+  {
+   "path": "os/1a/1a698557a287cea192d40b223a7b0d85b1a94c9a",
+   "dest": "/system/apps/winrun.elf",
+   "sha256": "1a698557a287cea192d40b223a7b0d85b1a94c9a335b3d18f531697b6204b104",
+   "size": 923888
+  },
+  {
+   "path": "os/84/847900f53e3a639198a9075ba879c403bfeb3f17",
+   "dest": "/system/apps/gui/gabout.elf",
+   "sha256": "847900f53e3a639198a9075ba879c403bfeb3f1772cec158dfb330d9d3ba1d8a",
+   "size": 538664
+  },
+  {
+   "path": "os/ad/add287462aca40b43397c9473493f74b5d6980e6",
+   "dest": "/system/apps/gui/gcalc.elf",
+   "sha256": "add287462aca40b43397c9473493f74b5d6980e688a828ef23cd816a8a634ff1",
+   "size": 62032
+  },
+  {
+   "path": "os/59/59ede4935f904b2b8c9ace05aacdfef77ae0afec",
+   "dest": "/system/apps/gui/gdrvman.elf",
+   "sha256": "59ede4935f904b2b8c9ace05aacdfef77ae0afec400af483f24ca6337e9ec1c6",
+   "size": 589064
+  },
+  {
+   "path": "os/5f/5ffd56ace840878fc526b1150b888d145a53c047",
+   "dest": "/system/apps/gui/gdrvprop.elf",
+   "sha256": "5ffd56ace840878fc526b1150b888d145a53c047a26f591342c02c0fff758a6d",
+   "size": 573560
+  },
+  {
+   "path": "os/7a/7a1fd1e1dc377d1105b3aec792a6d01096a51ab2",
+   "dest": "/system/apps/gui/geditor.elf",
+   "sha256": "7a1fd1e1dc377d1105b3aec792a6d01096a51ab224105965b3515b3d515f9e1c",
+   "size": 589200
+  },
+  {
+   "path": "os/e6/e6fa291fb15c8385fd1a3124114e677128df339b",
+   "dest": "/system/apps/gui/gfiles.elf",
+   "sha256": "e6fa291fb15c8385fd1a3124114e677128df339b36527dc351290ac9baeb4a21",
+   "size": 834096
+  },
+  {
+   "path": "os/8f/8f9244294acf8754f8d81feb31605a4ec81c3463",
+   "dest": "/system/apps/gui/ggl3d.elf",
+   "sha256": "8f9244294acf8754f8d81feb31605a4ec81c3463dff67e9b045ac646411c5202",
+   "size": 84304
+  },
+  {
+   "path": "os/38/38f4aec3747e90810a674a981f9b3285f3923d22",
+   "dest": "/system/apps/gui/gimgview.elf",
+   "sha256": "38f4aec3747e90810a674a981f9b3285f3923d22b8d680806d94d48ea9c9094c",
+   "size": 327328
+  },
+  {
+   "path": "os/7b/7b1ca2027610f0b0fcfa2a5d1b649494d051f45b",
+   "dest": "/system/apps/gui/gsettings.elf",
+   "sha256": "7b1ca2027610f0b0fcfa2a5d1b649494d051f45b239442f0dc65a8b79fded425",
+   "size": 897256
+  },
+  {
+   "path": "os/2f/2f6bae3657adb56ea3ab3041d228d792a0bacbca",
+   "dest": "/system/apps/gui/gsetup.elf",
+   "sha256": "2f6bae3657adb56ea3ab3041d228d792a0bacbca408370c809e72296a883cff5",
+   "size": 617080
+  },
+  {
+   "path": "os/b3/b36464194dc3bee88745bbdba49956a3c351fc5f",
+   "dest": "/system/apps/gui/gstore.elf",
+   "sha256": "b36464194dc3bee88745bbdba49956a3c351fc5f14a4fc50ac339d6e05d51b94",
+   "size": 101232
+  },
+  {
+   "path": "os/b3/b3bb41575bef9d1a05448df17319454bdf203d0d",
+   "dest": "/system/apps/gui/gtaskman.elf",
+   "sha256": "b3bb41575bef9d1a05448df17319454bdf203d0db721a15533041d719ec1455c",
+   "size": 571680
+  },
+  {
+   "path": "os/a2/a2279b305f57a4071ad765568b823c5457627ab4",
+   "dest": "/system/apps/gui/gtbtool.elf",
+   "sha256": "a2279b305f57a4071ad765568b823c5457627ab4d79e4cbca064a2cd85c0cbdf",
+   "size": 75304
+  },
+  {
+   "path": "os/d8/d8db17e63ec6b296c5d3633aca2dd7db3c82df82",
+   "dest": "/system/apps/gui/gterm.elf",
+   "sha256": "d8db17e63ec6b296c5d3633aca2dd7db3c82df820827760a93736b0b1ad23ef0",
+   "size": 660384
+  },
+  {
+   "path": "os/e3/e3d969796861cb86e0f349485fcbe851cddc7baa",
+   "dest": "/system/apps/gui/gvideo.elf",
+   "sha256": "e3d969796861cb86e0f349485fcbe851cddc7baa0f14e45aec5d1d0ddadc0a56",
+   "size": 282648
+  },
+  {
+   "path": "os/e2/e2bd4f9f24829354ac598ef2a41696a4dc9cd670",
+   "dest": "/system/apps/gui/gwadinst.elf",
+   "sha256": "e2bd4f9f24829354ac598ef2a41696a4dc9cd67011d31a0b8aba8da79ab10099",
+   "size": 589528
+  },
+  {
+   "path": "os/6d/6d201ab2db8a5459fb30441dc0948b93c7476991",
+   "dest": "/system/apps/gui/paint.elf",
+   "sha256": "6d201ab2db8a5459fb30441dc0948b93c74769915b61e16a8a8772f4dcf9991e",
+   "size": 70784
+  },
+  {
+   "path": "os/c1/c136bbf956dedffac4be26f0eae4ac3fb33d54c5",
+   "dest": "/system/apps/icons/about.png",
+   "sha256": "c136bbf956dedffac4be26f0eae4ac3fb33d54c5e84a49a35fe7b504345e6908",
+   "size": 11594
+  },
+  {
+   "path": "os/55/5581f8050c67bae99951623b8cdac3ff84168323",
+   "dest": "/system/apps/icons/calc.png",
+   "sha256": "5581f8050c67bae99951623b8cdac3ff84168323b57bba7e602ee688dad6a574",
+   "size": 5526
+  },
+  {
+   "path": "os/5f/5feaa2bd2d6b7c377e57241f5bbe3716093d6b7c",
+   "dest": "/system/apps/icons/doom.png",
+   "sha256": "5feaa2bd2d6b7c377e57241f5bbe3716093d6b7c4b9f6fd6a0617c7b19517dd8",
+   "size": 6078
+  },
+  {
+   "path": "os/fd/fdbbaa19654a7242b2918cb71b7bd72e304344e4",
+   "dest": "/system/apps/icons/drvman.png",
+   "sha256": "fdbbaa19654a7242b2918cb71b7bd72e304344e467d7c2ecf5afdb51fb434ea7",
+   "size": 7066
+  },
+  {
+   "path": "os/58/5827cf34c6d11b4f4509e98877fe1a63a1eeadc0",
+   "dest": "/system/apps/icons/editor.png",
+   "sha256": "5827cf34c6d11b4f4509e98877fe1a63a1eeadc01032bc7340f34c404aa1de03",
+   "size": 4617
+  },
+  {
+   "path": "os/de/de06c5939946732c0bf4aabc64633dea49d0d07c",
+   "dest": "/system/apps/icons/file.png",
+   "sha256": "de06c5939946732c0bf4aabc64633dea49d0d07cb2b338ac7b09a26f1b21c79e",
+   "size": 1916
+  },
+  {
+   "path": "os/24/247674e5e97869fa79879fc7aee6f4f662a0f2a4",
+   "dest": "/system/apps/icons/folder.png",
+   "sha256": "247674e5e97869fa79879fc7aee6f4f662a0f2a4fef47fc40abcec39e987d767",
+   "size": 2001
+  },
+  {
+   "path": "os/72/72693c2e8d5629e84b0983c35c018d316fa0b3f9",
+   "dest": "/system/apps/icons/game.png",
+   "sha256": "72693c2e8d5629e84b0983c35c018d316fa0b3f98f778a373e17147def2c0689",
+   "size": 6457
+  },
+  {
+   "path": "os/a6/a6da519ead15f6a2c469e55b2581f93165be6f37",
+   "dest": "/system/apps/icons/gl3d.png",
+   "sha256": "a6da519ead15f6a2c469e55b2581f93165be6f37bc4c9b1b825a7d89346e1a63",
+   "size": 6568
+  },
+  {
+   "path": "os/63/63ccff53009b432586e143b0371b371f72324c75",
+   "dest": "/system/apps/icons/imgview.png",
+   "sha256": "63ccff53009b432586e143b0371b371f72324c7507f9ade4378639fc12fca503",
+   "size": 6323
+  },
+  {
+   "path": "os/24/24a9fd314af7e0437170362416aff06821712089",
+   "dest": "/system/apps/icons/netsurf.png",
+   "sha256": "24a9fd314af7e0437170362416aff06821712089bdd1d1b3392bc372e6753696",
+   "size": 9700
+  },
+  {
+   "path": "os/4c/4c5f834f04897564b9d82dc37db2a66f0dd0cb11",
+   "dest": "/system/apps/icons/nic.png",
+   "sha256": "4c5f834f04897564b9d82dc37db2a66f0dd0cb11b6b9bed3ee597041d624f722",
+   "size": 5431
+  },
+  {
+   "path": "os/57/577500cfd3066eb38cbac65e308123b55f0bbadf",
+   "dest": "/system/apps/icons/paint.png",
+   "sha256": "577500cfd3066eb38cbac65e308123b55f0bbadfcde18cbfac4764bad1a98b6c",
+   "size": 8205
+  },
+  {
+   "path": "os/65/6510d27b14dffb91cb442581121f5363f44b8e02",
+   "dest": "/system/apps/icons/quake.png",
+   "sha256": "6510d27b14dffb91cb442581121f5363f44b8e02c3e03c5cfe2dd6e64c603d73",
+   "size": 8555
+  },
+  {
+   "path": "os/fb/fb354b835442400356246310e5dc83f227f4da57",
+   "dest": "/system/apps/icons/settings.png",
+   "sha256": "fb354b835442400356246310e5dc83f227f4da57d1093b9efda59f4aa10ce39a",
+   "size": 7775
+  },
+  {
+   "path": "os/2d/2d313d73a02dd6c7088c839b4dce1b0203577f67",
+   "dest": "/system/apps/icons/taskmgr.png",
+   "sha256": "2d313d73a02dd6c7088c839b4dce1b0203577f67256a862e0e4e64020da29f47",
+   "size": 7091
+  },
+  {
+   "path": "os/bd/bdf8761b696ab5041d8897209a2c8264b7cd881f",
+   "dest": "/system/apps/icons/terminal.png",
+   "sha256": "bdf8761b696ab5041d8897209a2c8264b7cd881fc522b83c1931559cedaaa0c1",
+   "size": 4931
+  },
+  {
+   "path": "os/d8/d8ac3b2a61cf1ff78753d08829ef42f6f2987cca",
+   "dest": "/system/apps/icons/video.png",
+   "sha256": "d8ac3b2a61cf1ff78753d08829ef42f6f2987ccad2dfc31622789f88ba585fa5",
+   "size": 7643
+  },
+  {
+   "path": "os/d9/d999a1519a3379308b3f6f12cc6e5a3c5da4a7c6",
+   "dest": "/system/apps/icons/wadinst.png",
+   "sha256": "d999a1519a3379308b3f6f12cc6e5a3c5da4a7c6f3a4833dbca7c45f987b3fe7",
+   "size": 5849
+  },
+  {
+   "path": "os/96/965044a48da7eba5616734bd194c4af369d735b5",
+   "dest": "/system/apps/icons/wallpaper.png",
+   "sha256": "965044a48da7eba5616734bd194c4af369d735b5c290ebddb8d749d763327614",
+   "size": 6575
+  },
+  {
+   "path": "os/95/95936991a002811a00b4f4212d88ad361d28019a",
+   "dest": "/system/config/autostart.swirl",
+   "sha256": "95936991a002811a00b4f4212d88ad361d28019aa8ca4a39fbe1087d17cc29cc",
+   "size": 234,
+   "keep": 1
+  },
+  {
+   "path": "os/cb/cbf338a94f26a44b3f7a26d523182216ddca6383",
+   "dest": "/system/config/shell.conf",
+   "sha256": "cbf338a94f26a44b3f7a26d523182216ddca638352ed05b16c12cdece366c364",
+   "size": 279,
+   "keep": 1
+  },
+  {
+   "path": "os/f3/f3ed4e498d073effb6d0d643282279069c57b47d",
+   "dest": "/system/config/swirl.conf",
+   "sha256": "f3ed4e498d073effb6d0d643282279069c57b47d848214d9171425ac9806d18c",
+   "size": 3460,
+   "keep": 1
+  },
+  {
+   "path": "os/77/775ccb9b62e55d2aaccb6a67e0901da4122b3a05",
+   "dest": "/system/config/theme.json",
+   "sha256": "775ccb9b62e55d2aaccb6a67e0901da4122b3a052d000b672aaab7a6ed35972d",
+   "size": 1047,
+   "keep": 1
+  },
+  {
+   "path": "os/64/64a069e9d501f8f5f0550cd79a102abfe5da99c6",
+   "dest": "/system/doc/gamelib.txt",
+   "sha256": "64a069e9d501f8f5f0550cd79a102abfe5da99c6a97d22480b318bafc456d864",
+   "size": 2303
+  },
+  {
+   "path": "os/22/227da74d143bf4ef74bf86bfbe86fe8b00bfa3e9",
+   "dest": "/system/doc/libsdl2.txt",
+   "sha256": "227da74d143bf4ef74bf86bfbe86fe8b00bfa3e9de8aee4d29ecd35c6caaabcc",
+   "size": 6339
+  },
+  {
+   "path": "os/d3/d341e2ce2540f23d7356d35ad62bf45b612a1f6b",
+   "dest": "/system/doc/philosophy.txt",
+   "sha256": "d341e2ce2540f23d7356d35ad62bf45b612a1f6bd122c350b8702a38e1f98766",
+   "size": 2155
+  },
+  {
+   "path": "os/55/553cb79eff18134d0dfd8f5ad01bfb26464734eb",
+   "dest": "/system/doc/spm.txt",
+   "sha256": "553cb79eff18134d0dfd8f5ad01bfb26464734ebe4cb5d75a0b503a079634bd8",
+   "size": 3206
+  },
+  {
+   "path": "os/9f/9f8ef16e269da68f842e4d94c38695ce04e749e7",
+   "dest": "/system/doc/swirlfs-spec.txt",
+   "sha256": "9f8ef16e269da68f842e4d94c38695ce04e749e7d12636f9fa4b7a8d63055aec",
+   "size": 2153
+  },
+  {
+   "path": "os/22/22af9b894389a5d4bf970fb1917f1f97ee2da53a",
+   "dest": "/system/doc/swirlrun.txt",
+   "sha256": "22af9b894389a5d4bf970fb1917f1f97ee2da53aeab766c24bbae47b7ed841ed",
+   "size": 5781
+  },
+  {
+   "path": "os/e4/e474628fe4cf20ab38632d638cba66f9b8655601",
+   "dest": "/system/doc/swirlymp.txt",
+   "sha256": "e474628fe4cf20ab38632d638cba66f9b865560164cf5bde8fad13226ef83bac",
+   "size": 1348
+  },
+  {
+   "path": "os/2f/2f741494aa70ad0a4b4b40fe8565ff9281138830",
+   "dest": "/system/doc/syscall-abi.txt",
+   "sha256": "2f741494aa70ad0a4b4b40fe8565ff9281138830c24e9f06a1b5b3666ec4934a",
+   "size": 3183
+  },
+  {
+   "path": "os/25/257bb217ad43e3577c81e3c9c858fe37a6c95631",
+   "dest": "/system/doc/theme.txt",
+   "sha256": "257bb217ad43e3577c81e3c9c858fe37a6c956317a899194c3ab7fc9857340e9",
+   "size": 6722
+  },
+  {
+   "path": "os/f1/f1738576525e86db1d5cf63a6c1b56e0a7e2a289",
+   "dest": "/system/fonts/Inter-Medium.ttf",
+   "sha256": "f1738576525e86db1d5cf63a6c1b56e0a7e2a2898b499ac93db95f2e7a9f9cd5",
+   "size": 342892
+  },
+  {
+   "path": "os/a4/a414b48aa577ef2c62ebb135341ddeef33ee26a4",
+   "dest": "/system/fonts/Inter-Regular.ttf",
+   "sha256": "a414b48aa577ef2c62ebb135341ddeef33ee26a4f5dc9f787f93c1aab08ebb50",
+   "size": 342408
+  },
+  {
+   "path": "os/f3/f30e9d2574c3bec5144347ff965f9841c8f06857",
+   "dest": "/system/fonts/Inter-SemiBold.ttf",
+   "sha256": "f30e9d2574c3bec5144347ff965f9841c8f06857f0b7383000f8c9489a161841",
+   "size": 343632
+  },
+  {
+   "path": "os/d2/d22c4f3821d725eb01210d278d95dfcfcaadc346",
+   "dest": "/system/fonts/JetBrainsMono-Bold.ttf",
+   "sha256": "d22c4f3821d725eb01210d278d95dfcfcaadc34699a06658d47c8a5cc5830ada",
+   "size": 274096
+  },
+  {
+   "path": "os/e6/e6fd0d7e91550b3ed2b735d4312474362c4716ed",
+   "dest": "/system/fonts/JetBrainsMono-Regular.ttf",
+   "sha256": "e6fd0d7e91550b3ed2b735d4312474362c4716edc4fc0577a0f61ed782d5aed1",
+   "size": 270224
+  },
+  {
+   "path": "os/b4/b4a6c3e4faab8773f4ff761d56451646409f29ab",
+   "dest": "/system/fonts/monospace.ttf",
+   "sha256": "b4a6c3e4faab8773f4ff761d56451646409f29abedd68f05d38c2df667d3c582",
+   "size": 340712
+  },
+  {
+   "path": "os/bc/bce60f1b4421acd9ea51ba6623d7024ecbe6817a",
+   "dest": "/system/fonts/monospace_bold.ttf",
+   "sha256": "bce60f1b4421acd9ea51ba6623d7024ecbe6817a953e3654df62a5e6bdf8f769",
+   "size": 331992
+  },
+  {
+   "path": "os/7d/7da195a74c55bef988d0d48f9508bd5d849425c1",
+   "dest": "/system/fonts/sans_serif.ttf",
+   "sha256": "7da195a74c55bef988d0d48f9508bd5d849425c1770dba5d7bfc6ce9ed848954",
+   "size": 757076
+  },
+  {
+   "path": "os/e6/e6476c1b80502924294eed40894c5b18e06c1814",
+   "dest": "/system/fonts/sans_serif_bold.ttf",
+   "sha256": "e6476c1b80502924294eed40894c5b18e06c181444ca953e5334262df9c27724",
+   "size": 705684
+  },
+  {
+   "path": "os/4a/4af75fa16ee6d3ad43e1ecec41862c24954af26a",
+   "dest": "/system/fonts/sans_serif_italic.ttf",
+   "sha256": "4af75fa16ee6d3ad43e1ecec41862c24954af26a55c6bb1ebb27bd486a50f5f4",
+   "size": 635416
+  },
+  {
+   "path": "os/eb/eb436dca0c2594b73d8b603b892e374fdfd8d885",
+   "dest": "/system/fonts/sans_serif_italic_bold.ttf",
+   "sha256": "eb436dca0c2594b73d8b603b892e374fdfd8d885d25ffb4f18df4c4c0b49e50f",
+   "size": 643292
+  },
+  {
+   "path": "os/42/42d1edeb7952f31b1f96d767ed7030b08a39e0c3",
+   "dest": "/system/fonts/serif.ttf",
+   "sha256": "42d1edeb7952f31b1f96d767ed7030b08a39e0c372b0071641518864e2bffb51",
+   "size": 380132
+  },
+  {
+   "path": "os/c4/c47b5527bcdc8dcf9ea8c77054454c5a884beaca",
+   "dest": "/system/fonts/serif_bold.ttf",
+   "sha256": "c47b5527bcdc8dcf9ea8c77054454c5a884beaca2f44851a2a823ee639cbf07f",
+   "size": 356088
+  },
+  {
+   "path": "os/2e/2e39b1d50f90b933b00c7bb54a96afd3f86419b3",
+   "dest": "/system/fonts/serif_italic.ttf",
+   "sha256": "2e39b1d50f90b933b00c7bb54a96afd3f86419b3d717c7cf202e36f2d4973e47",
+   "size": 345996
+  },
+  {
+   "path": "os/cd/cd03cb9379563a9449969dcd79363a096de77d31",
+   "dest": "/system/gterm/bench.json",
+   "sha256": "cd03cb9379563a9449969dcd79363a096de77d313e845aaf06b1c20a2b2a9d22",
+   "size": 138
+  },
+  {
+   "path": "os/e6/e6a413853742b6ea6607f63a81a2ebe112bf778c",
+   "dest": "/system/gterm/cat.json",
+   "sha256": "e6a413853742b6ea6607f63a81a2ebe112bf778c8c44d78002fe57358278a54c",
+   "size": 844
+  },
+  {
+   "path": "os/7f/7f48240c3715067a29e778791c0a854e412365a4",
+   "dest": "/system/gterm/cd.json",
+   "sha256": "7f48240c3715067a29e778791c0a854e412365a4506d33b59168245c1deb1abd",
+   "size": 334
+  },
+  {
+   "path": "os/24/24c2700694f4b2f52b2760983a6191a28b1e18c0",
+   "dest": "/system/gterm/clear.json",
+   "sha256": "24c2700694f4b2f52b2760983a6191a28b1e18c039611878fd86dd00015747d8",
+   "size": 179
+  },
+  {
+   "path": "os/d6/d60487be62d0cbffede3022b2854b54db3a8b9c7",
+   "dest": "/system/gterm/commands.json",
+   "sha256": "d60487be62d0cbffede3022b2854b54db3a8b9c7a0a993f86f3e0b6fac8bacca",
+   "size": 10025
+  },
+  {
+   "path": "os/59/59c9876c2cdb773482d61a12ba75d6500fa6efe3",
+   "dest": "/system/gterm/cp.json",
+   "sha256": "59c9876c2cdb773482d61a12ba75d6500fa6efe3b6a79e267e1d32b17d0597e1",
+   "size": 134
+  },
+  {
+   "path": "os/4f/4fbebd2a2cfb94dd53b16c3611a44b2c402bc289",
+   "dest": "/system/gterm/cube.json",
+   "sha256": "4fbebd2a2cfb94dd53b16c3611a44b2c402bc289c798719f946ebf6f2cb457f0",
+   "size": 224
+  },
+  {
+   "path": "os/ec/ece935b807ea59324090a4db294403af8e6a9fa0",
+   "dest": "/system/gterm/date.json",
+   "sha256": "ece935b807ea59324090a4db294403af8e6a9fa0f877d34a78f06a46d880c9d7",
+   "size": 119
+  },
+  {
+   "path": "os/34/34abf818356bf05f9624f83e02c95f0e0ea509dd",
+   "dest": "/system/gterm/doom.json",
+   "sha256": "34abf818356bf05f9624f83e02c95f0e0ea509dd356937b46deaad941df51486",
+   "size": 137
+  },
+  {
+   "path": "os/c2/c2ef4ce1c62f6c7382680b1ac399d7cff8114e00",
+   "dest": "/system/gterm/drvman.json",
+   "sha256": "c2ef4ce1c62f6c7382680b1ac399d7cff8114e00631251e88785cd7881ce33b4",
+   "size": 197
+  },
+  {
+   "path": "os/88/881171ffc2141e5ac1c093c50eb1f4d47bbd1e05",
+   "dest": "/system/gterm/echo.json",
+   "sha256": "881171ffc2141e5ac1c093c50eb1f4d47bbd1e05c95d626de7c13315d4604a92",
+   "size": 256
+  },
+  {
+   "path": "os/a6/a69f3cdd137b6251e8200cfd895a77c9aae9b896",
+   "dest": "/system/gterm/exit.json",
+   "sha256": "a69f3cdd137b6251e8200cfd895a77c9aae9b89628ea98b89ca7168414f7de29",
+   "size": 167
+  },
+  {
+   "path": "os/ed/eda7f889aa0955872ec796ecb2263cac6f183ab1",
+   "dest": "/system/gterm/fastfetch.json",
+   "sha256": "eda7f889aa0955872ec796ecb2263cac6f183ab18d4ff4d8450c0ab191262fdc",
+   "size": 207
+  },
+  {
+   "path": "os/7b/7b9789817969e1b239686488a7702c58cf797160",
+   "dest": "/system/gterm/free.json",
+   "sha256": "7b9789817969e1b239686488a7702c58cf797160e41d97a42eb830a1f2b46776",
+   "size": 134
+  },
+  {
+   "path": "os/cb/cb5a6734c97013f54cf359cf1b83c9b829548605",
+   "dest": "/system/gterm/guide.md",
+   "sha256": "cb5a6734c97013f54cf359cf1b83c9b829548605f55938600aed3abb04787eb1",
+   "size": 14589
+  },
+  {
+   "path": "os/00/00e9b2e8b2253bf40810995ed88569744241b970",
+   "dest": "/system/gterm/head.json",
+   "sha256": "00e9b2e8b2253bf40810995ed88569744241b970845e446323013756455e7819",
+   "size": 140
+  },
+  {
+   "path": "os/de/de8dcfdfb273cc224305ea6f16a3c7f263bd9b9a",
+   "dest": "/system/gterm/help.json",
+   "sha256": "de8dcfdfb273cc224305ea6f16a3c7f263bd9b9a353a7d4b0a01d7a6e98a7172",
+   "size": 123
+  },
+  {
+   "path": "os/cf/cfca2315ac8e176dd1a8cc2c33f1b223d2b7802e",
+   "dest": "/system/gterm/history.json",
+   "sha256": "cfca2315ac8e176dd1a8cc2c33f1b223d2b7802e2fd1cbe1c59be16406c94955",
+   "size": 136
+  },
+  {
+   "path": "os/ab/abeeb8ffcae94eede655c2b959639ce1b344d63c",
+   "dest": "/system/gterm/hostname.json",
+   "sha256": "abeeb8ffcae94eede655c2b959639ce1b344d63c47dc931878d1458b18bdb0d7",
+   "size": 300
+  },
+  {
+   "path": "os/61/6174679351b96ecfc6667737db045dcf491c5967",
+   "dest": "/system/gterm/kill.json",
+   "sha256": "6174679351b96ecfc6667737db045dcf491c5967cf579c7e31a7e012f4fc32ff",
+   "size": 878
+  },
+  {
+   "path": "os/45/4539edd0fe77acd20b7b6779c66180112430b956",
+   "dest": "/system/gterm/ls.json",
+   "sha256": "4539edd0fe77acd20b7b6779c66180112430b9563daf1d4627192ce167a0bba3",
+   "size": 127
+  },
+  {
+   "path": "os/01/0184dd87e4e46b3768fd705a55cc8d0019470bdf",
+   "dest": "/system/gterm/mkdir.json",
+   "sha256": "0184dd87e4e46b3768fd705a55cc8d0019470bdfb88851c838a47f05b1c9fc6d",
+   "size": 437
+  },
+  {
+   "path": "os/5d/5d015698b950df6cf6a522618411718c3ebe779a",
+   "dest": "/system/gterm/mv.json",
+   "sha256": "5d015698b950df6cf6a522618411718c3ebe779a23b9a2dacbb5c2a2322c9e48",
+   "size": 131
+  },
+  {
+   "path": "os/bc/bce8fe7c092cb1c4d825b03a2872699144ed2afb",
+   "dest": "/system/gterm/nano.json",
+   "sha256": "bce8fe7c092cb1c4d825b03a2872699144ed2afb4372cbb592ebceb67ed50abd",
+   "size": 190
+  },
+  {
+   "path": "os/be/be6191ece3aa52ee342410ac3529173b88faad9d",
+   "dest": "/system/gterm/peek.json",
+   "sha256": "be6191ece3aa52ee342410ac3529173b88faad9d7f08e2499d7959c7adcb72d2",
+   "size": 136
+  },
+  {
+   "path": "os/13/13856dd91b6dacadacd4c6f06158282eb8994076",
+   "dest": "/system/gterm/ping.json",
+   "sha256": "13856dd91b6dacadacd4c6f06158282eb8994076075286e0dcf397f1d7508b47",
+   "size": 137
+  },
+  {
+   "path": "os/07/0762d395828510a0cc27f990d6bba0a9d490c825",
+   "dest": "/system/gterm/pkill.json",
+   "sha256": "0762d395828510a0cc27f990d6bba0a9d490c82559916837d51f7c088686a244",
+   "size": 130
+  },
+  {
+   "path": "os/f5/f5993a839ea3406b9c5dde3a10b035855729d773",
+   "dest": "/system/gterm/poweroff.json",
+   "sha256": "f5993a839ea3406b9c5dde3a10b035855729d77321585fb1cd15d67c32533f4b",
+   "size": 378
+  },
+  {
+   "path": "os/aa/aa9eef0140c9bbeb6f645e120e77c4fe3360e66e",
+   "dest": "/system/gterm/ps.json",
+   "sha256": "aa9eef0140c9bbeb6f645e120e77c4fe3360e66ebe1c51424fe5f78506b0547c",
+   "size": 113
+  },
+  {
+   "path": "os/e7/e74ad3a6f95f599634652a8c42986d34ec7ae479",
+   "dest": "/system/gterm/pwd.json",
+   "sha256": "e74ad3a6f95f599634652a8c42986d34ec7ae479fb16b04bfd7bfb24e735ea18",
+   "size": 178
+  },
+  {
+   "path": "os/ac/acbc04b671e4100c072fde6aa863cdf140e74f90",
+   "dest": "/system/gterm/reboot.json",
+   "sha256": "acbc04b671e4100c072fde6aa863cdf140e74f905a23f00066a7cd8b7730e72c",
+   "size": 198
+  },
+  {
+   "path": "os/c5/c58462bb03be27f313a1de18c7f37602f1e43f80",
+   "dest": "/system/gterm/reload.json",
+   "sha256": "c58462bb03be27f313a1de18c7f37602f1e43f80e956487254e7a2db0637a518",
+   "size": 146
+  },
+  {
+   "path": "os/a1/a101ed39959834f8f434209fd9d1e7b36b9683ef",
+   "dest": "/system/gterm/rings.json",
+   "sha256": "a101ed39959834f8f434209fd9d1e7b36b9683efef2dd39e60c92fabbeeb0969",
+   "size": 327
+  },
+  {
+   "path": "os/25/2565bdffd309b7a0985bf15fe3f5499be774b38a",
+   "dest": "/system/gterm/rm.json",
+   "sha256": "2565bdffd309b7a0985bf15fe3f5499be774b38a77635c7c0f59cd9f7b25dc41",
+   "size": 576
+  },
+  {
+   "path": "os/ef/ef96b7869b410def8394b76b4f4206049257e2bf",
+   "dest": "/system/gterm/settings.json",
+   "sha256": "ef96b7869b410def8394b76b4f4206049257e2bfe8786e82375b670d8801993c",
+   "size": 201
+  },
+  {
+   "path": "os/02/02fd5632ed76638cb98639f8d8b4fb35ad505923",
+   "dest": "/system/gterm/sleep.json",
+   "sha256": "02fd5632ed76638cb98639f8d8b4fb35ad5059238794a4eca4375940f5cefa33",
+   "size": 275
+  },
+  {
+   "path": "os/02/02bdacab2dfc4f0f05ac0f700a231b2e8da9c050",
+   "dest": "/system/gterm/spm.json",
+   "sha256": "02bdacab2dfc4f0f05ac0f700a231b2e8da9c0507448a2c1c51f5a1e5357a870",
+   "size": 510
+  },
+  {
+   "path": "os/b3/b3ac9156d254fffcc0dc173969b334f6b7adcc9c",
+   "dest": "/system/gterm/store.json",
+   "sha256": "b3ac9156d254fffcc0dc173969b334f6b7adcc9ce8eb7c63288e9958da206ff8",
+   "size": 188
+  },
+  {
+   "path": "os/2b/2bf7ac006699cba5271387a630eda20091330fe4",
+   "dest": "/system/gterm/sysinfo.json",
+   "sha256": "2bf7ac006699cba5271387a630eda20091330fe4d78edc564b74809a1e5750c2",
+   "size": 133
+  },
+  {
+   "path": "os/00/0054e42fa4a6714e2ccf3c01d79b301d8124f66c",
+   "dest": "/system/gterm/taskmgr.json",
+   "sha256": "0054e42fa4a6714e2ccf3c01d79b301d8124f66c0bb5afc90850fe8c0f9852c9",
+   "size": 228
+  },
+  {
+   "path": "os/78/787c1d8efd53c7e357b3ec09a0f0fd9483fa9a31",
+   "dest": "/system/gterm/touch.json",
+   "sha256": "787c1d8efd53c7e357b3ec09a0f0fd9483fa9a31ee89981abb9301bb9daf1b27",
+   "size": 557
+  },
+  {
+   "path": "os/2b/2bd370f53df2d362237c160f5b09619a13a29dfa",
+   "dest": "/system/gterm/tree.json",
+   "sha256": "2bd370f53df2d362237c160f5b09619a13a29dfa89c5eae36ae8b51fa79e6d2f",
+   "size": 124
+  },
+  {
+   "path": "os/c0/c088e117f99f4e3e665e0c1799e5c1f1e080702d",
+   "dest": "/system/gterm/uname.json",
+   "sha256": "c088e117f99f4e3e665e0c1799e5c1f1e080702d7a51e0cf53a0cec8b1d1d8ce",
+   "size": 342
+  },
+  {
+   "path": "os/0e/0e20f74c17bd7e9d13cee3ba84e173cbe341cfc4",
+   "dest": "/system/gterm/uptime.json",
+   "sha256": "0e20f74c17bd7e9d13cee3ba84e173cbe341cfc45a1a7f1e3c6b8e759d0ba59a",
+   "size": 489
+  },
+  {
+   "path": "os/18/1826d925fc4e953ff9c764ce5a957b934204b747",
+   "dest": "/system/gterm/usb.json",
+   "sha256": "1826d925fc4e953ff9c764ce5a957b934204b7472092f6d57d5bf65e9c28ad26",
+   "size": 696
+  },
+  {
+   "path": "os/3c/3c81f1a4eedfee43bcce4f23def4816a73ff4a5d",
+   "dest": "/system/gterm/wadinst.json",
+   "sha256": "3c81f1a4eedfee43bcce4f23def4816a73ff4a5db21cf8f8e10f590de9508506",
+   "size": 150
+  },
+  {
+   "path": "os/d6/d6252221b8697c1e42faee96db6bb03cd5d2fde9",
+   "dest": "/system/gterm/wc.json",
+   "sha256": "d6252221b8697c1e42faee96db6bb03cd5d2fde92b1632d38c5cf159f6e08ba8",
+   "size": 127
+  },
+  {
+   "path": "os/33/33fdae479a04e7ccb3f065ea7edd03071500ea8b",
+   "dest": "/system/gterm/whoami.json",
+   "sha256": "33fdae479a04e7ccb3f065ea7edd03071500ea8bb3ca8c7fc1a8d9ee5dd7542d",
+   "size": 179
+  },
+  {
+   "path": "os/54/54f512980c82fae4d66df2359519c380786f253e",
+   "dest": "/system/gterm/wifi.json",
+   "sha256": "54f512980c82fae4d66df2359519c380786f253e820e19c271f064626952ef23",
+   "size": 148
+  },
+  {
+   "path": "os/0b/0be9f12f5a81ba6ae3f91f0eb2342ed0142c6c38",
+   "dest": "/system/gterm/wifidebug.json",
+   "sha256": "0be9f12f5a81ba6ae3f91f0eb2342ed0142c6c3871c512f9ccb4da7000795856",
+   "size": 143
+  },
+  {
+   "path": "os/54/540d50b628b6c88eee0665986b0bad8193b41f7a",
+   "dest": "/system/gterm/custom/samples.json",
+   "sha256": "540d50b628b6c88eee0665986b0bad8193b41f7ab8fa7446468a690a9606facb",
+   "size": 3196
+  },
+  {
+   "path": "os/0b/0b39388c08183a5dbf109cf0989aa19d6a15d062",
+   "dest": "/system/lib/README.txt",
+   "sha256": "0b39388c08183a5dbf109cf0989aa19d6a15d062979b3c3a5063650efaafb704",
+   "size": 599
+  },
+  {
+   "path": "os/ee/ee0d3c15a25d6b402cb3ab3db156153d2bd85b38",
+   "dest": "/system/lib/libsdl2.swo",
+   "sha256": "ee0d3c15a25d6b402cb3ab3db156153d2bd85b3840452b457faacf720ecbef5c",
+   "size": 165016
+  },
+  {
+   "path": "os/cd/cde5ec50dfb3a5d67995c981f1a69a655f872869",
+   "dest": "/system/lib/libswirl.a",
+   "sha256": "cde5ec50dfb3a5d67995c981f1a69a655f872869bbef5bb05ab197bef7a1ad6d",
+   "size": 16964
+  },
+  {
+   "path": "os/de/de413409e6afc209bf900c2363df416e2f3346bf",
+   "dest": "/system/netsurf/res/Messages",
+   "sha256": "de413409e6afc209bf900c2363df416e2f3346bfbadae100691572b84bf80df2",
+   "size": 15915
+  },
+  {
+   "path": "os/bc/bc03e7fc08e3e8d6a719bd3e9752d23d78d54caa",
+   "dest": "/system/netsurf/res/adblock.css",
+   "sha256": "bc03e7fc08e3e8d6a719bd3e9752d23d78d54caaad4211d5cbea9c0935e41197",
+   "size": 7540
+  },
+  {
+   "path": "os/35/35b2399a737f03b3f200d64eb776824e76792b9d",
+   "dest": "/system/netsurf/res/credits.html",
+   "sha256": "35b2399a737f03b3f200d64eb776824e76792b9d44be213f8bc573ebd252105b",
+   "size": 2031
+  },
+  {
+   "path": "os/b8/b8a7fa81f485b23d1e423631733b0b1f7decb746",
+   "dest": "/system/netsurf/res/default.css",
+   "sha256": "b8a7fa81f485b23d1e423631733b0b1f7decb74631f9aa41c64c9711bb2dfa45",
+   "size": 5179
+  },
+  {
+   "path": "os/13/1382a345124b5db93a8f9c3f885b90ccbacda495",
+   "dest": "/system/netsurf/res/favicon.png",
+   "sha256": "1382a345124b5db93a8f9c3f885b90ccbacda4956de2b08d9bbe33d9ee3fbd23",
+   "size": 685
+  },
+  {
+   "path": "os/82/824bf820a3e2f2398af01151884525d8b6e4416f",
+   "dest": "/system/netsurf/res/internal.css",
+   "sha256": "824bf820a3e2f2398af01151884525d8b6e4416f6bbffc5afe09bcbce92de663",
+   "size": 6210
+  },
+  {
+   "path": "os/4f/4faa3b37b554aa5866a67846205b482d27d13896",
+   "dest": "/system/netsurf/res/licence.html",
+   "sha256": "4faa3b37b554aa5866a67846205b482d27d138968132cbcbf78de4fc99fa6971",
+   "size": 92019
+  },
+  {
+   "path": "os/16/168ddaf5a2f329a1b263023c1eea8a987dc70e6c",
+   "dest": "/system/netsurf/res/netsurf.png",
+   "sha256": "168ddaf5a2f329a1b263023c1eea8a987dc70e6ca0c9d25a7ce12fe3a2c35d72",
+   "size": 16486
+  },
+  {
+   "path": "os/0f/0fdc04d8b380f6302adbb0605180b3769fb868db",
+   "dest": "/system/netsurf/res/quirks.css",
+   "sha256": "0fdc04d8b380f6302adbb0605180b3769fb868db44eba5dad919ad99d2a9e1fb",
+   "size": 306
+  },
+  {
+   "path": "os/39/391d86c8122d9a8fc55dd4a66fa099f63197a6b3",
+   "dest": "/system/netsurf/res/welcome.html",
+   "sha256": "391d86c8122d9a8fc55dd4a66fa099f63197a6b3591958165234be3476ebd4d0",
+   "size": 3496
+  },
+  {
+   "path": "os/2f/2f8211c8b5ee89d0cf28b5dd3806c783e2462c9a",
+   "dest": "/system/netsurf/res/de/Messages",
+   "sha256": "2f8211c8b5ee89d0cf28b5dd3806c783e2462c9ac1c7ba23b23e82d58f29bc94",
+   "size": 16955
+  },
+  {
+   "path": "os/25/25350d87b68fb738f8d2d296d6c9fb9be0721cd7",
+   "dest": "/system/netsurf/res/de/welcome.html",
+   "sha256": "25350d87b68fb738f8d2d296d6c9fb9be0721cd76505c6d613017e4eb94856bf",
+   "size": 3579
+  },
+  {
+   "path": "os/de/de413409e6afc209bf900c2363df416e2f3346bf",
+   "dest": "/system/netsurf/res/en/Messages",
+   "sha256": "de413409e6afc209bf900c2363df416e2f3346bfbadae100691572b84bf80df2",
+   "size": 15915
+  },
+  {
+   "path": "os/35/35b2399a737f03b3f200d64eb776824e76792b9d",
+   "dest": "/system/netsurf/res/en/credits.html",
+   "sha256": "35b2399a737f03b3f200d64eb776824e76792b9d44be213f8bc573ebd252105b",
+   "size": 2031
+  },
+  {
+   "path": "os/4f/4faa3b37b554aa5866a67846205b482d27d13896",
+   "dest": "/system/netsurf/res/en/licence.html",
+   "sha256": "4faa3b37b554aa5866a67846205b482d27d138968132cbcbf78de4fc99fa6971",
+   "size": 92019
+  },
+  {
+   "path": "os/39/391d86c8122d9a8fc55dd4a66fa099f63197a6b3",
+   "dest": "/system/netsurf/res/en/welcome.html",
+   "sha256": "391d86c8122d9a8fc55dd4a66fa099f63197a6b3591958165234be3476ebd4d0",
+   "size": 3496
+  },
+  {
+   "path": "os/06/06feac6e5022e685c77c435bafb4cc30e2830e09",
+   "dest": "/system/netsurf/res/fonts/glyph_data",
+   "sha256": "06feac6e5022e685c77c435bafb4cc30e2830e0924eb72852575fe563b50b863",
+   "size": 331093
+  },
+  {
+   "path": "os/4c/4cf032d228b863517d5dcc4bae83a6ddedb99d91",
+   "dest": "/system/netsurf/res/icons/back.png",
+   "sha256": "4cf032d228b863517d5dcc4bae83a6ddedb99d91a33830c4645f38a2362ef8af",
+   "size": 741
+  },
+  {
+   "path": "os/35/352c3ea642734ae51642c2ef790fdae77bc7303a",
+   "dest": "/system/netsurf/res/icons/back_g.png",
+   "sha256": "352c3ea642734ae51642c2ef790fdae77bc7303a156dd82704ab740bf5f768b1",
+   "size": 701
+  },
+  {
+   "path": "os/5c/5c158d0d18b890cfa06d8ccf204f20ca52e6e15d",
+   "dest": "/system/netsurf/res/icons/forward.png",
+   "sha256": "5c158d0d18b890cfa06d8ccf204f20ca52e6e15d6e1071432e7fa0b514d21d7b",
+   "size": 672
+  },
+  {
+   "path": "os/b9/b9cfb941139bb41f4e8fbd29a5ac6f76ede86ff4",
+   "dest": "/system/netsurf/res/icons/forward_g.png",
+   "sha256": "b9cfb941139bb41f4e8fbd29a5ac6f76ede86ff45ed96551077bc5a5e400164e",
+   "size": 702
+  },
+  {
+   "path": "os/20/20f1917265e8175264dd32875187816a3187fbc4",
+   "dest": "/system/netsurf/res/icons/history.png",
+   "sha256": "20f1917265e8175264dd32875187816a3187fbc4cb4edadad692387745665a28",
+   "size": 884
+  },
+  {
+   "path": "os/41/415eca2c36cdf83c2d1710d7bbe0cb4d8f845143",
+   "dest": "/system/netsurf/res/icons/history_g.png",
+   "sha256": "415eca2c36cdf83c2d1710d7bbe0cb4d8f845143b2c213594faf7aeb96c8d4f2",
+   "size": 798
+  },
+  {
+   "path": "os/f4/f4cbdf88bdf5d69f968e8ca46156a96c35b5e9c6",
+   "dest": "/system/netsurf/res/icons/home.png",
+   "sha256": "f4cbdf88bdf5d69f968e8ca46156a96c35b5e9c69a102029e51efa7636457a79",
+   "size": 818
+  },
+  {
+   "path": "os/4d/4d4603aecfbe7aa81052c8f4e0687703437e80d4",
+   "dest": "/system/netsurf/res/icons/home_g.png",
+   "sha256": "4d4603aecfbe7aa81052c8f4e0687703437e80d4158e794687abad82fd890a4c",
+   "size": 798
+  },
+  {
+   "path": "os/03/03d84a67ae205eb72a6c9b0f3c969fb52de02e5b",
+   "dest": "/system/netsurf/res/icons/osk.png",
+   "sha256": "03d84a67ae205eb72a6c9b0f3c969fb52de02e5b784f07f2316b66fc236c13eb",
+   "size": 262
+  },
+  {
+   "path": "os/7d/7d22c65adbbbd4ae134dfcea68d27fbe1e1f18e5",
+   "dest": "/system/netsurf/res/icons/reload.png",
+   "sha256": "7d22c65adbbbd4ae134dfcea68d27fbe1e1f18e5ecdeda1085e1482112ce7a4c",
+   "size": 1075
+  },
+  {
+   "path": "os/10/102dcf363e5d18edacd2182b695defa64bea06ea",
+   "dest": "/system/netsurf/res/icons/reload_g.png",
+   "sha256": "102dcf363e5d18edacd2182b695defa64bea06eaa108d230e7fb3bf43922ff9b",
+   "size": 1109
+  },
+  {
+   "path": "os/62/62e2cda3427c23fa0754babbe450021ec3f88497",
+   "dest": "/system/netsurf/res/icons/scrolld.png",
+   "sha256": "62e2cda3427c23fa0754babbe450021ec3f88497b2801d9a90bcdcbde6c274aa",
+   "size": 294
+  },
+  {
+   "path": "os/fd/fdf5fc455f47f0c75663c4a8e6ca2dab52a4203d",
+   "dest": "/system/netsurf/res/icons/scrolll.png",
+   "sha256": "fdf5fc455f47f0c75663c4a8e6ca2dab52a4203db356b73e9fe98143277b132b",
+   "size": 307
+  },
+  {
+   "path": "os/d0/d0c44e65093a128f0448c88888becb7bf539a883",
+   "dest": "/system/netsurf/res/icons/scrollr.png",
+   "sha256": "d0c44e65093a128f0448c88888becb7bf539a883165e5e1fd69636db00c65573",
+   "size": 286
+  },
+  {
+   "path": "os/48/48f54ce4ec18b62a0326e18a9652abf2c837f42b",
+   "dest": "/system/netsurf/res/icons/scrollu.png",
+   "sha256": "48f54ce4ec18b62a0326e18a9652abf2c837f42b8aabd7bce5728feb93e0fc5b",
+   "size": 280
+  },
+  {
+   "path": "os/9f/9f307ce056e3f5a792c1fd4eb91581fe2d975540",
+   "dest": "/system/netsurf/res/icons/stop.png",
+   "sha256": "9f307ce056e3f5a792c1fd4eb91581fe2d975540c7bad443dd769e0c649985d7",
+   "size": 1023
+  },
+  {
+   "path": "os/98/985409f52f0f2dfd7333b8874c496f5a42e11fe0",
+   "dest": "/system/netsurf/res/icons/stop_g.png",
+   "sha256": "985409f52f0f2dfd7333b8874c496f5a42e11fe03cfaeb7b6704db920525d256",
+   "size": 1050
+  },
+  {
+   "path": "os/14/145762d6194772c35ea2f5e73218c2253085c307",
+   "dest": "/system/netsurf/res/it/Messages",
+   "sha256": "145762d6194772c35ea2f5e73218c2253085c30761498eb99a47e59ce5a3f04c",
+   "size": 18096
+  },
+  {
+   "path": "os/7d/7d7caa1eb751778cb05944a7effa0a961ed531b5",
+   "dest": "/system/netsurf/res/it/credits.html",
+   "sha256": "7d7caa1eb751778cb05944a7effa0a961ed531b50dd4671290f93a27c8e2ff15",
+   "size": 2072
+  },
+  {
+   "path": "os/89/89a684b842deea785fddc6ea5e261aa48ea3da90",
+   "dest": "/system/netsurf/res/it/licence.html",
+   "sha256": "89a684b842deea785fddc6ea5e261aa48ea3da9006f67a188742d04b68d868a5",
+   "size": 92514
+  },
+  {
+   "path": "os/de/de413409e6afc209bf900c2363df416e2f3346bf",
+   "dest": "/system/netsurf/res/ja/Messages",
+   "sha256": "de413409e6afc209bf900c2363df416e2f3346bfbadae100691572b84bf80df2",
+   "size": 15915
+  },
+  {
+   "path": "os/4f/4f6d2423c38a160d4e4be42cd264a3385ec9b091",
+   "dest": "/system/netsurf/res/ja/welcome.html",
+   "sha256": "4f6d2423c38a160d4e4be42cd264a3385ec9b091a0866a54d13e9abcd2d7e3b2",
+   "size": 3719
+  },
+  {
+   "path": "os/06/069e0bf6262576762dcfa14f2f0df109084aeee4",
+   "dest": "/system/netsurf/res/nl/Messages",
+   "sha256": "069e0bf6262576762dcfa14f2f0df109084aeee44d5087c218df3c01f7c30beb",
+   "size": 17377
+  },
+  {
+   "path": "os/a7/a7d9d45c6de0daf9175f82db72bf752fc57bae7a",
+   "dest": "/system/netsurf/res/nl/credits.html",
+   "sha256": "a7d9d45c6de0daf9175f82db72bf752fc57bae7ad52b940893ffe3358a116d0d",
+   "size": 2202
+  },
+  {
+   "path": "os/54/54741f186aa78e63eee8e179107469a52f727e8c",
+   "dest": "/system/netsurf/res/nl/licence.html",
+   "sha256": "54741f186aa78e63eee8e179107469a52f727e8c11caacb2ae3c4b66afa47983",
+   "size": 92625
+  },
+  {
+   "path": "os/60/60908af0b7461ecfc485f654b2c9f411a3370bdb",
+   "dest": "/system/netsurf/res/nl/welcome.html",
+   "sha256": "60908af0b7461ecfc485f654b2c9f411a3370bdb6005736c2864e82395dc2726",
+   "size": 4233
+  },
+  {
+   "path": "os/33/33933128d6e2ab3c7ae9b77ddb199570a3da1651",
+   "dest": "/system/netsurf/res/pointers/caret.png",
+   "sha256": "33933128d6e2ab3c7ae9b77ddb199570a3da16510c32512eec5f91fa0714a555",
+   "size": 146
+  },
+  {
+   "path": "os/49/4939f8c6674ca6def70ccfa1c3edfec99758d165",
+   "dest": "/system/netsurf/res/pointers/cross.png",
+   "sha256": "4939f8c6674ca6def70ccfa1c3edfec99758d165f550e5ee24ea0693b6a14703",
+   "size": 144
+  },
+  {
+   "path": "os/a9/a920359c9b7cf8fe3837c8882eae6d0edff85eec",
+   "dest": "/system/netsurf/res/pointers/default.png",
+   "sha256": "a920359c9b7cf8fe3837c8882eae6d0edff85eec90a14de7968e341d273f62aa",
+   "size": 179
+  },
+  {
+   "path": "os/e0/e04fc3da1cac4da108858328c82ac808431fc6e7",
+   "dest": "/system/netsurf/res/pointers/help.png",
+   "sha256": "e04fc3da1cac4da108858328c82ac808431fc6e7c7baff8060ac7a363f3dae8a",
+   "size": 209
+  },
+  {
+   "path": "os/39/39f1c3916374927cb55d7df46036478833765d4e",
+   "dest": "/system/netsurf/res/pointers/left-right.png",
+   "sha256": "39f1c3916374927cb55d7df46036478833765d4eb986e1e6d4ee34f055aa4848",
+   "size": 163
+  },
+  {
+   "path": "os/a1/a175206a643996c3429347dcbf1b28d843e79f04",
+   "dest": "/system/netsurf/res/pointers/lu-rd.png",
+   "sha256": "a175206a643996c3429347dcbf1b28d843e79f04ae7630099b28aa929fc0a771",
+   "size": 170
+  },
+  {
+   "path": "os/66/6680708679134659abeb1c471ee7728b00167a51",
+   "dest": "/system/netsurf/res/pointers/menu.png",
+   "sha256": "6680708679134659abeb1c471ee7728b00167a51dc454bc882fbf7195d54003b",
+   "size": 220
+  },
+  {
+   "path": "os/2e/2efaa81ec648397ae77b540024d59ef67ed40f41",
+   "dest": "/system/netsurf/res/pointers/move.png",
+   "sha256": "2efaa81ec648397ae77b540024d59ef67ed40f411e4e2729d76b78e3c12b1cf0",
+   "size": 183
+  },
+  {
+   "path": "os/fc/fc7bef12dd004ab869737b30df7b9838c7c098fc",
+   "dest": "/system/netsurf/res/pointers/no_drop.png",
+   "sha256": "fc7bef12dd004ab869737b30df7b9838c7c098fc80650342d10e60832d6b87df",
+   "size": 224
+  },
+  {
+   "path": "os/b8/b8e186154ffd6a8a258f2cd714629f504aabff06",
+   "dest": "/system/netsurf/res/pointers/not_allowed.png",
+   "sha256": "b8e186154ffd6a8a258f2cd714629f504aabff069cdca0d1cb13840e665846af",
+   "size": 197
+  },
+  {
+   "path": "os/24/24a82ec50f3ed766aec3d86a287f62994f07acd1",
+   "dest": "/system/netsurf/res/pointers/point.png",
+   "sha256": "24a82ec50f3ed766aec3d86a287f62994f07acd1835a5c064d3b3d6f5c76c8c2",
+   "size": 181
+  },
+  {
+   "path": "os/ae/ae3aabd484e964edc031253a128c88be0e0ea8a1",
+   "dest": "/system/netsurf/res/pointers/progress.png",
+   "sha256": "ae3aabd484e964edc031253a128c88be0e0ea8a1f422d7f664c1d951c589e28c",
+   "size": 213
+  },
+  {
+   "path": "os/0d/0dce94c55a29f6c0bd5bdca88beb3d18ffc2dbcf",
+   "dest": "/system/netsurf/res/pointers/ru-ld.png",
+   "sha256": "0dce94c55a29f6c0bd5bdca88beb3d18ffc2dbcf02bda9bc3f74c011b381d1b6",
+   "size": 171
+  },
+  {
+   "path": "os/5d/5dca8d2a958e6ac1cf94b3f8e85eb9c0e3f52999",
+   "dest": "/system/netsurf/res/pointers/up-down.png",
+   "sha256": "5dca8d2a958e6ac1cf94b3f8e85eb9c0e3f52999d8ce2fb8758311ede379154e",
+   "size": 167
+  },
+  {
+   "path": "os/4c/4cf0e40165cd7f51dd51d63e3e8b7b6d6418f43f",
+   "dest": "/system/netsurf/res/pointers/wait.png",
+   "sha256": "4cf0e40165cd7f51dd51d63e3e8b7b6d6418f43f872cbc0da1339384dc7976eb",
+   "size": 211
+  },
+  {
+   "path": "os/47/47b7edbf8a37788f48e185f5f96b1a6616c450ad",
+   "dest": "/system/netsurf/res/throbber/throbber0.png",
+   "sha256": "47b7edbf8a37788f48e185f5f96b1a6616c450ad263eb0c6dd39f52771447cf8",
+   "size": 507
+  },
+  {
+   "path": "os/45/456b713e041c8c899991e6efe1f7f3f9b00f0e89",
+   "dest": "/system/netsurf/res/throbber/throbber1.png",
+   "sha256": "456b713e041c8c899991e6efe1f7f3f9b00f0e8983141d639c0e1a81d8b3b6df",
+   "size": 802
+  },
+  {
+   "path": "os/0a/0a6db30666636f3c61d6b1d4b6911f2c23b5a802",
+   "dest": "/system/netsurf/res/throbber/throbber2.png",
+   "sha256": "0a6db30666636f3c61d6b1d4b6911f2c23b5a8021f85687d80805f4a37072cc5",
+   "size": 790
+  },
+  {
+   "path": "os/83/83638593bd83a2cd81e9d28b9f8b6520fe4ef8f7",
+   "dest": "/system/netsurf/res/throbber/throbber3.png",
+   "sha256": "83638593bd83a2cd81e9d28b9f8b6520fe4ef8f71c6a0b0070c1b2b50753d6e9",
+   "size": 808
+  },
+  {
+   "path": "os/e0/e06d0f18556e92c5b3477f42ddac89335ae764ec",
+   "dest": "/system/netsurf/res/throbber/throbber4.png",
+   "sha256": "e06d0f18556e92c5b3477f42ddac89335ae764ec68dc34e4313fc59d443cb2c1",
+   "size": 797
+  },
+  {
+   "path": "os/b4/b416a96e0bc386edb50b30f5f260aefae1daba59",
+   "dest": "/system/netsurf/res/throbber/throbber5.png",
+   "sha256": "b416a96e0bc386edb50b30f5f260aefae1daba5984a4290ee31b65fa6b1ab9c3",
+   "size": 797
+  },
+  {
+   "path": "os/e7/e79195b9b2f9b73cdbab189c3d9e7325d374b044",
+   "dest": "/system/netsurf/res/throbber/throbber6.png",
+   "sha256": "e79195b9b2f9b73cdbab189c3d9e7325d374b0448a8c6d98ba62110cf9c70177",
+   "size": 819
+  },
+  {
+   "path": "os/ef/efbab67c246113f0ec9078cc68088f01c975711a",
+   "dest": "/system/netsurf/res/throbber/throbber7.png",
+   "sha256": "efbab67c246113f0ec9078cc68088f01c975711a34f3fd0a4297a9a23b0bf352",
+   "size": 792
+  },
+  {
+   "path": "os/75/75cc6712910a2f76592ffb0bdffb38068577fc77",
+   "dest": "/system/netsurf/res/throbber/throbber8.png",
+   "sha256": "75cc6712910a2f76592ffb0bdffb38068577fc778b71a9450a6ff8dc3993baae",
+   "size": 814
+  },
+  {
+   "path": "os/77/77c1e73ecb4f98f1d72c97a78507cbff34884584",
+   "dest": "/system/share/motd.txt",
+   "sha256": "77c1e73ecb4f98f1d72c97a78507cbff34884584379cf0d6de25b7cc422a80e7",
+   "size": 661
+  },
+  {
+   "path": "os/fc/fc9b6dfd77e0b2a7f403cf5ffd1cd00b5820ee19",
+   "dest": "/system/share/wadsetup/license.txt",
+   "sha256": "fc9b6dfd77e0b2a7f403cf5ffd1cd00b5820ee1959268de8103c99dae6b780b1",
+   "size": 2060
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "history",
+  "engine": "builtin",
+  "category": "session",
+  "usage": "history",
+  "summary": "recent commands (up/down)"
+}

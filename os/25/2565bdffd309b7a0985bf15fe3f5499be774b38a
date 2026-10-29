@@ -1,0 +1,23 @@
+{
+  "name": "rm",
+  "engine": "pipeline",
+  "category": "files",
+  "usage": "rm <path>",
+  "summary": "remove file / empty dir",
+  "args": [
+    {
+      "name": "path"
+    }
+  ],
+  "steps": [
+    { "if": "$# < 1", "then": [ { "exit": 0 } ] },
+    { "var": "p", "path": "$path" },
+    { "syscall": "unlink", "args": ["$p"], "as": "rc" },
+    { "if": "$rc != 0",
+      "then": [
+        { "if": "$rc == -3",
+          "then": [ { "print": "rm: failed (not empty)", "color": "err" } ],
+          "else": [ { "print": "rm: failed (not found?)", "color": "err" } ] }
+      ] }
+]
+}

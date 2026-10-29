@@ -1,0 +1,120 @@
+SwirlOS theme engine  -  /system/config/theme.json
+==================================================
+
+One JSON file controls how the desktop looks. Edit it with any text editor
+(Settings > nothing to open: just save the file). Within about a second the
+compositor re-reads it and the whole desktop and every open app re-theme, no
+restart. Strict JSON: no comments, no trailing commas.
+
+If the file has an error the WHOLE file is rejected, the previous look stays,
+and a notification names the line ("line 14: window.corner_radius: expected a
+number"). Unknown keys and out-of-range numbers are not errors: the key is
+ignored / the number is clamped, and a warning notification tells you.
+Delete the file to return to the built-in look.
+
+Keys (defaults in brackets)
+---------------------------
+version            1
+name               free text, up to 31 characters
+base               "default" | "black" | "white"   the built-in palette that
+                   every colour you do not set follows. Also the Settings >
+                   Theme choice.
+
+colors             "#RRGGBB" or "#RGB". A colour you leave out (or set to
+                   null) follows the base palette. Keys you set stay put when
+                   the base changes.
+  accent
+  window:  titlebar, titlebar_inactive, title_text, title_text_inactive,
+           border, border_inactive, shadow,
+           minimize, maximize, close, buttons_inactive,
+           minimize_hover, maximize_hover, close_hover
+  shell:   taskbar, panel, panel_border, panel_divider, field, button, hover,
+           text, text_dim, text_faint
+  app:     background, toolbar, card, field, border, divider, text, text_dim,
+           text_faint, selection, danger, success, warning
+
+window colours (all optional; the shipped file lists them as null)
+  titlebar / titlebar_inactive         title bar fill, focused / other windows
+  title_text / title_text_inactive     title text
+  border                               the window outline (focused, and every
+                                       window when border_inactive is unset)
+  border_inactive                      outline of unfocused windows
+  minimize / maximize / close          icon colour of that title-bar button on
+                                       the focused window ("maximize" is the
+                                       full-screen button)
+  buttons_inactive                     icon colour of all three buttons on
+                                       unfocused windows
+  minimize_hover / maximize_hover /
+  close_hover                          solid highlight drawn behind the button
+                                       while the pointer is on it; the icon
+                                       turns white or black, whichever is easier
+                                       to read on that colour. Unset: the soft
+                                       wash for minimize/maximize, red for close.
+  Example - dark-red close highlight with a pale icon, gold border on the focused window:
+    "window": { "close_hover": "#C42B1C", "close": "#FFB4A8",
+                "border": "#E6B800", "border_inactive": "#555555" }
+  (border thickness is window.border_width below; 0 hides the border)
+
+font
+  file             name of a .ttf in /system/fonts, "" = the boot font [""].
+                   Must be FIXED-PITCH (the UI and terminal lay out on a
+                   character grid). Bundled and usable: JetBrainsMono-Regular,
+                   JetBrainsMono-Bold, monospace, monospace_bold. Proportional
+                   fonts (sans_serif.ttf, serif.ttf ...) are refused with a
+                   notification and the current font stays.
+  title_size       10..20 [14]   window title text
+
+window
+  corner_radius    0..16 [8]
+  border_width     0..6  [1]     pixels; the first one sits on the window edge,
+                                 the rest grow outward. 0 = no border line.
+  shadow.enabled   true | false  [true]
+  shadow.size      0..40 [12]    how far the shadow reaches, px
+  shadow.opacity   0..100 [32]   darkness at the window edge, percent
+
+titlebar
+  align            "left" | "center" | "right"  [left]   title text
+  button_side      "right" | "left" [right]
+  buttons          on-screen order, left to right, any of "minimize",
+                   "maximize", "close", each at most once.
+                   ["minimize","maximize","close"]. Leave "close" out and
+                   windows can only be closed from the taskbar (a warning says so).
+  icons            your own button pictures: put the full path of a .bmp in
+                   "minimize", "maximize" and/or "close". "" = built-in glyph.
+                     "icons": { "close": "/home/user/close.bmp" }
+                   8, 24 or 32-bit BMP, any size up to 4096; it is drawn at its
+                   own size when it fits 24x24, otherwise shrunk to fit. For a
+                   see-through background use a 32-bit BMP with alpha, or paint
+                   the background pure magenta (#FF00FF) = transparent.
+                   Unfocused windows draw the icon dimmed; the hover highlight
+                   (colors.window.*_hover, or the default wash) stays behind it.
+                   After replacing a .bmp, save theme.json again to reload it.
+                   A path that cannot be read shows a notification and keeps
+                   the built-in glyph.
+
+transparency       percent, 10..100 (100 = solid)
+  active           window content, focused window [100]
+  inactive         window content, other windows  [100]
+  titlebar         title bar and border, all windows [100]
+  rules            per-application overrides, up to 8:
+                   [ { "type": "terminal", "active": 85, "inactive": 70 } ]
+                   "active" / "inactive" are each optional.
+                   types: terminal files about image_viewer text_editor
+                   settings 3d_demo task_manager external calculator
+                   driver_manager driver_properties browser paint installer
+                   taskbar_toolbox
+
+Settings app
+------------
+Accent colour, window radius, the shadow switch and the base palette are also
+edited in Settings. Whatever the file states for those is kept in step: a
+change made in Settings is written into theme.json in place (everything else
+in the file, including layout and keys this version does not know, is left as
+it is). A value the file does not state stays Settings-only.
+
+Notes
+-----
+* Translucent windows blend over the wallpaper and the windows below. Each
+  translucent window costs one extra blend pass over its area per repaint.
+* Colours for a built-in palette that no key covers cannot be themed yet:
+  the resize grip and the NetSurf page.

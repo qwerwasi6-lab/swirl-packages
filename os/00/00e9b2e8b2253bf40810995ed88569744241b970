@@ -1,0 +1,7 @@
+{
+  "name": "head",
+  "engine": "builtin",
+  "category": "files",
+  "usage": "head [-n N] <file>",
+  "summary": "first N lines of a file"
+}

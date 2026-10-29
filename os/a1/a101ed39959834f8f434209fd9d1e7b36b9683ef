@@ -1,0 +1,12 @@
+{
+  "name": "rings",
+  "engine": "pipeline",
+  "category": "system",
+  "usage": "rings",
+  "summary": "which privilege ring am I in",
+  "steps": [
+    { "syscall": "getring", "as": "r" },
+    { "print": "you are executing in ring $r", "color": "ok" },
+    { "print": "kernel executes in ring 0; the boundary is int 0x80" }
+]
+}

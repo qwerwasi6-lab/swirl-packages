@@ -1,0 +1,12 @@
+{
+  "name": "hostname",
+  "engine": "pipeline",
+  "category": "system",
+  "usage": "hostname / whoami",
+  "summary": "machine + user name",
+  "steps": [
+    // sysinfo fills a kernel struct; "as" binds its fields as $si.*
+    { "syscall": "sysinfo", "as": "si" },
+    { "print": "$si.hostname" }
+]
+}

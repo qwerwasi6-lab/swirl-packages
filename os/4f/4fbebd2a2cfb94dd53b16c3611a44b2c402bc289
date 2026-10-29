@@ -1,0 +1,13 @@
+{
+  "name": "cube",
+  "engine": "pipeline",
+  "category": "session",
+  "usage": "cube",
+  "summary": "open the 3D Demo (TinyGL)",
+  "aliases": [
+    "gl3d"
+  ],
+  "steps": [
+    { "spawn": "/system/apps/gui/ggl3d.elf" }
+]
+}

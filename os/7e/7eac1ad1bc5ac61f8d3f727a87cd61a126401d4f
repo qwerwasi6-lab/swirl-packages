@@ -1,0 +1,74 @@
+SwirlOS - what lives in /system/apps
+====================================
+
+These .elf files are the ring-3 programs the kernel spawns:
+
+  init.elf      session manager (spawns the shell, respawns it if it exits)
+  sndtest.elf   sound self-test: 440 Hz tone at master 100 then 30, then
+                an 880 Hz beep (see CHANGES-r55-audio.md). Conf-gated
+                [test] sdl = sndtest, or run `sndtest` from the terminal
+  shell.elf     the text shell (runs autostart.swirl, then your commands)
+  desktop.elf   SwirlWM - the whole graphical desktop
+  filemgr.elf   the text-mode file manager
+  hello.elf     a tiny demo program
+
+App icons (data-driven - nothing hardcoded)
+-------------------------------------------
+
+  icons/        every app icon the OS draws, as real PNG files here in
+                /system/apps/icons (96x96, squircle-masked AI art):
+
+                  folder.png file.png terminal.png about.png imgview.png
+                  editor.png settings.png gl3d.png taskmgr.png doom.png
+                  calc.png drvman.png nic.png netsurf.png paint.png
+
+                At desktop init the compositor loads all of them from
+                this folder, and EVERYTHING that draws an app icon -
+                start menu, desktop grid, taskbar pins, window
+                titlebars, Files previews - draws from here.
+                Replace a PNG with your own 96x96 squircle and the
+                whole OS picks it up on the next boot. If a file is
+                missing, the desktop falls back to the compiled-in
+                copy of the same art, so nothing ever breaks.
+
+
+Built-in apps (inside desktop.elf, not separate files)
+------------------------------------------------------
+
+  Terminal      start menu, taskbar pin, `Terminal` desktop icon
+  Files         start menu, taskbar pin, `Files` desktop icon
+  Settings      start menu, `Settings` desktop icon, `settings` command
+  3D Demo       TinyGL 0.4.1 (Fabrice Bellard) spinning square + cube,
+                with a live FPS counter. Start menu, `3D Demo` desktop
+                icon, or the `cube` command in the terminal.
+                Keys: C = cube mode, Space = reset.
+  Task Manager  live window list + kernel process table + honest memory
+                panel (page-allocator numbers). Start menu, `taskmgr` or
+                `top` command, `kill <pid>` / `pkill <name>` in the
+                terminal.
+  Editor        kilo (antirez, BSD-2) ported onto SwirlWM: typing, mouse
+                caret, ctrl+a/c/x/v clipboard, ctrl+f find, ctrl+s saves
+                straight to /home/user/desktop/<name>.txt. Open from the
+                start menu or double-click any text file in Files.
+  Image Viewer  opens .bmp files (double-click in Files)
+
+Desktop shortcuts are real files too
+------------------------------------
+
+  The desktop grid IS the folder /home/user/desktop. Every app icon
+  on it is a tiny .app file in that folder, e.g. Terminal.app with
+  the single line:
+
+      app=terminal
+
+  Valid ids: terminal files settings gl3d taskmgr doom calc editor
+  imgview drvman netsurf paint about.
+
+  Dragging an app out of the start menu onto the desktop drops one
+  of these files. Deleting the file deletes the icon; renaming it
+  renames the label. Regular files saved into the folder (from the
+  editor, Paint, drag & drop from Files) show up on the desktop
+  next to the shortcuts automatically.
+
+Everything on this system is a real file: this folder is a real directory
+on the SwirlFS disk.

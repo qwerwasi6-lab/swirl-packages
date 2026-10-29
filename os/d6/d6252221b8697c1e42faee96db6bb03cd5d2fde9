@@ -1,0 +1,7 @@
+{
+  "name": "wc",
+  "engine": "builtin",
+  "category": "files",
+  "usage": "wc <file>",
+  "summary": "lines / words / bytes"
+}

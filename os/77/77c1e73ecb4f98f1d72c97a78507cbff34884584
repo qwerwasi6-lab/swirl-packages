@@ -1,0 +1,15 @@
+      _____           __        ____  _
+     / ____|         / _|      / __ \| |
+    | (___   ___ ___| |_ ___  | |  | | | _____      __
+     \___ \ / __/ _ \  __/ _ \ | |  | |/ _ \ \ /\ / /
+     ____) | (_|  __/ | ||  __/ | |__| | (_) \ V  V /
+    |_____/ \___\___|_| _\___|  \____/ \___/ \_/\_/
+        the everything-on-disk operating system
+
+SwirlOS 0.1 "Tornado" — kernel 0.1, SwirlFS v1, rings 0 + 3.
+
+Everything you see is a real file on a real disk.
+Start with:  help       list of commands
+             rings     which privilege level are you in?
+             tree /    walk the whole filesystem
+             files     open the graphical file manager

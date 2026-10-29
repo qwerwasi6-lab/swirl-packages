@@ -1,0 +1,7 @@
+{
+  "name": "bench",
+  "engine": "builtin",
+  "category": "files",
+  "usage": "bench [n]",
+  "summary": "fs speed test (n small files)"
+}

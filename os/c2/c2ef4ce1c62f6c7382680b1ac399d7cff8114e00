@@ -1,0 +1,10 @@
+{
+  "name": "drvman",
+  "engine": "pipeline",
+  "category": "network",
+  "usage": "drvman",
+  "summary": "open the Driver Manager",
+  "steps": [
+    { "spawn": "/system/apps/gui/gdrvman.elf" }
+]
+}

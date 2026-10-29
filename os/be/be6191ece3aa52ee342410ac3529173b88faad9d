@@ -1,0 +1,7 @@
+{
+  "name": "peek",
+  "engine": "builtin",
+  "category": "files",
+  "usage": "peek <file>",
+  "summary": "hex dump (first 256 bytes)"
+}

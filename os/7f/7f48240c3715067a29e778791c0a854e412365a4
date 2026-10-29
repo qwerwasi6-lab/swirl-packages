@@ -1,0 +1,16 @@
+{
+  "name": "cd",
+  "engine": "pipeline",
+  "category": "files",
+  "usage": "cd <path>",
+  "summary": "change the working directory (no arg = print it)",
+  "args": [
+    {
+      "name": "path"
+    }
+  ],
+  "steps": [
+    // "action": "cd" runs the shell's own cd (path checks + .. cleanup)
+    { "action": "cd", "path": "$path" }
+]
+}

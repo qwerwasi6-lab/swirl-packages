@@ -1,0 +1,7 @@
+{
+  "name": "tree",
+  "engine": "builtin",
+  "category": "files",
+  "usage": "tree [path]",
+  "summary": "directory tree"
+}

@@ -1,0 +1,551 @@
+Abort:Breek af
+AbortDownload:Zeker weten dat deze ophaalopdracht afgebroken moet worden?
+About:Programma-informatie
+All:Alles
+AnimDisable:Schakel animaties uit
+AnimSpeedFrames:seconden per beeld
+AnimSpeedLimit:Beperk snelheid tot
+Animations:Animaties
+Appearance:Verschijning
+BMPTitle:%s (BMP-afbeelding %lux%lu punten)
+Back:Vorige pagina
+BackImg:Achtergrondafbeeldingen
+Backtoprevious:Back
+Backtosafety:Terug naar veiligheid
+BadBMP:fout bij lezen BMP.
+BadGIF:fout bij lezen GIF.
+BadICO:fout bij lezen ICO.
+BadObject:melding: fout objecttype
+BadRedirect:foutief doorverwijzen naar adres
+BadSprite:foutief sprite-bestand.
+BadURL:The given URL was not able to be parsed
+Behaviour:Gedrag
+BlockAds:Verberg advertenties
+Bottom:Onder
+Browser:Browser
+Bytes: B
+CSSBase:basisstijlblad kan niet worden geladen
+CSSGeneric:fout bij het verwerken van de CSS
+CacheDisc:Schijfbuffer
+CacheMemory:Buffergeheugen
+CacheNative:Buffer oorspronkelijke versies
+Cancel:Annuleer
+CaseSens:Hoofdlettergevoelig
+Choices:Keuzes...
+ClearNS:Deselecteer
+Clipboard:Klembord
+ClipboardUTF8:Schrijf tekst in UTF8-formaat
+Close:Sluit
+CloseTab:Sluit tabblad
+CloseWindow:Sluit venster
+Collapse:Klap in
+CompressPDF:Comprimeer PDF
+ConfirmOverwrite:Vraag bevestiging bij overschrijven
+ContentBlocking:Inhoud blokkeren
+ContentLanguage:Taal webpagina's
+ContextMenu:Contextmenu
+CookieManagerHTTP:Alleen HTTP-verbindingen
+CookieManagerHTTPS:Veilige websites alleen via https
+CookieManagerSecure:Alleen veilige verbindingen
+CookieManagerSession:Session
+Cookies:Cookies
+Copies:Kopieën
+CopyClip:Kopieer naar klembord
+CopyNS:Kopieer
+CopyURL:Kopieer adres naar klembord
+CutNS:Knip uit
+DPI:DPI
+Date1Week:Een week geleden
+Date2Days:2 dagen geleden
+Date2Week:2 weken geleden
+Date3Days:3 dagen geleden
+Date3Week:3 weken geleden
+Date4Days:4 dagen geleden
+Date5Days:5 dagen geleden
+Date6Days:6 dagen geleden
+DateToday:Vandaag
+DateYesterday:Gisteren
+Days:dagen
+Default:Standaard
+DefaultFonts:Lettertypesoorten
+DeleteCookies:Verwijder cookies
+DirectoryError:map '%s' bestaat reeds
+Display:Weergave
+DomainAll:(Alle domeinen)
+Domains:Domeinen
+Done:klaar
+DontRemove:Niet verwijderen
+DontReplace:Annuleer bewaaractie
+Download:%s van %s  •  %s/s  •  nog %s
+DownloadDir:Initiële ophaallocatie
+DownloadNotify:Melding wanneer ophalenproces gereed is
+DownloadU:%s van onbekend  •  %s/s  •  %s totaal
+Downloaded:%s compleet • gemiddeld %s/s • %s totaal
+Downloads:Opgehaalde items
+Duration:Tijdsduur
+Edit:Wijzig naam
+EditFolder:Hernoem map
+EditLink:Bewerk adres
+EditTitle:Wijzig titel
+EditToolbar:Aanpasmodus
+EiBytes: EiB
+EmptyError:bestand is leeg.
+Enable:Ingschakeld
+EnableJS:JavaScript ingeschakeld
+EncNotRec:Codeertype is niet herkend.
+Encoding0:van HTTP-koppen
+Encoding1:gedetecteerd
+Encoding2:van <meta>
+EncodingUnk:Onbekend
+ErrorPage:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Pagina fout</title></head><body><h1>Sorry, NetSurf kan deze pagina</h1><p><strong>%s</strong></p>niet tonen.</body></html>
+Expand:Klap uit
+Export:Exporteer
+ExternalApp:Open in ander programma
+FastScrolling:Snelschuiven
+FetchErrorDescription:An error occurred when connecting to %s
+FetchErrorTitle:Error occurred fetching page
+FetchFailed:Dit document kan niet worden opgehaald.
+FetchFailedToFinish:The fetcher for this request failed to complete
+FetchesCached:Gebufferde verbindingen
+FetchesHost:Fetches per host
+FetchesMax:Maximaal aantal keer ophalen
+Fetching:ophalen
+FileDate:Datum
+FileDirectory:Map
+FileError:Bestand lijkt niet te bestaan:
+FileIndex:Index van %s
+FileName:Naam
+FileOpenError:kan bestand '%s' niet openen
+FileParent:^ Een mapniveau hoger
+FileSize:Grootte
+FileTime:Tijd
+FileType:Type
+FindTextNS:Zoek tekst...
+FitPage:Maak pagina passend
+Folder:Map
+Folders:Mappen
+FontCursive:Cursief
+FontFamilies:Lettertypesoort
+FontFantasy:Fantasie
+FontMono:Monospaced
+FontSans:Sans-serif
+FontSerif:Serif
+FontSize:Lettertypegrootte
+Fonts:Lettertypen
+ForeImg:Voorgrondafbeeldingen
+FormBadSubmit:Waarschuwing: informatie kan niet verzonden worden
+FormButton:Waarschuwing: knop kan niet geactiveerd worden
+FormCheckbox:Klikken selecteert deze optie
+FormFile:Het bestand hier plaatsen voor verzenden
+FormRadio:Klikken kiest deze optie
+FormReset:Formulier opnieuw instellen (niet geïmplemented)
+FormSelect:Klikken selecteert een formulieritem
+FormSubmit:Informatie versturen naar %s
+FormTextarea:Klikken om tekst te bewerken
+FormTextbox:Klikken om dit veld te bewerken
+Form_Drop:Bestand hier plaatsen
+Form_Many:(Veel)
+Form_None:
+Form_Reset:Opnieuw
+Form_Submit:Versturen
+Formatting:opmaken
+Forward:Volgende pagina
+Frame:Vensterkader
+FrameDrag:frames aan het aanpassen
+FrameNewTab:Toon in nieuw tabblad
+FrameNewWin:Toon in nieuw venster
+FrameOnly:Toon alleen dit vensterkader
+Friday:Vrijdag
+GBytes: GB
+GIFTitle:%s (GIF-afbeelding %lux%lu punten)
+GiBytes: GiB
+GlobalHistory:Browsergeschiedenis
+HTTP0:OK
+HTTP200:OK
+HTTP201:Aangemaakt
+HTTP202:Aanvaard
+HTTP203:Niet-gemachtigde informatie
+HTTP204:Geen inhoud
+HTTP205:Inhoud opnieuw instellen
+HTTP206:Gedeeltelijke inhoud
+HTTP300:Meerkeuze
+HTTP301:Definitief verplaatst
+HTTP302:Gevonden
+HTTP303:Zie andere
+HTTP304:Niet gewijzigd
+HTTP305:Gebruik Proxy
+HTTP307:Tijdelijke omleiding
+HTTP400:Foute aanvraag
+HTTP401:Niet geautoriseerd
+HTTP402:Betalende toegang
+HTTP403:Verboden toegang
+HTTP404:Niet gevonden
+HTTP405:Methode niet toegestaan
+HTTP406:Niet aanvaardbaar
+HTTP407:Authenticatie op de proxy-server verplicht
+HTTP408:Aanvraagtijd verstreken
+HTTP409:Conflict
+HTTP410:Verdwenen
+HTTP411:Lengte benodigd
+HTTP412:Niet voldaan aan vooraf gestelde voorwaarde
+HTTP413:Aanvraag te groot
+HTTP414:Aanvraagadres te lang
+HTTP415:Media-type niet ondersteund
+HTTP416:Aangevraagd gedeelte niet opvraagbaar
+HTTP417:Niet voldaan aan verwachting
+HTTP500:Interne serverfout
+HTTP501:Niet geïmplementeerd
+HTTP502:Ongeldige Gateway
+HTTP503:Dienst niet beschikbaar
+HTTP504:Aanvraagtijd bij Gateway verstreken
+HTTP505:HTTP-versie wordt niet ondersteund
+Help:Hulp
+HelpCredits:Bijdragen
+HelpLicence:Licentie
+HistGlobalNS:Toon browsergeschiedenis
+HistLocalNS:Toon venstergeschiedenis
+History:Geschiedenis
+HistoryAge:Bewaar geschiedenis voor
+Home:Startpagina
+HomePageBlank:Gebruik een lege pagina
+HomePageCurrent:Gebruik deze pagina
+HomePageDefault:Gebruik standaardpagina
+HomePageURL:Adres
+Host:Server
+Hotlist:Favorieten
+HotlistAdd:Voeg pagina toe
+HotlistContact:Contacteer (Eng.) de NetSurf-ontwikkelaars
+HotlistDefaultFolderName:Ongesorteerde items
+HotlistDocumentation:Documentatie
+HotlistDownloads:Haal de laatste versie op
+HotlistHomepage:NetSurf-startpagina
+HotlistSaveError:De favorietenlijst kon niet correct worden bewaard.
+HotlistShowNS:Toon favorieten
+ICOTitle:%s (ICO-afbeelding %lux%lu punten)
+Images:Toon afbeeldingen
+ImgStyle0:RISC OS-routines
+ImgStyle1:Directe weergave
+ImgStyle2:Kleurbenadering
+ImgStyle3:Foutdiffusie
+Info:Informatie
+InvalidURL:Het adres <em>%s</em> klopt niet.
+JPEGTitle:%s (JPEG-afbeelding %lux%lu punten)
+KiBytes: KiB
+Languages:Taal
+Left:Links
+Link:Koppeling
+LinkDload:Haal op
+LinkNew:Nieuw venster
+LinkNewTab:Open in nieuw tabblad
+LinkNewWin:Open in nieuw venster
+LinkSave:Bewaar
+LinkText:Tekstbestand
+Links:Adressen
+LoadError:Wegens een fout kan dit bestand niet geladen worden:
+Loading:laden
+Login:Login
+LoginAgain:The credentials for the site %s and realm "%s" were rejected.
+LoginDescription:The site %s with realm "%s" is requesting credentials for access.
+LoginTitle:Authentication Requested
+MBytes: MB
+MM:mm
+MNGError:MNG-bibliotheekfout: %i
+Margins:Marges
+MiBytes: MiB
+Minimum:Minimum
+MiscError:Er trad een onverwachte fout op:
+Miscellaneous:Overig
+Monday:Maandag
+MousePointers:Muisaanwijzers
+Navigate:Navigeer
+NeedRestart:Deze opties worden pas actief nadat NetSurf opieuw is gestart
+NetSurf:NetSurf
+NetSurfCopyright:© 2003-2023 De NetSurf-ontwikkelaars
+New:Nieuw
+NewFolder:Nieuwe map aanmaken
+NewFolderName:Nieuwe map
+NewLink:Nieuw adres aanmaken
+NewTab:Nieuw tabblad
+NewWindowNS:Nieuw venster
+Next:Volgende
+No:Nee
+NoDirError:%s is geen map
+NoDiscSpace:Onvoldoende ruimte beschikbaar op schijf.
+NoMemory:NetSurf heeft gebrek aan voldoende geheugen. Maak wat geheugen vrij en probeer het dan nog eens.
+NoNameError:Geef een naam op
+NoTitle:<Naamloos>
+NoURLError:Geef een adres op
+None:Geen
+Not2xx:Server meldt een fout
+NotCSS:melding: stijlblad is geen CSS
+NotFavIco:websitesymbool wordt niet ondersteund
+NotFound:Niet gevonden
+OK:OK
+OSPointers:Gebruik bij voorkeur besturingssysteem-muisaanwijzers
+ObjDraw:Draw-bestand
+ObjError:fout bij het laden object: %s
+ObjInfo:Informatie
+ObjPrint:Druk af
+ObjReload:Herlaad
+ObjSave:Bewaar
+ObjShow:Toon object
+Object:Object
+Open:Open
+OpenFile:Open lokaal bestand...
+OpenURL:Weblocatie
+OptDefault:Stel in als standaard
+OptionNoQuit:Stop programma niet als laatste venster worden gesloten
+OptionNoWindow:Geen venster openen na starten programma
+OverwriteFile:Een bestand met deze naam bestaat al en zal door deze actie overschreven worden.
+PDF:PDF
+PDFNS:PDF...
+PNGError:fout bij omzetting PNG.
+PNGTitle:%s (PNG-afbeelding %lux%lu punten)
+Page:Pagina
+ParsingFail:fout bij ontleden van dit document.
+Password:Wachtwoord
+PasteNS:Plak in
+PiBytes: PiB
+Preferences:Voorkeuren
+Prev:Vorige
+PrintError:Fout tijdens afdrukken:
+PrintNS:Druk af...
+PrintSheetFilled:pagina
+PrintSheetsFilled:pagina's
+Printer:Printer
+Printing:Pagina aan het afdrukken
+PrivacyDescription:A privacy error occurred while communicating with %s this may be a site configuration error or an attempt to steal private information (passwords, messages or credit cards)
+PrivacyTitle:Privacyfout
+Proceed:Doorgaan
+Processing:verwerking
+Progress:%s van %s
+ProgressU:%s
+Proxy:HTTP-proxy
+ProxyBasic:Basisauthenticatie
+ProxyNTLM:NTLM-authenticatie
+ProxyNoAuth:Eenvoudige proxy
+ProxyNone:Geen proxy
+ProxyType:Proxy-type
+Pt:pt
+Quit:Stop
+QuitDownload:Eén of meer ophaalopdrachten zijn nog in uitvoering. Toch afbreken?
+Realm:Gebied
+RecPercent:ontvangen %s (%u%%)
+Received:ontvangen %s
+Redirecting:doorverwijzen...
+Redraw:Bouw pagina opnieuw op
+Remove:Verwijder adres
+RemoveBackground:Verwijder achtergrond
+RemoveHotlist:Zeker weten dat dit adres uit de favorietenlijst verwijderd moet worden?
+Render:Pagina-opbouw
+RenderAll:Buffer gehele weergave
+RenderAnims:Buffer animaties
+Replace:Vervang bestand
+ResetUsage:Statistiekgebruik op nul
+Resolution:Resolutie
+ResolutionX:Horizontale resolutie
+ResolutionY:Verticale resolutie
+Right:Rechts
+SSLCertErrBadIssuer:The issuer of this certificate is not known. This may occur if the browser cannot access the certificate authority (CA) bundle.
+SSLCertErrBadSig:The certificate is improperly signed.
+SSLCertErrCertMissing:The certificate was missing from the chain.
+SSLCertErrChainSelfSigned:The certificate chain is self signed.
+SSLCertErrHostnameMismatch:The certificate is for a different host than the server.
+SSLCertErrOk:The certificate has no errors.
+SSLCertErrRevoked:The certificate has been revoked by the issuer.
+SSLCertErrSelfSigned:The certificate is self signed.
+SSLCertErrTooOld:The certificate has expired.
+SSLCertErrTooYoung:The certificate is not yet valid.
+SSLCertErrUnknown:An unknown error occurred while processing the certificate.
+SSLCerts:SSL-certificaten
+SSLError:NetSurf kan de authenticiteit van een SSL-certificaat niet controleren. Controleer onderstaande details.
+SSL_Certificate_Accept:Accepteer
+SSL_Certificate_Issuer:Uitgever: %s
+SSL_Certificate_Reject:Weiger
+SSL_Certificate_Serial:Serienr.: %ld
+SSL_Certificate_Subject:Subjekt: %s
+SSL_Certificate_Type:Type: %i
+SSL_Certificate_ValidFrom:Geldig vanaf: %s
+SSL_Certificate_ValidTo:Geldig tot: %s
+SSL_Certificate_Version:Versie: %ld
+Saturday:Zaterdag
+SaveAs:Bewaar als...
+SaveAsNS:Bewaar als
+SaveCompNS:Compleet...
+SaveComplete:Bewaar alles...
+SaveDraw:Webpagina
+SaveError:Wegens een fout kan dit bestand niet opgeslagen worden:
+SaveLink:Koppeling
+SaveObject:Object
+SaveSelection:Selectie
+SaveSource:Bron
+SaveText:Webpagina
+SaveURL:Bewaar adres
+Scale:Schaal
+ScaleDec:Verklein
+ScaleInc:Vergroot
+ScaleNS:Schaal
+ScaleNorm:Normaal
+ScaleQuality:Hogere schaalkwaliteit
+Scaled:Geschaald
+Scaling:Schaling
+Screen:Scherm
+ScreenOwn:Eigen scherm
+Scripting:Scripts
+ScrollBoth:Verplaats de muis met ingedrukte muisknop om de vensterinhoud te verplaatsen
+ScrollDown:Klik op de pijl om omlaag te gaan
+ScrollH:Verschuif de balk om horizontaal over de pagina te gaan
+ScrollLeft:Klik op de pijl om naar links te gaan
+ScrollPDown:Klik om 1 pagina omlaag te gaan
+ScrollPLeft:Klik om 1 pagina naar links te gaan
+ScrollPRight:Klik om 1 pagina naar rechts te gaan
+ScrollPUp:Klik om 1 pagina omhoog te gaan
+ScrollRight:Klik op de pijl om naar rechts te gaan
+ScrollUp:Klik op de pijl om omhoog te gaan
+ScrollV:Verschuif de balk om verticaal over de pagina te gaan
+SearchError:Ongeldige zoekopdracht.
+SearchProvider:Zoekmachine
+SearchURL:Zoek via (web)adresveld
+SearchWeb:Zoek op web
+SelSave:Bewaar
+SelectAllNS:Selecteer alles
+SelectClick:Klik op een item om het te selecteren.
+SelectClose:Klik om het geselecteerde menu te sluiten
+SelectFile:Selecteer bestand...
+SelectMClick:Klik op een item om het te selecteren, er kunnen meerdere opties tegelijkertijd geselecteerd worden
+SelectMenu:Selecteer
+Selecting:selecteren
+Selection:Selectie
+SendReferer:Zend websitereferentie
+SetPassword:Stel wachtwoord in
+Settings:Instellingen
+SettingsEdit:Wijzig voorkeuren
+SettingsSave:Bewaar instellingen
+ShowAll:Toon alles
+ShowCookies:Cookiesbeheer...
+Size:Grootte
+SnapshotWindow:Schermopnamevenster
+Source:Bron...
+Sprite:Sprite-bestand
+SpriteTitle:%s (Sprite-afbeelding %lux%lu punten)
+Sticky:Vensterkleven
+Stop:Breek ophaalproces af
+Stopped:gestopt
+Sunday:Zondag
+SuppressImages:Onderdruk afbeeldingen
+TabActive:Open nieuwe tabbladen in de achtergrond
+TabLast:Open nieuw tabblad na alle bestaande tabbladen
+TabMiddle:Middelste muisknop opent een nieuw tabblad
+TabbedBrowsing:Browsen met tabbladen
+TextNS:Tekst...
+Theme:Thema
+ThemeApplyErr:Een fout ontstond tijdens het toevoegen van het opgehaalde thema.
+ThemeInstActive:Een thema wordt momenteel opgehaald of geïnstalleerd. Wacht tot het is geïnstalleerd of annuleer de opdracht voordat meer thema's geïnstalleerd worden.
+ThemeInstDown:Wacht tot het thema is opgehaald.
+ThemeInstall:Moet het thema '%s' geïnstalleerd worden door %s?
+ThemeInstallErr:Een fout ontstond tijdens het installeren van het opgehaalde thema.
+ThemeInvalid:Het opgehaalde thema is niet (meer) in orde of vereist een nieuwere NetSurf-versie.
+Thursday:Donderdag
+TiBytes: TiB
+Timeout:This site took too long to respond
+TimeoutDescription: A connection to %s could not be established. The site may be temporarily unavailable or too busy to respond.
+TimeoutTitle:Connection timed out
+ToolAddress:Adresveld
+ToolButtons:Knoppen
+ToolStatus:Statusbalk
+ToolThrob:Laadactiviteit
+Toolbar:Gereedschapbalk
+Toolbars:Toon gereedschapbalken
+Top:Top
+Tree:Tree
+TreeAdded:Toegevoegd: %s
+TreeClear:Annuleer standaard
+TreeComment:Commentaar: %s
+TreeDefault:Stel in als standaard
+TreeDelete:Verwijder
+TreeDomain:Domein: %s%s
+TreeExpires:Verloopt op: %s
+TreeExport:Exporteer...
+TreeHeaders: (van koppen)
+TreeHotlist:NetSurf-favorieten
+TreeImport:Geïmporteerd adres
+TreeLast:Laatst bezocht: %s
+TreeLastUsed:Laatst gebruikt: %s
+TreeLaunch:Bezoek webadres
+TreeLoadError:De gegevensstructuur kon niet correct worden geladen.
+TreeNewFolder:Nieuwe map
+TreeNewLink:Nieuw webadres
+TreePath:Pad: %s%s
+TreePersistent:Permanent: %s
+TreeSecure:Alleen veilige sites: %s
+TreeSession:Sessie-einde
+TreeUnknown:Onbekend
+TreeUnused:Ongebruikt
+TreeValue:Waarde: %s
+TreeVersion:Versie: %s
+TreeVersion0:Netscape
+TreeVersion1:RFC 2109
+TreeVersion2:RFC 2965
+TreeVisited:Bezocht: %s keer
+TreeVisits:Bezocht: %i keer
+TreeviewLabelContent:Inhoud:
+TreeviewLabelDomain:Domein:
+TreeviewLabelDomainFolder:Domeinmap:
+TreeviewLabelExpires:Verloopt:
+TreeviewLabelFolder:Map:
+TreeviewLabelIssuer:Uitgever:
+TreeviewLabelLastUsed:Laatst gebruikt:
+TreeviewLabelLastVisit:Laatste bezoek:
+TreeviewLabelName:Naam:
+TreeviewLabelPath:Pad:
+TreeviewLabelPeriod:Periode:
+TreeviewLabelPersistent:Permanent:
+TreeviewLabelRestrictions:Beperkingen:
+TreeviewLabelSerial:Serienr:
+TreeviewLabelTitle:Titel:
+TreeviewLabelType:Type:
+TreeviewLabelURL:Adres:
+TreeviewLabelValidFrom:Geldig vanaf:
+TreeviewLabelValidUntil:Geldig tot:
+TreeviewLabelVersion:Versie:
+TreeviewLabelVisits:Bezocht:
+TrueColour:Ware kleuren
+TryAgain:Try Again
+Tuesday:Dinsdag
+URIError:NetSurf kon dit URI-bestand niet verwerken vanwege een syntaxisfout.
+URLSuggest:Recente adressen
+Unwritten:Informatie naar bestand wegschrijven is mislukt.
+UpLevel:Niveau omhoog
+Use:Gebruik
+Username:Gebruikersnaam
+Utilities:Diversen
+View:Weergave
+ViewCertificates:Bekijk certificaatdetails
+ViewCertificatesNotPossible:Certificaatinformatie is niet beschikbaar voor weergave
+WebPTitle:%s (WebP-afbeelding %lux%lu punten)
+Wednesday:Woensdag
+Window:Vensteromvang en positie
+WindowReset:Herstel standaardwaarden
+WindowSave:Bewaar als standaard
+WindowSize:Kopieer voorgaand venster
+WindowStagr:Open vensters stapelgewijs
+Yes:Ja
+con_advanced:Geavanceerd
+con_cache:Buffer
+con_connect:Verbinding
+con_content:Browsen
+con_fonts:Lettertypen
+con_general:Algemeen
+con_home:Startpagina
+con_image:Afbeeldingen
+con_inter:Interface
+con_lang:Taal
+con_memory:Geheugen
+con_rendering:Weergave
+con_secure:Veiligheid
+con_theme:Thema's
+kBytes: KB
+obj:object
+objs:objecten
+styl:stijlblad
+styls:stijlbladen

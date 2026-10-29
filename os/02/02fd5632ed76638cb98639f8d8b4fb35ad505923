@@ -1,0 +1,16 @@
+{
+  "name": "sleep",
+  "engine": "pipeline",
+  "category": "session",
+  "usage": "sleep <ms>",
+  "summary": "pause the shell",
+  "args": [
+    {
+      "name": "ms"
+    }
+  ],
+  "steps": [
+    { "if": "$# >= 1",
+      "then": [ { "syscall": "sleep", "args": ["$ms"] } ] }
+]
+}

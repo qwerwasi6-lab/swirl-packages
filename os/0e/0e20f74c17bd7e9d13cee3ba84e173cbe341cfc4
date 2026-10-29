@@ -1,0 +1,16 @@
+{
+  "name": "uptime",
+  "engine": "pipeline",
+  "category": "system",
+  "usage": "uptime / free",
+  "summary": "session time / memory",
+  "steps": [
+    { "syscall": "sysinfo", "as": "si" },
+    { "var": "s",  "expr": "$si.uptime_cs / 100" },
+    { "var": "h",  "expr": "$s / 3600" },
+    { "var": "m",  "expr": "($s / 60) % 60" },
+    { "var": "ss", "expr": "$s % 60" },
+    // ${name:02} zero-pads an integer to 2 digits
+    { "print": "up ${h}:${m:02}:${ss:02}, $si.nprocs procs" }
+]
+}

@@ -1,0 +1,42 @@
+SwirlOS philosophy
+==================
+
+1. EVERYTHING IS A REAL FILE ON A REAL DISK.
+
+   Every resource SwirlOS uses lives in SwirlFS, at a real path, traversable
+   by the file manager and by any user program:
+
+     /system/fonts/*.ttf    Real TrueType fonts. The kernel parses and
+                            rasterizes them at RUNTIME. No font pixels are
+                            baked into the kernel binary.
+     /system/apps/*.elf     All applications, including the shell, are
+                            ordinary ELF64 executables on disk.
+     /system/config/*.conf  Kernel and shell configuration, read at boot.
+     /system/lib/           The userspace runtime (libswirl.a) apps link to.
+     /system/doc/           System documentation (you are reading it).
+     /system/kernel/        A visible copy of the boot kernel image.
+     /home/user/            User files. Shell-created files persist on disk.
+
+   The only exceptions are low-level boot artifacts: GRUB and its modules
+   live on the boot ISO (an ordinary ISO9660 filesystem), and the kernel
+   keeps a tiny 8x8 emergency font for panic screens before the disk
+   driver is up. That emergency font is never used for normal operation.
+
+2. RINGS ARE REAL.
+
+   The kernel executes at CPL 0 (ring 0). Every application, including the
+   shell, executes at CPL 3 (ring 3). The CPU enforces the boundary: ring-3
+   code cannot touch kernel memory or hardware; it can only ask, via the
+   int 0x80 syscall interface. Ring 1 and ring 2 segments are defined in
+   the GDT but intentionally unused (reserved for future servers).
+
+3. SWIRLOS IS NOT LINUX.
+
+   - No fork(). Processes are created with spawn(), which loads an ELF
+     file directly into a fresh process. One syscall, no copy-on-write.
+   - One unified /system tree instead of /usr, /etc, /bin, /sbin sprawl.
+   - SwirlFS instead of ext4: simple, deterministic, fully specified in
+     /system/doc/swirlfs-spec.txt.
+   - The syscall ABI is SwirlOS's own (see /system/doc/syscall-abi.txt).
+   - The kernel does not hide its filesystem: there is no initramfs and
+     no opaque blob. What you see in the file manager is the disk.

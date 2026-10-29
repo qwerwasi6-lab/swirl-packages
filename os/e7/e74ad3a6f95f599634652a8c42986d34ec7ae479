@@ -1,0 +1,10 @@
+{
+  "name": "pwd",
+  "engine": "pipeline",
+  "category": "files",
+  "usage": "cd <path> / pwd",
+  "summary": "change / print directory",
+  "steps": [
+    { "print": "$CWD" }
+]
+}

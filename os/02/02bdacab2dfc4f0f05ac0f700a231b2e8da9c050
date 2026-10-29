@@ -1,0 +1,13 @@
+{
+  "name": "spm",
+  "category": "system",
+  "summary": "package manager - search, install and remove packages",
+  "usage": "spm <update|search|info|install|remove|upgrade|list|repo|help> [args]",
+  "args": [ { "name": "command" } ],
+  "engine": "pipeline",
+  "steps": [
+    // spm is a console program: it writes to /home/user/.spm/out.log and the
+    // terminal streams that file live while it runs ("follow").
+    { "spawn": "/system/apps/spm.elf", "arg": "$@", "follow": "/home/user/.spm/out.log" }
+  ]
+}

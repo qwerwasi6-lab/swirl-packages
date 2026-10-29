@@ -1,0 +1,11 @@
+{
+  "name": "echo",
+  "engine": "pipeline",
+  "category": "files",
+  "usage": "echo <text> [> file]",
+  "summary": "print / write text to a file",
+  "steps": [
+    // > file is handled by the engine: every print lands in the file
+    { "print": "$@" }
+]
+}

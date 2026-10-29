@@ -1,0 +1,83 @@
+# swirl.conf — SwirlOS kernel configuration
+# This file is read by the kernel from disk at every boot.
+# If this file is missing or broken, the kernel falls back to defaults.
+# No boot-time settings are baked into the kernel binary.
+
+hostname = swirlbox
+
+[net]
+# DHCP client: acquire ip/mask/gateway/DNS from the network's DHCP server
+# at boot. Works with QEMU slirp, VirtualBox NAT / NAT Network / Bridged /
+# Host-only, and any real LAN. Without a lease the static defaults below
+# (10.0.2.15/24, gw 10.0.2.2, dns 10.0.2.3) stay in effect. 0 = never.
+dhcp = 1
+# Whole-exchange budget in centiseconds (default 300 = 3 s), only paid
+# when no server answers; a normal lease completes in well under 1 s.
+#dhcp.timeout = 300
+# Static override: setting net.ip here skips DHCP entirely and pins the
+# addresses (then net.gw / net.mask / net.dns apply as given).
+#net.ip = 10.0.2.15
+#net.gw = 10.0.2.2
+#net.mask = 255.255.255.0
+#net.dns = 10.0.2.3
+# Boot-time bring-up selftest: ARP + ICMP echo to the gateway from the
+# boot context, results on the serial log ([netprobe] lines). ~1.5 s of
+# boot when the gateway never answers. 0 = off.
+selftest = 1
+
+[test]
+# SDL2 smoke tests: sdltest (video), sdlin (input) or gametest (gamelib/IMG/renderer) - spawns the app at boot
+# alongside the desktop. 0 = off.
+sdl = 0
+# SwirlRun (userspace Win32 PE loader): boot a real .exe alongside the
+# desktop. hello.exe = console fixture, doom.exe = the DOOM demo.
+# 0 = off (default: nothing autostarts; launch .exe files from Files).
+exe = 0
+# Headless ring-3 network self-test (nettest.elf): runs the Driver
+# Manager's exact code path - roster, NETC_TEST self-test, a 4-packet
+# ping to the gateway, and a desktop-liveness check - and reports
+# "NETTEST:" verdict lines to the serial log plus /home/user/nettest.txt.
+# Runs alongside the desktop, never blocks it. 0 = off.
+nettest = 0
+# Ghost-process repro (spawn-with-arg geditor/gimgview, kill, respawn):
+# proved the "close editor/viewer leaves an unkillable ghost" report and
+# drove the fix (probe-before-claim ELF loader, zombies no longer hold
+# slots, task manager can bury zombie husks). Keep available: 1 = on.
+ghosttest = 0
+# TCP/UDP socket validation (tcpdns.elf): exclusive with nettest (same
+# reserved session slot). Browser transport gate - keep 1 while the
+# network stack is under test.
+tcpdns = 0
+# Automated browser test ([test] netsurf): init spawns netsurf.elf
+# (optionally netsurf.url = <start URL>). Default off - the browser
+# normally lives in the start menu, not the boot session.
+netsurf = 0
+netsurf.url = http://example.com/
+# Paint UI smoke (spawn /system/apps/gui/paint.elf at boot)
+paint = 0
+# Image-decoder smoke (open the image viewer on a real .jpg / .png)
+imgview.path =
+
+[console]
+font    = /system/fonts/JetBrainsMono-Regular.ttf
+font.bold = /system/fonts/JetBrainsMono-Bold.ttf
+size    = 20
+fg      = #E8ECF2
+bg      = #12141C
+accent  = #2B7BE4
+
+[display]
+width  = 1024
+height = 768
+depth  = 32
+
+[time]
+# Wall clock for ring-3 (taskbar clock, terminal date, ...). The CMOS RTC
+# keeps UTC (QEMU/VirtualBox default); the kernel adds this zone when it
+# serves the rtc6 syscall. Europe/Berlin = CET (UTC+1) plus EU summer
+# time, i.e. CEST (UTC+2) in summer.
+# Minutes east of UTC for the base zone (Berlin CET = 60). 0 = raw UTC.
+offset_min = 60
+# EU summer time: +60 min from 01:00 UTC on the LAST Sunday of March
+# until 01:00 UTC on the LAST Sunday of October. 0 = off.
+dst_eu = 1
