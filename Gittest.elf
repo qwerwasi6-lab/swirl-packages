@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <time.h>
+
+#define WIDTH 80
+#define HEIGHT 24
+
+int main() {
+    // Seed the random number generator
+    srand(time(NULL));
+    
+    // Array to hold the Y position of the "head" of each column
+    int drops[WIDTH];
+
+    // Initialize the drops with random starting positions
+    for (int i = 0; i < WIDTH; i++) {
+        drops[i] = rand() % HEIGHT;
+    }
+
+    printf("\x1b[2J"); // Clear screen
+    printf("\x1b[?25l"); // Hide cursor
+
+    while (1) {
+        // Clear the screen buffer
+        printf("\x1b[H"); 
+
+        for (int y = 0; y < HEIGHT; y++) {
+            for (int x = 0; x < WIDTH; x++) {
+                if (y == drops[x]) {
+                    // The head of the drop is bright white
+                    printf("\x1b[1;37m%c", (rand() % 94) + 33); 
+                } else if (y < drops[x] && y > drops[x] - 8) {
+                    // The tail is bright green
+                    printf("\x1b[1;32m%c", (rand() % 94) + 33);
+                } else if (y < drops[x]) {
+                    // The far tail is dark green
+                    printf("\x1b[0;32m%c", (rand() % 94) + 33);
+                } else {
+                    // Empty space
+                    printf(" ");
+                }
+            }
+            printf("\n");
+        }
+
+        // Move the drops down
+        for (int i = 0; i < WIDTH; i++) {
+            if (drops[i] > HEIGHT + 8 || rand() % 100 > 95) {
+                drops[i] = 0;
+            } else {
+                drops[i]++;
+            }
+        }
+
+        // Speed of the rain
+        usleep(80000); 
+    }
+
+    printf("\x1b[?25h"); // Show cursor (unreachable, but good practice)
+    return 0;
+}
