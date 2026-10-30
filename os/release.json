@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r68",
+ "version": "r69",
  "abi": 2,
  "date": "2026-10-30",
- "notes": "Windows installers (Wise) now finish properly and DX-Ball 2 runs: VerInstallFile, IMalloc/shell folders, short 8.3 names, long window class names, waveOut caps fix.",
+ "notes": "r69: Wi-Fi in the system tray (KDE-style network flyout with connect/disconnect/forget and password entry); printf %f fix.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/d9/d95a9137267473947075be805565f89a26b0b6a1",
+   "path": "os/7b/7b8ab06a34204d09e7e07c875ac2953643b69f53",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "d95a9137267473947075be805565f89a26b0b6a126e23232c20e8035663f6087",
-   "size": 992064
+   "sha256": "7b8ab06a34204d09e7e07c875ac2953643b69f5374b0852aad3a7b88fbdb2f97",
+   "size": 1017992
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -78,10 +78,10 @@
    "size": 13920
   },
   {
-   "path": "os/5b/5b38af9399c41702104b40a1e570de7d5738cf13",
+   "path": "os/74/7475f7d90e3834fe47c4a3e576d4dce6437495c9",
    "dest": "/system/apps/netsurf.elf",
-   "sha256": "5b38af9399c41702104b40a1e570de7d5738cf13221dea9ba65621876efc621e",
-   "size": 4109848
+   "sha256": "7475f7d90e3834fe47c4a3e576d4dce6437495c9da747490d037ec6ee9c8327f",
+   "size": 4111800
   },
   {
    "path": "os/6b/6b89c47d3be71c80b1db3a8de063aa1ce87f7141",
@@ -120,10 +120,10 @@
    "size": 9744
   },
   {
-   "path": "os/83/83f9a6c1182c513ebc37ed5abd725aaa7ca0494a",
+   "path": "os/ce/ce4fda74cccb66ae6f97a05945c1ae52ca1e125b",
    "dest": "/system/apps/spm.elf",
-   "sha256": "83f9a6c1182c513ebc37ed5abd725aaa7ca0494a892226b2a2ccb4ddabb513a9",
-   "size": 525360
+   "sha256": "ce4fda74cccb66ae6f97a05945c1ae52ca1e125bd2f70c5d3b0226a4896ac33c",
+   "size": 529600
   },
   {
    "path": "os/b4/b493638a50375819b1e94cbdd3a3473bd71600f3",
@@ -168,33 +168,33 @@
    "size": 538664
   },
   {
-   "path": "os/ad/add287462aca40b43397c9473493f74b5d6980e6",
+   "path": "os/5c/5c8bd3dcf5bcd50c62e0ed4a3063707772346be0",
    "dest": "/system/apps/gui/gcalc.elf",
-   "sha256": "add287462aca40b43397c9473493f74b5d6980e688a828ef23cd816a8a634ff1",
+   "sha256": "5c8bd3dcf5bcd50c62e0ed4a3063707772346be02f8472dbbe48084d8b656519",
    "size": 62032
   },
   {
-   "path": "os/59/59ede4935f904b2b8c9ace05aacdfef77ae0afec",
+   "path": "os/8f/8fa1010dd951dcfde95d1355be7de802bfd52fec",
    "dest": "/system/apps/gui/gdrvman.elf",
-   "sha256": "59ede4935f904b2b8c9ace05aacdfef77ae0afec400af483f24ca6337e9ec1c6",
+   "sha256": "8fa1010dd951dcfde95d1355be7de802bfd52fecb34485c8830a0a6842c4be85",
    "size": 589064
   },
   {
-   "path": "os/5f/5ffd56ace840878fc526b1150b888d145a53c047",
+   "path": "os/5d/5d007149137acf0992f1b65ba5594749b7577ec9",
    "dest": "/system/apps/gui/gdrvprop.elf",
-   "sha256": "5ffd56ace840878fc526b1150b888d145a53c047a26f591342c02c0fff758a6d",
-   "size": 573560
+   "sha256": "5d007149137acf0992f1b65ba5594749b7577ec99a6b91451a7320d5649c9504",
+   "size": 574008
   },
   {
-   "path": "os/7a/7a1fd1e1dc377d1105b3aec792a6d01096a51ab2",
+   "path": "os/43/438e129bd365c991ef8ee140cd85460b51c21dfc",
    "dest": "/system/apps/gui/geditor.elf",
-   "sha256": "7a1fd1e1dc377d1105b3aec792a6d01096a51ab224105965b3515b3d515f9e1c",
+   "sha256": "438e129bd365c991ef8ee140cd85460b51c21dfcba7b7eb14ae9278d6161d10f",
    "size": 589200
   },
   {
-   "path": "os/e6/e6fa291fb15c8385fd1a3124114e677128df339b",
+   "path": "os/2e/2e06f0a8a01622f91f8c2e69a02e11ba67ee6c42",
    "dest": "/system/apps/gui/gfiles.elf",
-   "sha256": "e6fa291fb15c8385fd1a3124114e677128df339b36527dc351290ac9baeb4a21",
+   "sha256": "2e06f0a8a01622f91f8c2e69a02e11ba67ee6c4208347fdbed225205419eac83",
    "size": 834096
   },
   {
@@ -204,63 +204,63 @@
    "size": 84304
   },
   {
-   "path": "os/38/38f4aec3747e90810a674a981f9b3285f3923d22",
+   "path": "os/18/18763f00f57853a1b32b8d2ea3fbd831eaeb3b93",
    "dest": "/system/apps/gui/gimgview.elf",
-   "sha256": "38f4aec3747e90810a674a981f9b3285f3923d22b8d680806d94d48ea9c9094c",
+   "sha256": "18763f00f57853a1b32b8d2ea3fbd831eaeb3b9305bad63222cd24078f12d82f",
    "size": 327328
   },
   {
-   "path": "os/96/969016942e681b556f179bcff872e88728af8150",
+   "path": "os/b6/b605008206f83ae8a142f22b984895e06622257d",
    "dest": "/system/apps/gui/gsettings.elf",
-   "sha256": "969016942e681b556f179bcff872e88728af815023b13cdbc01e264b947141a5",
+   "sha256": "b605008206f83ae8a142f22b984895e06622257de106c39d995ae958fdf77aad",
    "size": 897256
   },
   {
-   "path": "os/bf/bf9cdc9181b5857bbc712850cbc7279057b257e4",
+   "path": "os/fc/fc9f33a63ca4667777b03adc18e94efea70d7ab2",
    "dest": "/system/apps/gui/gsetup.elf",
-   "sha256": "bf9cdc9181b5857bbc712850cbc7279057b257e4a50ec4c5e1a55b52c9232e47",
+   "sha256": "fc9f33a63ca4667777b03adc18e94efea70d7ab214bc0b819319bc6e284505d1",
    "size": 621176
   },
   {
-   "path": "os/6a/6a86fc594496ae381faeeec6d8b954e6bf8be192",
+   "path": "os/d3/d3095f12a6d1a1ac64c52d5bb6891e9601fee802",
    "dest": "/system/apps/gui/gstore.elf",
-   "sha256": "6a86fc594496ae381faeeec6d8b954e6bf8be1929a46ad6528e4b74b6a358855",
-   "size": 101232
+   "sha256": "d3095f12a6d1a1ac64c52d5bb6891e9601fee802e49636f0d6411b8e43560dd4",
+   "size": 105328
   },
   {
-   "path": "os/b3/b3bb41575bef9d1a05448df17319454bdf203d0d",
+   "path": "os/62/623456c46516d71242a4f15acd9aa2b1576aa0b3",
    "dest": "/system/apps/gui/gtaskman.elf",
-   "sha256": "b3bb41575bef9d1a05448df17319454bdf203d0db721a15533041d719ec1455c",
+   "sha256": "623456c46516d71242a4f15acd9aa2b1576aa0b347481f0552bcdd7163814001",
    "size": 571680
   },
   {
-   "path": "os/a2/a2279b305f57a4071ad765568b823c5457627ab4",
+   "path": "os/aa/aae3dbc09c54c040e86cfccbf08eaae22bb9feec",
    "dest": "/system/apps/gui/gtbtool.elf",
-   "sha256": "a2279b305f57a4071ad765568b823c5457627ab4d79e4cbca064a2cd85c0cbdf",
+   "sha256": "aae3dbc09c54c040e86cfccbf08eaae22bb9feec1c05376a532d481b5dcbd9ef",
    "size": 75304
   },
   {
-   "path": "os/d8/d8db17e63ec6b296c5d3633aca2dd7db3c82df82",
+   "path": "os/d5/d54e16664b43b5e76344b7cf8da012705b0e9100",
    "dest": "/system/apps/gui/gterm.elf",
-   "sha256": "d8db17e63ec6b296c5d3633aca2dd7db3c82df820827760a93736b0b1ad23ef0",
+   "sha256": "d54e16664b43b5e76344b7cf8da012705b0e9100bd213171f546102fefcee870",
    "size": 660384
   },
   {
-   "path": "os/e3/e3d969796861cb86e0f349485fcbe851cddc7baa",
+   "path": "os/6e/6e02bd86aa8c5cda3b7cf1c7cb81507e6adf48e5",
    "dest": "/system/apps/gui/gvideo.elf",
-   "sha256": "e3d969796861cb86e0f349485fcbe851cddc7baa0f14e45aec5d1d0ddadc0a56",
-   "size": 282648
+   "sha256": "6e02bd86aa8c5cda3b7cf1c7cb81507e6adf48e5aa5206827408e7cd667fa485",
+   "size": 286744
   },
   {
-   "path": "os/e2/e2bd4f9f24829354ac598ef2a41696a4dc9cd670",
+   "path": "os/a3/a38b49bcc81a146181573914e3556b4995d8ba61",
    "dest": "/system/apps/gui/gwadinst.elf",
-   "sha256": "e2bd4f9f24829354ac598ef2a41696a4dc9cd67011d31a0b8aba8da79ab10099",
+   "sha256": "a38b49bcc81a146181573914e3556b4995d8ba617dc8d3392b61b8ae20c41376",
    "size": 589528
   },
   {
-   "path": "os/6d/6d201ab2db8a5459fb30441dc0948b93c7476991",
+   "path": "os/9e/9e1509ef7c17c1cb3a54f7b1af20d775ec4774ce",
    "dest": "/system/apps/gui/paint.elf",
-   "sha256": "6d201ab2db8a5459fb30441dc0948b93c74769915b61e16a8a8772f4dcf9991e",
+   "sha256": "9e1509ef7c17c1cb3a54f7b1af20d775ec4774ce8fe567bde8b0838f1163ffd1",
    "size": 70784
   },
   {

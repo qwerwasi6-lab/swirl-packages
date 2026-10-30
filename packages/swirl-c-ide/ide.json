@@ -1,0 +1,13 @@
+{
+  "name": "ide",
+  "category": "dev",
+  "summary": "open the Swirl C IDE (optionally with a file)",
+  "usage": "ide [file.c]",
+  "args": [ { "name": "file" } ],
+  "engine": "pipeline",
+  "steps": [
+    { "if": "$# >= 1",
+      "then": [ { "spawn": "/system/apps/gide.elf", "arg": "$1" } ],
+      "else": [ { "spawn": "/system/apps/gide.elf" } ] }
+  ]
+}

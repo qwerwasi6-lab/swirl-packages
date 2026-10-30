@@ -1,0 +1,17 @@
+{
+  "name": "tcc",
+  "category": "dev",
+  "summary": "Tiny C Compiler - compile and run C right here",
+  "usage": "tcc [-run] [options] file.c [args]",
+  "engine": "pipeline",
+  "steps": [
+    // Output (diagnostics, and stdout of -run programs) goes to /home/user/.tcc/out.log
+    // and is streamed into this terminal while tcc runs.
+    { "if": "$# >= 1",
+      "then": [ { "spawn": "/system/apps/tcc.elf", "arg": "$@", "follow": "/home/user/.tcc/out.log" } ],
+      "else": [ { "print": "tcc 0.9.28rc  -  usage: tcc [-run] [-o out] file.c" },
+                { "print": "  tcc -run /home/user/hello.c    compile in memory and run" },
+                { "print": "  tcc -c /home/user/a.c          compile to an object file" },
+                { "print": "  headers: /system/tcc/include   (libc, plus <swirl.h> for SwirlOS syscalls)" } ] }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "name": "tcc",
+  "version": "0.9.28rc-1",
+  "description": "Tiny C Compiler: compile and run C programs on SwirlOS.",
+  "author": "Fabrice Bellard & the TinyCC developers (SwirlOS port by Swirl)",
+  "title": "Tiny C Compiler",
+  "category": "Developer",
+  "tagline": "A whole C compiler in 360 KB.",
+  "long": "TinyCC 0.9.28rc ported to SwirlOS. Compile C in memory and run it straight away (tcc -run file.c), or build object files. Comes with the libc headers and <swirl.h> for talking to the kernel directly.\\nUse it from the terminal, or install the Swirl C IDE for an editor with Build & Run.",
+  "publisher": "Swirl",
+  "license": "LGPL-2.1",
+  "color": "4A90D9",
+  "glyph": "tool",
+  "files": [
+    {
+      "src": "tcc.elf",
+      "dest": "/system/apps/tcc.elf"
+    },
+    {
+      "src": "tcc.json",
+      "dest": "/system/gterm/tcc.json"
+    },
+    {
+      "src": "lib/runmain.o",
+      "dest": "/system/tcc/lib/runmain.o"
+    },
+    {
+      "src": "lib/libtcc1.a",
+      "dest": "/system/tcc/lib/libtcc1.a"
+    },
+    {
+      "src": "lib/libc.a",
+      "dest": "/system/tcc/lib/libc.a"
+    },
+    {
+      "src": "lib/libm.a",
+      "dest": "/system/tcc/lib/libm.a"
+    },
+    {
+      "src": "lib/libdl.a",
+      "dest": "/system/tcc/lib/libdl.a"
+    },
+    {
+      "src": "include/float.h",
+      "dest": "/system/tcc/include/float.h"
+    },
+    {
+      "src": "include/stdalign.h",
+      "dest": "/system/tcc/include/stdalign.h"
+    },
+    {
+      "src": "include/stdarg.h",
+      "dest": "/system/tcc/include/stdarg.h"
+    },
+    {
+      "src": "include/stdatomic.h",
+      "dest": "/system/tcc/include/stdatomic.h"
+    },
+    {
+      "src": "include/stdbool.h",
+      "dest": "/system/tcc/include/stdbool.h"
+    },
+    {
+      "src": "include/stddef.h",
+      "dest": "/system/tcc/include/stddef.h"
+    },
+    {
+      "src": "include/stdnoreturn.h",
+      "dest": "/system/tcc/include/stdnoreturn.h"
+    },
+    {
+      "src": "include/tccdefs.h",
+      "dest": "/system/tcc/include/tccdefs.h"
+    },
+    {
+      "src": "include/tgmath.h",
+      "dest": "/system/tcc/include/tgmath.h"
+    },
+    {
+      "src": "include/varargs.h",
+      "dest": "/system/tcc/include/varargs.h"
+    },
+    {
+      "src": "include/stdint.h",
+      "dest": "/system/tcc/include/stdint.h"
+    },
+    {
+      "src": "include/time.h",
+      "dest": "/system/tcc/include/time.h"
+    },
+    {
+      "src": "include/sys/stat.h",
+      "dest": "/system/tcc/include/sys/stat.h"
+    },
+    {
+      "src": "include/sys/time.h",
+      "dest": "/system/tcc/include/sys/time.h"
+    },
+    {
+      "src": "include/sys/types.h",
+      "dest": "/system/tcc/include/sys/types.h"
+    },
+    {
+      "src": "include/assert.h",
+      "dest": "/system/tcc/include/assert.h"
+    },
+    {
+      "src": "include/ctype.h",
+      "dest": "/system/tcc/include/ctype.h"
+    },
+    {
+      "src": "include/dirent.h",
+      "dest": "/system/tcc/include/dirent.h"
+    },
+    {
+      "src": "include/errno.h",
+      "dest": "/system/tcc/include/errno.h"
+    },
+    {
+      "src": "include/fcntl.h",
+      "dest": "/system/tcc/include/fcntl.h"
+    },
+    {
+      "src": "include/getopt.h",
+      "dest": "/system/tcc/include/getopt.h"
+    },
+    {
+      "src": "include/iconv.h",
+      "dest": "/system/tcc/include/iconv.h"
+    },
+    {
+      "src": "include/inttypes.h",
+      "dest": "/system/tcc/include/inttypes.h"
+    },
+    {
+      "src": "include/limits.h",
+      "dest": "/system/tcc/include/limits.h"
+    },
+    {
+      "src": "include/locale.h",
+      "dest": "/system/tcc/include/locale.h"
+    },
+    {
+      "src": "include/math.h",
+      "dest": "/system/tcc/include/math.h"
+    },
+    {
+      "src": "include/setjmp.h",
+      "dest": "/system/tcc/include/setjmp.h"
+    },
+    {
+      "src": "include/signal.h",
+      "dest": "/system/tcc/include/signal.h"
+    },
+    {
+      "src": "include/stdio.h",
+      "dest": "/system/tcc/include/stdio.h"
+    },
+    {
+      "src": "include/stdlib.h",
+      "dest": "/system/tcc/include/stdlib.h"
+    },
+    {
+      "src": "include/string.h",
+      "dest": "/system/tcc/include/string.h"
+    },
+    {
+      "src": "include/swirl_compat.h",
+      "dest": "/system/tcc/include/swirl_compat.h"
+    },
+    {
+      "src": "include/unistd.h",
+      "dest": "/system/tcc/include/unistd.h"
+    },
+    {
+      "src": "include/sys/mman.h",
+      "dest": "/system/tcc/include/sys/mman.h"
+    },
+    {
+      "src": "include/swirl.h",
+      "dest": "/system/tcc/include/swirl.h"
+    },
+    {
+      "src": "hello.c",
+      "dest": "/home/user/tcc/hello.c"
+    }
+  ]
+}

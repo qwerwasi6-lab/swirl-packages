@@ -1,0 +1,32 @@
+{
+  "name": "swirl-c-ide",
+  "version": "1.0.0",
+  "description": "A small C editor with Check and Run buttons, built on the Tiny C Compiler.",
+  "author": "Swirl",
+  "deps": [
+    "tcc"
+  ],
+  "title": "Swirl C IDE",
+  "category": "Developer",
+  "tagline": "Write, build and run C without leaving the desktop.",
+  "long": "A focused code editor for C: line numbers, syntax colours, auto-indent, undo, find, and a real compiler one click away.\\nCheck compiles and lists errors (click one to jump to the line), Run compiles in memory and runs your program with its output right under the editor. Ctrl+S save, Ctrl+B check, Ctrl+R run, Ctrl+F find, Ctrl+G go to line.\\nNeeds the Tiny C Compiler package, which the Store installs for you.",
+  "publisher": "Swirl",
+  "license": "MIT",
+  "color": "2F9E6B",
+  "glyph": "tool",
+  "launch": "/system/apps/gide.elf",
+  "files": [
+    {
+      "src": "gide.elf",
+      "dest": "/system/apps/gide.elf"
+    },
+    {
+      "src": "ide.json",
+      "dest": "/system/gterm/ide.json"
+    },
+    {
+      "src": "gide.png",
+      "dest": "/system/apps/icons/gide.png"
+    }
+  ]
+}
