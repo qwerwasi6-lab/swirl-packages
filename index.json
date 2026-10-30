@@ -1144,10 +1144,10 @@
   },
   "os": {
     "name": "SwirlOS",
-    "version": "r74",
+    "version": "r75",
     "abi": 2,
     "date": "2026-10-31",
-    "notes": "r74: screenshots no longer include the mouse cursor",
+    "notes": "r75: clyrics - live synced lyrics in big block text, in the terminal",
     "files": [
       {
         "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -1264,10 +1264,10 @@
         "size": 9744
       },
       {
-        "path": "os/fc/fceebb471e51a2e87d278a5501aea0b6b2ad2d80",
+        "path": "os/9f/9f8b8af8dd5314c59356bb6baf145ef7b6a49f97",
         "dest": "/system/apps/spm.elf",
-        "sha256": "fceebb471e51a2e87d278a5501aea0b6b2ad2d802c8f3a90aaa755952b4a84ab",
-        "size": 555400
+        "sha256": "9f8b8af8dd5314c59356bb6baf145ef7b6a49f9782fe0c0ce38782b153278968",
+        "size": 564016
       },
       {
         "path": "os/b4/b493638a50375819b1e94cbdd3a3473bd71600f3",
@@ -1716,6 +1716,12 @@
         "dest": "/system/gterm/clear.json",
         "sha256": "24c2700694f4b2f52b2760983a6191a28b1e18c039611878fd86dd00015747d8",
         "size": 179
+      },
+      {
+        "path": "os/e3/e350b701a085ec8e2bffcc4e21cb381d4454e416",
+        "dest": "/system/gterm/clyrics.json",
+        "sha256": "e350b701a085ec8e2bffcc4e21cb381d4454e41669e80b9c965cd85c234a5110",
+        "size": 475
       },
       {
         "path": "os/d6/d60487be62d0cbffede3022b2854b54db3a8b9c7",

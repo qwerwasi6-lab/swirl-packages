@@ -1,0 +1,13 @@
+{
+  "name": "clyrics",
+  "category": "fun",
+  "summary": "sing the lyrics of a song in big text (no audio - you play the song)",
+  "usage": "clyrics \"artist\" - \"song name\"",
+  "args": [ { "name": "artist" } ],
+  "aliases": [ "lyrics" ],
+  "engine": "pipeline",
+  "steps": [
+    // spm.elf fetches the time-synced lyrics from the internet, then opens the Lyrics window
+    { "spawn": "/system/apps/spm.elf", "arg": "lyrics $@", "follow": "/home/user/.spm/out.log" }
+  ]
+}
