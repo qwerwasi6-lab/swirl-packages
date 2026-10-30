@@ -1,0 +1,23 @@
+{
+  "_help": "Look of the `clyrics` command. Every *_style is a SwirLet option string (run `swirlet --list` in the terminal). Copy this file to /home/user/.config/Clyrics.json to keep your changes across updates; that copy wins over this one.",
+
+  "countdown": 3,
+  "background": "0d0f16",
+
+  "intro": "Start your song when you see GO",
+  "intro_style": "-s fit -c white -f bold -e shadow",
+
+  "countdown_style": "-s 220 -c accent -f pixel",
+
+  "go_text": "GO",
+  "go_style": "-s 200 -c green -f pixel -e shadow",
+
+  "lyric_style": "-s fit -c white -f bold -e shadow -w 88%",
+
+  "title_show": true,
+  "title_format": "{artist} - {title}",
+  "title_style": "-x 3% -y 4% -s 18 -c gray -f sans -a left",
+
+  "end_text": "The end",
+  "end_style": "-s fit -c green -f bold"
+}

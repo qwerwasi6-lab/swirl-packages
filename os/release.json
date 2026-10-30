@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r76",
+ "version": "r77",
  "abi": 2,
  "date": "2026-10-31",
- "notes": "r76: SwirLet native terminal text art (swirlet/figlet); clyrics redone on it",
+ "notes": "r77: clyrics look is configurable via Clyrics.json (SwirLet styles)",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -120,10 +120,10 @@
    "size": 9744
   },
   {
-   "path": "os/40/40f718e663946818f318f54c45e6df7c2a6536ca",
+   "path": "os/06/067bd0f4baeebf8cfc36b7059c3f4d6e956febef",
    "dest": "/system/apps/spm.elf",
-   "sha256": "40f718e663946818f318f54c45e6df7c2a6536cab834aede0623c8f364960996",
-   "size": 563984
+   "sha256": "067bd0f4baeebf8cfc36b7059c3f4d6e956febefae04a733e599b848d6c09391",
+   "size": 564016
   },
   {
    "path": "os/b4/b493638a50375819b1e94cbdd3a3473bd71600f3",
@@ -382,6 +382,13 @@
    "dest": "/system/apps/icons/wallpaper.png",
    "sha256": "965044a48da7eba5616734bd194c4af369d735b5c290ebddb8d749d763327614",
    "size": 6575
+  },
+  {
+   "path": "os/82/82a140def807217c92dc9172603066a878a66439",
+   "dest": "/system/config/Clyrics.json",
+   "sha256": "82a140def807217c92dc9172603066a878a6643910fe40a1ac76a4981d9cbfe0",
+   "size": 770,
+   "keep": 1
   },
   {
    "path": "os/95/95936991a002811a00b4f4212d88ad361d28019a",
