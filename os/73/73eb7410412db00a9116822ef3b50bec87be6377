@@ -1,0 +1,8 @@
+{
+  "name": "swirlet",
+  "engine": "builtin",
+  "category": "fun",
+  "usage": "swirlet [-f font] [-c colour] [-s size] [-x X] [-y Y] text   (swirlet --list)",
+  "summary": "SwirLet: put big text anywhere on the terminal, any font and colour",
+  "aliases": [ "figlet" ]
+}

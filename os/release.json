@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r75",
+ "version": "r76",
  "abi": 2,
  "date": "2026-10-31",
- "notes": "r75: clyrics - live synced lyrics in big block text, in the terminal",
+ "notes": "r76: SwirLet native terminal text art (swirlet/figlet); clyrics redone on it",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -120,10 +120,10 @@
    "size": 9744
   },
   {
-   "path": "os/9f/9f8b8af8dd5314c59356bb6baf145ef7b6a49f97",
+   "path": "os/40/40f718e663946818f318f54c45e6df7c2a6536ca",
    "dest": "/system/apps/spm.elf",
-   "sha256": "9f8b8af8dd5314c59356bb6baf145ef7b6a49f9782fe0c0ce38782b153278968",
-   "size": 564016
+   "sha256": "40f718e663946818f318f54c45e6df7c2a6536cab834aede0623c8f364960996",
+   "size": 563984
   },
   {
    "path": "os/b4/b493638a50375819b1e94cbdd3a3473bd71600f3",
@@ -240,10 +240,10 @@
    "size": 75304
   },
   {
-   "path": "os/12/12457ffd321dca108a4d8caa1d20ee24dcf77dad",
+   "path": "os/c5/c57d3f04965dab4f785514004426625d021e8e53",
    "dest": "/system/apps/gui/gterm.elf",
-   "sha256": "12457ffd321dca108a4d8caa1d20ee24dcf77dad9aea55b0481cc6da42b8e7cf",
-   "size": 664536
+   "sha256": "c57d3f04965dab4f785514004426625d021e8e53dba766a8cdde9c5495729714",
+   "size": 673800
   },
   {
    "path": "os/60/6039410ba8deb4cfab40cfc6516359a6cedd4747",
@@ -788,6 +788,12 @@
    "dest": "/system/gterm/store.json",
    "sha256": "b3ac9156d254fffcc0dc173969b334f6b7adcc9ce8eb7c63288e9958da206ff8",
    "size": 188
+  },
+  {
+   "path": "os/73/73eb7410412db00a9116822ef3b50bec87be6377",
+   "dest": "/system/gterm/swirlet.json",
+   "sha256": "73eb7410412db00a9116822ef3b50bec87be63775279691b052ff8933641f83f",
+   "size": 271
   },
   {
    "path": "os/2b/2bf7ac006699cba5271387a630eda20091330fe4",
