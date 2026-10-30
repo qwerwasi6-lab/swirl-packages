@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <time.h>
+
+int main() {
+    srand(time(NULL));
+    int flip = rand() % 2;
+    
+    // Clear screen
+    printf("\x1b[2J\x1b[H");
+    printf("\x1b[1;36mFlipping...\n\x1b[0m");
+    usleep(400000); // 0.4 second delay
+    
+    printf("\x1b[2J\x1b[H");
+    
+    if (flip == 0) {
+        printf("\x1b[1;33m"); // Yellow
+        printf("  _______  \n");
+        printf(" /       \\ \n");
+        printf("|  HEADS  |\n");
+        printf(" \\_______/ \n\n");
+    } else {
+        printf("\x1b[1;35m"); // Magenta
+        printf("  _______  \n");
+        printf(" /       \\ \n");
+        printf("|  TAILS  |\n");
+        printf(" \\_______/ \n\n");
+    }
+    printf("\x1b[0m");
+    return 0;
+}
