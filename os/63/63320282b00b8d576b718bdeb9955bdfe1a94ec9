@@ -1,0 +1,30 @@
+SwirlOS - License and notice
+============================
+
+SwirlOS  (c) 2026 Leonid. All rights reserved.
+Made by Leonid.
+
+You may:
+  * install and run SwirlOS on your own computers, for personal and
+    non-commercial use, free of charge;
+  * share the unmodified, official SwirlOS image with others, as long as this
+    notice and the SwirlOS name and logo stay intact.
+
+You may not, without Leonid's written permission:
+  * modify, decompile, disassemble or reverse-engineer SwirlOS, or build a
+    derivative work or "remix" from it;
+  * redistribute a modified copy, or remove or change the SwirlOS name,
+    logo, About page or this notice;
+  * sell SwirlOS or include it in a commercial product;
+  * present SwirlOS, or any part of it, as your own work.
+
+SwirlOS is provided "as is", without warranty of any kind. Use it at your own
+risk; back up your data. The author is not liable for any loss or damage.
+
+Third-party components
+----------------------
+SwirlOS includes third-party software and assets (for example NetSurf, SDL2
+parts, the Atheros ath9k driver code, and fonts). Each is covered by its own
+licence, which applies to that component and is not changed by this notice.
+Their licence texts and credits are available from the respective projects
+and, where provided, alongside the component inside /system.

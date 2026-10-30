@@ -1,10 +1,16 @@
 {
  "name": "SwirlOS",
- "version": "r65",
+ "version": "r66",
  "abi": 2,
- "date": "2026-10-29",
- "notes": "r65: Store gets DOOM + Doukutsu; spm adopts identical files.",
+ "date": "2026-10-30",
+ "notes": "r66: SwirlOS can run from a real disk (tripleboot installer kit). Fixes for Wi-Fi saving, USB mouse/keyboard setup and a boot-time freeze on real hardware, a crash log saved to disk, and an About page with licence. See /system/LICENSE.txt.",
  "files": [
+  {
+   "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
+   "dest": "/system/LICENSE.txt",
+   "sha256": "63320282b00b8d576b718bdeb9955bdfe1a94ec93c673884f8e6c41f8c454507",
+   "size": 1326
+  },
   {
    "path": "os/7e/7eac1ad1bc5ac61f8d3f727a87cd61a126401d4f",
    "dest": "/system/apps/apps.txt",
@@ -204,16 +210,16 @@
    "size": 327328
   },
   {
-   "path": "os/7b/7b1ca2027610f0b0fcfa2a5d1b649494d051f45b",
+   "path": "os/96/969016942e681b556f179bcff872e88728af8150",
    "dest": "/system/apps/gui/gsettings.elf",
-   "sha256": "7b1ca2027610f0b0fcfa2a5d1b649494d051f45b239442f0dc65a8b79fded425",
+   "sha256": "969016942e681b556f179bcff872e88728af815023b13cdbc01e264b947141a5",
    "size": 897256
   },
   {
-   "path": "os/2f/2f6bae3657adb56ea3ab3041d228d792a0bacbca",
+   "path": "os/bf/bf9cdc9181b5857bbc712850cbc7279057b257e4",
    "dest": "/system/apps/gui/gsetup.elf",
-   "sha256": "2f6bae3657adb56ea3ab3041d228d792a0bacbca408370c809e72296a883cff5",
-   "size": 617080
+   "sha256": "bf9cdc9181b5857bbc712850cbc7279057b257e4a50ec4c5e1a55b52c9232e47",
+   "size": 621176
   },
   {
    "path": "os/6a/6a86fc594496ae381faeeec6d8b954e6bf8be192",
