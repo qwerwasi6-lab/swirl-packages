@@ -1067,10 +1067,10 @@
   },
   "os": {
     "name": "SwirlOS",
-    "version": "r70",
+    "version": "r71",
     "abi": 2,
     "date": "2026-10-30",
-    "notes": "r70 hotfix: fixes a desktop crash at boot on installs with a saved system-tray layout (introduced in r69). Settings and Wi-Fi networks are untouched.",
+    "notes": "r71: .elf programs now launch with a double-click (desktop and Files) and show an icon; automatic notification/error chimes are silent for the first 60 s after boot.",
     "files": [
       {
         "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -1091,10 +1091,10 @@
         "size": 351458
       },
       {
-        "path": "os/68/6843bd2be9a9e6edd60651c970eb4d88bb0d55e6",
+        "path": "os/3c/3c8329a5c027bff556b02f982b600da472e7959d",
         "dest": "/system/apps/desktop.elf",
-        "sha256": "6843bd2be9a9e6edd60651c970eb4d88bb0d55e65902a5c254242bd6ddcd8f30",
-        "size": 1018184
+        "sha256": "3c8329a5c027bff556b02f982b600da472e7959dca4481dadca74c06c2f7a631",
+        "size": 1018160
       },
       {
         "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -1259,10 +1259,10 @@
         "size": 589200
       },
       {
-        "path": "os/0b/0b31d41eb5f0b6b33056575337cb48e4e3c25d11",
+        "path": "os/1a/1abfc4a2305ab08cc968205c791b61354eea1b70",
         "dest": "/system/apps/gui/gfiles.elf",
-        "sha256": "0b31d41eb5f0b6b33056575337cb48e4e3c25d11710675300d7602c6baca0a94",
-        "size": 834096
+        "sha256": "1abfc4a2305ab08cc968205c791b61354eea1b7075618aecaff87a905b3ba28b",
+        "size": 834224
       },
       {
         "path": "os/8f/8f9244294acf8754f8d81feb31605a4ec81c3463",
