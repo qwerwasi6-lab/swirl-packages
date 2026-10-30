@@ -1,0 +1,16 @@
+{
+  "_theme": "karaoke - big yellow words, party mode",
+  "countdown": 3,
+  "background": "1a0b2e",
+  "intro": "KARAOKE TIME",
+  "intro_style": "-s fit -c white -f pixel -e outline",
+  "countdown_style": "-s 220 -c yellow -f pixel -e outline",
+  "go_text": "SING!",
+  "go_style": "-s 200 -c green -f pixel -e outline",
+  "lyric_style": "-s fit -c yellow -f pixel -e outline -w 92%",
+  "title_show": true,
+  "title_format": "{artist} - {title}",
+  "title_style": "-x 50% -y 94% -s 20 -c white -f mono -a center -v bottom",
+  "end_text": "ENCORE!",
+  "end_style": "-s fit -c rainbow -f pixel -e outline"
+}

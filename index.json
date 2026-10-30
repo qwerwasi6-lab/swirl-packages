@@ -1144,10 +1144,10 @@
   },
   "os": {
     "name": "SwirlOS",
-    "version": "r77",
+    "version": "r78",
     "abi": 2,
     "date": "2026-10-31",
-    "notes": "r77: clyrics look is configurable via Clyrics.json (SwirLet styles)",
+    "notes": "r78: clyrics themes (retro, neon, minimal, terminal, sunset, karaoke). Use: clyrics --theme retro \"artist\" - \"song\"",
     "files": [
       {
         "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -1264,10 +1264,10 @@
         "size": 9744
       },
       {
-        "path": "os/06/067bd0f4baeebf8cfc36b7059c3f4d6e956febef",
+        "path": "os/5e/5e489fd5d23debc00d2600f80a91796b7bc4b4c8",
         "dest": "/system/apps/spm.elf",
-        "sha256": "067bd0f4baeebf8cfc36b7059c3f4d6e956febefae04a733e599b848d6c09391",
-        "size": 564016
+        "sha256": "5e489fd5d23debc00d2600f80a91796b7bc4b4c807ed0f6c127fd12295a40f5a",
+        "size": 568184
       },
       {
         "path": "os/b4/b493638a50375819b1e94cbdd3a3473bd71600f3",
@@ -1563,6 +1563,48 @@
         "keep": 1
       },
       {
+        "path": "os/94/94649d5ba006cc02dd746f33bfcb3367fcf4f809",
+        "dest": "/system/config/clyrics-themes/karaoke.json",
+        "sha256": "94649d5ba006cc02dd746f33bfcb3367fcf4f809ab2a777e69e75de94285835b",
+        "size": 604,
+        "keep": 1
+      },
+      {
+        "path": "os/87/87be89f5201941bc4b75eabfec60ceb6c84e27d6",
+        "dest": "/system/config/clyrics-themes/minimal.json",
+        "sha256": "87be89f5201941bc4b75eabfec60ceb6c84e27d6f46a663a68f202f6af588b4e",
+        "size": 499,
+        "keep": 1
+      },
+      {
+        "path": "os/20/203c3815128a8e634bdbb147ef5766d1e824389e",
+        "dest": "/system/config/clyrics-themes/neon.json",
+        "sha256": "203c3815128a8e634bdbb147ef5766d1e824389e85c7f73d2a4c6063ed056345",
+        "size": 564,
+        "keep": 1
+      },
+      {
+        "path": "os/25/251a6bb5882242ec68195daf9298d85d9942658c",
+        "dest": "/system/config/clyrics-themes/retro.json",
+        "sha256": "251a6bb5882242ec68195daf9298d85d9942658c1d093042c3616930087bbc6e",
+        "size": 568,
+        "keep": 1
+      },
+      {
+        "path": "os/3e/3e46e32ba5b8c4c2f45b2c07701838c9984d476f",
+        "dest": "/system/config/clyrics-themes/sunset.json",
+        "sha256": "3e46e32ba5b8c4c2f45b2c07701838c9984d476f1dadab1023cada0ea4b699a4",
+        "size": 559,
+        "keep": 1
+      },
+      {
+        "path": "os/b5/b58f5b04646e0991896b7a4fa762e2db5be6ce8a",
+        "dest": "/system/config/clyrics-themes/terminal.json",
+        "sha256": "b58f5b04646e0991896b7a4fa762e2db5be6ce8a4b59bcdf81914d0972db8f0b",
+        "size": 530,
+        "keep": 1
+      },
+      {
         "path": "os/64/64a069e9d501f8f5f0550cd79a102abfe5da99c6",
         "dest": "/system/doc/gamelib.txt",
         "sha256": "64a069e9d501f8f5f0550cd79a102abfe5da99c6a97d22480b318bafc456d864",
@@ -1725,10 +1767,10 @@
         "size": 179
       },
       {
-        "path": "os/e3/e350b701a085ec8e2bffcc4e21cb381d4454e416",
+        "path": "os/3e/3ea53421ee7e08fdfe68a45e128695975a3dd8a3",
         "dest": "/system/gterm/clyrics.json",
-        "sha256": "e350b701a085ec8e2bffcc4e21cb381d4454e41669e80b9c965cd85c234a5110",
-        "size": 475
+        "sha256": "3ea53421ee7e08fdfe68a45e128695975a3dd8a3370a2507ceba0317cbd049ac",
+        "size": 511
       },
       {
         "path": "os/d6/d60487be62d0cbffede3022b2854b54db3a8b9c7",

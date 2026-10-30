@@ -1,0 +1,16 @@
+{
+  "_theme": "sunset - warm orange and pink",
+  "countdown": 3,
+  "background": "2a1020",
+  "intro": "Start your song",
+  "intro_style": "-s fit -c orange -f bold -e shadow",
+  "countdown_style": "-s 220 -c pink -f bold -e shadow",
+  "go_text": "GO",
+  "go_style": "-s 200 -c yellow -f bold -e shadow",
+  "lyric_style": "-s fit -c orange -f bold -e shadow -w 88%",
+  "title_show": true,
+  "title_format": "{artist} - {title}",
+  "title_style": "-x 3% -y 4% -s 18 -c pink -f sans -a left",
+  "end_text": "goodnight",
+  "end_style": "-s fit -c pink -f bold"
+}

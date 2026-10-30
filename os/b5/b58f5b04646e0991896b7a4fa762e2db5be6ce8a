@@ -1,0 +1,16 @@
+{
+  "_theme": "terminal - green phosphor hacker screen",
+  "countdown": 3,
+  "background": "000000",
+  "intro": "initializing...",
+  "intro_style": "-s fit -c green -f mono",
+  "countdown_style": "-s 200 -c green -f mono",
+  "go_text": "run",
+  "go_style": "-s 160 -c green -f mono",
+  "lyric_style": "-s fit -c green -f mono -w 90%",
+  "title_show": true,
+  "title_format": "> {artist} :: {title}",
+  "title_style": "-x 3% -y 4% -s 16 -c green -f mono -a left",
+  "end_text": "exit 0",
+  "end_style": "-s fit -c green -f mono"
+}

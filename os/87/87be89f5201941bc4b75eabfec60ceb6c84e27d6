@@ -1,0 +1,16 @@
+{
+  "_theme": "minimal - clean white on dark, no fuss",
+  "countdown": 3,
+  "background": "111111",
+  "intro": "",
+  "intro_style": "-s fit -c white -f sans",
+  "countdown_style": "-s 200 -c gray -f sans",
+  "go_text": "",
+  "go_style": "-s 100 -c white -f sans",
+  "lyric_style": "-s fit -c white -f sans -w 85%",
+  "title_show": true,
+  "title_format": "{artist} - {title}",
+  "title_style": "-x 4% -y 5% -s 16 -c gray -f sans -a left",
+  "end_text": "",
+  "end_style": "-s fit -c gray -f sans"
+}

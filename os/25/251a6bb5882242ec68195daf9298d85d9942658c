@@ -1,0 +1,16 @@
+{
+  "_theme": "retro - pixel rainbow arcade",
+  "countdown": 3,
+  "background": "0b0b1a",
+  "intro": "PRESS PLAY",
+  "intro_style": "-s fit -c yellow -f pixel -e shadow",
+  "countdown_style": "-s 220 -c cyan -f pixel -e shadow",
+  "go_text": "GO!",
+  "go_style": "-s 200 -c green -f pixel -e shadow",
+  "lyric_style": "-s fit -c rainbow -f pixel -e shadow -w 92%",
+  "title_show": true,
+  "title_format": "{artist} - {title}",
+  "title_style": "-x 3% -y 4% -s 18 -c cyan -f mono -a left",
+  "end_text": "GAME OVER",
+  "end_style": "-s fit -c red -f pixel -e shadow"
+}

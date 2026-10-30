@@ -1,0 +1,16 @@
+{
+  "_theme": "neon - hot pink glow vibes",
+  "countdown": 3,
+  "background": "05010f",
+  "intro": "Get ready",
+  "intro_style": "-s fit -c cyan -f bold -e outline",
+  "countdown_style": "-s 220 -c cyan -f bold -e outline",
+  "go_text": "NOW",
+  "go_style": "-s 200 -c pink -f bold -e outline",
+  "lyric_style": "-s fit -c pink -f bold -e outline -w 90%",
+  "title_show": true,
+  "title_format": "{title}",
+  "title_style": "-x 50% -y 94% -s 20 -c cyan -f sans -a center -v bottom",
+  "end_text": "fade out",
+  "end_style": "-s fit -c purple -f bold -e outline"
+}
