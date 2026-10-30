@@ -757,10 +757,10 @@
   },
   "os": {
     "name": "SwirlOS",
-    "version": "r67",
+    "version": "r68",
     "abi": 2,
     "date": "2026-10-30",
-    "notes": "r67: About window shows the licence (LICENSE opens /system/LICENSE.txt) and 'Copyright (c) 2026 Leonid'. Includes everything from r66: real-disk install support, Wi-Fi/USB/boot-freeze fixes, crash log.",
+    "notes": "Windows installers (Wise) now finish properly and DX-Ball 2 runs: VerInstallFile, IMalloc/shell folders, short 8.3 names, long window class names, waveOut caps fix.",
     "files": [
       {
         "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -883,10 +883,10 @@
         "size": 525360
       },
       {
-        "path": "os/1a/1a698557a287cea192d40b223a7b0d85b1a94c9a",
+        "path": "os/b4/b493638a50375819b1e94cbdd3a3473bd71600f3",
         "dest": "/system/apps/swirlrun.elf",
-        "sha256": "1a698557a287cea192d40b223a7b0d85b1a94c9a335b3d18f531697b6204b104",
-        "size": 923888
+        "sha256": "b493638a50375819b1e94cbdd3a3473bd71600f31b6b80ec80bfe8527bc553f8",
+        "size": 927904
       },
       {
         "path": "os/04/04848d9462e28394427e378d3c92337843097dca",
@@ -913,10 +913,10 @@
         "size": 11744
       },
       {
-        "path": "os/1a/1a698557a287cea192d40b223a7b0d85b1a94c9a",
+        "path": "os/b4/b493638a50375819b1e94cbdd3a3473bd71600f3",
         "dest": "/system/apps/winrun.elf",
-        "sha256": "1a698557a287cea192d40b223a7b0d85b1a94c9a335b3d18f531697b6204b104",
-        "size": 923888
+        "sha256": "b493638a50375819b1e94cbdd3a3473bd71600f31b6b80ec80bfe8527bc553f8",
+        "size": 927904
       },
       {
         "path": "os/b4/b4d809d5dbb1563f830af72c47c0402463ad1b08",
