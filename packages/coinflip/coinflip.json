@@ -1,0 +1,13 @@
+{
+  "name": "coinflip",
+  "category": "utility",
+  "summary": "Flip a virtual coin (Heads or Tails)",
+  "usage": "coinflip",
+  "engine": "pipeline",
+  "steps": [
+    { "clear": true },
+    { "print": "Flipping the coin...", "color": "cyan" },
+    { "print": "   _______  \n  /       \\ \n |  HEADS  |\n  \\_______/ \n", "color": "yellow" },
+    { "print": "Just kidding, it's Tails.", "color": "magenta" }
+  ]
+}
