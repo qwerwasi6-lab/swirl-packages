@@ -1,0 +1,12 @@
+{
+  "name": "git",
+  "category": "dev",
+  "summary": "clone a repository (snapshot) from GitHub, GitLab or Codeberg",
+  "usage": "git clone <url> [folder] [-b branch]",
+  "args": [ { "name": "command" } ],
+  "engine": "pipeline",
+  "steps": [
+    // `git` runs inside spm (it already has HTTPS): spm.elf git <current folder> <args...>
+    { "spawn": "/system/apps/spm.elf", "arg": "git $CWD $@", "follow": "/home/user/.spm/out.log" }
+  ]
+}

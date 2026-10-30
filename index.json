@@ -1067,10 +1067,10 @@
   },
   "os": {
     "name": "SwirlOS",
-    "version": "r71",
+    "version": "r72",
     "abi": 2,
     "date": "2026-10-30",
-    "notes": "r71: .elf programs now launch with a double-click (desktop and Files) and show an icon; automatic notification/error chimes are silent for the first 60 s after boot.",
+    "notes": "r72: screenshot panel (select area, draw/marker/text, save/save as), git clone command, Image Viewer zoom (click/right-click/drag)",
     "files": [
       {
         "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -1091,10 +1091,10 @@
         "size": 351458
       },
       {
-        "path": "os/3c/3c8329a5c027bff556b02f982b600da472e7959d",
+        "path": "os/8d/8d807878e1d614342ea7f571ee528b904bafae18",
         "dest": "/system/apps/desktop.elf",
-        "sha256": "3c8329a5c027bff556b02f982b600da472e7959dca4481dadca74c06c2f7a631",
-        "size": 1018160
+        "sha256": "8d807878e1d614342ea7f571ee528b904bafae18c51c1b0a15dad36d67a69798",
+        "size": 1028560
       },
       {
         "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -1187,10 +1187,10 @@
         "size": 9744
       },
       {
-        "path": "os/ce/ce4fda74cccb66ae6f97a05945c1ae52ca1e125b",
+        "path": "os/fc/fceebb471e51a2e87d278a5501aea0b6b2ad2d80",
         "dest": "/system/apps/spm.elf",
-        "sha256": "ce4fda74cccb66ae6f97a05945c1ae52ca1e125bd2f70c5d3b0226a4896ac33c",
-        "size": 529600
+        "sha256": "fceebb471e51a2e87d278a5501aea0b6b2ad2d802c8f3a90aaa755952b4a84ab",
+        "size": 555400
       },
       {
         "path": "os/b4/b493638a50375819b1e94cbdd3a3473bd71600f3",
@@ -1271,10 +1271,10 @@
         "size": 84304
       },
       {
-        "path": "os/b5/b5e7643c0b9cfbefa4b226e18be4f473cb15d34a",
+        "path": "os/bf/bf4eda9fc1d15284f4387f7d3d1635b7359a85ef",
         "dest": "/system/apps/gui/gimgview.elf",
-        "sha256": "b5e7643c0b9cfbefa4b226e18be4f473cb15d34a8645c6395f32bd8dfb2f491b",
-        "size": 327328
+        "sha256": "bf4eda9fc1d15284f4387f7d3d1635b7359a85efb5ae519b8afd3ff9121e4590",
+        "size": 332080
       },
       {
         "path": "os/4e/4ed6d054a9eb56bb7f336112993377d74a012572",
@@ -1699,6 +1699,12 @@
         "dest": "/system/gterm/free.json",
         "sha256": "7b9789817969e1b239686488a7702c58cf797160e41d97a42eb830a1f2b46776",
         "size": 134
+      },
+      {
+        "path": "os/38/38d5e412b5d3d884c92c8ea276f7ff52d539a8b4",
+        "dest": "/system/gterm/git.json",
+        "sha256": "38d5e412b5d3d884c92c8ea276f7ff52d539a8b47f4c99d5416c90a8d7ef91f4",
+        "size": 440
       },
       {
         "path": "os/cb/cb5a6734c97013f54cf359cf1b83c9b829548605",
