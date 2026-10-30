@@ -1,13 +1,10 @@
 {
   "name": "coinflip",
-  "category": "utility",
-  "summary": "Flip a virtual coin (Heads or Tails)",
+  "category": "fun",
+  "summary": "flip a coin",
   "usage": "coinflip",
   "engine": "pipeline",
   "steps": [
-    { "clear": true },
-    { "print": "Flipping the coin...", "color": "cyan" },
-    { "print": "   _______  \n  /       \\ \n |  HEADS  |\n  \\_______/ \n", "color": "yellow" },
-    { "print": "Just kidding, it's Tails.", "color": "magenta" }
+    { "spawn": "/home/user/Apps/coinflip/coinflip.elf", "follow": "/home/user/.coinflip.out" }
   ]
 }

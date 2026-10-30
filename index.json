@@ -68,25 +68,80 @@
         }
       ]
     },
-    "coinflip": {
+    "cmatrix": {
       "version": "1.0.0",
+      "description": "Falling green code. Pure screensaver energy.",
+      "author": "Swirl",
+      "title": "Matrix",
+      "category": "Apps",
+      "tagline": "Watch the code fall.",
+      "long": "The falling-code rain, in its own window.\\nC cycles colours (or press 1-6), + and - change the speed, Space pauses, R restarts. Resize the window to fill your screen.",
+      "publisher": "Swirl",
+      "license": "MIT",
+      "color": "19B84A",
+      "glyph": "bag",
+      "launch": "/home/user/Games/cmatrix/cmatrix.elf",
+      "featured": 1,
+      "files": [
+        {
+          "path": "packages/cmatrix/cmatrix.elf",
+          "dest": "/home/user/Games/cmatrix/cmatrix.elf",
+          "sha256": "4dce407569c81201f58efe679676e690e5040b639e4ddbb39cbfda7ad3cbeb00",
+          "size": 49440
+        }
+      ]
+    },
+    "coinflip": {
+      "version": "1.1.0",
       "description": "Flip a virtual coin.",
       "author": "Leonid",
       "title": "Coin Flip",
       "category": "Tools",
       "tagline": "Heads or Tails?",
-      "long": "A simple virtual coin flipper. Great for making decisions. Press Launch to flip the coin in your terminal.",
+      "long": "A simple virtual coin flipper. Great for making decisions.\\nType: coinflip",
       "publisher": "Swirl",
       "license": "MIT",
       "color": "3B82F6",
       "glyph": "tool",
-      "launch": "/home/user/Apps/coinflip/coinflip.elf",
       "files": [
         {
           "path": "packages/coinflip/coinflip.elf",
           "dest": "/home/user/Apps/coinflip/coinflip.elf",
-          "sha256": "20d555216a75d3f2293e8ab8f8c2b6d24eaf548fdc5b647096a53b005cad7521",
-          "size": 752
+          "sha256": "0213ec5cb6b1af12e76ce59e22d63ff8af46b91a7b07a369e837cbf6b86af882",
+          "size": 10304
+        },
+        {
+          "path": "packages/coinflip/coinflip.json",
+          "dest": "/home/user/.gterm/coinflip.json",
+          "sha256": "2ba57c8d2131eaaf25d88095d68f0b7ab415e62b20ef7366dadbb9eceb0bae39",
+          "size": 234
+        }
+      ]
+    },
+    "cowsay": {
+      "version": "1.0.0",
+      "description": "A talking cow for the terminal.",
+      "author": "Swirl",
+      "title": "Cowsay",
+      "category": "Tools",
+      "tagline": "Make a cow say anything.",
+      "long": "The classic talking cow, now in the SwirlOS terminal.\\nType: cowsay hello world\\nOr pick the penguin: cowsay -f tux I use SwirlOS btw\\nNo message? The cow picks one for you.",
+      "publisher": "Swirl",
+      "license": "MIT",
+      "color": "8E6BD8",
+      "glyph": "tool",
+      "files": [
+        {
+          "path": "packages/cowsay/cowsay.elf",
+          "dest": "/home/user/Apps/cowsay/cowsay.elf",
+          "sha256": "a8af863a7186782b2736ebdc909aa5b4983cdda03d8a77292532ffaa239534a6",
+          "size": 18880
+        },
+        {
+          "path": "packages/cowsay/cowsay.json",
+          "dest": "/home/user/.gterm/cowsay.json",
+          "sha256": "35b4ec9b46c69a15ae72a908e34d8722c8279e862cafc20d85306b37edd19065",
+          "size": 275
         }
       ]
     },
@@ -1089,10 +1144,10 @@
   },
   "os": {
     "name": "SwirlOS",
-    "version": "r73",
+    "version": "r74",
     "abi": 2,
-    "date": "2026-10-30",
-    "notes": "r73: fix full-screen screenshots not opening in Image Viewer (bad PNG checksum on large images; old shots open too)",
+    "date": "2026-10-31",
+    "notes": "r74: screenshots no longer include the mouse cursor",
     "files": [
       {
         "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -1113,10 +1168,10 @@
         "size": 351458
       },
       {
-        "path": "os/c6/c6a9141b8438c3436eb66f4057c3d17e56e81ad4",
+        "path": "os/30/3056bf133b50f8983188b86b63ddbf69f2efc8ed",
         "dest": "/system/apps/desktop.elf",
-        "sha256": "c6a9141b8438c3436eb66f4057c3d17e56e81ad4b5db9300286ee7071991079f",
-        "size": 1029760
+        "sha256": "3056bf133b50f8983188b86b63ddbf69f2efc8edff68af00bf680f335d0ce966",
+        "size": 1029920
       },
       {
         "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",

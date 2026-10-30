@@ -1,0 +1,19 @@
+{
+  "name": "cowsay",
+  "version": "1.0.0",
+  "description": "A talking cow for the terminal.",
+  "author": "Swirl",
+  "title": "Cowsay",
+  "category": "Tools",
+  "tagline": "Make a cow say anything.",
+  "long": "The classic talking cow, now in the SwirlOS terminal.\\nType: cowsay hello world\\nOr pick the penguin: cowsay -f tux I use SwirlOS btw\\nNo message? The cow picks one for you.",
+  "publisher": "Swirl",
+  "license": "MIT",
+  "color": "8E6BD8",
+  "glyph": "tool",
+  "files": [
+    { "src": "cowsay.elf",  "dest": "/home/user/Apps/cowsay/cowsay.elf" },
+    { "src": "cowsay.json", "dest": "/home/user/.gterm/cowsay.json" }
+  ],
+  "featured": false
+}

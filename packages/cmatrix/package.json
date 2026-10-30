@@ -1,0 +1,19 @@
+{
+  "name": "cmatrix",
+  "version": "1.0.0",
+  "description": "Falling green code. Pure screensaver energy.",
+  "author": "Swirl",
+  "title": "Matrix",
+  "category": "Apps",
+  "tagline": "Watch the code fall.",
+  "long": "The falling-code rain, in its own window.\\nC cycles colours (or press 1-6), + and - change the speed, Space pauses, R restarts. Resize the window to fill your screen.",
+  "publisher": "Swirl",
+  "license": "MIT",
+  "color": "19B84A",
+  "glyph": "bag",
+  "launch": "/home/user/Games/cmatrix/cmatrix.elf",
+  "files": [
+    { "src": "cmatrix.elf", "dest": "/home/user/Games/cmatrix/cmatrix.elf" }
+  ],
+  "featured": true
+}

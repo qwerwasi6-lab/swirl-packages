@@ -1,0 +1,10 @@
+{
+  "name": "cowsay",
+  "category": "fun",
+  "summary": "a cow says what you tell it",
+  "usage": "cowsay [-f tux] [message...]",
+  "engine": "pipeline",
+  "steps": [
+    { "spawn": "/home/user/Apps/cowsay/cowsay.elf", "arg": "$@", "follow": "/home/user/.cowsay.out" }
+  ]
+}

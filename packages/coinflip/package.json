@@ -1,26 +1,19 @@
 {
   "name": "coinflip",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Flip a virtual coin.",
   "author": "Leonid",
   "title": "Coin Flip",
-  "category": "Utility",
+  "category": "Tools",
   "tagline": "Heads or Tails?",
-  "long": "A simple virtual coin flipper. Great for making decisions. Press Launch to flip the coin in your terminal.",
+  "long": "A simple virtual coin flipper. Great for making decisions.\\nType: coinflip",
   "publisher": "Swirl",
   "license": "MIT",
   "color": "3B82F6",
-  "glyph": "FLIP",
-  "launch": "/home/user/Apps/coinflip/coinflip.elf",
+  "glyph": "tool",
   "files": [
-    {
-      "src": "coinflip.elf",
-      "dest": "/home/user/Apps/coinflip/coinflip.elf"
-    },
-    {
-      "src": "coinflip.json",
-      "dest": "/system/gterm/coinflip.json"
-    }
+    { "src": "coinflip.elf",  "dest": "/home/user/Apps/coinflip/coinflip.elf" },
+    { "src": "coinflip.json", "dest": "/home/user/.gterm/coinflip.json" }
   ],
   "featured": false
 }

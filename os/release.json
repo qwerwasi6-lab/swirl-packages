@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r73",
+ "version": "r74",
  "abi": 2,
- "date": "2026-10-30",
- "notes": "r73: fix full-screen screenshots not opening in Image Viewer (bad PNG checksum on large images; old shots open too)",
+ "date": "2026-10-31",
+ "notes": "r74: screenshots no longer include the mouse cursor",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/c6/c6a9141b8438c3436eb66f4057c3d17e56e81ad4",
+   "path": "os/30/3056bf133b50f8983188b86b63ddbf69f2efc8ed",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "c6a9141b8438c3436eb66f4057c3d17e56e81ad4b5db9300286ee7071991079f",
-   "size": 1029760
+   "sha256": "3056bf133b50f8983188b86b63ddbf69f2efc8edff68af00bf680f335d0ce966",
+   "size": 1029920
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
