@@ -68,6 +68,28 @@
         }
       ]
     },
+    "coinflip": {
+      "version": "1.0.0",
+      "description": "Flip a virtual coin.",
+      "author": "Leonid",
+      "title": "Coin Flip",
+      "category": "Tools",
+      "tagline": "Heads or Tails?",
+      "long": "A simple virtual coin flipper. Great for making decisions. Press Launch to flip the coin in your terminal.",
+      "publisher": "Swirl",
+      "license": "MIT",
+      "color": "3B82F6",
+      "glyph": "tool",
+      "launch": "/home/user/Apps/coinflip/coinflip.elf",
+      "files": [
+        {
+          "path": "packages/coinflip/coinflip.elf",
+          "dest": "/home/user/Apps/coinflip/coinflip.elf",
+          "sha256": "20d555216a75d3f2293e8ab8f8c2b6d24eaf548fdc5b647096a53b005cad7521",
+          "size": 752
+        }
+      ]
+    },
     "doom": {
       "version": "1.1.0",
       "description": "DOOM shareware, episode 1.",
