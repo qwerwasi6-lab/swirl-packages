@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r66",
+ "version": "r67",
  "abi": 2,
  "date": "2026-10-30",
- "notes": "r66: SwirlOS can run from a real disk (tripleboot installer kit). Fixes for Wi-Fi saving, USB mouse/keyboard setup and a boot-time freeze on real hardware, a crash log saved to disk, and an About page with licence. See /system/LICENSE.txt.",
+ "notes": "r67: About window shows the licence (LICENSE opens /system/LICENSE.txt) and 'Copyright (c) 2026 Leonid'. Includes everything from r66: real-disk install support, Wi-Fi/USB/boot-freeze fixes, crash log.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -162,9 +162,9 @@
    "size": 923888
   },
   {
-   "path": "os/84/847900f53e3a639198a9075ba879c403bfeb3f17",
+   "path": "os/b4/b4d809d5dbb1563f830af72c47c0402463ad1b08",
    "dest": "/system/apps/gui/gabout.elf",
-   "sha256": "847900f53e3a639198a9075ba879c403bfeb3f1772cec158dfb330d9d3ba1d8a",
+   "sha256": "b4d809d5dbb1563f830af72c47c0402463ad1b0878b6f5f7b0de9a01e1129c47",
    "size": 538664
   },
   {
