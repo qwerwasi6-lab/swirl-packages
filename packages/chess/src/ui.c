@@ -187,7 +187,9 @@ static int hover = -1;
 static int kcur = 12;          /* keyboard cursor square (e2) */
 static int kb_active;
 static int dbg_on = 1;
-int ui_dbg[12];
+int ui_dbg[16];
+static int eng_state, eng_a, eng_b;
+static u32 t_start, hb_last;
 
 static const char *LEVEL_NAME[5] = {"", "Beginner", "Casual", "Club", "Strong"};
 
@@ -437,13 +439,25 @@ int ui_step(void) {
         return 1;
     }
     ai_shown = 0;
+    if (dbg_on && g_now) {            /* heartbeat: redraw once a second so a frozen app is obvious */
+        u32 t = g_now();
+        if (t - hb_last >= 1000) { hb_last = t; dirty = 1; }
+    }
     int d = dirty;
     dirty = 0;
     return d;
 }
 
+void ui_engine_status(int state, int a, int b) {
+    eng_state = state;
+    eng_a = a;
+    eng_b = b;
+    dirty = 1;
+}
+
 void ui_init(TimeFn now, u32 seed) {
     g_now = now;
+    t_start = hb_last = now ? now() : 0;
     ai_seed(seed);
     mode = 0;
     level = 3;
@@ -617,6 +631,23 @@ void ui_render(void) {
 
     /* panel */
     text(2, PX, 68, C_TEXT, "Swirl Chess");
+    {
+        char st[32], *o = st;
+        const char *t;
+        u32 col;
+        if (eng_state == 1) { t = "Engine loaded"; col = C_GREEN; while (*t) *o++ = *t++; }
+        else if (eng_state == 2) {
+            t = "FAILED E"; col = 0xE5484D; while (*t) *o++ = *t++;
+            o += put_int(o, eng_a);
+        } else {
+            t = "Testing "; col = C_MUTED; while (*t) *o++ = *t++;
+            o += put_int(o, eng_a);
+            *o++ = '/';
+            o += put_int(o, eng_b);
+        }
+        *o = 0;
+        text(0, PX + PW - text_w(0, st), 66, col, st);
+    }
     fill_rrect(PX, 82, PW, 54, 8, C_CARD);
     const char *l1, *l2;
     status_text(&l1, &l2);
@@ -644,7 +675,7 @@ void ui_render(void) {
         draw_button(B_LEVEL, b2, 0);
     }
     text(0, PX + 2, 352, C_MUTED, "MOVES");
-    fill_rrect(PX, 360, PW, 196, 8, C_CARD);
+    fill_rrect(PX, 360, PW, 184, 8, C_CARD);
     {
         int rows = (G.n + 1) / 2, first = rows > 8 ? rows - 8 : 0;
         for (int r = first; r < rows; r++) {
@@ -685,10 +716,10 @@ void ui_render(void) {
     }
 
     if (dbg_on) {
-        char a[64], b[64], *o;
+        char a[64], b[64], c[64], *o;
         const char *t;
-        int n = 0;
         ui_dbg[10]++;
+        if (g_now) ui_dbg[12] = (int)((g_now() - t_start) / 1000);
         o = a;
         t = "mv "; while (*t) *o++ = *t++;
         o += put_int(o, ui_dbg[0]);
@@ -713,8 +744,16 @@ void ui_render(void) {
         *o++ = 'x';
         o += put_int(o, ui_dbg[9]);
         *o = 0;
-        (void)n;
-        text(0, PX, 574, C_MUTED, a);
-        text(0, PX, 590, C_MUTED, b);
+        o = c;
+        t = "up "; while (*t) *o++ = *t++;
+        o += put_int(o, ui_dbg[12]);
+        t = "s  draw "; while (*t) *o++ = *t++;
+        o += put_int(o, ui_dbg[11]);
+        t = "ms  loop "; while (*t) *o++ = *t++;
+        o += put_int(o, ui_dbg[13]);
+        *o = 0;
+        text(0, PX, 560, C_MUTED, a);
+        text(0, PX, 574, C_MUTED, b);
+        text(0, PX, 588, C_MUTED, c);
     }
 }

@@ -4,6 +4,7 @@
  * ui_fb and shown with StretchDIBits. */
 #include <windows.h>
 #include "ui.h"
+#include "selftest.h"
 
 static HWND g_hwnd;
 static BITMAPINFO g_bmi;
@@ -38,12 +39,14 @@ static void present(HDC dc) {
 }
 
 static void redraw(void) {
+    u32 t0 = tick();
     ui_render();
     HDC dc = GetDC(g_hwnd);
     if (dc) {
         present(dc);
         ReleaseDC(g_hwnd, dc);
     }
+    ui_dbg[11] = (int)(tick() - t0);
 }
 
 static void mouse(int type, LPARAM l) {
@@ -114,9 +117,23 @@ void start(void) {
     ui_init(tick, (u32)GetTickCount() * 2654435761u + 12345u);
     redraw();
 
+    /* engine self-test: one stage per frame, so a hang shows which stage it was in */
+    {
+        int code = 0;
+        for (int s = 1; s <= SELFTEST_STAGES; s++) {
+            ui_engine_status(0, s, SELFTEST_STAGES);
+            redraw();
+            code = selftest_run(s, tick);
+            if (code) break;
+        }
+        ui_engine_status(code ? 2 : 1, code, 0);
+        redraw();
+    }
+
     MSG msg;
     int quit = 0;
     while (!quit) {
+        ui_dbg[13]++;
         while (PeekMessageA(&msg, 0, 0, 0, PM_REMOVE)) {
             if (msg.message == WM_QUIT) { quit = 1; break; }
             TranslateMessage(&msg);

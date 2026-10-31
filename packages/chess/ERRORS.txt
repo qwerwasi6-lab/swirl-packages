@@ -1,0 +1,36 @@
+Swirl Chess - engine status codes
+=================================
+
+Next to the title the game shows one of:
+
+  Testing 5/12     the startup self-test is running; the number is the current stage
+  Engine loaded    all 12 stages passed
+  FAILED E105      stage failed; E105 is the code from the table below
+
+If the status stays on "Testing N/12" and never changes, the program hung inside
+stage N (the stage number is the last digit group of the failing area).
+
+  code  stage  what it checks
+  ----  -----  -----------------------------------------------------------
+  E101    1    move generator: start position has 20 legal moves
+  E102    2    move generator: perft depth 2 from the start = 400
+  E103    3    move generator: perft depth 3 from the start = 8902
+  E104    4    FEN parser could not read a test position
+  E105    5    castling / pins / captures (perft 2 of "Kiwipete" = 2039)
+  E106    6    en passant / discovered checks (perft 3 of position 3 = 2812)
+  E201    7    move notation (e4, Nf3)
+  E202    8    game flow: scholar's mate must be detected as checkmate (Qxf7#)
+  E301    9    computer opponent returned no move or an illegal move
+  E302   10    computer opponent missed a mate in one
+  E401   11    position hashing (used for threefold repetition)
+  E501   12    a baked-in chess piece image is empty
+  E502   12    a baked-in font glyph is empty
+
+The small grey lines under the move list (toggle with D) are the input readout:
+
+  mv / dn / up / key   mouse-move, button-down, button-up and key messages received
+  raw x,y > x,y        last mouse position as delivered by the OS > mapped to the board
+  win WxH              size SwirlRun reports for the window
+  up Ns                seconds since start (keeps counting while idle)
+  draw Nms             time of the last screen update
+  loop N               passes through the main loop

@@ -69,7 +69,7 @@
       ]
     },
     "chess": {
-      "version": "1.0.1",
+      "version": "1.0.2",
       "description": "Chess with a computer opponent, drag and drop, hints and undo.",
       "author": "Leonid",
       "title": "Chess",
@@ -85,8 +85,8 @@
         {
           "path": "packages/chess/chess.exe",
           "dest": "/home/user/Games/Chess/chess.exe",
-          "sha256": "f90ccfb56309c87f4f808f96054ffb6782b829af1f0173446e0fb4e89fbf89d9",
-          "size": 136192
+          "sha256": "0ab753aca4b663786cf0902e36c98758360fc890204cd584397a34016d97778c",
+          "size": 142848
         }
       ]
     },

@@ -9,8 +9,13 @@ extern u32 ui_fb[UI_W * UI_H];          /* 0x00RRGGBB */
 
 /* input diagnostics shown in the panel (toggle with D):
  * 0 mouse-move msgs, 1 button-downs, 2 button-ups, 3 key-downs,
- * 4,5 raw x,y   6,7 mapped x,y   8,9 client w,h   10 frames drawn */
-extern int ui_dbg[12];
+ * 4,5 raw x,y   6,7 mapped x,y   8,9 client w,h   10 frames drawn
+ * 11 last draw ms   12 uptime s   13 main-loop passes */
+extern int ui_dbg[16];
+
+/* engine self-test status shown next to the title:
+ * state 0 = testing stage a of b, 1 = loaded, 2 = failed with error code a */
+void ui_engine_status(int state, int a, int b);
 
 void ui_init(TimeFn now, u32 seed);
 void ui_render(void);
