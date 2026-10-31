@@ -1,0 +1,21 @@
+{
+  "name": "chess",
+  "version": "1.0.0",
+  "description": "Chess with a computer opponent, drag and drop, hints and undo.",
+  "author": "Leonid",
+  "title": "Chess",
+  "category": "Games",
+  "tagline": "Play chess against the computer or a friend.",
+  "long": "A full chess game for SwirlOS: every rule (castling, en passant, promotion, check, checkmate, stalemate, draws by repetition, 50 moves and insufficient material), drag-and-drop or click-to-move, legal move hints, move list, captured pieces, undo, hints and a flippable board.\\nPlay as White or Black against the computer on four levels (Beginner to Strong), or two players on one screen.\\nShortcuts: N new game, U undo, F flip, H hint, L level, Esc cancel.",
+  "publisher": "Swirl Games",
+  "license": "MIT",
+  "color": "769656",
+  "glyph": "chess",
+  "launch": "/home/user/Games/Chess/chess.exe",
+  "files": [
+    {
+      "src": "chess.exe",
+      "dest": "/home/user/Games/Chess/chess.exe"
+    }
+  ]
+}
