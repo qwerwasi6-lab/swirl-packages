@@ -1,0 +1,2554 @@
+{
+  "spm": 1,
+  "packages": {
+    "2048": {
+      "version": "1.0.0",
+      "description": "Slide, merge, reach the big one.",
+      "author": "Swirl",
+      "title": "2048",
+      "category": "Games",
+      "tagline": "Slide, merge, reach the big one.",
+      "long": "Slide the tiles around the board. Two tiles with the same number merge into one, double the value. Keep going until you reach 2048 - or run out of moves.\\nArrow keys, WASD or a mouse swipe. R restarts. Your best score is saved.",
+      "publisher": "Swirl Games",
+      "license": "MIT",
+      "color": "F59E0B",
+      "glyph": "2048",
+      "launch": "/home/user/Games/2048/2048.elf",
+      "featured": 1,
+      "files": [
+        {
+          "path": "packages/2048/2048.elf",
+          "dest": "/home/user/Games/2048/2048.elf",
+          "sha256": "c8a20c41da3254c0c2e5bea5741f316734deaa2235ab106220e4d317e9b70e51",
+          "size": 61896
+        }
+      ]
+    },
+    "blocks": {
+      "version": "1.0.0",
+      "description": "Stack, clear, repeat.",
+      "author": "Swirl",
+      "title": "Blocks",
+      "category": "Games",
+      "tagline": "Stack, clear, repeat.",
+      "long": "The falling-block puzzle you know. Rotate and place the pieces to make full lines, which vanish and score points. Every ten lines the pieces fall faster.\\nArrows to move and rotate, Space for a hard drop, P to pause.",
+      "publisher": "Swirl Games",
+      "license": "MIT",
+      "color": "7C5CFF",
+      "glyph": "blocks",
+      "launch": "/home/user/Games/blocks/blocks.elf",
+      "files": [
+        {
+          "path": "packages/blocks/blocks.elf",
+          "dest": "/home/user/Games/blocks/blocks.elf",
+          "sha256": "8e2f3b0ac2cc5cfbddf556ca3f38b22acd1c1466559a0acfa0f233db94e5fb07",
+          "size": 62256
+        }
+      ]
+    },
+    "breakout": {
+      "version": "1.0.0",
+      "description": "Paddle, ball, bricks.",
+      "author": "Swirl",
+      "title": "Breakout",
+      "category": "Games",
+      "tagline": "Paddle, ball, bricks.",
+      "long": "Bounce the ball off your paddle and smash every brick. Where the ball hits the paddle changes its angle, so aim your shots. Clear the wall for a faster, trickier next level.\\nMove with the mouse or A and D. Click or Space to launch.",
+      "publisher": "Swirl Games",
+      "license": "MIT",
+      "color": "E5484D",
+      "glyph": "bricks",
+      "launch": "/home/user/Games/breakout/breakout.elf",
+      "files": [
+        {
+          "path": "packages/breakout/breakout.elf",
+          "dest": "/home/user/Games/breakout/breakout.elf",
+          "sha256": "46999dedc0a19f4604a2531bab507baa98d245edde2876913dc17e61b76b9141",
+          "size": 66328
+        }
+      ]
+    },
+    "chess": {
+      "version": "2.0.0",
+      "description": "Chess with a computer opponent, drag and drop, hints and undo. Native SwirlOS app.",
+      "author": "Leonid",
+      "title": "Chess",
+      "category": "Games",
+      "tagline": "Play chess against the computer or a friend.",
+      "long": "A full chess game for SwirlOS: every rule (castling, en passant, promotion, check, checkmate, stalemate, draws by repetition, 50 moves and insufficient material), drag-and-drop or click-to-move, legal move hints, move list, captured pieces, undo, hints and a flippable board.\\nPlay as White or Black against the computer on four levels (Beginner to Strong), or two players on one screen.\\nMouse or keyboard: arrow keys move the cursor, Enter/Space selects and moves.\\nShortcuts: N new game, U undo, F flip, H hint, L level, D input readout, Esc cancel.",
+      "publisher": "Swirl Games",
+      "license": "MIT",
+      "color": "769656",
+      "glyph": "chess",
+      "launch": "/home/user/Games/Chess/chess.elf",
+      "files": [
+        {
+          "path": "packages/chess/chess.elf",
+          "dest": "/home/user/Games/Chess/chess.elf",
+          "sha256": "0dbc3bb4b56b14085477f419192367e1e265022c2a601f831289c6aeea72cf46",
+          "size": 183576
+        }
+      ]
+    },
+    "cmatrix": {
+      "version": "1.0.0",
+      "description": "Falling green code. Pure screensaver energy.",
+      "author": "Swirl",
+      "title": "Matrix",
+      "category": "Apps",
+      "tagline": "Watch the code fall.",
+      "long": "The falling-code rain, in its own window.\\nC cycles colours (or press 1-6), + and - change the speed, Space pauses, R restarts. Resize the window to fill your screen.",
+      "publisher": "Swirl",
+      "license": "MIT",
+      "color": "19B84A",
+      "glyph": "bag",
+      "launch": "/home/user/Games/cmatrix/cmatrix.elf",
+      "featured": 1,
+      "files": [
+        {
+          "path": "packages/cmatrix/cmatrix.elf",
+          "dest": "/home/user/Games/cmatrix/cmatrix.elf",
+          "sha256": "4dce407569c81201f58efe679676e690e5040b639e4ddbb39cbfda7ad3cbeb00",
+          "size": 49440
+        }
+      ]
+    },
+    "coinflip": {
+      "version": "1.1.0",
+      "description": "Flip a virtual coin.",
+      "author": "Leonid",
+      "title": "Coin Flip",
+      "category": "Tools",
+      "tagline": "Heads or Tails?",
+      "long": "A simple virtual coin flipper. Great for making decisions.\\nType: coinflip",
+      "publisher": "Swirl",
+      "license": "MIT",
+      "color": "3B82F6",
+      "glyph": "tool",
+      "files": [
+        {
+          "path": "packages/coinflip/coinflip.elf",
+          "dest": "/home/user/Apps/coinflip/coinflip.elf",
+          "sha256": "0213ec5cb6b1af12e76ce59e22d63ff8af46b91a7b07a369e837cbf6b86af882",
+          "size": 10304
+        },
+        {
+          "path": "packages/coinflip/coinflip.json",
+          "dest": "/home/user/.gterm/coinflip.json",
+          "sha256": "2ba57c8d2131eaaf25d88095d68f0b7ab415e62b20ef7366dadbb9eceb0bae39",
+          "size": 234
+        }
+      ]
+    },
+    "cowsay": {
+      "version": "1.0.0",
+      "description": "A talking cow for the terminal.",
+      "author": "Swirl",
+      "title": "Cowsay",
+      "category": "Tools",
+      "tagline": "Make a cow say anything.",
+      "long": "The classic talking cow, now in the SwirlOS terminal.\\nType: cowsay hello world\\nOr pick the penguin: cowsay -f tux I use SwirlOS btw\\nNo message? The cow picks one for you.",
+      "publisher": "Swirl",
+      "license": "MIT",
+      "color": "8E6BD8",
+      "glyph": "tool",
+      "files": [
+        {
+          "path": "packages/cowsay/cowsay.elf",
+          "dest": "/home/user/Apps/cowsay/cowsay.elf",
+          "sha256": "a8af863a7186782b2736ebdc909aa5b4983cdda03d8a77292532ffaa239534a6",
+          "size": 18880
+        },
+        {
+          "path": "packages/cowsay/cowsay.json",
+          "dest": "/home/user/.gterm/cowsay.json",
+          "sha256": "35b4ec9b46c69a15ae72a908e34d8722c8279e862cafc20d85306b37edd19065",
+          "size": 275
+        }
+      ]
+    },
+    "doom": {
+      "version": "1.1.0",
+      "description": "DOOM shareware, episode 1.",
+      "author": "id Software",
+      "title": "DOOM",
+      "category": "Games",
+      "tagline": "Rip and tear. Episode 1, free.",
+      "long": "The game that started it all. Fight through Knee-Deep in the Dead, the shareware episode, using SwirlOS's built-in DOOM engine.\\nArrows to move, Ctrl to fire, Space to open doors, Esc for the menu.",
+      "publisher": "id Software",
+      "license": "Shareware (free to share)",
+      "color": "B3261E",
+      "glyph": "doom",
+      "launch": "/home/user/DOOM/doom1.wad",
+      "featured": 1,
+      "files": [
+        {
+          "path": "packages/doom/doom1.wad",
+          "dest": "/home/user/DOOM/doom1.wad",
+          "sha256": "1d7d43be501e67d927e415e0b8f3e29c3bf33075e859721816f652a526cac771",
+          "size": 4196020
+        },
+        {
+          "path": "packages/doom/logo.rgba",
+          "dest": "/home/user/DOOM/logo.rgba",
+          "sha256": "bddf137aa04885c0733d9037844536e92b31823e5df31ab0f0e6acaafb4c7eb0",
+          "size": 610012
+        }
+      ]
+    },
+    "doukutsu": {
+      "version": "1.0.0",
+      "description": "Cave Story (Doukutsu Monogatari) - the freeware platformer by Studio Pixel.",
+      "author": "Studio Pixel",
+      "title": "Doukutsu",
+      "category": "Games",
+      "tagline": "Cave Story, the legendary freeware platformer.",
+      "long": "Wake up in a cave with no memory, meet the Mimigas, and take on the Doctor. Pixel-perfect run-and-gun exploration by Daisuke 'Pixel' Amaya, running on SwirlOS through SwirlRun.\\nArrows to move, Z to jump, X to shoot, Q for the inventory. This package ships the English v1.2 freeware build; some later stages are not included yet.",
+      "publisher": "Studio Pixel",
+      "license": "Freeware",
+      "color": "F59E0B",
+      "glyph": "cave",
+      "launch": "/home/user/Games/CaveStory/Doukutsu.exe",
+      "featured": 1,
+      "files": [
+        {
+          "path": "packages/doukutsu/Doukutsu.exe",
+          "dest": "/home/user/Games/CaveStory/Doukutsu.exe",
+          "sha256": "fa18379fe942ecb5fd69360ede81675ad6bb8b743bef2120305c4b439c732218",
+          "size": 1478656
+        },
+        {
+          "path": "packages/doukutsu/data/Arms.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Arms.pbm",
+          "sha256": "205e275607749b946a304f3cc9aadd71870aaff43e1c7fd8b86fd2caac44e791",
+          "size": 32126
+        },
+        {
+          "path": "packages/doukutsu/data/ArmsImage.pbm",
+          "dest": "/home/user/Games/CaveStory/data/ArmsImage.pbm",
+          "sha256": "3b6860e0e0a77836937cccb3bfec1a687f3500170093f5687153f6169f4373de",
+          "size": 2174
+        },
+        {
+          "path": "packages/doukutsu/data/ArmsItem.tsc",
+          "dest": "/home/user/Games/CaveStory/data/ArmsItem.tsc",
+          "sha256": "c7f08831795c4dbcb5ca74c74897e0f6cbcdcb57d13a10e69002ea9c82ba0796",
+          "size": 9305
+        },
+        {
+          "path": "packages/doukutsu/data/Bullet.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Bullet.pbm",
+          "sha256": "f6854e74d8880a0bfb1cc26352308a685af25e8673c3cba43221764dd24f3543",
+          "size": 28286
+        },
+        {
+          "path": "packages/doukutsu/data/Caret.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Caret.pbm",
+          "sha256": "86a87b6afe943400d98d83dde0d4fb1a7c1f9d1895f4a14edac0bfc6b7719d59",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Credit.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Credit.tsc",
+          "sha256": "a59b7e75ec0a8dc6ddf7c4732696f0c99c5746074f1cbc40380f5fa09c8cf9d7",
+          "size": 7571
+        },
+        {
+          "path": "packages/doukutsu/data/Face.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Face.pbm",
+          "sha256": "39e65aa651810326f444e46188eb7d2f267099011c5e95c7d130d68dc485f016",
+          "size": 70206
+        },
+        {
+          "path": "packages/doukutsu/data/Fade.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Fade.pbm",
+          "sha256": "d452bb4ee1e792c4f68faebfdbd8a472cb580cf2ac5890af22ee9a4c17cb9782",
+          "size": 1094
+        },
+        {
+          "path": "packages/doukutsu/data/Head.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Head.tsc",
+          "sha256": "df105de490b69d0c41802e7f13e214fb83408cba51cc21d8205ac4b20856c8af",
+          "size": 1461
+        },
+        {
+          "path": "packages/doukutsu/data/ItemImage.pbm",
+          "dest": "/home/user/Games/CaveStory/data/ItemImage.pbm",
+          "sha256": "7c7783331dc2739272f829999b0e579249b1c666fa79c060025c4d59cf2448b2",
+          "size": 16510
+        },
+        {
+          "path": "packages/doukutsu/data/Loading.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Loading.pbm",
+          "sha256": "d40c3902567a35077dc49fae1e6e62d7a1a61a20463b3b2df92f5ac2d74441b5",
+          "size": 134
+        },
+        {
+          "path": "packages/doukutsu/data/MyChar.pbm",
+          "dest": "/home/user/Games/CaveStory/data/MyChar.pbm",
+          "sha256": "2d2d3197856bb0cfd04661a184285ffdd57fd81e9a23bae06cb5727582ebc37c",
+          "size": 6526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/Npc0.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/Npc0.pbm",
+          "sha256": "d8a2a6d6d99357975055f31816b675a5b9e023f39511e2d6a21f74eed8c303cd",
+          "size": 638
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcAlmo1.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcAlmo1.pbm",
+          "sha256": "8f97a244cf8d3f1c5c1cd235a58c8945b8d7bab1f3163e8bb9605639e38732c9",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcAlmo2.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcAlmo2.pbm",
+          "sha256": "9f2a9c015dfd5e3c5624ee1aa512e8aa17cd3a3a77cf8de027ba0e0f69748a44",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcBallos.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcBallos.pbm",
+          "sha256": "9e6dd15069418740ec153bf1ae4b416fad12eacc3b152d65fd236e0d38d082d8",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcBllg.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcBllg.pbm",
+          "sha256": "c78228ad02aa217df283ec27f7130ae7f939a4a2e667e5ce1c20ef7d60a079e8",
+          "size": 15486
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcCemet.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcCemet.pbm",
+          "sha256": "c89145efad7d560f88afe8f170bb20e1cd1f394d16212e108a42643906228c91",
+          "size": 18046
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcCent.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcCent.pbm",
+          "sha256": "3ba00f65e1a67674b096a5af11e5a6c53eda018f4779c6e33773894c45ab95d9",
+          "size": 30846
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcCurly.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcCurly.pbm",
+          "sha256": "3a9ea16bda9d37ce7bfb1d8060ba78740ba2b179ed81f438c6535cce55e8af77",
+          "size": 10366
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcDark.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcDark.pbm",
+          "sha256": "5a3b2f7d400e36db535a30ee7257a7c80a00b8837b0d6ec87b5366c9ac8a57cc",
+          "size": 5246
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcDr.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcDr.pbm",
+          "sha256": "bf97b39e1da6371d5a7ecdddb7c533b9ecf97c90fd67f0e7e8944693f0a6803e",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcEggs1.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcEggs1.pbm",
+          "sha256": "814f9c74407c5cdc9feec56efd6bb917bcb30c775d60c4e918499da87c287a7d",
+          "size": 18046
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcEggs2.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcEggs2.pbm",
+          "sha256": "9d20fa39802fa77d45f634b8ce3bca9f41b728817f159230e45c8131099c7a3d",
+          "size": 20606
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcFrog.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcFrog.pbm",
+          "sha256": "6041972b7811c987dc7d00a4c144af30ba85543b29fe4e385d0703405e54b977",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcGuest.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcGuest.pbm",
+          "sha256": "e8e154ffe216f2ebfacf2d3a51553d2bb90210e06b6c976f771e882ce52050c4",
+          "size": 59966
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcHell.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcHell.pbm",
+          "sha256": "2e5d17539d8972fd52ef2859e3d77e2e9408c4fc6e5c9133ae89b7ee1ae5f4be",
+          "size": 25726
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcHeri.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcHeri.pbm",
+          "sha256": "87ee664d80fe1f262b070ca7e3c6c9445c9aeb6397610d90e8ea5db38d972b59",
+          "size": 20606
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcIronH.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcIronH.pbm",
+          "sha256": "ef48f6177a34b7a356815bd247401e45a89d41ee7e1decc35609b55e18d14efd",
+          "size": 11646
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcIsland.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcIsland.pbm",
+          "sha256": "fdf13b26a9fc629b672349b5bd2863a6ee19cfdc13c4e655b9199dd2cde74533",
+          "size": 12926
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcKings.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcKings.pbm",
+          "sha256": "b9ddd142acf463f46d90cd46e4a2cbf926bbd6619bd052221005ba70ffb4e546",
+          "size": 2430
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcMaze.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcMaze.pbm",
+          "sha256": "4ff5f93ebcd2a0ecedd99d4d8f78f8d7964a9c20b4e90a700855b371a989d82b",
+          "size": 30846
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcMiza.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcMiza.pbm",
+          "sha256": "47a0ace2afac9e0ae2b86c51c11dad11b877411f1d18d103bb1ed9c253ac21a0",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcMoon.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcMoon.pbm",
+          "sha256": "ba53e5e5f115d1318896e451194a997308aa09cf97c863ebbe96298958825c6a",
+          "size": 20606
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcOmg.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcOmg.pbm",
+          "sha256": "ca50d67b3f114439af831c9ee60c6886faaf7551c47e96933f57ec98e130f0c8",
+          "size": 19326
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcPlant.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcPlant.pbm",
+          "sha256": "7c3e98612c640916507705e5f522e638da2c1edb3f435d2b711e1870beacf84b",
+          "size": 7806
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcPress.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcPress.pbm",
+          "sha256": "ceb315104797fb616f20ab392b5a79bddbbbff7e89a1a75f69922a7befa85ba0",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcPriest.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcPriest.pbm",
+          "sha256": "06c9a2d53e06b6ca29be8e3b9857ff0c86f4a3d6eadbd9403d2c61b68bc1ab4d",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcRavil.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcRavil.pbm",
+          "sha256": "72675f503c225fdc74001e3bcb785f24a3d088eb9ecc97005a9621a818b11aef",
+          "size": 27006
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcRed.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcRed.pbm",
+          "sha256": "a02e1e35f9ea369e0d9b70d2dfa04fec467422ccf3e8884eaf5394e018ac5b95",
+          "size": 23166
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcRegu.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcRegu.pbm",
+          "sha256": "a89ab0e586230644be7f1eb7b199b5959ea9e64ba8187da8a9cc7875b9acb426",
+          "size": 77886
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcSand.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcSand.pbm",
+          "sha256": "b85dfd2eb2cef6f9b44bc358f8bd15855093649f92ad0ea6f3b7f94a092351b2",
+          "size": 28286
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcStream.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcStream.pbm",
+          "sha256": "1b5c28fb48ae631dcac09a85473c7fa6e76609bca31b4c97498f60e3632f7ab9",
+          "size": 1150
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcSym.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcSym.pbm",
+          "sha256": "8d42320ad1a21f26fd2c519cea873ad722ba9237fa81baf439d652dae04de1c9",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcToro.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcToro.pbm",
+          "sha256": "3194afbce98e15e9379849bcb3794b847112aa701d6943263cc47774da191863",
+          "size": 23162
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcTwinD.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcTwinD.pbm",
+          "sha256": "156a8b12a09d1304fc122fd72275b4aa42c9310c213ec8b3596f8b54348e400b",
+          "size": 23166
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcWeed.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcWeed.pbm",
+          "sha256": "43318342da68204b70a4bb7a26c39d9544f6bc8ef5f2f26e9d4c9284991d29e2",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Npc/NpcX.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Npc/NpcX.pbm",
+          "sha256": "cfdef076e6b5f7ff60022f534968ea18f235291eb211d2229327edf76985615b",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/0.pxa",
+          "dest": "/home/user/Games/CaveStory/data/Stage/0.pxa",
+          "sha256": "2cd8fd7a99c3a67b877f6d55e15633f380696f678ffb4411fb998220468578fe",
+          "size": 256
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/0.pxe",
+          "dest": "/home/user/Games/CaveStory/data/Stage/0.pxe",
+          "sha256": "8a33ef2220db51636053a23b60d3395ef9d018ca3bd7accfab453f7f32db9abe",
+          "size": 200
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/0.pxm",
+          "dest": "/home/user/Games/CaveStory/data/Stage/0.pxm",
+          "sha256": "d356ad68f314d600ab4746ebd5a37d14e656d0ff87fbbba23b8142d5615c162b",
+          "size": 428
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/0.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Stage/0.tsc",
+          "sha256": "ebe2166688722ebf588a0e0abf4d3c61d32fe362641876504562dfdb4912acd3",
+          "size": 2768
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Cave.pxa",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Cave.pxa",
+          "sha256": "6e3a378d384bc4f74a9d771874f495e11e6bff91844512279fd3277272d7b134",
+          "size": 256
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Cave.pxe",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Cave.pxe",
+          "sha256": "5dc5a46b4f462a46eea3e090b589c406ac9c575da0b195da8094f6029405bd1f",
+          "size": 1064
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Cave.pxm",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Cave.pxm",
+          "sha256": "d9a33bbb29319aaa7d661b15cf24c9f64582af001c73d84d560fcbb1c24683ef",
+          "size": 2708
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Cave.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Cave.tsc",
+          "sha256": "8f625ba4f19dde37822db244d6e39b0febc9aa2a3d27c79ec29bd6d816c54250",
+          "size": 788
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Eggs.pxa",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Eggs.pxa",
+          "sha256": "9decb4bd25bd82ce12a5489931c8c7298addf4de170b789b65fdc2bc900f1769",
+          "size": 256
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Eggs.pxe",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Eggs.pxe",
+          "sha256": "405af4b8dfe8bedb4b306b3e4515271718d89b84e77bad0b5d1f6dc5b0986342",
+          "size": 1280
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Eggs.pxm",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Eggs.pxm",
+          "sha256": "beb024a655f5df28b0ee28b00f0067f57f5741ff69c543962622f7d1b8947f3a",
+          "size": 4808
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Eggs.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Eggs.tsc",
+          "sha256": "5880baadca17938332f5d6066fff41669f10625f49a21dad79fec95d3f8b34c9",
+          "size": 3040
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Kings.pxe",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Kings.pxe",
+          "sha256": "59ad550b93888b403892a25d9af1d1aae868867009295035e1c8964d521e531f",
+          "size": 56
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Kings.pxm",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Kings.pxm",
+          "sha256": "22d430b9ed2e4cfed1d2382b77a20160cf6bafbad09e772175cd5de8cfcf8cb7",
+          "size": 344
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Kings.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Kings.tsc",
+          "sha256": "14fe57f6634dbdbb1d7cb6cc437d4c638b3c106de405eea3f8b7f8e0a7bd4ec7",
+          "size": 359
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Mimi.pxa",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Mimi.pxa",
+          "sha256": "5da7a41f620f3c620e864c3513cc8d19f50547db78f58d223eccd99c5df091cf",
+          "size": 256
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Mimi.pxe",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Mimi.pxe",
+          "sha256": "9294fbc0590712da669712766752567e305503eefad44feb7b9075faa02494ff",
+          "size": 476
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Mimi.pxm",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Mimi.pxm",
+          "sha256": "e370a35180c0ee94a1ab6980413ac1e5cfbfc81a2bb26c77af9b0439fd11755e",
+          "size": 3608
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Mimi.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Mimi.tsc",
+          "sha256": "093fcd58d2f8d49b9958e79601d0158f2650d0f10d37f1b7e3fff84adb1eda90",
+          "size": 7106
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Plant.pxe",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Plant.pxe",
+          "sha256": "6bb92dd64a0cf78c981b7c389660ba88493723f571ca2adfdac3020ca203984a",
+          "size": 284
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Plant.pxm",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Plant.pxm",
+          "sha256": "272932f364869786c3ce1cd6b8d158667065c61ba3e08fa562ad8d914dab0dad",
+          "size": 648
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Plant.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Plant.tsc",
+          "sha256": "2d6b1600e8a32164b8843ada2d2adddc8858cb0b1b2340a38e2607a59b376101",
+          "size": 1323
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Pole.pxe",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Pole.pxe",
+          "sha256": "6812a1556f4822cf7495e676d5b11936302406ca67d21f7f9bb07d47c23fa44f",
+          "size": 104
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Pole.pxm",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Pole.pxm",
+          "sha256": "506ab3856805271902a065fadbc532754cf9574688b482213b09d728b4f0ecf1",
+          "size": 344
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Pole.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Pole.tsc",
+          "sha256": "c7423daff407e861484722004dcd7345a43d7a3ae335a43bb8309b14218983cb",
+          "size": 2540
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Start.pxe",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Start.pxe",
+          "sha256": "cac2811235a4465e2cc3a32b7804dafb2fa80f5dcdd5c241a09f8d51c233f47b",
+          "size": 92
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Start.pxm",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Start.pxm",
+          "sha256": "e4e35b0ddd339a5c60b1cce2943316de9d1df730334793ba3a388d52d59cceff",
+          "size": 344
+        },
+        {
+          "path": "packages/doukutsu/data/Stage/Start.tsc",
+          "dest": "/home/user/Games/CaveStory/data/Stage/Start.tsc",
+          "sha256": "a00ff3b9835f54d3e56f5cb9ebc75eaca25fad69712a788a1c082ea52c46628d",
+          "size": 380
+        },
+        {
+          "path": "packages/doukutsu/data/StageImage.pbm",
+          "dest": "/home/user/Games/CaveStory/data/StageImage.pbm",
+          "sha256": "354fa1248db942e21a486c4a1e6bd18b3b0881fd1fe68708ff989ac4b13dadad",
+          "size": 2174
+        },
+        {
+          "path": "packages/doukutsu/data/StageSelect.tsc",
+          "dest": "/home/user/Games/CaveStory/data/StageSelect.tsc",
+          "sha256": "4db55bda5698bde79697968861a9c1b2ba7682e1822d8a9e0fed45382a09024c",
+          "size": 275
+        },
+        {
+          "path": "packages/doukutsu/data/TextBox.pbm",
+          "dest": "/home/user/Games/CaveStory/data/TextBox.pbm",
+          "sha256": "a2b2248a520e18308a3541d44430681be20877d36c9c4cc6866701115548fecc",
+          "size": 17982
+        },
+        {
+          "path": "packages/doukutsu/data/Title.pbm",
+          "dest": "/home/user/Games/CaveStory/data/Title.pbm",
+          "sha256": "81ece6bfb001b7df037f1d8e0bbba80961f3b61d7272c86e8cef376fe85b7565",
+          "size": 7806
+        },
+        {
+          "path": "packages/doukutsu/data/bk0.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bk0.pbm",
+          "sha256": "a73dab13480d75b20cc6ff182246ba28913d176a37151ac38818d2c4436cc814",
+          "size": 582
+        },
+        {
+          "path": "packages/doukutsu/data/bkBlack.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkBlack.pbm",
+          "sha256": "bacc18a02df484d2785d94ea868eba1be5f3723eff359cb30655b19a7675e1ed",
+          "size": 582
+        },
+        {
+          "path": "packages/doukutsu/data/bkBlue.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkBlue.pbm",
+          "sha256": "c14276cddcb2c264108ff08833b4b5ded8c60eb981fc368e09559a6fa1fb5c47",
+          "size": 2174
+        },
+        {
+          "path": "packages/doukutsu/data/bkFall.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkFall.pbm",
+          "sha256": "efd190899416fbe1c21171dac8f630593ed4845a12b5619f678bee21bfc0326e",
+          "size": 582
+        },
+        {
+          "path": "packages/doukutsu/data/bkFog.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkFog.pbm",
+          "sha256": "14217abad539683a9135c38744e2aef448f29d18974f5b2e4dec6939cddd0e2e",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/bkGard.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkGard.pbm",
+          "sha256": "cb64e85806b9c806f2e749eca9ac0fbbf9ea60d7810a61242333fa23007a689e",
+          "size": 1662
+        },
+        {
+          "path": "packages/doukutsu/data/bkGray.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkGray.pbm",
+          "sha256": "dd91eed36856f57df431dcafb6b601a6c01273501f3ad08c0d4b9f927e7dbe2e",
+          "size": 2174
+        },
+        {
+          "path": "packages/doukutsu/data/bkGreen.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkGreen.pbm",
+          "sha256": "1d611be08d15d7a3410cc51ba5eea72edb915bb06995ed2d8a3acbe4caa5a9fe",
+          "size": 2174
+        },
+        {
+          "path": "packages/doukutsu/data/bkMaze.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkMaze.pbm",
+          "sha256": "d6d9a2b66d3dfca9d7c1f5e5fac98541aa88d8edd35c731738a12cab88501716",
+          "size": 2174
+        },
+        {
+          "path": "packages/doukutsu/data/bkMoon.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkMoon.pbm",
+          "sha256": "1d5e3e7959e7f87bab1af04aa6881873309cf984911e591016b2baeb2738ca27",
+          "size": 38526
+        },
+        {
+          "path": "packages/doukutsu/data/bkRed.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkRed.pbm",
+          "sha256": "884ed41bec730f5a7f2b69af92dd5afb88ce6280b581ce58e749072fa02b6e3d",
+          "size": 638
+        },
+        {
+          "path": "packages/doukutsu/data/bkWater.pbm",
+          "dest": "/home/user/Games/CaveStory/data/bkWater.pbm",
+          "sha256": "45c8b02de19804d723446e6b697b4f25b0c402251284a6025790a9b381090ba7",
+          "size": 894
+        },
+        {
+          "path": "packages/doukutsu/data/casts.pbm",
+          "dest": "/home/user/Games/CaveStory/data/casts.pbm",
+          "sha256": "c279f1ff2fe1f3cf15e55cc24fd38eba31d1fbd5f042e04bc7e516f6b07b4f33",
+          "size": 77886
+        },
+        {
+          "path": "packages/doukutsu/data/npc.tbl",
+          "dest": "/home/user/Games/CaveStory/data/npc.tbl",
+          "sha256": "75b38bb4ab57b50bfc6c3ba77fe670a2eb67301f425aefe96bb1ed87c2b9e2db",
+          "size": 8664
+        }
+      ]
+    },
+    "snake": {
+      "version": "1.0.0",
+      "description": "Eat, grow, don't crash.",
+      "author": "Swirl",
+      "title": "Snake",
+      "category": "Games",
+      "tagline": "Eat, grow, don't crash.",
+      "long": "A classic reborn for SwirlOS. Guide the snake to the berries, grow longer with every bite and steer clear of the walls and your own tail. The faster you eat, the faster it gets.\\nArrow keys or WASD to steer, Space to pause. Your best score is saved.",
+      "publisher": "Swirl Games",
+      "license": "MIT",
+      "color": "2FA866",
+      "glyph": "snake",
+      "launch": "/home/user/Games/snake/snake.elf",
+      "featured": 1,
+      "files": [
+        {
+          "path": "packages/snake/snake.elf",
+          "dest": "/home/user/Games/snake/snake.elf",
+          "sha256": "2ffe9ba6da630fb49ca75adc5bdc11f030bc9d450b68fad99fb3e0b46c20275f",
+          "size": 58048
+        }
+      ]
+    },
+    "swirl-c-ide": {
+      "version": "1.0.0",
+      "description": "A small C editor with Check and Run buttons, built on the Tiny C Compiler.",
+      "author": "Swirl",
+      "title": "Swirl C IDE",
+      "category": "Developer",
+      "tagline": "Write, build and run C without leaving the desktop.",
+      "long": "A focused code editor for C: line numbers, syntax colours, auto-indent, undo, find, and a real compiler one click away.\\nCheck compiles and lists errors (click one to jump to the line), Run compiles in memory and runs your program with its output right under the editor. Ctrl+S save, Ctrl+B check, Ctrl+R run, Ctrl+F find, Ctrl+G go to line.\\nNeeds the Tiny C Compiler package, which the Store installs for you.",
+      "publisher": "Swirl",
+      "license": "MIT",
+      "color": "2F9E6B",
+      "glyph": "tool",
+      "launch": "/system/apps/gide.elf",
+      "deps": [
+        "tcc"
+      ],
+      "files": [
+        {
+          "path": "packages/swirl-c-ide/gide.elf",
+          "dest": "/system/apps/gide.elf",
+          "sha256": "27d67ce8e5d040c113c993661f69b8e38645c6522b69d671690f7006d6eb7a1f",
+          "size": 93504
+        },
+        {
+          "path": "packages/swirl-c-ide/ide.json",
+          "dest": "/system/gterm/ide.json",
+          "sha256": "337b2bd3db334a54946d5d522f1209ade1b1583a590eb5567e86d7c12a3c55c8",
+          "size": 355
+        },
+        {
+          "path": "packages/swirl-c-ide/gide.png",
+          "dest": "/system/apps/icons/gide.png",
+          "sha256": "d79b5828b25101f74b47ed905b1e8a27d81589836114cfec9e486da6ca308a00",
+          "size": 5909
+        }
+      ]
+    },
+    "swirl-upgrade": {
+      "version": "1.0.1",
+      "description": "Bridge for older installs: adds a 'swirl-upgrade' terminal command that updates the whole system to the latest release.",
+      "author": "Swirl",
+      "title": "SwirlOS Upgrade (r61/r62)",
+      "category": "Tools",
+      "tagline": "Update an old install in place - keeps your files.",
+      "long": "Installs from before r63 cannot update themselves: they have no system manifest and an older spm. This package brings the new spm and one terminal command, swirl-upgrade. It compares every system file by content, downloads only what changed, verifies each file and swaps them in safely (a failed update rolls back). Your files in /home/user and your settings are never touched.\\nYou must boot a SwirlOS r63+ ISO first - the kernel lives on the boot medium and cannot be updated from inside the OS.",
+      "publisher": "Swirl",
+      "license": "MIT",
+      "color": "7C5CE0",
+      "glyph": "tool",
+      "files": [
+        {
+          "path": "packages/swirl-upgrade/swirl-upgrade.elf",
+          "dest": "/system/apps/swirl-upgrade.elf",
+          "sha256": "83f9a6c1182c513ebc37ed5abd725aaa7ca0494a892226b2a2ccb4ddabb513a9",
+          "size": 525360
+        },
+        {
+          "path": "packages/swirl-upgrade/swirl-upgrade.json",
+          "dest": "/system/gterm/swirl-upgrade.json",
+          "sha256": "8faec17e9e72c95ca9e26591dcae1815dbe1149942142ba08a1d7c01e2007a62",
+          "size": 838
+        }
+      ]
+    },
+    "swirlspin": {
+      "version": "1.1.0",
+      "description": "The real SwirlOS logo, extruded into 3D and spinning.",
+      "author": "Swirl",
+      "title": "Swirl Spin",
+      "category": "Apps",
+      "tagline": "Your logo, in 3D.",
+      "long": "The real SwirlOS logo as a solid 3D shape, rotating in its own window.\\nDrag with the mouse to spin it, Space pauses, + and - change the speed, C cycles colours (logo, neon, gold, mono), R resets.",
+      "publisher": "Swirl",
+      "license": "MIT",
+      "color": "7C3AED",
+      "glyph": "tool",
+      "launch": "/home/user/Games/swirlspin/swirlspin.elf",
+      "featured": 1,
+      "files": [
+        {
+          "path": "packages/swirlspin/swirlspin.elf",
+          "dest": "/home/user/Games/swirlspin/swirlspin.elf",
+          "sha256": "542cda646dbd3e63b635fd803afdea68d7cc8fb9942540f6c5d3fcf9ab3fe0d2",
+          "size": 82320
+        }
+      ]
+    },
+    "tcc": {
+      "version": "0.9.28rc-1",
+      "description": "Tiny C Compiler: compile and run C programs on SwirlOS.",
+      "author": "Fabrice Bellard & the TinyCC developers (SwirlOS port by Swirl)",
+      "title": "Tiny C Compiler",
+      "category": "Developer",
+      "tagline": "A whole C compiler in 360 KB.",
+      "long": "TinyCC 0.9.28rc ported to SwirlOS. Compile C in memory and run it straight away (tcc -run file.c), or build object files. Comes with the libc headers and <swirl.h> for talking to the kernel directly.\\nUse it from the terminal, or install the Swirl C IDE for an editor with Build & Run.",
+      "publisher": "Swirl",
+      "license": "LGPL-2.1",
+      "color": "4A90D9",
+      "glyph": "tool",
+      "files": [
+        {
+          "path": "packages/tcc/tcc.elf",
+          "dest": "/system/apps/tcc.elf",
+          "sha256": "178994e5a48969c12651f9ad439f80d14034121a31b58e9ead5679fdfb42ab12",
+          "size": 364600
+        },
+        {
+          "path": "packages/tcc/tcc.json",
+          "dest": "/system/gterm/tcc.json",
+          "sha256": "fdcb15d56cd664dbc03e7dd75f4acc47f5b4162d1081f15940a5546affa6ff8b",
+          "size": 847
+        },
+        {
+          "path": "packages/tcc/lib/runmain.o",
+          "dest": "/system/tcc/lib/runmain.o",
+          "sha256": "525bdefca1c2d87e51f819e5a894e0834f0a6478bf0caff90aef7ec85e849400",
+          "size": 3072
+        },
+        {
+          "path": "packages/tcc/lib/libtcc1.a",
+          "dest": "/system/tcc/lib/libtcc1.a",
+          "sha256": "b1167349f9df63d3be7999751c56eb60bd8fa988374077b5cf1b10b20b2bf5ca",
+          "size": 6320
+        },
+        {
+          "path": "packages/tcc/lib/libc.a",
+          "dest": "/system/tcc/lib/libc.a",
+          "sha256": "f0a17a43c74d2fe5474fa2fd29c8f14799e777d7d75a2cc4d11c20a6e7b161c5",
+          "size": 8
+        },
+        {
+          "path": "packages/tcc/lib/libm.a",
+          "dest": "/system/tcc/lib/libm.a",
+          "sha256": "f0a17a43c74d2fe5474fa2fd29c8f14799e777d7d75a2cc4d11c20a6e7b161c5",
+          "size": 8
+        },
+        {
+          "path": "packages/tcc/lib/libdl.a",
+          "dest": "/system/tcc/lib/libdl.a",
+          "sha256": "f0a17a43c74d2fe5474fa2fd29c8f14799e777d7d75a2cc4d11c20a6e7b161c5",
+          "size": 8
+        },
+        {
+          "path": "packages/tcc/include/float.h",
+          "dest": "/system/tcc/include/float.h",
+          "sha256": "484ffee95fcdbc00cdc154b9dc2fe03fed65610bf1a73b610871cc39698e6f8e",
+          "size": 1930
+        },
+        {
+          "path": "packages/tcc/include/stdalign.h",
+          "dest": "/system/tcc/include/stdalign.h",
+          "sha256": "7612d46571099ccaa7616a510f78f180cb1e91671e6e5e9223a2e297b84b789d",
+          "size": 354
+        },
+        {
+          "path": "packages/tcc/include/stdarg.h",
+          "dest": "/system/tcc/include/stdarg.h",
+          "sha256": "a38f8d34f5e09658cc3a8892b3a7e80ff566eaeedc194e5a85ece0b675993137",
+          "size": 335
+        },
+        {
+          "path": "packages/tcc/include/stdatomic.h",
+          "dest": "/system/tcc/include/stdatomic.h",
+          "sha256": "c2801843caf8c79a8dd90b0a0e46ad420a1ac5c27b0a5420a983da827950b581",
+          "size": 7871
+        },
+        {
+          "path": "packages/tcc/include/stdbool.h",
+          "dest": "/system/tcc/include/stdbool.h",
+          "sha256": "5252824225ddc486b0460677f765e4157af5d3ed7acd65b310a4045eafb56af7",
+          "size": 176
+        },
+        {
+          "path": "packages/tcc/include/stddef.h",
+          "dest": "/system/tcc/include/stddef.h",
+          "sha256": "c42eaa62f574527b8d0d64f802b20c27ebeb66feb2c3608e9b9659225ad6ed45",
+          "size": 1072
+        },
+        {
+          "path": "packages/tcc/include/stdnoreturn.h",
+          "dest": "/system/tcc/include/stdnoreturn.h",
+          "sha256": "ec64d8fbf7fb2e800df9784b2efca0a99fc25a3eb5e8da56e4df098937f787f2",
+          "size": 125
+        },
+        {
+          "path": "packages/tcc/include/tccdefs.h",
+          "dest": "/system/tcc/include/tccdefs.h",
+          "sha256": "d1016b6170c45f1b8e7f8d83bf1f00f21e288eb2e446d9f141457f6f821acf7b",
+          "size": 11685
+        },
+        {
+          "path": "packages/tcc/include/tgmath.h",
+          "dest": "/system/tcc/include/tgmath.h",
+          "sha256": "e60c66ff9017f13ab18ee38824792ca771b9235bcb4df57688fec582739524a5",
+          "size": 3954
+        },
+        {
+          "path": "packages/tcc/include/varargs.h",
+          "dest": "/system/tcc/include/varargs.h",
+          "sha256": "07858857f4eed0a61df94beb1a9d678b53fc3d67a0b0e8936155f85ddbcd1dcc",
+          "size": 355
+        },
+        {
+          "path": "packages/tcc/include/stdint.h",
+          "dest": "/system/tcc/include/stdint.h",
+          "sha256": "b30365d300460ef0c831066e9e453ea15899ef9e8bf82a34750048826f3b43bb",
+          "size": 2023
+        },
+        {
+          "path": "packages/tcc/include/time.h",
+          "dest": "/system/tcc/include/time.h",
+          "sha256": "4d203ef035a276955f5ff5bbbebd524bc0e967e4a780acd2e65b6d9e037606d4",
+          "size": 633
+        },
+        {
+          "path": "packages/tcc/include/sys/stat.h",
+          "dest": "/system/tcc/include/sys/stat.h",
+          "sha256": "230b4577b9c876486fa170f188f59b19e8abe9b53c6e0799698235d282b00543",
+          "size": 676
+        },
+        {
+          "path": "packages/tcc/include/sys/time.h",
+          "dest": "/system/tcc/include/sys/time.h",
+          "sha256": "72d0110dda4a8aec6a1c9f55b55fb0e0b97c63fbdd7efb4708993f9147a3bd51",
+          "size": 181
+        },
+        {
+          "path": "packages/tcc/include/sys/types.h",
+          "dest": "/system/tcc/include/sys/types.h",
+          "sha256": "75b0d46109dae6e2152b1f3437424a5d26e77b41509cf0707ff5faef96fc950c",
+          "size": 467
+        },
+        {
+          "path": "packages/tcc/include/assert.h",
+          "dest": "/system/tcc/include/assert.h",
+          "sha256": "6c69737113709bd057893e2bc8f0fb1c200fae5e185265773ec7865aabec6602",
+          "size": 69
+        },
+        {
+          "path": "packages/tcc/include/ctype.h",
+          "dest": "/system/tcc/include/ctype.h",
+          "sha256": "8fe0a4102bdbf3234db0b00e29389106a0ba65bc23c9efad2b8ca8a35e251e64",
+          "size": 67
+        },
+        {
+          "path": "packages/tcc/include/dirent.h",
+          "dest": "/system/tcc/include/dirent.h",
+          "sha256": "1e7c0e56576120825d8ecd44a3879fd14046c0c7db930608b8a7b3d457c0a263",
+          "size": 1029
+        },
+        {
+          "path": "packages/tcc/include/errno.h",
+          "dest": "/system/tcc/include/errno.h",
+          "sha256": "1557d039a1c264141b06f06aee8fa0c7e86815219965011aa57412ea71acf0e6",
+          "size": 67
+        },
+        {
+          "path": "packages/tcc/include/fcntl.h",
+          "dest": "/system/tcc/include/fcntl.h",
+          "sha256": "6e45a1534f081a3eefb85d6593082e04a910057496789760dfba6a16a9977063",
+          "size": 67
+        },
+        {
+          "path": "packages/tcc/include/getopt.h",
+          "dest": "/system/tcc/include/getopt.h",
+          "sha256": "92812c22ada2c08a7d34b9441857f8241c54088a867979a87236fae63115d5ad",
+          "size": 1337
+        },
+        {
+          "path": "packages/tcc/include/iconv.h",
+          "dest": "/system/tcc/include/iconv.h",
+          "sha256": "3c1bf2f4eb5221b55b2a5e250fc80204b2ae89077d2065261a828d934506cabd",
+          "size": 558
+        },
+        {
+          "path": "packages/tcc/include/inttypes.h",
+          "dest": "/system/tcc/include/inttypes.h",
+          "sha256": "63e7062593c100aa5af52c902cf491627f39bdb1a4358808681b2fb11b6281e2",
+          "size": 869
+        },
+        {
+          "path": "packages/tcc/include/limits.h",
+          "dest": "/system/tcc/include/limits.h",
+          "sha256": "5832046be30ec44dbbd7729d763b4b02ed748ee54e0417ee9c16b436574187d2",
+          "size": 69
+        },
+        {
+          "path": "packages/tcc/include/locale.h",
+          "dest": "/system/tcc/include/locale.h",
+          "sha256": "bbba6e4cd5986848c5052ee3d2121d0d2c5978538033e0eaadb8586a11e3d229",
+          "size": 69
+        },
+        {
+          "path": "packages/tcc/include/math.h",
+          "dest": "/system/tcc/include/math.h",
+          "sha256": "6e5b1d632054e8a51000be4c8ae036839482070dd8e444ed386c36df001fbe70",
+          "size": 65
+        },
+        {
+          "path": "packages/tcc/include/setjmp.h",
+          "dest": "/system/tcc/include/setjmp.h",
+          "sha256": "6b07f30ea8aa6a7d68955d9bb101881fa7edb9b4bd82c8749b1c79853044cd59",
+          "size": 506
+        },
+        {
+          "path": "packages/tcc/include/signal.h",
+          "dest": "/system/tcc/include/signal.h",
+          "sha256": "8da92a5fcd4d2815fb1cd6e7ec5343322765ad7f46d4fbe5983edb50fa494daf",
+          "size": 69
+        },
+        {
+          "path": "packages/tcc/include/stdio.h",
+          "dest": "/system/tcc/include/stdio.h",
+          "sha256": "df183bc33f5c0339230457fdf9e3865c27315a72831e95704f76b43714e74d88",
+          "size": 67
+        },
+        {
+          "path": "packages/tcc/include/stdlib.h",
+          "dest": "/system/tcc/include/stdlib.h",
+          "sha256": "841ba6a4743656cf962864fc4d05f3ffa687a18fa95e9d07b8112be98c655840",
+          "size": 69
+        },
+        {
+          "path": "packages/tcc/include/string.h",
+          "dest": "/system/tcc/include/string.h",
+          "sha256": "bddfcc066e35d041a21e585e001960b9c5d3d77778d52bad844c79da119559f1",
+          "size": 69
+        },
+        {
+          "path": "packages/tcc/include/swirl_compat.h",
+          "dest": "/system/tcc/include/swirl_compat.h",
+          "sha256": "2ed9a20d1583cd312ffdd97cdc2b1fa4e62f8aba47db751bbd58aa19939da55f",
+          "size": 8594
+        },
+        {
+          "path": "packages/tcc/include/unistd.h",
+          "dest": "/system/tcc/include/unistd.h",
+          "sha256": "8cd45db58f59cbffb6f97a0125b741a4dee9356b9639155814a3b2b694d852ef",
+          "size": 69
+        },
+        {
+          "path": "packages/tcc/include/sys/mman.h",
+          "dest": "/system/tcc/include/sys/mman.h",
+          "sha256": "5467a10aaa2ca6aa9b9da3d7b475064ba3227b08a0039ff70d0061610ed6cb6a",
+          "size": 298
+        },
+        {
+          "path": "packages/tcc/include/swirl.h",
+          "dest": "/system/tcc/include/swirl.h",
+          "sha256": "cbbc33c558555320bdd29a68d1d14557a46015c238787878b57c96315597b912",
+          "size": 28750
+        },
+        {
+          "path": "packages/tcc/hello.c",
+          "dest": "/home/user/tcc/hello.c",
+          "sha256": "6c846addff55f2530633240a81b48e979d552cfd31dde25782216c19ed9a920b",
+          "size": 465
+        }
+      ]
+    },
+    "welcome": {
+      "version": "1.0.0",
+      "description": "Adds a 'welcome' terminal command with a short intro to spm.",
+      "author": "qwerwasi6-lab",
+      "title": "Welcome to spm",
+      "category": "Tools",
+      "tagline": "A friendly intro command for the terminal.",
+      "publisher": "Swirl",
+      "license": "MIT",
+      "color": "3B82F6",
+      "glyph": "tool",
+      "files": [
+        {
+          "path": "packages/welcome/welcome.json",
+          "dest": "/system/gterm/welcome.json",
+          "sha256": "b9b649e8e76e36d26780775a4a8021943a36e9a71b50dc2473d0c4431bd6e3b9",
+          "size": 285
+        }
+      ]
+    }
+  },
+  "os": {
+    "name": "SwirlOS",
+    "version": "r80",
+    "abi": 2,
+    "date": "2026-10-31",
+    "notes": "r80: new store app Swirl Spin (3D rotating SwirlOS logo). No kernel change.",
+    "files": [
+      {
+        "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
+        "dest": "/system/LICENSE.txt",
+        "sha256": "63320282b00b8d576b718bdeb9955bdfe1a94ec93c673884f8e6c41f8c454507",
+        "size": 1326
+      },
+      {
+        "path": "os/7e/7eac1ad1bc5ac61f8d3f727a87cd61a126401d4f",
+        "dest": "/system/apps/apps.txt",
+        "sha256": "7eac1ad1bc5ac61f8d3f727a87cd61a126401d4f1c17da0863519dc7e48d58e7",
+        "size": 3511
+      },
+      {
+        "path": "os/af/af4ca98103170f29d2ddb94d8780b7a703172309",
+        "dest": "/system/apps/ddtest.exe",
+        "sha256": "af4ca98103170f29d2ddb94d8780b7a7031723098a169f0b2cec9b13d105afd7",
+        "size": 351458
+      },
+      {
+        "path": "os/30/3056bf133b50f8983188b86b63ddbf69f2efc8ed",
+        "dest": "/system/apps/desktop.elf",
+        "sha256": "3056bf133b50f8983188b86b63ddbf69f2efc8edff68af00bf680f335d0ce966",
+        "size": 1029920
+      },
+      {
+        "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
+        "dest": "/system/apps/doom.elf",
+        "sha256": "e21d90c66541ace124567386a446d1d58107a20f9bd6b9a738cfb6bed8a871cb",
+        "size": 2136272
+      },
+      {
+        "path": "os/17/1791f9e591a8539a4bcbbcc49fb7be3e89e2db8e",
+        "dest": "/system/apps/files.elf",
+        "sha256": "1791f9e591a8539a4bcbbcc49fb7be3e89e2db8ed9dabb218f60343bd80281ba",
+        "size": 18600
+      },
+      {
+        "path": "os/f9/f9299608830805973c124d54d31459d960bb92ae",
+        "dest": "/system/apps/gamedemo.elf",
+        "sha256": "f9299608830805973c124d54d31459d960bb92aef046d4c87838b5a34fcfb4d6",
+        "size": 23576
+      },
+      {
+        "path": "os/ba/ba733bc57b57fba542205aefefd3a681f159889c",
+        "dest": "/system/apps/gametest.elf",
+        "sha256": "ba733bc57b57fba542205aefefd3a681f159889c9c79586efb911969231a58b4",
+        "size": 91504
+      },
+      {
+        "path": "os/5d/5d1f745d7e05aa8841a19ba512634b4df3310d86",
+        "dest": "/system/apps/gltest.elf",
+        "sha256": "5d1f745d7e05aa8841a19ba512634b4df3310d8635d5d9be2529354b65cc42d7",
+        "size": 19496
+      },
+      {
+        "path": "os/b4/b4248cc4d9c40fc6d05067039181da1eca496fd6",
+        "dest": "/system/apps/hello.elf",
+        "sha256": "b4248cc4d9c40fc6d05067039181da1eca496fd624b040a0d14e121d1b92f4eb",
+        "size": 10264
+      },
+      {
+        "path": "os/04/0467dd7db100a504da7265aafcf3b973c66f3875",
+        "dest": "/system/apps/hello.exe",
+        "sha256": "0467dd7db100a504da7265aafcf3b973c66f387556a05636a353efb330d281a5",
+        "size": 118132
+      },
+      {
+        "path": "os/43/4308c89c7bdc73f0ff3b98361fbab5f11aeb758b",
+        "dest": "/system/apps/init.elf",
+        "sha256": "4308c89c7bdc73f0ff3b98361fbab5f11aeb758b99b57972d09a874ee5f85009",
+        "size": 13920
+      },
+      {
+        "path": "os/74/7475f7d90e3834fe47c4a3e576d4dce6437495c9",
+        "dest": "/system/apps/netsurf.elf",
+        "sha256": "7475f7d90e3834fe47c4a3e576d4dce6437495c9da747490d037ec6ee9c8327f",
+        "size": 4111800
+      },
+      {
+        "path": "os/6b/6b89c47d3be71c80b1db3a8de063aa1ce87f7141",
+        "dest": "/system/apps/nettest.elf",
+        "sha256": "6b89c47d3be71c80b1db3a8de063aa1ce87f7141494d6676189aca6d16dc623a",
+        "size": 18800
+      },
+      {
+        "path": "os/5f/5f5e5e9c9d19276c9732dc58d3a115b399cfa55b",
+        "dest": "/system/apps/sdlin.elf",
+        "sha256": "5f5e5e9c9d19276c9732dc58d3a115b399cfa55b8c31fb384cc553b352f91f96",
+        "size": 13176
+      },
+      {
+        "path": "os/a6/a6ebc4da6c1de53af64d895c55c3042f307230c1",
+        "dest": "/system/apps/sdltest.elf",
+        "sha256": "a6ebc4da6c1de53af64d895c55c3042f307230c19f6ff0e9befb620f7ecd2532",
+        "size": 13920
+      },
+      {
+        "path": "os/3f/3fbd80afa8c0c8abd40ef28f512ac5b826e501b0",
+        "dest": "/system/apps/shell.elf",
+        "sha256": "3fbd80afa8c0c8abd40ef28f512ac5b826e501b063a4c27aeb20a2d25c8c52c1",
+        "size": 21072
+      },
+      {
+        "path": "os/51/516005622731cc6d138154121b8a33547c3d1db6",
+        "dest": "/system/apps/sndsdl.elf",
+        "sha256": "516005622731cc6d138154121b8a33547c3d1db625f9509be3b84c8394b4dda4",
+        "size": 12592
+      },
+      {
+        "path": "os/66/665e737697502fffdfbb2ee454d57807404c4223",
+        "dest": "/system/apps/sndtest.elf",
+        "sha256": "665e737697502fffdfbb2ee454d57807404c42233b5c30bce26157b170b06854",
+        "size": 9744
+      },
+      {
+        "path": "os/04/04d56e8bef5ecc1df15bcb7a898375848a14a9d4",
+        "dest": "/system/apps/spm.elf",
+        "sha256": "04d56e8bef5ecc1df15bcb7a898375848a14a9d462e134fa75c625f725e97bd4",
+        "size": 572640
+      },
+      {
+        "path": "os/b4/b493638a50375819b1e94cbdd3a3473bd71600f3",
+        "dest": "/system/apps/swirlrun.elf",
+        "sha256": "b493638a50375819b1e94cbdd3a3473bd71600f31b6b80ec80bfe8527bc553f8",
+        "size": 927904
+      },
+      {
+        "path": "os/04/04848d9462e28394427e378d3c92337843097dca",
+        "dest": "/system/apps/taskman.elf",
+        "sha256": "04848d9462e28394427e378d3c92337843097dcae4aa2e4221965aaf3c802a42",
+        "size": 12040
+      },
+      {
+        "path": "os/e4/e41168821d3e35da44bc08d7d82472230a3e35e9",
+        "dest": "/system/apps/tcpdns.elf",
+        "sha256": "e41168821d3e35da44bc08d7d82472230a3e35e9164457746e0634ad86d636b8",
+        "size": 13272
+      },
+      {
+        "path": "os/af/af3458315e1fa7457b787477b0f7292702fbabfe",
+        "dest": "/system/apps/terminal.elf",
+        "sha256": "af3458315e1fa7457b787477b0f7292702fbabfe10c94b9e0f13f6f1c851298b",
+        "size": 19648
+      },
+      {
+        "path": "os/a0/a069065ecfa6fe1dbbbc16f0755850267055914f",
+        "dest": "/system/apps/w32test.exe",
+        "sha256": "a069065ecfa6fe1dbbbc16f0755850267055914ffeedff693039885557eb4adc",
+        "size": 11744
+      },
+      {
+        "path": "os/b4/b493638a50375819b1e94cbdd3a3473bd71600f3",
+        "dest": "/system/apps/winrun.elf",
+        "sha256": "b493638a50375819b1e94cbdd3a3473bd71600f31b6b80ec80bfe8527bc553f8",
+        "size": 927904
+      },
+      {
+        "path": "os/e3/e380765918840fa271c32210788783a634dd5382",
+        "dest": "/system/apps/gui/gabout.elf",
+        "sha256": "e380765918840fa271c32210788783a634dd5382bce0442deb41da5753584e09",
+        "size": 538720
+      },
+      {
+        "path": "os/cd/cdbf00c1f57fe5e5b8147c5fe18335956607626d",
+        "dest": "/system/apps/gui/gcalc.elf",
+        "sha256": "cdbf00c1f57fe5e5b8147c5fe18335956607626d042d1b155da0260dd19b9906",
+        "size": 62032
+      },
+      {
+        "path": "os/3f/3f0997b8d9608306f32c589a980d72f99e0229b2",
+        "dest": "/system/apps/gui/gdrvman.elf",
+        "sha256": "3f0997b8d9608306f32c589a980d72f99e0229b280b6053704b0176c74d3d134",
+        "size": 589120
+      },
+      {
+        "path": "os/a9/a94bc0a0937a33076a46586ce8f9e99303adc4a2",
+        "dest": "/system/apps/gui/gdrvprop.elf",
+        "sha256": "a94bc0a0937a33076a46586ce8f9e99303adc4a273a4a24a7c999f4da77197ba",
+        "size": 574792
+      },
+      {
+        "path": "os/53/5306dba34c603a96bf143bd86d08742de57fcf9c",
+        "dest": "/system/apps/gui/geditor.elf",
+        "sha256": "5306dba34c603a96bf143bd86d08742de57fcf9c36c9bcfdbc34f46abfa870bd",
+        "size": 589264
+      },
+      {
+        "path": "os/50/50ff02895cad7df41827f72919d6a6ec6eaeb395",
+        "dest": "/system/apps/gui/gfiles.elf",
+        "sha256": "50ff02895cad7df41827f72919d6a6ec6eaeb395d28ac804d45a170e34c1afc4",
+        "size": 834240
+      },
+      {
+        "path": "os/8f/8f9244294acf8754f8d81feb31605a4ec81c3463",
+        "dest": "/system/apps/gui/ggl3d.elf",
+        "sha256": "8f9244294acf8754f8d81feb31605a4ec81c3463dff67e9b045ac646411c5202",
+        "size": 84304
+      },
+      {
+        "path": "os/be/bec9612644ed2acf0baf04cebbdd87a471a42839",
+        "dest": "/system/apps/gui/gimgview.elf",
+        "sha256": "bec9612644ed2acf0baf04cebbdd87a471a428390b3822e05d3d242b41462b89",
+        "size": 332096
+      },
+      {
+        "path": "os/e8/e8df1bc892ad693cf54743859f415c6561806c5d",
+        "dest": "/system/apps/gui/gsettings.elf",
+        "sha256": "e8df1bc892ad693cf54743859f415c6561806c5d7f4100529c87afe19dcc5dcb",
+        "size": 897272
+      },
+      {
+        "path": "os/7d/7d2bb0f942cf02b85531ee1ace3f4b9efcd4bb5e",
+        "dest": "/system/apps/gui/gsetup.elf",
+        "sha256": "7d2bb0f942cf02b85531ee1ace3f4b9efcd4bb5e8b061d391aa3c2401c140daf",
+        "size": 621240
+      },
+      {
+        "path": "os/a0/a008c436ff5906d327d5f2c251cf332e38225863",
+        "dest": "/system/apps/gui/gstore.elf",
+        "sha256": "a008c436ff5906d327d5f2c251cf332e38225863f6a5afc1204854cf87d8430b",
+        "size": 105328
+      },
+      {
+        "path": "os/5a/5a17aa98a2f5281e8a768e17a8abcfb615379b9c",
+        "dest": "/system/apps/gui/gtaskman.elf",
+        "sha256": "5a17aa98a2f5281e8a768e17a8abcfb615379b9c25c823fbfb3a756be969686d",
+        "size": 575832
+      },
+      {
+        "path": "os/8a/8a8a1a9ce7cad914191f6902cc65bebbaf0aadca",
+        "dest": "/system/apps/gui/gtbtool.elf",
+        "sha256": "8a8a1a9ce7cad914191f6902cc65bebbaf0aadca174dfb3c422492765bed722d",
+        "size": 75304
+      },
+      {
+        "path": "os/c5/c57d3f04965dab4f785514004426625d021e8e53",
+        "dest": "/system/apps/gui/gterm.elf",
+        "sha256": "c57d3f04965dab4f785514004426625d021e8e53dba766a8cdde9c5495729714",
+        "size": 673800
+      },
+      {
+        "path": "os/60/6039410ba8deb4cfab40cfc6516359a6cedd4747",
+        "dest": "/system/apps/gui/gvideo.elf",
+        "sha256": "6039410ba8deb4cfab40cfc6516359a6cedd4747fd220d1ac2c1ce6103e8093f",
+        "size": 286744
+      },
+      {
+        "path": "os/1b/1b56ff1bd1f462ed9138f088a7c98e63527ccf46",
+        "dest": "/system/apps/gui/gwadinst.elf",
+        "sha256": "1b56ff1bd1f462ed9138f088a7c98e63527ccf46d0e7d553f85edd3d123a9649",
+        "size": 593688
+      },
+      {
+        "path": "os/eb/eb99223c9e2e890710df60821feca40a34462ae5",
+        "dest": "/system/apps/gui/paint.elf",
+        "sha256": "eb99223c9e2e890710df60821feca40a34462ae5d220258b941390f37ce5c362",
+        "size": 70784
+      },
+      {
+        "path": "os/c1/c136bbf956dedffac4be26f0eae4ac3fb33d54c5",
+        "dest": "/system/apps/icons/about.png",
+        "sha256": "c136bbf956dedffac4be26f0eae4ac3fb33d54c5e84a49a35fe7b504345e6908",
+        "size": 11594
+      },
+      {
+        "path": "os/55/5581f8050c67bae99951623b8cdac3ff84168323",
+        "dest": "/system/apps/icons/calc.png",
+        "sha256": "5581f8050c67bae99951623b8cdac3ff84168323b57bba7e602ee688dad6a574",
+        "size": 5526
+      },
+      {
+        "path": "os/5f/5feaa2bd2d6b7c377e57241f5bbe3716093d6b7c",
+        "dest": "/system/apps/icons/doom.png",
+        "sha256": "5feaa2bd2d6b7c377e57241f5bbe3716093d6b7c4b9f6fd6a0617c7b19517dd8",
+        "size": 6078
+      },
+      {
+        "path": "os/fd/fdbbaa19654a7242b2918cb71b7bd72e304344e4",
+        "dest": "/system/apps/icons/drvman.png",
+        "sha256": "fdbbaa19654a7242b2918cb71b7bd72e304344e467d7c2ecf5afdb51fb434ea7",
+        "size": 7066
+      },
+      {
+        "path": "os/58/5827cf34c6d11b4f4509e98877fe1a63a1eeadc0",
+        "dest": "/system/apps/icons/editor.png",
+        "sha256": "5827cf34c6d11b4f4509e98877fe1a63a1eeadc01032bc7340f34c404aa1de03",
+        "size": 4617
+      },
+      {
+        "path": "os/de/de06c5939946732c0bf4aabc64633dea49d0d07c",
+        "dest": "/system/apps/icons/file.png",
+        "sha256": "de06c5939946732c0bf4aabc64633dea49d0d07cb2b338ac7b09a26f1b21c79e",
+        "size": 1916
+      },
+      {
+        "path": "os/24/247674e5e97869fa79879fc7aee6f4f662a0f2a4",
+        "dest": "/system/apps/icons/folder.png",
+        "sha256": "247674e5e97869fa79879fc7aee6f4f662a0f2a4fef47fc40abcec39e987d767",
+        "size": 2001
+      },
+      {
+        "path": "os/72/72693c2e8d5629e84b0983c35c018d316fa0b3f9",
+        "dest": "/system/apps/icons/game.png",
+        "sha256": "72693c2e8d5629e84b0983c35c018d316fa0b3f98f778a373e17147def2c0689",
+        "size": 6457
+      },
+      {
+        "path": "os/a6/a6da519ead15f6a2c469e55b2581f93165be6f37",
+        "dest": "/system/apps/icons/gl3d.png",
+        "sha256": "a6da519ead15f6a2c469e55b2581f93165be6f37bc4c9b1b825a7d89346e1a63",
+        "size": 6568
+      },
+      {
+        "path": "os/63/63ccff53009b432586e143b0371b371f72324c75",
+        "dest": "/system/apps/icons/imgview.png",
+        "sha256": "63ccff53009b432586e143b0371b371f72324c7507f9ade4378639fc12fca503",
+        "size": 6323
+      },
+      {
+        "path": "os/24/24a9fd314af7e0437170362416aff06821712089",
+        "dest": "/system/apps/icons/netsurf.png",
+        "sha256": "24a9fd314af7e0437170362416aff06821712089bdd1d1b3392bc372e6753696",
+        "size": 9700
+      },
+      {
+        "path": "os/4c/4c5f834f04897564b9d82dc37db2a66f0dd0cb11",
+        "dest": "/system/apps/icons/nic.png",
+        "sha256": "4c5f834f04897564b9d82dc37db2a66f0dd0cb11b6b9bed3ee597041d624f722",
+        "size": 5431
+      },
+      {
+        "path": "os/57/577500cfd3066eb38cbac65e308123b55f0bbadf",
+        "dest": "/system/apps/icons/paint.png",
+        "sha256": "577500cfd3066eb38cbac65e308123b55f0bbadfcde18cbfac4764bad1a98b6c",
+        "size": 8205
+      },
+      {
+        "path": "os/65/6510d27b14dffb91cb442581121f5363f44b8e02",
+        "dest": "/system/apps/icons/quake.png",
+        "sha256": "6510d27b14dffb91cb442581121f5363f44b8e02c3e03c5cfe2dd6e64c603d73",
+        "size": 8555
+      },
+      {
+        "path": "os/fb/fb354b835442400356246310e5dc83f227f4da57",
+        "dest": "/system/apps/icons/settings.png",
+        "sha256": "fb354b835442400356246310e5dc83f227f4da57d1093b9efda59f4aa10ce39a",
+        "size": 7775
+      },
+      {
+        "path": "os/2d/2d313d73a02dd6c7088c839b4dce1b0203577f67",
+        "dest": "/system/apps/icons/taskmgr.png",
+        "sha256": "2d313d73a02dd6c7088c839b4dce1b0203577f67256a862e0e4e64020da29f47",
+        "size": 7091
+      },
+      {
+        "path": "os/bd/bdf8761b696ab5041d8897209a2c8264b7cd881f",
+        "dest": "/system/apps/icons/terminal.png",
+        "sha256": "bdf8761b696ab5041d8897209a2c8264b7cd881fc522b83c1931559cedaaa0c1",
+        "size": 4931
+      },
+      {
+        "path": "os/d8/d8ac3b2a61cf1ff78753d08829ef42f6f2987cca",
+        "dest": "/system/apps/icons/video.png",
+        "sha256": "d8ac3b2a61cf1ff78753d08829ef42f6f2987ccad2dfc31622789f88ba585fa5",
+        "size": 7643
+      },
+      {
+        "path": "os/d9/d999a1519a3379308b3f6f12cc6e5a3c5da4a7c6",
+        "dest": "/system/apps/icons/wadinst.png",
+        "sha256": "d999a1519a3379308b3f6f12cc6e5a3c5da4a7c6f3a4833dbca7c45f987b3fe7",
+        "size": 5849
+      },
+      {
+        "path": "os/96/965044a48da7eba5616734bd194c4af369d735b5",
+        "dest": "/system/apps/icons/wallpaper.png",
+        "sha256": "965044a48da7eba5616734bd194c4af369d735b5c290ebddb8d749d763327614",
+        "size": 6575
+      },
+      {
+        "path": "os/82/82a140def807217c92dc9172603066a878a66439",
+        "dest": "/system/config/Clyrics.json",
+        "sha256": "82a140def807217c92dc9172603066a878a6643910fe40a1ac76a4981d9cbfe0",
+        "size": 770,
+        "keep": 1
+      },
+      {
+        "path": "os/95/95936991a002811a00b4f4212d88ad361d28019a",
+        "dest": "/system/config/autostart.swirl",
+        "sha256": "95936991a002811a00b4f4212d88ad361d28019aa8ca4a39fbe1087d17cc29cc",
+        "size": 234,
+        "keep": 1
+      },
+      {
+        "path": "os/cb/cbf338a94f26a44b3f7a26d523182216ddca6383",
+        "dest": "/system/config/shell.conf",
+        "sha256": "cbf338a94f26a44b3f7a26d523182216ddca638352ed05b16c12cdece366c364",
+        "size": 279,
+        "keep": 1
+      },
+      {
+        "path": "os/f3/f3ed4e498d073effb6d0d643282279069c57b47d",
+        "dest": "/system/config/swirl.conf",
+        "sha256": "f3ed4e498d073effb6d0d643282279069c57b47d848214d9171425ac9806d18c",
+        "size": 3460,
+        "keep": 1
+      },
+      {
+        "path": "os/77/775ccb9b62e55d2aaccb6a67e0901da4122b3a05",
+        "dest": "/system/config/theme.json",
+        "sha256": "775ccb9b62e55d2aaccb6a67e0901da4122b3a052d000b672aaab7a6ed35972d",
+        "size": 1047,
+        "keep": 1
+      },
+      {
+        "path": "os/94/94649d5ba006cc02dd746f33bfcb3367fcf4f809",
+        "dest": "/system/config/clyrics-themes/karaoke.json",
+        "sha256": "94649d5ba006cc02dd746f33bfcb3367fcf4f809ab2a777e69e75de94285835b",
+        "size": 604,
+        "keep": 1
+      },
+      {
+        "path": "os/87/87be89f5201941bc4b75eabfec60ceb6c84e27d6",
+        "dest": "/system/config/clyrics-themes/minimal.json",
+        "sha256": "87be89f5201941bc4b75eabfec60ceb6c84e27d6f46a663a68f202f6af588b4e",
+        "size": 499,
+        "keep": 1
+      },
+      {
+        "path": "os/20/203c3815128a8e634bdbb147ef5766d1e824389e",
+        "dest": "/system/config/clyrics-themes/neon.json",
+        "sha256": "203c3815128a8e634bdbb147ef5766d1e824389e85c7f73d2a4c6063ed056345",
+        "size": 564,
+        "keep": 1
+      },
+      {
+        "path": "os/25/251a6bb5882242ec68195daf9298d85d9942658c",
+        "dest": "/system/config/clyrics-themes/retro.json",
+        "sha256": "251a6bb5882242ec68195daf9298d85d9942658c1d093042c3616930087bbc6e",
+        "size": 568,
+        "keep": 1
+      },
+      {
+        "path": "os/3e/3e46e32ba5b8c4c2f45b2c07701838c9984d476f",
+        "dest": "/system/config/clyrics-themes/sunset.json",
+        "sha256": "3e46e32ba5b8c4c2f45b2c07701838c9984d476f1dadab1023cada0ea4b699a4",
+        "size": 559,
+        "keep": 1
+      },
+      {
+        "path": "os/b5/b58f5b04646e0991896b7a4fa762e2db5be6ce8a",
+        "dest": "/system/config/clyrics-themes/terminal.json",
+        "sha256": "b58f5b04646e0991896b7a4fa762e2db5be6ce8a4b59bcdf81914d0972db8f0b",
+        "size": 530,
+        "keep": 1
+      },
+      {
+        "path": "os/64/64a069e9d501f8f5f0550cd79a102abfe5da99c6",
+        "dest": "/system/doc/gamelib.txt",
+        "sha256": "64a069e9d501f8f5f0550cd79a102abfe5da99c6a97d22480b318bafc456d864",
+        "size": 2303
+      },
+      {
+        "path": "os/22/227da74d143bf4ef74bf86bfbe86fe8b00bfa3e9",
+        "dest": "/system/doc/libsdl2.txt",
+        "sha256": "227da74d143bf4ef74bf86bfbe86fe8b00bfa3e9de8aee4d29ecd35c6caaabcc",
+        "size": 6339
+      },
+      {
+        "path": "os/d3/d341e2ce2540f23d7356d35ad62bf45b612a1f6b",
+        "dest": "/system/doc/philosophy.txt",
+        "sha256": "d341e2ce2540f23d7356d35ad62bf45b612a1f6bd122c350b8702a38e1f98766",
+        "size": 2155
+      },
+      {
+        "path": "os/13/13c06f64ec96218c3bab69f2afed8fe05fd8afc9",
+        "dest": "/system/doc/spm.txt",
+        "sha256": "13c06f64ec96218c3bab69f2afed8fe05fd8afc9d93e402f836c24d73e04bd4e",
+        "size": 4445
+      },
+      {
+        "path": "os/9f/9f8ef16e269da68f842e4d94c38695ce04e749e7",
+        "dest": "/system/doc/swirlfs-spec.txt",
+        "sha256": "9f8ef16e269da68f842e4d94c38695ce04e749e7d12636f9fa4b7a8d63055aec",
+        "size": 2153
+      },
+      {
+        "path": "os/22/22af9b894389a5d4bf970fb1917f1f97ee2da53a",
+        "dest": "/system/doc/swirlrun.txt",
+        "sha256": "22af9b894389a5d4bf970fb1917f1f97ee2da53aeab766c24bbae47b7ed841ed",
+        "size": 5781
+      },
+      {
+        "path": "os/e4/e474628fe4cf20ab38632d638cba66f9b8655601",
+        "dest": "/system/doc/swirlymp.txt",
+        "sha256": "e474628fe4cf20ab38632d638cba66f9b865560164cf5bde8fad13226ef83bac",
+        "size": 1348
+      },
+      {
+        "path": "os/2f/2f741494aa70ad0a4b4b40fe8565ff9281138830",
+        "dest": "/system/doc/syscall-abi.txt",
+        "sha256": "2f741494aa70ad0a4b4b40fe8565ff9281138830c24e9f06a1b5b3666ec4934a",
+        "size": 3183
+      },
+      {
+        "path": "os/25/257bb217ad43e3577c81e3c9c858fe37a6c95631",
+        "dest": "/system/doc/theme.txt",
+        "sha256": "257bb217ad43e3577c81e3c9c858fe37a6c956317a899194c3ab7fc9857340e9",
+        "size": 6722
+      },
+      {
+        "path": "os/f1/f1738576525e86db1d5cf63a6c1b56e0a7e2a289",
+        "dest": "/system/fonts/Inter-Medium.ttf",
+        "sha256": "f1738576525e86db1d5cf63a6c1b56e0a7e2a2898b499ac93db95f2e7a9f9cd5",
+        "size": 342892
+      },
+      {
+        "path": "os/a4/a414b48aa577ef2c62ebb135341ddeef33ee26a4",
+        "dest": "/system/fonts/Inter-Regular.ttf",
+        "sha256": "a414b48aa577ef2c62ebb135341ddeef33ee26a4f5dc9f787f93c1aab08ebb50",
+        "size": 342408
+      },
+      {
+        "path": "os/f3/f30e9d2574c3bec5144347ff965f9841c8f06857",
+        "dest": "/system/fonts/Inter-SemiBold.ttf",
+        "sha256": "f30e9d2574c3bec5144347ff965f9841c8f06857f0b7383000f8c9489a161841",
+        "size": 343632
+      },
+      {
+        "path": "os/d2/d22c4f3821d725eb01210d278d95dfcfcaadc346",
+        "dest": "/system/fonts/JetBrainsMono-Bold.ttf",
+        "sha256": "d22c4f3821d725eb01210d278d95dfcfcaadc34699a06658d47c8a5cc5830ada",
+        "size": 274096
+      },
+      {
+        "path": "os/e6/e6fd0d7e91550b3ed2b735d4312474362c4716ed",
+        "dest": "/system/fonts/JetBrainsMono-Regular.ttf",
+        "sha256": "e6fd0d7e91550b3ed2b735d4312474362c4716edc4fc0577a0f61ed782d5aed1",
+        "size": 270224
+      },
+      {
+        "path": "os/b4/b4a6c3e4faab8773f4ff761d56451646409f29ab",
+        "dest": "/system/fonts/monospace.ttf",
+        "sha256": "b4a6c3e4faab8773f4ff761d56451646409f29abedd68f05d38c2df667d3c582",
+        "size": 340712
+      },
+      {
+        "path": "os/bc/bce60f1b4421acd9ea51ba6623d7024ecbe6817a",
+        "dest": "/system/fonts/monospace_bold.ttf",
+        "sha256": "bce60f1b4421acd9ea51ba6623d7024ecbe6817a953e3654df62a5e6bdf8f769",
+        "size": 331992
+      },
+      {
+        "path": "os/7d/7da195a74c55bef988d0d48f9508bd5d849425c1",
+        "dest": "/system/fonts/sans_serif.ttf",
+        "sha256": "7da195a74c55bef988d0d48f9508bd5d849425c1770dba5d7bfc6ce9ed848954",
+        "size": 757076
+      },
+      {
+        "path": "os/e6/e6476c1b80502924294eed40894c5b18e06c1814",
+        "dest": "/system/fonts/sans_serif_bold.ttf",
+        "sha256": "e6476c1b80502924294eed40894c5b18e06c181444ca953e5334262df9c27724",
+        "size": 705684
+      },
+      {
+        "path": "os/4a/4af75fa16ee6d3ad43e1ecec41862c24954af26a",
+        "dest": "/system/fonts/sans_serif_italic.ttf",
+        "sha256": "4af75fa16ee6d3ad43e1ecec41862c24954af26a55c6bb1ebb27bd486a50f5f4",
+        "size": 635416
+      },
+      {
+        "path": "os/eb/eb436dca0c2594b73d8b603b892e374fdfd8d885",
+        "dest": "/system/fonts/sans_serif_italic_bold.ttf",
+        "sha256": "eb436dca0c2594b73d8b603b892e374fdfd8d885d25ffb4f18df4c4c0b49e50f",
+        "size": 643292
+      },
+      {
+        "path": "os/42/42d1edeb7952f31b1f96d767ed7030b08a39e0c3",
+        "dest": "/system/fonts/serif.ttf",
+        "sha256": "42d1edeb7952f31b1f96d767ed7030b08a39e0c372b0071641518864e2bffb51",
+        "size": 380132
+      },
+      {
+        "path": "os/c4/c47b5527bcdc8dcf9ea8c77054454c5a884beaca",
+        "dest": "/system/fonts/serif_bold.ttf",
+        "sha256": "c47b5527bcdc8dcf9ea8c77054454c5a884beaca2f44851a2a823ee639cbf07f",
+        "size": 356088
+      },
+      {
+        "path": "os/2e/2e39b1d50f90b933b00c7bb54a96afd3f86419b3",
+        "dest": "/system/fonts/serif_italic.ttf",
+        "sha256": "2e39b1d50f90b933b00c7bb54a96afd3f86419b3d717c7cf202e36f2d4973e47",
+        "size": 345996
+      },
+      {
+        "path": "os/cd/cd03cb9379563a9449969dcd79363a096de77d31",
+        "dest": "/system/gterm/bench.json",
+        "sha256": "cd03cb9379563a9449969dcd79363a096de77d313e845aaf06b1c20a2b2a9d22",
+        "size": 138
+      },
+      {
+        "path": "os/e6/e6a413853742b6ea6607f63a81a2ebe112bf778c",
+        "dest": "/system/gterm/cat.json",
+        "sha256": "e6a413853742b6ea6607f63a81a2ebe112bf778c8c44d78002fe57358278a54c",
+        "size": 844
+      },
+      {
+        "path": "os/7f/7f48240c3715067a29e778791c0a854e412365a4",
+        "dest": "/system/gterm/cd.json",
+        "sha256": "7f48240c3715067a29e778791c0a854e412365a4506d33b59168245c1deb1abd",
+        "size": 334
+      },
+      {
+        "path": "os/24/24c2700694f4b2f52b2760983a6191a28b1e18c0",
+        "dest": "/system/gterm/clear.json",
+        "sha256": "24c2700694f4b2f52b2760983a6191a28b1e18c039611878fd86dd00015747d8",
+        "size": 179
+      },
+      {
+        "path": "os/3e/3ea53421ee7e08fdfe68a45e128695975a3dd8a3",
+        "dest": "/system/gterm/clyrics.json",
+        "sha256": "3ea53421ee7e08fdfe68a45e128695975a3dd8a3370a2507ceba0317cbd049ac",
+        "size": 511
+      },
+      {
+        "path": "os/d6/d60487be62d0cbffede3022b2854b54db3a8b9c7",
+        "dest": "/system/gterm/commands.json",
+        "sha256": "d60487be62d0cbffede3022b2854b54db3a8b9c7a0a993f86f3e0b6fac8bacca",
+        "size": 10025
+      },
+      {
+        "path": "os/59/59c9876c2cdb773482d61a12ba75d6500fa6efe3",
+        "dest": "/system/gterm/cp.json",
+        "sha256": "59c9876c2cdb773482d61a12ba75d6500fa6efe3b6a79e267e1d32b17d0597e1",
+        "size": 134
+      },
+      {
+        "path": "os/4f/4fbebd2a2cfb94dd53b16c3611a44b2c402bc289",
+        "dest": "/system/gterm/cube.json",
+        "sha256": "4fbebd2a2cfb94dd53b16c3611a44b2c402bc289c798719f946ebf6f2cb457f0",
+        "size": 224
+      },
+      {
+        "path": "os/ec/ece935b807ea59324090a4db294403af8e6a9fa0",
+        "dest": "/system/gterm/date.json",
+        "sha256": "ece935b807ea59324090a4db294403af8e6a9fa0f877d34a78f06a46d880c9d7",
+        "size": 119
+      },
+      {
+        "path": "os/34/34abf818356bf05f9624f83e02c95f0e0ea509dd",
+        "dest": "/system/gterm/doom.json",
+        "sha256": "34abf818356bf05f9624f83e02c95f0e0ea509dd356937b46deaad941df51486",
+        "size": 137
+      },
+      {
+        "path": "os/c2/c2ef4ce1c62f6c7382680b1ac399d7cff8114e00",
+        "dest": "/system/gterm/drvman.json",
+        "sha256": "c2ef4ce1c62f6c7382680b1ac399d7cff8114e00631251e88785cd7881ce33b4",
+        "size": 197
+      },
+      {
+        "path": "os/88/881171ffc2141e5ac1c093c50eb1f4d47bbd1e05",
+        "dest": "/system/gterm/echo.json",
+        "sha256": "881171ffc2141e5ac1c093c50eb1f4d47bbd1e05c95d626de7c13315d4604a92",
+        "size": 256
+      },
+      {
+        "path": "os/a6/a69f3cdd137b6251e8200cfd895a77c9aae9b896",
+        "dest": "/system/gterm/exit.json",
+        "sha256": "a69f3cdd137b6251e8200cfd895a77c9aae9b89628ea98b89ca7168414f7de29",
+        "size": 167
+      },
+      {
+        "path": "os/ed/eda7f889aa0955872ec796ecb2263cac6f183ab1",
+        "dest": "/system/gterm/fastfetch.json",
+        "sha256": "eda7f889aa0955872ec796ecb2263cac6f183ab18d4ff4d8450c0ab191262fdc",
+        "size": 207
+      },
+      {
+        "path": "os/7b/7b9789817969e1b239686488a7702c58cf797160",
+        "dest": "/system/gterm/free.json",
+        "sha256": "7b9789817969e1b239686488a7702c58cf797160e41d97a42eb830a1f2b46776",
+        "size": 134
+      },
+      {
+        "path": "os/38/38d5e412b5d3d884c92c8ea276f7ff52d539a8b4",
+        "dest": "/system/gterm/git.json",
+        "sha256": "38d5e412b5d3d884c92c8ea276f7ff52d539a8b47f4c99d5416c90a8d7ef91f4",
+        "size": 440
+      },
+      {
+        "path": "os/cb/cb5a6734c97013f54cf359cf1b83c9b829548605",
+        "dest": "/system/gterm/guide.md",
+        "sha256": "cb5a6734c97013f54cf359cf1b83c9b829548605f55938600aed3abb04787eb1",
+        "size": 14589
+      },
+      {
+        "path": "os/00/00e9b2e8b2253bf40810995ed88569744241b970",
+        "dest": "/system/gterm/head.json",
+        "sha256": "00e9b2e8b2253bf40810995ed88569744241b970845e446323013756455e7819",
+        "size": 140
+      },
+      {
+        "path": "os/de/de8dcfdfb273cc224305ea6f16a3c7f263bd9b9a",
+        "dest": "/system/gterm/help.json",
+        "sha256": "de8dcfdfb273cc224305ea6f16a3c7f263bd9b9a353a7d4b0a01d7a6e98a7172",
+        "size": 123
+      },
+      {
+        "path": "os/cf/cfca2315ac8e176dd1a8cc2c33f1b223d2b7802e",
+        "dest": "/system/gterm/history.json",
+        "sha256": "cfca2315ac8e176dd1a8cc2c33f1b223d2b7802e2fd1cbe1c59be16406c94955",
+        "size": 136
+      },
+      {
+        "path": "os/ab/abeeb8ffcae94eede655c2b959639ce1b344d63c",
+        "dest": "/system/gterm/hostname.json",
+        "sha256": "abeeb8ffcae94eede655c2b959639ce1b344d63c47dc931878d1458b18bdb0d7",
+        "size": 300
+      },
+      {
+        "path": "os/61/6174679351b96ecfc6667737db045dcf491c5967",
+        "dest": "/system/gterm/kill.json",
+        "sha256": "6174679351b96ecfc6667737db045dcf491c5967cf579c7e31a7e012f4fc32ff",
+        "size": 878
+      },
+      {
+        "path": "os/45/4539edd0fe77acd20b7b6779c66180112430b956",
+        "dest": "/system/gterm/ls.json",
+        "sha256": "4539edd0fe77acd20b7b6779c66180112430b9563daf1d4627192ce167a0bba3",
+        "size": 127
+      },
+      {
+        "path": "os/01/0184dd87e4e46b3768fd705a55cc8d0019470bdf",
+        "dest": "/system/gterm/mkdir.json",
+        "sha256": "0184dd87e4e46b3768fd705a55cc8d0019470bdfb88851c838a47f05b1c9fc6d",
+        "size": 437
+      },
+      {
+        "path": "os/5d/5d015698b950df6cf6a522618411718c3ebe779a",
+        "dest": "/system/gterm/mv.json",
+        "sha256": "5d015698b950df6cf6a522618411718c3ebe779a23b9a2dacbb5c2a2322c9e48",
+        "size": 131
+      },
+      {
+        "path": "os/bc/bce8fe7c092cb1c4d825b03a2872699144ed2afb",
+        "dest": "/system/gterm/nano.json",
+        "sha256": "bce8fe7c092cb1c4d825b03a2872699144ed2afb4372cbb592ebceb67ed50abd",
+        "size": 190
+      },
+      {
+        "path": "os/b3/b3762f288e1b53e2dc3f0cd6b0c34707eef8139c",
+        "dest": "/system/gterm/netroute.json",
+        "sha256": "b3762f288e1b53e2dc3f0cd6b0c34707eef8139c50c99496d09fabe3d242456d",
+        "size": 441
+      },
+      {
+        "path": "os/be/be6191ece3aa52ee342410ac3529173b88faad9d",
+        "dest": "/system/gterm/peek.json",
+        "sha256": "be6191ece3aa52ee342410ac3529173b88faad9d7f08e2499d7959c7adcb72d2",
+        "size": 136
+      },
+      {
+        "path": "os/13/13856dd91b6dacadacd4c6f06158282eb8994076",
+        "dest": "/system/gterm/ping.json",
+        "sha256": "13856dd91b6dacadacd4c6f06158282eb8994076075286e0dcf397f1d7508b47",
+        "size": 137
+      },
+      {
+        "path": "os/07/0762d395828510a0cc27f990d6bba0a9d490c825",
+        "dest": "/system/gterm/pkill.json",
+        "sha256": "0762d395828510a0cc27f990d6bba0a9d490c82559916837d51f7c088686a244",
+        "size": 130
+      },
+      {
+        "path": "os/f5/f5993a839ea3406b9c5dde3a10b035855729d773",
+        "dest": "/system/gterm/poweroff.json",
+        "sha256": "f5993a839ea3406b9c5dde3a10b035855729d77321585fb1cd15d67c32533f4b",
+        "size": 378
+      },
+      {
+        "path": "os/aa/aa9eef0140c9bbeb6f645e120e77c4fe3360e66e",
+        "dest": "/system/gterm/ps.json",
+        "sha256": "aa9eef0140c9bbeb6f645e120e77c4fe3360e66ebe1c51424fe5f78506b0547c",
+        "size": 113
+      },
+      {
+        "path": "os/e7/e74ad3a6f95f599634652a8c42986d34ec7ae479",
+        "dest": "/system/gterm/pwd.json",
+        "sha256": "e74ad3a6f95f599634652a8c42986d34ec7ae479fb16b04bfd7bfb24e735ea18",
+        "size": 178
+      },
+      {
+        "path": "os/ac/acbc04b671e4100c072fde6aa863cdf140e74f90",
+        "dest": "/system/gterm/reboot.json",
+        "sha256": "acbc04b671e4100c072fde6aa863cdf140e74f905a23f00066a7cd8b7730e72c",
+        "size": 198
+      },
+      {
+        "path": "os/c5/c58462bb03be27f313a1de18c7f37602f1e43f80",
+        "dest": "/system/gterm/reload.json",
+        "sha256": "c58462bb03be27f313a1de18c7f37602f1e43f80e956487254e7a2db0637a518",
+        "size": 146
+      },
+      {
+        "path": "os/a1/a101ed39959834f8f434209fd9d1e7b36b9683ef",
+        "dest": "/system/gterm/rings.json",
+        "sha256": "a101ed39959834f8f434209fd9d1e7b36b9683efef2dd39e60c92fabbeeb0969",
+        "size": 327
+      },
+      {
+        "path": "os/25/2565bdffd309b7a0985bf15fe3f5499be774b38a",
+        "dest": "/system/gterm/rm.json",
+        "sha256": "2565bdffd309b7a0985bf15fe3f5499be774b38a77635c7c0f59cd9f7b25dc41",
+        "size": 576
+      },
+      {
+        "path": "os/ef/ef96b7869b410def8394b76b4f4206049257e2bf",
+        "dest": "/system/gterm/settings.json",
+        "sha256": "ef96b7869b410def8394b76b4f4206049257e2bfe8786e82375b670d8801993c",
+        "size": 201
+      },
+      {
+        "path": "os/02/02fd5632ed76638cb98639f8d8b4fb35ad505923",
+        "dest": "/system/gterm/sleep.json",
+        "sha256": "02fd5632ed76638cb98639f8d8b4fb35ad5059238794a4eca4375940f5cefa33",
+        "size": 275
+      },
+      {
+        "path": "os/02/02bdacab2dfc4f0f05ac0f700a231b2e8da9c050",
+        "dest": "/system/gterm/spm.json",
+        "sha256": "02bdacab2dfc4f0f05ac0f700a231b2e8da9c0507448a2c1c51f5a1e5357a870",
+        "size": 510
+      },
+      {
+        "path": "os/b3/b3ac9156d254fffcc0dc173969b334f6b7adcc9c",
+        "dest": "/system/gterm/store.json",
+        "sha256": "b3ac9156d254fffcc0dc173969b334f6b7adcc9ce8eb7c63288e9958da206ff8",
+        "size": 188
+      },
+      {
+        "path": "os/73/73eb7410412db00a9116822ef3b50bec87be6377",
+        "dest": "/system/gterm/swirlet.json",
+        "sha256": "73eb7410412db00a9116822ef3b50bec87be63775279691b052ff8933641f83f",
+        "size": 271
+      },
+      {
+        "path": "os/2b/2bf7ac006699cba5271387a630eda20091330fe4",
+        "dest": "/system/gterm/sysinfo.json",
+        "sha256": "2bf7ac006699cba5271387a630eda20091330fe4d78edc564b74809a1e5750c2",
+        "size": 133
+      },
+      {
+        "path": "os/00/0054e42fa4a6714e2ccf3c01d79b301d8124f66c",
+        "dest": "/system/gterm/taskmgr.json",
+        "sha256": "0054e42fa4a6714e2ccf3c01d79b301d8124f66c0bb5afc90850fe8c0f9852c9",
+        "size": 228
+      },
+      {
+        "path": "os/78/787c1d8efd53c7e357b3ec09a0f0fd9483fa9a31",
+        "dest": "/system/gterm/touch.json",
+        "sha256": "787c1d8efd53c7e357b3ec09a0f0fd9483fa9a31ee89981abb9301bb9daf1b27",
+        "size": 557
+      },
+      {
+        "path": "os/2b/2bd370f53df2d362237c160f5b09619a13a29dfa",
+        "dest": "/system/gterm/tree.json",
+        "sha256": "2bd370f53df2d362237c160f5b09619a13a29dfa89c5eae36ae8b51fa79e6d2f",
+        "size": 124
+      },
+      {
+        "path": "os/c0/c088e117f99f4e3e665e0c1799e5c1f1e080702d",
+        "dest": "/system/gterm/uname.json",
+        "sha256": "c088e117f99f4e3e665e0c1799e5c1f1e080702d7a51e0cf53a0cec8b1d1d8ce",
+        "size": 342
+      },
+      {
+        "path": "os/0e/0e20f74c17bd7e9d13cee3ba84e173cbe341cfc4",
+        "dest": "/system/gterm/uptime.json",
+        "sha256": "0e20f74c17bd7e9d13cee3ba84e173cbe341cfc45a1a7f1e3c6b8e759d0ba59a",
+        "size": 489
+      },
+      {
+        "path": "os/18/1826d925fc4e953ff9c764ce5a957b934204b747",
+        "dest": "/system/gterm/usb.json",
+        "sha256": "1826d925fc4e953ff9c764ce5a957b934204b7472092f6d57d5bf65e9c28ad26",
+        "size": 696
+      },
+      {
+        "path": "os/3c/3c81f1a4eedfee43bcce4f23def4816a73ff4a5d",
+        "dest": "/system/gterm/wadinst.json",
+        "sha256": "3c81f1a4eedfee43bcce4f23def4816a73ff4a5db21cf8f8e10f590de9508506",
+        "size": 150
+      },
+      {
+        "path": "os/d6/d6252221b8697c1e42faee96db6bb03cd5d2fde9",
+        "dest": "/system/gterm/wc.json",
+        "sha256": "d6252221b8697c1e42faee96db6bb03cd5d2fde92b1632d38c5cf159f6e08ba8",
+        "size": 127
+      },
+      {
+        "path": "os/33/33fdae479a04e7ccb3f065ea7edd03071500ea8b",
+        "dest": "/system/gterm/whoami.json",
+        "sha256": "33fdae479a04e7ccb3f065ea7edd03071500ea8bb3ca8c7fc1a8d9ee5dd7542d",
+        "size": 179
+      },
+      {
+        "path": "os/54/54f512980c82fae4d66df2359519c380786f253e",
+        "dest": "/system/gterm/wifi.json",
+        "sha256": "54f512980c82fae4d66df2359519c380786f253e820e19c271f064626952ef23",
+        "size": 148
+      },
+      {
+        "path": "os/0b/0be9f12f5a81ba6ae3f91f0eb2342ed0142c6c38",
+        "dest": "/system/gterm/wifidebug.json",
+        "sha256": "0be9f12f5a81ba6ae3f91f0eb2342ed0142c6c3871c512f9ccb4da7000795856",
+        "size": 143
+      },
+      {
+        "path": "os/54/540d50b628b6c88eee0665986b0bad8193b41f7a",
+        "dest": "/system/gterm/custom/samples.json",
+        "sha256": "540d50b628b6c88eee0665986b0bad8193b41f7ab8fa7446468a690a9606facb",
+        "size": 3196
+      },
+      {
+        "path": "os/0b/0b39388c08183a5dbf109cf0989aa19d6a15d062",
+        "dest": "/system/lib/README.txt",
+        "sha256": "0b39388c08183a5dbf109cf0989aa19d6a15d062979b3c3a5063650efaafb704",
+        "size": 599
+      },
+      {
+        "path": "os/ee/ee0d3c15a25d6b402cb3ab3db156153d2bd85b38",
+        "dest": "/system/lib/libsdl2.swo",
+        "sha256": "ee0d3c15a25d6b402cb3ab3db156153d2bd85b3840452b457faacf720ecbef5c",
+        "size": 165016
+      },
+      {
+        "path": "os/cd/cde5ec50dfb3a5d67995c981f1a69a655f872869",
+        "dest": "/system/lib/libswirl.a",
+        "sha256": "cde5ec50dfb3a5d67995c981f1a69a655f872869bbef5bb05ab197bef7a1ad6d",
+        "size": 16964
+      },
+      {
+        "path": "os/de/de413409e6afc209bf900c2363df416e2f3346bf",
+        "dest": "/system/netsurf/res/Messages",
+        "sha256": "de413409e6afc209bf900c2363df416e2f3346bfbadae100691572b84bf80df2",
+        "size": 15915
+      },
+      {
+        "path": "os/bc/bc03e7fc08e3e8d6a719bd3e9752d23d78d54caa",
+        "dest": "/system/netsurf/res/adblock.css",
+        "sha256": "bc03e7fc08e3e8d6a719bd3e9752d23d78d54caaad4211d5cbea9c0935e41197",
+        "size": 7540
+      },
+      {
+        "path": "os/35/35b2399a737f03b3f200d64eb776824e76792b9d",
+        "dest": "/system/netsurf/res/credits.html",
+        "sha256": "35b2399a737f03b3f200d64eb776824e76792b9d44be213f8bc573ebd252105b",
+        "size": 2031
+      },
+      {
+        "path": "os/b8/b8a7fa81f485b23d1e423631733b0b1f7decb746",
+        "dest": "/system/netsurf/res/default.css",
+        "sha256": "b8a7fa81f485b23d1e423631733b0b1f7decb74631f9aa41c64c9711bb2dfa45",
+        "size": 5179
+      },
+      {
+        "path": "os/13/1382a345124b5db93a8f9c3f885b90ccbacda495",
+        "dest": "/system/netsurf/res/favicon.png",
+        "sha256": "1382a345124b5db93a8f9c3f885b90ccbacda4956de2b08d9bbe33d9ee3fbd23",
+        "size": 685
+      },
+      {
+        "path": "os/82/824bf820a3e2f2398af01151884525d8b6e4416f",
+        "dest": "/system/netsurf/res/internal.css",
+        "sha256": "824bf820a3e2f2398af01151884525d8b6e4416f6bbffc5afe09bcbce92de663",
+        "size": 6210
+      },
+      {
+        "path": "os/4f/4faa3b37b554aa5866a67846205b482d27d13896",
+        "dest": "/system/netsurf/res/licence.html",
+        "sha256": "4faa3b37b554aa5866a67846205b482d27d138968132cbcbf78de4fc99fa6971",
+        "size": 92019
+      },
+      {
+        "path": "os/16/168ddaf5a2f329a1b263023c1eea8a987dc70e6c",
+        "dest": "/system/netsurf/res/netsurf.png",
+        "sha256": "168ddaf5a2f329a1b263023c1eea8a987dc70e6ca0c9d25a7ce12fe3a2c35d72",
+        "size": 16486
+      },
+      {
+        "path": "os/0f/0fdc04d8b380f6302adbb0605180b3769fb868db",
+        "dest": "/system/netsurf/res/quirks.css",
+        "sha256": "0fdc04d8b380f6302adbb0605180b3769fb868db44eba5dad919ad99d2a9e1fb",
+        "size": 306
+      },
+      {
+        "path": "os/39/391d86c8122d9a8fc55dd4a66fa099f63197a6b3",
+        "dest": "/system/netsurf/res/welcome.html",
+        "sha256": "391d86c8122d9a8fc55dd4a66fa099f63197a6b3591958165234be3476ebd4d0",
+        "size": 3496
+      },
+      {
+        "path": "os/2f/2f8211c8b5ee89d0cf28b5dd3806c783e2462c9a",
+        "dest": "/system/netsurf/res/de/Messages",
+        "sha256": "2f8211c8b5ee89d0cf28b5dd3806c783e2462c9ac1c7ba23b23e82d58f29bc94",
+        "size": 16955
+      },
+      {
+        "path": "os/25/25350d87b68fb738f8d2d296d6c9fb9be0721cd7",
+        "dest": "/system/netsurf/res/de/welcome.html",
+        "sha256": "25350d87b68fb738f8d2d296d6c9fb9be0721cd76505c6d613017e4eb94856bf",
+        "size": 3579
+      },
+      {
+        "path": "os/de/de413409e6afc209bf900c2363df416e2f3346bf",
+        "dest": "/system/netsurf/res/en/Messages",
+        "sha256": "de413409e6afc209bf900c2363df416e2f3346bfbadae100691572b84bf80df2",
+        "size": 15915
+      },
+      {
+        "path": "os/35/35b2399a737f03b3f200d64eb776824e76792b9d",
+        "dest": "/system/netsurf/res/en/credits.html",
+        "sha256": "35b2399a737f03b3f200d64eb776824e76792b9d44be213f8bc573ebd252105b",
+        "size": 2031
+      },
+      {
+        "path": "os/4f/4faa3b37b554aa5866a67846205b482d27d13896",
+        "dest": "/system/netsurf/res/en/licence.html",
+        "sha256": "4faa3b37b554aa5866a67846205b482d27d138968132cbcbf78de4fc99fa6971",
+        "size": 92019
+      },
+      {
+        "path": "os/39/391d86c8122d9a8fc55dd4a66fa099f63197a6b3",
+        "dest": "/system/netsurf/res/en/welcome.html",
+        "sha256": "391d86c8122d9a8fc55dd4a66fa099f63197a6b3591958165234be3476ebd4d0",
+        "size": 3496
+      },
+      {
+        "path": "os/06/06feac6e5022e685c77c435bafb4cc30e2830e09",
+        "dest": "/system/netsurf/res/fonts/glyph_data",
+        "sha256": "06feac6e5022e685c77c435bafb4cc30e2830e0924eb72852575fe563b50b863",
+        "size": 331093
+      },
+      {
+        "path": "os/4c/4cf032d228b863517d5dcc4bae83a6ddedb99d91",
+        "dest": "/system/netsurf/res/icons/back.png",
+        "sha256": "4cf032d228b863517d5dcc4bae83a6ddedb99d91a33830c4645f38a2362ef8af",
+        "size": 741
+      },
+      {
+        "path": "os/35/352c3ea642734ae51642c2ef790fdae77bc7303a",
+        "dest": "/system/netsurf/res/icons/back_g.png",
+        "sha256": "352c3ea642734ae51642c2ef790fdae77bc7303a156dd82704ab740bf5f768b1",
+        "size": 701
+      },
+      {
+        "path": "os/5c/5c158d0d18b890cfa06d8ccf204f20ca52e6e15d",
+        "dest": "/system/netsurf/res/icons/forward.png",
+        "sha256": "5c158d0d18b890cfa06d8ccf204f20ca52e6e15d6e1071432e7fa0b514d21d7b",
+        "size": 672
+      },
+      {
+        "path": "os/b9/b9cfb941139bb41f4e8fbd29a5ac6f76ede86ff4",
+        "dest": "/system/netsurf/res/icons/forward_g.png",
+        "sha256": "b9cfb941139bb41f4e8fbd29a5ac6f76ede86ff45ed96551077bc5a5e400164e",
+        "size": 702
+      },
+      {
+        "path": "os/20/20f1917265e8175264dd32875187816a3187fbc4",
+        "dest": "/system/netsurf/res/icons/history.png",
+        "sha256": "20f1917265e8175264dd32875187816a3187fbc4cb4edadad692387745665a28",
+        "size": 884
+      },
+      {
+        "path": "os/41/415eca2c36cdf83c2d1710d7bbe0cb4d8f845143",
+        "dest": "/system/netsurf/res/icons/history_g.png",
+        "sha256": "415eca2c36cdf83c2d1710d7bbe0cb4d8f845143b2c213594faf7aeb96c8d4f2",
+        "size": 798
+      },
+      {
+        "path": "os/f4/f4cbdf88bdf5d69f968e8ca46156a96c35b5e9c6",
+        "dest": "/system/netsurf/res/icons/home.png",
+        "sha256": "f4cbdf88bdf5d69f968e8ca46156a96c35b5e9c69a102029e51efa7636457a79",
+        "size": 818
+      },
+      {
+        "path": "os/4d/4d4603aecfbe7aa81052c8f4e0687703437e80d4",
+        "dest": "/system/netsurf/res/icons/home_g.png",
+        "sha256": "4d4603aecfbe7aa81052c8f4e0687703437e80d4158e794687abad82fd890a4c",
+        "size": 798
+      },
+      {
+        "path": "os/03/03d84a67ae205eb72a6c9b0f3c969fb52de02e5b",
+        "dest": "/system/netsurf/res/icons/osk.png",
+        "sha256": "03d84a67ae205eb72a6c9b0f3c969fb52de02e5b784f07f2316b66fc236c13eb",
+        "size": 262
+      },
+      {
+        "path": "os/7d/7d22c65adbbbd4ae134dfcea68d27fbe1e1f18e5",
+        "dest": "/system/netsurf/res/icons/reload.png",
+        "sha256": "7d22c65adbbbd4ae134dfcea68d27fbe1e1f18e5ecdeda1085e1482112ce7a4c",
+        "size": 1075
+      },
+      {
+        "path": "os/10/102dcf363e5d18edacd2182b695defa64bea06ea",
+        "dest": "/system/netsurf/res/icons/reload_g.png",
+        "sha256": "102dcf363e5d18edacd2182b695defa64bea06eaa108d230e7fb3bf43922ff9b",
+        "size": 1109
+      },
+      {
+        "path": "os/62/62e2cda3427c23fa0754babbe450021ec3f88497",
+        "dest": "/system/netsurf/res/icons/scrolld.png",
+        "sha256": "62e2cda3427c23fa0754babbe450021ec3f88497b2801d9a90bcdcbde6c274aa",
+        "size": 294
+      },
+      {
+        "path": "os/fd/fdf5fc455f47f0c75663c4a8e6ca2dab52a4203d",
+        "dest": "/system/netsurf/res/icons/scrolll.png",
+        "sha256": "fdf5fc455f47f0c75663c4a8e6ca2dab52a4203db356b73e9fe98143277b132b",
+        "size": 307
+      },
+      {
+        "path": "os/d0/d0c44e65093a128f0448c88888becb7bf539a883",
+        "dest": "/system/netsurf/res/icons/scrollr.png",
+        "sha256": "d0c44e65093a128f0448c88888becb7bf539a883165e5e1fd69636db00c65573",
+        "size": 286
+      },
+      {
+        "path": "os/48/48f54ce4ec18b62a0326e18a9652abf2c837f42b",
+        "dest": "/system/netsurf/res/icons/scrollu.png",
+        "sha256": "48f54ce4ec18b62a0326e18a9652abf2c837f42b8aabd7bce5728feb93e0fc5b",
+        "size": 280
+      },
+      {
+        "path": "os/9f/9f307ce056e3f5a792c1fd4eb91581fe2d975540",
+        "dest": "/system/netsurf/res/icons/stop.png",
+        "sha256": "9f307ce056e3f5a792c1fd4eb91581fe2d975540c7bad443dd769e0c649985d7",
+        "size": 1023
+      },
+      {
+        "path": "os/98/985409f52f0f2dfd7333b8874c496f5a42e11fe0",
+        "dest": "/system/netsurf/res/icons/stop_g.png",
+        "sha256": "985409f52f0f2dfd7333b8874c496f5a42e11fe03cfaeb7b6704db920525d256",
+        "size": 1050
+      },
+      {
+        "path": "os/14/145762d6194772c35ea2f5e73218c2253085c307",
+        "dest": "/system/netsurf/res/it/Messages",
+        "sha256": "145762d6194772c35ea2f5e73218c2253085c30761498eb99a47e59ce5a3f04c",
+        "size": 18096
+      },
+      {
+        "path": "os/7d/7d7caa1eb751778cb05944a7effa0a961ed531b5",
+        "dest": "/system/netsurf/res/it/credits.html",
+        "sha256": "7d7caa1eb751778cb05944a7effa0a961ed531b50dd4671290f93a27c8e2ff15",
+        "size": 2072
+      },
+      {
+        "path": "os/89/89a684b842deea785fddc6ea5e261aa48ea3da90",
+        "dest": "/system/netsurf/res/it/licence.html",
+        "sha256": "89a684b842deea785fddc6ea5e261aa48ea3da9006f67a188742d04b68d868a5",
+        "size": 92514
+      },
+      {
+        "path": "os/de/de413409e6afc209bf900c2363df416e2f3346bf",
+        "dest": "/system/netsurf/res/ja/Messages",
+        "sha256": "de413409e6afc209bf900c2363df416e2f3346bfbadae100691572b84bf80df2",
+        "size": 15915
+      },
+      {
+        "path": "os/4f/4f6d2423c38a160d4e4be42cd264a3385ec9b091",
+        "dest": "/system/netsurf/res/ja/welcome.html",
+        "sha256": "4f6d2423c38a160d4e4be42cd264a3385ec9b091a0866a54d13e9abcd2d7e3b2",
+        "size": 3719
+      },
+      {
+        "path": "os/06/069e0bf6262576762dcfa14f2f0df109084aeee4",
+        "dest": "/system/netsurf/res/nl/Messages",
+        "sha256": "069e0bf6262576762dcfa14f2f0df109084aeee44d5087c218df3c01f7c30beb",
+        "size": 17377
+      },
+      {
+        "path": "os/a7/a7d9d45c6de0daf9175f82db72bf752fc57bae7a",
+        "dest": "/system/netsurf/res/nl/credits.html",
+        "sha256": "a7d9d45c6de0daf9175f82db72bf752fc57bae7ad52b940893ffe3358a116d0d",
+        "size": 2202
+      },
+      {
+        "path": "os/54/54741f186aa78e63eee8e179107469a52f727e8c",
+        "dest": "/system/netsurf/res/nl/licence.html",
+        "sha256": "54741f186aa78e63eee8e179107469a52f727e8c11caacb2ae3c4b66afa47983",
+        "size": 92625
+      },
+      {
+        "path": "os/60/60908af0b7461ecfc485f654b2c9f411a3370bdb",
+        "dest": "/system/netsurf/res/nl/welcome.html",
+        "sha256": "60908af0b7461ecfc485f654b2c9f411a3370bdb6005736c2864e82395dc2726",
+        "size": 4233
+      },
+      {
+        "path": "os/33/33933128d6e2ab3c7ae9b77ddb199570a3da1651",
+        "dest": "/system/netsurf/res/pointers/caret.png",
+        "sha256": "33933128d6e2ab3c7ae9b77ddb199570a3da16510c32512eec5f91fa0714a555",
+        "size": 146
+      },
+      {
+        "path": "os/49/4939f8c6674ca6def70ccfa1c3edfec99758d165",
+        "dest": "/system/netsurf/res/pointers/cross.png",
+        "sha256": "4939f8c6674ca6def70ccfa1c3edfec99758d165f550e5ee24ea0693b6a14703",
+        "size": 144
+      },
+      {
+        "path": "os/a9/a920359c9b7cf8fe3837c8882eae6d0edff85eec",
+        "dest": "/system/netsurf/res/pointers/default.png",
+        "sha256": "a920359c9b7cf8fe3837c8882eae6d0edff85eec90a14de7968e341d273f62aa",
+        "size": 179
+      },
+      {
+        "path": "os/e0/e04fc3da1cac4da108858328c82ac808431fc6e7",
+        "dest": "/system/netsurf/res/pointers/help.png",
+        "sha256": "e04fc3da1cac4da108858328c82ac808431fc6e7c7baff8060ac7a363f3dae8a",
+        "size": 209
+      },
+      {
+        "path": "os/39/39f1c3916374927cb55d7df46036478833765d4e",
+        "dest": "/system/netsurf/res/pointers/left-right.png",
+        "sha256": "39f1c3916374927cb55d7df46036478833765d4eb986e1e6d4ee34f055aa4848",
+        "size": 163
+      },
+      {
+        "path": "os/a1/a175206a643996c3429347dcbf1b28d843e79f04",
+        "dest": "/system/netsurf/res/pointers/lu-rd.png",
+        "sha256": "a175206a643996c3429347dcbf1b28d843e79f04ae7630099b28aa929fc0a771",
+        "size": 170
+      },
+      {
+        "path": "os/66/6680708679134659abeb1c471ee7728b00167a51",
+        "dest": "/system/netsurf/res/pointers/menu.png",
+        "sha256": "6680708679134659abeb1c471ee7728b00167a51dc454bc882fbf7195d54003b",
+        "size": 220
+      },
+      {
+        "path": "os/2e/2efaa81ec648397ae77b540024d59ef67ed40f41",
+        "dest": "/system/netsurf/res/pointers/move.png",
+        "sha256": "2efaa81ec648397ae77b540024d59ef67ed40f411e4e2729d76b78e3c12b1cf0",
+        "size": 183
+      },
+      {
+        "path": "os/fc/fc7bef12dd004ab869737b30df7b9838c7c098fc",
+        "dest": "/system/netsurf/res/pointers/no_drop.png",
+        "sha256": "fc7bef12dd004ab869737b30df7b9838c7c098fc80650342d10e60832d6b87df",
+        "size": 224
+      },
+      {
+        "path": "os/b8/b8e186154ffd6a8a258f2cd714629f504aabff06",
+        "dest": "/system/netsurf/res/pointers/not_allowed.png",
+        "sha256": "b8e186154ffd6a8a258f2cd714629f504aabff069cdca0d1cb13840e665846af",
+        "size": 197
+      },
+      {
+        "path": "os/24/24a82ec50f3ed766aec3d86a287f62994f07acd1",
+        "dest": "/system/netsurf/res/pointers/point.png",
+        "sha256": "24a82ec50f3ed766aec3d86a287f62994f07acd1835a5c064d3b3d6f5c76c8c2",
+        "size": 181
+      },
+      {
+        "path": "os/ae/ae3aabd484e964edc031253a128c88be0e0ea8a1",
+        "dest": "/system/netsurf/res/pointers/progress.png",
+        "sha256": "ae3aabd484e964edc031253a128c88be0e0ea8a1f422d7f664c1d951c589e28c",
+        "size": 213
+      },
+      {
+        "path": "os/0d/0dce94c55a29f6c0bd5bdca88beb3d18ffc2dbcf",
+        "dest": "/system/netsurf/res/pointers/ru-ld.png",
+        "sha256": "0dce94c55a29f6c0bd5bdca88beb3d18ffc2dbcf02bda9bc3f74c011b381d1b6",
+        "size": 171
+      },
+      {
+        "path": "os/5d/5dca8d2a958e6ac1cf94b3f8e85eb9c0e3f52999",
+        "dest": "/system/netsurf/res/pointers/up-down.png",
+        "sha256": "5dca8d2a958e6ac1cf94b3f8e85eb9c0e3f52999d8ce2fb8758311ede379154e",
+        "size": 167
+      },
+      {
+        "path": "os/4c/4cf0e40165cd7f51dd51d63e3e8b7b6d6418f43f",
+        "dest": "/system/netsurf/res/pointers/wait.png",
+        "sha256": "4cf0e40165cd7f51dd51d63e3e8b7b6d6418f43f872cbc0da1339384dc7976eb",
+        "size": 211
+      },
+      {
+        "path": "os/47/47b7edbf8a37788f48e185f5f96b1a6616c450ad",
+        "dest": "/system/netsurf/res/throbber/throbber0.png",
+        "sha256": "47b7edbf8a37788f48e185f5f96b1a6616c450ad263eb0c6dd39f52771447cf8",
+        "size": 507
+      },
+      {
+        "path": "os/45/456b713e041c8c899991e6efe1f7f3f9b00f0e89",
+        "dest": "/system/netsurf/res/throbber/throbber1.png",
+        "sha256": "456b713e041c8c899991e6efe1f7f3f9b00f0e8983141d639c0e1a81d8b3b6df",
+        "size": 802
+      },
+      {
+        "path": "os/0a/0a6db30666636f3c61d6b1d4b6911f2c23b5a802",
+        "dest": "/system/netsurf/res/throbber/throbber2.png",
+        "sha256": "0a6db30666636f3c61d6b1d4b6911f2c23b5a8021f85687d80805f4a37072cc5",
+        "size": 790
+      },
+      {
+        "path": "os/83/83638593bd83a2cd81e9d28b9f8b6520fe4ef8f7",
+        "dest": "/system/netsurf/res/throbber/throbber3.png",
+        "sha256": "83638593bd83a2cd81e9d28b9f8b6520fe4ef8f71c6a0b0070c1b2b50753d6e9",
+        "size": 808
+      },
+      {
+        "path": "os/e0/e06d0f18556e92c5b3477f42ddac89335ae764ec",
+        "dest": "/system/netsurf/res/throbber/throbber4.png",
+        "sha256": "e06d0f18556e92c5b3477f42ddac89335ae764ec68dc34e4313fc59d443cb2c1",
+        "size": 797
+      },
+      {
+        "path": "os/b4/b416a96e0bc386edb50b30f5f260aefae1daba59",
+        "dest": "/system/netsurf/res/throbber/throbber5.png",
+        "sha256": "b416a96e0bc386edb50b30f5f260aefae1daba5984a4290ee31b65fa6b1ab9c3",
+        "size": 797
+      },
+      {
+        "path": "os/e7/e79195b9b2f9b73cdbab189c3d9e7325d374b044",
+        "dest": "/system/netsurf/res/throbber/throbber6.png",
+        "sha256": "e79195b9b2f9b73cdbab189c3d9e7325d374b0448a8c6d98ba62110cf9c70177",
+        "size": 819
+      },
+      {
+        "path": "os/ef/efbab67c246113f0ec9078cc68088f01c975711a",
+        "dest": "/system/netsurf/res/throbber/throbber7.png",
+        "sha256": "efbab67c246113f0ec9078cc68088f01c975711a34f3fd0a4297a9a23b0bf352",
+        "size": 792
+      },
+      {
+        "path": "os/75/75cc6712910a2f76592ffb0bdffb38068577fc77",
+        "dest": "/system/netsurf/res/throbber/throbber8.png",
+        "sha256": "75cc6712910a2f76592ffb0bdffb38068577fc778b71a9450a6ff8dc3993baae",
+        "size": 814
+      },
+      {
+        "path": "os/77/77c1e73ecb4f98f1d72c97a78507cbff34884584",
+        "dest": "/system/share/motd.txt",
+        "sha256": "77c1e73ecb4f98f1d72c97a78507cbff34884584379cf0d6de25b7cc422a80e7",
+        "size": 661
+      },
+      {
+        "path": "os/fc/fc9b6dfd77e0b2a7f403cf5ffd1cd00b5820ee19",
+        "dest": "/system/share/wadsetup/license.txt",
+        "sha256": "fc9b6dfd77e0b2a7f403cf5ffd1cd00b5820ee1959268de8103c99dae6b780b1",
+        "size": 2060
+      }
+    ]
+  }
+}
