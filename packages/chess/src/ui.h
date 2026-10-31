@@ -7,6 +7,11 @@
 
 extern u32 ui_fb[UI_W * UI_H];          /* 0x00RRGGBB */
 
+/* input diagnostics shown in the panel (toggle with D):
+ * 0 mouse-move msgs, 1 button-downs, 2 button-ups, 3 key-downs,
+ * 4,5 raw x,y   6,7 mapped x,y   8,9 client w,h   10 frames drawn */
+extern int ui_dbg[12];
+
 void ui_init(TimeFn now, u32 seed);
 void ui_render(void);
 void ui_mouse(int type, int x, int y);  /* 0 = move, 1 = left down, 2 = left up */

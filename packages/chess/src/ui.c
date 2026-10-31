@@ -184,6 +184,10 @@ static char hint_san[12];
 static int ai_shown;
 static int dirty = 1;
 static int hover = -1;
+static int kcur = 12;          /* keyboard cursor square (e2) */
+static int kb_active;
+static int dbg_on = 1;
+int ui_dbg[12];
 
 static const char *LEVEL_NAME[5] = {"", "Beginner", "Casual", "Club", "Strong"};
 
@@ -370,7 +374,49 @@ void ui_mouse(int type, int x, int y) {
     }
 }
 
+/* move the keyboard cursor in screen space (arrows always mean up/down/left/right on screen) */
+static void kmove(int dc, int dr) {
+    int f = kcur & 7, r = kcur >> 3;
+    int col = flipped ? 7 - f : f, row = flipped ? r : 7 - r;
+    col += dc;
+    row += dr;
+    if (col < 0) col = 0;
+    if (col > 7) col = 7;
+    if (row < 0) row = 0;
+    if (row > 7) row = 7;
+    f = flipped ? 7 - col : col;
+    r = flipped ? row : 7 - row;
+    kcur = r * 8 + f;
+    kb_active = 1;
+    dirty = 1;
+}
+
+static void kselect(void) {
+    kb_active = 1;
+    dirty = 1;
+    if (!human_turn()) return;
+    if (sel >= 0 && sel != kcur && try_move(sel, kcur)) return;
+    if (sel == kcur) { clear_sel(); return; }
+    dragging = 0;
+    if (own_piece(kcur)) { sel = kcur; hint_from = hint_to = -1; }
+    else clear_sel();
+}
+
 void ui_key(int vk) {
+    if (promo_from >= 0) {            /* promotion chooser: Q R B N, Esc cancels */
+        int pr = vk == 'Q' ? QUEEN : vk == 'R' ? ROOK : vk == 'B' ? BISHOP : vk == 'N' ? KNIGHT : 0;
+        if (pr) play(game_find(&G, promo_from, promo_to, pr));
+        else if (vk == 27) { clear_sel(); dirty = 1; }
+        return;
+    }
+    switch (vk) {
+        case 37: kmove(-1, 0); return;      /* arrows */
+        case 39: kmove(1, 0); return;
+        case 38: kmove(0, -1); return;
+        case 40: kmove(0, 1); return;
+        case 13: case 32: kselect(); return;
+        case 'D': dbg_on ^= 1; dirty = 1; return;
+    }
     switch (vk) {
         case 'N': new_game(); break;
         case 'U': case 8: do_undo(); break;
@@ -548,6 +594,15 @@ void ui_render(void) {
         if (dragging && sq == sel) continue;
         draw_piece(sq_x(sq), sq_y(sq), pc, SQ, 255);
     }
+    if (kb_active && promo_from < 0) {
+        int x = sq_x(kcur), y = sq_y(kcur);
+        for (int i = 0; i < 4; i++) {
+            fill_rect(x + i, y, 1, SQ, 0x3C8CFF);
+            fill_rect(x + SQ - 1 - i, y, 1, SQ, 0x3C8CFF);
+            fill_rect(x, y + i, SQ, 1, 0x3C8CFF);
+            fill_rect(x, y + SQ - 1 - i, SQ, 1, 0x3C8CFF);
+        }
+    }
     /* legal move hints */
     if (sel >= 0 && promo_from < 0) {
         for (int i = 0; i < nlegal; i++) {
@@ -602,7 +657,7 @@ void ui_render(void) {
             text(1, PX + 56, y, wi == G.n - 1 ? C_GREEN : C_TEXT, G.san[wi]);
             if (bi < G.n) text(1, PX + 146, y, bi == G.n - 1 ? C_GREEN : C_TEXT, G.san[bi]);
         }
-        if (G.n == 0) text(0, PX + 14, 384, C_MUTED, "Drag a piece or click to move.");
+        if (G.n == 0) text(0, PX + 14, 384, C_MUTED, "Click, drag, or arrows + Enter.");
     }
 
     /* promotion chooser */
@@ -627,5 +682,39 @@ void ui_render(void) {
         int x = bx + 75, y = by + 86;
         fill_rrect(x, y, 150, 40, 8, hover == 100 ? C_GREEN_HOV : C_GREEN);
         text_c(1, x + 75, y + 26, 0x1B2410, "New game");
+    }
+
+    if (dbg_on) {
+        char a[64], b[64], *o;
+        const char *t;
+        int n = 0;
+        ui_dbg[10]++;
+        o = a;
+        t = "mv "; while (*t) *o++ = *t++;
+        o += put_int(o, ui_dbg[0]);
+        t = "  dn "; while (*t) *o++ = *t++;
+        o += put_int(o, ui_dbg[1]);
+        t = "  up "; while (*t) *o++ = *t++;
+        o += put_int(o, ui_dbg[2]);
+        t = "  key "; while (*t) *o++ = *t++;
+        o += put_int(o, ui_dbg[3]);
+        *o = 0;
+        o = b;
+        t = "raw "; while (*t) *o++ = *t++;
+        o += put_int(o, ui_dbg[4]);
+        *o++ = ',';
+        o += put_int(o, ui_dbg[5]);
+        t = " > "; while (*t) *o++ = *t++;
+        o += put_int(o, ui_dbg[6]);
+        *o++ = ',';
+        o += put_int(o, ui_dbg[7]);
+        t = "  win "; while (*t) *o++ = *t++;
+        o += put_int(o, ui_dbg[8]);
+        *o++ = 'x';
+        o += put_int(o, ui_dbg[9]);
+        *o = 0;
+        (void)n;
+        text(0, PX, 574, C_MUTED, a);
+        text(0, PX, 590, C_MUTED, b);
     }
 }
