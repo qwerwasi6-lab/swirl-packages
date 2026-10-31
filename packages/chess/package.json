@@ -1,6 +1,6 @@
 {
   "name": "chess",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Chess with a computer opponent, drag and drop, hints and undo. Native SwirlOS app.",
   "author": "Leonid",
   "title": "Chess",
