@@ -194,6 +194,24 @@ int ui_dbg[16];
 static int eng_state, eng_a, eng_b;
 static u32 t_start, hb_last;
 
+/* ---- move animation (pieces glide to their new square, ease-out) ---- */
+#define ANIM_MS 200
+static struct {
+    int on;
+    u32 t0;
+    int from, to, pc;           /* the piece that slides (a pawn stays a pawn until it lands) */
+    int cap_sq, cap_pc;         /* captured piece, kept on the board until the mover arrives */
+    int rfrom, rto, rpc;        /* castling rook */
+} anim;
+static int skip_anim;           /* set when the piece was already dragged onto its square */
+
+static int anim_ease(void) {    /* 0..1024, ease-out cubic */
+    u32 t = g_now ? g_now() - anim.t0 : ANIM_MS;
+    if (t >= ANIM_MS) return 1024;
+    int q = 1024 - (int)(t * 1024 / ANIM_MS);
+    return 1024 - ((q * q >> 10) * q >> 10);
+}
+
 static const char *LEVEL_NAME[5] = {"", "Beginner", "Casual", "Club", "Strong"};
 
 enum { B_NEW, B_UNDO, B_FLIP, B_HINT, B_MODE, B_LEVEL, B_COUNT };
@@ -223,10 +241,11 @@ static int ai_turn(void) { return G.result == RES_NONE && !human_turn(); }
 
 static void refresh_legal(void) { nlegal = legal_moves(cur(), legal); }
 
-static void clear_sel(void) { sel = -1; dragging = 0; promo_from = promo_to = -1; }
+static void clear_sel(void) { sel = -1; dragging = 0; promo_from = promo_to = -1; skip_anim = 0; }
 
 static void new_game(void) {
     game_new(&G);
+    anim.on = 0;
     flipped = (mode == 1);
     clear_sel();
     last_from = last_to = hint_from = hint_to = -1;
@@ -236,7 +255,25 @@ static void new_game(void) {
 }
 
 static void play(Move m) {
+    Pos pre = *cur();
+    int from = MV_FROM(m), to = MV_TO(m), fl = MV_FLAGS(m);
+    int animate = g_now && !skip_anim && from != to;
     if (!game_play(&G, m)) return;
+    anim.on = 0;
+    if (animate) {
+        anim.from = from; anim.to = to; anim.pc = pre.b[from];
+        anim.cap_sq = to; anim.cap_pc = pre.b[to];
+        if (fl & F_EP) { anim.cap_sq = (from & ~7) | (to & 7); anim.cap_pc = pre.b[anim.cap_sq]; }
+        anim.rpc = 0;
+        if (fl & F_CASTLE) {
+            int rk = from & ~7;
+            anim.rfrom = rk | ((to & 7) > (from & 7) ? 7 : 0);
+            anim.rto = rk | ((to & 7) > (from & 7) ? 5 : 3);
+            anim.rpc = pre.b[anim.rfrom];
+        }
+        anim.t0 = g_now();
+        anim.on = 1;
+    }
     last_from = MV_FROM(m);
     last_to = MV_TO(m);
     hint_from = hint_to = -1;
@@ -248,6 +285,7 @@ static void play(Move m) {
 static void do_undo(void) {
     int minp = (mode == 1) ? 1 : 0;
     if (G.n <= minp) return;
+    anim.on = 0;
     if (mode == 2) game_undo(&G, 1);
     else do game_undo(&G, 1); while (G.n > minp && !human_turn());
     if (G.n > 0) { last_from = MV_FROM(G.mv[G.n - 1]); last_to = MV_TO(G.mv[G.n - 1]); }
@@ -374,7 +412,9 @@ void ui_mouse(int type, int x, int y) {
         int sq = sq_at(x, y);
         if (sq < 0) { sel = -1; return; }
         if (sq == sel) return;                /* click-click mode: stay selected */
+        skip_anim = 1;                        /* dropped by hand: no slide */
         if (try_move(sel, sq)) return;
+        skip_anim = 0;
         if (own_piece(sq)) sel = sq; else sel = -1;
     }
 }
@@ -433,6 +473,11 @@ void ui_key(int vk) {
 }
 
 int ui_step(void) {
+    if (anim.on) {
+        if (anim_ease() >= 1024) anim.on = 0;       /* final frame without the slider */
+        dirty = 0;
+        return 1;
+    }
     if (ai_turn()) {
         if (!ai_shown) { ai_shown = 1; dirty = 0; return 1; }   /* show "thinking" first */
         ai_shown = 0;
@@ -609,7 +654,20 @@ void ui_render(void) {
         int pc = p->b[sq];
         if (!pc) continue;
         if (dragging && sq == sel) continue;
+        if (anim.on && (sq == anim.to || (anim.rpc && sq == anim.rto))) continue;
         draw_piece(sq_x(sq), sq_y(sq), pc, SQ, 255);
+    }
+    if (anim.on) {
+        int e = anim_ease();
+        if (anim.cap_pc) draw_piece(sq_x(anim.cap_sq), sq_y(anim.cap_sq), anim.cap_pc, SQ, 255);
+        if (anim.rpc) {
+            int rx = sq_x(anim.rfrom) + (sq_x(anim.rto) - sq_x(anim.rfrom)) * e / 1024;
+            int ry = sq_y(anim.rfrom) + (sq_y(anim.rto) - sq_y(anim.rfrom)) * e / 1024;
+            draw_piece(rx, ry, anim.rpc, SQ, 255);
+        }
+        int ax = sq_x(anim.from) + (sq_x(anim.to) - sq_x(anim.from)) * e / 1024;
+        int ay = sq_y(anim.from) + (sq_y(anim.to) - sq_y(anim.from)) * e / 1024;
+        draw_piece(ax, ay, anim.pc, SQ, 255);
     }
     if (kb_active && promo_from < 0) {
         int x = sq_x(kcur), y = sq_y(kcur);
