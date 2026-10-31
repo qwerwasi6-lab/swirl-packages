@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r78",
+ "version": "r79",
  "abi": 2,
  "date": "2026-10-31",
- "notes": "r78: clyrics themes (retro, neon, minimal, terminal, sunset, karaoke). Use: clyrics --theme retro \"artist\" - \"song\"",
+ "notes": "r79: netroute (traceroute, live bandwidth, per-app network usage). trace/use need the new kernel from the tripleboot kit.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -120,10 +120,10 @@
    "size": 9744
   },
   {
-   "path": "os/5e/5e489fd5d23debc00d2600f80a91796b7bc4b4c8",
+   "path": "os/04/04d56e8bef5ecc1df15bcb7a898375848a14a9d4",
    "dest": "/system/apps/spm.elf",
-   "sha256": "5e489fd5d23debc00d2600f80a91796b7bc4b4c807ed0f6c127fd12295a40f5a",
-   "size": 568184
+   "sha256": "04d56e8bef5ecc1df15bcb7a898375848a14a9d462e134fa75c625f725e97bd4",
+   "size": 572640
   },
   {
    "path": "os/b4/b493638a50375819b1e94cbdd3a3473bd71600f3",
@@ -753,6 +753,12 @@
    "dest": "/system/gterm/nano.json",
    "sha256": "bce8fe7c092cb1c4d825b03a2872699144ed2afb4372cbb592ebceb67ed50abd",
    "size": 190
+  },
+  {
+   "path": "os/b3/b3762f288e1b53e2dc3f0cd6b0c34707eef8139c",
+   "dest": "/system/gterm/netroute.json",
+   "sha256": "b3762f288e1b53e2dc3f0cd6b0c34707eef8139c50c99496d09fabe3d242456d",
+   "size": 441
   },
   {
    "path": "os/be/be6191ece3aa52ee342410ac3529173b88faad9d",

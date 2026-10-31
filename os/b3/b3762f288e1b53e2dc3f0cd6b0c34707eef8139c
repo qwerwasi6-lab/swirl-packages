@@ -1,0 +1,12 @@
+{
+  "name": "netroute",
+  "category": "network",
+  "summary": "see how your network routes, where traffic goes and which app is using it",
+  "usage": "netroute | netroute trace HOST | netroute use | netroute top [seconds]",
+  "args": [ { "name": "what" } ],
+  "aliases": [ "traceroute", "nettop" ],
+  "engine": "pipeline",
+  "steps": [
+    { "spawn": "/system/apps/spm.elf", "arg": "netroute $@", "follow": "/home/user/.spm/out.log" }
+  ]
+}
