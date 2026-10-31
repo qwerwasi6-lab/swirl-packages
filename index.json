@@ -69,7 +69,7 @@
       ]
     },
     "chess": {
-      "version": "2.0.0",
+      "version": "2.0.1",
       "description": "Chess with a computer opponent, drag and drop, hints and undo. Native SwirlOS app.",
       "author": "Leonid",
       "title": "Chess",
@@ -85,8 +85,8 @@
         {
           "path": "packages/chess/chess.elf",
           "dest": "/home/user/Games/Chess/chess.elf",
-          "sha256": "0dbc3bb4b56b14085477f419192367e1e265022c2a601f831289c6aeea72cf46",
-          "size": 183576
+          "sha256": "75ed8e9dc6ae2941d071d0cc46c964307210c4a83a1eb3e776da1d2186ef4cb3",
+          "size": 183656
         }
       ]
     },
