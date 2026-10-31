@@ -849,13 +849,13 @@
       ]
     },
     "swirlspin": {
-      "version": "1.0.0",
-      "description": "A 3D SwirlOS logo, spinning.",
+      "version": "1.1.0",
+      "description": "The real SwirlOS logo, extruded into 3D and spinning.",
       "author": "Swirl",
       "title": "Swirl Spin",
       "category": "Apps",
-      "tagline": "The Swirl, in 3D.",
-      "long": "The SwirlOS swirl as a solid 3D shape, rotating in its own window.\\nDrag with the mouse to spin it, Space pauses, + and - change the speed, C cycles colours (violet, sunset, ocean, mono), R resets.",
+      "tagline": "Your logo, in 3D.",
+      "long": "The real SwirlOS logo as a solid 3D shape, rotating in its own window.\\nDrag with the mouse to spin it, Space pauses, + and - change the speed, C cycles colours (logo, neon, gold, mono), R resets.",
       "publisher": "Swirl",
       "license": "MIT",
       "color": "7C3AED",
@@ -866,8 +866,8 @@
         {
           "path": "packages/swirlspin/swirlspin.elf",
           "dest": "/home/user/Games/swirlspin/swirlspin.elf",
-          "sha256": "a29c8d0a0bc9b4cf48ab42744ad4464f08fbf62633edb8c4bb249ae04dd892b9",
-          "size": 57744
+          "sha256": "542cda646dbd3e63b635fd803afdea68d7cc8fb9942540f6c5d3fcf9ab3fe0d2",
+          "size": 82320
         }
       ]
     },
