@@ -848,6 +848,29 @@
         }
       ]
     },
+    "swirlspin": {
+      "version": "1.0.0",
+      "description": "A 3D SwirlOS logo, spinning.",
+      "author": "Swirl",
+      "title": "Swirl Spin",
+      "category": "Apps",
+      "tagline": "The Swirl, in 3D.",
+      "long": "The SwirlOS swirl as a solid 3D shape, rotating in its own window.\\nDrag with the mouse to spin it, Space pauses, + and - change the speed, C cycles colours (violet, sunset, ocean, mono), R resets.",
+      "publisher": "Swirl",
+      "license": "MIT",
+      "color": "7C3AED",
+      "glyph": "tool",
+      "launch": "/home/user/Games/swirlspin/swirlspin.elf",
+      "featured": 1,
+      "files": [
+        {
+          "path": "packages/swirlspin/swirlspin.elf",
+          "dest": "/home/user/Games/swirlspin/swirlspin.elf",
+          "sha256": "a29c8d0a0bc9b4cf48ab42744ad4464f08fbf62633edb8c4bb249ae04dd892b9",
+          "size": 57744
+        }
+      ]
+    },
     "tcc": {
       "version": "0.9.28rc-1",
       "description": "Tiny C Compiler: compile and run C programs on SwirlOS.",
@@ -1144,10 +1167,10 @@
   },
   "os": {
     "name": "SwirlOS",
-    "version": "r79",
+    "version": "r80",
     "abi": 2,
     "date": "2026-10-31",
-    "notes": "r79: netroute (traceroute, live bandwidth, per-app network usage). trace/use need the new kernel from the tripleboot kit.",
+    "notes": "r80: new store app Swirl Spin (3D rotating SwirlOS logo). No kernel change.",
     "files": [
       {
         "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",

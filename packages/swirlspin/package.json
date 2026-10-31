@@ -1,0 +1,19 @@
+{
+  "name": "swirlspin",
+  "version": "1.0.0",
+  "description": "A 3D SwirlOS logo, spinning.",
+  "author": "Swirl",
+  "title": "Swirl Spin",
+  "category": "Apps",
+  "tagline": "The Swirl, in 3D.",
+  "long": "The SwirlOS swirl as a solid 3D shape, rotating in its own window.\\nDrag with the mouse to spin it, Space pauses, + and - change the speed, C cycles colours (violet, sunset, ocean, mono), R resets.",
+  "publisher": "Swirl",
+  "license": "MIT",
+  "color": "7C3AED",
+  "glyph": "tool",
+  "launch": "/home/user/Games/swirlspin/swirlspin.elf",
+  "files": [
+    { "src": "swirlspin.elf", "dest": "/home/user/Games/swirlspin/swirlspin.elf" }
+  ],
+  "featured": true
+}
