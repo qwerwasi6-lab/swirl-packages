@@ -113,7 +113,7 @@
         }
       ]
     },
-        "checkers": {
+    "checkers": {
       "version": "1.0.0",
       "description": "Checkers with a computer opponent, forced captures, drag and drop, hints and undo. Native SwirlOS app.",
       "author": "Leonid",
