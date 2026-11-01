@@ -24,6 +24,41 @@
         }
       ]
     },
+      "weather": {
+      "version": "1.0.0",
+      "description": "Modern weather with forecast, photo background and live conditions.",
+      "author": "qwerwasi6-lab",
+      "title": "Weather",
+      "category": "Apps",
+      "tagline": "Modern weather with forecast, photo background and live conditions",
+      "long": "Current conditions, 24-hour and 7-day forecast, city search, C/F toggle. Data by Open-Meteo.com (no API key). Needs internet.",
+      "publisher": "qwerwasi6-lab",
+      "license": "MIT",
+      "color": "3B82F6",
+      "glyph": "tool",
+      "launch": "/system/apps/weather.elf",
+      "featured": 1,
+      "files": [
+        {
+          "path": "packages/weather/weather.elf",
+          "dest": "/system/apps/weather.elf",
+          "sha256": "bc540b0df5bbcd522bde98b96f27216c8d653b3689a70b6e855b85c0d75d9e3e",
+          "size": 337072
+        },
+        {
+          "path": "packages/weather/wfetch.elf",
+          "dest": "/system/apps/wfetch.elf",
+          "sha256": "074b22fab882eb4a66b5d7c03238414a52440398d96f1c5b89001fcf8c9bcc7a",
+          "size": 499208
+        },
+        {
+          "path": "packages/weather/bg.jpg",
+          "dest": "/system/share/weather/bg.jpg",
+          "sha256": "491d039b23dabe7e70263503077a9038d390be620d936cc7ee528c86e05515dd",
+          "size": 116272
+        }
+      ]
+    },
     "blocks": {
       "version": "1.0.0",
       "description": "Stack, clear, repeat.",
