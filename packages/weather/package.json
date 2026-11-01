@@ -1,6 +1,6 @@
 {
   "weather": {
-    "version": "1.0",
+    "version": "1.0.0",
     "title": "Weather",
     "category": "Apps",
     "tagline": "Modern weather with forecast, photo background and live conditions",
