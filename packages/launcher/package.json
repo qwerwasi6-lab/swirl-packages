@@ -1,0 +1,21 @@
+{
+  "name": "launcher",
+  "version": "1.0.0",
+  "title": "Launcher",
+  "category": "Apps",
+  "tagline": "Type  l <name>  to launch any game or app",
+  "publisher": "qwerwasi6-lab",
+  "license": "MIT",
+  "color": "2E86E0",
+  "description": "Terminal command: l <name of game/app> finds the .elf and runs it.",
+  "long": "Adds the terminal command l (aliases: launch, launcher). Type l snake and Launcher finds the matching .elf by itself: it checks <folder>/<name>.elf, then a folder called <name> (whatever .elf is inside), then any file or folder whose name contains what you typed. Searches the games and apps folders and your home folder. Nothing is hardcoded per app.",
+  "deps": [],
+  "files": [
+    {
+      "path": "packages/launcher/l.json",
+      "dest": "/system/gterm/l.json",
+      "sha256": "d7631639e4336df4b1fd997f2ae5a2954df59ba0f7513b9dd956ede38dfd3767",
+      "size": 3829
+    }
+  ]
+}
