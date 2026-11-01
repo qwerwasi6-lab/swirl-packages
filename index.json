@@ -59,6 +59,28 @@
         }
       ]
     },
+      "clipboard": {
+      "version": "1.0.0",
+      "description": "Clipboard history with starred entries.",
+      "author": "qwerwasi6-lab",
+      "title": "Clipboard History",
+      "category": "Apps",
+      "tagline": "Your last 5 copies. Star the ones worth keeping.",
+      "long": "Keeps your last 5 copied texts in a list. Press Copy to put one back on the clipboard, or press the star to keep it forever. Starred entries are saved to /home/user/Clipboard/starred.txt.\nThe app records while it is open (minimised is fine).",
+      "publisher": "qwerwasi6-lab",
+      "license": "MIT",
+      "color": "3B82F6",
+      "glyph": "tool",
+      "launch": "/home/user/Apps/clipboard/clipboard.elf",
+      "files": [
+        {
+          "path": "packages/clipboard/clipboard.elf",
+          "dest": "/home/user/Apps/clipboard/clipboard.elf",
+          "sha256": "dd90ce1029a40ae6669f462ea84f04912e3bdcd1142096e85e95bc5e40669715",
+          "size": 62304
+        }
+      ]
+    },
     "blocks": {
       "version": "1.0.0",
       "description": "Stack, clear, repeat.",
