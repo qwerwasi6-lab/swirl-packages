@@ -54,8 +54,8 @@
         {
           "path": "packages/weather/bg.jpg",
           "dest": "/system/share/weather/bg.jpg",
-          "sha256": "491d039b23dabe7e70263503077a9038d390be620d936cc7ee528c86e05515dd",
-          "size": 116272
+          "sha256": "4bd3b186d8c8a8b4a4fd5cfea5327ddec45a308db9758e16a0e4d3eb566f1d9c",
+          "size": 58862
         }
       ]
     },
