@@ -113,6 +113,28 @@
         }
       ]
     },
+        "checkers": {
+      "version": "1.0.0",
+      "description": "Checkers with a computer opponent, forced captures, drag and drop, hints and undo. Native SwirlOS app.",
+      "author": "Leonid",
+      "title": "Checkers",
+      "category": "Games",
+      "tagline": "Play checkers against the computer or a friend.",
+      "long": "English checkers for SwirlOS: forced captures, multi-jumps, kings, drag-and-drop or click-to-move, legal move markers, move list, captured pieces, undo, hints and a flippable board.\\nPlay as White or Black against the computer on four levels (Beginner to Strong), or two players on one screen.\\nMouse or keyboard: arrow keys move the cursor, Enter/Space selects and moves.\\nShortcuts: N new game, U undo, F flip, H hint, L level, Esc cancel.",
+      "publisher": "Swirl Games",
+      "license": "MIT",
+      "color": "B5483A",
+      "glyph": "chess",
+      "launch": "/home/user/Games/Checkers/checkers.elf",
+      "files": [
+        {
+          "path": "packages/checkers/checkers.elf",
+          "dest": "/home/user/Games/Checkers/checkers.elf",
+          "sha256": "07d76caa595bec18c432fc1810c24731da528c59344827c0a29e7190762d2707",
+          "size": 91408
+        }
+      ]
+    },
     "coinflip": {
       "version": "1.1.0",
       "description": "Flip a virtual coin.",
