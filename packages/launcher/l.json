@@ -1,0 +1,19 @@
+{
+ "name": "l",
+ "aliases": ["launch","launcher"],
+ "category": "custom",
+ "summary": "launch a game/app by name - finds its .elf for you",
+ "usage": "l <name of game/app>",
+ "args": [{"name":"name"}],
+ "engine": "pipeline",
+ "steps": [
+  {"if":"$# < 1","then":[{"print":"usage: l <name of game/app>      e.g.  l snake","color":"accent"},{"print":"finds the .elf by name (exact first, then partial) - no path needed","color":"out"},{"exit":0}]},
+  {"var":"q","value":"$@"},
+  {"if":"$1 starts /","then":[{"syscall":"open","args":["$q",1],"as":"fd"},{"if":"$fd >= 0","then":[{"syscall":"close","args":["$fd"]},{"var":"elf","value":"$q"},{"print":"launching $elf","color":"ok"},{"spawn":"$elf"},{"exit":0}]}]},
+  {"var":"i","value":"0"},
+  {"loop":{"until":"$i >= 7","max":7},"steps":[{"var":"j","expr":"$i % 7"},{"if":"$j == 0","then":[{"var":"root","value":"/system/apps/games"}]},{"if":"$j == 1","then":[{"var":"root","value":"/home/user/Games"}]},{"if":"$j == 2","then":[{"var":"root","value":"/home/user/GAMES"}]},{"if":"$j == 3","then":[{"var":"root","value":"/home/user/Apps"}]},{"if":"$j == 4","then":[{"var":"root","value":"/system/apps/gui"}]},{"if":"$j == 5","then":[{"var":"root","value":"/system/apps"}]},{"if":"$j == 6","then":[{"var":"root","value":"/home/user"}]},{"var":"elf","value":"$root/${q:0}.elf"},{"syscall":"open","args":["$elf",1],"as":"fd"},{"if":"$fd >= 0","then":[{"syscall":"close","args":["$fd"]},{"print":"launching $elf","color":"ok"},{"spawn":"$elf"},{"exit":0}]},{"var":"dp","value":"$root/$q"},{"syscall":"dir_open","args":["$dp"],"as":"h"},{"if":"$h > 2","then":[{"loop":{"until":"$RET == 0","max":256},"steps":[{"syscall":"dir_read","args":["$h"],"as":"e"},{"if":"$RET > 0","then":[{"if":"$e.name contains .elf","then":[{"var":"elf","value":"$dp/$e.name"},{"syscall":"close","args":["$h"]},{"print":"launching $elf","color":"ok"},{"spawn":"$elf"},{"exit":0}]}]}]},{"syscall":"close","args":["$h"]}]},{"var":"i","expr":"$i + 1"}]},
+  {"var":"i","value":"0"},
+  {"loop":{"until":"$i >= 7","max":7},"steps":[{"var":"j","expr":"$i % 7"},{"if":"$j == 0","then":[{"var":"root","value":"/system/apps/games"}]},{"if":"$j == 1","then":[{"var":"root","value":"/home/user/Games"}]},{"if":"$j == 2","then":[{"var":"root","value":"/home/user/GAMES"}]},{"if":"$j == 3","then":[{"var":"root","value":"/home/user/Apps"}]},{"if":"$j == 4","then":[{"var":"root","value":"/system/apps/gui"}]},{"if":"$j == 5","then":[{"var":"root","value":"/system/apps"}]},{"if":"$j == 6","then":[{"var":"root","value":"/home/user"}]},{"var":"stop","value":"0"},{"syscall":"dir_open","args":["$root"],"as":"h"},{"if":"$h > 2","then":[{"loop":{"until":"$RET == 0","while":"$stop == 0","max":512},"steps":[{"syscall":"dir_read","args":["$h"],"as":"e"},{"if":"$RET > 0","then":[{"var":"dn","value":"$e.name"},{"var":"dt","value":"$e.type"},{"if":"$dn contains $q","then":[{"if":"$dt == 2","then":[{"var":"sub","value":"$root/$dn"},{"var":"stop","value":"2"}],"else":[{"if":"$dn contains .elf","then":[{"var":"elf","value":"$root/$dn"},{"var":"stop","value":"1"}]}]}]}]}]},{"syscall":"close","args":["$h"]},{"if":"$stop == 1","then":[{"print":"launching $elf","color":"ok"},{"spawn":"$elf"},{"exit":0}]},{"if":"$stop == 2","then":[{"syscall":"dir_open","args":["$sub"],"as":"h2"},{"if":"$h2 > 2","then":[{"loop":{"until":"$RET == 0","while":"$stop == 2","max":256},"steps":[{"syscall":"dir_read","args":["$h2"],"as":"f"},{"if":"$RET > 0","then":[{"if":"$f.name contains .elf","then":[{"var":"elf","value":"$sub/$f.name"},{"var":"stop","value":"3"}]}]}]},{"syscall":"close","args":["$h2"]},{"if":"$stop == 3","then":[{"print":"launching $elf","color":"ok"},{"spawn":"$elf"},{"exit":0}]}]}]}]},{"var":"i","expr":"$i + 1"}]},
+  {"print":"l: no app or game matching '$q' (searched games, apps and your home folder)","color":"err"}
+ ]
+}
