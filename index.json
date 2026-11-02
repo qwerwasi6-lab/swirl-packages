@@ -71,7 +71,7 @@
       "files": [
         { "path": "packages/lua/lua.elf", "dest": "/home/user/Apps/lua/lua.elf", "sha256": "a30c3afe926227a8370f80eabe86de80261eb542147fdbc4b614bbd54308f43d", "size": 317896 },
         { "path": "packages/lua/lua.json", "dest": "/home/user/.gterm/lua.json", "sha256": "206c51a0dfd287b6b7642b17190916548316445449d0debf3c7a3ae42a9d80cf", "size": 399 },
-        { "path": "packages/lua/lua.txt", "dest": "/system/doc/lua.txt", "sha256": "1cc2365d1a18eef20ecef0bea3eb02b9a92ab83a9bfd68e5667464c89446a322", "size": 3176 }
+        { "path": "packages/lua/lua.txt", "dest": "/system/doc/lua.txt", "sha256": "1cc2365d1a18eef20ecef0bea3eb02b9a92ab83a9bfd68e5667464c89446a322", "size": 1686 }
       ]
     },
     "clipboard": {
