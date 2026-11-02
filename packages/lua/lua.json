@@ -5,8 +5,6 @@
   "usage": "lua -run <file.lua> [args...]   |   lua -e <code>   |   lua -i   |   lua -v",
   "engine": "pipeline",
   "steps": [
-    // "stdin" only does something in a terminal that forwards typed lines (see gterm-stdin.patch);
-    // older terminals ignore it and `lua -i` then explains that input is not available.
     { "spawn": "/home/user/Apps/lua/lua.elf", "arg": "--cwd=$CWD --in=/home/user/.lua.in $@", "follow": "/home/user/.lua.out", "stdin": "/home/user/.lua.in" }
   ]
 }
