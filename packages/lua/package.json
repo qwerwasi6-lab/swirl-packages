@@ -1,20 +1,29 @@
 {
   "name": "lua",
-  "version": "1.0.0",
-  "description": "Lua 5.4 scripting language for the SwirlOS terminal.",
+  "version": "1.1.0",
+  "description": "Lua 5.4 for the SwirlOS terminal: scripts, os.execute, a swirl library and an interactive prompt.",
   "author": "Swirl",
   "title": "Lua",
   "category": "Developer",
   "tagline": "Run Lua scripts from the terminal.",
-  "long": "Lua 5.4.9, the small fast scripting language.\\nType: lua -run /home/user/hello.lua\\nOr straight from the prompt: lua -e print(1+1)\\nRelative paths work from the folder you are in. Docs: cat /system/doc/lua.txt",
+  "long": "Lua 5.4.9, the small fast scripting language.\\nType: lua -run /home/user/hello.lua\\nOr straight from the prompt: lua -e print(1+1)\\nRun other programs with os.execute / io.popen, and use the swirl library to list folders, sleep, spawn and read system info. Interactive mode needs the terminal input patch. Docs: cat /system/doc/lua.txt",
   "publisher": "Swirl",
   "license": "MIT",
   "color": "2C2D72",
   "glyph": "tool",
   "files": [
-    { "src": "lua.elf",  "dest": "/home/user/Apps/lua/lua.elf" },
-    { "src": "lua.json", "dest": "/home/user/.gterm/lua.json" },
-    { "src": "lua.txt",  "dest": "/system/doc/lua.txt" }
+    {
+      "src": "lua.elf",
+      "dest": "/home/user/Apps/lua/lua.elf"
+    },
+    {
+      "src": "lua.json",
+      "dest": "/home/user/.gterm/lua.json"
+    },
+    {
+      "src": "lua.txt",
+      "dest": "/system/doc/lua.txt"
+    }
   ],
   "featured": false
 }
