@@ -1,0 +1,10 @@
+{
+  "name": "lua",
+  "category": "custom",
+  "summary": "run Lua scripts",
+  "usage": "lua -run <file.lua> [args...]   |   lua -e <code>   |   lua -v",
+  "engine": "pipeline",
+  "steps": [
+    { "spawn": "/home/user/Apps/lua/lua.elf", "arg": "--cwd=$CWD $@", "follow": "/home/user/.lua.out" }
+  ]
+}

@@ -1,0 +1,33 @@
+LUA for SwirlOS  (Lua 5.4.9, SwirlOS port 1)
+============================================
+
+  lua -run <script.lua> [args...]    run a script
+  lua <script.lua> [args...]         same thing (-run is optional)
+  lua -e <lua code>                  run code from the command line, e.g.  lua -e print(1+1)
+  lua -v                             version
+  lua -h                             usage
+
+Paths
+  Relative paths are relative to the folder the terminal is in (cd first, or use absolute paths).
+  `require` looks in: the script's own folder, the current folder, /home/user/lua, /system/lua.
+  Arguments: arg[1], arg[2]... and `...` in the main chunk, like standard Lua.
+
+Output
+  print / io.write go to the terminal live. Errors show in red, with a stack traceback.
+  Only one `lua` runs at a time per terminal log (/home/user/.lua.out).
+
+What works
+  The full standard Lua 5.4 library: string, table, math, utf8, coroutine, debug, os, io (files),
+  integer + float arithmetic, string.format, string.pack, goto, <close>/<const>, etc.
+  Numbers print exactly as on Linux (print(0.1) -> 0.1).
+
+What does not (yet)
+  io.read / io.stdin   there is no keyboard input to programs yet (reads return nil). No REPL.
+  io.popen, os.execute, os.getenv (except HOME, USER, PWD), C modules (require "x.so")
+  Time zones: os.date uses UTC.
+  Memory: scripts get a 7 MB heap. Past that you get "not enough memory" (a normal Lua error).
+  Recursion depth is about 37,000 calls, then "stack overflow".
+  Writes are not buffered: data hits the disk immediately.
+
+Lua is (C) 1994-2026 Lua.org, PUC-Rio, MIT license. See https://www.lua.org
+Math functions come from musl libc (MIT, (C) Rich Felker et al.).
