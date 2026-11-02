@@ -57,21 +57,21 @@
       ]
     },
     "lua": {
-      "version": "1.0.0",
-      "description": "Lua 5.4 scripting language for the SwirlOS terminal.",
+      "version": "1.1.0",
+      "description": "Lua 5.4 for the SwirlOS terminal: scripts, os.execute, a swirl library and an interactive prompt.",
       "author": "Swirl",
       "title": "Lua",
       "category": "Developer",
       "tagline": "Run Lua scripts from the terminal.",
-      "long": "Lua 5.4.9, the small fast scripting language.\\nType: lua -run /home/user/hello.lua\\nOr straight from the prompt: lua -e print(1+1)\\nRelative paths work from the folder you are in. Docs: cat /system/doc/lua.txt",
+      "long": "Lua 5.4.9, the small fast scripting language.\\nType: lua -run /home/user/hello.lua\\nOr straight from the prompt: lua -e print(1+1)\\nRun other programs with os.execute / io.popen, and use the swirl library to list folders, sleep, spawn and read system info. Interactive mode needs the terminal input patch. Docs: cat /system/doc/lua.txt",
       "publisher": "Swirl",
       "license": "MIT",
       "color": "2C2D72",
       "glyph": "tool",
       "files": [
-        { "path": "packages/lua/lua.elf", "dest": "/home/user/Apps/lua/lua.elf", "sha256": "0d7f7ad51e1ec762f1ce4426dbfd94cbe96005891ef2fdf2afec11992b2a7e58", "size": 303480 },
-        { "path": "packages/lua/lua.json", "dest": "/home/user/.gterm/lua.json", "sha256": "90adba9baf8bf37e17aee92f74a2467dc6a194b3feec5db79d25d63d666e96f8", "size": 299 },
-        { "path": "packages/lua/lua.txt", "dest": "/system/doc/lua.txt", "sha256": "7334fc0a7aa59cc1910f600da985da96e39ab8697b2a92d38147e85e32cab847", "size": 1686 }
+        { "path": "packages/lua/lua.elf", "dest": "/home/user/Apps/lua/lua.elf", "sha256": "a30c3afe926227a8370f80eabe86de80261eb542147fdbc4b614bbd54308f43d", "size": 317896 },
+        { "path": "packages/lua/lua.json", "dest": "/home/user/.gterm/lua.json", "sha256": "6ef807efa15406738aa492373e88e0a960f9c85882c7df2b70c38e1fce772ec3", "size": 588 },
+        { "path": "packages/lua/lua.txt", "dest": "/system/doc/lua.txt", "sha256": "1cc2365d1a18eef20ecef0bea3eb02b9a92ab83a9bfd68e5667464c89446a322", "size": 3176 }
       ]
     },
     "clipboard": {
