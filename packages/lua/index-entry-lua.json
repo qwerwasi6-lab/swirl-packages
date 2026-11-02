@@ -21,7 +21,7 @@
       {
         "path": "packages/lua/lua.json",
         "dest": "/home/user/.gterm/lua.json",
-        "sha256": "6ef807efa15406738aa492373e88e0a960f9c85882c7df2b70c38e1fce772ec3",
+        "sha256": "206c51a0dfd287b6b7642b17190916548316445449d0debf3c7a3ae42a9d80cf",
         "size": 399
       },
       {
