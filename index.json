@@ -377,26 +377,27 @@
         { "path": "packages/snake/snake.elf", "dest": "/home/user/Games/snake/snake.elf", "sha256": "2ffe9ba6da630fb49ca75adc5bdc11f030bc9d450b68fad99fb3e0b46c20275f", "size": 58048 }
       ]
     },
-    "swirl-c-ide": {
-      "version": "1.0.0",
-      "description": "A small C editor with Check and Run buttons, built on the Tiny C Compiler.",
+    "swirl-ide": {
+      "version": "2.0.0",
+      "description": "Swirl IDE: a tabbed code editor for C and Lua with Check, Run and Stop buttons.",
       "author": "Swirl",
-      "title": "Swirl C IDE",
+      "title": "Swirl IDE",
       "category": "Developer",
-      "tagline": "Write, build and run C without leaving the desktop.",
-      "long": "A focused code editor for C: line numbers, syntax colours, auto-indent, undo, find, and a real compiler one click away.\\nCheck compiles and lists errors (click one to jump to the line), Run compiles in memory and runs your program with its output right under the editor. Ctrl+S save, Ctrl+B check, Ctrl+R run, Ctrl+F find, Ctrl+G go to line.\\nNeeds the Tiny C Compiler package, which the Store installs for you.",
+      "tagline": "Write, build and run C and Lua without leaving the desktop.",
+      "long": "A tabbed code editor for C and Lua: open as many files as you like (8 tabs), pick the language from the drop-down, and get line numbers, syntax colours, auto-indent, undo, find and go-to-line.\\nCheck compiles or syntax-checks and lists errors (click one to jump to the line). Run builds and runs your program with its output right under the editor, and Stop ends it.\\nCtrl+N new tab, Ctrl+O open, Ctrl+S save, Ctrl+B check, Ctrl+R run, Ctrl+F find, Ctrl+G go to line, Ctrl+Z undo, Ctrl+W close tab, Ctrl+PgUp/PgDn switch tabs.\\nReplaces Swirl C IDE. Needs the Tiny C Compiler and Lua packages, which the Store installs for you.",
       "publisher": "Swirl",
       "license": "MIT",
       "color": "2F9E6B",
       "glyph": "tool",
-      "launch": "/system/apps/gide.elf",
+      "launch": "/system/apps/swirlide.elf",
       "deps": [
-        "tcc"
+        "tcc",
+        "lua"
       ],
       "files": [
-        { "path": "packages/swirl-c-ide/gide.elf", "dest": "/system/apps/gide.elf", "sha256": "27d67ce8e5d040c113c993661f69b8e38645c6522b69d671690f7006d6eb7a1f", "size": 93504 },
-        { "path": "packages/swirl-c-ide/ide.json", "dest": "/system/gterm/ide.json", "sha256": "337b2bd3db334a54946d5d522f1209ade1b1583a590eb5567e86d7c12a3c55c8", "size": 355 },
-        { "path": "packages/swirl-c-ide/gide.png", "dest": "/system/apps/icons/gide.png", "sha256": "d79b5828b25101f74b47ed905b1e8a27d81589836114cfec9e486da6ca308a00", "size": 5909 }
+        { "path": "packages/swirl-ide/swirlide.elf", "dest": "/system/apps/swirlide.elf", "sha256": "6986cb258a56b7c7b7a6f98f371a7c9d94c9aabafb86e338d1ebf20b08ff3c57", "size": 106024 },
+        { "path": "packages/swirl-ide/ide.json", "dest": "/system/gterm/ide.json", "sha256": "940cdff68a6b826ae88bf6f20a5657d1bc26bea74f74473b1d977902c91ffe15", "size": 377 },
+        { "path": "packages/swirl-ide/swirlide.png", "dest": "/system/apps/icons/swirlide.png", "sha256": "d79b5828b25101f74b47ed905b1e8a27d81589836114cfec9e486da6ca308a00", "size": 5909 }
       ]
     },
     "swirl-upgrade": {
