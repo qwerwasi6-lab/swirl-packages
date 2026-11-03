@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r80",
+ "version": "r81",
  "abi": 2,
- "date": "2026-10-31",
- "notes": "r80: new store app Swirl Spin (3D rotating SwirlOS logo). No kernel change.",
+ "date": "2026-11-03",
+ "notes": "r81: Files scrollbar is draggable/clickable; NetSurf no longer fails on chunked pages that end by connection close, and shows the real reason for other errors.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -78,10 +78,10 @@
    "size": 13920
   },
   {
-   "path": "os/74/7475f7d90e3834fe47c4a3e576d4dce6437495c9",
+   "path": "os/04/0430688246e453a385dd891fd7f21dc0dafd9eb8",
    "dest": "/system/apps/netsurf.elf",
-   "sha256": "7475f7d90e3834fe47c4a3e576d4dce6437495c9da747490d037ec6ee9c8327f",
-   "size": 4111800
+   "sha256": "0430688246e453a385dd891fd7f21dc0dafd9eb8c7e740519e71ab8db47592ac",
+   "size": 4112312
   },
   {
    "path": "os/6b/6b89c47d3be71c80b1db3a8de063aa1ce87f7141",
@@ -192,9 +192,9 @@
    "size": 589264
   },
   {
-   "path": "os/50/50ff02895cad7df41827f72919d6a6ec6eaeb395",
+   "path": "os/29/29c1799021c56d9d57f75884e1a2fa9a705d7252",
    "dest": "/system/apps/gui/gfiles.elf",
-   "sha256": "50ff02895cad7df41827f72919d6a6ec6eaeb395d28ac804d45a170e34c1afc4",
+   "sha256": "29c1799021c56d9d57f75884e1a2fa9a705d725280d352bccb0b59b1a5d5b48f",
    "size": 834240
   },
   {
