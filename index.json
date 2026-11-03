@@ -1343,10 +1343,10 @@
   },
   "os": {
     "name": "SwirlOS",
-    "version": "r82",
+    "version": "r83",
     "abi": 2,
     "date": "2026-11-03",
-    "notes": "r82: fixes NetSurf HeaderTooLarge (YouTube etc). Kernel TCP out-of-order fix (TLS MAC failed / chunked errors) needs the tripleboot kit update.",
+    "notes": "r83: NetSurf JS upgrade - XHR/fetch, localStorage, Promise, URL, pages redraw after JS changes.",
     "files": [
       {
         "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -1421,10 +1421,10 @@
         "size": 13920
       },
       {
-        "path": "os/c5/c58d80104a376ef1c3210ab821ada17896ddee6a",
+        "path": "os/f4/f4200776ff21e4a6f1182a1794473130e1e3c168",
         "dest": "/system/apps/netsurf.elf",
-        "sha256": "c58d80104a376ef1c3210ab821ada17896ddee6ad25c6638d48d6408cab6ac0a",
-        "size": 4112312
+        "sha256": "f4200776ff21e4a6f1182a1794473130e1e3c16879b2b42ea8e6a72fb70bd448",
+        "size": 4151736
       },
       {
         "path": "os/6b/6b89c47d3be71c80b1db3a8de063aa1ce87f7141",
