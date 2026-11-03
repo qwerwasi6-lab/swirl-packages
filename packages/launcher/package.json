@@ -12,10 +12,8 @@
   "deps": [],
   "files": [
     {
-      "path": "packages/launcher/l.json",
       "dest": "/system/gterm/l.json",
-      "sha256": "d7631639e4336df4b1fd997f2ae5a2954df59ba0f7513b9dd956ede38dfd3767",
-      "size": 3829
+      "src": "l.json"
     }
   ]
 }
