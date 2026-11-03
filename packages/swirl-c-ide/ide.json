@@ -1,0 +1,13 @@
+{
+  "name": "ide",
+  "category": "dev",
+  "summary": "open Swirl IDE (optionally with a .c or .lua file)",
+  "usage": "ide [file.c|file.lua]",
+  "args": [ { "name": "file" } ],
+  "engine": "pipeline",
+  "steps": [
+    { "if": "$# >= 1",
+      "then": [ { "spawn": "/system/apps/swirlide.elf", "arg": "$1" } ],
+      "else": [ { "spawn": "/system/apps/swirlide.elf" } ] }
+  ]
+}
