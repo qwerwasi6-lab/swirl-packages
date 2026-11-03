@@ -395,7 +395,7 @@
         "lua"
       ],
       "files": [
-        { "path": "packages/swirl-ide/swirlide.elf", "dest": "/system/apps/swirlide.elf", "sha256": "6986cb258a56b7c7b7a6f98f371a7c9d94c9aabafb86e338d1ebf20b08ff3c57", "size": 106024 },
+        { "path": "packages/swirl-ide/swirlide.elf", "dest": "/system/apps/swirlide.elf", "sha256": "763c51bd1a755be87830613371bb75e1440ee05285bc81a533962d16ff969838", "size": 106024 },
         { "path": "packages/swirl-ide/ide.json", "dest": "/system/gterm/ide.json", "sha256": "940cdff68a6b826ae88bf6f20a5657d1bc26bea74f74473b1d977902c91ffe15", "size": 377 },
         { "path": "packages/swirl-ide/swirlide.png", "dest": "/system/apps/icons/swirlide.png", "sha256": "d79b5828b25101f74b47ed905b1e8a27d81589836114cfec9e486da6ca308a00", "size": 5909 }
       ]
