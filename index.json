@@ -1343,10 +1343,10 @@
   },
   "os": {
     "name": "SwirlOS",
-    "version": "r81",
+    "version": "r82",
     "abi": 2,
     "date": "2026-11-03",
-    "notes": "r81: Files scrollbar is draggable/clickable; NetSurf no longer fails on chunked pages that end by connection close, and shows the real reason for other errors.",
+    "notes": "r82: fixes NetSurf HeaderTooLarge (YouTube etc). Kernel TCP out-of-order fix (TLS MAC failed / chunked errors) needs the tripleboot kit update.",
     "files": [
       {
         "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -1421,9 +1421,9 @@
         "size": 13920
       },
       {
-        "path": "os/04/0430688246e453a385dd891fd7f21dc0dafd9eb8",
+        "path": "os/c5/c58d80104a376ef1c3210ab821ada17896ddee6a",
         "dest": "/system/apps/netsurf.elf",
-        "sha256": "0430688246e453a385dd891fd7f21dc0dafd9eb8c7e740519e71ab8db47592ac",
+        "sha256": "c58d80104a376ef1c3210ab821ada17896ddee6ad25c6638d48d6408cab6ac0a",
         "size": 4112312
       },
       {
