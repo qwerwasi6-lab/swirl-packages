@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r92",
+ "version": "r93",
  "abi": 2,
  "date": "2026-11-04",
- "notes": "r92: spm memory pool raised (fixes 'out of memory' installing browser).",
+ "notes": "r93: Store Get repairs leftover files from failed installs.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -222,9 +222,9 @@
    "size": 621240
   },
   {
-   "path": "os/a0/a008c436ff5906d327d5f2c251cf332e38225863",
+   "path": "os/8a/8a7e5c5dba77f35253d48eff040d37433a09c32c",
    "dest": "/system/apps/gui/gstore.elf",
-   "sha256": "a008c436ff5906d327d5f2c251cf332e38225863f6a5afc1204854cf87d8430b",
+   "sha256": "8a7e5c5dba77f35253d48eff040d37433a09c32c1375d1f99337cbaaba9e4400",
    "size": 105328
   },
   {
