@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r96",
+ "version": "r97",
  "abi": 2,
  "date": "2026-11-04",
- "notes": "r96: Intel Bay Trail GPU 2D acceleration (blitter present, safe fallback).",
+ "notes": "r97: Bay Trail GPU blits into the real scanout surface.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
