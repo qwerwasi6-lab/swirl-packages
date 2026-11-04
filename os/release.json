@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r85",
+ "version": "r86",
  "abi": 2,
  "date": "2026-11-04",
- "notes": "r85: spm retries stalled/dropped downloads (browser package now in 8 MB pieces). No kernel change; r84 kit still current.",
+ "notes": "r86: spm resumes stalled downloads (HTTP Range), longer retry budget.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -120,10 +120,10 @@
    "size": 9744
   },
   {
-   "path": "os/9b/9bee1d14a38dde188e42c7245cbdde3b8b9af832",
+   "path": "os/da/dac3e91902cfa59cb60279483c2dada2a9a38195",
    "dest": "/system/apps/spm.elf",
-   "sha256": "9bee1d14a38dde188e42c7245cbdde3b8b9af832a40777b90ee6793881bb07d1",
-   "size": 572640
+   "sha256": "dac3e91902cfa59cb60279483c2dada2a9a38195d70b0d16baf5351eaa581f58",
+   "size": 572784
   },
   {
    "path": "os/b4/b493638a50375819b1e94cbdd3a3473bd71600f3",
