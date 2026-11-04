@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r100",
+ "version": "r101",
  "abi": 2,
  "date": "2026-11-04",
- "notes": "r100: browser window copies only changed rows.",
+ "notes": "r101: event-driven waits in the Linux layer (browser IPC ~300x faster).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
