@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r94",
+ "version": "r95",
  "abi": 2,
  "date": "2026-11-04",
- "notes": "r94: mouse wheel, browser fills window, cleanup on close; browser 1.0.2.",
+ "notes": "r95: /proc/gpu Intel graphics probe.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
