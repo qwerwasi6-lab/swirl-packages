@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r84",
+ "version": "r85",
  "abi": 2,
  "date": "2026-11-04",
- "notes": "r84: Linux/POSIX layer upgrade + Web Browser (WebKit). Needs the r84 kernel kit for the browser; install the kit first.",
+ "notes": "r85: spm retries stalled/dropped downloads (browser package now in 8 MB pieces). No kernel change; r84 kit still current.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -120,9 +120,9 @@
    "size": 9744
   },
   {
-   "path": "os/57/57769e1cd0d72fbe4d9a4bd7af28e6d9264fc7a3",
+   "path": "os/9b/9bee1d14a38dde188e42c7245cbdde3b8b9af832",
    "dest": "/system/apps/spm.elf",
-   "sha256": "57769e1cd0d72fbe4d9a4bd7af28e6d9264fc7a3baa6aaa379fa3aaf82c9658c",
+   "sha256": "9bee1d14a38dde188e42c7245cbdde3b8b9af832a40777b90ee6793881bb07d1",
    "size": 572640
   },
   {

@@ -580,7 +580,21 @@
     "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part00",
     "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part01",
     "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part02",
-    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part03"
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part03",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part04",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part05",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part06",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part07",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part08",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part09",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part10",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part11",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part12",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part13",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part14",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part15",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part16",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part17"
    ]
   },
   {
@@ -989,7 +1003,15 @@
   },
   {
    "src": "f/usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so",
-   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so"
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so",
+   "parts": [
+    "f/usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so.part00",
+    "f/usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so.part01",
+    "f/usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so.part02",
+    "f/usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so.part03",
+    "f/usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so.part04",
+    "f/usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so.part05"
+   ]
   },
   {
    "src": "f/usr/lib/x86_64-linux-gnu/libgbm.so.1",
@@ -1257,7 +1279,13 @@
   },
   {
    "src": "f/usr/lib/x86_64-linux-gnu/libicudata.so.74.2",
-   "dest": "/linux/usr/lib/x86_64-linux-gnu/libicudata.so.74.2"
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libicudata.so.74.2",
+   "parts": [
+    "f/usr/lib/x86_64-linux-gnu/libicudata.so.74.2.part00",
+    "f/usr/lib/x86_64-linux-gnu/libicudata.so.74.2.part01",
+    "f/usr/lib/x86_64-linux-gnu/libicudata.so.74.2.part02",
+    "f/usr/lib/x86_64-linux-gnu/libicudata.so.74.2.part03"
+   ]
   },
   {
    "src": "f/usr/lib/x86_64-linux-gnu/libicui18n.so.74",
@@ -1289,7 +1317,13 @@
   },
   {
    "src": "f/usr/lib/x86_64-linux-gnu/libjavascriptcoregtk-4.1.so.0.10.14",
-   "dest": "/linux/usr/lib/x86_64-linux-gnu/libjavascriptcoregtk-4.1.so.0.10.14"
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libjavascriptcoregtk-4.1.so.0.10.14",
+   "parts": [
+    "f/usr/lib/x86_64-linux-gnu/libjavascriptcoregtk-4.1.so.0.10.14.part00",
+    "f/usr/lib/x86_64-linux-gnu/libjavascriptcoregtk-4.1.so.0.10.14.part01",
+    "f/usr/lib/x86_64-linux-gnu/libjavascriptcoregtk-4.1.so.0.10.14.part02",
+    "f/usr/lib/x86_64-linux-gnu/libjavascriptcoregtk-4.1.so.0.10.14.part03"
+   ]
   },
   {
    "src": "f/usr/lib/x86_64-linux-gnu/libjpeg.so.8",
@@ -1637,7 +1671,16 @@
    "parts": [
     "f/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0.21.10.part00",
     "f/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0.21.10.part01",
-    "f/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0.21.10.part02"
+    "f/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0.21.10.part02",
+    "f/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0.21.10.part03",
+    "f/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0.21.10.part04",
+    "f/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0.21.10.part05",
+    "f/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0.21.10.part06",
+    "f/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0.21.10.part07",
+    "f/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0.21.10.part08",
+    "f/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0.21.10.part09",
+    "f/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0.21.10.part10",
+    "f/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0.21.10.part11"
    ]
   },
   {
