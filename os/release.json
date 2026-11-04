@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r83",
+ "version": "r84",
  "abi": 2,
- "date": "2026-11-03",
- "notes": "r83: NetSurf JS upgrade - XHR/fetch, localStorage, Promise, URL, pages redraw after JS changes.",
+ "date": "2026-11-04",
+ "notes": "r84: Linux/POSIX layer upgrade + Web Browser (WebKit). Needs the r84 kernel kit for the browser; install the kit first.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/30/3056bf133b50f8983188b86b63ddbf69f2efc8ed",
+   "path": "os/81/81b0f63bf8962b58a73d8d1dcba963c89f8c75b8",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "3056bf133b50f8983188b86b63ddbf69f2efc8edff68af00bf680f335d0ce966",
-   "size": 1029920
+   "sha256": "81b0f63bf8962b58a73d8d1dcba963c89f8c75b8ba0dce0982bebd893acd3b2a",
+   "size": 1031104
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -120,9 +120,9 @@
    "size": 9744
   },
   {
-   "path": "os/04/04d56e8bef5ecc1df15bcb7a898375848a14a9d4",
+   "path": "os/57/57769e1cd0d72fbe4d9a4bd7af28e6d9264fc7a3",
    "dest": "/system/apps/spm.elf",
-   "sha256": "04d56e8bef5ecc1df15bcb7a898375848a14a9d462e134fa75c625f725e97bd4",
+   "sha256": "57769e1cd0d72fbe4d9a4bd7af28e6d9264fc7a3baa6aaa379fa3aaf82c9658c",
    "size": 572640
   },
   {
@@ -256,6 +256,12 @@
    "dest": "/system/apps/gui/gwadinst.elf",
    "sha256": "1b56ff1bd1f462ed9138f088a7c98e63527ccf46d0e7d553f85edd3d123a9649",
    "size": 593688
+  },
+  {
+   "path": "os/43/43e0b7e4af193742889ba3155e914619be5548e1",
+   "dest": "/system/apps/gui/gxview.elf",
+   "sha256": "43e0b7e4af193742889ba3155e914619be5548e1493acdc7531dd9753f997bc4",
+   "size": 52936
   },
   {
    "path": "os/eb/eb99223c9e2e890710df60821feca40a34462ae5",
@@ -737,6 +743,12 @@
    "size": 127
   },
   {
+   "path": "os/de/de30d393427fd099a79727cf48f16df8e217e627",
+   "dest": "/system/gterm/lx.json",
+   "sha256": "de30d393427fd099a79727cf48f16df8e217e6278313db391d0faa17f4d6541f",
+   "size": 379
+  },
+  {
    "path": "os/01/0184dd87e4e46b3768fd705a55cc8d0019470bdf",
    "dest": "/system/gterm/mkdir.json",
    "sha256": "0184dd87e4e46b3768fd705a55cc8d0019470bdfb88851c838a47f05b1c9fc6d",
@@ -945,6 +957,36 @@
    "dest": "/system/lib/libswirl.a",
    "sha256": "cde5ec50dfb3a5d67995c981f1a69a655f872869bbef5bb05ab197bef7a1ad6d",
    "size": 16964
+  },
+  {
+   "path": "os/bf/bf38dae77fbc2cdc44998df1b187345918c61ad3",
+   "dest": "/system/lx/fk",
+   "sha256": "bf38dae77fbc2cdc44998df1b187345918c61ad3f173c8e82e8ea8134d1004c7",
+   "size": 48472
+  },
+  {
+   "path": "os/dd/dd558d730de646d1ee33cb006ca0da62faf66ae0",
+   "dest": "/system/lx/mt",
+   "sha256": "dd558d730de646d1ee33cb006ca0da62faf66ae060be7d147ce699df1cead16c",
+   "size": 100008
+  },
+  {
+   "path": "os/d0/d08c6e9049ade316967eed16c8482dfadc7999db",
+   "dest": "/system/lx/sg",
+   "sha256": "d08c6e9049ade316967eed16c8482dfadc7999db94ff2e4844d00abfcec50f1f",
+   "size": 53440
+  },
+  {
+   "path": "os/49/490a5f8588eaadea660de0e57817b0fa10254567",
+   "dest": "/system/lx/sh",
+   "sha256": "490a5f8588eaadea660de0e57817b0fa10254567caecaa19c061f3df8544dcdb",
+   "size": 48752
+  },
+  {
+   "path": "os/74/745c85d08ecc551f15ac218c031901b8aa5a8891",
+   "dest": "/system/lx/us",
+   "sha256": "745c85d08ecc551f15ac218c031901b8aa5a88916d8e39e41acd4e81b64bc3a1",
+   "size": 48672
   },
   {
    "path": "os/de/de413409e6afc209bf900c2363df416e2f3346bf",

@@ -1,0 +1,12 @@
+{
+  "name": "lx",
+  "category": "system",
+  "summary": "run a Linux program (musl/glibc static-PIE ELF) on the Linux layer",
+  "usage": "lx PROGRAM [ARGS]   (bare names run from /system/lx/)",
+  "args": [ { "name": "cmd" } ],
+  "aliases": [ "linux" ],
+  "engine": "pipeline",
+  "steps": [
+    { "spawn": "/system/apps/lx", "arg": "$@", "follow": "/home/user/.lx/out.log" }
+  ]
+}

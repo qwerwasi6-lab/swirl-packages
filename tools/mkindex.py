@@ -41,7 +41,7 @@ def die(msg):
 def dest_ok(d):
     if not d.startswith("/") or len(d) > 160 or d.endswith("/") or ".." in d or "//" in d:
         return False
-    if not (d.startswith("/system/") or d.startswith("/home/user/")):
+    if not (d.startswith("/system/") or d.startswith("/home/user/") or d.startswith("/linux/")):
         return False
     return not (d.startswith("/system/kernel/") or d.startswith("/system/spm/"))
 
@@ -72,6 +72,22 @@ def main():
                 die(f"{name}: bad src path '{src}'")
             if not dest_ok(dest):
                 die(f"{name}: bad dest '{dest}'")
+            if ent.get("parts"):                      # big file shipped as pieces (spm appends them in order)
+                h = hashlib.sha256(); tot = 0; plist = []
+                for pt in ent["parts"]:
+                    prel = f"packages/{name}/{pt}"
+                    if not RPATH_RE.match(prel) or ".." in prel:
+                        die(f"{name}: bad part path '{pt}'")
+                    pp = os.path.join(ROOT, prel)
+                    if not os.path.isfile(pp):
+                        die(f"{name}: missing part {prel}")
+                    ph = hashlib.sha256(); n = 0
+                    with open(pp, "rb") as pf:
+                        for blk in iter(lambda: pf.read(1 << 20), b""):
+                            h.update(blk); ph.update(blk); n += len(blk)
+                    tot += n; plist.append({"path": prel, "size": n, "sha256": ph.hexdigest()})
+                files.append({"path": rel, "dest": dest, "sha256": h.hexdigest(), "size": tot, "parts": plist})
+                continue
             fpath = os.path.join(ROOT, rel)
             if not os.path.isfile(fpath):
                 if meta.get("skip_if_missing"):
@@ -118,7 +134,7 @@ def main():
         index["os"] = rel
     out = os.path.join(ROOT, "index.json")
     with open(out, "w") as f:
-        json.dump(index, f, indent=2)
+        json.dump(index, f, separators=(",", ":"))
         f.write("\n")
     print(f"mkindex: wrote index.json with {len(packages)} package(s)"
           + (f" + SwirlOS {index['os']['version']} release" if "os" in index else ""))

@@ -1,0 +1,3352 @@
+{
+ "name": "browser",
+ "version": "1.0.0",
+ "description": "A real web browser (WebKitGTK) running on SwirlOS's Linux layer.",
+ "author": "WebKit, Mesa, GTK and friends (Ubuntu 24.04 builds); SwirlOS bridge by Swirl",
+ "title": "Web Browser",
+ "category": "Apps",
+ "tagline": "Modern websites: WebKit, HTTPS, JavaScript.",
+ "long": "The WebKitGTK MiniBrowser from Ubuntu 24.04 running on the SwirlOS Linux layer, shown in a normal SwirlOS window.\\nHTTP and HTTPS with certificate checking, modern HTML/CSS/JavaScript. Software rendering (Mesa llvmpipe), so it is slower than a desktop browser.\\nBig download (about 400 MB) and needs the r84 kernel. Open it from the start menu (Web Browser).",
+ "publisher": "Swirl",
+ "license": "LGPL / MIT / GPL (Ubuntu packages)",
+ "color": "2E86E0",
+ "glyph": "tool",
+ "launch": "/system/apps/gui/gxview.elf",
+ "files": [
+  {
+   "src": "f/bin",
+   "dest": "/linux/bin"
+  },
+  {
+   "src": "f/etc/X11/Xreset",
+   "dest": "/linux/etc/X11/Xreset"
+  },
+  {
+   "src": "f/etc/X11/Xreset.d/README",
+   "dest": "/linux/etc/X11/Xreset.d/README"
+  },
+  {
+   "src": "f/etc/X11/Xresources/x11-common",
+   "dest": "/linux/etc/X11/Xresources/x11-common"
+  },
+  {
+   "src": "f/etc/X11/Xsession",
+   "dest": "/linux/etc/X11/Xsession"
+  },
+  {
+   "src": "f/etc/X11/Xsession.d/20dbus_xdg-runtime",
+   "dest": "/linux/etc/X11/Xsession.d/20dbus_xdg-runtime"
+  },
+  {
+   "src": "f/etc/X11/Xsession.d/20x11-common_process-args",
+   "dest": "/linux/etc/X11/Xsession.d/20x11-common_process-args"
+  },
+  {
+   "src": "f/etc/X11/Xsession.d/30x11-common_xresources",
+   "dest": "/linux/etc/X11/Xsession.d/30x11-common_xresources"
+  },
+  {
+   "src": "f/etc/X11/Xsession.d/35x11-common_xhost-local",
+   "dest": "/linux/etc/X11/Xsession.d/35x11-common_xhost-local"
+  },
+  {
+   "src": "f/etc/X11/Xsession.d/40x11-common_xsessionrc",
+   "dest": "/linux/etc/X11/Xsession.d/40x11-common_xsessionrc"
+  },
+  {
+   "src": "f/etc/X11/Xsession.d/50x11-common_determine-startup",
+   "dest": "/linux/etc/X11/Xsession.d/50x11-common_determine-startup"
+  },
+  {
+   "src": "f/etc/X11/Xsession.d/60x11-common_xdg_path",
+   "dest": "/linux/etc/X11/Xsession.d/60x11-common_xdg_path"
+  },
+  {
+   "src": "f/etc/X11/Xsession.d/90gpg-agent",
+   "dest": "/linux/etc/X11/Xsession.d/90gpg-agent"
+  },
+  {
+   "src": "f/etc/X11/Xsession.d/90x11-common_ssh-agent",
+   "dest": "/linux/etc/X11/Xsession.d/90x11-common_ssh-agent"
+  },
+  {
+   "src": "f/etc/X11/Xsession.d/99x11-common_start",
+   "dest": "/linux/etc/X11/Xsession.d/99x11-common_start"
+  },
+  {
+   "src": "f/etc/X11/Xsession.options",
+   "dest": "/linux/etc/X11/Xsession.options"
+  },
+  {
+   "src": "f/etc/X11/app-defaults/Editres",
+   "dest": "/linux/etc/X11/app-defaults/Editres"
+  },
+  {
+   "src": "f/etc/X11/app-defaults/Editres-color",
+   "dest": "/linux/etc/X11/app-defaults/Editres-color"
+  },
+  {
+   "src": "f/etc/X11/app-defaults/KOI8RXTerm",
+   "dest": "/linux/etc/X11/app-defaults/KOI8RXTerm"
+  },
+  {
+   "src": "f/etc/X11/app-defaults/KOI8RXTerm-color",
+   "dest": "/linux/etc/X11/app-defaults/KOI8RXTerm-color"
+  },
+  {
+   "src": "f/etc/X11/app-defaults/UXTerm",
+   "dest": "/linux/etc/X11/app-defaults/UXTerm"
+  },
+  {
+   "src": "f/etc/X11/app-defaults/UXTerm-color",
+   "dest": "/linux/etc/X11/app-defaults/UXTerm-color"
+  },
+  {
+   "src": "f/etc/X11/app-defaults/Viewres",
+   "dest": "/linux/etc/X11/app-defaults/Viewres"
+  },
+  {
+   "src": "f/etc/X11/app-defaults/Viewres-color",
+   "dest": "/linux/etc/X11/app-defaults/Viewres-color"
+  },
+  {
+   "src": "f/etc/X11/app-defaults/XFontSel",
+   "dest": "/linux/etc/X11/app-defaults/XFontSel"
+  },
+  {
+   "src": "f/etc/X11/app-defaults/XTerm",
+   "dest": "/linux/etc/X11/app-defaults/XTerm"
+  },
+  {
+   "src": "f/etc/X11/app-defaults/XTerm-color",
+   "dest": "/linux/etc/X11/app-defaults/XTerm-color"
+  },
+  {
+   "src": "f/etc/X11/app-defaults/Xfd",
+   "dest": "/linux/etc/X11/app-defaults/Xfd"
+  },
+  {
+   "src": "f/etc/X11/app-defaults/Xmessage",
+   "dest": "/linux/etc/X11/app-defaults/Xmessage"
+  },
+  {
+   "src": "f/etc/X11/app-defaults/Xmessage-color",
+   "dest": "/linux/etc/X11/app-defaults/Xmessage-color"
+  },
+  {
+   "src": "f/etc/X11/app-defaults/Xvidtune",
+   "dest": "/linux/etc/X11/app-defaults/Xvidtune"
+  },
+  {
+   "src": "f/etc/X11/fonts/Type1/xfonts-scalable.scale",
+   "dest": "/linux/etc/X11/fonts/Type1/xfonts-scalable.scale"
+  },
+  {
+   "src": "f/etc/X11/fonts/cyrillic/xfonts-cyrillic.alias",
+   "dest": "/linux/etc/X11/fonts/cyrillic/xfonts-cyrillic.alias"
+  },
+  {
+   "src": "f/etc/X11/rgb.txt",
+   "dest": "/linux/etc/X11/rgb.txt"
+  },
+  {
+   "src": "f/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf",
+   "dest": "/linux/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf",
+   "dest": "/linux/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf",
+   "dest": "/linux/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf",
+   "dest": "/linux/etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf",
+   "dest": "/linux/etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf",
+   "dest": "/linux/etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.avail/25-wqy-zenhei.conf",
+   "dest": "/linux/etc/fonts/conf.avail/25-wqy-zenhei.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.avail/57-dejavu-sans-mono.conf",
+   "dest": "/linux/etc/fonts/conf.avail/57-dejavu-sans-mono.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.avail/57-dejavu-sans.conf",
+   "dest": "/linux/etc/fonts/conf.avail/57-dejavu-sans.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.avail/57-dejavu-serif.conf",
+   "dest": "/linux/etc/fonts/conf.avail/57-dejavu-serif.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf",
+   "dest": "/linux/etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.avail/58-dejavu-lgc-sans.conf",
+   "dest": "/linux/etc/fonts/conf.avail/58-dejavu-lgc-sans.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.avail/58-dejavu-lgc-serif.conf",
+   "dest": "/linux/etc/fonts/conf.avail/58-dejavu-lgc-serif.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.avail/63-wqy-zenhei-sharp.conf",
+   "dest": "/linux/etc/fonts/conf.avail/63-wqy-zenhei-sharp.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.avail/64-wqy-zenhei.conf",
+   "dest": "/linux/etc/fonts/conf.avail/64-wqy-zenhei.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.avail/65-fonts-ipafont-gothic.conf",
+   "dest": "/linux/etc/fonts/conf.avail/65-fonts-ipafont-gothic.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.avail/65-fonts-lmodern.conf",
+   "dest": "/linux/etc/fonts/conf.avail/65-fonts-lmodern.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.avail/65-fonts-texgyre.conf",
+   "dest": "/linux/etc/fonts/conf.avail/65-fonts-texgyre.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/10-hinting-slight.conf",
+   "dest": "/linux/etc/fonts/conf.d/10-hinting-slight.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/10-scale-bitmap-fonts.conf",
+   "dest": "/linux/etc/fonts/conf.d/10-scale-bitmap-fonts.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/10-sub-pixel-rgb.conf",
+   "dest": "/linux/etc/fonts/conf.d/10-sub-pixel-rgb.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/10-yes-antialias.conf",
+   "dest": "/linux/etc/fonts/conf.d/10-yes-antialias.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/11-lcdfilter-default.conf",
+   "dest": "/linux/etc/fonts/conf.d/11-lcdfilter-default.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/12-unhinted-grayscale.conf",
+   "dest": "/linux/etc/fonts/conf.d/12-unhinted-grayscale.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/20-unhint-small-dejavu-lgc-sans-mono.conf",
+   "dest": "/linux/etc/fonts/conf.d/20-unhint-small-dejavu-lgc-sans-mono.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/20-unhint-small-dejavu-lgc-sans.conf",
+   "dest": "/linux/etc/fonts/conf.d/20-unhint-small-dejavu-lgc-sans.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/20-unhint-small-dejavu-lgc-serif.conf",
+   "dest": "/linux/etc/fonts/conf.d/20-unhint-small-dejavu-lgc-serif.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/20-unhint-small-dejavu-sans-mono.conf",
+   "dest": "/linux/etc/fonts/conf.d/20-unhint-small-dejavu-sans-mono.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/20-unhint-small-dejavu-sans.conf",
+   "dest": "/linux/etc/fonts/conf.d/20-unhint-small-dejavu-sans.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/20-unhint-small-dejavu-serif.conf",
+   "dest": "/linux/etc/fonts/conf.d/20-unhint-small-dejavu-serif.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/20-unhint-small-vera.conf",
+   "dest": "/linux/etc/fonts/conf.d/20-unhint-small-vera.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/25-wqy-zenhei.conf",
+   "dest": "/linux/etc/fonts/conf.d/25-wqy-zenhei.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/30-metric-aliases.conf",
+   "dest": "/linux/etc/fonts/conf.d/30-metric-aliases.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/30-opensymbol.conf",
+   "dest": "/linux/etc/fonts/conf.d/30-opensymbol.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/40-nonlatin.conf",
+   "dest": "/linux/etc/fonts/conf.d/40-nonlatin.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/45-generic.conf",
+   "dest": "/linux/etc/fonts/conf.d/45-generic.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/45-latin.conf",
+   "dest": "/linux/etc/fonts/conf.d/45-latin.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/48-spacing.conf",
+   "dest": "/linux/etc/fonts/conf.d/48-spacing.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/49-sansserif.conf",
+   "dest": "/linux/etc/fonts/conf.d/49-sansserif.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/50-user.conf",
+   "dest": "/linux/etc/fonts/conf.d/50-user.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/51-local.conf",
+   "dest": "/linux/etc/fonts/conf.d/51-local.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/56-prefer-inter.conf",
+   "dest": "/linux/etc/fonts/conf.d/56-prefer-inter.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/57-dejavu-sans-mono.conf",
+   "dest": "/linux/etc/fonts/conf.d/57-dejavu-sans-mono.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/57-dejavu-sans.conf",
+   "dest": "/linux/etc/fonts/conf.d/57-dejavu-sans.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/57-dejavu-serif.conf",
+   "dest": "/linux/etc/fonts/conf.d/57-dejavu-serif.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/58-dejavu-lgc-sans-mono.conf",
+   "dest": "/linux/etc/fonts/conf.d/58-dejavu-lgc-sans-mono.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/58-dejavu-lgc-sans.conf",
+   "dest": "/linux/etc/fonts/conf.d/58-dejavu-lgc-sans.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/58-dejavu-lgc-serif.conf",
+   "dest": "/linux/etc/fonts/conf.d/58-dejavu-lgc-serif.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/60-generic.conf",
+   "dest": "/linux/etc/fonts/conf.d/60-generic.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/60-latin.conf",
+   "dest": "/linux/etc/fonts/conf.d/60-latin.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/64-wqy-zenhei.conf",
+   "dest": "/linux/etc/fonts/conf.d/64-wqy-zenhei.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/65-fonts-ipafont-gothic.conf",
+   "dest": "/linux/etc/fonts/conf.d/65-fonts-ipafont-gothic.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/65-fonts-lmodern.conf",
+   "dest": "/linux/etc/fonts/conf.d/65-fonts-lmodern.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/65-fonts-persian.conf",
+   "dest": "/linux/etc/fonts/conf.d/65-fonts-persian.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/65-fonts-texgyre.conf",
+   "dest": "/linux/etc/fonts/conf.d/65-fonts-texgyre.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/65-nonlatin.conf",
+   "dest": "/linux/etc/fonts/conf.d/65-nonlatin.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/69-unifont.conf",
+   "dest": "/linux/etc/fonts/conf.d/69-unifont.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/70-fonts-noto-cjk.conf",
+   "dest": "/linux/etc/fonts/conf.d/70-fonts-noto-cjk.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/70-no-bitmaps-except-emoji.conf",
+   "dest": "/linux/etc/fonts/conf.d/70-no-bitmaps-except-emoji.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/80-delicious.conf",
+   "dest": "/linux/etc/fonts/conf.d/80-delicious.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/90-synthetic.conf",
+   "dest": "/linux/etc/fonts/conf.d/90-synthetic.conf"
+  },
+  {
+   "src": "f/etc/fonts/conf.d/README",
+   "dest": "/linux/etc/fonts/conf.d/README"
+  },
+  {
+   "src": "f/etc/fonts/fonts.conf",
+   "dest": "/linux/etc/fonts/fonts.conf"
+  },
+  {
+   "src": "f/etc/ssl/certs/ca-certificates.crt",
+   "dest": "/linux/etc/ssl/certs/ca-certificates.crt"
+  },
+  {
+   "src": "f/lib",
+   "dest": "/linux/lib"
+  },
+  {
+   "src": "f/lib64",
+   "dest": "/linux/lib64"
+  },
+  {
+   "src": "f/usr/bin/Xvfb",
+   "dest": "/linux/usr/bin/Xvfb"
+  },
+  {
+   "src": "f/usr/bin/cat",
+   "dest": "/linux/usr/bin/cat"
+  },
+  {
+   "src": "f/usr/bin/dash",
+   "dest": "/linux/usr/bin/dash"
+  },
+  {
+   "src": "f/usr/bin/head",
+   "dest": "/linux/usr/bin/head"
+  },
+  {
+   "src": "f/usr/bin/ls",
+   "dest": "/linux/usr/bin/ls"
+  },
+  {
+   "src": "f/usr/bin/sh",
+   "dest": "/linux/usr/bin/sh"
+  },
+  {
+   "src": "f/usr/bin/sleep",
+   "dest": "/linux/usr/bin/sleep"
+  },
+  {
+   "src": "f/usr/bin/swirl-browser.sh",
+   "dest": "/linux/usr/bin/swirl-browser.sh"
+  },
+  {
+   "src": "f/usr/bin/xbridge",
+   "dest": "/linux/usr/bin/xbridge"
+  },
+  {
+   "src": "f/usr/bin/xdpyinfo",
+   "dest": "/linux/usr/bin/xdpyinfo"
+  },
+  {
+   "src": "f/usr/bin/xkbcomp",
+   "dest": "/linux/usr/bin/xkbcomp"
+  },
+  {
+   "src": "f/usr/bin/xsetroot",
+   "dest": "/linux/usr/bin/xsetroot"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/dri/kms_swrast_dri.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/dri/kms_swrast_dri.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/dri/libdril_dri.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/dri/libdril_dri.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/dri/swrast_dri.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/dri/swrast_dri.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders.cache",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders.cache"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-ani.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-ani.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-bmp.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-bmp.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-gif.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-gif.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-icns.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-icns.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-ico.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-ico.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-pnm.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-pnm.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-qtif.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-qtif.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-tga.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-tga.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-tiff.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-tiff.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-xbm.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-xbm.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-xpm.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-xpm.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gio/modules/libgiognutls.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gio/modules/libgiognutls.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libEGL.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libEGL.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libEGL.so.1.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libEGL.so.1.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libEGL_mesa.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libEGL_mesa.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libEGL_mesa.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libEGL_mesa.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGL.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGL.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGL.so.1.7.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGL.so.1.7.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGLX.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGLX.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGLX.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGLX.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGLdispatch.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGLdispatch.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGLdispatch.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGLdispatch.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1",
+   "parts": [
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part00",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part01",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part02",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part03"
+   ]
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libX11-xcb.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libX11-xcb.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libX11-xcb.so.1.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libX11-xcb.so.1.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libX11.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libX11.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libX11.so.6.4.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libX11.so.6.4.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXau.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXau.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXau.so.6.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXau.so.6.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXcomposite.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXcomposite.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXcomposite.so.1.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXcomposite.so.1.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXcursor.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXcursor.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXdamage.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXdamage.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXdamage.so.1.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXdamage.so.1.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXdmcp.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXdmcp.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXext.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXext.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXfixes.so.3",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXfixes.so.3"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXfont2.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXfont2.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXfont2.so.2.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXfont2.so.2.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXi.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXi.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXi.so.6.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXi.so.6.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXinerama.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXinerama.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXmuu.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXmuu.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXmuu.so.1.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXmuu.so.1.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXrandr.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXrandr.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXrender.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXrender.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXtst.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXtst.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXxf86dga.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXxf86dga.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXxf86dga.so.1.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXxf86dga.so.1.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXxf86vm.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXxf86vm.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXxf86vm.so.1.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXxf86vm.so.1.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libatk-1.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libatk-1.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.25209.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.25209.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libatk-bridge-2.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libatk-bridge-2.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libatk-bridge-2.0.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libatk-bridge-2.0.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libatomic.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libatomic.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libatomic.so.1.2.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libatomic.so.1.2.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libatspi.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libatspi.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libatspi.so.0.0.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libatspi.so.0.0.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libaudit.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libaudit.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libaudit.so.1.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libaudit.so.1.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libblkid.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libblkid.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libblkid.so.1.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libblkid.so.1.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libbrotlidec.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libbrotlidec.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libbrotlidec.so.1.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libbrotlidec.so.1.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libbsd.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libbsd.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libbsd.so.0.12.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libbsd.so.0.12.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libbz2.so.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libbz2.so.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libc.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libc.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libcairo-gobject.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libcairo-gobject.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libcairo-gobject.so.2.11800.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libcairo-gobject.so.2.11800.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libcairo.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libcairo.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libcairo.so.2.11800.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libcairo.so.2.11800.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libcap-ng.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libcap-ng.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libcap-ng.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libcap-ng.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libcap.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libcap.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libcap.so.2.66",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libcap.so.2.66"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libcom_err.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libcom_err.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libcom_err.so.2.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libcom_err.so.2.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libdatrie.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libdatrie.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libdatrie.so.1.4.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libdatrie.so.1.4.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libdbus-1.so.3",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libdbus-1.so.3"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libdbus-1.so.3.32.4",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libdbus-1.so.3.32.4"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libdrm.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libdrm.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libdrm.so.2.125.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libdrm.so.2.125.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libdrm_amdgpu.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libdrm_amdgpu.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libdrm_amdgpu.so.1.125.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libdrm_amdgpu.so.1.125.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.125.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.125.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libdw-0.190.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libdw-0.190.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libdw.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libdw.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libedit.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libedit.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libedit.so.2.0.72",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libedit.so.2.0.72"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libelf-0.190.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libelf-0.190.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libelf.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libelf.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libenchant-2.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libenchant-2.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libenchant-2.so.2.3.3",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libenchant-2.so.2.3.3"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libepoxy.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libepoxy.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libepoxy.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libepoxy.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libevdev.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libevdev.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libevdev.so.2.3.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libevdev.so.2.3.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libexpat.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libexpat.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libffi.so.8",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libffi.so.8"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libffi.so.8.1.4",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libffi.so.8.1.4"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libfontconfig.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libfontconfig.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libfontconfig.so.1.12.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libfontconfig.so.1.12.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libfontenc.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libfontenc.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libfontenc.so.1.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libfontenc.so.1.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libfreetype.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libfreetype.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libfreetype.so.6.20.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libfreetype.so.6.20.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libfribidi.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libfribidi.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libfribidi.so.0.4.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libfribidi.so.0.4.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgbm.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgbm.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgbm.so.1.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgbm.so.1.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgcc_s.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgck-1.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgck-1.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgck-1.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgck-1.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgcr-base-3.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgcr-base-3.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgcr-base-3.so.1.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgcr-base-3.so.1.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgcr-ui-3.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgcr-ui-3.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgcr-ui-3.so.1.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgcr-ui-3.so.1.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgcrypt.so.20",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgcrypt.so.20"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgcrypt.so.20.4.3",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgcrypt.so.20.4.3"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgdk-3.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgdk-3.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgdk-3.so.0.2409.32",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgdk-3.so.0.2409.32"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0.4200.10",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0.4200.10"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgio-2.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgio-2.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.8000.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.8000.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.8000.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.8000.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.8000.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgmp.so.10",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgmp.so.10"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgmp.so.10.5.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgmp.so.10.5.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgnutls.so.30",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgnutls.so.30"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgnutls.so.30.37.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgnutls.so.30.37.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.8000.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.8000.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgpg-error.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgpg-error.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgpg-error.so.0.34.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgpg-error.so.0.34.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgraphite2.so.3",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgraphite2.so.3"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgraphite2.so.3.2.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgraphite2.so.3.2.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstallocators-1.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstallocators-1.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstallocators-1.0.so.0.2402.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstallocators-1.0.so.0.2402.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstapp-1.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstapp-1.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstapp-1.0.so.0.2402.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstapp-1.0.so.0.2402.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstaudio-1.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstaudio-1.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstaudio-1.0.so.0.2402.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstaudio-1.0.so.0.2402.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstbase-1.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstbase-1.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstbase-1.0.so.0.2402.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstbase-1.0.so.0.2402.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstfft-1.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstfft-1.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstfft-1.0.so.0.2402.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstfft-1.0.so.0.2402.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstgl-1.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstgl-1.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstgl-1.0.so.0.2402.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstgl-1.0.so.0.2402.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstpbutils-1.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstpbutils-1.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstpbutils-1.0.so.0.2402.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstpbutils-1.0.so.0.2402.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so.0.2402.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so.0.2402.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgsttag-1.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgsttag-1.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgsttag-1.0.so.0.2402.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgsttag-1.0.so.0.2402.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstvideo-1.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstvideo-1.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstvideo-1.0.so.0.2402.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstvideo-1.0.so.0.2402.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgtk-3.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgtk-3.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgtk-3.so.0.2409.32",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgtk-3.so.0.2409.32"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgudev-1.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgudev-1.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgudev-1.0.so.0.3.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgudev-1.0.so.0.3.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libharfbuzz-icu.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libharfbuzz-icu.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libharfbuzz-icu.so.0.60830.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libharfbuzz-icu.so.0.60830.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libharfbuzz.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libharfbuzz.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libharfbuzz.so.0.60830.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libharfbuzz.so.0.60830.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libhogweed.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libhogweed.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libhogweed.so.6.8",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libhogweed.so.6.8"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libhyphen.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libhyphen.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libhyphen.so.0.3.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libhyphen.so.0.3.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libicudata.so.74",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libicudata.so.74"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libicudata.so.74.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libicudata.so.74.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libicui18n.so.74",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libicui18n.so.74"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libicui18n.so.74.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libicui18n.so.74.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libicuuc.so.74",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libicuuc.so.74"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libicuuc.so.74.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libicuuc.so.74.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libidn2.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libidn2.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libidn2.so.0.4.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libidn2.so.0.4.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libjavascriptcoregtk-4.1.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libjavascriptcoregtk-4.1.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libjavascriptcoregtk-4.1.so.0.10.14",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libjavascriptcoregtk-4.1.so.0.10.14"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libjpeg.so.8",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libjpeg.so.8"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libjpeg.so.8.2.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libjpeg.so.8.2.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libk5crypto.so.3",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libk5crypto.so.3"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libk5crypto.so.3.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libk5crypto.so.3.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libkeyutils.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libkeyutils.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libkeyutils.so.1.10",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libkeyutils.so.1.10"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libkrb5.so.3",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libkrb5.so.3"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libkrb5.so.3.3",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libkrb5.so.3.3"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libkrb5support.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libkrb5support.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/liblcms2.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/liblcms2.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.14",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/liblcms2.so.2.0.14"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/liblz4.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/liblz4.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/liblz4.so.1.9.4",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/liblz4.so.1.9.4"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/liblzma.so.5",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/liblzma.so.5"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/liblzma.so.5.4.5",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/liblzma.so.5.4.5"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libm.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libm.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libmanette-0.2.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libmanette-0.2.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libmd.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libmd.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libmd.so.0.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libmd.so.0.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libmount.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libmount.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libmount.so.1.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libmount.so.1.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libnettle.so.8",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libnettle.so.8"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libnettle.so.8.8",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libnettle.so.8.8"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libnghttp2.so.14",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libnghttp2.so.14"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libnghttp2.so.14.26.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libnghttp2.so.14.26.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/liborc-0.4.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/liborc-0.4.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/liborc-0.4.so.0.38.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/liborc-0.4.so.0.38.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libp11-kit.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libp11-kit.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libp11-kit.so.0.3.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libp11-kit.so.0.3.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libpango-1.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libpango-1.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libpango-1.0.so.0.5200.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libpango-1.0.so.0.5200.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0.5200.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0.5200.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0.5200.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0.5200.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libpciaccess.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libpciaccess.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libpciaccess.so.0.11.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libpciaccess.so.0.11.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.11.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.11.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libpixman-1.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libpixman-1.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libpixman-1.so.0.42.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libpixman-1.so.0.42.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libpng16.so.16",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libpng16.so.16"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libpng16.so.16.43.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libpng16.so.16.43.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libpsl.so.5",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libpsl.so.5"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libpsl.so.5.3.4",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libpsl.so.5.3.4"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libresolv.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libresolv.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libseccomp.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libseccomp.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libseccomp.so.2.5.5",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libseccomp.so.2.5.5"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libsecret-1.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libsecret-1.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libsecret-1.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libsecret-1.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libselinux.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libselinux.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libsensors.so.5",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libsensors.so.5"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libsensors.so.5.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libsensors.so.5.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libsharpyuv.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libsharpyuv.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libsharpyuv.so.0.0.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libsharpyuv.so.0.0.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libsoup-3.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libsoup-3.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libsoup-3.0.so.0.7.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libsoup-3.0.so.0.7.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libsqlite3.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libsqlite3.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libstdc++.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libsystemd.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libsystemd.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libsystemd.so.0.38.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libsystemd.so.0.38.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libtasn1.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libtasn1.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libtasn1.so.6.6.3",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libtasn1.so.6.6.3"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libthai.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libthai.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libthai.so.0.3.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libthai.so.0.3.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libtinfo.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libtinfo.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libtinfo.so.6.4",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libtinfo.so.6.4"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libudev.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libudev.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libudev.so.1.7.8",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libudev.so.1.7.8"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libunistring.so.5",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libunistring.so.5"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libunistring.so.5.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libunistring.so.5.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libunwind.so.8",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libunwind.so.8"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libunwind.so.8.0.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libunwind.so.8.0.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwayland-client.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwayland-client.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwayland-client.so.0.22.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwayland-client.so.0.22.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0.22.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0.22.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwayland-egl.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwayland-egl.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwayland-egl.so.1.22.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwayland-egl.so.1.22.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwayland-server.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwayland-server.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwayland-server.so.0.22.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwayland-server.so.0.22.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0.21.10",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0.21.10",
+   "parts": [
+    "f/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0.21.10.part00",
+    "f/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0.21.10.part01",
+    "f/usr/lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0.21.10.part02"
+   ]
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwebp.so.7",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwebp.so.7"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwebp.so.7.1.8",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwebp.so.7.1.8"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwebpdemux.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwebpdemux.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwebpdemux.so.2.0.14",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwebpdemux.so.2.0.14"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwebpmux.so.3",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwebpmux.so.3"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwebpmux.so.3.0.13",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwebpmux.so.3.0.13"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-dri3.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-dri3.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-dri3.so.0.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-dri3.so.0.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-present.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-present.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-present.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-present.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-randr.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-randr.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-randr.so.0.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-randr.so.0.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-render.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-render.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-render.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-render.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-shm.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-shm.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-shm.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-shm.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-sync.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-sync.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-sync.so.1.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-sync.so.1.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-xfixes.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-xfixes.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-xfixes.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-xfixes.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxkbcommon.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxkbcommon.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxkbcommon.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxkbcommon.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxkbfile.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxkbfile.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxkbfile.so.1.0.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxkbfile.so.1.0.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxml2.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxml2.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxml2.so.2.9.14",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxml2.so.2.9.14"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxshmfence.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxshmfence.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxshmfence.so.1.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxshmfence.so.1.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxslt.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxslt.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxslt.so.1.1.39",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxslt.so.1.1.39"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libz.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libz.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libzstd.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libzstd.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libzstd.so.1.5.5",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libzstd.so.1.5.5"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/MiniBrowser",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/MiniBrowser"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/WebKitNetworkProcess",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/WebKitNetworkProcess"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/WebKitWebProcess",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/WebKitWebProcess"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/injected-bundle/libwebkit2gtkinjectedbundle.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/injected-bundle/libwebkit2gtkinjectedbundle.so"
+  },
+  {
+   "src": "f/usr/lib64/ld-linux-x86-64.so.2",
+   "dest": "/linux/usr/lib64/ld-linux-x86-64.so.2"
+  },
+  {
+   "src": "f/usr/local/lib/libz.so.1",
+   "dest": "/linux/usr/local/lib/libz.so.1"
+  },
+  {
+   "src": "f/usr/local/lib/libz.so.1.3.1.zlib-ng",
+   "dest": "/linux/usr/local/lib/libz.so.1.3.1.zlib-ng"
+  },
+  {
+   "src": "f/usr/share/X11/rgb.txt",
+   "dest": "/linux/usr/share/X11/rgb.txt"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/compat/README",
+   "dest": "/linux/usr/share/X11/xkb/compat/README"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/compat/accessx",
+   "dest": "/linux/usr/share/X11/xkb/compat/accessx"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/compat/basic",
+   "dest": "/linux/usr/share/X11/xkb/compat/basic"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/compat/caps",
+   "dest": "/linux/usr/share/X11/xkb/compat/caps"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/compat/complete",
+   "dest": "/linux/usr/share/X11/xkb/compat/complete"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/compat/iso9995",
+   "dest": "/linux/usr/share/X11/xkb/compat/iso9995"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/compat/japan",
+   "dest": "/linux/usr/share/X11/xkb/compat/japan"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/compat/ledcaps",
+   "dest": "/linux/usr/share/X11/xkb/compat/ledcaps"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/compat/ledcompose",
+   "dest": "/linux/usr/share/X11/xkb/compat/ledcompose"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/compat/lednum",
+   "dest": "/linux/usr/share/X11/xkb/compat/lednum"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/compat/ledscroll",
+   "dest": "/linux/usr/share/X11/xkb/compat/ledscroll"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/compat/level5",
+   "dest": "/linux/usr/share/X11/xkb/compat/level5"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/compat/misc",
+   "dest": "/linux/usr/share/X11/xkb/compat/misc"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/compat/mousekeys",
+   "dest": "/linux/usr/share/X11/xkb/compat/mousekeys"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/compat/olpc",
+   "dest": "/linux/usr/share/X11/xkb/compat/olpc"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/compat/pc",
+   "dest": "/linux/usr/share/X11/xkb/compat/pc"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/compat/pc98",
+   "dest": "/linux/usr/share/X11/xkb/compat/pc98"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/compat/xfree86",
+   "dest": "/linux/usr/share/X11/xkb/compat/xfree86"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/compat/xtest",
+   "dest": "/linux/usr/share/X11/xkb/compat/xtest"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/README",
+   "dest": "/linux/usr/share/X11/xkb/geometry/README"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/amiga",
+   "dest": "/linux/usr/share/X11/xkb/geometry/amiga"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/ataritt",
+   "dest": "/linux/usr/share/X11/xkb/geometry/ataritt"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/chicony",
+   "dest": "/linux/usr/share/X11/xkb/geometry/chicony"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/dell",
+   "dest": "/linux/usr/share/X11/xkb/geometry/dell"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/digital_vndr/lk",
+   "dest": "/linux/usr/share/X11/xkb/geometry/digital_vndr/lk"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/digital_vndr/pc",
+   "dest": "/linux/usr/share/X11/xkb/geometry/digital_vndr/pc"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/digital_vndr/unix",
+   "dest": "/linux/usr/share/X11/xkb/geometry/digital_vndr/unix"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/everex",
+   "dest": "/linux/usr/share/X11/xkb/geometry/everex"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/fujitsu",
+   "dest": "/linux/usr/share/X11/xkb/geometry/fujitsu"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/hhk",
+   "dest": "/linux/usr/share/X11/xkb/geometry/hhk"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/hp",
+   "dest": "/linux/usr/share/X11/xkb/geometry/hp"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/keytronic",
+   "dest": "/linux/usr/share/X11/xkb/geometry/keytronic"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/kinesis",
+   "dest": "/linux/usr/share/X11/xkb/geometry/kinesis"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/macintosh",
+   "dest": "/linux/usr/share/X11/xkb/geometry/macintosh"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/microsoft",
+   "dest": "/linux/usr/share/X11/xkb/geometry/microsoft"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/nec",
+   "dest": "/linux/usr/share/X11/xkb/geometry/nec"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/nokia",
+   "dest": "/linux/usr/share/X11/xkb/geometry/nokia"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/northgate",
+   "dest": "/linux/usr/share/X11/xkb/geometry/northgate"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/pc",
+   "dest": "/linux/usr/share/X11/xkb/geometry/pc"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/sanwa",
+   "dest": "/linux/usr/share/X11/xkb/geometry/sanwa"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/sgi_vndr/O2",
+   "dest": "/linux/usr/share/X11/xkb/geometry/sgi_vndr/O2"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/sgi_vndr/indigo",
+   "dest": "/linux/usr/share/X11/xkb/geometry/sgi_vndr/indigo"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/sgi_vndr/indy",
+   "dest": "/linux/usr/share/X11/xkb/geometry/sgi_vndr/indy"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/sony",
+   "dest": "/linux/usr/share/X11/xkb/geometry/sony"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/steelseries",
+   "dest": "/linux/usr/share/X11/xkb/geometry/steelseries"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/sun",
+   "dest": "/linux/usr/share/X11/xkb/geometry/sun"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/teck",
+   "dest": "/linux/usr/share/X11/xkb/geometry/teck"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/thinkpad",
+   "dest": "/linux/usr/share/X11/xkb/geometry/thinkpad"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/typematrix",
+   "dest": "/linux/usr/share/X11/xkb/geometry/typematrix"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/geometry/winbook",
+   "dest": "/linux/usr/share/X11/xkb/geometry/winbook"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/README",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/README"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/aliases",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/aliases"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/amiga",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/amiga"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/ataritt",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/ataritt"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/digital_vndr/lk",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/digital_vndr/lk"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/digital_vndr/pc",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/digital_vndr/pc"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/empty",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/empty"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/evdev",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/evdev"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/fujitsu",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/fujitsu"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/hp",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/hp"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/ibm",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/ibm"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/jolla",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/jolla"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/macintosh",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/macintosh"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/olpc",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/olpc"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/sgi_vndr/indigo",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/sgi_vndr/indigo"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/sgi_vndr/indy",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/sgi_vndr/indy"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/sgi_vndr/iris",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/sgi_vndr/iris"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/sony",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/sony"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/sun",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/sun"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/xfree86",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/xfree86"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/keycodes/xfree98",
+   "dest": "/linux/usr/share/X11/xkb/keycodes/xfree98"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/rules/README",
+   "dest": "/linux/usr/share/X11/xkb/rules/README"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/rules/base",
+   "dest": "/linux/usr/share/X11/xkb/rules/base"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/rules/base.extras.xml",
+   "dest": "/linux/usr/share/X11/xkb/rules/base.extras.xml"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/rules/base.lst",
+   "dest": "/linux/usr/share/X11/xkb/rules/base.lst"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/rules/base.xml",
+   "dest": "/linux/usr/share/X11/xkb/rules/base.xml"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/rules/evdev",
+   "dest": "/linux/usr/share/X11/xkb/rules/evdev"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/rules/evdev.extras.xml",
+   "dest": "/linux/usr/share/X11/xkb/rules/evdev.extras.xml"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/rules/evdev.lst",
+   "dest": "/linux/usr/share/X11/xkb/rules/evdev.lst"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/rules/evdev.xml",
+   "dest": "/linux/usr/share/X11/xkb/rules/evdev.xml"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/rules/xfree98",
+   "dest": "/linux/usr/share/X11/xkb/rules/xfree98"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/rules/xkb.dtd",
+   "dest": "/linux/usr/share/X11/xkb/rules/xkb.dtd"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/rules/xorg",
+   "dest": "/linux/usr/share/X11/xkb/rules/xorg"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/rules/xorg.lst",
+   "dest": "/linux/usr/share/X11/xkb/rules/xorg.lst"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/rules/xorg.xml",
+   "dest": "/linux/usr/share/X11/xkb/rules/xorg.xml"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/af",
+   "dest": "/linux/usr/share/X11/xkb/symbols/af"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/al",
+   "dest": "/linux/usr/share/X11/xkb/symbols/al"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/altwin",
+   "dest": "/linux/usr/share/X11/xkb/symbols/altwin"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/am",
+   "dest": "/linux/usr/share/X11/xkb/symbols/am"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/ancient",
+   "dest": "/linux/usr/share/X11/xkb/symbols/ancient"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/apl",
+   "dest": "/linux/usr/share/X11/xkb/symbols/apl"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/ara",
+   "dest": "/linux/usr/share/X11/xkb/symbols/ara"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/at",
+   "dest": "/linux/usr/share/X11/xkb/symbols/at"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/au",
+   "dest": "/linux/usr/share/X11/xkb/symbols/au"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/az",
+   "dest": "/linux/usr/share/X11/xkb/symbols/az"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/ba",
+   "dest": "/linux/usr/share/X11/xkb/symbols/ba"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/bd",
+   "dest": "/linux/usr/share/X11/xkb/symbols/bd"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/be",
+   "dest": "/linux/usr/share/X11/xkb/symbols/be"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/bg",
+   "dest": "/linux/usr/share/X11/xkb/symbols/bg"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/bqn",
+   "dest": "/linux/usr/share/X11/xkb/symbols/bqn"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/br",
+   "dest": "/linux/usr/share/X11/xkb/symbols/br"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/brai",
+   "dest": "/linux/usr/share/X11/xkb/symbols/brai"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/bt",
+   "dest": "/linux/usr/share/X11/xkb/symbols/bt"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/bw",
+   "dest": "/linux/usr/share/X11/xkb/symbols/bw"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/by",
+   "dest": "/linux/usr/share/X11/xkb/symbols/by"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/ca",
+   "dest": "/linux/usr/share/X11/xkb/symbols/ca"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/capslock",
+   "dest": "/linux/usr/share/X11/xkb/symbols/capslock"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/cd",
+   "dest": "/linux/usr/share/X11/xkb/symbols/cd"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/ch",
+   "dest": "/linux/usr/share/X11/xkb/symbols/ch"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/cm",
+   "dest": "/linux/usr/share/X11/xkb/symbols/cm"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/cn",
+   "dest": "/linux/usr/share/X11/xkb/symbols/cn"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/compose",
+   "dest": "/linux/usr/share/X11/xkb/symbols/compose"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/ctrl",
+   "dest": "/linux/usr/share/X11/xkb/symbols/ctrl"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/cz",
+   "dest": "/linux/usr/share/X11/xkb/symbols/cz"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/de",
+   "dest": "/linux/usr/share/X11/xkb/symbols/de"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/digital_vndr/lk",
+   "dest": "/linux/usr/share/X11/xkb/symbols/digital_vndr/lk"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/digital_vndr/pc",
+   "dest": "/linux/usr/share/X11/xkb/symbols/digital_vndr/pc"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/digital_vndr/us",
+   "dest": "/linux/usr/share/X11/xkb/symbols/digital_vndr/us"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/digital_vndr/vt",
+   "dest": "/linux/usr/share/X11/xkb/symbols/digital_vndr/vt"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/dk",
+   "dest": "/linux/usr/share/X11/xkb/symbols/dk"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/dz",
+   "dest": "/linux/usr/share/X11/xkb/symbols/dz"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/ee",
+   "dest": "/linux/usr/share/X11/xkb/symbols/ee"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/eg",
+   "dest": "/linux/usr/share/X11/xkb/symbols/eg"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/empty",
+   "dest": "/linux/usr/share/X11/xkb/symbols/empty"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/epo",
+   "dest": "/linux/usr/share/X11/xkb/symbols/epo"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/es",
+   "dest": "/linux/usr/share/X11/xkb/symbols/es"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/et",
+   "dest": "/linux/usr/share/X11/xkb/symbols/et"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/eu",
+   "dest": "/linux/usr/share/X11/xkb/symbols/eu"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/eurosign",
+   "dest": "/linux/usr/share/X11/xkb/symbols/eurosign"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/fi",
+   "dest": "/linux/usr/share/X11/xkb/symbols/fi"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/fo",
+   "dest": "/linux/usr/share/X11/xkb/symbols/fo"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/fr",
+   "dest": "/linux/usr/share/X11/xkb/symbols/fr"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/fujitsu_vndr/jp",
+   "dest": "/linux/usr/share/X11/xkb/symbols/fujitsu_vndr/jp"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/fujitsu_vndr/us",
+   "dest": "/linux/usr/share/X11/xkb/symbols/fujitsu_vndr/us"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/gb",
+   "dest": "/linux/usr/share/X11/xkb/symbols/gb"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/ge",
+   "dest": "/linux/usr/share/X11/xkb/symbols/ge"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/gh",
+   "dest": "/linux/usr/share/X11/xkb/symbols/gh"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/gn",
+   "dest": "/linux/usr/share/X11/xkb/symbols/gn"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/gr",
+   "dest": "/linux/usr/share/X11/xkb/symbols/gr"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/group",
+   "dest": "/linux/usr/share/X11/xkb/symbols/group"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/hp_vndr/us",
+   "dest": "/linux/usr/share/X11/xkb/symbols/hp_vndr/us"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/hr",
+   "dest": "/linux/usr/share/X11/xkb/symbols/hr"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/hu",
+   "dest": "/linux/usr/share/X11/xkb/symbols/hu"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/id",
+   "dest": "/linux/usr/share/X11/xkb/symbols/id"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/ie",
+   "dest": "/linux/usr/share/X11/xkb/symbols/ie"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/il",
+   "dest": "/linux/usr/share/X11/xkb/symbols/il"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/in",
+   "dest": "/linux/usr/share/X11/xkb/symbols/in"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/inet",
+   "dest": "/linux/usr/share/X11/xkb/symbols/inet"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/iq",
+   "dest": "/linux/usr/share/X11/xkb/symbols/iq"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/ir",
+   "dest": "/linux/usr/share/X11/xkb/symbols/ir"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/is",
+   "dest": "/linux/usr/share/X11/xkb/symbols/is"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/it",
+   "dest": "/linux/usr/share/X11/xkb/symbols/it"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/jolla_vndr/sbj",
+   "dest": "/linux/usr/share/X11/xkb/symbols/jolla_vndr/sbj"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/jp",
+   "dest": "/linux/usr/share/X11/xkb/symbols/jp"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/ke",
+   "dest": "/linux/usr/share/X11/xkb/symbols/ke"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/keypad",
+   "dest": "/linux/usr/share/X11/xkb/symbols/keypad"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/kg",
+   "dest": "/linux/usr/share/X11/xkb/symbols/kg"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/kh",
+   "dest": "/linux/usr/share/X11/xkb/symbols/kh"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/kpdl",
+   "dest": "/linux/usr/share/X11/xkb/symbols/kpdl"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/kr",
+   "dest": "/linux/usr/share/X11/xkb/symbols/kr"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/kz",
+   "dest": "/linux/usr/share/X11/xkb/symbols/kz"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/la",
+   "dest": "/linux/usr/share/X11/xkb/symbols/la"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/latam",
+   "dest": "/linux/usr/share/X11/xkb/symbols/latam"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/latin",
+   "dest": "/linux/usr/share/X11/xkb/symbols/latin"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/level2",
+   "dest": "/linux/usr/share/X11/xkb/symbols/level2"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/level3",
+   "dest": "/linux/usr/share/X11/xkb/symbols/level3"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/level5",
+   "dest": "/linux/usr/share/X11/xkb/symbols/level5"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/lk",
+   "dest": "/linux/usr/share/X11/xkb/symbols/lk"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/lt",
+   "dest": "/linux/usr/share/X11/xkb/symbols/lt"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/lv",
+   "dest": "/linux/usr/share/X11/xkb/symbols/lv"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/ma",
+   "dest": "/linux/usr/share/X11/xkb/symbols/ma"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/macintosh_vndr/apple",
+   "dest": "/linux/usr/share/X11/xkb/symbols/macintosh_vndr/apple"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/macintosh_vndr/ch",
+   "dest": "/linux/usr/share/X11/xkb/symbols/macintosh_vndr/ch"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/macintosh_vndr/de",
+   "dest": "/linux/usr/share/X11/xkb/symbols/macintosh_vndr/de"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/macintosh_vndr/dk",
+   "dest": "/linux/usr/share/X11/xkb/symbols/macintosh_vndr/dk"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/macintosh_vndr/fi",
+   "dest": "/linux/usr/share/X11/xkb/symbols/macintosh_vndr/fi"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/macintosh_vndr/fr",
+   "dest": "/linux/usr/share/X11/xkb/symbols/macintosh_vndr/fr"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/macintosh_vndr/gb",
+   "dest": "/linux/usr/share/X11/xkb/symbols/macintosh_vndr/gb"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/macintosh_vndr/is",
+   "dest": "/linux/usr/share/X11/xkb/symbols/macintosh_vndr/is"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/macintosh_vndr/it",
+   "dest": "/linux/usr/share/X11/xkb/symbols/macintosh_vndr/it"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/macintosh_vndr/jp",
+   "dest": "/linux/usr/share/X11/xkb/symbols/macintosh_vndr/jp"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/macintosh_vndr/latam",
+   "dest": "/linux/usr/share/X11/xkb/symbols/macintosh_vndr/latam"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/macintosh_vndr/nl",
+   "dest": "/linux/usr/share/X11/xkb/symbols/macintosh_vndr/nl"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/macintosh_vndr/no",
+   "dest": "/linux/usr/share/X11/xkb/symbols/macintosh_vndr/no"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/macintosh_vndr/pt",
+   "dest": "/linux/usr/share/X11/xkb/symbols/macintosh_vndr/pt"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/macintosh_vndr/se",
+   "dest": "/linux/usr/share/X11/xkb/symbols/macintosh_vndr/se"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/macintosh_vndr/us",
+   "dest": "/linux/usr/share/X11/xkb/symbols/macintosh_vndr/us"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/md",
+   "dest": "/linux/usr/share/X11/xkb/symbols/md"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/me",
+   "dest": "/linux/usr/share/X11/xkb/symbols/me"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/mk",
+   "dest": "/linux/usr/share/X11/xkb/symbols/mk"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/ml",
+   "dest": "/linux/usr/share/X11/xkb/symbols/ml"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/mm",
+   "dest": "/linux/usr/share/X11/xkb/symbols/mm"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/mn",
+   "dest": "/linux/usr/share/X11/xkb/symbols/mn"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/mt",
+   "dest": "/linux/usr/share/X11/xkb/symbols/mt"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/mv",
+   "dest": "/linux/usr/share/X11/xkb/symbols/mv"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/my",
+   "dest": "/linux/usr/share/X11/xkb/symbols/my"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/nbsp",
+   "dest": "/linux/usr/share/X11/xkb/symbols/nbsp"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/nec_vndr/jp",
+   "dest": "/linux/usr/share/X11/xkb/symbols/nec_vndr/jp"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/ng",
+   "dest": "/linux/usr/share/X11/xkb/symbols/ng"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/nl",
+   "dest": "/linux/usr/share/X11/xkb/symbols/nl"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/no",
+   "dest": "/linux/usr/share/X11/xkb/symbols/no"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/nokia_vndr/rx-44",
+   "dest": "/linux/usr/share/X11/xkb/symbols/nokia_vndr/rx-44"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/nokia_vndr/rx-51",
+   "dest": "/linux/usr/share/X11/xkb/symbols/nokia_vndr/rx-51"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/nokia_vndr/su-8w",
+   "dest": "/linux/usr/share/X11/xkb/symbols/nokia_vndr/su-8w"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/np",
+   "dest": "/linux/usr/share/X11/xkb/symbols/np"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/nz",
+   "dest": "/linux/usr/share/X11/xkb/symbols/nz"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/olpc",
+   "dest": "/linux/usr/share/X11/xkb/symbols/olpc"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/parens",
+   "dest": "/linux/usr/share/X11/xkb/symbols/parens"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/pc",
+   "dest": "/linux/usr/share/X11/xkb/symbols/pc"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/ph",
+   "dest": "/linux/usr/share/X11/xkb/symbols/ph"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/pk",
+   "dest": "/linux/usr/share/X11/xkb/symbols/pk"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/pl",
+   "dest": "/linux/usr/share/X11/xkb/symbols/pl"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/pt",
+   "dest": "/linux/usr/share/X11/xkb/symbols/pt"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/ro",
+   "dest": "/linux/usr/share/X11/xkb/symbols/ro"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/rs",
+   "dest": "/linux/usr/share/X11/xkb/symbols/rs"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/ru",
+   "dest": "/linux/usr/share/X11/xkb/symbols/ru"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/rupeesign",
+   "dest": "/linux/usr/share/X11/xkb/symbols/rupeesign"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/se",
+   "dest": "/linux/usr/share/X11/xkb/symbols/se"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sgi_vndr/jp",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sgi_vndr/jp"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sharp_vndr/sl-c3x00",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sharp_vndr/sl-c3x00"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sharp_vndr/ws003sh",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sharp_vndr/ws003sh"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sharp_vndr/ws007sh",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sharp_vndr/ws007sh"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sharp_vndr/ws011sh",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sharp_vndr/ws011sh"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sharp_vndr/ws020sh",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sharp_vndr/ws020sh"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/shift",
+   "dest": "/linux/usr/share/X11/xkb/symbols/shift"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/si",
+   "dest": "/linux/usr/share/X11/xkb/symbols/si"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sk",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sk"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sn",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sn"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sony_vndr/us",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sony_vndr/us"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/srvr_ctrl",
+   "dest": "/linux/usr/share/X11/xkb/symbols/srvr_ctrl"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/ara",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/ara"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/be",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/be"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/br",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/br"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/ca",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/ca"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/ch",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/ch"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/cz",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/cz"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/de",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/de"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/dk",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/dk"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/ee",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/ee"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/es",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/es"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/fi",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/fi"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/fr",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/fr"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/gb",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/gb"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/gr",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/gr"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/it",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/it"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/jp",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/jp"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/kr",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/kr"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/lt",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/lt"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/lv",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/lv"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/nl",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/nl"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/no",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/no"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/pl",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/pl"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/pt",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/pt"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/ro",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/ro"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/ru",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/ru"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/se",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/se"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/sk",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/sk"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/solaris",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/solaris"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/tr",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/tr"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/tw",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/tw"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/ua",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/ua"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sun_vndr/us",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sun_vndr/us"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/sy",
+   "dest": "/linux/usr/share/X11/xkb/symbols/sy"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/terminate",
+   "dest": "/linux/usr/share/X11/xkb/symbols/terminate"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/tg",
+   "dest": "/linux/usr/share/X11/xkb/symbols/tg"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/th",
+   "dest": "/linux/usr/share/X11/xkb/symbols/th"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/tj",
+   "dest": "/linux/usr/share/X11/xkb/symbols/tj"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/tm",
+   "dest": "/linux/usr/share/X11/xkb/symbols/tm"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/tr",
+   "dest": "/linux/usr/share/X11/xkb/symbols/tr"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/trans",
+   "dest": "/linux/usr/share/X11/xkb/symbols/trans"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/tw",
+   "dest": "/linux/usr/share/X11/xkb/symbols/tw"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/typo",
+   "dest": "/linux/usr/share/X11/xkb/symbols/typo"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/tz",
+   "dest": "/linux/usr/share/X11/xkb/symbols/tz"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/ua",
+   "dest": "/linux/usr/share/X11/xkb/symbols/ua"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/us",
+   "dest": "/linux/usr/share/X11/xkb/symbols/us"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/uz",
+   "dest": "/linux/usr/share/X11/xkb/symbols/uz"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/vn",
+   "dest": "/linux/usr/share/X11/xkb/symbols/vn"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/xfree68_vndr/amiga",
+   "dest": "/linux/usr/share/X11/xkb/symbols/xfree68_vndr/amiga"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/xfree68_vndr/ataritt",
+   "dest": "/linux/usr/share/X11/xkb/symbols/xfree68_vndr/ataritt"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/symbols/za",
+   "dest": "/linux/usr/share/X11/xkb/symbols/za"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/types/README",
+   "dest": "/linux/usr/share/X11/xkb/types/README"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/types/basic",
+   "dest": "/linux/usr/share/X11/xkb/types/basic"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/types/cancel",
+   "dest": "/linux/usr/share/X11/xkb/types/cancel"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/types/caps",
+   "dest": "/linux/usr/share/X11/xkb/types/caps"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/types/complete",
+   "dest": "/linux/usr/share/X11/xkb/types/complete"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/types/default",
+   "dest": "/linux/usr/share/X11/xkb/types/default"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/types/extra",
+   "dest": "/linux/usr/share/X11/xkb/types/extra"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/types/iso9995",
+   "dest": "/linux/usr/share/X11/xkb/types/iso9995"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/types/level5",
+   "dest": "/linux/usr/share/X11/xkb/types/level5"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/types/mousekeys",
+   "dest": "/linux/usr/share/X11/xkb/types/mousekeys"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/types/nokia",
+   "dest": "/linux/usr/share/X11/xkb/types/nokia"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/types/numpad",
+   "dest": "/linux/usr/share/X11/xkb/types/numpad"
+  },
+  {
+   "src": "f/usr/share/X11/xkb/types/pc",
+   "dest": "/linux/usr/share/X11/xkb/types/pc"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/10-hinting-slight.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/10-hinting-slight.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/10-scale-bitmap-fonts.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/10-scale-bitmap-fonts.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/10-sub-pixel-rgb.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/10-sub-pixel-rgb.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/10-yes-antialias.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/10-yes-antialias.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/11-lcdfilter-default.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/11-lcdfilter-default.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/20-unhint-small-vera.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/20-unhint-small-vera.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/30-metric-aliases.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/30-metric-aliases.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/30-opensymbol.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/30-opensymbol.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/40-nonlatin.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/40-nonlatin.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/45-generic.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/45-generic.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/45-latin.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/45-latin.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/48-spacing.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/48-spacing.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/49-sansserif.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/49-sansserif.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/50-user.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/50-user.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/51-local.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/51-local.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/60-generic.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/60-generic.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/60-latin.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/60-latin.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/65-fonts-persian.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/65-fonts-persian.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/65-nonlatin.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/65-nonlatin.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/69-unifont.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/69-unifont.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/70-fonts-noto-cjk.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/70-fonts-noto-cjk.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/70-no-bitmaps-except-emoji.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/70-no-bitmaps-except-emoji.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/80-delicious.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/80-delicious.conf"
+  },
+  {
+   "src": "f/usr/share/fontconfig/conf.avail/90-synthetic.conf",
+   "dest": "/linux/usr/share/fontconfig/conf.avail/90-synthetic.conf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuMathTeXGyre.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuMathTeXGyre.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Oblique.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Oblique.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Bold.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Bold.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed.ttf"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/10_gsettings-desktop-schemas.gschema.override",
+   "dest": "/linux/usr/share/glib-2.0/schemas/10_gsettings-desktop-schemas.gschema.override"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/gschema.dtd",
+   "dest": "/linux/usr/share/glib-2.0/schemas/gschema.dtd"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/gschemas.compiled",
+   "dest": "/linux/usr/share/glib-2.0/schemas/gschemas.compiled"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.applications.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.applications.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.interface.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.interface.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.keyboard.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.keyboard.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.magnifier.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.magnifier.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.mouse.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.mouse.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.app-folders.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.app-folders.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.background.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.background.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.calendar.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.calendar.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.datetime.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.datetime.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.default-applications.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.default-applications.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.enums.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.enums.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.input-sources.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.input-sources.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.interface.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.interface.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.lockdown.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.lockdown.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.media-handling.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.media-handling.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.notifications.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.notifications.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.peripherals.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.peripherals.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.privacy.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.privacy.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.screensaver.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.screensaver.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.search-providers.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.search-providers.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.session.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.session.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.sound.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.sound.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.thumbnail-cache.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.thumbnail-cache.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.thumbnailers.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.thumbnailers.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.wm.keybindings.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.wm.keybindings.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.desktop.wm.preferences.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.desktop.wm.preferences.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.system.locale.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.system.locale.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.system.location.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.system.location.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gnome.system.proxy.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gnome.system.proxy.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gtk.Settings.ColorChooser.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gtk.Settings.ColorChooser.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gtk.Settings.Debug.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gtk.Settings.Debug.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gtk.Settings.EmojiChooser.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gtk.Settings.EmojiChooser.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gtk.Settings.FileChooser.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gtk.Settings.FileChooser.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gtk.gtk4.Settings.ColorChooser.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gtk.gtk4.Settings.ColorChooser.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gtk.gtk4.Settings.Debug.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gtk.gtk4.Settings.Debug.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gtk.gtk4.Settings.EmojiChooser.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gtk.gtk4.Settings.EmojiChooser.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glib-2.0/schemas/org.gtk.gtk4.Settings.FileChooser.gschema.xml",
+   "dest": "/linux/usr/share/glib-2.0/schemas/org.gtk.gtk4.Settings.FileChooser.gschema.xml"
+  },
+  {
+   "src": "f/usr/share/glvnd/egl_vendor.d/50_mesa.json",
+   "dest": "/linux/usr/share/glvnd/egl_vendor.d/50_mesa.json"
+  },
+  {
+   "src": "f/usr/share/icons/hicolor/index.theme",
+   "dest": "/linux/usr/share/icons/hicolor/index.theme"
+  },
+  {
+   "src": "f/usr/share/mime/mime.cache",
+   "dest": "/linux/usr/share/mime/mime.cache"
+  },
+  {
+   "src": "f/usr/share/swirl-home.html",
+   "dest": "/linux/usr/share/swirl-home.html"
+  }
+ ]
+}
