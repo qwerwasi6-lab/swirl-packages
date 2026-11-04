@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r99",
+ "version": "r100",
  "abi": 2,
  "date": "2026-11-04",
- "notes": "r99: Bay Trail GPU: writable scanout mapping + exact backbuffer addresses.",
+ "notes": "r100: browser window copies only changed rows.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -258,10 +258,10 @@
    "size": 593688
   },
   {
-   "path": "os/49/495f8ee038c40f468ce32f07a8744d38a0131cd1",
+   "path": "os/dc/dcd71b0bf318dceeb3270116b15649fd309eb707",
    "dest": "/system/apps/gui/gxview.elf",
-   "sha256": "495f8ee038c40f468ce32f07a8744d38a0131cd158d864b0191e2829d1ca76c2",
-   "size": 53136
+   "sha256": "dcd71b0bf318dceeb3270116b15649fd309eb707381d1622ca0e7bbd26bef4bd",
+   "size": 53224
   },
   {
    "path": "os/ca/ca27a9fc900beec9d396f4361fc40bbd0d49f903",
