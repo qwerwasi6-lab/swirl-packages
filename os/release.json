@@ -120,9 +120,9 @@
    "size": 9744
   },
   {
-   "path": "os/f7/f7cf5994c6882b1dd961a841f558166c970f086f",
+   "path": "os/dc/dcff8d14115d98468c51e1227c740acb6edc753e",
    "dest": "/system/apps/spm.elf",
-   "sha256": "f7cf5994c6882b1dd961a841f558166c970f086f77b13c55c881c7e04d8c6d38",
+   "sha256": "dcff8d14115d98468c51e1227c740acb6edc753e6d69c1d2e167ce306a30b547",
    "size": 576944
   },
   {
