@@ -1,6 +1,6 @@
 {
  "name": "browser",
- "version": "1.0.0",
+ "version": "1.0.1",
  "description": "A real web browser (WebKitGTK) running on SwirlOS's Linux layer.",
  "author": "WebKit, Mesa, GTK and friends (Ubuntu 24.04 builds); SwirlOS bridge by Swirl",
  "title": "Web Browser",
@@ -16,6 +16,10 @@
   {
    "src": "f/bin",
    "dest": "/linux/bin"
+  },
+  {
+   "src": "f/dev/.keep",
+   "dest": "/linux/dev/.keep"
   },
   {
    "src": "f/etc/X11/Xreset",
@@ -148,6 +152,14 @@
   {
    "src": "f/etc/X11/rgb.txt",
    "dest": "/linux/etc/X11/rgb.txt"
+  },
+  {
+   "src": "f/etc/X11/xkb/.keep",
+   "dest": "/linux/etc/X11/xkb/.keep"
+  },
+  {
+   "src": "f/etc/X11/xorg.conf.d/.keep",
+   "dest": "/linux/etc/X11/xorg.conf.d/.keep"
   },
   {
    "src": "f/etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf",
@@ -412,6 +424,18 @@
   {
    "src": "f/lib64",
    "dest": "/linux/lib64"
+  },
+  {
+   "src": "f/proc/.keep",
+   "dest": "/linux/proc/.keep"
+  },
+  {
+   "src": "f/run/.keep",
+   "dest": "/linux/run/.keep"
+  },
+  {
+   "src": "f/tmp/.keep",
+   "dest": "/linux/tmp/.keep"
   },
   {
    "src": "f/usr/bin/Xvfb",
@@ -3390,6 +3414,18 @@
   {
    "src": "f/usr/share/swirl-home.html",
    "dest": "/linux/usr/share/swirl-home.html"
+  },
+  {
+   "src": "f/var/lib/xkb/.keep",
+   "dest": "/linux/var/lib/xkb/.keep"
+  },
+  {
+   "src": "f/var/run/.keep",
+   "dest": "/linux/var/run/.keep"
+  },
+  {
+   "src": "f/var/tmp/.keep",
+   "dest": "/linux/var/tmp/.keep"
   }
  ]
 }
