@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r89",
+ "version": "r90",
  "abi": 2,
  "date": "2026-11-04",
- "notes": "r89: kernel sends TCP window updates (fixes stalls on big downloads).",
+ "notes": "r90: spm handles very long file names (fixes browser install).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -120,10 +120,10 @@
    "size": 9744
   },
   {
-   "path": "os/4d/4d286e3918c033064d69d917cb8f39851a4a6d24",
+   "path": "os/f7/f7cf5994c6882b1dd961a841f558166c970f086f",
    "dest": "/system/apps/spm.elf",
-   "sha256": "4d286e3918c033064d69d917cb8f39851a4a6d2439b127a2c03e530ed0717b55",
-   "size": 576904
+   "sha256": "f7cf5994c6882b1dd961a841f558166c970f086f77b13c55c881c7e04d8c6d38",
+   "size": 576944
   },
   {
    "path": "os/b4/b493638a50375819b1e94cbdd3a3473bd71600f3",
