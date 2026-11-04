@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r88",
+ "version": "r89",
  "abi": 2,
  "date": "2026-11-04",
- "notes": "r88: spm keeps partial downloads across failed installs and resumes them.",
+ "notes": "r89: kernel sends TCP window updates (fixes stalls on big downloads).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
