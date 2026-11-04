@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r103",
- "abi": 2,
+ "version": "r104",
+ "abi": 3,
  "date": "2026-11-04",
- "notes": "r103: kernel memory-allocator crash fix; browser window polls adaptively.",
+ "notes": "r104: system updater installs new kernels itself (Software Update); more sockets/processes for the browser.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -120,10 +120,10 @@
    "size": 9744
   },
   {
-   "path": "os/dc/dcff8d14115d98468c51e1227c740acb6edc753e",
+   "path": "os/59/5940ea31c455123e459f7e812e606c626487514a",
    "dest": "/system/apps/spm.elf",
-   "sha256": "dcff8d14115d98468c51e1227c740acb6edc753e6d69c1d2e167ce306a30b547",
-   "size": 576944
+   "sha256": "5940ea31c455123e459f7e812e606c626487514aaa225199af9cfa58d6409dfc",
+   "size": 581416
   },
   {
    "path": "os/b4/b493638a50375819b1e94cbdd3a3473bd71600f3",
@@ -210,9 +210,9 @@
    "size": 332096
   },
   {
-   "path": "os/2b/2b7a9cf69dfb8a25809dca44624302e969608e5e",
+   "path": "os/07/07b4973bfeaec8175232378a25f423da0097bab0",
    "dest": "/system/apps/gui/gsettings.elf",
-   "sha256": "2b7a9cf69dfb8a25809dca44624302e969608e5e60431b6510df1ba60f3886b1",
+   "sha256": "07b4973bfeaec8175232378a25f423da0097bab0d3ee6fea044852b48658c9d4",
    "size": 897272
   },
   {
@@ -388,6 +388,12 @@
    "dest": "/system/apps/icons/wallpaper.png",
    "sha256": "965044a48da7eba5616734bd194c4af369d735b5c290ebddb8d749d763327614",
    "size": 6575
+  },
+  {
+   "path": "os/01/019f1183fcf3271c258545d729462b726ee69671",
+   "dest": "/system/boot/swirlcore.boot.elf",
+   "sha256": "019f1183fcf3271c258545d729462b726ee69671fef9d9917eb4eeb6ddc46613",
+   "size": 918344
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
