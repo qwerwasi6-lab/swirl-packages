@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r98",
+ "version": "r99",
  "abi": 2,
  "date": "2026-11-04",
- "notes": "r98: GPU blit diagnostics + display stride.",
+ "notes": "r99: Bay Trail GPU: writable scanout mapping + exact backbuffer addresses.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
