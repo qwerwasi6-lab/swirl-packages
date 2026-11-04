@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r97",
+ "version": "r98",
  "abi": 2,
  "date": "2026-11-04",
- "notes": "r97: Bay Trail GPU blits into the real scanout surface.",
+ "notes": "r98: GPU blit diagnostics + display stride.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
