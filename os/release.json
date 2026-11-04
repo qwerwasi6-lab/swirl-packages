@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r91",
+ "version": "r92",
  "abi": 2,
  "date": "2026-11-04",
- "notes": "r91: Web Browser menu entry appears right after install.",
+ "notes": "r92: spm memory pool raised (fixes 'out of memory' installing browser).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
