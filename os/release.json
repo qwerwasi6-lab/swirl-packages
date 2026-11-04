@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r93",
+ "version": "r94",
  "abi": 2,
  "date": "2026-11-04",
- "notes": "r93: Store Get repairs leftover files from failed installs.",
+ "notes": "r94: mouse wheel, browser fills window, cleanup on close; browser 1.0.2.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/af/af5cc08afce124af966aee3f58ffd5592a08237c",
+   "path": "os/94/94a408d9127e41cf48d3ed867dc657ebc84d2fac",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "af5cc08afce124af966aee3f58ffd5592a08237cb05724a95f58b3a960bd7913",
-   "size": 1031232
+   "sha256": "94a408d9127e41cf48d3ed867dc657ebc84d2fac24a76a2aec6047193a69fb4f",
+   "size": 1031984
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -258,10 +258,10 @@
    "size": 593688
   },
   {
-   "path": "os/43/43e0b7e4af193742889ba3155e914619be5548e1",
+   "path": "os/89/8947ab1fdda8a0aef9e9088c959e95f876d9d7bc",
    "dest": "/system/apps/gui/gxview.elf",
-   "sha256": "43e0b7e4af193742889ba3155e914619be5548e1493acdc7531dd9753f997bc4",
-   "size": 52936
+   "sha256": "8947ab1fdda8a0aef9e9088c959e95f876d9d7bc66edf34fe9f437ca56124c6b",
+   "size": 53136
   },
   {
    "path": "os/eb/eb99223c9e2e890710df60821feca40a34462ae5",

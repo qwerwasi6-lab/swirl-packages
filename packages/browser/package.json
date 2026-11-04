@@ -1,6 +1,6 @@
 {
  "name": "browser",
- "version": "1.0.1",
+ "version": "1.0.2",
  "description": "A real web browser (WebKitGTK) running on SwirlOS's Linux layer.",
  "author": "WebKit, Mesa, GTK and friends (Ubuntu 24.04 builds); SwirlOS bridge by Swirl",
  "title": "Web Browser",
@@ -3234,6 +3234,10 @@
   {
    "src": "f/usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed.ttf",
    "dest": "/linux/usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed.ttf"
+  },
+  {
+   "src": "f/usr/share/fonts/truetype/droid/DroidSansFallbackFull.ttf",
+   "dest": "/linux/usr/share/fonts/truetype/droid/DroidSansFallbackFull.ttf"
   },
   {
    "src": "f/usr/share/glib-2.0/schemas/10_gsettings-desktop-schemas.gschema.override",
