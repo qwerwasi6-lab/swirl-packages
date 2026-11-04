@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r102",
+ "version": "r103",
  "abi": 2,
  "date": "2026-11-04",
- "notes": "r102: browser window polls every 10 ms.",
+ "notes": "r103: kernel memory-allocator crash fix; browser window polls adaptively.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -258,9 +258,9 @@
    "size": 593688
   },
   {
-   "path": "os/d5/d5297ee5a23a6da1c4a2d46cf00680d847741388",
+   "path": "os/4b/4b26cca44dcd65b831b032b345d02dd5d3b5bc83",
    "dest": "/system/apps/gui/gxview.elf",
-   "sha256": "d5297ee5a23a6da1c4a2d46cf00680d847741388b4046af2d261820bd9c4d834",
+   "sha256": "4b26cca44dcd65b831b032b345d02dd5d3b5bc832c0a4202bacaba8c7c4eab4d",
    "size": 53224
   },
   {
