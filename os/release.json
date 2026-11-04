@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r90",
+ "version": "r91",
  "abi": 2,
  "date": "2026-11-04",
- "notes": "r90: spm handles very long file names (fixes browser install).",
+ "notes": "r91: Web Browser menu entry appears right after install.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/81/81b0f63bf8962b58a73d8d1dcba963c89f8c75b8",
+   "path": "os/af/af5cc08afce124af966aee3f58ffd5592a08237c",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "81b0f63bf8962b58a73d8d1dcba963c89f8c75b8ba0dce0982bebd893acd3b2a",
-   "size": 1031104
+   "sha256": "af5cc08afce124af966aee3f58ffd5592a08237cb05724a95f58b3a960bd7913",
+   "size": 1031232
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
