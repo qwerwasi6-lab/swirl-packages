@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r104",
+ "version": "r105",
  "abi": 3,
- "date": "2026-11-04",
- "notes": "r104: system updater installs new kernels itself (Software Update); more sockets/processes for the browser.",
+ "date": "2026-11-05",
+ "notes": "r105: mouse capture, SDL resize fix, ClassiCube support",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/31/31a2d6e5868bdc096438936b4b7b21a2e28ac97e",
+   "path": "os/65/65b541b78f1f511ce126421ab27e416ba0389e9d",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "31a2d6e5868bdc096438936b4b7b21a2e28ac97e60319e3a2809331d97f64fc5",
-   "size": 1032208
+   "sha256": "65b541b78f1f511ce126421ab27e416ba0389e9dc292be63d8751a15ea252752",
+   "size": 1032848
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -216,15 +216,15 @@
    "size": 897272
   },
   {
-   "path": "os/53/5330fa4df3ad92bec3f7498b666ed3090807d6a7",
+   "path": "os/9f/9f3c3f913b570659b3e344ffb9d370546071c877",
    "dest": "/system/apps/gui/gsetup.elf",
-   "sha256": "5330fa4df3ad92bec3f7498b666ed3090807d6a7aaa35988a82590d4e2c4a62a",
-   "size": 621272
+   "sha256": "9f3c3f913b570659b3e344ffb9d370546071c877ffbf49eb41859f46df2d7954",
+   "size": 621304
   },
   {
-   "path": "os/df/dfecfe593b7ea4150fa9d2aec6f0ee4b4d6e7d2b",
+   "path": "os/b4/b40cebb78613fb034f216396feb1b3cc08078e80",
    "dest": "/system/apps/gui/gstore.elf",
-   "sha256": "dfecfe593b7ea4150fa9d2aec6f0ee4b4d6e7d2b1265c12a919df7222e8d2973",
+   "sha256": "b40cebb78613fb034f216396feb1b3cc08078e80cd5a9c43b1a43fcb4ffce77f",
    "size": 105328
   },
   {
@@ -390,10 +390,10 @@
    "size": 6575
   },
   {
-   "path": "os/01/019f1183fcf3271c258545d729462b726ee69671",
+   "path": "os/a6/a66a62271c9f90226b87365e542bbe557802747d",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "019f1183fcf3271c258545d729462b726ee69671fef9d9917eb4eeb6ddc46613",
-   "size": 918344
+   "sha256": "a66a62271c9f90226b87365e542bbe557802747d52d270a2624bd1bc0bd2ab2d",
+   "size": 918608
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
@@ -953,10 +953,10 @@
    "size": 599
   },
   {
-   "path": "os/ee/ee0d3c15a25d6b402cb3ab3db156153d2bd85b38",
+   "path": "os/3d/3db9e44f533ec8f4ec7e09db02a2672a26b2d77e",
    "dest": "/system/lib/libsdl2.swo",
-   "sha256": "ee0d3c15a25d6b402cb3ab3db156153d2bd85b3840452b457faacf720ecbef5c",
-   "size": 165016
+   "sha256": "3db9e44f533ec8f4ec7e09db02a2672a26b2d77ea3fbb654b6192ac63c6778c8",
+   "size": 165056
   },
   {
    "path": "os/cd/cde5ec50dfb3a5d67995c981f1a69a655f872869",
