@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r86",
+ "version": "r87",
  "abi": 2,
  "date": "2026-11-04",
- "notes": "r86: spm resumes stalled downloads (HTTP Range), longer retry budget.",
+ "notes": "r87: kernel reclaims lingering closed TCP sockets (fixes 'out of sockets' on retries).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
