@@ -8,4 +8,4 @@ while [ $n -lt 40 ]; do
 done
 ( while :; do /usr/bin/xbridge >> /tmp/xb.log 2>&1; /usr/bin/sleep 2; done ) &
 /usr/bin/sleep 1
-exec /usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/MiniBrowser "${1:-file:///usr/share/swirl-home.html}" > /tmp/mb.log 2>&1
+exec /usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/MiniBrowser "${1:-file:///usr/share/swirl-home.html}" > /home/user/browser-log.txt 2>&1
