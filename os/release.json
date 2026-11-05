@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r106",
+ "version": "r107",
  "abi": 3,
  "date": "2026-11-05",
- "notes": "r106: resolution on hardware that cannot switch modes (scaled desktop)",
+ "notes": "r107: resolution fixes (real size readout, restart-to-apply for bigger sizes)",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -120,10 +120,10 @@
    "size": 9744
   },
   {
-   "path": "os/59/5940ea31c455123e459f7e812e606c626487514a",
+   "path": "os/7a/7a5c9bd27e818bc37bed43d013cf2d9794abed71",
    "dest": "/system/apps/spm.elf",
-   "sha256": "5940ea31c455123e459f7e812e606c626487514aaa225199af9cfa58d6409dfc",
-   "size": 581416
+   "sha256": "7a5c9bd27e818bc37bed43d013cf2d9794abed712bfa5baefe61df5af6f460a1",
+   "size": 581520
   },
   {
    "path": "os/b4/b493638a50375819b1e94cbdd3a3473bd71600f3",
@@ -210,10 +210,10 @@
    "size": 332096
   },
   {
-   "path": "os/c6/c66b800b2204d9cf742d2ae4f6fde2e419dad91f",
+   "path": "os/0f/0fc458fe744121036c9e95c40b613d23bbd549f9",
    "dest": "/system/apps/gui/gsettings.elf",
-   "sha256": "c66b800b2204d9cf742d2ae4f6fde2e419dad91f0caf258f4fb4e559e87f20f9",
-   "size": 897272
+   "sha256": "0fc458fe744121036c9e95c40b613d23bbd549f970fa6e03289b956fc23cbe0d",
+   "size": 897288
   },
   {
    "path": "os/4b/4bb7cca51e96609ee903c911bb3c3165d20b4de5",
