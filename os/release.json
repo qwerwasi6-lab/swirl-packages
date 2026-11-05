@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r109",
+ "version": "r110",
  "abi": 3,
  "date": "2026-11-05",
- "notes": "r109: crash recorder fix, rename() overwrites (browser downloads)",
+ "notes": "r110: TCP loss recovery (out-of-order buffering, dup ACKs, FIN settle) for flaky Wi-Fi",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -390,9 +390,9 @@
    "size": 6575
   },
   {
-   "path": "os/52/5208c495b42a70669b0792fea0f8d2b3edf10193",
+   "path": "os/a0/a03ee10f82ed38d1929d70ccbf1296680f981d6d",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "5208c495b42a70669b0792fea0f8d2b3edf10193c03c021ef94d09598fc8a6ca",
+   "sha256": "a03ee10f82ed38d1929d70ccbf1296680f981d6d54237be389eb566fbd639823",
    "size": 919016
   },
   {
