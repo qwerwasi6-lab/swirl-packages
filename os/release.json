@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r112",
+ "version": "r113",
  "abi": 3,
- "date": "2026-11-05",
- "notes": "r112: fix browser NetworkProcess crash (ftruncate on files + shared file mmap write-back)",
+ "date": "2026-11-06",
+ "notes": "r113: SwirlRun 944 MB demand-paged memory window (RAM only used when touched)",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -126,9 +126,15 @@
    "size": 581520
   },
   {
-   "path": "os/b4/b493638a50375819b1e94cbdd3a3473bd71600f3",
+   "path": "os/28/288ba2ef175088c24746f42d01aaeadf6720a3d0",
    "dest": "/system/apps/swirlrun.elf",
-   "sha256": "b493638a50375819b1e94cbdd3a3473bd71600f31b6b80ec80bfe8527bc553f8",
+   "sha256": "288ba2ef175088c24746f42d01aaeadf6720a3d044aa408dd413720b9d16642a",
+   "size": 927904
+  },
+  {
+   "path": "os/68/681b49b82f16555ab445e20b34ca42f65f785977",
+   "dest": "/system/apps/swirlrunbig.elf",
+   "sha256": "681b49b82f16555ab445e20b34ca42f65f785977f2c6bf58d9891e99efdca853",
    "size": 927904
   },
   {
@@ -156,9 +162,9 @@
    "size": 11744
   },
   {
-   "path": "os/b4/b493638a50375819b1e94cbdd3a3473bd71600f3",
+   "path": "os/28/288ba2ef175088c24746f42d01aaeadf6720a3d0",
    "dest": "/system/apps/winrun.elf",
-   "sha256": "b493638a50375819b1e94cbdd3a3473bd71600f31b6b80ec80bfe8527bc553f8",
+   "sha256": "288ba2ef175088c24746f42d01aaeadf6720a3d044aa408dd413720b9d16642a",
    "size": 927904
   },
   {
@@ -390,10 +396,10 @@
    "size": 6575
   },
   {
-   "path": "os/60/6072f67fb46ca14f4d881e6cbad0c5f0a0e40806",
+   "path": "os/24/240ef97d4c910273314c4b111e34053e374a8d20",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "6072f67fb46ca14f4d881e6cbad0c5f0a0e40806c1030077bdda26a707693bb9",
-   "size": 923400
+   "sha256": "240ef97d4c910273314c4b111e34053e374a8d20ec4ae8273e65b187b4a00fe5",
+   "size": 923552
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
