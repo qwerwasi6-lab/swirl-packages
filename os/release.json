@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r111",
+ "version": "r112",
  "abi": 3,
  "date": "2026-11-05",
- "notes": "r111: crash reports include full stderr text and a stack trace",
+ "notes": "r112: fix browser NetworkProcess crash (ftruncate on files + shared file mmap write-back)",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -390,10 +390,10 @@
    "size": 6575
   },
   {
-   "path": "os/a7/a70a403957c3bcd135dca420b305bbff4333ee93",
+   "path": "os/60/6072f67fb46ca14f4d881e6cbad0c5f0a0e40806",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "a70a403957c3bcd135dca420b305bbff4333ee9364ed175b543b3e92e7bcdbeb",
-   "size": 923280
+   "sha256": "6072f67fb46ca14f4d881e6cbad0c5f0a0e40806c1030077bdda26a707693bb9",
+   "size": 923400
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
