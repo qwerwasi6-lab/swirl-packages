@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r108",
+ "version": "r109",
  "abi": 3,
  "date": "2026-11-05",
- "notes": "r108: crash recorder for the Linux layer (writes /home/user/lx-crash-N.txt when a browser process dies)",
+ "notes": "r109: crash recorder fix, rename() overwrites (browser downloads)",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -390,10 +390,10 @@
    "size": 6575
   },
   {
-   "path": "os/0a/0a9e2f849a71e18a68db66bc99849853e72e22f0",
+   "path": "os/52/5208c495b42a70669b0792fea0f8d2b3edf10193",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "0a9e2f849a71e18a68db66bc99849853e72e22f02b2ce76c4181f670d67bb2fa",
-   "size": 918984
+   "sha256": "5208c495b42a70669b0792fea0f8d2b3edf10193c03c021ef94d09598fc8a6ca",
+   "size": 919016
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
