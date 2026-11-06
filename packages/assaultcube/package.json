@@ -1,0 +1,478 @@
+{
+ "name": "assaultcube",
+ "version": "1.3.0.2",
+ "description": "AssaultCube - free first-person shooter (open source).",
+ "author": "The AssaultCube Team",
+ "title": "AssaultCube",
+ "category": "Games",
+ "tagline": "Fast, free, open-source team FPS with bots.",
+ "long": "AssaultCube is a free, open-source first-person shooter built on the Cube engine, with 20+ maps, bots and classic arcade gunplay, running on SwirlOS through SwirlRun (software OpenGL).\\nFirst launch unpacks the game data next to the game (this takes a minute). Uninstalling removes the downloaded files but not the unpacked data folder (packages) - delete it by hand to reclaim space. Tip: set a low resolution on slower machines.",
+ "publisher": "The AssaultCube Team",
+ "license": "Free (zlib-style / CC, see LICENSE and package_copyrights)",
+ "color": "2563EB",
+ "glyph": "game",
+ "launch": "/home/user/Games/AssaultCube/AssaultCube.exe",
+ "featured": true,
+ "files": [
+  {
+   "src": "f/AssaultCube.exe",
+   "dest": "/home/user/Games/AssaultCube/AssaultCube.exe"
+  },
+  {
+   "src": "f/SDL2.dll",
+   "dest": "/home/user/Games/AssaultCube/SDL2.dll"
+  },
+  {
+   "src": "f/SDL2_image.dll",
+   "dest": "/home/user/Games/AssaultCube/SDL2_image.dll"
+  },
+  {
+   "src": "f/libjpeg-9.dll",
+   "dest": "/home/user/Games/AssaultCube/libjpeg-9.dll"
+  },
+  {
+   "src": "f/libpng16-16.dll",
+   "dest": "/home/user/Games/AssaultCube/libpng16-16.dll"
+  },
+  {
+   "src": "f/libvorbis.dll",
+   "dest": "/home/user/Games/AssaultCube/libvorbis.dll"
+  },
+  {
+   "src": "f/libvorbisfile.dll",
+   "dest": "/home/user/Games/AssaultCube/libvorbisfile.dll"
+  },
+  {
+   "src": "f/ogg.dll",
+   "dest": "/home/user/Games/AssaultCube/ogg.dll"
+  },
+  {
+   "src": "f/zlib1.dll",
+   "dest": "/home/user/Games/AssaultCube/zlib1.dll"
+  },
+  {
+   "src": "f/OpenAL32.dll",
+   "dest": "/home/user/Games/AssaultCube/OpenAL32.dll"
+  },
+  {
+   "src": "f/config/admin.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/admin.cfg"
+  },
+  {
+   "src": "f/config/autoexec.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/autoexec.cfg"
+  },
+  {
+   "src": "f/config/convert_pre_v1.2_mapconfig.sh",
+   "dest": "/home/user/Games/AssaultCube/config/convert_pre_v1.2_mapconfig.sh"
+  },
+  {
+   "src": "f/config/default_map_settings.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/default_map_settings.cfg"
+  },
+  {
+   "src": "f/config/defaults.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/defaults.cfg"
+  },
+  {
+   "src": "f/config/docs.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/docs.cfg"
+  },
+  {
+   "src": "f/config/favourites.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/favourites.cfg"
+  },
+  {
+   "src": "f/config/font.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/font.cfg"
+  },
+  {
+   "src": "f/config/font_default.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/font_default.cfg"
+  },
+  {
+   "src": "f/config/font_monospace.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/font_monospace.cfg"
+  },
+  {
+   "src": "f/config/font_serif.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/font_serif.cfg"
+  },
+  {
+   "src": "f/config/forbidden.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/forbidden.cfg"
+  },
+  {
+   "src": "f/config/geoip.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/geoip.cfg"
+  },
+  {
+   "src": "f/config/keymap.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/keymap.cfg"
+  },
+  {
+   "src": "f/config/maprot.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/maprot.cfg"
+  },
+  {
+   "src": "f/config/menus.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/menus.cfg"
+  },
+  {
+   "src": "f/config/menus_auth.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/menus_auth.cfg"
+  },
+  {
+   "src": "f/config/menus_bot.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/menus_bot.cfg"
+  },
+  {
+   "src": "f/config/menus_edit.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/menus_edit.cfg"
+  },
+  {
+   "src": "f/config/menus_licenses.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/menus_licenses.cfg"
+  },
+  {
+   "src": "f/config/menus_multiplayer.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/menus_multiplayer.cfg"
+  },
+  {
+   "src": "f/config/menus_settings.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/menus_settings.cfg"
+  },
+  {
+   "src": "f/config/menus_voicecom.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/menus_voicecom.cfg"
+  },
+  {
+   "src": "f/config/motd_en.txt",
+   "dest": "/home/user/Games/AssaultCube/config/motd_en.txt"
+  },
+  {
+   "src": "f/config/nicknameblacklist.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/nicknameblacklist.cfg"
+  },
+  {
+   "src": "f/config/pcksources.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/pcksources.cfg"
+  },
+  {
+   "src": "f/config/prefabs.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/prefabs.cfg"
+  },
+  {
+   "src": "f/config/resetbinds.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/resetbinds.cfg"
+  },
+  {
+   "src": "f/config/scontext.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/scontext.cfg"
+  },
+  {
+   "src": "f/config/scripts.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/scripts.cfg"
+  },
+  {
+   "src": "f/config/securemaps.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/securemaps.cfg"
+  },
+  {
+   "src": "f/config/serverblacklist.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/serverblacklist.cfg"
+  },
+  {
+   "src": "f/config/servercmdline.txt",
+   "dest": "/home/user/Games/AssaultCube/config/servercmdline.txt"
+  },
+  {
+   "src": "f/config/serverinfo_en.txt",
+   "dest": "/home/user/Games/AssaultCube/config/serverinfo_en.txt"
+  },
+  {
+   "src": "f/config/serverparameters.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/serverparameters.cfg"
+  },
+  {
+   "src": "f/config/serverpwd.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/serverpwd.cfg"
+  },
+  {
+   "src": "f/config/sounds.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/sounds.cfg"
+  },
+  {
+   "src": "f/config/autostart/0.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/autostart/0.cfg"
+  },
+  {
+   "src": "f/config/autostart/checkaccount.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/autostart/checkaccount.cfg"
+  },
+  {
+   "src": "f/config/autostart/welcome.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/autostart/welcome.cfg"
+  },
+  {
+   "src": "f/config/opt/alternateeditbinds.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/opt/alternateeditbinds.cfg"
+  },
+  {
+   "src": "f/config/opt/autosave.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/opt/autosave.cfg"
+  },
+  {
+   "src": "f/config/opt/compatibility.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/opt/compatibility.cfg"
+  },
+  {
+   "src": "f/config/opt/convmap.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/opt/convmap.cfg"
+  },
+  {
+   "src": "f/config/opt/faq.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/opt/faq.cfg"
+  },
+  {
+   "src": "f/config/opt/mapeditscripts.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/opt/mapeditscripts.cfg"
+  },
+  {
+   "src": "f/config/opt/parsestring.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/opt/parsestring.cfg"
+  },
+  {
+   "src": "f/config/opt/survival.cfg",
+   "dest": "/home/user/Games/AssaultCube/config/opt/survival.cfg"
+  },
+  {
+   "src": "f/bot/bot_names.txt",
+   "dest": "/home/user/Games/AssaultCube/bot/bot_names.txt"
+  },
+  {
+   "src": "f/bot/bot_skill.cfg",
+   "dest": "/home/user/Games/AssaultCube/bot/bot_skill.cfg"
+  },
+  {
+   "src": "f/bot/bot_teams.txt",
+   "dest": "/home/user/Games/AssaultCube/bot/bot_teams.txt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_africa.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_africa.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_alcove.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_alcove.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_aqueous.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_aqueous.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_arabian.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_arabian.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_arctic.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_arctic.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_arctic2.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_arctic2.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_arid.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_arid.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_avenue.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_avenue.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_coal.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_coal.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_complex.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_complex.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_depot.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_depot.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_desert.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_desert.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_desert2.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_desert2.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_desert3.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_desert3.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_douze.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_douze.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_dusk.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_dusk.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_edifice.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_edifice.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_elevation.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_elevation.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_gothic.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_gothic.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_industrial.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_industrial.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_ingress.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_ingress.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_kazemat.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_kazemat.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_keller.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_keller.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_lainio.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_lainio.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_lotus.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_lotus.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_mines.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_mines.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_nocturne.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_nocturne.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_origin.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_origin.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_outpost.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_outpost.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_power.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_power.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_rampart.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_rampart.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_rattrap.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_rattrap.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_scaffold.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_scaffold.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_shine.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_shine.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_snow.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_snow.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_stellar.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_stellar.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_sunset.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_sunset.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_swamp.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_swamp.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_terros.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_terros.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_toxic.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_toxic.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_urban.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_urban.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_venison.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_venison.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_wasteland.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_wasteland.wpt"
+  },
+  {
+   "src": "f/bot/waypoints/ac_werk.wpt",
+   "dest": "/home/user/Games/AssaultCube/bot/waypoints/ac_werk.wpt"
+  },
+  {
+   "src": "f/mods/ac_audio.zip",
+   "dest": "/home/user/Games/AssaultCube/mods/ac_audio.zip",
+   "parts": [
+    "f/mods/ac_audio.zip.part00",
+    "f/mods/ac_audio.zip.part01"
+   ]
+  },
+  {
+   "src": "f/mods/ac_maps.zip",
+   "dest": "/home/user/Games/AssaultCube/mods/ac_maps.zip"
+  },
+  {
+   "src": "f/mods/ac_misc.zip",
+   "dest": "/home/user/Games/AssaultCube/mods/ac_misc.zip"
+  },
+  {
+   "src": "f/mods/ac_models.zip",
+   "dest": "/home/user/Games/AssaultCube/mods/ac_models.zip",
+   "parts": [
+    "f/mods/ac_models.zip.part00",
+    "f/mods/ac_models.zip.part01"
+   ]
+  },
+  {
+   "src": "f/mods/ac_textures.zip",
+   "dest": "/home/user/Games/AssaultCube/mods/ac_textures.zip",
+   "parts": [
+    "f/mods/ac_textures.zip.part00",
+    "f/mods/ac_textures.zip.part01"
+   ]
+  },
+  {
+   "src": "f/docs/package_copyrights.txt",
+   "dest": "/home/user/Games/AssaultCube/docs/package_copyrights.txt"
+  },
+  {
+   "src": "f/LICENSE.zlib.txt",
+   "dest": "/home/user/Games/AssaultCube/LICENSE.zlib.txt"
+  }
+ ]
+}
