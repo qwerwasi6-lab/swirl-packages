@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r113",
+ "version": "r114",
  "abi": 3,
  "date": "2026-11-06",
- "notes": "r113: SwirlRun 944 MB demand-paged memory window (RAM only used when touched)",
+ "notes": "r114: SwirlRun software OpenGL (opengl32/wgl) + Unicode Win32 breadth + memmove ABI crash fix",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -126,16 +126,16 @@
    "size": 581520
   },
   {
-   "path": "os/28/288ba2ef175088c24746f42d01aaeadf6720a3d0",
+   "path": "os/7a/7af02641bbc12bd5bc969643488da505ad6c4cd2",
    "dest": "/system/apps/swirlrun.elf",
-   "sha256": "288ba2ef175088c24746f42d01aaeadf6720a3d044aa408dd413720b9d16642a",
-   "size": 927904
+   "sha256": "7af02641bbc12bd5bc969643488da505ad6c4cd29e5049128bc390503ed5bd3b",
+   "size": 1016800
   },
   {
-   "path": "os/68/681b49b82f16555ab445e20b34ca42f65f785977",
+   "path": "os/bb/bb2c2010b72dcc2df84d6b2627b99706d8d04b78",
    "dest": "/system/apps/swirlrunbig.elf",
-   "sha256": "681b49b82f16555ab445e20b34ca42f65f785977f2c6bf58d9891e99efdca853",
-   "size": 927904
+   "sha256": "bb2c2010b72dcc2df84d6b2627b99706d8d04b78ff00b4ffd2ef754e8ab5bf31",
+   "size": 1016800
   },
   {
    "path": "os/04/04848d9462e28394427e378d3c92337843097dca",
@@ -162,10 +162,10 @@
    "size": 11744
   },
   {
-   "path": "os/28/288ba2ef175088c24746f42d01aaeadf6720a3d0",
+   "path": "os/7a/7af02641bbc12bd5bc969643488da505ad6c4cd2",
    "dest": "/system/apps/winrun.elf",
-   "sha256": "288ba2ef175088c24746f42d01aaeadf6720a3d044aa408dd413720b9d16642a",
-   "size": 927904
+   "sha256": "7af02641bbc12bd5bc969643488da505ad6c4cd29e5049128bc390503ed5bd3b",
+   "size": 1016800
   },
   {
    "path": "os/b9/b917349cf96a6a31cf386ffabdd81f5d9b68a25c",
@@ -396,9 +396,9 @@
    "size": 6575
   },
   {
-   "path": "os/24/240ef97d4c910273314c4b111e34053e374a8d20",
+   "path": "os/d6/d6312a883e229848c3842213ea3a31317200d437",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "240ef97d4c910273314c4b111e34053e374a8d20ec4ae8273e65b187b4a00fe5",
+   "sha256": "d6312a883e229848c3842213ea3a31317200d437af7bf689cd26c3b81583bded",
    "size": 923552
   },
   {
