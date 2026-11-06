@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r114",
+ "version": "r115",
  "abi": 3,
  "date": "2026-11-06",
- "notes": "r114: SwirlRun software OpenGL (opengl32/wgl) + Unicode Win32 breadth + memmove ABI crash fix",
+ "notes": "r115: real networking for Windows programs (winsock on kernel TCP/UDP: sockets, select, DNS, UDP bind/sendto/recvfrom) and a much faster software OpenGL rasterizer (fast textured spans)",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -126,16 +126,16 @@
    "size": 581520
   },
   {
-   "path": "os/7a/7af02641bbc12bd5bc969643488da505ad6c4cd2",
+   "path": "os/fa/fafa431b2430e255e47ad6bf85616a1dee40a47e",
    "dest": "/system/apps/swirlrun.elf",
-   "sha256": "7af02641bbc12bd5bc969643488da505ad6c4cd29e5049128bc390503ed5bd3b",
-   "size": 1016800
+   "sha256": "fafa431b2430e255e47ad6bf85616a1dee40a47e77f71d1797e12a49a3279742",
+   "size": 1091240
   },
   {
-   "path": "os/bb/bb2c2010b72dcc2df84d6b2627b99706d8d04b78",
+   "path": "os/c6/c63960f3036dbe4fc3aaedfe2f209d02ce15f97a",
    "dest": "/system/apps/swirlrunbig.elf",
-   "sha256": "bb2c2010b72dcc2df84d6b2627b99706d8d04b78ff00b4ffd2ef754e8ab5bf31",
-   "size": 1016800
+   "sha256": "c63960f3036dbe4fc3aaedfe2f209d02ce15f97a106084594524ce31c3b86a6e",
+   "size": 1091240
   },
   {
    "path": "os/04/04848d9462e28394427e378d3c92337843097dca",
@@ -162,10 +162,10 @@
    "size": 11744
   },
   {
-   "path": "os/7a/7af02641bbc12bd5bc969643488da505ad6c4cd2",
+   "path": "os/fa/fafa431b2430e255e47ad6bf85616a1dee40a47e",
    "dest": "/system/apps/winrun.elf",
-   "sha256": "7af02641bbc12bd5bc969643488da505ad6c4cd29e5049128bc390503ed5bd3b",
-   "size": 1016800
+   "sha256": "fafa431b2430e255e47ad6bf85616a1dee40a47e77f71d1797e12a49a3279742",
+   "size": 1091240
   },
   {
    "path": "os/b9/b917349cf96a6a31cf386ffabdd81f5d9b68a25c",
@@ -396,10 +396,10 @@
    "size": 6575
   },
   {
-   "path": "os/d6/d6312a883e229848c3842213ea3a31317200d437",
+   "path": "os/25/258865a1105791f0bebb33f52fc5f37a024d989b",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "d6312a883e229848c3842213ea3a31317200d437af7bf689cd26c3b81583bded",
-   "size": 923552
+   "sha256": "258865a1105791f0bebb33f52fc5f37a024d989bf3adc213c7c9cb236a795b6a",
+   "size": 923712
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
