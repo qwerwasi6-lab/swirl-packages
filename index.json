@@ -505,5 +505,8 @@
         { "path": "packages/browser/f/usr/lib/x86_64-linux-gnu/libgmp.so.10.5.0", "dest": "/linux/usr/lib/x86_64-linux-gnu/libgmp.so.10.5.0", "sha256": "0ccdfb6d6f5c039465f6d002cf7e4c072d48ac6a2cffc8dd6c748dec31592804", "size": 534896 },
         { "path": "packages/browser/f/usr/lib/x86_64-linux-gnu/libgnutls.so.30", "dest": "/linux/usr/lib/x86_64-linux-gnu/libgnutls.so.30", "sha256": "ea5fff603a54886e0355fd462648c55d509ea2137745ef01f0140de1d8454036", "size": 26 },
         { "path": "packages/browser/f/usr/lib/x86_64-linux-gnu/libgnutls.so.30.37.1", "dest": "/linux/usr/lib/x86_64-linux-gnu/libgnutls.so.30.37.1", "sha256": "ddbae2995750875c07bc218d12a062d73f8250678f54dedda7e9be5068781c98", "size": 2065824 },
-        { "path": "packages/browser/f/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0", "dest": "/linux/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0", "sha256": "267b499cf48f800c3b281cad4c51951ce3f108d836404cb44f7e396edb806e0a", "size": 32 },
-        { "path": "packages/browser/f/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.8000.0", "dest": "/linux/usr/lib/x86_64-
+        { "path": "packages/browser/f/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0", "dest": "/linux/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0", "sha256": "267b499cf48f800c3b281cad4c51951ce3f108d836404cb44f7e396edb806e0a", "size": 32 }
+      ]
+    }
+  }
+}
