@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r117",
+ "version": "r118",
  "abi": 3,
  "date": "2026-11-10",
- "notes": "r117: glass in every app, new tray icons, Transparency effects toggle in Settings.",
+ "notes": "r118: the Web Browser (WebKitGTK) launches again - fixed a kernel memory bug from r113 that broke every Linux-layer program.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -396,10 +396,10 @@
    "size": 6575
   },
   {
-   "path": "os/c4/c45724b5b4eeaf96428cc9468d0c786aa3938cef",
+   "path": "os/c9/c9242136dbc4d5cec2d76b17f114a6b374c56778",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "c45724b5b4eeaf96428cc9468d0c786aa3938cefc909a9a746c952c828679c1b",
-   "size": 927848
+   "sha256": "c9242136dbc4d5cec2d76b17f114a6b374c567786f3ec48b9e6e54a36f56179f",
+   "size": 927856
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
