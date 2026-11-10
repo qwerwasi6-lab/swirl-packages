@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r120",
+ "version": "r121",
  "abi": 3,
  "date": "2026-11-10",
- "notes": "r120: text stays readable on bright wallpapers; Settings, Files, Store and Calculator restyled with the new line icons.",
+ "notes": "r121: the GPU screen copy checks itself and falls back to the CPU when it lands in the wrong place (garbled desktop at 1368x768).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/fa/faa64699ce7c52a7005774cd2d124167b9c32509",
+   "path": "os/54/54e3c7cdb84c06a58c40fcd8cad79011a27239a4",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "faa64699ce7c52a7005774cd2d124167b9c325091e014ca034e547d7923aeee0",
-   "size": 1060544
+   "sha256": "54e3c7cdb84c06a58c40fcd8cad79011a27239a49df2d25c273bbf2ce084b512",
+   "size": 1061440
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -216,16 +216,16 @@
    "size": 397712
   },
   {
-   "path": "os/1f/1f259088667dcabccf0bb7dd68ceb992844650ec",
+   "path": "os/72/72b8ef31212997d52916dc9a2dd42af9544c2616",
    "dest": "/system/apps/gui/gsettings.elf",
-   "sha256": "1f259088667dcabccf0bb7dd68ceb992844650ecf1468de6d2b18f9096bf1277",
+   "sha256": "72b8ef31212997d52916dc9a2dd42af9544c26164d3fa9d3550ad0dcdfc359d5",
    "size": 1004472
   },
   {
-   "path": "os/29/29bb86c21faad970961f62197baad9733803b262",
+   "path": "os/99/9954ba49a04aedb043b681eeaccffadb767a59c8",
    "dest": "/system/apps/gui/gsetup.elf",
-   "sha256": "29bb86c21faad970961f62197baad9733803b26224fed52103d8821b4458c563",
-   "size": 621792
+   "sha256": "9954ba49a04aedb043b681eeaccffadb767a59c851e06015b6ac6af1c39a9cae",
+   "size": 621832
   },
   {
    "path": "os/47/47be4241502371dc5b11323457a5405d797e3c80",
