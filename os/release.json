@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r116",
+ "version": "r117",
  "abi": 3,
  "date": "2026-11-10",
- "notes": "r116: glass UI, first pass - blurred glass windows, menus and a new floating-pod taskbar, new wallpaper.",
+ "notes": "r117: glass in every app, new tray icons, Transparency effects toggle in Settings.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/dc/dc79662cf652b526f15bc31f94a2ab443be6ece7",
+   "path": "os/3a/3a060528860271abda4592728edad6c4b6e56297",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "dc79662cf652b526f15bc31f94a2ab443be6ece712ddf0b1d4adf3b6bf341970",
-   "size": 1062376
+   "sha256": "3a060528860271abda4592728edad6c4b6e562971af8650ea71ee71b92aa1f6e",
+   "size": 1063464
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -174,16 +174,16 @@
    "size": 538864
   },
   {
-   "path": "os/dd/dd2e4936ff3f304c7830cb51a4437a5aa7a2653c",
+   "path": "os/76/765d1875eac2b505a596fa62d5608542eb1a1ce6",
    "dest": "/system/apps/gui/gcalc.elf",
-   "sha256": "dd2e4936ff3f304c7830cb51a4437a5aa7a2653c1d03a4bccd7cac5f6ca76413",
-   "size": 62248
+   "sha256": "765d1875eac2b505a596fa62d5608542eb1a1ce6e99ff6f8fa4acda895845110",
+   "size": 62408
   },
   {
-   "path": "os/9c/9c4f651d71e0da5b3cfbea45481c2bf4f734b9bd",
+   "path": "os/80/80442b931e3f377ec87b5092713024402b0e853a",
    "dest": "/system/apps/gui/gdrvman.elf",
-   "sha256": "9c4f651d71e0da5b3cfbea45481c2bf4f734b9bd4f9a3617421094625c6a1806",
-   "size": 589344
+   "sha256": "80442b931e3f377ec87b5092713024402b0e853a8a351732268a780c3f818be0",
+   "size": 589384
   },
   {
    "path": "os/34/3465403aabb2a598c9de0264de1b8bee132f58df",
@@ -192,10 +192,10 @@
    "size": 575464
   },
   {
-   "path": "os/05/05a0108ad01ac588e0a791223711ae4c3f024c09",
+   "path": "os/08/0834508d32b243c4657263f336d7f9a7d1c4db6d",
    "dest": "/system/apps/gui/geditor.elf",
-   "sha256": "05a0108ad01ac588e0a791223711ae4c3f024c09b50a57ff752d6c2f6ee14522",
-   "size": 593576
+   "sha256": "0834508d32b243c4657263f336d7f9a7d1c4db6d4da52975e642792db52d03ad",
+   "size": 593616
   },
   {
    "path": "os/44/44ed32309ff24e88cb9b83a6576d170c14b50ac8",
@@ -216,9 +216,9 @@
    "size": 332312
   },
   {
-   "path": "os/a7/a79f9ea20d1b6f76843bde24c8f4b8d33239df4a",
+   "path": "os/7d/7d11b970a4b8acc243e2f5a523418c3ed27c3d88",
    "dest": "/system/apps/gui/gsettings.elf",
-   "sha256": "a79f9ea20d1b6f76843bde24c8f4b8d33239df4a8cabc6c01149ee8f3f7dac71",
+   "sha256": "7d11b970a4b8acc243e2f5a523418c3ed27c3d880596d71a2174ee620fae0aa0",
    "size": 901648
   },
   {
@@ -228,16 +228,16 @@
    "size": 621760
   },
   {
-   "path": "os/d3/d3ae644e1678c2d5f4d3952f18eaf4372f6be876",
+   "path": "os/8b/8b179293425f37bc58ae8459f69de873ff24c2d9",
    "dest": "/system/apps/gui/gstore.elf",
-   "sha256": "d3ae644e1678c2d5f4d3952f18eaf4372f6be876c59ed45c363d8cfdc7267031",
-   "size": 105552
+   "sha256": "8b179293425f37bc58ae8459f69de873ff24c2d9b64c5fc58ba81dcaef7ab09e",
+   "size": 105624
   },
   {
-   "path": "os/d3/d308243f1abb59ed0d675ca5f95e2e77c1aa19a6",
+   "path": "os/f2/f2dc13908128a9d5f9dcf3a2a601d08f7c17a568",
    "dest": "/system/apps/gui/gtaskman.elf",
-   "sha256": "d308243f1abb59ed0d675ca5f95e2e77c1aa19a676154a10297b58abade7f7b7",
-   "size": 576056
+   "sha256": "f2dc13908128a9d5f9dcf3a2a601d08f7c17a568b1260ed6242cd3bf4c679191",
+   "size": 576096
   },
   {
    "path": "os/a0/a0c0974b16df998ef7600fe5f8cb65bc086d0eb7",
@@ -246,10 +246,10 @@
    "size": 75528
   },
   {
-   "path": "os/66/66c183860a62fe2f4c9b09bc65a11e405454b97c",
+   "path": "os/f7/f7ba1d2d18723170f51f36c4b2c8376e38742f1f",
    "dest": "/system/apps/gui/gterm.elf",
-   "sha256": "66c183860a62fe2f4c9b09bc65a11e405454b97c3d097dc279131a3de579ec36",
-   "size": 674024
+   "sha256": "f7ba1d2d18723170f51f36c4b2c8376e38742f1f4fac045e03b711e8790b3b34",
+   "size": 674064
   },
   {
    "path": "os/f6/f6cd3e969e3a92eb9218ca73934275ea262ebc16",
