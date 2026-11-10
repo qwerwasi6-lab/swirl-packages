@@ -28,12 +28,12 @@
     "title_size": 14
   },
   "window": {
-    "corner_radius": 8,
+    "corner_radius": 12,
     "border_width": 1,
     "shadow": {
       "enabled": true,
-      "size": 22,
-      "opacity": 46
+      "size": 30,
+      "opacity": 38
     }
   },
   "titlebar": {
