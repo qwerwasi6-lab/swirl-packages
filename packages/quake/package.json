@@ -1,0 +1,18 @@
+"quake": {
+  "version": "1.0.0",
+  "description": "Quake shareware, episode 1.",
+  "author": "id Software",
+  "title": "Quake",
+  "category": "Games",
+  "tagline": "Slipgate open. Episode 1, free.",
+  "long": "The 1996 classic that put true 3D in first-person shooters. Fight through Dimension of the Doomed, the shareware episode, using the Windows layer.\\nWASD or arrows to move, mouse to look, Ctrl to fire, Space to jump, Esc for the menu.",
+  "publisher": "id Software",
+  "license": "Shareware (free to share)",
+  "color": "8B5A2B",
+  "glyph": "quake",
+  "launch": "/home/user/Games/Quake/WinQuake.exe",
+  "featured": 1,
+  "files": [
+    PASTE THE SCRIPT OUTPUT HERE
+  ]
+}
