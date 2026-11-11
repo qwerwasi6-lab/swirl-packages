@@ -1,20 +1,34 @@
 {
-  "name": "classicube",
-  "version": "1.3.9",
-  "description": "Build and explore a blocky 3D world.",
-  "author": "UnknownShadow200 (ClassiCube), ported to SwirlOS",
-  "title": "ClassiCube",
-  "category": "Games",
-  "tagline": "A Minecraft Classic-style sandbox, ported to SwirlOS.",
-  "long": "ClassiCube is an open-source voxel sandbox in the spirit of Minecraft Classic. Place and break blocks, explore a generated world and build whatever you like. Runs on SwirlOS with the built-in software renderer, singleplayer only for now, no sound yet.\\nWASD to move, mouse to look, Space to jump, B for the block menu, Esc for the menu. Worlds are saved in your ClassiCube folder.\\nNote: uses the same memory region as DOOM, so don't run both at once. Needs SwirlOS r105 or newer for mouse look.",
-  "publisher": "ClassiCube (BSD-3-Clause)",
-  "license": "BSD-3-Clause",
-  "color": "3E8E41",
-  "glyph": "cube",
-  "launch": "/home/user/Games/classicube/classicube.elf",
-  "files": [
-    {"src": "classicube.elf", "dest": "/home/user/Games/classicube/classicube.elf"},
-    {"src": "default.zip", "dest": "/home/user/ClassiCube/texpacks/default.zip"}
-  ],
-  "featured": false
+ "name": "classicube",
+ "version": "1.3.9.1",
+ "description": "Build and explore a blocky 3D world.",
+ "author": "UnknownShadow200 (ClassiCube), ported to SwirlOS",
+ "title": "ClassiCube",
+ "category": "Games",
+ "tagline": "A Minecraft Classic-style sandbox, ported to SwirlOS.",
+ "long": "ClassiCube is an open-source voxel sandbox in the spirit of Minecraft Classic. Place and break blocks, explore a generated world and build whatever you like. Singleplayer only for now, no sound yet.\\nWith the GPU Drivers package and a supported Intel GPU it draws on the graphics chip (OpenGL); otherwise it uses its built-in software renderer. To force the software renderer, create the file /home/user/ClassiCube/use-cpu.\\nWASD to move, mouse to look, Space to jump, B for the block menu, Esc for the menu. Worlds are saved in your ClassiCube folder.\\nNote: uses the same memory region as DOOM, so don't run both at once. GPU mode needs SwirlOS r140 or newer.",
+ "publisher": "ClassiCube (BSD-3-Clause)",
+ "license": "BSD-3-Clause",
+ "color": "3E8E41",
+ "glyph": "cube",
+ "launch": "/home/user/Games/classicube/classicube.elf",
+ "files": [
+  {
+   "src": "classicube.elf",
+   "dest": "/home/user/Games/classicube/classicube.elf"
+  },
+  {
+   "src": "classicube-gpu.elf",
+   "dest": "/home/user/Games/classicube/classicube-gpu.elf"
+  },
+  {
+   "src": "classicube-cpu.elf",
+   "dest": "/home/user/Games/classicube/classicube-cpu.elf"
+  },
+  {
+   "src": "default.zip",
+   "dest": "/home/user/ClassiCube/texpacks/default.zip"
+  }
+ ],
+ "featured": false
 }

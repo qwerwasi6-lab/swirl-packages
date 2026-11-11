@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r139",
+ "version": "r140",
  "abi": 3,
  "date": "2026-11-11",
- "notes": "r139: GPU drivers are their own package now (spm can move files between packages)",
+ "notes": "r140: faster GPU frames (no 10 ms waits), SDL OpenGL games on the GPU, ClassiCube GPU mode",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -204,10 +204,10 @@
    "size": 945512
   },
   {
-   "path": "os/95/954a6965f0cfd8573694f621746467f36d5ad69e",
+   "path": "os/2f/2fbc0294d3c6e8b6d2d58b45faec96dacf57a938",
    "dest": "/system/apps/gui/ggl3d.elf",
-   "sha256": "954a6965f0cfd8573694f621746467f36d5ad69ec68e5a0893a86c8156973dd9",
-   "size": 89752
+   "sha256": "2fbc0294d3c6e8b6d2d58b45faec96dacf57a93890f84b7b18e7fd33e7a7b579",
+   "size": 94048
   },
   {
    "path": "os/4e/4e659505520b9eedaf375ba41a693f1d50fecadb",
@@ -252,9 +252,9 @@
    "size": 75560
   },
   {
-   "path": "os/98/98fbe9c36aff1d6b5221ba94fcefe441bcac2c1f",
+   "path": "os/f5/f5dcea5001c4070b281f3e38fc4d7d7cce5a683b",
    "dest": "/system/apps/gui/gterm.elf",
-   "sha256": "98fbe9c36aff1d6b5221ba94fcefe441bcac2c1f3acd4a5a465daabaeabeab0d",
+   "sha256": "f5dcea5001c4070b281f3e38fc4d7d7cce5a683be8e3e2ffcaf2e012dcd7df4e",
    "size": 682632
   },
   {
@@ -402,10 +402,10 @@
    "size": 6575
   },
   {
-   "path": "os/df/dff21663c62d539b6ccb7a7ac6c7ef21e257145f",
+   "path": "os/5d/5dc7e7feb2c780a2e6aef2eb309d0c041274622e",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "dff21663c62d539b6ccb7a7ac6c7ef21e257145fbfc819ea0ed9a987292058b4",
-   "size": 958808
+   "sha256": "5dc7e7feb2c780a2e6aef2eb309d0c041274622edd580b04a740c36de77fd9ea",
+   "size": 959176
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
@@ -977,10 +977,10 @@
    "size": 599
   },
   {
-   "path": "os/3d/3db9e44f533ec8f4ec7e09db02a2672a26b2d77e",
+   "path": "os/97/97915b8d16fdb041da2e3aeb745396b21f4ec0c7",
    "dest": "/system/lib/libsdl2.swo",
-   "sha256": "3db9e44f533ec8f4ec7e09db02a2672a26b2d77ea3fbb654b6192ac63c6778c8",
-   "size": 165056
+   "sha256": "97915b8d16fdb041da2e3aeb745396b21f4ec0c76c752f8e4346733fafa481e0",
+   "size": 190416
   },
   {
    "path": "os/cd/cde5ec50dfb3a5d67995c981f1a69a655f872869",
