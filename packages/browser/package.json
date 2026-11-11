@@ -1,6 +1,6 @@
 {
  "name": "browser",
- "version": "1.0.10",
+ "version": "1.1.0",
  "description": "A real web browser (WebKitGTK) running on SwirlOS's Linux layer.",
  "author": "WebKit, Mesa, GTK and friends (Ubuntu 24.04 builds); SwirlOS bridge by Swirl",
  "title": "Web Browser",
@@ -512,6 +512,10 @@
   {
    "src": "f/usr/lib/x86_64-linux-gnu/dri/swrast_dri.so",
    "dest": "/linux/usr/lib/x86_64-linux-gnu/dri/swrast_dri.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gbm/dri_gbm.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gbm/dri_gbm.so"
   },
   {
    "src": "f/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders.cache",
