@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r134",
+ "version": "r135",
  "abi": 3,
  "date": "2026-11-11",
- "notes": "r134: fixes r133 (browser could not load): the GPU wait now parks the task properly instead of switching away mid-request; still never freezes the rest of the system",
+ "notes": "r135: 1366x768 on Intel Bay Trail laptops - Settings > Display switches the panel to its real resolution, with a 15 s Keep/Revert prompt",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -216,9 +216,15 @@
    "size": 397712
   },
   {
-   "path": "os/a9/a92bbaf7bf9a668ffa88376e1c3374895ebb404d",
+   "path": "os/c9/c9d3b39a831f902ab95c1f86dc2c2fb452939981",
+   "dest": "/system/apps/gui/gresconfirm.elf",
+   "sha256": "c9d3b39a831f902ab95c1f86dc2c2fb452939981128158acb000bdae96761a51",
+   "size": 195048
+  },
+  {
+   "path": "os/2e/2ed1e1a0fc15ee9ec7dc85bfde115cd7b8aea6d3",
    "dest": "/system/apps/gui/gsettings.elf",
-   "sha256": "a92bbaf7bf9a668ffa88376e1c3374895ebb404dd5a14cfb3d2c2bd93c9887ae",
+   "sha256": "2ed1e1a0fc15ee9ec7dc85bfde115cd7b8aea6d385acca8951a49c4225702139",
    "size": 1004472
   },
   {
@@ -396,10 +402,10 @@
    "size": 6575
   },
   {
-   "path": "os/12/1277b6a212b9207582c79671cfe2ee86214a3e16",
+   "path": "os/81/81265bbde43749dbe6c60d4f82193be73aed419f",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "1277b6a212b9207582c79671cfe2ee86214a3e163f4fb4345b943f13652028e0",
-   "size": 954504
+   "sha256": "81265bbde43749dbe6c60d4f82193be73aed419f12784ef57d9da0c69ef960d6",
+   "size": 954608
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
