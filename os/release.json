@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r132",
+ "version": "r133",
  "abi": 3,
  "date": "2026-11-11",
- "notes": "r132: Linux apps can pass up to 253 open files per socket at once (was 8) - the GPU browser lost file handles and crashed",
+ "notes": "r133: waiting for the GPU no longer freezes the rest of the system (the kernel spun with the CPU held for each GPU job)",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -396,9 +396,9 @@
    "size": 6575
   },
   {
-   "path": "os/77/7776baef023d6d43fb1e0ece24ca2082fd47b86d",
+   "path": "os/c3/c3c60a899c763f3b7393bb352e7f91a1d6b00840",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "7776baef023d6d43fb1e0ece24ca2082fd47b86d494f6d5a7ca66807459f91a6",
+   "sha256": "c3c60a899c763f3b7393bb352e7f91a1d6b00840538460bce645721911cd8890",
    "size": 954464
   },
   {
