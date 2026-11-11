@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r127",
+ "version": "r128",
  "abi": 3,
  "date": "2026-11-11",
- "notes": "r127: Linux layer gets timerfd, so the GPU-drawn Web Browser can paint pages",
+ "notes": "r128: Terminal command diag - one short bug report (kernel log highlights, browser logs, crash files), saved to diag.txt",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -246,10 +246,10 @@
    "size": 75560
   },
   {
-   "path": "os/0c/0c1c09bfb93df8137a08d0e8280e12faf062c888",
+   "path": "os/2c/2c766a0473b034cb4bb3411e2ccdbdb00130dd77",
    "dest": "/system/apps/gui/gterm.elf",
-   "sha256": "0c1c09bfb93df8137a08d0e8280e12faf062c88810308722b6c663115b4eb89f",
-   "size": 678248
+   "sha256": "2c766a0473b034cb4bb3411e2ccdbdb00130dd77c335372cae0ac8ec3a04f2e7",
+   "size": 682632
   },
   {
    "path": "os/31/31f79855f1cf40f864a4d768baa1eb4d2b142e56",
