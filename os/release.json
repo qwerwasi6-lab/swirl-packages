@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r135",
+ "version": "r136",
  "abi": 3,
  "date": "2026-11-11",
- "notes": "r135: 1366x768 on Intel Bay Trail laptops - Settings > Display switches the panel to its real resolution, with a 15 s Keep/Revert prompt",
+ "notes": "r136: taskbar - the apps pill now stretches from the start orb to the tray",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/93/93dd4ff79541de07789cdace4b356fa6753bbe22",
+   "path": "os/d9/d9a6f76895dd9c6992e6700a1103a8921aee9efb",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "93dd4ff79541de07789cdace4b356fa6753bbe228795393ef5c643ec0df2b528",
-   "size": 1062080
+   "sha256": "d9a6f76895dd9c6992e6700a1103a8921aee9efb9fea7b813c6c83679dd12dac",
+   "size": 1062400
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
