@@ -3,7 +3,7 @@
  "version": "r142",
  "abi": 3,
  "date": "2026-11-12",
- "notes": "r142: Windows OpenGL games draw on the GPU (needs GPU Drivers 1.0.2), fixes a kernel crash after big Windows programs exit, sturdier SwirlRun heap",
+ "notes": "r142: Windows OpenGL games draw on the GPU, the GL server now ships with SwirlOS, fixes a kernel crash after big Windows programs exit, sturdier SwirlRun heap",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -132,16 +132,16 @@
    "size": 581520
   },
   {
-   "path": "os/a6/a6858c642b0eeeed66c588aefe6394c76b7c1766",
+   "path": "os/92/9268329eb4a4582899b6f30c8913488f0c797b36",
    "dest": "/system/apps/swirlrun.elf",
-   "sha256": "a6858c642b0eeeed66c588aefe6394c76b7c176621ef53857b67d6e3d2d6a8f5",
-   "size": 1104072
+   "sha256": "9268329eb4a4582899b6f30c8913488f0c797b3691751b2215bc74c47780c4e6",
+   "size": 1104232
   },
   {
-   "path": "os/9c/9ce0f8a99b161df372389bab4c022e9414ba738a",
+   "path": "os/34/3482c246887c9826127064a745544727476b6188",
    "dest": "/system/apps/swirlrunbig.elf",
-   "sha256": "9ce0f8a99b161df372389bab4c022e9414ba738a61d634afd5b72df415f3ec79",
-   "size": 1104072
+   "sha256": "3482c246887c9826127064a745544727476b618876ea6f5405e92aea5c8b8ce7",
+   "size": 1104232
   },
   {
    "path": "os/04/04848d9462e28394427e378d3c92337843097dca",
@@ -168,10 +168,10 @@
    "size": 11744
   },
   {
-   "path": "os/a6/a6858c642b0eeeed66c588aefe6394c76b7c1766",
+   "path": "os/92/9268329eb4a4582899b6f30c8913488f0c797b36",
    "dest": "/system/apps/winrun.elf",
-   "sha256": "a6858c642b0eeeed66c588aefe6394c76b7c176621ef53857b67d6e3d2d6a8f5",
-   "size": 1104072
+   "sha256": "9268329eb4a4582899b6f30c8913488f0c797b3691751b2215bc74c47780c4e6",
+   "size": 1104232
   },
   {
    "path": "os/f3/f31d39bd83715e719aad9c91b36bbd21f57d48fb",
@@ -216,9 +216,9 @@
    "size": 967320
   },
   {
-   "path": "os/2f/2fbc0294d3c6e8b6d2d58b45faec96dacf57a938",
+   "path": "os/bd/bdb1bd999dce318dde82f5df4eaa46873b1968fd",
    "dest": "/system/apps/gui/ggl3d.elf",
-   "sha256": "2fbc0294d3c6e8b6d2d58b45faec96dacf57a93890f84b7b18e7fd33e7a7b579",
+   "sha256": "bdb1bd999dce318dde82f5df4eaa46873b1968fd90ee23e2a7c28358ccaa1ccd",
    "size": 94048
   },
   {
@@ -863,10 +863,10 @@
    "size": 440
   },
   {
-   "path": "os/c8/c89eb7d94019ad96485305a64cefc480f2c4cb70",
+   "path": "os/76/7608b5e5eac622f0167fb08d1adb33409b8cd866",
    "dest": "/system/gterm/glspin.json",
-   "sha256": "c89eb7d94019ad96485305a64cefc480f2c4cb7051ffece7c43c7d35f5f9f0c6",
-   "size": 256
+   "sha256": "7608b5e5eac622f0167fb08d1adb33409b8cd8665f4804fff1da14dba1a078e7",
+   "size": 249
   },
   {
    "path": "os/04/04d78b2789f708282f036d5b3579bd44d00696f3",
@@ -1121,10 +1121,10 @@
    "size": 599
   },
   {
-   "path": "os/81/81869b22b75a5d5f40ae103a2eabbe4e9d863f5b",
+   "path": "os/f9/f932ee85ee5a1bb8ce2c9864fdacffac8e31aa11",
    "dest": "/system/lib/libsdl2.swo",
-   "sha256": "81869b22b75a5d5f40ae103a2eabbe4e9d863f5bb45313bf6d49b240013c5662",
-   "size": 190400
+   "sha256": "f932ee85ee5a1bb8ce2c9864fdacffac8e31aa116fa9527c4f2558f8230b3b37",
+   "size": 190464
   },
   {
    "path": "os/cd/cde5ec50dfb3a5d67995c981f1a69a655f872869",
@@ -1155,6 +1155,12 @@
    "dest": "/system/lx/sh",
    "sha256": "490a5f8588eaadea660de0e57817b0fa10254567caecaa19c061f3df8544dcdb",
    "size": 48752
+  },
+  {
+   "path": "os/de/de25083b86ac5604d65b0ca17d2e2bf588f94dc2",
+   "dest": "/system/lx/swgl-server",
+   "sha256": "de25083b86ac5604d65b0ca17d2e2bf588f94dc2c031987a1e5f568b2060cce2",
+   "size": 39776
   },
   {
    "path": "os/74/745c85d08ecc551f15ac218c031901b8aa5a8891",

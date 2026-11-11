@@ -1,6 +1,6 @@
 {
   "name": "glspin",
-  "summary": "Windows OpenGL test: a spinning cube through SwirlRun (on the GPU when GPU Drivers 1.0.2+ is installed)",
+  "summary": "Windows OpenGL test: a spinning cube through SwirlRun (on the GPU when GPU Drivers is installed)",
   "engine": "pipeline",
   "steps": [ { "spawn": "/system/apps/winrun.elf", "arg": "/system/apps/glspin.exe" } ]
 }
