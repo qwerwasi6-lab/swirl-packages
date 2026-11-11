@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r129",
+ "version": "r130",
  "abi": 3,
  "date": "2026-11-11",
- "notes": "r129: Linux apps can hold 8192 memory maps (was 2048) and reuse freed address space - the GPU browser ran out of maps and crashed",
+ "notes": "r130: newest Linux crash report is always lx-crash-latest.txt, old boots' reports are cleared; diag shows why it crashed",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -246,9 +246,9 @@
    "size": 75560
   },
   {
-   "path": "os/2c/2c766a0473b034cb4bb3411e2ccdbdb00130dd77",
+   "path": "os/e6/e685bace8226320b852a2b769b97acad9b402873",
    "dest": "/system/apps/gui/gterm.elf",
-   "sha256": "2c766a0473b034cb4bb3411e2ccdbdb00130dd77c335372cae0ac8ec3a04f2e7",
+   "sha256": "e685bace8226320b852a2b769b97acad9b402873a70155967e86c2f0c484f5ba",
    "size": 682632
   },
   {
@@ -396,9 +396,9 @@
    "size": 6575
   },
   {
-   "path": "os/1a/1aeebf9b8f43a347418009f076819c048af86e93",
+   "path": "os/3b/3bbbb523274640323419df2c712c0ef3f42a367b",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "1aeebf9b8f43a347418009f076819c048af86e9318710743bb0d1d3c86f58d38",
+   "sha256": "3bbbb523274640323419df2c712c0ef3f42a367bd94328fcd0751ae3673f0233",
    "size": 954464
   },
   {
