@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r142",
+ "version": "r143",
  "abi": 3,
  "date": "2026-11-12",
- "notes": "r142: Windows OpenGL games draw on the GPU, the GL server now ships with SwirlOS, fixes a kernel crash after big Windows programs exit, sturdier SwirlRun heap",
+ "notes": "r143: Windows OpenGL games draw on the GPU (GL server ships with SwirlOS), fixes a kernel crash after big Windows programs exit, sturdier SwirlRun heap",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
