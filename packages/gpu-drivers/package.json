@@ -1,6 +1,6 @@
 {
  "name": "gpu-drivers",
- "version": "1.0.1",
+ "version": "1.0.2",
  "description": "Mesa GPU drivers (Intel crocus/iris and friends) and the SwirlOS GL server: 3D on your graphics chip.",
  "author": "Mesa, LLVM, libdrm and friends (Ubuntu 24.04 builds); SwirlOS GL server and libdrm patch by Swirl",
  "title": "GPU Drivers",

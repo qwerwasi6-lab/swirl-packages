@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r141",
+ "version": "r142",
  "abi": 3,
- "date": "2026-11-11",
- "notes": "r141: app registry - start menu lists installed apps, default apps, Open with, Archive Manager (zip), .html opens in your browser, app icons for programs",
+ "date": "2026-11-12",
+ "notes": "r142: Windows OpenGL games draw on the GPU (needs GPU Drivers 1.0.2), fixes a kernel crash after big Windows programs exit, sturdier SwirlRun heap",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -52,6 +52,12 @@
    "dest": "/system/apps/gametest.elf",
    "sha256": "ba733bc57b57fba542205aefefd3a681f159889c9c79586efb911969231a58b4",
    "size": 91504
+  },
+  {
+   "path": "os/fe/feedf2a2b146007d90aad5d7e949ad3595c89667",
+   "dest": "/system/apps/glspin.exe",
+   "sha256": "feedf2a2b146007d90aad5d7e949ad3595c896679a34a0b73e652a7d0cad500a",
+   "size": 255146
   },
   {
    "path": "os/5d/5d1f745d7e05aa8841a19ba512634b4df3310d86",
@@ -126,16 +132,16 @@
    "size": 581520
   },
   {
-   "path": "os/fa/fafa431b2430e255e47ad6bf85616a1dee40a47e",
+   "path": "os/a6/a6858c642b0eeeed66c588aefe6394c76b7c1766",
    "dest": "/system/apps/swirlrun.elf",
-   "sha256": "fafa431b2430e255e47ad6bf85616a1dee40a47e77f71d1797e12a49a3279742",
-   "size": 1091240
+   "sha256": "a6858c642b0eeeed66c588aefe6394c76b7c176621ef53857b67d6e3d2d6a8f5",
+   "size": 1104072
   },
   {
-   "path": "os/c6/c63960f3036dbe4fc3aaedfe2f209d02ce15f97a",
+   "path": "os/9c/9ce0f8a99b161df372389bab4c022e9414ba738a",
    "dest": "/system/apps/swirlrunbig.elf",
-   "sha256": "c63960f3036dbe4fc3aaedfe2f209d02ce15f97a106084594524ce31c3b86a6e",
-   "size": 1091240
+   "sha256": "9ce0f8a99b161df372389bab4c022e9414ba738a61d634afd5b72df415f3ec79",
+   "size": 1104072
   },
   {
    "path": "os/04/04848d9462e28394427e378d3c92337843097dca",
@@ -162,10 +168,10 @@
    "size": 11744
   },
   {
-   "path": "os/fa/fafa431b2430e255e47ad6bf85616a1dee40a47e",
+   "path": "os/a6/a6858c642b0eeeed66c588aefe6394c76b7c1766",
    "dest": "/system/apps/winrun.elf",
-   "sha256": "fafa431b2430e255e47ad6bf85616a1dee40a47e77f71d1797e12a49a3279742",
-   "size": 1091240
+   "sha256": "a6858c642b0eeeed66c588aefe6394c76b7c176621ef53857b67d6e3d2d6a8f5",
+   "size": 1104072
   },
   {
    "path": "os/f3/f31d39bd83715e719aad9c91b36bbd21f57d48fb",
@@ -534,9 +540,9 @@
    "size": 100
   },
   {
-   "path": "os/5d/5dc7e7feb2c780a2e6aef2eb309d0c041274622e",
+   "path": "os/0b/0b3c1a7591a4f8e0bb5e4407c3c65e414cf5b0f2",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "5dc7e7feb2c780a2e6aef2eb309d0c041274622edd580b04a740c36de77fd9ea",
+   "sha256": "0b3c1a7591a4f8e0bb5e4407c3c65e414cf5b0f2a91970ba032f142d71935feb",
    "size": 959176
   },
   {
@@ -857,6 +863,12 @@
    "size": 440
   },
   {
+   "path": "os/c8/c89eb7d94019ad96485305a64cefc480f2c4cb70",
+   "dest": "/system/gterm/glspin.json",
+   "sha256": "c89eb7d94019ad96485305a64cefc480f2c4cb7051ffece7c43c7d35f5f9f0c6",
+   "size": 256
+  },
+  {
    "path": "os/04/04d78b2789f708282f036d5b3579bd44d00696f3",
    "dest": "/system/gterm/gltest.json",
    "sha256": "04d78b2789f708282f036d5b3579bd44d00696f36ba7cee0cbdd2929c79a4ddd",
@@ -1109,10 +1121,10 @@
    "size": 599
   },
   {
-   "path": "os/97/97915b8d16fdb041da2e3aeb745396b21f4ec0c7",
+   "path": "os/81/81869b22b75a5d5f40ae103a2eabbe4e9d863f5b",
    "dest": "/system/lib/libsdl2.swo",
-   "sha256": "97915b8d16fdb041da2e3aeb745396b21f4ec0c76c752f8e4346733fafa481e0",
-   "size": 190416
+   "sha256": "81869b22b75a5d5f40ae103a2eabbe4e9d863f5bb45313bf6d49b240013c5662",
+   "size": 190400
   },
   {
    "path": "os/cd/cde5ec50dfb3a5d67995c981f1a69a655f872869",
