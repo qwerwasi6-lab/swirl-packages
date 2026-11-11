@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r131",
+ "version": "r132",
  "abi": 3,
  "date": "2026-11-11",
- "notes": "r131: debug output moved out of your home folder into /system/debug (old files tidied); crash reports now keep the crashing process' last error text and stack",
+ "notes": "r132: Linux apps can pass up to 253 open files per socket at once (was 8) - the GPU browser lost file handles and crashed",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -396,9 +396,9 @@
    "size": 6575
   },
   {
-   "path": "os/e0/e0608d5c40c922af58334a2547db5bb86f1e9582",
+   "path": "os/77/7776baef023d6d43fb1e0ece24ca2082fd47b86d",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "e0608d5c40c922af58334a2547db5bb86f1e95828101ca4bc1bcd742fdb5e430",
+   "sha256": "7776baef023d6d43fb1e0ece24ca2082fd47b86d494f6d5a7ca66807459f91a6",
    "size": 954464
   },
   {
