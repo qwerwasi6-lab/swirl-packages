@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r128",
+ "version": "r129",
  "abi": 3,
  "date": "2026-11-11",
- "notes": "r128: Terminal command diag - one short bug report (kernel log highlights, browser logs, crash files), saved to diag.txt",
+ "notes": "r129: Linux apps can hold 8192 memory maps (was 2048) and reuse freed address space - the GPU browser ran out of maps and crashed",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -396,9 +396,9 @@
    "size": 6575
   },
   {
-   "path": "os/43/4380106e5a312d25e9beee8cb7c2cf5866f90fb3",
+   "path": "os/1a/1aeebf9b8f43a347418009f076819c048af86e93",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "4380106e5a312d25e9beee8cb7c2cf5866f90fb375308b739877da0a58eedb56",
+   "sha256": "1aeebf9b8f43a347418009f076819c048af86e9318710743bb0d1d3c86f58d38",
    "size": 954464
   },
   {
