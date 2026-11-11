@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r122",
+ "version": "r123",
  "abi": 3,
  "date": "2026-11-11",
- "notes": "r122: desktop uses the screen mode from the boot menu (native) instead of an old forced 1024x768; new 1360x768 boot entry on the ISO",
+ "notes": "r123: Web Browser frames move through shared memory instead of a file on disk (smoother, less disk wear); the browser restarts itself if it crashes and keeps browser-crash-log.txt",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -264,9 +264,9 @@
    "size": 593976
   },
   {
-   "path": "os/21/219006d7592d5a4c1234f42de69650fac776c312",
+   "path": "os/23/2335cc97cd071ec0984203c1a3f2b08e9493e397",
    "dest": "/system/apps/gui/gxview.elf",
-   "sha256": "219006d7592d5a4c1234f42de69650fac776c312b970eaafec3bf2560caadd12",
+   "sha256": "2335cc97cd071ec0984203c1a3f2b08e9493e3972e811a7131fdbe789e7038a6",
    "size": 53488
   },
   {
@@ -396,10 +396,10 @@
    "size": 6575
   },
   {
-   "path": "os/c9/c9242136dbc4d5cec2d76b17f114a6b374c56778",
+   "path": "os/f2/f26d6d3901a07233127505faee851e3cb305c6cf",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "c9242136dbc4d5cec2d76b17f114a6b374c567786f3ec48b9e6e54a36f56179f",
-   "size": 927856
+   "sha256": "f26d6d3901a07233127505faee851e3cb305c6cf5d7220b555ed3fd7a048bce9",
+   "size": 927896
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
