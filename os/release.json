@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r137",
+ "version": "r138",
  "abi": 3,
  "date": "2026-11-11",
- "notes": "r137: GL bridge - the 3D Demo renders on the GPU (Mesa through the Linux layer; needs Web Browser 1.1.3), TinyGL stays as the fallback",
+ "notes": "r138: GPU waits spin briefly for short jobs instead of sleeping a whole 10 ms tick (3D Demo through the GPU was capped near 33 FPS)",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -402,10 +402,10 @@
    "size": 6575
   },
   {
-   "path": "os/0e/0e2209976ed1003c6d7a93c2d07d845aafec3bce",
+   "path": "os/df/dff21663c62d539b6ccb7a7ac6c7ef21e257145f",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "0e2209976ed1003c6d7a93c2d07d845aafec3bced7fe3be03c6ea7269aaa6519",
-   "size": 958744
+   "sha256": "dff21663c62d539b6ccb7a7ac6c7ef21e257145fbfc819ea0ed9a987292058b4",
+   "size": 958808
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
