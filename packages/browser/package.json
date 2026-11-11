@@ -1,6 +1,6 @@
 {
  "name": "browser",
- "version": "1.1.0",
+ "version": "1.1.1",
  "description": "A real web browser (WebKitGTK) running on SwirlOS's Linux layer.",
  "author": "WebKit, Mesa, GTK and friends (Ubuntu 24.04 builds); SwirlOS bridge by Swirl",
  "title": "Web Browser",
@@ -602,12 +602,28 @@
    "dest": "/linux/usr/lib/x86_64-linux-gnu/libGL.so.1.7.0"
   },
   {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGLESv2.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGLESv2.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGLESv2.so.2.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGLESv2.so.2.1.0"
+  },
+  {
    "src": "f/usr/lib/x86_64-linux-gnu/libGLX.so.0",
    "dest": "/linux/usr/lib/x86_64-linux-gnu/libGLX.so.0"
   },
   {
    "src": "f/usr/lib/x86_64-linux-gnu/libGLX.so.0.0.0",
    "dest": "/linux/usr/lib/x86_64-linux-gnu/libGLX.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0.0.0"
   },
   {
    "src": "f/usr/lib/x86_64-linux-gnu/libGLdispatch.so.0",
@@ -1758,6 +1774,14 @@
   {
    "src": "f/usr/lib/x86_64-linux-gnu/libxcb-dri3.so.0.1.0",
    "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-dri3.so.0.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-glx.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-glx.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-glx.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-glx.so.0.0.0"
   },
   {
    "src": "f/usr/lib/x86_64-linux-gnu/libxcb-present.so.0",

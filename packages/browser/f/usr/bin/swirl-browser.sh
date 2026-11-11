@@ -3,7 +3,7 @@ export GIO_MODULE_DIR=/usr/lib/x86_64-linux-gnu/gio/modules SSL_CERT_FILE=/etc/s
 # r127: draw web pages on the GPU (Mesa crocus through /dev/dri) when SwirlOS offers one.
 # Touch /home/user/.browser-software to go back to the old software renderer.
 if [ -e /dev/dri/renderD128 ] && [ ! -e /home/user/.browser-software ]; then
-  export WEBKIT_FORCE_COMPOSITING_MODE=1 WEBKIT_FORCE_DMABUF_RENDERER=1 WEBKIT_DMABUF_RENDERER_FORCE_SHM=1 WEBKIT_WEB_RENDER_DEVICE_FILE=/dev/dri/renderD128
+  export WEBKIT_FORCE_COMPOSITING_MODE=1 WEBKIT_FORCE_DMABUF_RENDERER=1 WEBKIT_DMABUF_RENDERER_FORCE_SHM=1 WEBKIT_WEB_RENDER_DEVICE_FILE=/dev/dri/renderD128 LIBGL_DRI3_DISABLE=1 LIBGL_DRI2_DISABLE=1
   echo "renderer: GPU" > /home/user/browser-renderer.txt
 else
   export MESA_LOADER_DRIVER_OVERRIDE=swrast LIBGL_ALWAYS_SOFTWARE=1 WEBKIT_DISABLE_DMABUF_RENDERER=1 WEBKIT_DISABLE_COMPOSITING_MODE=1
