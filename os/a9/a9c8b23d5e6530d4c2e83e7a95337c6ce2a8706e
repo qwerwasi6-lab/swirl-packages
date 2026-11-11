@@ -1,0 +1,5 @@
+name=About SwirlOS
+exec=/system/apps/gui/gabout.elf
+icon=about
+category=Help
+kind=13

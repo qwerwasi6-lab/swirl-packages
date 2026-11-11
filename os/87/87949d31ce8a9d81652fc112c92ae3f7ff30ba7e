@@ -1,0 +1,6 @@
+name=Calculator
+exec=/system/apps/gui/gcalc.elf
+icon=calc
+category=Office Utilities
+kind=7
+fav=1

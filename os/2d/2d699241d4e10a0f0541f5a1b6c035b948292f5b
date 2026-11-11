@@ -1,0 +1,10 @@
+name=Archive Manager
+exec=/system/apps/gui/garchive.elf
+icon=archive
+glyph=box
+color=C98A2E
+category=Utilities
+opens=.zip
+roles=archive
+prio=10
+fav=1

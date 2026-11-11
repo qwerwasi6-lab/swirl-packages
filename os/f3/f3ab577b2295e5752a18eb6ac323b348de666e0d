@@ -1,0 +1,11 @@
+name=Web Browser
+exec=/system/apps/gui/gxview.elf
+icon=netsurf
+category=Internet
+opens=.html .htm .xhtml .svg
+roles=browser
+prio=10
+kind=18
+fav=1
+requires=/linux/usr/bin/swirl-browser.sh
+replaces=browser

@@ -1,0 +1,7 @@
+name=DOOM
+exec=/system/apps/doom.elf
+icon=doom
+category=Games
+kind=6
+requires=/home/user/DOOM
+replaces=doom

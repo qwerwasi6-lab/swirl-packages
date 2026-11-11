@@ -1,0 +1,5 @@
+name=Welcome
+exec=/system/apps/gui/geditor.elf
+arg=/home/user/welcome.txt
+icon=editor
+category=Help

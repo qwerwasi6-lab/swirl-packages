@@ -1,0 +1,9 @@
+name=SwirlyMP
+exec=/system/apps/gui/gvideo.elf
+icon=video
+category=Multimedia
+opens=.avi .mpg .mpeg
+roles=video
+prio=10
+kind=16
+fav=1

@@ -107,9 +107,13 @@ def main():
             entry["author"] = meta["author"]
         # store listing fields (Swirl Store); all optional
         for k in ("title", "category", "tagline", "long", "publisher", "license",
-                  "color", "glyph", "launch"):
+                  "color", "glyph", "launch", "icon", "menu"):
             if isinstance(meta.get(k), str) and meta[k]:
                 entry[k] = meta[k]
+        # r141: file types the app opens (app registry / Open with)
+        if meta.get("opens"):
+            o = meta["opens"]
+            entry["opens"] = list(o) if isinstance(o, list) else str(o).split()
         if meta.get("featured"):
             entry["featured"] = 1
         if meta.get("deps"):

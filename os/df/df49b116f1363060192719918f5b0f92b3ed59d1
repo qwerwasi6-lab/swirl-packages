@@ -1,0 +1,8 @@
+name=Swirl Store
+exec=/system/apps/gui/gstore.elf
+icon=store
+glyph=bag
+color=3B82F6
+category=Internet System Utilities
+kind=17
+fav=1

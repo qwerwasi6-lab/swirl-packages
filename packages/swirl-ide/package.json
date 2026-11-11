@@ -1,34 +1,35 @@
 {
-  "name": "swirl-ide",
-  "version": "2.0.0",
-  "description": "Swirl IDE: a tabbed code editor for C and Lua with Check, Run and Stop buttons.",
-  "author": "Swirl",
-  "deps": [
-    "tcc",
-    "lua"
-  ],
-  "title": "Swirl IDE",
-  "category": "Developer",
-  "tagline": "Write, build and run C and Lua without leaving the desktop.",
-  "long": "A tabbed code editor for C and Lua: open as many files as you like (8 tabs), pick the language from the drop-down, and get line numbers, syntax colours, auto-indent, undo, find and go-to-line.\\nCheck compiles or syntax-checks and lists errors (click one to jump to the line). Run builds and runs your program with its output right under the editor, and Stop ends it.\\nCtrl+N new tab, Ctrl+O open, Ctrl+S save, Ctrl+B check, Ctrl+R run, Ctrl+F find, Ctrl+G go to line, Ctrl+Z undo, Ctrl+W close tab, Ctrl+PgUp/PgDn switch tabs.\\nReplaces Swirl C IDE. Needs the Tiny C Compiler and Lua packages, which the Store installs for you.",
-  "publisher": "Swirl",
-  "license": "MIT",
-  "color": "2F9E6B",
-  "glyph": "tool",
-  "launch": "/system/apps/swirlide.elf",
-  "files": [
-    {
-      "src": "swirlide.elf",
-      "dest": "/system/apps/swirlide.elf"
-    },
-    {
-      "src": "ide.json",
-      "dest": "/system/gterm/ide.json"
-    },
-    {
-      "src": "swirlide.png",
-      "dest": "/system/apps/icons/swirlide.png"
-    }
-  ],
-  "featured": false
+ "name": "swirl-ide",
+ "version": "2.0.0",
+ "description": "Swirl IDE: a tabbed code editor for C and Lua with Check, Run and Stop buttons.",
+ "author": "Swirl",
+ "deps": [
+  "tcc",
+  "lua"
+ ],
+ "title": "Swirl IDE",
+ "category": "Developer",
+ "tagline": "Write, build and run C and Lua without leaving the desktop.",
+ "long": "A tabbed code editor for C and Lua: open as many files as you like (8 tabs), pick the language from the drop-down, and get line numbers, syntax colours, auto-indent, undo, find and go-to-line.\\nCheck compiles or syntax-checks and lists errors (click one to jump to the line). Run builds and runs your program with its output right under the editor, and Stop ends it.\\nCtrl+N new tab, Ctrl+O open, Ctrl+S save, Ctrl+B check, Ctrl+R run, Ctrl+F find, Ctrl+G go to line, Ctrl+Z undo, Ctrl+W close tab, Ctrl+PgUp/PgDn switch tabs.\\nReplaces Swirl C IDE. Needs the Tiny C Compiler and Lua packages, which the Store installs for you.",
+ "publisher": "Swirl",
+ "license": "MIT",
+ "color": "2F9E6B",
+ "glyph": "tool",
+ "launch": "/system/apps/swirlide.elf",
+ "files": [
+  {
+   "src": "swirlide.elf",
+   "dest": "/system/apps/swirlide.elf"
+  },
+  {
+   "src": "ide.json",
+   "dest": "/system/gterm/ide.json"
+  },
+  {
+   "src": "swirlide.png",
+   "dest": "/system/apps/icons/swirlide.png"
+  }
+ ],
+ "featured": false,
+ "menu": "Development"
 }

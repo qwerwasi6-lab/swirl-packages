@@ -1,0 +1,9 @@
+name=Editor
+exec=/system/apps/gui/geditor.elf
+icon=editor
+category=Development Office
+opens=.txt .md .c .h .cpp .hpp .json .cfg .conf .ini .log .sh .py .lua .csv .xml .swirl .css .js .toml .yml .yaml .bat .asm .s .mk .rc .theme
+roles=editor
+prio=10
+kind=8
+fav=1

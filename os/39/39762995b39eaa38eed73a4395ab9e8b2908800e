@@ -1,0 +1,5 @@
+name=3D Demo
+exec=/system/apps/gui/ggl3d.elf
+icon=gl3d
+category=Graphics Development
+kind=4

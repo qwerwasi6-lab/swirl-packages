@@ -1,0 +1,6 @@
+name=Task Manager
+exec=/system/apps/gui/gtaskman.elf
+icon=taskmgr
+category=System Utilities
+kind=5
+fav=1

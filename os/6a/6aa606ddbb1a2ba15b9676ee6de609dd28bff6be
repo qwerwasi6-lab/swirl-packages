@@ -1,0 +1,8 @@
+name=Files
+exec=/system/apps/gui/gfiles.elf
+icon=folder
+category=Utilities
+roles=files
+prio=10
+kind=2
+fav=1

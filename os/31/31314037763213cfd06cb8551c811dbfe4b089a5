@@ -1,0 +1,5 @@
+name=Driver Manager
+exec=/system/apps/gui/gdrvman.elf
+icon=drvman
+category=System
+kind=10

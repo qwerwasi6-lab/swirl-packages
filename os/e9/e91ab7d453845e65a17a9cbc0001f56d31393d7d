@@ -1,0 +1,8 @@
+name=Terminal
+exec=/system/apps/gui/gterm.elf
+icon=terminal
+category=Development System
+roles=terminal
+prio=10
+kind=1
+fav=1

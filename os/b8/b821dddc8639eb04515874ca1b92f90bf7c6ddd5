@@ -1,0 +1,9 @@
+name=Paint
+exec=/system/apps/gui/paint.elf
+icon=paint
+category=Graphics
+opens=.png .bmp
+roles=
+prio=1
+kind=12
+fav=1

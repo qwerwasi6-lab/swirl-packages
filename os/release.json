@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r140",
+ "version": "r141",
  "abi": 3,
  "date": "2026-11-11",
- "notes": "r140: faster GPU frames (no 10 ms waits), SDL OpenGL games on the GPU, ClassiCube GPU mode",
+ "notes": "r141: app registry - start menu lists installed apps, default apps, Open with, Archive Manager (zip), .html opens in your browser, app icons for programs",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/d9/d9a6f76895dd9c6992e6700a1103a8921aee9efb",
+   "path": "os/ff/ff8b7533c0006274d160ccdc1c33802e0fdd8edf",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "d9a6f76895dd9c6992e6700a1103a8921aee9efb9fea7b813c6c83679dd12dac",
-   "size": 1062400
+   "sha256": "ff8b7533c0006274d160ccdc1c33802e0fdd8edf2b6b20d0c4c2619623fa38f4",
+   "size": 1083088
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -120,9 +120,9 @@
    "size": 9744
   },
   {
-   "path": "os/c5/c5498fc7a288c1f5eee20d1501d52f4773d8207a",
+   "path": "os/24/24db8bf10d757aee45e7cf2cf36b14b0c3a5c258",
    "dest": "/system/apps/spm.elf",
-   "sha256": "c5498fc7a288c1f5eee20d1501d52f4773d8207a5315a54c70c9a7d700b7e02f",
+   "sha256": "24db8bf10d757aee45e7cf2cf36b14b0c3a5c258e8d9efe2316728b61cad7b46",
    "size": 581520
   },
   {
@@ -174,6 +174,12 @@
    "size": 538864
   },
   {
+   "path": "os/f3/f3497a3f7b8b9bdb2114642fb30993edee710ff0",
+   "dest": "/system/apps/gui/garchive.elf",
+   "sha256": "f3497a3f7b8b9bdb2114642fb30993edee710ff0669bd40942215890f2bef7c7",
+   "size": 475320
+  },
+  {
    "path": "os/f0/f0d751f3f36ff5eea1204670dc8f9d94125e76c1",
    "dest": "/system/apps/gui/gcalc.elf",
    "sha256": "f0d751f3f36ff5eea1204670dc8f9d94125e76c16b7a46ae53613ced99b5db96",
@@ -198,10 +204,10 @@
    "size": 597864
   },
   {
-   "path": "os/c1/c16fd7ebcf4b03448f2a5d98e937fe95db7a10dd",
+   "path": "os/fb/fbecd0c24f0f2c64764c927c016ed78c8f457811",
    "dest": "/system/apps/gui/gfiles.elf",
-   "sha256": "c16fd7ebcf4b03448f2a5d98e937fe95db7a10dd8e4fcfbf3d935987a2152627",
-   "size": 945512
+   "sha256": "fbecd0c24f0f2c64764c927c016ed78c8f457811a64eb70ddfc7b43b99f0e456",
+   "size": 967320
   },
   {
    "path": "os/2f/2fbc0294d3c6e8b6d2d58b45faec96dacf57a938",
@@ -216,16 +222,22 @@
    "size": 397712
   },
   {
+   "path": "os/28/28789d6ced2d92ffbc4163fc683d871090060a8e",
+   "dest": "/system/apps/gui/gopenwith.elf",
+   "sha256": "28789d6ced2d92ffbc4163fc683d871090060a8e7e912f7418c97571504f2c8b",
+   "size": 448696
+  },
+  {
    "path": "os/c9/c9d3b39a831f902ab95c1f86dc2c2fb452939981",
    "dest": "/system/apps/gui/gresconfirm.elf",
    "sha256": "c9d3b39a831f902ab95c1f86dc2c2fb452939981128158acb000bdae96761a51",
    "size": 195048
   },
   {
-   "path": "os/2e/2ed1e1a0fc15ee9ec7dc85bfde115cd7b8aea6d3",
+   "path": "os/c7/c787c8558482ece482f112b10a2d1d8a2957b6a6",
    "dest": "/system/apps/gui/gsettings.elf",
-   "sha256": "2ed1e1a0fc15ee9ec7dc85bfde115cd7b8aea6d385acca8951a49c4225702139",
-   "size": 1004472
+   "sha256": "c787c8558482ece482f112b10a2d1d8a2957b6a68a7fead6d6a1d361f150f869",
+   "size": 1022344
   },
   {
    "path": "os/4e/4edeafa15f073755c464d919ba2e54638078b2c3",
@@ -234,10 +246,10 @@
    "size": 621832
   },
   {
-   "path": "os/79/79d49eac80f4410f772a4e89fe4abcd7dbbfc17d",
+   "path": "os/f1/f1330bb8e936e9acc571ace98fbcaaffd4ef233a",
    "dest": "/system/apps/gui/gstore.elf",
-   "sha256": "79d49eac80f4410f772a4e89fe4abcd7dbbfc17df3be770e379d831a5cf370af",
-   "size": 208320
+   "sha256": "f1330bb8e936e9acc571ace98fbcaaffd4ef233af068e84e3b601eea3f922ccc",
+   "size": 212456
   },
   {
    "path": "os/eb/eb392999c5a8ffcd96c854cc582e3959ef8c4f0f",
@@ -270,10 +282,10 @@
    "size": 593976
   },
   {
-   "path": "os/23/2335cc97cd071ec0984203c1a3f2b08e9493e397",
+   "path": "os/a0/a00e3bdf11ac576835faa73aa0c8c6055b9ee79c",
    "dest": "/system/apps/gui/gxview.elf",
-   "sha256": "2335cc97cd071ec0984203c1a3f2b08e9493e3972e811a7131fdbe789e7038a6",
-   "size": 53488
+   "sha256": "a00e3bdf11ac576835faa73aa0c8c6055b9ee79c0288ff112522f82889b579b1",
+   "size": 57608
   },
   {
    "path": "os/4e/4ea5a9ed8ba6817a2bd7c21ef87023c85cf77c45",
@@ -286,6 +298,12 @@
    "dest": "/system/apps/icons/about.png",
    "sha256": "c136bbf956dedffac4be26f0eae4ac3fb33d54c5e84a49a35fe7b504345e6908",
    "size": 11594
+  },
+  {
+   "path": "os/e6/e616fcfa495595e2dd0cdee684e78e8ca5968c0c",
+   "dest": "/system/apps/icons/archive.png",
+   "sha256": "e616fcfa495595e2dd0cdee684e78e8ca5968c0c5a4f507ae055dce9d7b500b2",
+   "size": 5129
   },
   {
    "path": "os/55/5581f8050c67bae99951623b8cdac3ff84168323",
@@ -400,6 +418,120 @@
    "dest": "/system/apps/icons/wallpaper.png",
    "sha256": "965044a48da7eba5616734bd194c4af369d735b5c290ebddb8d749d763327614",
    "size": 6575
+  },
+  {
+   "path": "os/a9/a9c8b23d5e6530d4c2e83e7a95337c6ce2a8706e",
+   "dest": "/system/apps/registry/about.app",
+   "sha256": "a9c8b23d5e6530d4c2e83e7a95337c6ce2a8706e6a051fe2633caa03bec59d4c",
+   "size": 85
+  },
+  {
+   "path": "os/2d/2d699241d4e10a0f0541f5a1b6c035b948292f5b",
+   "dest": "/system/apps/registry/archive.app",
+   "sha256": "2d699241d4e10a0f0541f5a1b6c035b948292f5b1f13746677b7fdfceb1fb2a5",
+   "size": 150
+  },
+  {
+   "path": "os/87/87949d31ce8a9d81652fc112c92ae3f7ff30ba7e",
+   "dest": "/system/apps/registry/calc.app",
+   "sha256": "87949d31ce8a9d81652fc112c92ae3f7ff30ba7e2d8b04a35885ee848c1911e8",
+   "size": 97
+  },
+  {
+   "path": "os/34/3422c0a7513b3f657f9ddcf6ba4615d44a05c0be",
+   "dest": "/system/apps/registry/doom.app",
+   "sha256": "3422c0a7513b3f657f9ddcf6ba4615d44a05c0be1340f8998fa83771b0c32029",
+   "size": 108
+  },
+  {
+   "path": "os/31/31314037763213cfd06cb8551c811dbfe4b089a5",
+   "dest": "/system/apps/registry/drvman.app",
+   "sha256": "31314037763213cfd06cb8551c811dbfe4b089a53eba7cda1a40bf84177fa6e9",
+   "size": 90
+  },
+  {
+   "path": "os/ee/ee7dd11803f7e200d6068e1175ab0c14c64d0117",
+   "dest": "/system/apps/registry/editor.app",
+   "sha256": "ee7dd11803f7e200d6068e1175ab0c14c64d0117601402a324a4c997e1de6aa3",
+   "size": 262
+  },
+  {
+   "path": "os/6a/6aa606ddbb1a2ba15b9676ee6de609dd28bff6be",
+   "dest": "/system/apps/registry/files.app",
+   "sha256": "6aa606ddbb1a2ba15b9676ee6de609dd28bff6be39f785d336b13e8d4e673b02",
+   "size": 108
+  },
+  {
+   "path": "os/39/39762995b39eaa38eed73a4395ab9e8b2908800e",
+   "dest": "/system/apps/registry/gl3d.app",
+   "sha256": "39762995b39eaa38eed73a4395ab9e8b2908800ed8bf3c737a587384bd3db97a",
+   "size": 92
+  },
+  {
+   "path": "os/29/29fda7d20531d3bf5e256ba8cb986e86e1db73da",
+   "dest": "/system/apps/registry/imgview.app",
+   "sha256": "29fda7d20531d3bf5e256ba8cb986e86e1db73dadc16edd2233c602042425911",
+   "size": 156
+  },
+  {
+   "path": "os/bd/bd8385dd5a81212be52a4c4405e11912b77936d9",
+   "dest": "/system/apps/registry/netsurf.app",
+   "sha256": "bd8385dd5a81212be52a4c4405e11912b77936d9fdbdbc5f2ddb708f4160061f",
+   "size": 137
+  },
+  {
+   "path": "os/b8/b821dddc8639eb04515874ca1b92f90bf7c6ddd5",
+   "dest": "/system/apps/registry/paint.app",
+   "sha256": "b821dddc8639eb04515874ca1b92f90bf7c6ddd53907e61ea64f824b670f971f",
+   "size": 116
+  },
+  {
+   "path": "os/f3/f33e90c58f5006291723b413766d13a0b0df9c3b",
+   "dest": "/system/apps/registry/settings.app",
+   "sha256": "f33e90c58f5006291723b413766d13a0b0df9c3b5f512f59fe9d2d6533d32537",
+   "size": 93
+  },
+  {
+   "path": "os/df/df49b116f1363060192719918f5b0f92b3ed59d1",
+   "dest": "/system/apps/registry/store.app",
+   "sha256": "df49b116f1363060192719918f5b0f92b3ed59d1e552cc20fc7695f8f43da7e7",
+   "size": 133
+  },
+  {
+   "path": "os/20/2085368464c6488f0017dc7a7308a13dcc626e0c",
+   "dest": "/system/apps/registry/taskmgr.app",
+   "sha256": "2085368464c6488f0017dc7a7308a13dcc626e0c576ebc75d22919ea965b0f1c",
+   "size": 105
+  },
+  {
+   "path": "os/e9/e91ab7d453845e65a17a9cbc0001f56d31393d7d",
+   "dest": "/system/apps/registry/terminal.app",
+   "sha256": "e91ab7d453845e65a17a9cbc0001f56d31393d7dc2460b4973b60e455b9ca670",
+   "size": 124
+  },
+  {
+   "path": "os/ad/ade7716ce36ebd47683a7aaf1a48074fb0e559ce",
+   "dest": "/system/apps/registry/video.app",
+   "sha256": "ade7716ce36ebd47683a7aaf1a48074fb0e559ce7bbe0da7f9b174c27ec30410",
+   "size": 134
+  },
+  {
+   "path": "os/96/965c12241658ea7be613c7589f266834d33ee7c3",
+   "dest": "/system/apps/registry/wadinst.app",
+   "sha256": "965c12241658ea7be613c7589f266834d33ee7c3d1fef4b882a51a562a5e3e6d",
+   "size": 132
+  },
+  {
+   "path": "os/f3/f3ab577b2295e5752a18eb6ac323b348de666e0d",
+   "dest": "/system/apps/registry/web.app",
+   "sha256": "f3ab577b2295e5752a18eb6ac323b348de666e0d85fa8da0ea35fc1eaeec96fe",
+   "size": 204
+  },
+  {
+   "path": "os/9d/9dca8bdc6000508af646366e7fed5de442fae266",
+   "dest": "/system/apps/registry/welcome.app",
+   "sha256": "9dca8bdc6000508af646366e7fed5de442fae266f09e5ff67640235392af4f15",
+   "size": 100
   },
   {
    "path": "os/5d/5dc7e7feb2c780a2e6aef2eb309d0c041274622e",

@@ -1,0 +1,9 @@
+name=NetSurf Browser
+exec=/system/apps/netsurf.elf
+icon=netsurf
+category=Internet
+opens=.html .htm
+roles=browser
+prio=5
+urlarg=1
+kind=11

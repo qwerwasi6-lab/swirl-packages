@@ -1,0 +1,7 @@
+name=Game Installer
+exec=/system/apps/gui/gwadinst.elf
+icon=wadinst
+category=Games Utilities
+opens=.wad .iwad .pwad
+prio=10
+kind=15

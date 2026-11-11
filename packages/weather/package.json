@@ -1,30 +1,31 @@
 {
-  "name": "weather",
-  "version": "1.0.0",
-  "description": "Modern weather with forecast, photo background and live conditions.",
-  "author": "qwerwasi6-lab",
-  "title": "Weather",
-  "category": "Apps",
-  "tagline": "Modern weather with forecast, photo background and live conditions",
-  "long": "Current conditions, 24-hour and 7-day forecast, city search, C/F toggle. Data by Open-Meteo.com (no API key). Needs internet.",
-  "publisher": "qwerwasi6-lab",
-  "license": "MIT",
-  "color": "3B82F6",
-  "glyph": "tool",
-  "featured": 1,
-  "launch": "/system/apps/weather.elf",
-  "files": [
-    {
-      "dest": "/system/apps/weather.elf",
-      "src": "weather.elf"
-    },
-    {
-      "dest": "/system/apps/wfetch.elf",
-      "src": "wfetch.elf"
-    },
-    {
-      "dest": "/system/share/weather/bg.jpg",
-      "src": "bg.jpg"
-    }
-  ]
+ "name": "weather",
+ "version": "1.0.0",
+ "description": "Modern weather with forecast, photo background and live conditions.",
+ "author": "qwerwasi6-lab",
+ "title": "Weather",
+ "category": "Apps",
+ "tagline": "Modern weather with forecast, photo background and live conditions",
+ "long": "Current conditions, 24-hour and 7-day forecast, city search, C/F toggle. Data by Open-Meteo.com (no API key). Needs internet.",
+ "publisher": "qwerwasi6-lab",
+ "license": "MIT",
+ "color": "3B82F6",
+ "glyph": "tool",
+ "featured": 1,
+ "launch": "/system/apps/weather.elf",
+ "files": [
+  {
+   "dest": "/system/apps/weather.elf",
+   "src": "weather.elf"
+  },
+  {
+   "dest": "/system/apps/wfetch.elf",
+   "src": "wfetch.elf"
+  },
+  {
+   "dest": "/system/share/weather/bg.jpg",
+   "src": "bg.jpg"
+  }
+ ],
+ "menu": "Internet"
 }

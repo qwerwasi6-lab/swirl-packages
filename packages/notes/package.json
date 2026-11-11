@@ -1,19 +1,23 @@
 {
-  "name": "notes",
-  "version": "1.0.0",
-  "description": "Fast, simple notes with search and auto-save.",
-  "author": "Swirl",
-  "title": "Notes",
-  "category": "Apps",
-  "tagline": "Write it down. It saves itself.",
-  "long": "A quick notes app for SwirlOS. Every note is a plain .txt file in /home/user/Notes, so you can open them anywhere.\\nCtrl+N new note, Ctrl+F search, Ctrl+Z / Ctrl+Y undo and redo, Ctrl+V paste, Ctrl+D (twice) deletes the note. Click anywhere to place the cursor. Notes save automatically a moment after you stop typing.",
-  "publisher": "Swirl",
-  "license": "MIT",
-  "color": "F59E0B",
-  "glyph": "tool",
-  "launch": "/home/user/Apps/notes/notes.elf",
-  "files": [
-    { "src": "notes.elf", "dest": "/home/user/Apps/notes/notes.elf" }
-  ],
-  "featured": false
+ "name": "notes",
+ "version": "1.0.0",
+ "description": "Fast, simple notes with search and auto-save.",
+ "author": "Swirl",
+ "title": "Notes",
+ "category": "Apps",
+ "tagline": "Write it down. It saves itself.",
+ "long": "A quick notes app for SwirlOS. Every note is a plain .txt file in /home/user/Notes, so you can open them anywhere.\\nCtrl+N new note, Ctrl+F search, Ctrl+Z / Ctrl+Y undo and redo, Ctrl+V paste, Ctrl+D (twice) deletes the note. Click anywhere to place the cursor. Notes save automatically a moment after you stop typing.",
+ "publisher": "Swirl",
+ "license": "MIT",
+ "color": "F59E0B",
+ "glyph": "tool",
+ "launch": "/home/user/Apps/notes/notes.elf",
+ "files": [
+  {
+   "src": "notes.elf",
+   "dest": "/home/user/Apps/notes/notes.elf"
+  }
+ ],
+ "featured": false,
+ "menu": "Office"
 }

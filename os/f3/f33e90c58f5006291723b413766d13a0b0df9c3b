@@ -1,0 +1,6 @@
+name=Settings
+exec=/system/apps/gui/gsettings.elf
+icon=settings
+category=System
+kind=3
+fav=1

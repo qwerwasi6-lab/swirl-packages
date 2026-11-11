@@ -1,0 +1,9 @@
+name=Image Viewer
+exec=/system/apps/gui/gimgview.elf
+icon=imgview
+category=Graphics Multimedia
+opens=.png .bmp .jpg .jpeg
+roles=images
+prio=10
+kind=9
+fav=1
