@@ -1,0 +1,18 @@
+{
+  "name": "gltest",
+  "category": "system",
+  "summary": "GPU 3D test, stage 2: OpenGL through Mesa on the GPU (needs Web Browser 1.0.10+)",
+  "usage": "gltest",
+  "engine": "pipeline",
+  "steps": [
+    { "if": "/linux/usr/bin/swirl-gltest.sh exists",
+      "then": [
+        { "print": "starting the OpenGL test (Mesa takes ~10 s to load)...", "color": "accent" },
+        { "spawn": "/system/apps/lx", "arg": "/usr/bin/dash /usr/bin/swirl-gltest.sh", "follow": "/home/user/gltest-log.txt" }
+      ],
+      "else": [
+        { "print": "gltest needs the Web Browser package 1.0.10 or newer (it carries Mesa and the test).", "color": "err" },
+        { "print": "Open the Store, update Web Browser, then run gltest again.", "color": "err" }
+      ] }
+  ]
+}

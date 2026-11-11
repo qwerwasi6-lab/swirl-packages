@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r125",
+ "version": "r126",
  "abi": 3,
  "date": "2026-11-11",
- "notes": "r125: GPU 3D stage 2 - the Linux layer speaks Intel's i915 graphics interface, so Mesa's real Intel 3D driver (crocus) can drive the GPU. Terminal: gltest (update the Web Browser package too)",
+ "notes": "r126: gltest says when the Web Browser package needs updating instead of printing nothing",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -246,9 +246,9 @@
    "size": 75560
   },
   {
-   "path": "os/e3/e37cb112e3be93952d23c9fce74f9f61acfb8d56",
+   "path": "os/0c/0c1c09bfb93df8137a08d0e8280e12faf062c888",
    "dest": "/system/apps/gui/gterm.elf",
-   "sha256": "e37cb112e3be93952d23c9fce74f9f61acfb8d56dfc710113bc9aeee6d3cc98e",
+   "sha256": "0c1c09bfb93df8137a08d0e8280e12faf062c88810308722b6c663115b4eb89f",
    "size": 678248
   },
   {
@@ -713,10 +713,10 @@
    "size": 440
   },
   {
-   "path": "os/63/638ad2723b88dca799d9c156d4b7ee2eeb7cfe6d",
+   "path": "os/38/38a3985d2132275858f6c6e905009c63d0c65d1b",
    "dest": "/system/gterm/gltest.json",
-   "sha256": "638ad2723b88dca799d9c156d4b7ee2eeb7cfe6d0ecb74d9e053d879560a8754",
-   "size": 334
+   "sha256": "38a3985d2132275858f6c6e905009c63d0c65d1b0428e8484aca80f875e3bbf5",
+   "size": 759
   },
   {
    "path": "os/cb/cb5a6734c97013f54cf359cf1b83c9b829548605",
