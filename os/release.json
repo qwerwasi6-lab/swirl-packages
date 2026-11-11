@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r136",
+ "version": "r137",
  "abi": 3,
  "date": "2026-11-11",
- "notes": "r136: taskbar - the apps pill now stretches from the start orb to the tray",
+ "notes": "r137: GL bridge - the 3D Demo renders on the GPU (Mesa through the Linux layer; needs Web Browser 1.1.3), TinyGL stays as the fallback",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -204,10 +204,10 @@
    "size": 945512
   },
   {
-   "path": "os/e3/e3843f27e5321aecc3e9077323363caae178528a",
+   "path": "os/95/954a6965f0cfd8573694f621746467f36d5ad69e",
    "dest": "/system/apps/gui/ggl3d.elf",
-   "sha256": "e3843f27e5321aecc3e9077323363caae178528a80892479a340c30e819f9a07",
-   "size": 84448
+   "sha256": "954a6965f0cfd8573694f621746467f36d5ad69ec68e5a0893a86c8156973dd9",
+   "size": 89752
   },
   {
    "path": "os/4e/4e659505520b9eedaf375ba41a693f1d50fecadb",
@@ -402,10 +402,10 @@
    "size": 6575
   },
   {
-   "path": "os/81/81265bbde43749dbe6c60d4f82193be73aed419f",
+   "path": "os/0e/0e2209976ed1003c6d7a93c2d07d845aafec3bce",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "81265bbde43749dbe6c60d4f82193be73aed419f12784ef57d9da0c69ef960d6",
-   "size": 954608
+   "sha256": "0e2209976ed1003c6d7a93c2d07d845aafec3bced7fe3be03c6ea7269aaa6519",
+   "size": 958744
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
