@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r124",
+ "version": "r125",
  "abi": 3,
  "date": "2026-11-11",
- "notes": "r124: GPU 3D stage 1 - Terminal command gpu3d wakes the GPU's 3D (render) engine and tests it, report saved to gpu3d-report.txt",
+ "notes": "r125: GPU 3D stage 2 - the Linux layer speaks Intel's i915 graphics interface, so Mesa's real Intel 3D driver (crocus) can drive the GPU. Terminal: gltest (update the Web Browser package too)",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -396,10 +396,10 @@
    "size": 6575
   },
   {
-   "path": "os/92/920e71791dae1e63afe9ee1b8b63515669246e90",
+   "path": "os/93/93727dba15621c2ea8d8b6d2f6b64f8a9edf5afe",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "920e71791dae1e63afe9ee1b8b63515669246e90873c21cb1568fd0cbe8b2075",
-   "size": 936472
+   "sha256": "93727dba15621c2ea8d8b6d2f6b64f8a9edf5afe515cd30f0d83826f0c22b72c",
+   "size": 954464
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
@@ -711,6 +711,12 @@
    "dest": "/system/gterm/git.json",
    "sha256": "38d5e412b5d3d884c92c8ea276f7ff52d539a8b47f4c99d5416c90a8d7ef91f4",
    "size": 440
+  },
+  {
+   "path": "os/63/638ad2723b88dca799d9c156d4b7ee2eeb7cfe6d",
+   "dest": "/system/gterm/gltest.json",
+   "sha256": "638ad2723b88dca799d9c156d4b7ee2eeb7cfe6d0ecb74d9e053d879560a8754",
+   "size": 334
   },
   {
    "path": "os/cb/cb5a6734c97013f54cf359cf1b83c9b829548605",

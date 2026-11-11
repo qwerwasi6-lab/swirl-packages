@@ -1,6 +1,6 @@
 {
  "name": "browser",
- "version": "1.0.9",
+ "version": "1.0.10",
  "description": "A real web browser (WebKitGTK) running on SwirlOS's Linux layer.",
  "author": "WebKit, Mesa, GTK and friends (Ubuntu 24.04 builds); SwirlOS bridge by Swirl",
  "title": "Web Browser",
@@ -13,6 +13,14 @@
  "glyph": "tool",
  "launch": "/system/apps/gui/gxview.elf",
  "files": [
+  {
+   "src": "f/home/user/.config/user-dirs.dirs",
+   "dest": "/home/user/.config/user-dirs.dirs"
+  },
+  {
+   "src": "f/home/user/Downloads/README.txt",
+   "dest": "/home/user/Downloads/README.txt"
+  },
   {
    "src": "f/bin",
    "dest": "/linux/bin"
@@ -450,6 +458,10 @@
    "dest": "/linux/usr/bin/dash"
   },
   {
+   "src": "f/usr/bin/gltest",
+   "dest": "/linux/usr/bin/gltest"
+  },
+  {
    "src": "f/usr/bin/head",
    "dest": "/linux/usr/bin/head"
   },
@@ -468,6 +480,10 @@
   {
    "src": "f/usr/bin/swirl-browser.sh",
    "dest": "/linux/usr/bin/swirl-browser.sh"
+  },
+  {
+   "src": "f/usr/bin/swirl-gltest.sh",
+   "dest": "/linux/usr/bin/swirl-gltest.sh"
   },
   {
    "src": "f/usr/bin/xbridge",
@@ -3430,14 +3446,6 @@
   {
    "src": "f/var/tmp/.keep",
    "dest": "/linux/var/tmp/.keep"
-  },
-  {
-   "src": "f/home/user/.config/user-dirs.dirs",
-   "dest": "/home/user/.config/user-dirs.dirs"
-  },
-  {
-   "src": "f/home/user/Downloads/README.txt",
-   "dest": "/home/user/Downloads/README.txt"
   }
  ]
 }
