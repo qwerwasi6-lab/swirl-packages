@@ -8,7 +8,7 @@
     { "if": "/linux/usr/bin/swirl-gltest.sh exists",
       "then": [
         { "print": "starting the OpenGL test (Mesa takes ~10 s to load)...", "color": "accent" },
-        { "spawn": "/system/apps/lx", "arg": "/usr/bin/dash /usr/bin/swirl-gltest.sh", "follow": "/home/user/gltest-log.txt" }
+        { "spawn": "/system/apps/lx", "arg": "/usr/bin/dash /usr/bin/swirl-gltest.sh", "follow": "/system/debug/gltest-log.txt" }
       ],
       "else": [
         { "print": "gltest needs the Web Browser package 1.0.10 or newer (it carries Mesa and the test).", "color": "err" },

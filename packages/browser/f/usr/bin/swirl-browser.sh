@@ -4,16 +4,16 @@ export GIO_MODULE_DIR=/usr/lib/x86_64-linux-gnu/gio/modules SSL_CERT_FILE=/etc/s
 # Touch /home/user/.browser-software to go back to the old software renderer.
 if [ -e /dev/dri/renderD128 ] && [ ! -e /home/user/.browser-software ]; then
   export WEBKIT_FORCE_COMPOSITING_MODE=1 WEBKIT_FORCE_DMABUF_RENDERER=1 WEBKIT_DMABUF_RENDERER_FORCE_SHM=1 WEBKIT_WEB_RENDER_DEVICE_FILE=/dev/dri/renderD128 LIBGL_DRI3_DISABLE=1 LIBGL_DRI2_DISABLE=1
-  echo "renderer: GPU" > /home/user/browser-renderer.txt
+  echo "renderer: GPU" > /system/debug/browser-renderer.txt
 else
   export MESA_LOADER_DRIVER_OVERRIDE=swrast LIBGL_ALWAYS_SOFTWARE=1 WEBKIT_DISABLE_DMABUF_RENDERER=1 WEBKIT_DISABLE_COMPOSITING_MODE=1
-  echo "renderer: software" > /home/user/browser-renderer.txt
+  echo "renderer: software" > /system/debug/browser-renderer.txt
 fi
 printf 'multi on\n' > /etc/host.conf
 printf 'passwd: files\ngroup: files\nhosts: files dns\n' > /etc/nsswitch.conf
 try=0
 while [ $try -lt 4 ]; do
-  /usr/bin/Xvfb :0 +iglx -extension MIT-SHM -screen 0 800x560x24 -nolisten tcp -noreset > /home/user/browser-xvfb-log.txt 2>&1 &
+  /usr/bin/Xvfb :0 +iglx -extension MIT-SHM -screen 0 800x560x24 -nolisten tcp -noreset > /system/debug/browser-xvfb-log.txt 2>&1 &
   XPID=$!
   n=0
   while [ $n -lt 40 ]; do
@@ -28,7 +28,7 @@ done
 # r123: if the browser itself dies, keep its log and start it again (5 tries)
 n=0
 while [ $n -lt 5 ]; do
-  /usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/MiniBrowser "${1:-file:///usr/share/swirl-home.html}" > /home/user/browser-log.txt 2>&1
-  /usr/bin/cat /home/user/browser-log.txt > /home/user/browser-crash-log.txt
+  /usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/MiniBrowser "${1:-file:///usr/share/swirl-home.html}" > /system/debug/browser-log.txt 2>&1
+  /usr/bin/cat /system/debug/browser-log.txt > /system/debug/browser-crash-log.txt
   n=$((n+1))
 done

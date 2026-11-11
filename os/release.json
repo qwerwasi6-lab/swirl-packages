@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r130",
+ "version": "r131",
  "abi": 3,
  "date": "2026-11-11",
- "notes": "r130: newest Linux crash report is always lx-crash-latest.txt, old boots' reports are cleared; diag shows why it crashed",
+ "notes": "r131: debug output moved out of your home folder into /system/debug (old files tidied); crash reports now keep the crashing process' last error text and stack",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/d9/d9deb1fab4cf5f494e42e97f54b5af38cdd788bc",
+   "path": "os/93/93dd4ff79541de07789cdace4b356fa6753bbe22",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "d9deb1fab4cf5f494e42e97f54b5af38cdd788bcc149b6d21ef812fc9ab9d9c8",
-   "size": 1061472
+   "sha256": "93dd4ff79541de07789cdace4b356fa6753bbe228795393ef5c643ec0df2b528",
+   "size": 1062080
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -84,9 +84,9 @@
    "size": 4151736
   },
   {
-   "path": "os/6b/6b89c47d3be71c80b1db3a8de063aa1ce87f7141",
+   "path": "os/7b/7bcf4b19e0bf986b3971f97356239998fdafaee8",
    "dest": "/system/apps/nettest.elf",
-   "sha256": "6b89c47d3be71c80b1db3a8de063aa1ce87f7141494d6676189aca6d16dc623a",
+   "sha256": "7bcf4b19e0bf986b3971f97356239998fdafaee8e338fae6ad9173680ef5bb41",
    "size": 18800
   },
   {
@@ -144,9 +144,9 @@
    "size": 12040
   },
   {
-   "path": "os/e4/e41168821d3e35da44bc08d7d82472230a3e35e9",
+   "path": "os/e2/e239c49d2bb10f0f0a3f31258272d47685e9042f",
    "dest": "/system/apps/tcpdns.elf",
-   "sha256": "e41168821d3e35da44bc08d7d82472230a3e35e9164457746e0634ad86d636b8",
+   "sha256": "e239c49d2bb10f0f0a3f31258272d47685e9042fef588e66d526d983465b72e7",
    "size": 13272
   },
   {
@@ -246,9 +246,9 @@
    "size": 75560
   },
   {
-   "path": "os/e6/e685bace8226320b852a2b769b97acad9b402873",
+   "path": "os/98/98fbe9c36aff1d6b5221ba94fcefe441bcac2c1f",
    "dest": "/system/apps/gui/gterm.elf",
-   "sha256": "e685bace8226320b852a2b769b97acad9b402873a70155967e86c2f0c484f5ba",
+   "sha256": "98fbe9c36aff1d6b5221ba94fcefe441bcac2c1f3acd4a5a465daabaeabeab0d",
    "size": 682632
   },
   {
@@ -396,9 +396,9 @@
    "size": 6575
   },
   {
-   "path": "os/3b/3bbbb523274640323419df2c712c0ef3f42a367b",
+   "path": "os/e0/e0608d5c40c922af58334a2547db5bb86f1e9582",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "3bbbb523274640323419df2c712c0ef3f42a367bd94328fcd0751ae3673f0233",
+   "sha256": "e0608d5c40c922af58334a2547db5bb86f1e95828101ca4bc1bcd742fdb5e430",
    "size": 954464
   },
   {
@@ -477,6 +477,12 @@
    "sha256": "b58f5b04646e0991896b7a4fa762e2db5be6ce8a4b59bcdf81914d0972db8f0b",
    "size": 530,
    "keep": 1
+  },
+  {
+   "path": "os/55/55931b3e65b03fb6b45c51fd1d93ed4ed40333e7",
+   "dest": "/system/debug/README.txt",
+   "sha256": "55931b3e65b03fb6b45c51fd1d93ed4ed40333e74298007a7d60d38e4b82136b",
+   "size": 125
   },
   {
    "path": "os/64/64a069e9d501f8f5f0550cd79a102abfe5da99c6",
@@ -713,10 +719,10 @@
    "size": 440
   },
   {
-   "path": "os/38/38a3985d2132275858f6c6e905009c63d0c65d1b",
+   "path": "os/08/089641ed0a9fd1f136cf1635c990be625089e448",
    "dest": "/system/gterm/gltest.json",
-   "sha256": "38a3985d2132275858f6c6e905009c63d0c65d1b0428e8484aca80f875e3bbf5",
-   "size": 759
+   "sha256": "089641ed0a9fd1f136cf1635c990be625089e4484d0baef9bdc1536f5df0681c",
+   "size": 762
   },
   {
    "path": "os/cb/cb5a6734c97013f54cf359cf1b83c9b829548605",
