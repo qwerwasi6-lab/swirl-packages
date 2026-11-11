@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r133",
+ "version": "r134",
  "abi": 3,
  "date": "2026-11-11",
- "notes": "r133: waiting for the GPU no longer freezes the rest of the system (the kernel spun with the CPU held for each GPU job)",
+ "notes": "r134: fixes r133 (browser could not load): the GPU wait now parks the task properly instead of switching away mid-request; still never freezes the rest of the system",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -396,10 +396,10 @@
    "size": 6575
   },
   {
-   "path": "os/c3/c3c60a899c763f3b7393bb352e7f91a1d6b00840",
+   "path": "os/12/1277b6a212b9207582c79671cfe2ee86214a3e16",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "c3c60a899c763f3b7393bb352e7f91a1d6b00840538460bce645721911cd8890",
-   "size": 954464
+   "sha256": "1277b6a212b9207582c79671cfe2ee86214a3e163f4fb4345b943f13652028e0",
+   "size": 954504
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
