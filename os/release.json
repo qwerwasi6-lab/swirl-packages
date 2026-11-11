@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r123",
+ "version": "r124",
  "abi": 3,
  "date": "2026-11-11",
- "notes": "r123: Web Browser frames move through shared memory instead of a file on disk (smoother, less disk wear); the browser restarts itself if it crashes and keeps browser-crash-log.txt",
+ "notes": "r124: GPU 3D stage 1 - Terminal command gpu3d wakes the GPU's 3D (render) engine and tests it, report saved to gpu3d-report.txt",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -246,10 +246,10 @@
    "size": 75560
   },
   {
-   "path": "os/6d/6d49cb467840c7999c42273208286281f423e521",
+   "path": "os/e3/e37cb112e3be93952d23c9fce74f9f61acfb8d56",
    "dest": "/system/apps/gui/gterm.elf",
-   "sha256": "6d49cb467840c7999c42273208286281f423e5210cca34314233128be6e60b8d",
-   "size": 674120
+   "sha256": "e37cb112e3be93952d23c9fce74f9f61acfb8d56dfc710113bc9aeee6d3cc98e",
+   "size": 678248
   },
   {
    "path": "os/31/31f79855f1cf40f864a4d768baa1eb4d2b142e56",
@@ -396,10 +396,10 @@
    "size": 6575
   },
   {
-   "path": "os/f2/f26d6d3901a07233127505faee851e3cb305c6cf",
+   "path": "os/92/920e71791dae1e63afe9ee1b8b63515669246e90",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "f26d6d3901a07233127505faee851e3cb305c6cf5d7220b555ed3fd7a048bce9",
-   "size": 927896
+   "sha256": "920e71791dae1e63afe9ee1b8b63515669246e90873c21cb1568fd0cbe8b2075",
+   "size": 936472
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
