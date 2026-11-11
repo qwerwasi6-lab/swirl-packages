@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r126",
+ "version": "r127",
  "abi": 3,
  "date": "2026-11-11",
- "notes": "r126: gltest says when the Web Browser package needs updating instead of printing nothing",
+ "notes": "r127: Linux layer gets timerfd, so the GPU-drawn Web Browser can paint pages",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -396,9 +396,9 @@
    "size": 6575
   },
   {
-   "path": "os/93/93727dba15621c2ea8d8b6d2f6b64f8a9edf5afe",
+   "path": "os/43/4380106e5a312d25e9beee8cb7c2cf5866f90fb3",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "93727dba15621c2ea8d8b6d2f6b64f8a9edf5afe515cd30f0d83826f0c22b72c",
+   "sha256": "4380106e5a312d25e9beee8cb7c2cf5866f90fb375308b739877da0a58eedb56",
    "size": 954464
   },
   {
