@@ -1,0 +1,498 @@
+{
+ "name": "gpu-drivers",
+ "version": "1.0.0",
+ "description": "Mesa GPU drivers (Intel crocus/iris and friends) and the SwirlOS GL server: 3D on your graphics chip.",
+ "author": "Mesa, LLVM, libdrm and friends (Ubuntu 24.04 builds); SwirlOS GL server and libdrm patch by Swirl",
+ "title": "GPU Drivers",
+ "category": "Tools",
+ "tagline": "Hardware 3D for apps, games and the browser.",
+ "long": "Mesa 25.2 OpenGL drivers plus the SwirlOS GL server. Apps that draw 3D (3D Demo, games, the Web Browser) send their drawing to your graphics chip instead of the CPU.\\nThe server only runs while a 3D app is open and quits when it closes, so idle RAM stays the same.\\nSupported: Intel HD Graphics (Gen 4 to Gen 8, e.g. Bay Trail, Haswell, Broadwell). Terminal command gltest checks that it works.",
+ "publisher": "Swirl",
+ "license": "MIT / LGPL / Apache-2.0 (Ubuntu packages)",
+ "color": "7A4FD6",
+ "glyph": "tool",
+ "files": [
+  {
+   "src": "f/bin",
+   "dest": "/linux/bin"
+  },
+  {
+   "src": "f/dev/.keep",
+   "dest": "/linux/dev/.keep"
+  },
+  {
+   "src": "f/lib",
+   "dest": "/linux/lib"
+  },
+  {
+   "src": "f/lib64",
+   "dest": "/linux/lib64"
+  },
+  {
+   "src": "f/proc/.keep",
+   "dest": "/linux/proc/.keep"
+  },
+  {
+   "src": "f/run/.keep",
+   "dest": "/linux/run/.keep"
+  },
+  {
+   "src": "f/tmp/.keep",
+   "dest": "/linux/tmp/.keep"
+  },
+  {
+   "src": "f/usr/bin/dash",
+   "dest": "/linux/usr/bin/dash"
+  },
+  {
+   "src": "f/usr/bin/gltest",
+   "dest": "/linux/usr/bin/gltest"
+  },
+  {
+   "src": "f/usr/bin/sh",
+   "dest": "/linux/usr/bin/sh"
+  },
+  {
+   "src": "f/usr/bin/swgl-server",
+   "dest": "/linux/usr/bin/swgl-server"
+  },
+  {
+   "src": "f/usr/bin/swirl-gltest.sh",
+   "dest": "/linux/usr/bin/swirl-gltest.sh"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/dri/kms_swrast_dri.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/dri/kms_swrast_dri.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/dri/libdril_dri.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/dri/libdril_dri.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/dri/swrast_dri.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/dri/swrast_dri.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gbm/dri_gbm.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gbm/dri_gbm.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libEGL.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libEGL.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libEGL.so.1.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libEGL.so.1.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libEGL_mesa.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libEGL_mesa.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libEGL_mesa.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libEGL_mesa.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGL.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGL.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGL.so.1.7.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGL.so.1.7.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGLESv2.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGLESv2.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGLESv2.so.2.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGLESv2.so.2.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGLX.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGLX.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGLX.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGLX.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGLdispatch.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGLdispatch.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libGLdispatch.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libGLdispatch.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1",
+   "parts": [
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part00",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part01",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part02",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part03",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part04",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part05",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part06",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part07",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part08",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part09",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part10",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part11",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part12",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part13",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part14",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part15",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part16",
+    "f/usr/lib/x86_64-linux-gnu/libLLVM.so.20.1.part17"
+   ]
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libX11-xcb.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libX11-xcb.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libX11-xcb.so.1.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libX11-xcb.so.1.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libX11.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libX11.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libX11.so.6.4.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libX11.so.6.4.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXau.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXau.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXau.so.6.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXau.so.6.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXdmcp.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXdmcp.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXext.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXext.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXxf86vm.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXxf86vm.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libXxf86vm.so.1.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libXxf86vm.so.1.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libbsd.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libbsd.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libbsd.so.0.12.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libbsd.so.0.12.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libc.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libc.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libdrm.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libdrm.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libdrm.so.2.125.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libdrm.so.2.125.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libdrm_amdgpu.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libdrm_amdgpu.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libdrm_amdgpu.so.1.125.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libdrm_amdgpu.so.1.125.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.125.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.125.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libedit.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libedit.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libedit.so.2.0.72",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libedit.so.2.0.72"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libelf-0.190.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libelf-0.190.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libelf.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libelf.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libexpat.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libexpat.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libffi.so.8",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libffi.so.8"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libffi.so.8.1.4",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libffi.so.8.1.4"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so",
+   "parts": [
+    "f/usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so.part00",
+    "f/usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so.part01",
+    "f/usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so.part02",
+    "f/usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so.part03",
+    "f/usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so.part04",
+    "f/usr/lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.4.so.part05"
+   ]
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgbm.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgbm.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgbm.so.1.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgbm.so.1.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgcc_s.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libicudata.so.74",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libicudata.so.74"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libicudata.so.74.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libicudata.so.74.2",
+   "parts": [
+    "f/usr/lib/x86_64-linux-gnu/libicudata.so.74.2.part00",
+    "f/usr/lib/x86_64-linux-gnu/libicudata.so.74.2.part01",
+    "f/usr/lib/x86_64-linux-gnu/libicudata.so.74.2.part02",
+    "f/usr/lib/x86_64-linux-gnu/libicudata.so.74.2.part03"
+   ]
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libicuuc.so.74",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libicuuc.so.74"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libicuuc.so.74.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libicuuc.so.74.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/liblzma.so.5",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/liblzma.so.5"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/liblzma.so.5.4.5",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/liblzma.so.5.4.5"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libm.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libm.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libmd.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libmd.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libmd.so.0.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libmd.so.0.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libpciaccess.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libpciaccess.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libpciaccess.so.0.11.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libpciaccess.so.0.11.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libsensors.so.5",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libsensors.so.5"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libsensors.so.5.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libsensors.so.5.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libstdc++.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libtinfo.so.6",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libtinfo.so.6"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libtinfo.so.6.4",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libtinfo.so.6.4"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwayland-client.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwayland-client.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwayland-client.so.0.22.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwayland-client.so.0.22.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwayland-server.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwayland-server.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libwayland-server.so.0.22.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libwayland-server.so.0.22.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-dri3.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-dri3.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-dri3.so.0.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-dri3.so.0.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-glx.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-glx.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-glx.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-glx.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-present.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-present.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-present.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-present.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-randr.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-randr.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-randr.so.0.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-randr.so.0.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-shm.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-shm.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-shm.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-shm.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-sync.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-sync.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-sync.so.1.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-sync.so.1.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-xfixes.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-xfixes.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb-xfixes.so.0.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb-xfixes.so.0.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxml2.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxml2.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxml2.so.2.9.14",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxml2.so.2.9.14"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxshmfence.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxshmfence.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libxshmfence.so.1.0.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libxshmfence.so.1.0.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libz.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libz.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libzstd.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libzstd.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libzstd.so.1.5.5",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libzstd.so.1.5.5"
+  },
+  {
+   "src": "f/usr/lib64/ld-linux-x86-64.so.2",
+   "dest": "/linux/usr/lib64/ld-linux-x86-64.so.2"
+  },
+  {
+   "src": "f/usr/local/lib/libz.so.1.3.1.zlib-ng",
+   "dest": "/linux/usr/local/lib/libz.so.1.3.1.zlib-ng"
+  },
+  {
+   "src": "f/usr/share/glvnd/egl_vendor.d/50_mesa.json",
+   "dest": "/linux/usr/share/glvnd/egl_vendor.d/50_mesa.json"
+  }
+ ]
+}

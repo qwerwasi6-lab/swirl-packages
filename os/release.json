@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r138",
+ "version": "r139",
  "abi": 3,
  "date": "2026-11-11",
- "notes": "r138: GPU waits spin briefly for short jobs instead of sleeping a whole 10 ms tick (3D Demo through the GPU was capped near 33 FPS)",
+ "notes": "r139: GPU drivers are their own package now (spm can move files between packages)",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -120,9 +120,9 @@
    "size": 9744
   },
   {
-   "path": "os/7a/7a5c9bd27e818bc37bed43d013cf2d9794abed71",
+   "path": "os/c5/c5498fc7a288c1f5eee20d1501d52f4773d8207a",
    "dest": "/system/apps/spm.elf",
-   "sha256": "7a5c9bd27e818bc37bed43d013cf2d9794abed712bfa5baefe61df5af6f460a1",
+   "sha256": "c5498fc7a288c1f5eee20d1501d52f4773d8207a5315a54c70c9a7d700b7e02f",
    "size": 581520
   },
   {
@@ -725,10 +725,10 @@
    "size": 440
   },
   {
-   "path": "os/08/089641ed0a9fd1f136cf1635c990be625089e448",
+   "path": "os/04/04d78b2789f708282f036d5b3579bd44d00696f3",
    "dest": "/system/gterm/gltest.json",
-   "sha256": "089641ed0a9fd1f136cf1635c990be625089e4484d0baef9bdc1536f5df0681c",
-   "size": 762
+   "sha256": "04d78b2789f708282f036d5b3579bd44d00696f36ba7cee0cbdd2929c79a4ddd",
+   "size": 761
   },
   {
    "path": "os/cb/cb5a6734c97013f54cf359cf1b83c9b829548605",
