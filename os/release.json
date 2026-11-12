@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r148",
+ "version": "r149",
  "abi": 3,
  "date": "2026-11-12",
- "notes": "Themes: six full looks (Default, Frutiger Aero, Dockside, Tiles, Black, White) with real previews; solid-bar taskbar option; flat and traffic-light title buttons. Idle RAM: about 70 MB less (installed systems free the ISO's RAM copy, the desktop drops two unused buffers).",
+ "notes": "fastfetch / fetch: the real SwirlOS swirl logo in purple (was a placeholder cloud), rows no longer wrap and tear the logo; Settings > Customisation: solid taskbar switch.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -270,10 +270,10 @@
    "size": 75664
   },
   {
-   "path": "os/fe/feb0b8c04625e31e23dc36f6688a5943c85a3adc",
+   "path": "os/14/1416218bd66507e779c86570a49d79a7caf299bf",
    "dest": "/system/apps/gui/gterm.elf",
-   "sha256": "feb0b8c04625e31e23dc36f6688a5943c85a3adc7da5608c056604ca5f134ac4",
-   "size": 682736
+   "sha256": "1416218bd66507e779c86570a49d79a7caf299bf370dca70b250678d0b08ec97",
+   "size": 682800
   },
   {
    "path": "os/d1/d1deb41bb956fbb2e38b31c952f2f3f627097177",
