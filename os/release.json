@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r152",
+ "version": "r153",
  "abi": 3,
  "date": "2026-11-12",
- "notes": "Updater fix: system updates no longer start over after a stall. Finished files are kept between runs, a stalled file resumes where it stopped, and each file gets 12 patient retries. Tip: on a flaky connection, install the swirl-upgrade package first (one small download) and run swirl-upgrade.",
+ "notes": "Slate theme redesign: Start block, weather widget and separators on the left, centred apps, tray + clock + a Control Center button on the right. New Control Center: Wi-Fi, Sound, Do not disturb and Dark mode tiles, volume slider, notifications, Settings and Power. New Customisation options: Taskbar middle (None / Weather / Divider only / Shortcuts) and Center apps. Small update (desktop + Settings only).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/84/8495dbd84aa3988bd8b4c77f6dd5ae2e1a00b7bb",
+   "path": "os/f2/f21984095426857c69f982920fbd1c2efc944fb2",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "8495dbd84aa3988bd8b4c77f6dd5ae2e1a00b7bb5c7945fc362c9459fd4c86df",
-   "size": 1088552
+   "sha256": "f21984095426857c69f982920fbd1c2efc944fb2ebb05f4ff148db1b3a54d3f4",
+   "size": 1098776
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -240,10 +240,10 @@
    "size": 195152
   },
   {
-   "path": "os/d7/d78301b7487a28872e5e5b6c85dc3e17db1706bf",
+   "path": "os/d9/d902670507db85376ec34e77979da6429f766892",
    "dest": "/system/apps/gui/gsettings.elf",
-   "sha256": "d78301b7487a28872e5e5b6c85dc3e17db1706bfa6dde1ad8b67e1558305439c",
-   "size": 1027304
+   "sha256": "d902670507db85376ec34e77979da6429f7668925d7cf9c3c60caf11eae3d9fe",
+   "size": 1027416
   },
   {
    "path": "os/a8/a802d4055a5d4bb6e20cf6a4a245c2d2d2b63a5b",
@@ -1625,10 +1625,10 @@
    "size": 884
   },
   {
-   "path": "os/78/78251020b02077d7fda609c1153325edaefbcbd8",
+   "path": "os/8d/8d95c63808d1adf35a51f149a0bb88d2d141f4d6",
    "dest": "/system/share/themes/slate.jpg",
-   "sha256": "78251020b02077d7fda609c1153325edaefbcbd8b1eb438a645cb5f1ea5e2176",
-   "size": 13181
+   "sha256": "8d95c63808d1adf35a51f149a0bb88d2d141f4d67b38d3a03005fd50cbac1aba",
+   "size": 13532
   },
   {
    "path": "os/b2/b25709b33976e97314ed8c2fd4c85a53c59f7160",
