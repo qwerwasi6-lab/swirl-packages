@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r143",
+ "version": "r144",
  "abi": 3,
  "date": "2026-11-12",
- "notes": "r143: Windows OpenGL games draw on the GPU (GL server ships with SwirlOS), fixes a kernel crash after big Windows programs exit, sturdier SwirlRun heap",
+ "notes": "r144: Half-Life runs. SwirlRun: MFC hooks (WH_CBT), window painting for program-drawn dialogs/buttons (owner-draw, child window DCs), real raster caps, file mappings, DIB palette (WinQuake now runs), GetDIBits fix, bottom-up SetDIBitsToDevice fix, DrawText fix (text no longer cut off), MCI no-op device, 3D-sound fallback, CTL3D32/WINSPOOL, mouse-look capture for games that hide+clip the cursor, Wise installers run, Half-Life defaults to OpenGL 640x480 via the GPU path.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -132,16 +132,16 @@
    "size": 581520
   },
   {
-   "path": "os/92/9268329eb4a4582899b6f30c8913488f0c797b36",
+   "path": "os/91/91142c78252556b9425e19b89a4d41975fd7f9b4",
    "dest": "/system/apps/swirlrun.elf",
-   "sha256": "9268329eb4a4582899b6f30c8913488f0c797b3691751b2215bc74c47780c4e6",
-   "size": 1104232
+   "sha256": "91142c78252556b9425e19b89a4d41975fd7f9b4b1b7a50c98ab0d6df6453d0b",
+   "size": 1133680
   },
   {
-   "path": "os/34/3482c246887c9826127064a745544727476b6188",
+   "path": "os/3f/3ff0f9f7b2d313ba2d668063715e4619fa89722e",
    "dest": "/system/apps/swirlrunbig.elf",
-   "sha256": "3482c246887c9826127064a745544727476b618876ea6f5405e92aea5c8b8ce7",
-   "size": 1104232
+   "sha256": "3ff0f9f7b2d313ba2d668063715e4619fa89722e1fb0273af14155032faea4a6",
+   "size": 1133680
   },
   {
    "path": "os/04/04848d9462e28394427e378d3c92337843097dca",
@@ -168,10 +168,10 @@
    "size": 11744
   },
   {
-   "path": "os/92/9268329eb4a4582899b6f30c8913488f0c797b36",
+   "path": "os/91/91142c78252556b9425e19b89a4d41975fd7f9b4",
    "dest": "/system/apps/winrun.elf",
-   "sha256": "9268329eb4a4582899b6f30c8913488f0c797b3691751b2215bc74c47780c4e6",
-   "size": 1104232
+   "sha256": "91142c78252556b9425e19b89a4d41975fd7f9b4b1b7a50c98ab0d6df6453d0b",
+   "size": 1133680
   },
   {
    "path": "os/f3/f31d39bd83715e719aad9c91b36bbd21f57d48fb",
@@ -1157,10 +1157,10 @@
    "size": 48752
   },
   {
-   "path": "os/de/de25083b86ac5604d65b0ca17d2e2bf588f94dc2",
+   "path": "os/d6/d6702e4d2c6004c38f24c02bb377cbcb7afcb20e",
    "dest": "/system/lx/swgl-server",
-   "sha256": "de25083b86ac5604d65b0ca17d2e2bf588f94dc2c031987a1e5f568b2060cce2",
-   "size": 39776
+   "sha256": "d6702e4d2c6004c38f24c02bb377cbcb7afcb20e1b5637ddf2c3fed543b8ae11",
+   "size": 39856
   },
   {
    "path": "os/74/745c85d08ecc551f15ac218c031901b8aa5a8891",
