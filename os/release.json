@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r157",
+ "version": "r158",
  "abi": 3,
  "date": "2026-11-13",
- "notes": "GPU runs at its full clock on Bay Trail (it was left at the lowest step); games and SDL apps no longer stuck at 50 fps (the 10 ms clock); groundwork for multi-core (off).",
+ "notes": "Half-Life and other GL games: no GPU round trip for matrix queries or glFinish (~35 ms per frame), GPU completion noticed within 0.25 ms instead of the next 10 ms tick; terminal holds 160 commands (lua works again).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -132,16 +132,16 @@
    "size": 585680
   },
   {
-   "path": "os/b5/b53e2b4a54f48706c6c3278a86f4b4d5b46d671d",
+   "path": "os/1a/1af96866911eff856b72aa5cdaed3a43ebfd60c7",
    "dest": "/system/apps/swirlrun.elf",
-   "sha256": "b53e2b4a54f48706c6c3278a86f4b4d5b46d671d323059e3867f4b415ec8dbac",
-   "size": 1144984
+   "sha256": "1af96866911eff856b72aa5cdaed3a43ebfd60c729dea1dbe57078676d313d0e",
+   "size": 1146192
   },
   {
-   "path": "os/04/04de51839d91cb4549a8f8da1d6f2cf2351c11da",
+   "path": "os/74/7474db8da287467f7a12813266ba87bd79f164d0",
    "dest": "/system/apps/swirlrunbig.elf",
-   "sha256": "04de51839d91cb4549a8f8da1d6f2cf2351c11da76f8ca110e6c9e76ae5d874c",
-   "size": 1144984
+   "sha256": "7474db8da287467f7a12813266ba87bd79f164d05274864eeae40aae1289da26",
+   "size": 1146192
   },
   {
    "path": "os/04/04848d9462e28394427e378d3c92337843097dca",
@@ -168,10 +168,10 @@
    "size": 11744
   },
   {
-   "path": "os/b5/b53e2b4a54f48706c6c3278a86f4b4d5b46d671d",
+   "path": "os/1a/1af96866911eff856b72aa5cdaed3a43ebfd60c7",
    "dest": "/system/apps/winrun.elf",
-   "sha256": "b53e2b4a54f48706c6c3278a86f4b4d5b46d671d323059e3867f4b415ec8dbac",
-   "size": 1144984
+   "sha256": "1af96866911eff856b72aa5cdaed3a43ebfd60c729dea1dbe57078676d313d0e",
+   "size": 1146192
   },
   {
    "path": "os/f3/f31d39bd83715e719aad9c91b36bbd21f57d48fb",
@@ -270,10 +270,10 @@
    "size": 75664
   },
   {
-   "path": "os/3a/3a5635c7e84df3e53408edc1f5c1e01074cb1c45",
+   "path": "os/66/66ff4397c7859d0643814080de49bf05dac844d3",
    "dest": "/system/apps/gui/gterm.elf",
-   "sha256": "3a5635c7e84df3e53408edc1f5c1e01074cb1c453fd10074da60e465175cb445",
-   "size": 682800
+   "sha256": "66ff4397c7859d0643814080de49bf05dac844d3a85703ac6cbf3b98f4dc6fff",
+   "size": 682840
   },
   {
    "path": "os/5d/5db60a34ca194d8fe2930a075c1a7365ec4ba6c5",
@@ -540,10 +540,10 @@
    "size": 100
   },
   {
-   "path": "os/8a/8a20765f2377247be59ab50836354d912240e0fd",
+   "path": "os/13/131d0d7aa8c414158c71f6177b1550ef44bc3fe6",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "8a20765f2377247be59ab50836354d912240e0fdff3ef2aca6a2f5e6a2997357",
-   "size": 974520
+   "sha256": "131d0d7aa8c414158c71f6177b1550ef44bc3fe6036c4c5e88fdda16bf97c743",
+   "size": 974712
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
