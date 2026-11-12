@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r158",
+ "version": "r159",
  "abi": 3,
  "date": "2026-11-13",
- "notes": "Half-Life and other GL games: no GPU round trip for matrix queries or glFinish (~35 ms per frame), GPU completion noticed within 0.25 ms instead of the next 10 ms tick; terminal holds 160 commands (lua works again).",
+ "notes": "A newly opened window gets the keyboard (games started from the terminal no longer leave typing in the terminal).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/f2/f21984095426857c69f982920fbd1c2efc944fb2",
+   "path": "os/5c/5cbbe2933911ba4df37bf57545aec7d957f7b762",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "f21984095426857c69f982920fbd1c2efc944fb2ebb05f4ff148db1b3a54d3f4",
-   "size": 1098776
+   "sha256": "5cbbe2933911ba4df37bf57545aec7d957f7b7622f93bfdc8ce581b6b5242749",
+   "size": 1098488
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
