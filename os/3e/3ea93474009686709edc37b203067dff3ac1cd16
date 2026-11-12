@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "name": "White",
+  "base": "white",
+  "colors": {
+    "accent": "#3D8BFF",
+    "window": {},
+    "shell": {},
+    "app": {}
+  },
+  "font": {
+    "file": "",
+    "title_size": 14
+  },
+  "window": {
+    "corner_radius": 12,
+    "border_width": 1,
+    "shadow": {
+      "enabled": true,
+      "size": 30,
+      "opacity": 38
+    }
+  },
+  "titlebar": {
+    "align": "left",
+    "button_side": "right",
+    "button_style": "glass",
+    "material": "glass",
+    "buttons": [
+      "minimize",
+      "maximize",
+      "close"
+    ],
+    "icons": {
+      "minimize": "",
+      "maximize": "",
+      "close": ""
+    }
+  },
+  "transparency": {
+    "active": 100,
+    "inactive": 100,
+    "titlebar": 100,
+    "rules": []
+  }
+}

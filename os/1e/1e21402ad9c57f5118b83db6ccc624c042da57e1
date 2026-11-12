@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "name": "Tiles",
+  "base": "black",
+  "colors": {
+    "accent": "#0078D7",
+    "window": {
+      "titlebar": "#202020",
+      "titlebar_inactive": "#2B2B2B",
+      "title_text": "#FFFFFF",
+      "title_text_inactive": "#9A9A9A"
+    },
+    "shell": {},
+    "app": {}
+  },
+  "font": {
+    "file": "",
+    "title_size": 14
+  },
+  "window": {
+    "corner_radius": 0,
+    "border_width": 1,
+    "shadow": {
+      "enabled": true,
+      "size": 18,
+      "opacity": 34
+    }
+  },
+  "titlebar": {
+    "align": "left",
+    "button_side": "right",
+    "button_style": "flat",
+    "material": "solid",
+    "buttons": [
+      "minimize",
+      "maximize",
+      "close"
+    ],
+    "icons": {
+      "minimize": "",
+      "maximize": "",
+      "close": ""
+    }
+  },
+  "transparency": {
+    "active": 100,
+    "inactive": 100,
+    "titlebar": 100,
+    "rules": []
+  }
+}

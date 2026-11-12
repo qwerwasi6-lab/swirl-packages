@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "name": "Frutiger Aero",
+  "base": "white",
+  "colors": {
+    "accent": "#1E9BD7",
+    "window": {
+      "titlebar": "#9FD3F2",
+      "titlebar_inactive": "#D3E8F4",
+      "title_text": "#0D3552",
+      "title_text_inactive": "#5C7A8E"
+    },
+    "shell": {},
+    "app": {}
+  },
+  "font": {
+    "file": "",
+    "title_size": 14
+  },
+  "window": {
+    "corner_radius": 8,
+    "border_width": 1,
+    "shadow": {
+      "enabled": true,
+      "size": 26,
+      "opacity": 40
+    }
+  },
+  "titlebar": {
+    "align": "left",
+    "button_side": "right",
+    "button_style": "glass",
+    "material": "glass",
+    "buttons": [
+      "minimize",
+      "maximize",
+      "close"
+    ],
+    "icons": {
+      "minimize": "",
+      "maximize": "",
+      "close": ""
+    }
+  },
+  "transparency": {
+    "active": 100,
+    "inactive": 100,
+    "titlebar": 100,
+    "rules": []
+  }
+}

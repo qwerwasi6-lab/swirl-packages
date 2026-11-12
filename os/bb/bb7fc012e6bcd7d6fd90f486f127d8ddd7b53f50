@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "name": "Dockside",
+  "base": "white",
+  "colors": {
+    "accent": "#007AFF",
+    "window": {
+      "titlebar": "#ECECEE",
+      "titlebar_inactive": "#F6F6F7",
+      "title_text": "#2C2C30",
+      "title_text_inactive": "#9A9AA0"
+    },
+    "shell": {},
+    "app": {}
+  },
+  "font": {
+    "file": "",
+    "title_size": 14
+  },
+  "window": {
+    "corner_radius": 12,
+    "border_width": 1,
+    "shadow": {
+      "enabled": true,
+      "size": 34,
+      "opacity": 34
+    }
+  },
+  "titlebar": {
+    "align": "center",
+    "button_side": "left",
+    "button_style": "lights",
+    "material": "solid",
+    "buttons": [
+      "close",
+      "minimize",
+      "maximize"
+    ],
+    "icons": {
+      "minimize": "",
+      "maximize": "",
+      "close": ""
+    }
+  },
+  "transparency": {
+    "active": 100,
+    "inactive": 100,
+    "titlebar": 100,
+    "rules": []
+  }
+}
