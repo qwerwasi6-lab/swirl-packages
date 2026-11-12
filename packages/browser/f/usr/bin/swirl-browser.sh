@@ -11,9 +11,13 @@ else
 fi
 printf 'multi on\n' > /etc/host.conf
 printf 'passwd: files\ngroup: files\nhosts: files dns\n' > /etc/nsswitch.conf
+# r155: the X screen is as big as the SwirlOS display, so the browser window can grow to fill a
+# maximised window (xbridge resizes it to whatever size the SwirlOS window has).
+SZ=$(/usr/bin/cat /home/user/.lx/screen 2> /dev/null)
+[ -n "$SZ" ] || SZ=1366x768
 try=0
 while [ $try -lt 4 ]; do
-  /usr/bin/Xvfb :0 +iglx -extension MIT-SHM -screen 0 800x560x24 -nolisten tcp -noreset > /system/debug/browser-xvfb-log.txt 2>&1 &
+  /usr/bin/Xvfb :0 +iglx -extension MIT-SHM -screen 0 ${SZ}x24 -nolisten tcp -noreset > /system/debug/browser-xvfb-log.txt 2>&1 &
   XPID=$!
   n=0
   while [ $n -lt 40 ]; do
