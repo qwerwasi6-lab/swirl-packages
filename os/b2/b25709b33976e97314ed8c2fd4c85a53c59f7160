@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "name": "Slate",
+  "base": "black",
+  "colors": {
+    "accent": "#2DD4BF",
+    "window": {
+      "titlebar": "#1D2027",
+      "titlebar_inactive": "#23262E",
+      "title_text": "#E8EAED",
+      "title_text_inactive": "#8A8F98"
+    },
+    "shell": {},
+    "app": {}
+  },
+  "font": {
+    "file": "",
+    "title_size": 14
+  },
+  "window": {
+    "corner_radius": 8,
+    "border_width": 1,
+    "shadow": {
+      "enabled": true,
+      "size": 22,
+      "opacity": 40
+    }
+  },
+  "titlebar": {
+    "align": "center",
+    "button_side": "right",
+    "button_style": "glass",
+    "material": "solid",
+    "buttons": [
+      "minimize",
+      "maximize",
+      "close"
+    ],
+    "icons": {
+      "minimize": "",
+      "maximize": "",
+      "close": ""
+    }
+  },
+  "transparency": {
+    "active": 100,
+    "inactive": 100,
+    "titlebar": 100,
+    "rules": []
+  }
+}
