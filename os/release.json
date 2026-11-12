@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r156",
+ "version": "r157",
  "abi": 3,
- "date": "2026-11-12",
- "notes": "CPU runs at full speed (the firmware often left it at the lowest step); the processor shows its real core count (2, not 16) and its speed in Device Manager; spm no longer deletes files another package still uses (the browser update wiped GPU Drivers).",
+ "date": "2026-11-13",
+ "notes": "GPU runs at its full clock on Bay Trail (it was left at the lowest step); games and SDL apps no longer stuck at 50 fps (the 10 ms clock); groundwork for multi-core (off).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -132,16 +132,16 @@
    "size": 585680
   },
   {
-   "path": "os/f1/f183579c6a2b11e53f5f7ca5e94e758419325c4f",
+   "path": "os/b5/b53e2b4a54f48706c6c3278a86f4b4d5b46d671d",
    "dest": "/system/apps/swirlrun.elf",
-   "sha256": "f183579c6a2b11e53f5f7ca5e94e758419325c4f7e63fd23245af639cc0093ae",
-   "size": 1144000
+   "sha256": "b53e2b4a54f48706c6c3278a86f4b4d5b46d671d323059e3867f4b415ec8dbac",
+   "size": 1144984
   },
   {
-   "path": "os/a3/a3c92dc82a83a0dfaa0f6a0939d0489f85fb8444",
+   "path": "os/04/04de51839d91cb4549a8f8da1d6f2cf2351c11da",
    "dest": "/system/apps/swirlrunbig.elf",
-   "sha256": "a3c92dc82a83a0dfaa0f6a0939d0489f85fb844405e3ab4526b5fa0b61c06320",
-   "size": 1144000
+   "sha256": "04de51839d91cb4549a8f8da1d6f2cf2351c11da76f8ca110e6c9e76ae5d874c",
+   "size": 1144984
   },
   {
    "path": "os/04/04848d9462e28394427e378d3c92337843097dca",
@@ -168,10 +168,10 @@
    "size": 11744
   },
   {
-   "path": "os/f1/f183579c6a2b11e53f5f7ca5e94e758419325c4f",
+   "path": "os/b5/b53e2b4a54f48706c6c3278a86f4b4d5b46d671d",
    "dest": "/system/apps/winrun.elf",
-   "sha256": "f183579c6a2b11e53f5f7ca5e94e758419325c4f7e63fd23245af639cc0093ae",
-   "size": 1144000
+   "sha256": "b53e2b4a54f48706c6c3278a86f4b4d5b46d671d323059e3867f4b415ec8dbac",
+   "size": 1144984
   },
   {
    "path": "os/f3/f31d39bd83715e719aad9c91b36bbd21f57d48fb",
@@ -540,10 +540,10 @@
    "size": 100
   },
   {
-   "path": "os/7a/7ad68b5865123b820634159c620ad97972a8899f",
+   "path": "os/8a/8a20765f2377247be59ab50836354d912240e0fd",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "7ad68b5865123b820634159c620ad97972a8899f934260506a2904f3ce8d499d",
-   "size": 964136
+   "sha256": "8a20765f2377247be59ab50836354d912240e0fdff3ef2aca6a2f5e6a2997357",
+   "size": 974520
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
@@ -1121,10 +1121,10 @@
    "size": 599
   },
   {
-   "path": "os/14/14bc8d9e3c15a3832132fe45e59272153cf600e5",
+   "path": "os/f9/f98b7fb4bd1ad0454d41cc553ea9e36a5160e09c",
    "dest": "/system/lib/libsdl2.swo",
-   "sha256": "14bc8d9e3c15a3832132fe45e59272153cf600e5d112d4beecc6888c40074d53",
-   "size": 190464
+   "sha256": "f98b7fb4bd1ad0454d41cc553ea9e36a5160e09cffa1a9610c1d4df334474583",
+   "size": 194840
   },
   {
    "path": "os/cd/cde5ec50dfb3a5d67995c981f1a69a655f872869",
