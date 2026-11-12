@@ -1,0 +1,10 @@
+{
+  "name": "frametrace",
+  "engine": "pipeline",
+  "category": "tools",
+  "usage": "frametrace <path to .exe>",
+  "summary": "run a Windows game with frame timing (writes /system/debug/frametrace.txt)",
+  "steps": [
+    { "spawn": "/home/user/Apps/frametrace/swirlrun-trace.elf", "arg": "$@" }
+  ]
+}

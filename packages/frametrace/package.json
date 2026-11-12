@@ -1,0 +1,19 @@
+{
+  "name": "frametrace",
+  "version": "1.0.0",
+  "description": "Test tool: shows where a Windows game's frame time goes.",
+  "author": "Swirl",
+  "title": "Frame Trace",
+  "category": "Tools",
+  "tagline": "Frame timing for SwirlRun games (test tool).",
+  "long": "Runs a Windows game in a special SwirlRun build that measures every frame.\\nType: frametrace /home/user/Games/HalfLife/hldemo.exe\\nPlay for 30 seconds, close the game, then open /system/debug/frametrace.txt.\\nRemove it when done: spm remove frametrace",
+  "publisher": "Swirl",
+  "license": "MIT",
+  "color": "E0A030",
+  "glyph": "tool",
+  "files": [
+    { "src": "swirlrun-trace.elf", "dest": "/home/user/Apps/frametrace/swirlrun-trace.elf" },
+    { "src": "frametrace.json",    "dest": "/home/user/.gterm/frametrace.json" }
+  ],
+  "featured": false
+}
