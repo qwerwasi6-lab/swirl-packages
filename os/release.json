@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r146",
+ "version": "r147",
  "abi": 3,
  "date": "2026-11-12",
- "notes": "r146: Half-Life controls fixed. The mouse-look cursor now lives in the game's own coordinates (r145 clamped it to the window, so the view spun left forever) and no longer sends fake mouse moves that could steal the keyboard.",
+ "notes": "r147: Half-Life mouse look fixed at every resolution (WM_MOVE reported the window's requested screen position, so on 1366x768 the game's mouse centre sat outside its own window and the view spun left; the HUD at the bottom was cut off for the same reason). The GPU path waits up to 90 s for the GL server when a game is loading at the same time.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -132,15 +132,15 @@
    "size": 581520
   },
   {
-   "path": "os/d7/d75f382e03cfd117e024aad1fb997ba22ec0bf7c",
+   "path": "os/44/44cc737a5d3475d95ac9e86862a440fd8f6da665",
    "dest": "/system/apps/swirlrun.elf",
-   "sha256": "d75f382e03cfd117e024aad1fb997ba22ec0bf7c2a3acd90e5c9a619c8eb2be7",
+   "sha256": "44cc737a5d3475d95ac9e86862a440fd8f6da665d349c839f145cc42549e91ac",
    "size": 1134048
   },
   {
-   "path": "os/c3/c32a913f7689f3c73c413a4fb8c64072a0d9370e",
+   "path": "os/ca/ca597af978e668c9065074f6a4b9d2786bda4fb7",
    "dest": "/system/apps/swirlrunbig.elf",
-   "sha256": "c32a913f7689f3c73c413a4fb8c64072a0d9370eb4c551c109f46bd1ccf775a6",
+   "sha256": "ca597af978e668c9065074f6a4b9d2786bda4fb72fa1c09b6ca6cbdc5dd26c47",
    "size": 1134048
   },
   {
@@ -168,9 +168,9 @@
    "size": 11744
   },
   {
-   "path": "os/d7/d75f382e03cfd117e024aad1fb997ba22ec0bf7c",
+   "path": "os/44/44cc737a5d3475d95ac9e86862a440fd8f6da665",
    "dest": "/system/apps/winrun.elf",
-   "sha256": "d75f382e03cfd117e024aad1fb997ba22ec0bf7c2a3acd90e5c9a619c8eb2be7",
+   "sha256": "44cc737a5d3475d95ac9e86862a440fd8f6da665d349c839f145cc42549e91ac",
    "size": 1134048
   },
   {
@@ -216,9 +216,9 @@
    "size": 967320
   },
   {
-   "path": "os/bd/bdb1bd999dce318dde82f5df4eaa46873b1968fd",
+   "path": "os/32/3234b4d28b7f953042837979cebda62abc7c49ed",
    "dest": "/system/apps/gui/ggl3d.elf",
-   "sha256": "bdb1bd999dce318dde82f5df4eaa46873b1968fd90ee23e2a7c28358ccaa1ccd",
+   "sha256": "3234b4d28b7f953042837979cebda62abc7c49ed68c458e8dfa652305caa736d",
    "size": 94048
   },
   {
@@ -1121,9 +1121,9 @@
    "size": 599
   },
   {
-   "path": "os/f9/f932ee85ee5a1bb8ce2c9864fdacffac8e31aa11",
+   "path": "os/14/14bc8d9e3c15a3832132fe45e59272153cf600e5",
    "dest": "/system/lib/libsdl2.swo",
-   "sha256": "f932ee85ee5a1bb8ce2c9864fdacffac8e31aa116fa9527c4f2558f8230b3b37",
+   "sha256": "14bc8d9e3c15a3832132fe45e59272153cf600e5d112d4beecc6888c40074d53",
    "size": 190464
   },
   {
