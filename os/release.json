@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r145",
+ "version": "r146",
  "abi": 3,
  "date": "2026-11-12",
- "notes": "r145: Half-Life mouse look fixed (the mouse is captured while the game keeps re-centring a clipped cursor - the old 'cursor hidden' test never fired, so the view followed the real pointer and turned the wrong way). The launcher menu no longer redraws on every idle loop.",
+ "notes": "r146: Half-Life controls fixed. The mouse-look cursor now lives in the game's own coordinates (r145 clamped it to the window, so the view spun left forever) and no longer sends fake mouse moves that could steal the keyboard.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -132,16 +132,16 @@
    "size": 581520
   },
   {
-   "path": "os/34/34871497b0f62644849282d0e20869223805ebaa",
+   "path": "os/d7/d75f382e03cfd117e024aad1fb997ba22ec0bf7c",
    "dest": "/system/apps/swirlrun.elf",
-   "sha256": "34871497b0f62644849282d0e20869223805ebaa54bfce72ae08860a8474888d",
-   "size": 1134136
+   "sha256": "d75f382e03cfd117e024aad1fb997ba22ec0bf7c2a3acd90e5c9a619c8eb2be7",
+   "size": 1134048
   },
   {
-   "path": "os/48/48347f5626ff2a483b5635f802d0c12ab86f9dd8",
+   "path": "os/c3/c32a913f7689f3c73c413a4fb8c64072a0d9370e",
    "dest": "/system/apps/swirlrunbig.elf",
-   "sha256": "48347f5626ff2a483b5635f802d0c12ab86f9dd8091a0793a092e5e204608d45",
-   "size": 1134136
+   "sha256": "c32a913f7689f3c73c413a4fb8c64072a0d9370eb4c551c109f46bd1ccf775a6",
+   "size": 1134048
   },
   {
    "path": "os/04/04848d9462e28394427e378d3c92337843097dca",
@@ -168,10 +168,10 @@
    "size": 11744
   },
   {
-   "path": "os/34/34871497b0f62644849282d0e20869223805ebaa",
+   "path": "os/d7/d75f382e03cfd117e024aad1fb997ba22ec0bf7c",
    "dest": "/system/apps/winrun.elf",
-   "sha256": "34871497b0f62644849282d0e20869223805ebaa54bfce72ae08860a8474888d",
-   "size": 1134136
+   "sha256": "d75f382e03cfd117e024aad1fb997ba22ec0bf7c2a3acd90e5c9a619c8eb2be7",
+   "size": 1134048
   },
   {
    "path": "os/f3/f31d39bd83715e719aad9c91b36bbd21f57d48fb",
@@ -246,9 +246,9 @@
    "size": 1022344
   },
   {
-   "path": "os/4e/4edeafa15f073755c464d919ba2e54638078b2c3",
+   "path": "os/d7/d730d0d46dd365f06332ea02a6ec814af9aab3c9",
    "dest": "/system/apps/gui/gsetup.elf",
-   "sha256": "4edeafa15f073755c464d919ba2e54638078b2c3099914bd5ec98871af54cb02",
+   "sha256": "d730d0d46dd365f06332ea02a6ec814af9aab3c979082c64b05e6b6c0b2cc483",
    "size": 621832
   },
   {
