@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r155",
+ "version": "r156",
  "abi": 3,
  "date": "2026-11-12",
- "notes": "Half-Life: mouse look no longer spins on 1366x768 screens. Web Browser: the page now fills the window and reflows when you resize or maximize it, like a normal app (with browser package 1.2.1).",
+ "notes": "CPU runs at full speed (the firmware often left it at the lowest step); the processor shows its real core count (2, not 16) and its speed in Device Manager; spm no longer deletes files another package still uses (the browser update wiped GPU Drivers).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -126,10 +126,10 @@
    "size": 9744
   },
   {
-   "path": "os/c7/c71eabd3ef52ea8f3813df126c21626a88f06376",
+   "path": "os/45/45e39848e1c4133ffc2ab2e7f20e6e5b693f6c20",
    "dest": "/system/apps/spm.elf",
-   "sha256": "c71eabd3ef52ea8f3813df126c21626a88f0637679f9bf8f4ce4a70008d1dc64",
-   "size": 585640
+   "sha256": "45e39848e1c4133ffc2ab2e7f20e6e5b693f6c20f3c8303d9655229d84d63a5e",
+   "size": 585680
   },
   {
    "path": "os/f1/f183579c6a2b11e53f5f7ca5e94e758419325c4f",
@@ -540,10 +540,10 @@
    "size": 100
   },
   {
-   "path": "os/e0/e0d7bc690e32ac72abd5deea22ac05da188cbf1a",
+   "path": "os/7a/7ad68b5865123b820634159c620ad97972a8899f",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "e0d7bc690e32ac72abd5deea22ac05da188cbf1a29ef7dec836e26c2928124bb",
-   "size": 959280
+   "sha256": "7ad68b5865123b820634159c620ad97972a8899f934260506a2904f3ce8d499d",
+   "size": 964136
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
