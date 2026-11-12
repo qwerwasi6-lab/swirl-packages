@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r151",
+ "version": "r152",
  "abi": 3,
  "date": "2026-11-12",
- "notes": "New theme: Slate - slim solid taskbar (no blur), Start on the left, and an all-in-one tray: the clock and tray icons are one pill that opens a single panel with icon tabs (Wi-Fi, Sound, Notifications, Calendar, Power). New settings: taskbar_blur and tray_hub (also switches in Settings > Customisation).",
+ "notes": "Updater fix: system updates no longer start over after a stall. Finished files are kept between runs, a stalled file resumes where it stopped, and each file gets 12 patient retries. Tip: on a flaky connection, install the swirl-upgrade package first (one small download) and run swirl-upgrade.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -126,10 +126,10 @@
    "size": 9744
   },
   {
-   "path": "os/24/24db8bf10d757aee45e7cf2cf36b14b0c3a5c258",
+   "path": "os/c7/c71eabd3ef52ea8f3813df126c21626a88f06376",
    "dest": "/system/apps/spm.elf",
-   "sha256": "24db8bf10d757aee45e7cf2cf36b14b0c3a5c258e8d9efe2316728b61cad7b46",
-   "size": 581520
+   "sha256": "c71eabd3ef52ea8f3813df126c21626a88f0637679f9bf8f4ce4a70008d1dc64",
+   "size": 585640
   },
   {
    "path": "os/4b/4b525bd08c3ef07abfe215f8fe84426a807c039d",
