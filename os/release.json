@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r165",
+ "version": "r166",
  "abi": 3,
  "date": "2026-11-13",
- "notes": "r165: Unicode Windows installers - wide file APIs (GetTempPathW, GetTempFileNameW, DeleteFileW, MoveFileW, GetFullPathNameW, GetCommandLineW...). Fixes 'Unable to create a file in the directory C:\\WINDOWS'.",
+ "notes": "r166: installers can read resources from other files (LoadLibraryEx as data file, FindResourceEx, LoadLibraryExW) - fixes 'Resource #1 not found' in Inno setups like Solitaire XP.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -132,16 +132,16 @@
    "size": 585680
   },
   {
-   "path": "os/8d/8da5f72d23e022386675967486bd3d8d7f79a233",
+   "path": "os/59/59cad176944c8ba76fd10028ce8fb61dc6eac6a3",
    "dest": "/system/apps/swirlrun.elf",
-   "sha256": "8da5f72d23e022386675967486bd3d8d7f79a2334dfc6cfabf3fa8622542f3d1",
-   "size": 1181376
+   "sha256": "59cad176944c8ba76fd10028ce8fb61dc6eac6a3057b7cbc49d1aa6bd7b64e67",
+   "size": 1182808
   },
   {
-   "path": "os/ed/edfc32e86a92ad4519525774dc93a3b285df01fc",
+   "path": "os/c0/c0af4bad7e53368fb092d417a8324ec9f1472880",
    "dest": "/system/apps/swirlrunbig.elf",
-   "sha256": "edfc32e86a92ad4519525774dc93a3b285df01fcb3438fd51cc887c6ad90d0f3",
-   "size": 1181376
+   "sha256": "c0af4bad7e53368fb092d417a8324ec9f1472880923c14b9cf31f92b921bf082",
+   "size": 1182808
   },
   {
    "path": "os/04/04848d9462e28394427e378d3c92337843097dca",
@@ -168,10 +168,10 @@
    "size": 11744
   },
   {
-   "path": "os/8d/8da5f72d23e022386675967486bd3d8d7f79a233",
+   "path": "os/59/59cad176944c8ba76fd10028ce8fb61dc6eac6a3",
    "dest": "/system/apps/winrun.elf",
-   "sha256": "8da5f72d23e022386675967486bd3d8d7f79a2334dfc6cfabf3fa8622542f3d1",
-   "size": 1181376
+   "sha256": "59cad176944c8ba76fd10028ce8fb61dc6eac6a3057b7cbc49d1aa6bd7b64e67",
+   "size": 1182808
   },
   {
    "path": "os/f3/f31d39bd83715e719aad9c91b36bbd21f57d48fb",
