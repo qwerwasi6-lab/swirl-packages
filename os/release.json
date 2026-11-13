@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r163",
+ "version": "r164",
  "abi": 3,
  "date": "2026-11-13",
- "notes": "r163: Windows installers (Inno Setup) work: CS 1.6 / Inno setups now open their wizard, show license text, and install. Fixes: 64-bit stdcall return stack bug, VCL forms get the window, GetClassInfo, wide combo/list text, DC origins and clipping, brush colours, text metrics for Delphi apps, shell32 folder paths, shortcut creation, installer memory window.",
+ "notes": "r164: Files - show hidden files toggle (.* button in the toolbar); Delete removes a folder with everything inside it.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -210,10 +210,10 @@
    "size": 597968
   },
   {
-   "path": "os/c3/c30f61aa12401644fbe2071aa2187f1d0b75723f",
+   "path": "os/e1/e1647d3f4e18f8955df9b985a23821da63bdf77d",
    "dest": "/system/apps/gui/gfiles.elf",
-   "sha256": "c30f61aa12401644fbe2071aa2187f1d0b75723f0c9e4d9c8043baeb233d0b8e",
-   "size": 971520
+   "sha256": "e1647d3f4e18f8955df9b985a23821da63bdf77d3e09d181d5c3185bc8d52e51",
+   "size": 971592
   },
   {
    "path": "os/32/3234b4d28b7f953042837979cebda62abc7c49ed",
