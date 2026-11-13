@@ -1,6 +1,6 @@
 {
   "name": "frametrace",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Test tool: shows where a Windows game's frame time goes.",
   "author": "Swirl",
   "title": "Frame Trace",
