@@ -1,6 +1,6 @@
 {
   "name": "winlog",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Test tool: saves SwirlRun's messages for a Windows program to a log file.",
   "author": "Swirl",
   "title": "Win Log",
@@ -12,9 +12,22 @@
   "color": "4080E0",
   "glyph": "tool",
   "files": [
-    { "src": "winlog.elf",     "dest": "/home/user/Apps/winlog/winlog.elf" },
-    { "src": "winlog-big.elf", "dest": "/home/user/Apps/winlog/winlog-big.elf" },
-    { "src": "winlog.json",    "dest": "/home/user/.gterm/winlog.json" }
+    {
+      "src": "winlog.elf",
+      "dest": "/home/user/Apps/winlog/winlog.elf"
+    },
+    {
+      "src": "winlog-big.elf",
+      "dest": "/home/user/Apps/winlog/winlog-big.elf"
+    },
+    {
+      "src": "winlog-big2.elf",
+      "dest": "/home/user/Apps/winlog/winlog-big2.elf"
+    },
+    {
+      "src": "winlog.json",
+      "dest": "/home/user/.gterm/winlog.json"
+    }
   ],
   "featured": false
 }
