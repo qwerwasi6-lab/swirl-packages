@@ -1,6 +1,6 @@
 {
   "name": "winlog",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Test tool: saves SwirlRun's messages for a Windows program to a log file.",
   "author": "Swirl",
   "title": "Win Log",
