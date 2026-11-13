@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r170",
+ "version": "r171",
  "abi": 3,
  "date": "2026-11-13",
- "notes": "r170: cabinet.dll (FDI: FDICreate/FDIIsCabinet/FDICopy/FDIDestroy, stored + MSZIP) - installers that unpack .cab payloads no longer die with 'External exception C000001D'. winlog 1.0.4.",
+ "notes": "r171: missing Windows functions never crash a program outright - GetProcAddress hands out a logging stub instead of NULL, and imports of unknown calling convention get a return-0 stub instead of fail-fast (the C000001D crashes). winlog 1.0.5.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -132,22 +132,22 @@
    "size": 585680
   },
   {
-   "path": "os/b9/b9c8392235074bcd70b0fbce2b171f5cdfec0465",
+   "path": "os/05/05e18f5ae16c052c2608a41dc8fe1fc0651e2183",
    "dest": "/system/apps/swirlrun.elf",
-   "sha256": "b9c8392235074bcd70b0fbce2b171f5cdfec0465916cadd2b359b2c83fea91c7",
-   "size": 1195608
+   "sha256": "05e18f5ae16c052c2608a41dc8fe1fc0651e2183eac49f5be59bccc192f87a4e",
+   "size": 1195720
   },
   {
-   "path": "os/b2/b2b86cbae5bf09b685cd52fb9b79e3e6f35af9e2",
+   "path": "os/9b/9bbc9abe6636f0f97a9324a439b4a2360c2b0708",
    "dest": "/system/apps/swirlrunbig.elf",
-   "sha256": "b2b86cbae5bf09b685cd52fb9b79e3e6f35af9e20cae38fedb1ce7c9fd4c0b31",
-   "size": 1195608
+   "sha256": "9bbc9abe6636f0f97a9324a439b4a2360c2b07081152330f737af850ba89d9f9",
+   "size": 1195720
   },
   {
-   "path": "os/1d/1d8caa0445a4c144941a6f272a917861950dda6c",
+   "path": "os/01/010744a302f516e03fe5d077851577b903888b94",
    "dest": "/system/apps/swirlrunbig2.elf",
-   "sha256": "1d8caa0445a4c144941a6f272a917861950dda6ca98d33da889dc8171edac919",
-   "size": 1195608
+   "sha256": "010744a302f516e03fe5d077851577b903888b94d265cb63557c94263ad827e8",
+   "size": 1195720
   },
   {
    "path": "os/04/04848d9462e28394427e378d3c92337843097dca",
@@ -174,10 +174,10 @@
    "size": 11744
   },
   {
-   "path": "os/b9/b9c8392235074bcd70b0fbce2b171f5cdfec0465",
+   "path": "os/05/05e18f5ae16c052c2608a41dc8fe1fc0651e2183",
    "dest": "/system/apps/winrun.elf",
-   "sha256": "b9c8392235074bcd70b0fbce2b171f5cdfec0465916cadd2b359b2c83fea91c7",
-   "size": 1195608
+   "sha256": "05e18f5ae16c052c2608a41dc8fe1fc0651e2183eac49f5be59bccc192f87a4e",
+   "size": 1195720
   },
   {
    "path": "os/f3/f31d39bd83715e719aad9c91b36bbd21f57d48fb",
