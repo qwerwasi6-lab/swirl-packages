@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r159",
+ "version": "r160",
  "abi": 3,
  "date": "2026-11-13",
- "notes": "A newly opened window gets the keyboard (games started from the terminal no longer leave typing in the terminal).",
+ "notes": "SwirlRun: programs can register up to 128 window classes (Half-Life's Controls menu: 'Could not register Half-Life scrollbar class').",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -132,16 +132,16 @@
    "size": 585680
   },
   {
-   "path": "os/1a/1af96866911eff856b72aa5cdaed3a43ebfd60c7",
+   "path": "os/a9/a9641643ef08ec194a36239e8326f88e9f4ee443",
    "dest": "/system/apps/swirlrun.elf",
-   "sha256": "1af96866911eff856b72aa5cdaed3a43ebfd60c729dea1dbe57078676d313d0e",
-   "size": 1146192
+   "sha256": "a9641643ef08ec194a36239e8326f88e9f4ee4431e3fa16b7a0253f0cdfc35fc",
+   "size": 1155280
   },
   {
-   "path": "os/74/7474db8da287467f7a12813266ba87bd79f164d0",
+   "path": "os/41/41c44b437dfb10fe9f0ffb5b43c9bb5c3ad539cc",
    "dest": "/system/apps/swirlrunbig.elf",
-   "sha256": "7474db8da287467f7a12813266ba87bd79f164d05274864eeae40aae1289da26",
-   "size": 1146192
+   "sha256": "41c44b437dfb10fe9f0ffb5b43c9bb5c3ad539ccacf19dee81028b54353fb626",
+   "size": 1155280
   },
   {
    "path": "os/04/04848d9462e28394427e378d3c92337843097dca",
@@ -168,10 +168,10 @@
    "size": 11744
   },
   {
-   "path": "os/1a/1af96866911eff856b72aa5cdaed3a43ebfd60c7",
+   "path": "os/a9/a9641643ef08ec194a36239e8326f88e9f4ee443",
    "dest": "/system/apps/winrun.elf",
-   "sha256": "1af96866911eff856b72aa5cdaed3a43ebfd60c729dea1dbe57078676d313d0e",
-   "size": 1146192
+   "sha256": "a9641643ef08ec194a36239e8326f88e9f4ee4431e3fa16b7a0253f0cdfc35fc",
+   "size": 1155280
   },
   {
    "path": "os/f3/f31d39bd83715e719aad9c91b36bbd21f57d48fb",
