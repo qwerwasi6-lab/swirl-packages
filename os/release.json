@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r171",
+ "version": "r172",
  "abi": 3,
  "date": "2026-11-13",
- "notes": "r171: missing Windows functions never crash a program outright - GetProcAddress hands out a logging stub instead of NULL, and imports of unknown calling convention get a return-0 stub instead of fail-fast (the C000001D crashes). winlog 1.0.5.",
+ "notes": "r172: installer startup probes answer like Windows (IsWow64Process, GetNativeSystemInfo, Wow64 redirection, SetDllDirectory, SetSearchPathMode, SetProcessDEPPolicy, ShutdownBlockReason*, ChangeWindowMessageFilter*, SHCreateItemFromParsingName); kernel: a #GP in a Windows program is an access violation / privileged instruction, not 'illegal instruction C000001D'. winlog 1.0.6.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -132,22 +132,22 @@
    "size": 585680
   },
   {
-   "path": "os/05/05e18f5ae16c052c2608a41dc8fe1fc0651e2183",
+   "path": "os/b0/b02daf1754f8b6c21853f925815e71915fac4a40",
    "dest": "/system/apps/swirlrun.elf",
-   "sha256": "05e18f5ae16c052c2608a41dc8fe1fc0651e2183eac49f5be59bccc192f87a4e",
-   "size": 1195720
+   "sha256": "b02daf1754f8b6c21853f925815e71915fac4a4096ce1045768601807f9c2eef",
+   "size": 1196936
   },
   {
-   "path": "os/9b/9bbc9abe6636f0f97a9324a439b4a2360c2b0708",
+   "path": "os/b5/b5f5fb46eb13119bc6a8ffc33a5b80b267d3fa7a",
    "dest": "/system/apps/swirlrunbig.elf",
-   "sha256": "9bbc9abe6636f0f97a9324a439b4a2360c2b07081152330f737af850ba89d9f9",
-   "size": 1195720
+   "sha256": "b5f5fb46eb13119bc6a8ffc33a5b80b267d3fa7af97dea0d0d604439583252d8",
+   "size": 1196936
   },
   {
-   "path": "os/01/010744a302f516e03fe5d077851577b903888b94",
+   "path": "os/ee/eedc172c96cedf33149d6c3097e69040b65f28be",
    "dest": "/system/apps/swirlrunbig2.elf",
-   "sha256": "010744a302f516e03fe5d077851577b903888b94d265cb63557c94263ad827e8",
-   "size": 1195720
+   "sha256": "eedc172c96cedf33149d6c3097e69040b65f28befba1b8116ddacdd5ed485979",
+   "size": 1196936
   },
   {
    "path": "os/04/04848d9462e28394427e378d3c92337843097dca",
@@ -174,10 +174,10 @@
    "size": 11744
   },
   {
-   "path": "os/05/05e18f5ae16c052c2608a41dc8fe1fc0651e2183",
+   "path": "os/b0/b02daf1754f8b6c21853f925815e71915fac4a40",
    "dest": "/system/apps/winrun.elf",
-   "sha256": "05e18f5ae16c052c2608a41dc8fe1fc0651e2183eac49f5be59bccc192f87a4e",
-   "size": 1195720
+   "sha256": "b02daf1754f8b6c21853f925815e71915fac4a4096ce1045768601807f9c2eef",
+   "size": 1196936
   },
   {
    "path": "os/f3/f31d39bd83715e719aad9c91b36bbd21f57d48fb",
@@ -546,9 +546,9 @@
    "size": 100
   },
   {
-   "path": "os/c5/c57b57d7002ace2443bdb28d6c380c8718717334",
+   "path": "os/7d/7d4ea71c5c6bb15818bb3fa36addaf45ad0ad836",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "c57b57d7002ace2443bdb28d6c380c8718717334474726ee8667985991435268",
+   "sha256": "7d4ea71c5c6bb15818bb3fa36addaf45ad0ad836fc98664dc27e845901a9b60e",
    "size": 979048
   },
   {
