@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r172",
+ "version": "r173",
  "abi": 3,
  "date": "2026-11-13",
- "notes": "r172: installer startup probes answer like Windows (IsWow64Process, GetNativeSystemInfo, Wow64 redirection, SetDllDirectory, SetSearchPathMode, SetProcessDEPPolicy, ShutdownBlockReason*, ChangeWindowMessageFilter*, SHCreateItemFromParsingName); kernel: a #GP in a Windows program is an access violation / privileged instruction, not 'illegal instruction C000001D'. winlog 1.0.6.",
+ "notes": "r173: VirtualAlloc/VirtualQuery behave like Windows - an address that is not free is refused instead of silently getting memory elsewhere (Delphi heaps built blocks on someone else's memory: access violations in setup), 1024 regions, real VirtualQuery answers. winlog 1.0.7.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -132,22 +132,22 @@
    "size": 585680
   },
   {
-   "path": "os/b0/b02daf1754f8b6c21853f925815e71915fac4a40",
+   "path": "os/90/9053d7df20bf479517bfea676bb650079435f54c",
    "dest": "/system/apps/swirlrun.elf",
-   "sha256": "b02daf1754f8b6c21853f925815e71915fac4a4096ce1045768601807f9c2eef",
-   "size": 1196936
+   "sha256": "9053d7df20bf479517bfea676bb650079435f54cffe2d8626a4835b56f13e030",
+   "size": 1197720
   },
   {
-   "path": "os/b5/b5f5fb46eb13119bc6a8ffc33a5b80b267d3fa7a",
+   "path": "os/6e/6e6acfef5eb1a648e5534d1fabdf0713b98cb5bb",
    "dest": "/system/apps/swirlrunbig.elf",
-   "sha256": "b5f5fb46eb13119bc6a8ffc33a5b80b267d3fa7af97dea0d0d604439583252d8",
-   "size": 1196936
+   "sha256": "6e6acfef5eb1a648e5534d1fabdf0713b98cb5bb8ea6386a86fb5d137a57d4f5",
+   "size": 1197720
   },
   {
-   "path": "os/ee/eedc172c96cedf33149d6c3097e69040b65f28be",
+   "path": "os/94/948c0da5f36ef4ca964d02151cc2ceeae6b4d035",
    "dest": "/system/apps/swirlrunbig2.elf",
-   "sha256": "eedc172c96cedf33149d6c3097e69040b65f28befba1b8116ddacdd5ed485979",
-   "size": 1196936
+   "sha256": "948c0da5f36ef4ca964d02151cc2ceeae6b4d035b5f781c718292c5dd9c1a01f",
+   "size": 1197720
   },
   {
    "path": "os/04/04848d9462e28394427e378d3c92337843097dca",
@@ -174,10 +174,10 @@
    "size": 11744
   },
   {
-   "path": "os/b0/b02daf1754f8b6c21853f925815e71915fac4a40",
+   "path": "os/90/9053d7df20bf479517bfea676bb650079435f54c",
    "dest": "/system/apps/winrun.elf",
-   "sha256": "b02daf1754f8b6c21853f925815e71915fac4a4096ce1045768601807f9c2eef",
-   "size": 1196936
+   "sha256": "9053d7df20bf479517bfea676bb650079435f54cffe2d8626a4835b56f13e030",
+   "size": 1197720
   },
   {
    "path": "os/f3/f31d39bd83715e719aad9c91b36bbd21f57d48fb",
