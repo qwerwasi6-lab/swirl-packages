@@ -1,0 +1,10 @@
+{
+  "name": "winlog",
+  "engine": "pipeline",
+  "category": "tools",
+  "usage": "winlog <path to .exe>",
+  "summary": "run a Windows program and save its log to /home/user/.windows/swirlrun.log",
+  "steps": [
+    { "spawn": "/home/user/Apps/winlog/winlog-big.elf", "arg": "$@" }
+  ]
+}

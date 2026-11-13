@@ -1,0 +1,20 @@
+{
+  "name": "winlog",
+  "version": "1.0.0",
+  "description": "Test tool: saves SwirlRun's messages for a Windows program to a log file.",
+  "author": "Swirl",
+  "title": "Win Log",
+  "category": "Tools",
+  "tagline": "Log file for Windows programs (test tool).",
+  "long": "Runs a Windows program (or installer) and writes everything SwirlRun reports to /home/user/.windows/swirlrun.log.\\nType: winlog /home/user/Downloads/setup.exe\\nWhen it gets stuck, open the log in Files (turn on .* to see .windows).\\nRemove it when done: spm remove winlog",
+  "publisher": "Swirl",
+  "license": "MIT",
+  "color": "4080E0",
+  "glyph": "tool",
+  "files": [
+    { "src": "winlog.elf",     "dest": "/home/user/Apps/winlog/winlog.elf" },
+    { "src": "winlog-big.elf", "dest": "/home/user/Apps/winlog/winlog-big.elf" },
+    { "src": "winlog.json",    "dest": "/home/user/.gterm/winlog.json" }
+  ],
+  "featured": false
+}
