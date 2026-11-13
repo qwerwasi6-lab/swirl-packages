@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r168",
+ "version": "r169",
  "abi": 3,
  "date": "2026-11-13",
- "notes": "r168: the SwirlRun big window is split into two halves (512 MB + 480 MB) so two big Windows programs run at once - an installer that starts an Inno setup no longer fails with 'Unable to execute file in the temporary directory (Error 2)'. winlog 1.0.2.",
+ "notes": "r169: an Inno Setup loader started by another program goes straight into the small window (the parent keeps a real handle to wait on); spawns retry for 3 s while a window frees up; restart keeps quoted arguments. winlog 1.0.3.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -132,22 +132,22 @@
    "size": 585680
   },
   {
-   "path": "os/8b/8b0d340eb1da6713622d7f85c1b9a200661fc9ca",
+   "path": "os/84/842a27ff72dc91cfeb2b935542e7322ed866af4d",
    "dest": "/system/apps/swirlrun.elf",
-   "sha256": "8b0d340eb1da6713622d7f85c1b9a200661fc9ca4167ad443f1ff0a73d85ea7e",
-   "size": 1183936
+   "sha256": "842a27ff72dc91cfeb2b935542e7322ed866af4d29945b7fe2844449462fbdd6",
+   "size": 1184576
   },
   {
-   "path": "os/db/db52d532766b9ab41aa64a80b10e6eae9658daf0",
+   "path": "os/51/51f651c1bf63dcb269fba54e9218f868ab637741",
    "dest": "/system/apps/swirlrunbig.elf",
-   "sha256": "db52d532766b9ab41aa64a80b10e6eae9658daf09bd196ee5a757b47d447d823",
-   "size": 1183936
+   "sha256": "51f651c1bf63dcb269fba54e9218f868ab6377419bdfbf04b36ee08d86fb1154",
+   "size": 1184576
   },
   {
-   "path": "os/fe/fe74983e78b82b6cfcf5a9f5a571126ebdc7134d",
+   "path": "os/c3/c393f9dd886578a9c6aadea5b0683685a43add8a",
    "dest": "/system/apps/swirlrunbig2.elf",
-   "sha256": "fe74983e78b82b6cfcf5a9f5a571126ebdc7134d9bd0d69caf6a8de2ec97ecf7",
-   "size": 1183936
+   "sha256": "c393f9dd886578a9c6aadea5b0683685a43add8a3d34bf15a29b1744e692f647",
+   "size": 1184576
   },
   {
    "path": "os/04/04848d9462e28394427e378d3c92337843097dca",
@@ -174,10 +174,10 @@
    "size": 11744
   },
   {
-   "path": "os/8b/8b0d340eb1da6713622d7f85c1b9a200661fc9ca",
+   "path": "os/84/842a27ff72dc91cfeb2b935542e7322ed866af4d",
    "dest": "/system/apps/winrun.elf",
-   "sha256": "8b0d340eb1da6713622d7f85c1b9a200661fc9ca4167ad443f1ff0a73d85ea7e",
-   "size": 1183936
+   "sha256": "842a27ff72dc91cfeb2b935542e7322ed866af4d29945b7fe2844449462fbdd6",
+   "size": 1184576
   },
   {
    "path": "os/f3/f31d39bd83715e719aad9c91b36bbd21f57d48fb",
