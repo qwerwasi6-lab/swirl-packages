@@ -1,0 +1,18 @@
+{
+  "name": "karo",
+  "version": "1.0.0",
+  "description": "Karo - a modern, customisable terminal for SwirlOS: themes, tabs, command palette, live settings, autosuggest.",
+  "author": "Swirl",
+  "title": "Karo",
+  "category": "Utilities",
+  "tagline": "A modern terminal with themes, tabs and a command palette.",
+  "long": "Karo is a modern terminal for SwirlOS. It runs every command of the stock terminal (the JSON commands in /system/gterm) and adds a lot on top.\\nLook: 10 built-in themes (Karo Night, Midnight, Nord, Dracula, Gruvbox, Mocha, Solar Dark, Paper, Swirl, Terminal), your own themes as simple .conf files, powerline / minimal / classic prompts, pill or line tabs, block / bar / underline cursor, adjustable font size, line spacing and padding, and a status bar.\\nFeel: tabs, a command palette (Ctrl+P), a live settings panel (Ctrl+O), history autosuggest, Tab completion, ANSI colour output, mouse selection and copy, aliases that persist, and a resizable grid.\\nEverything is saved to /home/user/.config/karo/karo.conf.\\nKeys: Ctrl+T/W new/close tab, Ctrl+N/B next/previous tab, Ctrl+P palette, Ctrl+O settings, Ctrl+L clear, Ctrl+C copy or stop, Ctrl+V paste.",
+  "publisher": "Swirl",
+  "license": "MIT",
+  "color": "8B7CFF",
+  "glyph": "karo",
+  "launch": "/home/user/Apps/Karo/karo.elf",
+  "files": [
+    { "src": "karo.elf", "dest": "/home/user/Apps/Karo/karo.elf" }
+  ]
+}
