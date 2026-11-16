@@ -1,0 +1,9 @@
+name=Paint V2
+exec=/system/apps/gui/paintv2.elf
+icon=paintv2
+category=Graphics
+opens=.pva
+roles=
+prio=1
+kind=12
+fav=0
