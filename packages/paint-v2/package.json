@@ -1,0 +1,22 @@
+{
+  "name": "paint-v2",
+  "version": "2.0.0",
+  "description": "Paint V2: a native SwirlOS paint program.",
+  "author": "Leonid",
+  "title": "Paint V2",
+  "category": "Apps",
+  "tagline": "Draw, sketch and edit pictures.",
+  "long": "Paint V2 is the second-generation paint program for SwirlOS. It registers itself as a desktop app in the Graphics group and opens .pva files.",
+  "publisher": "Swirl",
+  "license": "MIT",
+  "color": "6D4AE0",
+  "glyph": "tool",
+  "launch": "/system/apps/gui/paintv2.elf",
+  "menu": "Graphics",
+  "opens": [".pva"],
+  "files": [
+    {"src": "paintv2.elf", "dest": "/system/apps/gui/paintv2.elf"},
+    {"src": "paintv2.app", "dest": "/system/apps/registry/paintv2.app"},
+    {"src": "paintv2.png", "dest": "/system/apps/icons/paintv2.png"}
+  ]
+}
