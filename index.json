@@ -7656,13 +7656,13 @@
       ]
     },
     "widgetmaker": {
-      "version": "1.0.0",
-      "description": "Design desktop widgets with a live preview.",
+      "version": "2.0.0",
+      "description": "Design desktop widgets with a live preview: clocks, CPU/RAM gauges, notes, weather and files.",
       "author": "qwerwasi6-lab",
       "title": "Widget Maker",
       "category": "Apps",
-      "tagline": "Clocks, notes, weather and live file widgets for your desktop.",
-      "long": "Design widgets with a live preview and place them on the desktop. Types: clock, text note, weather and file (shows the first lines of any text file, updated live).\nWidgets are saved in /home/user/Widgets and come back at every boot. Needs a desktop with widget support.",
+      "tagline": "Clocks, CPU and RAM monitors, notes, weather and live file widgets.",
+      "long": "Design widgets with a live preview and place them on the desktop. Types: clock, text note, weather, file (shows the first lines of any text file, updated live), CPU, RAM and System (CPU and RAM together).\nClocks: Digital, Stack, Analog and Minimal styles, 12/24-hour, optional seconds, and the date can be switched off or shown in three formats.\nCPU, RAM and System gauges: Bar, Ring, Graph (last minute) and Number styles, optional label, and colours that turn amber or red when busy.\nEvery widget: size, opacity, corner roundness, border on/off, card, accent and text colours. Widgets are saved in /home/user/Widgets and come back at every boot. Needs a desktop built with the matching widgets.h.",
       "publisher": "qwerwasi6-lab",
       "license": "MIT",
       "color": "7C3AED",
@@ -7673,8 +7673,8 @@
         {
           "path": "packages/widgetmaker/widgetmaker.elf",
           "dest": "/home/user/Apps/widgetmaker/widgetmaker.elf",
-          "sha256": "46fea3552411af8eb3f3ae557541590141b6b6812fca101a494559f9b1fc82d4",
-          "size": 88072
+          "sha256": "279df8c206afc6ac37f6869960a768bdced8ffed57cdb64beb7c7bbfd7b00b3c",
+          "size": 100272
         }
       ]
     },
