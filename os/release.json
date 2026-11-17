@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r177",
+ "version": "r178",
  "abi": 3,
  "date": "2026-11-17",
- "notes": "r177: sound for Linux apps (/dev/dsp OSS, mono or stereo, into the SwirlOS mixer) - the Web Browser plays video with sound (needs Browser 1.3.0 + Media Codecs 1.0.0).",
+ "notes": "r178: fixes the random whole-OS crash (games, browser/YouTube): APIC interrupts (GPU fastwake, spurious) resumed a stale frame - another task's code with the idle task's page tables. The crash screen is readable at native resolution.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -546,10 +546,10 @@
    "size": 100
   },
   {
-   "path": "os/e1/e11f96466af136051c7f8009a69f0c940ca73fb4",
+   "path": "os/19/19f597aa58799f6da449eb926ef9fad8673eecb2",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "e11f96466af136051c7f8009a69f0c940ca73fb476332c4a85c86991bd0be2e6",
-   "size": 979176
+   "sha256": "19f597aa58799f6da449eb926ef9fad8673eecb23714fab847ab4f8d11ffb379",
+   "size": 979216
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
