@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r180",
+ "version": "r181",
  "abi": 3,
  "date": "2026-11-17",
- "notes": "r180: new system sounds (synthesized for SwirlOS): soft glass chime for notifications, warm two-note tone for errors, a single chime for screenshots, a tiny click for the volume slider, and a creamy keyboard 'thock' when apps open and close. Settings > Sound: System sounds and App open/close sound toggles. The old square-wave beep is now a soft decaying tone.",
+ "notes": "r181: system sounds about 12 dB louder (they were too quiet below full volume).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -1703,39 +1703,39 @@
    "size": 39085
   },
   {
-   "path": "os/ea/eab507968d2c9faba50778e18972a9a05a0d6c32",
+   "path": "os/38/38e42e6e0a96d49a2ce5592cd0ba7c534aa04b56",
    "dest": "/system/sounds/click.wav",
-   "sha256": "eab507968d2c9faba50778e18972a9a05a0d6c3244da68d7944ae164b519755d",
+   "sha256": "38e42e6e0a96d49a2ce5592cd0ba7c534aa04b5622a7ef1434c8c61a821f0dd8",
    "size": 9644
   },
   {
-   "path": "os/af/af3097607b3e6cfd3f8189d3a42f12bb1d267ac1",
+   "path": "os/ff/ff80ab85a0efb3d95f92dc75ba3ef358665d3f16",
    "dest": "/system/sounds/close.wav",
-   "sha256": "af3097607b3e6cfd3f8189d3a42f12bb1d267ac1fc2b8b0790586c871ef68ca9",
+   "sha256": "ff80ab85a0efb3d95f92dc75ba3ef358665d3f168cf04f3a90f5dbf1501d47a4",
    "size": 30764
   },
   {
-   "path": "os/b5/b52d0b9827dbee840757685aa50183a7420ae3db",
+   "path": "os/ba/baf075fc1b5d26444ac0d932aeb151ccb0494a66",
    "dest": "/system/sounds/done.wav",
-   "sha256": "b52d0b9827dbee840757685aa50183a7420ae3db102d4cd43dca4bd48f161aa5",
+   "sha256": "baf075fc1b5d26444ac0d932aeb151ccb0494a66fab8bb233985e6b094a90c62",
    "size": 153644
   },
   {
-   "path": "os/1e/1efd52a74f3648c5a273d5427df39d20ebebf282",
+   "path": "os/a2/a2ac7bced7413b7e2b80e0aca64439fcc6a6aadf",
    "dest": "/system/sounds/error.wav",
-   "sha256": "1efd52a74f3648c5a273d5427df39d20ebebf282d61912d0855883d505ada316",
+   "sha256": "a2ac7bced7413b7e2b80e0aca64439fcc6a6aadf4c80a0c9e8bc57dec024c245",
    "size": 144044
   },
   {
-   "path": "os/ea/eac795c53bddc822a9b349263d9ea348aa48790b",
+   "path": "os/24/240becc49902a2c5f05dc1093aeab7d859410b7c",
    "dest": "/system/sounds/notify.wav",
-   "sha256": "eac795c53bddc822a9b349263d9ea348aa48790b345ba06e774373ad5f1be0a8",
+   "sha256": "240becc49902a2c5f05dc1093aeab7d859410b7c859d8f969f8f60a38c643ea4",
    "size": 211244
   },
   {
-   "path": "os/96/96d9bda7b683d1c046f4097f66e194e6aefca8a4",
+   "path": "os/7b/7b6f86c6bd05a55ff621b5d16fcf5b58039b1413",
    "dest": "/system/sounds/open.wav",
-   "sha256": "96d9bda7b683d1c046f4097f66e194e6aefca8a44ce2845854227b2df60bc242",
+   "sha256": "7b6f86c6bd05a55ff621b5d16fcf5b58039b1413d7e13149bb54f042f16160a0",
    "size": 31720
   }
  ]
