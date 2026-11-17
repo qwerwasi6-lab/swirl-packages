@@ -1,5 +1,5 @@
 #!/usr/bin/dash
-export GIO_MODULE_DIR=/usr/lib/x86_64-linux-gnu/gio/modules SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt LIBGL_DRIVERS_PATH=/usr/lib/x86_64-linux-gnu/dri GBM_BACKENDS_PATH=/usr/lib/x86_64-linux-gnu/gbm LP_NUM_THREADS=0 JSC_useJIT=false JSC_useConcurrentJIT=false DISPLAY=:0 HOME=/home/user WEBKIT_DISABLE_SANDBOX_THIS_IS_DANGEROUS=1 GDK_BACKEND=x11 NO_AT_BRIDGE=1 GSETTINGS_BACKEND=memory JSC_usePollingTraps=true
+export GIO_MODULE_DIR=/usr/lib/x86_64-linux-gnu/gio/modules SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt LIBGL_DRIVERS_PATH=/usr/lib/x86_64-linux-gnu/dri GBM_BACKENDS_PATH=/usr/lib/x86_64-linux-gnu/gbm LP_NUM_THREADS=0 DISPLAY=:0 HOME=/home/user WEBKIT_DISABLE_SANDBOX_THIS_IS_DANGEROUS=1 GDK_BACKEND=x11 NO_AT_BRIDGE=1 GSETTINGS_BACKEND=memory JSC_usePollingTraps=true JSC_useJIT=false JSC_useConcurrentJIT=false
 # r127: draw web pages on the GPU (Mesa crocus through /dev/dri) when SwirlOS offers one.
 # Touch /home/user/.browser-software to go back to the old software renderer.
 if [ -e /dev/dri/renderD128 ] && [ ! -e /home/user/.browser-software ]; then
@@ -10,8 +10,8 @@ else
   echo "renderer: software" > /system/debug/browser-renderer.txt
 fi
 # r177: video + sound (Media Codecs package): GStreamer scans its plugins in-process (no helper
-# process), keeps no registry file (scans its plugins each start) and plays sound through /dev/dsp.
-export GST_REGISTRY_FORK=no GST_PLUGIN_SYSTEM_PATH=/usr/lib/x86_64-linux-gnu/gstreamer-1.0 GST_REGISTRY=/proc/self/gstreamer-registry.bin GST_PLUGIN_FEATURE_RANK=osssink:MAX ORC_CODE=backup
+# process), keeps its registry in the home folder and plays sound through /dev/dsp.
+export GST_REGISTRY_FORK=no GST_PLUGIN_SYSTEM_PATH=/usr/lib/x86_64-linux-gnu/gstreamer-1.0 GST_REGISTRY=/home/user/.cache/gstreamer-registry.bin GST_PLUGIN_FEATURE_RANK=osssink:MAX ORC_CODE=backup
 printf 'multi on\n' > /etc/host.conf
 printf 'passwd: files\ngroup: files\nhosts: files dns\n' > /etc/nsswitch.conf
 # r155: the X screen is as big as the SwirlOS display, so the browser window can grow to fill a
@@ -20,7 +20,7 @@ SZ=$(/usr/bin/cat /home/user/.lx/screen 2> /dev/null)
 [ -n "$SZ" ] || SZ=1366x768
 try=0
 while [ $try -lt 4 ]; do
-  /usr/bin/Xvfb :0 +iglx -extension MIT-SHM -screen 0 ${SZ}x24 -nolisten tcp -noreset > /system/debug/browser-xvfb-log.txt 2>&1 &
+  /usr/bin/Xvfb :0 +iglx -screen 0 ${SZ}x24 -nolisten tcp -noreset > /system/debug/browser-xvfb-log.txt 2>&1 &
   XPID=$!
   n=0
   while [ $n -lt 40 ]; do
