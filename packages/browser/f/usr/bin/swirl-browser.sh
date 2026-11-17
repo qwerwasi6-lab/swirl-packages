@@ -9,6 +9,9 @@ else
   export MESA_LOADER_DRIVER_OVERRIDE=swrast LIBGL_ALWAYS_SOFTWARE=1 WEBKIT_DISABLE_DMABUF_RENDERER=1 WEBKIT_DISABLE_COMPOSITING_MODE=1
   echo "renderer: software" > /system/debug/browser-renderer.txt
 fi
+# r177: video + sound (Media Codecs package): GStreamer scans its plugins in-process (no helper
+# process), keeps no registry file (scans its plugins each start) and plays sound through /dev/dsp.
+export GST_REGISTRY_FORK=no GST_PLUGIN_SYSTEM_PATH=/usr/lib/x86_64-linux-gnu/gstreamer-1.0 GST_REGISTRY=/proc/self/gstreamer-registry.bin GST_PLUGIN_FEATURE_RANK=osssink:MAX ORC_CODE=backup
 printf 'multi on\n' > /etc/host.conf
 printf 'passwd: files\ngroup: files\nhosts: files dns\n' > /etc/nsswitch.conf
 # r155: the X screen is as big as the SwirlOS display, so the browser window can grow to fill a

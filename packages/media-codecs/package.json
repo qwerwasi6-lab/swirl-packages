@@ -1,0 +1,189 @@
+{
+ "name": "media-codecs",
+ "version": "1.0.0",
+ "description": "Video and audio playback for the Web Browser (GStreamer plugins).",
+ "author": "GStreamer, libvpx, OpenH264, FAAD2, libaom, Opus, Vorbis, Theora (Ubuntu 24.04 builds)",
+ "title": "Media Codecs",
+ "category": "System",
+ "tagline": "Lets the Web Browser play videos (YouTube) with sound.",
+ "long": "GStreamer 1.24 plugins for the WebKit Web Browser: WebM (VP9, AV1, Opus), MP4 (H.264, AAC), Ogg, sound through SwirlOS (/dev/dsp).\\nInstalled automatically with the Web Browser 1.3.0.",
+ "publisher": "Swirl",
+ "license": "LGPL / BSD (Ubuntu packages)",
+ "color": "D04040",
+ "glyph": "tool",
+ "files": [
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstcoreelements.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstcoreelements.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstapp.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstapp.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstplayback.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstplayback.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgsttypefindfunctions.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgsttypefindfunctions.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstaudioconvert.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstaudioconvert.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstaudioresample.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstaudioresample.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstvolume.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstvolume.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstvideoconvertscale.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstvideoconvertscale.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstautodetect.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstautodetect.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstisomp4.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstisomp4.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstriff-1.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstriff-1.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstrtp-1.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstrtp-1.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstmatroska.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstmatroska.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstaudioparsers.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstaudioparsers.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstvideoparsersbad.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstvideoparsersbad.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstcodecparsers-1.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstcodecparsers-1.0.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstopusparse.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstopusparse.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libopus.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libopus.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstopus.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstopus.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstvpx.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstvpx.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libvpx.so.9",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libvpx.so.9"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstopenh264.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstopenh264.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libopenh264.so.7",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libopenh264.so.7"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstfaad.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstfaad.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libfaad.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libfaad.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstaom.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstaom.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libaom.so.3",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libaom.so.3"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstossaudio.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstossaudio.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstdeinterlace.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstdeinterlace.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstvideofilter.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstvideofilter.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstid3demux.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstid3demux.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstapetag.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstapetag.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstwavparse.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstwavparse.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstogg.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstogg.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libogg.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libogg.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstvorbis.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstvorbis.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libvorbis.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libvorbis.so.0"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libvorbisenc.so.2",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libvorbisenc.so.2"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgsttheora.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgsttheora.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libtheoradec.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libtheoradec.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libtheoraenc.so.1",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libtheoraenc.so.1"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstdebugutilsbad.so",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgstdebugutilsbad.so"
+  },
+  {
+   "src": "f/usr/lib/x86_64-linux-gnu/libgstnet-1.0.so.0",
+   "dest": "/linux/usr/lib/x86_64-linux-gnu/libgstnet-1.0.so.0"
+  }
+ ],
+ "featured": false
+}
