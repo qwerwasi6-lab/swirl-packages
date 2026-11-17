@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r175",
+ "version": "r176",
  "abi": 3,
  "date": "2026-11-17",
- "notes": "r175: faster GPU frames. The GL server flips each frame on the GPU and reads it straight into shared memory (no CPU flip, no extra copy), frames come back opaque (no alpha pass), and SwirlRun/SDL/3D Demo keep one frame in flight so the game and the GPU work at the same time.",
+ "notes": "r176: Inno Setup 6.5 installers (CS 1.6 2025): Windows 7 version for Unicode apps, ~120 W/Vista+ APIs (locale, atoms, menus, pipes, condition variables, COM/OLE basics, FlatSB, WNet), shfolder/msimg32/wtsapi32 DLLs, AlphaBlend/TransparentBlt/GradientFill, DIB sections report their pixel pointer (fixes host-code corruption), Delphi 12 TPUtilWindow no longer steals the window, Unicode window captions, TaskDialogIndirect -> message box, file names over 55 chars get a stable short name.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -132,22 +132,22 @@
    "size": 585680
   },
   {
-   "path": "os/d5/d5810d04b222c7b1eded329b176a52726a0b015a",
+   "path": "os/4e/4e45663b4b36d90aa5288f529122a61ffc094f79",
    "dest": "/system/apps/swirlrun.elf",
-   "sha256": "d5810d04b222c7b1eded329b176a52726a0b015ab97a30e4d6dc2cc277eca52b",
-   "size": 1205224
+   "sha256": "4e45663b4b36d90aa5288f529122a61ffc094f79739daa0f77eb2d16de0cf6ad",
+   "size": 1230728
   },
   {
-   "path": "os/f9/f9c56dbf28901c9a784319d9e02246ccb75c182a",
+   "path": "os/a4/a407d3251db77dc2a7521b67d87c3e1af747b985",
    "dest": "/system/apps/swirlrunbig.elf",
-   "sha256": "f9c56dbf28901c9a784319d9e02246ccb75c182a29f7c9a049877d669b04a5cf",
-   "size": 1205224
+   "sha256": "a407d3251db77dc2a7521b67d87c3e1af747b985a346dcc58ec0e6bdeb7a0016",
+   "size": 1230728
   },
   {
-   "path": "os/e0/e0ba202d5b5378b39d3c725d76385beca940512f",
+   "path": "os/77/77896a61bd09a98bcced46c57abad542730ffbd4",
    "dest": "/system/apps/swirlrunbig2.elf",
-   "sha256": "e0ba202d5b5378b39d3c725d76385beca940512fa7e540bf7b32daa46ccc087d",
-   "size": 1205224
+   "sha256": "77896a61bd09a98bcced46c57abad542730ffbd41bb3b935e894d46ad2d71f8b",
+   "size": 1230728
   },
   {
    "path": "os/04/04848d9462e28394427e378d3c92337843097dca",
@@ -174,10 +174,10 @@
    "size": 11744
   },
   {
-   "path": "os/d5/d5810d04b222c7b1eded329b176a52726a0b015a",
+   "path": "os/4e/4e45663b4b36d90aa5288f529122a61ffc094f79",
    "dest": "/system/apps/winrun.elf",
-   "sha256": "d5810d04b222c7b1eded329b176a52726a0b015ab97a30e4d6dc2cc277eca52b",
-   "size": 1205224
+   "sha256": "4e45663b4b36d90aa5288f529122a61ffc094f79739daa0f77eb2d16de0cf6ad",
+   "size": 1230728
   },
   {
    "path": "os/f3/f31d39bd83715e719aad9c91b36bbd21f57d48fb",
