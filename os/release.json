@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r179",
+ "version": "r180",
  "abi": 3,
  "date": "2026-11-17",
- "notes": "r179: Linux-layer fixes for the browser: a missing parent folder no longer makes create/unlink/mkdir act on an unrelated file (it overwrote a codec plugin); SysV shared memory keeps removed segments attachable (MIT-SHM). Browser 1.3.1: frames reach the SwirlOS window through X shared memory (~10x cheaper per frame).",
+ "notes": "r180: new system sounds (synthesized for SwirlOS): soft glass chime for notifications, warm two-note tone for errors, a single chime for screenshots, a tiny click for the volume slider, and a creamy keyboard 'thock' when apps open and close. Settings > Sound: System sounds and App open/close sound toggles. The old square-wave beep is now a soft decaying tone.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/5c/5cbbe2933911ba4df37bf57545aec7d957f7b762",
+   "path": "os/41/41fc6c580342db3c9bd87e34586b23b80a985d56",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "5cbbe2933911ba4df37bf57545aec7d957f7b7622f93bfdc8ce581b6b5242749",
-   "size": 1098488
+   "sha256": "41fc6c580342db3c9bd87e34586b23b80a985d560cc7a8f355d8bde7f2583de4",
+   "size": 1099656
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -246,10 +246,10 @@
    "size": 195152
   },
   {
-   "path": "os/d9/d902670507db85376ec34e77979da6429f766892",
+   "path": "os/02/027ba40295cd7d9fce2dcc593f1ca9ab3ea1f0b4",
    "dest": "/system/apps/gui/gsettings.elf",
-   "sha256": "d902670507db85376ec34e77979da6429f7668925d7cf9c3c60caf11eae3d9fe",
-   "size": 1027416
+   "sha256": "027ba40295cd7d9fce2dcc593f1ca9ab3ea1f0b498774877e583268f803c8544",
+   "size": 1027496
   },
   {
    "path": "os/a8/a802d4055a5d4bb6e20cf6a4a245c2d2d2b63a5b",
@@ -546,10 +546,10 @@
    "size": 100
   },
   {
-   "path": "os/e0/e06691262f3828bb3590d19e2c1b79a098144f66",
+   "path": "os/46/462c123159ec83f66259b2b522c0f376374e0b75",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "e06691262f3828bb3590d19e2c1b79a098144f6611c3df082f806a7696042a53",
-   "size": 983344
+   "sha256": "462c123159ec83f66259b2b522c0f376374e0b7509bca786e1c1601f23ab48f8",
+   "size": 983488
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
@@ -1701,6 +1701,42 @@
    "dest": "/system/share/wallpapers/tiles.jpg",
    "sha256": "f427f9a380329a2992370405c0e626020a18ff712098ce2bfd1fe65a0046a62e",
    "size": 39085
+  },
+  {
+   "path": "os/ea/eab507968d2c9faba50778e18972a9a05a0d6c32",
+   "dest": "/system/sounds/click.wav",
+   "sha256": "eab507968d2c9faba50778e18972a9a05a0d6c3244da68d7944ae164b519755d",
+   "size": 9644
+  },
+  {
+   "path": "os/af/af3097607b3e6cfd3f8189d3a42f12bb1d267ac1",
+   "dest": "/system/sounds/close.wav",
+   "sha256": "af3097607b3e6cfd3f8189d3a42f12bb1d267ac1fc2b8b0790586c871ef68ca9",
+   "size": 30764
+  },
+  {
+   "path": "os/b5/b52d0b9827dbee840757685aa50183a7420ae3db",
+   "dest": "/system/sounds/done.wav",
+   "sha256": "b52d0b9827dbee840757685aa50183a7420ae3db102d4cd43dca4bd48f161aa5",
+   "size": 153644
+  },
+  {
+   "path": "os/1e/1efd52a74f3648c5a273d5427df39d20ebebf282",
+   "dest": "/system/sounds/error.wav",
+   "sha256": "1efd52a74f3648c5a273d5427df39d20ebebf282d61912d0855883d505ada316",
+   "size": 144044
+  },
+  {
+   "path": "os/ea/eac795c53bddc822a9b349263d9ea348aa48790b",
+   "dest": "/system/sounds/notify.wav",
+   "sha256": "eac795c53bddc822a9b349263d9ea348aa48790b345ba06e774373ad5f1be0a8",
+   "size": 211244
+  },
+  {
+   "path": "os/96/96d9bda7b683d1c046f4097f66e194e6aefca8a4",
+   "dest": "/system/sounds/open.wav",
+   "sha256": "96d9bda7b683d1c046f4097f66e194e6aefca8a44ce2845854227b2df60bc242",
+   "size": 31720
   }
  ]
 }
