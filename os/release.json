@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r174",
+ "version": "r175",
  "abi": 3,
  "date": "2026-11-17",
- "notes": "r174: Solitaire XP installs and launches. Real GetFileVersionInfo/VerQueryValue (A+W), builtin DLLs report XP SP3 versions, LoadLibrary no longer returns resource-only mappings, VirtualAlloc 64KB alignment + VirtualFree zeroing (fixes Delphi heap corruption), LoadBitmap from the given module (cards.dll) incl. OS/2 bitmap headers and big-slot pointer fix, LoadImageW, RegisterWindowMessageW, InvertRect, LineDDA, PtVisible, hidden windows get WM_SIZE at first ShowWindow.",
+ "notes": "r175: faster GPU frames. The GL server flips each frame on the GPU and reads it straight into shared memory (no CPU flip, no extra copy), frames come back opaque (no alpha pass), and SwirlRun/SDL/3D Demo keep one frame in flight so the game and the GPU work at the same time.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -132,22 +132,22 @@
    "size": 585680
   },
   {
-   "path": "os/35/350c939cc834ee07136015e9240a359e4c8148ef",
+   "path": "os/d5/d5810d04b222c7b1eded329b176a52726a0b015a",
    "dest": "/system/apps/swirlrun.elf",
-   "sha256": "350c939cc834ee07136015e9240a359e4c8148efc0a11fbd5b9e2a8a3855f92f",
-   "size": 1203856
+   "sha256": "d5810d04b222c7b1eded329b176a52726a0b015ab97a30e4d6dc2cc277eca52b",
+   "size": 1205224
   },
   {
-   "path": "os/8e/8e78795408ac42b8b78a4de3a8e4fdfaef9e88c7",
+   "path": "os/f9/f9c56dbf28901c9a784319d9e02246ccb75c182a",
    "dest": "/system/apps/swirlrunbig.elf",
-   "sha256": "8e78795408ac42b8b78a4de3a8e4fdfaef9e88c74585f38062ff9b3cf072311a",
-   "size": 1203856
+   "sha256": "f9c56dbf28901c9a784319d9e02246ccb75c182a29f7c9a049877d669b04a5cf",
+   "size": 1205224
   },
   {
-   "path": "os/7c/7cd8ec72625ae51483a48c2a814c2b870e41a75f",
+   "path": "os/e0/e0ba202d5b5378b39d3c725d76385beca940512f",
    "dest": "/system/apps/swirlrunbig2.elf",
-   "sha256": "7cd8ec72625ae51483a48c2a814c2b870e41a75f546db4652be369e1b051b494",
-   "size": 1203856
+   "sha256": "e0ba202d5b5378b39d3c725d76385beca940512fa7e540bf7b32daa46ccc087d",
+   "size": 1205224
   },
   {
    "path": "os/04/04848d9462e28394427e378d3c92337843097dca",
@@ -174,10 +174,10 @@
    "size": 11744
   },
   {
-   "path": "os/35/350c939cc834ee07136015e9240a359e4c8148ef",
+   "path": "os/d5/d5810d04b222c7b1eded329b176a52726a0b015a",
    "dest": "/system/apps/winrun.elf",
-   "sha256": "350c939cc834ee07136015e9240a359e4c8148efc0a11fbd5b9e2a8a3855f92f",
-   "size": 1203856
+   "sha256": "d5810d04b222c7b1eded329b176a52726a0b015ab97a30e4d6dc2cc277eca52b",
+   "size": 1205224
   },
   {
    "path": "os/f3/f31d39bd83715e719aad9c91b36bbd21f57d48fb",
@@ -222,10 +222,10 @@
    "size": 971592
   },
   {
-   "path": "os/32/3234b4d28b7f953042837979cebda62abc7c49ed",
+   "path": "os/59/5940f1d5870d5918b44f20491782e739215324b1",
    "dest": "/system/apps/gui/ggl3d.elf",
-   "sha256": "3234b4d28b7f953042837979cebda62abc7c49ed68c458e8dfa652305caa736d",
-   "size": 94048
+   "sha256": "5940f1d5870d5918b44f20491782e739215324b14c6f1994329051d9d9be5b5c",
+   "size": 94464
   },
   {
    "path": "os/da/da8516d0416761fccf5718dda42328d5ef31a17d",
@@ -1127,10 +1127,10 @@
    "size": 599
   },
   {
-   "path": "os/7e/7e3a481287cd4663b57151865700fd896cb194ba",
+   "path": "os/dc/dc5cfb141d5edfb0e5fc80a0d87c2167c66c75ee",
    "dest": "/system/lib/libsdl2.swo",
-   "sha256": "7e3a481287cd4663b57151865700fd896cb194bae8706ff7ebe519205ae01b5a",
-   "size": 194952
+   "sha256": "dc5cfb141d5edfb0e5fc80a0d87c2167c66c75ee4b40f4ccd7ee9deccc1d1f01",
+   "size": 195336
   },
   {
    "path": "os/cd/cde5ec50dfb3a5d67995c981f1a69a655f872869",
@@ -1163,10 +1163,10 @@
    "size": 48752
   },
   {
-   "path": "os/d6/d6702e4d2c6004c38f24c02bb377cbcb7afcb20e",
+   "path": "os/97/979bbd1c1febbcbe6aa11bc593897e4bffbbf813",
    "dest": "/system/lx/swgl-server",
-   "sha256": "d6702e4d2c6004c38f24c02bb377cbcb7afcb20e1b5637ddf2c3fed543b8ae11",
-   "size": 39856
+   "sha256": "979bbd1c1febbcbe6aa11bc593897e4bffbbf8135738445efa71c80eda485f14",
+   "size": 40296
   },
   {
    "path": "os/74/745c85d08ecc551f15ac218c031901b8aa5a8891",
