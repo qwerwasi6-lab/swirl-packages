@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r198",
+ "version": "r199",
  "abi": 3,
  "date": "2026-11-18",
- "notes": "SwirlOS now uses RAM above 4 GB: an 8 GB machine showed only ~3 GB, now it gets all of it (apps like Discord and the browser can use the extra memory).",
+ "notes": "Swirl Store shows each app's real logo (downloaded with the store refresh; installed apps get it in the start menu too). The desktop can now feed the new Screen Recorder app (get it in the Swirl Store).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/48/483938062130f64cdf313afbbbf1d3281736df0d",
+   "path": "os/f4/f4edddaed75385c6bdd7cabf1de29842a32cf97e",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "483938062130f64cdf313afbbbf1d3281736df0d8f135ba6677ab7832f9e6ec0",
-   "size": 1113752
+   "sha256": "f4edddaed75385c6bdd7cabf1de29842a32cf97e4635630881ce7c90a4ac9c05",
+   "size": 1115360
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -126,10 +126,10 @@
    "size": 9744
   },
   {
-   "path": "os/45/45e39848e1c4133ffc2ab2e7f20e6e5b693f6c20",
+   "path": "os/f3/f342902ea10f867336fc993780a5f57dd9e3045c",
    "dest": "/system/apps/spm.elf",
-   "sha256": "45e39848e1c4133ffc2ab2e7f20e6e5b693f6c20f3c8303d9655229d84d63a5e",
-   "size": 585680
+   "sha256": "f342902ea10f867336fc993780a5f57dd9e3045c638453f5ffc5406afe16c716",
+   "size": 585720
   },
   {
    "path": "os/4e/4e45663b4b36d90aa5288f529122a61ffc094f79",
@@ -216,9 +216,9 @@
    "size": 598080
   },
   {
-   "path": "os/18/1870bbc9862c8285194e13bb3629711c9a78ef5f",
+   "path": "os/a4/a40ec026c41a1db75bdaa8f1750cb57527c5d820",
    "dest": "/system/apps/gui/gfiles.elf",
-   "sha256": "1870bbc9862c8285194e13bb3629711c9a78ef5f6b8d54fba50ef51a2eb4dbe7",
+   "sha256": "a40ec026c41a1db75bdaa8f1750cb57527c5d82020432378e4b48a96093d780c",
    "size": 975856
   },
   {
@@ -240,9 +240,9 @@
    "size": 199880
   },
   {
-   "path": "os/0b/0b3a820383d95ed47d505b1d6a7f8b1d29965880",
+   "path": "os/6b/6be7fdbde7792d2a61b001f96421bec23635f711",
    "dest": "/system/apps/gui/gopenwith.elf",
-   "sha256": "0b3a820383d95ed47d505b1d6a7f8b1d29965880efd0e83ee298ddf141d7f670",
+   "sha256": "6be7fdbde7792d2a61b001f96421bec23635f711b7aa613d74631a9d9f93abba",
    "size": 453096
   },
   {
@@ -252,9 +252,9 @@
    "size": 195264
   },
   {
-   "path": "os/b7/b7a9d862fdd92efe59db8005368bc6f0d9f6455d",
+   "path": "os/ea/eaae5a75b89404740e13acccd504d96b5ae172e7",
    "dest": "/system/apps/gui/gsettings.elf",
-   "sha256": "b7a9d862fdd92efe59db8005368bc6f0d9f6455d65611c04bd2c46d8a7a36285",
+   "sha256": "eaae5a75b89404740e13acccd504d96b5ae172e79efe8ad5b7e9e1d01853d847",
    "size": 1032384
   },
   {
@@ -264,10 +264,10 @@
    "size": 626104
   },
   {
-   "path": "os/1e/1e43ead1947f8933edad8eb9f0b39cd506f898f5",
+   "path": "os/33/33f4a7bb9c01e491ff7c7a4e9ac3e05269b0de5a",
    "dest": "/system/apps/gui/gstore.elf",
-   "sha256": "1e43ead1947f8933edad8eb9f0b39cd506f898f5ec9cba89df973451fae970b5",
-   "size": 217720
+   "sha256": "33f4a7bb9c01e491ff7c7a4e9ac3e05269b0de5a6a7dff59c73dca22409ad844",
+   "size": 217752
   },
   {
    "path": "os/9c/9cef2817c98ad241f7f49ff2128b5dd30729da83",

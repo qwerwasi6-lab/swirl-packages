@@ -114,6 +114,16 @@ def main():
         if meta.get("opens"):
             o = meta["opens"]
             entry["opens"] = list(o) if isinstance(o, list) else str(o).split()
+        # r199: the app's real logo (PNG, square, <= 256 KB) for the Store and the start menu
+        if isinstance(meta.get("logo"), str) and meta["logo"]:
+            lrel = f"packages/{name}/{meta['logo']}"
+            lp = os.path.join(ROOT, lrel)
+            if not RPATH_RE.match(lrel) or ".." in lrel or not os.path.isfile(lp):
+                die(f"{name}: bad or missing logo '{meta['logo']}'")
+            ld = open(lp, "rb").read()
+            if not ld.startswith(b"\x89PNG") or len(ld) > 262144:
+                die(f"{name}: logo must be a PNG under 256 KB")
+            entry["logo"] = {"path": lrel, "sha256": hashlib.sha256(ld).hexdigest(), "size": len(ld)}
         if meta.get("featured"):
             entry["featured"] = 1
         if meta.get("deps"):

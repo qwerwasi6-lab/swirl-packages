@@ -30,5 +30,6 @@
    "dest": "/home/user/ClassiCube/texpacks/default.zip"
   }
  ],
- "featured": false
+ "featured": false,
+ "logo": "logo.png"
 }

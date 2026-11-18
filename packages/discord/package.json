@@ -25,5 +25,6 @@
    "src": "discord.png",
    "dest": "/system/apps/icons/discord.png"
   }
- ]
+ ],
+ "logo": "discord.png"
 }

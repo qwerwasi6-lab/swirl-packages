@@ -474,5 +474,6 @@
    "src": "f/LICENSE.zlib.txt",
    "dest": "/home/user/Games/AssaultCube/LICENSE.zlib.txt"
   }
- ]
+ ],
+ "logo": "logo.png"
 }
