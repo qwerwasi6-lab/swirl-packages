@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r200",
+ "version": "r201",
  "abi": 3,
  "date": "2026-11-18",
- "notes": "SwirlyMP plays Screen Recorder videos at full screen size (Motion-JPEG up to 1440x900; was 1280x720).",
+ "notes": "Swirl Store really shows the app logos now (the Store could not decode pictures at all).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -264,10 +264,10 @@
    "size": 626104
   },
   {
-   "path": "os/33/33f4a7bb9c01e491ff7c7a4e9ac3e05269b0de5a",
+   "path": "os/0b/0bb44800b1d064f493ddeaa27c0a015210391c8d",
    "dest": "/system/apps/gui/gstore.elf",
-   "sha256": "33f4a7bb9c01e491ff7c7a4e9ac3e05269b0de5a6a7dff59c73dca22409ad844",
-   "size": 217752
+   "sha256": "0bb44800b1d064f493ddeaa27c0a015210391c8d0163be42ea1fe7dcee043e30",
+   "size": 444768
   },
   {
    "path": "os/9c/9cef2817c98ad241f7f49ff2128b5dd30729da83",
