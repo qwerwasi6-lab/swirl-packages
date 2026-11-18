@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r205",
+ "version": "r206",
  "abi": 3,
  "date": "2026-11-18",
- "notes": "Full screen: F11 (or right-click an app on the taskbar > Full screen) gives any window the whole screen - no title bar, no taskbar, and the desktop draws nothing but that app (faster games). Web Browser 1.7.1 turns the JavaScript JIT on for Discord.",
+ "notes": "Fixes r205: every window was drawn slanted/garbled. Full screen (F11) still works.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/58/58e065b440439fe20ee5a58b3710e43015ada185",
+   "path": "os/40/402bd4d8f8ff0914e7dffe817bd0edbbbdbd8154",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "58e065b440439fe20ee5a58b3710e43015ada185fad55108fd82e2ce81170d9c",
-   "size": 1126192
+   "sha256": "402bd4d8f8ff0914e7dffe817bd0edbbbdbd815441a6554c480c5d33e0f2e0b6",
+   "size": 1126320
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -306,9 +306,9 @@
    "size": 594192
   },
   {
-   "path": "os/38/38a8b308bb737e31d057896d1c6da5209e267881",
+   "path": "os/36/366bedd4a79aa547abf2f6af58065c6cfc782ecc",
    "dest": "/system/apps/gui/gxview.elf",
-   "sha256": "38a8b308bb737e31d057896d1c6da5209e26788198be27031efcbd47185575cc",
+   "sha256": "366bedd4a79aa547abf2f6af58065c6cfc782ecc5cabb088bffee6af3c0f9fd6",
    "size": 67128
   },
   {
@@ -564,9 +564,9 @@
    "size": 100
   },
   {
-   "path": "os/56/567a5c7ab8a15f6737a9501b199f03cd4e9bfd84",
+   "path": "os/94/94224b6d93796aa6d15165ea1291d6b047a5fdce",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "567a5c7ab8a15f6737a9501b199f03cd4e9bfd84f769b4df359c99eaba9d4f7c",
+   "sha256": "94224b6d93796aa6d15165ea1291d6b047a5fdce78f595b04f73dd09faf1a585",
    "size": 1018752
   },
   {
