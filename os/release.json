@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r195",
+ "version": "r196",
  "abi": 3,
  "date": "2026-11-18",
- "notes": "Discord login, part 3: answers that arrive late are now kept for the next try, the DNS helper gets more time, and it retries over HTTPS. Update the Web Browser to 1.6.4 too.",
+ "notes": "Network replies no longer wait for the CPU to go idle: SwirlOS now checks the network card every 4 ms. Fixes address lookups (Discord login) arriving 10-20 s late while apps are busy, and should make downloads smoother under load.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -558,10 +558,10 @@
    "size": 100
   },
   {
-   "path": "os/f3/f3391c4c87137bb9ae6775679bc036d419332695",
+   "path": "os/af/af470ca0b6863952b5badbd9079d9b35571cd9ea",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "f3391c4c87137bb9ae6775679bc036d419332695afda10553bbab13661aefdff",
-   "size": 1010216
+   "sha256": "af470ca0b6863952b5badbd9079d9b35571cd9ea2588b7f97e8bddb3053f7a8a",
+   "size": 1010248
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
