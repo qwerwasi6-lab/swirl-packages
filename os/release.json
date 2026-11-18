@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r203",
+ "version": "r204",
  "abi": 3,
  "date": "2026-11-18",
- "notes": "Lock screen: its own wallpaper, a clock and a password (Settings > Lock screen; Win+L locks, also at startup and after idle time). Discord notifications show as SwirlOS notifications. Copy and paste works between SwirlOS apps and the Web Browser / Discord (update the Web Browser to 1.7.0).",
+ "notes": "Smoother games and browser: waits in the Linux layer (GPU frames, poll/epoll timers) now wake on the exact millisecond instead of the next 10 ms tick. ClassiCube was stuck at 33 fps (50 with Discord open) for this reason.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -564,10 +564,10 @@
    "size": 100
   },
   {
-   "path": "os/be/bed734e965055cd8b7a23bca3c6fb81a5d96dd0f",
+   "path": "os/a9/a9b22b4200d5c382d0889c741d1ba4cbff6bd707",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "bed734e965055cd8b7a23bca3c6fb81a5d96dd0f1715a86cccbf310ea0f82e8d",
-   "size": 1018720
+   "sha256": "a9b22b4200d5c382d0889c741d1ba4cbff6bd70700f6a261925ba6a6cb88aad3",
+   "size": 1018752
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
