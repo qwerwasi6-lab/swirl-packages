@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r193",
+ "version": "r194",
  "abi": 3,
  "date": "2026-11-18",
- "notes": "Discord login fix: Linux apps now look up addresses through a new SwirlOS helper that asks your router, 1.1.1.1 and 8.8.8.8 at once, falls back to TCP, and caches answers. Every lookup is logged to /system/debug/dns-log.txt.",
+ "notes": "Discord login, part 2: when your network never answers an address lookup, SwirlOS now asks over HTTPS (1.1.1.1 / 8.8.8.8) through the Web Browser's new helper. Update the Web Browser to 1.6.3 too.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -558,10 +558,10 @@
    "size": 100
   },
   {
-   "path": "os/ac/ac1c7122f02ac1ebaeef7d658867015086192226",
+   "path": "os/59/5978c283981a645acf68d39ac98dd64b7bfdbdbc",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "ac1c7122f02ac1ebaeef7d6588670150861922266819cdd0e124d4f49127f578",
-   "size": 1010016
+   "sha256": "5978c283981a645acf68d39ac98dd64b7bfdbdbce872a02d88ba40ad57bd8240",
+   "size": 1010144
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",

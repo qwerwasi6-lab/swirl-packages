@@ -37,6 +37,9 @@ while [ $try -lt 4 ]; do
 done
 ( while :; do /usr/bin/xbridge /tmp/.X11-unix/X$INST >> /tmp/xb$INST.log 2>&1; /usr/bin/sleep 2; done ) &
 /usr/bin/sleep 1
+# browser 1.6.3: DNS over HTTPS helper for SwirlOS's DNS stub (r194): networks that never answer
+# some plain DNS questions (Discord's remote-auth-gateway.discord.gg) still get answers over HTTPS.
+/usr/bin/swirl-doh 2> /system/debug/doh-log$INST.txt &
 # r123: if the browser itself dies, keep its log and start it again (5 tries)
 # browser 1.5.0: the JavaScript JIT is on (the "hang" of 1.4.1 was SwirlOS's storage bug, fixed
 # in r185). If the engine dies, the next tries fall back to the interpreter.
