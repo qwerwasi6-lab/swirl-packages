@@ -4,7 +4,7 @@
 APP=; INST=0
 if [ "$1" = "--app" ]; then APP=$2; INST=$3; shift 3; fi
 export SWIRL_INST=$INST
-export GIO_MODULE_DIR=/usr/lib/x86_64-linux-gnu/gio/modules SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt LIBGL_DRIVERS_PATH=/usr/lib/x86_64-linux-gnu/dri GBM_BACKENDS_PATH=/usr/lib/x86_64-linux-gnu/gbm LP_NUM_THREADS=0 DISPLAY=:$INST HOME=/home/user WEBKIT_DISABLE_SANDBOX_THIS_IS_DANGEROUS=1 GDK_BACKEND=x11 NO_AT_BRIDGE=1 GSETTINGS_BACKEND=memory JSC_usePollingTraps=true JSC_useJIT=false JSC_useConcurrentJIT=false
+export GIO_MODULE_DIR=/usr/lib/x86_64-linux-gnu/gio/modules SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt LIBGL_DRIVERS_PATH=/usr/lib/x86_64-linux-gnu/dri GBM_BACKENDS_PATH=/usr/lib/x86_64-linux-gnu/gbm LP_NUM_THREADS=0 DISPLAY=:$INST HOME=/home/user WEBKIT_DISABLE_SANDBOX_THIS_IS_DANGEROUS=1 GDK_BACKEND=x11 NO_AT_BRIDGE=1 GSETTINGS_BACKEND=memory JSC_usePollingTraps=true JSC_useConcurrentJIT=false
 # r127: draw web pages on the GPU (Mesa crocus through /dev/dri) when SwirlOS offers one.
 # Touch /home/user/.browser-software to go back to the old software renderer.
 if [ -e /dev/dri/renderD128 ] && [ ! -e /home/user/.browser-software ]; then
@@ -38,16 +38,17 @@ done
 ( while :; do /usr/bin/xbridge /tmp/.X11-unix/X$INST >> /tmp/xb$INST.log 2>&1; /usr/bin/sleep 2; done ) &
 /usr/bin/sleep 1
 # r123: if the browser itself dies, keep its log and start it again (5 tries)
+# browser 1.5.0: the JavaScript JIT is on (the "hang" of 1.4.1 was SwirlOS's storage bug, fixed
+# in r185). If the engine dies, the next tries fall back to the interpreter.
+# /home/user/.browser-nojit turns it off for good.
 n=0
 while [ $n -lt 5 ]; do
+  J=true
+  if [ $n -gt 0 ] || [ -e /home/user/.browser-nojit ]; then J=false; fi
   if [ -n "$APP" ]; then
-    # browser 1.4.2: the JIT hangs page loads on SwirlOS (1.4.1), so it is opt-in again
-    # (touch /home/user/.webapp-jit) until the kernel side is fixed
-    J=false
-    if [ $n -eq 0 ] && [ -e /home/user/.webapp-jit ]; then J=true; fi
     JSC_useJIT=$J /usr/bin/swirl-webapp "$APP" "$1" > /system/debug/webapp-$APP-log.txt 2>&1
   else
-    /usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/MiniBrowser "${1:-file:///usr/share/swirl-home.html}" > /system/debug/browser-log.txt 2>&1
+    JSC_useJIT=$J /usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/MiniBrowser "${1:-file:///usr/share/swirl-home.html}" > /system/debug/browser-log.txt 2>&1
     /usr/bin/cat /system/debug/browser-log.txt > /system/debug/browser-crash-log.txt
   fi
   n=$((n+1))
