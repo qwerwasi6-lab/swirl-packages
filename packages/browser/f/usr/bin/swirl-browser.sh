@@ -59,7 +59,8 @@ while [ $n -lt 5 ]; do
     # browser 1.7.0: a clean exit (the window was closed) is not a crash - don't start it again
     [ $? -eq 0 ] && break
   else
-    JSC_useJIT=$J /usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/MiniBrowser "${1:-file:///usr/share/swirl-home.html}" > /system/debug/browser-log.txt 2>&1
+    # browser 1.7.2: keep cookies on disk (MiniBrowser kept them in memory only: signed out every restart)
+    JSC_useJIT=$J /usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/MiniBrowser --cookies-file=/home/user/.browser-cookies.sqlite --cookies-policy=always "${1:-file:///usr/share/swirl-home.html}" > /system/debug/browser-log.txt 2>&1
     /usr/bin/cat /system/debug/browser-log.txt > /system/debug/browser-crash-log.txt
   fi
   n=$((n+1))

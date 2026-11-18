@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r207",
+ "version": "r208",
  "abi": 3,
  "date": "2026-11-18",
- "notes": "Games: SDL games (ClassiCube) get their full window - the bottom 33 rows and the right edge were cut off - and their picture follows full screen (F11) and maximise instead of staying the starting size. Native apps fill the whole screen height in full screen.",
+ "notes": "Discord and other web apps stay signed in: their saved site data (local storage) works now. The Web Browser 1.7.2 keeps cookies too.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -564,9 +564,9 @@
    "size": 100
   },
   {
-   "path": "os/94/94224b6d93796aa6d15165ea1291d6b047a5fdce",
+   "path": "os/46/460bab608e58b10eb1d6131445f63dc8c41ce3c4",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "94224b6d93796aa6d15165ea1291d6b047a5fdce78f595b04f73dd09faf1a585",
+   "sha256": "460bab608e58b10eb1d6131445f63dc8c41ce3c452c4bbeb8b3564461261311e",
    "size": 1018752
   },
   {
