@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r184",
+ "version": "r185",
  "abi": 3,
  "date": "2026-11-18",
- "notes": "Discord's real logo in the Store, start menu and taskbar.",
+ "notes": "Linux layer: shared file mappings are really shared (SQLite storage for WebKit: fixes Discord and other storage-heavy sites hanging on load).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -558,10 +558,10 @@
    "size": 100
   },
   {
-   "path": "os/7b/7b66d3ea0267330abf4be8da70b76c8d681e3cd0",
+   "path": "os/83/838d20064cfa34dde9a7c46f5f0dc041e276711c",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "7b66d3ea0267330abf4be8da70b76c8d681e3cd05994c8b40b45741184c3c9d6",
-   "size": 988176
+   "sha256": "838d20064cfa34dde9a7c46f5f0dc041e276711ca6f6c657812e3a03ed6e422f",
+   "size": 988280
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
