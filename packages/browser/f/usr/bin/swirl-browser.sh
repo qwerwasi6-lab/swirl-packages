@@ -41,7 +41,11 @@ done
 n=0
 while [ $n -lt 5 ]; do
   if [ -n "$APP" ]; then
-    /usr/bin/swirl-webapp "$APP" "$1" > /system/debug/webapp-$APP-log.txt 2>&1
+    # browser 1.4.1: web apps (Discord ...) run heavy JavaScript on every key press - try the JIT
+    # first; if the app dies, the next tries go back to the safe interpreter
+    J=false
+    if [ $n -eq 0 ] && [ ! -e /home/user/.webapp-nojit ]; then J=true; fi
+    JSC_useJIT=$J /usr/bin/swirl-webapp "$APP" "$1" > /system/debug/webapp-$APP-log.txt 2>&1
   else
     /usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/MiniBrowser "${1:-file:///usr/share/swirl-home.html}" > /system/debug/browser-log.txt 2>&1
     /usr/bin/cat /system/debug/browser-log.txt > /system/debug/browser-crash-log.txt
