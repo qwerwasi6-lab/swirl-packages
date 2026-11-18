@@ -35,6 +35,8 @@ while [ $try -lt 4 ]; do
   done
   try=$((try+1))
 done
+# browser 1.7.0: one clipboard for SwirlOS and this X server (copy here, paste in SwirlOS and back)
+/usr/bin/swirl-clipd :$INST 2> /system/debug/clipd$INST.txt &
 ( while :; do /usr/bin/xbridge /tmp/.X11-unix/X$INST >> /tmp/xb$INST.log 2>&1; /usr/bin/sleep 2; done ) &
 /usr/bin/sleep 1
 # browser 1.6.3: DNS over HTTPS helper for SwirlOS's DNS stub (r194): networks that never answer
@@ -53,6 +55,8 @@ while [ $n -lt 5 ]; do
     # unless /home/user/.webapp-jit exists. The Web Browser keeps the JIT.
     WJ=false; [ $n -eq 0 ] && [ -e /home/user/.webapp-jit ] && WJ=true
     JSC_useJIT=$WJ /usr/bin/swirl-webapp "$APP" "$1" > /system/debug/webapp-$APP-log.txt 2>&1
+    # browser 1.7.0: a clean exit (the window was closed) is not a crash - don't start it again
+    [ $? -eq 0 ] && break
   else
     JSC_useJIT=$J /usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/MiniBrowser "${1:-file:///usr/share/swirl-home.html}" > /system/debug/browser-log.txt 2>&1
     /usr/bin/cat /system/debug/browser-log.txt > /system/debug/browser-crash-log.txt

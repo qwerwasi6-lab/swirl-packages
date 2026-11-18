@@ -1,6 +1,6 @@
 {
   "name": "browser",
-  "version": "1.6.4",
+  "version": "1.7.0",
   "description": "A real web browser (WebKitGTK) running on SwirlOS's Linux layer.",
   "author": "WebKit, Mesa, GTK and friends (Ubuntu 24.04 builds); SwirlOS bridge by Swirl",
   "title": "Web Browser",
@@ -3004,6 +3004,10 @@
     {
       "src": "f/usr/bin/swirl-doh",
       "dest": "/linux/usr/bin/swirl-doh"
+    },
+    {
+      "src": "f/usr/bin/swirl-clipd",
+      "dest": "/linux/usr/bin/swirl-clipd"
     }
   ],
   "deps": [
