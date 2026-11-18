@@ -46,7 +46,10 @@ while [ $n -lt 5 ]; do
   J=true
   if [ $n -gt 0 ] || [ -e /home/user/.browser-nojit ]; then J=false; fi
   if [ -n "$APP" ]; then
-    JSC_useJIT=$J /usr/bin/swirl-webapp "$APP" "$1" > /system/debug/webapp-$APP-log.txt 2>&1
+    # browser 1.5.1: web apps (Discord) stall with the JIT on SwirlOS - interpreter for them,
+    # unless /home/user/.webapp-jit exists. The Web Browser keeps the JIT.
+    WJ=false; [ $n -eq 0 ] && [ -e /home/user/.webapp-jit ] && WJ=true
+    JSC_useJIT=$WJ /usr/bin/swirl-webapp "$APP" "$1" > /system/debug/webapp-$APP-log.txt 2>&1
   else
     JSC_useJIT=$J /usr/lib/x86_64-linux-gnu/webkit2gtk-4.1/MiniBrowser "${1:-file:///usr/share/swirl-home.html}" > /system/debug/browser-log.txt 2>&1
     /usr/bin/cat /system/debug/browser-log.txt > /system/debug/browser-crash-log.txt
