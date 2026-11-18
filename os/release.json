@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r188",
+ "version": "r189",
  "abi": 3,
  "date": "2026-11-18",
- "notes": "Rollback to the r186 system while a multi-core crash found in r187 is fixed.",
+ "notes": "Speed: Turbo enabled when firmware turned it off; the browser and web apps only send the changed part of each frame to the compositor; extra cores answer clock/id calls themselves; safer task start-up on multi-core.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/95/95e25aaa22301733f760e34b242494b024064f29",
+   "path": "os/7d/7d8545f3e08c12f51c26144b99254b0fbef71cd6",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "95e25aaa22301733f760e34b242494b024064f2924a01e78689e94cc60d24d5d",
-   "size": 1108128
+   "sha256": "7d8545f3e08c12f51c26144b99254b0fbef71cd6b913994da3d53ad6bddc514b",
+   "size": 1108192
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -300,10 +300,10 @@
    "size": 594192
   },
   {
-   "path": "os/51/51e03c342b836e74fb8b4d9fb609ab976eaa16fd",
+   "path": "os/6f/6f66bf5e9571877c85675cb9035e645642f1ca4f",
    "dest": "/system/apps/gui/gxview.elf",
-   "sha256": "51e03c342b836e74fb8b4d9fb609ab976eaa16fdb591f57623df35e882e3ebd8",
-   "size": 62536
+   "sha256": "6f66bf5e9571877c85675cb9035e645642f1ca4ff2863a7c03c43478e1699627",
+   "size": 62784
   },
   {
    "path": "os/94/94d047f4182eafefa4f089be2b9de3d3155978c8",
@@ -558,10 +558,10 @@
    "size": 100
   },
   {
-   "path": "os/2b/2bf33f33b2c9e4fa5ba922468ab056f2aac12a36",
+   "path": "os/49/4949f884b085935bc164010f4980da42f7ebcc50",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "2bf33f33b2c9e4fa5ba922468ab056f2aac12a36bf0f4f798f6dca9a22c347a3",
-   "size": 992464
+   "sha256": "4949f884b085935bc164010f4980da42f7ebcc509b3668009df51b1aacbf7928",
+   "size": 992536
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
