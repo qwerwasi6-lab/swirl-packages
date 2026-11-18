@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r201",
+ "version": "r202",
  "abi": 3,
  "date": "2026-11-18",
- "notes": "Swirl Store really shows the app logos now (the Store could not decode pictures at all).",
+ "notes": "Native games that start a helper version of themselves (ClassiCube) show their real logo in the taskbar.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/f4/f4edddaed75385c6bdd7cabf1de29842a32cf97e",
+   "path": "os/1b/1b442648603a7e8a88208ca2a402ad2b4355e01c",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "f4edddaed75385c6bdd7cabf1de29842a32cf97e4635630881ce7c90a4ac9c05",
-   "size": 1115360
+   "sha256": "1b442648603a7e8a88208ca2a402ad2b4355e01c2a12d0c698c613b8dcf55e9c",
+   "size": 1115616
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
