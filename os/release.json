@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r183",
+ "version": "r184",
  "abi": 3,
  "date": "2026-11-18",
- "notes": "Web Apps: sites as real apps (own window, taskbar button, icon, saved login) next to the browser. Discord in the Swirl Store. Store opens apps with their own launch settings. App icons that appear later now show up without a restart.",
+ "notes": "Discord's real logo in the Store, start menu and taskbar.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/ed/ed73a480b965bcc59f38f33e40cce74424d3e4c4",
+   "path": "os/95/95e25aaa22301733f760e34b242494b024064f29",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "ed73a480b965bcc59f38f33e40cce74424d3e4c4bc42f70a652cfa547ae5a0f0",
-   "size": 1108064
+   "sha256": "95e25aaa22301733f760e34b242494b024064f2924a01e78689e94cc60d24d5d",
+   "size": 1108128
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -264,10 +264,10 @@
    "size": 626104
   },
   {
-   "path": "os/24/242c9ff73d8a3d5f2f86d727c66afc0c63242233",
+   "path": "os/82/82f3d3dab246650ac8c37234227d6ede69d336e8",
    "dest": "/system/apps/gui/gstore.elf",
-   "sha256": "242c9ff73d8a3d5f2f86d727c66afc0c632422339bd97f4ac2ade3eeac78670f",
-   "size": 212672
+   "sha256": "82f3d3dab246650ac8c37234227d6ede69d336e81e78afa9e44734212ea6b195",
+   "size": 217720
   },
   {
    "path": "os/7e/7e1b2ad0aa6f4009f10479c69b613efa98982d93",
@@ -436,6 +436,12 @@
    "dest": "/system/apps/icons/wallpaper.png",
    "sha256": "965044a48da7eba5616734bd194c4af369d735b5c290ebddb8d749d763327614",
    "size": 6575
+  },
+  {
+   "path": "os/a5/a5644c59f3402b67c53b0679537a5aff7e452d58",
+   "dest": "/system/apps/icons/store/discord.png",
+   "sha256": "a5644c59f3402b67c53b0679537a5aff7e452d58b8c72b424d1c7d8138666653",
+   "size": 15177
   },
   {
    "path": "os/a9/a9c8b23d5e6530d4c2e83e7a95337c6ce2a8706e",

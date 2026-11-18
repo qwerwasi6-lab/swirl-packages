@@ -1,6 +1,6 @@
 {
  "name": "discord",
- "version": "1.0.0",
+ "version": "1.0.1",
  "description": "Discord as a SwirlOS app: chat, servers, DMs.",
  "author": "Discord Inc. (the service); SwirlOS Web App wrapper by Swirl",
  "title": "Discord",
@@ -20,6 +20,10 @@
   {
    "src": "discord.app",
    "dest": "/system/apps/registry/discord.app"
+  },
+  {
+   "src": "discord.png",
+   "dest": "/system/apps/icons/discord.png"
   }
  ]
 }
