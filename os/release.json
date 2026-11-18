@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r182",
+ "version": "r183",
  "abi": 3,
  "date": "2026-11-18",
- "notes": "Taskbar right-click menu for apps (New window, Volume, Pin/Unpin, Close, Terminate). Per-app Volume Mixer. Processor core selector in Device Manager. Settings: Notifications and Startup pages. New System Monitor (per-core CPU, memory, disk, network graphs, processes with CPU and memory). Battery icon only on laptops.",
+ "notes": "Web Apps: sites as real apps (own window, taskbar button, icon, saved login) next to the browser. Discord in the Swirl Store. Store opens apps with their own launch settings. App icons that appear later now show up without a restart.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/06/06636cbb1caf8f2108b3cc43b33c5b0628c9536a",
+   "path": "os/ed/ed73a480b965bcc59f38f33e40cce74424d3e4c4",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "06636cbb1caf8f2108b3cc43b33c5b0628c9536a1b37f7098405cbde4abca176",
-   "size": 1107040
+   "sha256": "ed73a480b965bcc59f38f33e40cce74424d3e4c4bc42f70a652cfa547ae5a0f0",
+   "size": 1108064
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -216,9 +216,9 @@
    "size": 598080
   },
   {
-   "path": "os/a7/a77211d0bac642f43a0e4df471872d09532cfb96",
+   "path": "os/e9/e9d7cf24d27b0fbd1cf514ff177ff7882cc4e1a0",
    "dest": "/system/apps/gui/gfiles.elf",
-   "sha256": "a77211d0bac642f43a0e4df471872d09532cfb966a9795441732407c836a7910",
+   "sha256": "e9d7cf24d27b0fbd1cf514ff177ff7882cc4e1a07e5648e525457a6accfab3c2",
    "size": 971664
   },
   {
@@ -240,9 +240,9 @@
    "size": 199880
   },
   {
-   "path": "os/81/81900eaa4819fdc3bf3aff717422fffd61475a16",
+   "path": "os/c6/c670f7a8d384390cd9b5e168f37fa117e7180d16",
    "dest": "/system/apps/gui/gopenwith.elf",
-   "sha256": "81900eaa4819fdc3bf3aff717422fffd61475a168d166c3424f1ab618d4fdf7d",
+   "sha256": "c670f7a8d384390cd9b5e168f37fa117e7180d16fcf4ea449ed0e4093fe79eaf",
    "size": 448904
   },
   {
@@ -264,9 +264,9 @@
    "size": 626104
   },
   {
-   "path": "os/aa/aa491c57a8f47213c66c8a2d624c26374ee257c1",
+   "path": "os/24/242c9ff73d8a3d5f2f86d727c66afc0c63242233",
    "dest": "/system/apps/gui/gstore.elf",
-   "sha256": "aa491c57a8f47213c66c8a2d624c26374ee257c1c4b99128f31cadeb099bfdeb",
+   "sha256": "242c9ff73d8a3d5f2f86d727c66afc0c632422339bd97f4ac2ade3eeac78670f",
    "size": 212672
   },
   {
@@ -300,10 +300,10 @@
    "size": 594192
   },
   {
-   "path": "os/df/dfbae15f262f581f2974b2a92bb4077ef3dc54c9",
+   "path": "os/51/51e03c342b836e74fb8b4d9fb609ab976eaa16fd",
    "dest": "/system/apps/gui/gxview.elf",
-   "sha256": "dfbae15f262f581f2974b2a92bb4077ef3dc54c91644e6152d7b87887de271d3",
-   "size": 57928
+   "sha256": "51e03c342b836e74fb8b4d9fb609ab976eaa16fdb591f57623df35e882e3ebd8",
+   "size": 62536
   },
   {
    "path": "os/94/94d047f4182eafefa4f089be2b9de3d3155978c8",

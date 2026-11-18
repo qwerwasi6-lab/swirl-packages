@@ -1,12 +1,12 @@
 {
  "name": "browser",
- "version": "1.3.1",
+ "version": "1.4.0",
  "description": "A real web browser (WebKitGTK) running on SwirlOS's Linux layer.",
  "author": "WebKit, Mesa, GTK and friends (Ubuntu 24.04 builds); SwirlOS bridge by Swirl",
  "title": "Web Browser",
  "category": "Apps",
  "tagline": "Modern websites: WebKit, HTTPS, JavaScript.",
- "long": "The WebKitGTK MiniBrowser from Ubuntu 24.04 running on the SwirlOS Linux layer, shown in a normal SwirlOS window.\\nHTTP and HTTPS with certificate checking, modern HTML/CSS/JavaScript. Pages are drawn on the GPU (needs the GPU Drivers package, installed with it).\\nPlays videos (YouTube) with sound through the Media Codecs package.\\nNeeds SwirlOS r179 or newer. Open it from the start menu (Web Browser).",
+ "long": "The WebKitGTK MiniBrowser from Ubuntu 24.04 running on the SwirlOS Linux layer, shown in a normal SwirlOS window.\\nHTTP and HTTPS with certificate checking, modern HTML/CSS/JavaScript. Pages are drawn on the GPU (needs the GPU Drivers package, installed with it).\\nPlays videos (YouTube) with sound through the Media Codecs package.\\nAlso runs Web Apps (Discord ...) next to the browser window.\\nNeeds SwirlOS r183 or newer. Open it from the start menu (Web Browser).",
  "publisher": "Swirl",
  "license": "LGPL / MIT / GPL (Ubuntu packages)",
  "color": "2E86E0",
@@ -2996,6 +2996,10 @@
   {
    "src": "f/var/tmp/.keep",
    "dest": "/linux/var/tmp/.keep"
+  },
+  {
+   "src": "f/usr/bin/swirl-webapp",
+   "dest": "/linux/usr/bin/swirl-webapp"
   }
  ],
  "deps": [

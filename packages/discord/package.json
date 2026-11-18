@@ -1,0 +1,25 @@
+{
+ "name": "discord",
+ "version": "1.0.0",
+ "description": "Discord as a SwirlOS app: chat, servers, DMs.",
+ "author": "Discord Inc. (the service); SwirlOS Web App wrapper by Swirl",
+ "title": "Discord",
+ "category": "Apps",
+ "tagline": "Chat with your friends and communities.",
+ "long": "Discord in its own SwirlOS window: no browser bar, its own taskbar button and icon, and you stay signed in.\\nIt runs the official Discord web app on the WebKit engine of the Web Browser package (installed with it), and can stay open next to the browser. Links you click open in the Web Browser.\\nText chat, servers, DMs, images and emoji work. Voice and video calls are not supported yet.\\nNeeds SwirlOS r183 or newer.",
+ "publisher": "Swirl",
+ "license": "Wrapper: MIT. Discord is a service of Discord Inc.",
+ "color": "5865F2",
+ "glyph": "",
+ "launch": "/system/apps/gui/gxview.elf",
+ "menu": "Internet",
+ "deps": [
+  "browser"
+ ],
+ "files": [
+  {
+   "src": "discord.app",
+   "dest": "/system/apps/registry/discord.app"
+  }
+ ]
+}
