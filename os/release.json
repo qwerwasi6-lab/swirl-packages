@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r204",
+ "version": "r205",
  "abi": 3,
  "date": "2026-11-18",
- "notes": "Smoother games and browser: waits in the Linux layer (GPU frames, poll/epoll timers) now wake on the exact millisecond instead of the next 10 ms tick. ClassiCube was stuck at 33 fps (50 with Discord open) for this reason.",
+ "notes": "Full screen: F11 (or right-click an app on the taskbar > Full screen) gives any window the whole screen - no title bar, no taskbar, and the desktop draws nothing but that app (faster games). Web Browser 1.7.1 turns the JavaScript JIT on for Discord.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/72/72c13833aa2b022d2bce6d331c04cae729e1a916",
+   "path": "os/58/58e065b440439fe20ee5a58b3710e43015ada185",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "72c13833aa2b022d2bce6d331c04cae729e1a91618d7c3e516582f25d5323fc4",
-   "size": 1123376
+   "sha256": "58e065b440439fe20ee5a58b3710e43015ada185fad55108fd82e2ce81170d9c",
+   "size": 1126192
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -306,9 +306,9 @@
    "size": 594192
   },
   {
-   "path": "os/36/366bedd4a79aa547abf2f6af58065c6cfc782ecc",
+   "path": "os/38/38a8b308bb737e31d057896d1c6da5209e267881",
    "dest": "/system/apps/gui/gxview.elf",
-   "sha256": "366bedd4a79aa547abf2f6af58065c6cfc782ecc5cabb088bffee6af3c0f9fd6",
+   "sha256": "38a8b308bb737e31d057896d1c6da5209e26788198be27031efcbd47185575cc",
    "size": 67128
   },
   {
@@ -564,9 +564,9 @@
    "size": 100
   },
   {
-   "path": "os/a9/a9b22b4200d5c382d0889c741d1ba4cbff6bd707",
+   "path": "os/56/567a5c7ab8a15f6737a9501b199f03cd4e9bfd84",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "a9b22b4200d5c382d0889c741d1ba4cbff6bd70700f6a261925ba6a6cb88aad3",
+   "sha256": "567a5c7ab8a15f6737a9501b199f03cd4e9bfd84f769b4df359c99eaba9d4f7c",
    "size": 1018752
   },
   {
