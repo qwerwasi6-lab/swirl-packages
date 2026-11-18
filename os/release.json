@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r189",
+ "version": "r190",
  "abi": 3,
  "date": "2026-11-18",
- "notes": "Speed: Turbo enabled when firmware turned it off; the browser and web apps only send the changed part of each frame to the compositor; extra cores answer clock/id calls themselves; safer task start-up on multi-core.",
+ "notes": "Linux apps: the browser draws straight into its window (2 fewer copies per frame), clock reads without entering the kernel (vDSO), input reaches the browser immediately.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -300,10 +300,10 @@
    "size": 594192
   },
   {
-   "path": "os/6f/6f66bf5e9571877c85675cb9035e645642f1ca4f",
+   "path": "os/57/57aa385b22a77e75525cb7ccc09c3fda63a4dbff",
    "dest": "/system/apps/gui/gxview.elf",
-   "sha256": "6f66bf5e9571877c85675cb9035e645642f1ca4ff2863a7c03c43478e1699627",
-   "size": 62784
+   "sha256": "57aa385b22a77e75525cb7ccc09c3fda63a4dbff6b2beb443aa27f5a5601da34",
+   "size": 62968
   },
   {
    "path": "os/94/94d047f4182eafefa4f089be2b9de3d3155978c8",
@@ -558,10 +558,10 @@
    "size": 100
   },
   {
-   "path": "os/49/4949f884b085935bc164010f4980da42f7ebcc50",
+   "path": "os/23/23ffaf45a52f94c9040029218279dfb4907eea91",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "4949f884b085935bc164010f4980da42f7ebcc509b3668009df51b1aacbf7928",
-   "size": 992536
+   "sha256": "23ffaf45a52f94c9040029218279dfb4907eea913d0d8ed4bc08976676e623b4",
+   "size": 1001128
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
