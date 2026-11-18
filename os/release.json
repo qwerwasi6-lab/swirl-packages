@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r191",
+ "version": "r192",
  "abi": 3,
  "date": "2026-11-18",
- "notes": "Linux apps: DNS falls back to public resolvers and asks one question at a time (fixes 'Temporary failure in name resolution', e.g. Discord login).",
+ "notes": "Linux layer: sendmmsg (glibc's DNS resolver sends both A/AAAA questions with it; without it some lookups failed with 'Temporary failure in name resolution').",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -558,10 +558,10 @@
    "size": 100
   },
   {
-   "path": "os/90/90bd1dd2368dc539d14675ee54bf8d86b7e1b236",
+   "path": "os/04/043a5f79d485bf27ebf43655a148a2df10752bfa",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "90bd1dd2368dc539d14675ee54bf8d86b7e1b2369b093089c1576487e61f69aa",
-   "size": 1001128
+   "sha256": "043a5f79d485bf27ebf43655a148a2df10752bfaee6b91bc3d2bb89ebe5bdc81",
+   "size": 1001168
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
