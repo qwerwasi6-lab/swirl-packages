@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r192",
+ "version": "r193",
  "abi": 3,
  "date": "2026-11-18",
- "notes": "Linux layer: sendmmsg (glibc's DNS resolver sends both A/AAAA questions with it; without it some lookups failed with 'Temporary failure in name resolution').",
+ "notes": "Discord login fix: Linux apps now look up addresses through a new SwirlOS helper that asks your router, 1.1.1.1 and 8.8.8.8 at once, falls back to TCP, and caches answers. Every lookup is logged to /system/debug/dns-log.txt.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -558,10 +558,10 @@
    "size": 100
   },
   {
-   "path": "os/04/043a5f79d485bf27ebf43655a148a2df10752bfa",
+   "path": "os/ac/ac1c7122f02ac1ebaeef7d658867015086192226",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "043a5f79d485bf27ebf43655a148a2df10752bfaee6b91bc3d2bb89ebe5bdc81",
-   "size": 1001168
+   "sha256": "ac1c7122f02ac1ebaeef7d6588670150861922266819cdd0e124d4f49127f578",
+   "size": 1010016
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
