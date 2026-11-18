@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r197",
+ "version": "r198",
  "abi": 3,
  "date": "2026-11-18",
- "notes": "Desktop fixes: pin installed apps to the taskbar (right-click a running app > Pin, right-click its desktop icon, or drag it from the start menu onto the taskbar); installed apps stay in the start menu offline; Windows programs show their own icon in the taskbar; folders on the desktop (right-click > New folder, they open in Files).",
+ "notes": "SwirlOS now uses RAM above 4 GB: an 8 GB machine showed only ~3 GB, now it gets all of it (apps like Discord and the browser can use the extra memory).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -558,10 +558,10 @@
    "size": 100
   },
   {
-   "path": "os/af/af470ca0b6863952b5badbd9079d9b35571cd9ea",
+   "path": "os/a8/a830cf42b7afa288ee05e29009745bc6d1f186e8",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "af470ca0b6863952b5badbd9079d9b35571cd9ea2588b7f97e8bddb3053f7a8a",
-   "size": 1010248
+   "sha256": "a830cf42b7afa288ee05e29009745bc6d1f186e822ff9c480068eba67c3c3cac",
+   "size": 1014528
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
