@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r190",
+ "version": "r191",
  "abi": 3,
  "date": "2026-11-18",
- "notes": "Linux apps: the browser draws straight into its window (2 fewer copies per frame), clock reads without entering the kernel (vDSO), input reaches the browser immediately.",
+ "notes": "Linux apps: DNS falls back to public resolvers and asks one question at a time (fixes 'Temporary failure in name resolution', e.g. Discord login).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -558,9 +558,9 @@
    "size": 100
   },
   {
-   "path": "os/23/23ffaf45a52f94c9040029218279dfb4907eea91",
+   "path": "os/90/90bd1dd2368dc539d14675ee54bf8d86b7e1b236",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "23ffaf45a52f94c9040029218279dfb4907eea913d0d8ed4bc08976676e623b4",
+   "sha256": "90bd1dd2368dc539d14675ee54bf8d86b7e1b2369b093089c1576487e61f69aa",
    "size": 1001128
   },
   {
