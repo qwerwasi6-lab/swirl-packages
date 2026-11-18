@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r199",
+ "version": "r200",
  "abi": 3,
  "date": "2026-11-18",
- "notes": "Swirl Store shows each app's real logo (downloaded with the store refresh; installed apps get it in the start menu too). The desktop can now feed the new Screen Recorder app (get it in the Swirl Store).",
+ "notes": "SwirlyMP plays Screen Recorder videos at full screen size (Motion-JPEG up to 1440x900; was 1280x720).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -288,9 +288,9 @@
    "size": 687008
   },
   {
-   "path": "os/aa/aa872a1eae1bd1e667ed44fd4c71e03789a9b1d4",
+   "path": "os/1a/1ac9b9a151a5910c4f229e5b0f588783933c4f6d",
    "dest": "/system/apps/gui/gvideo.elf",
-   "sha256": "aa872a1eae1bd1e667ed44fd4c71e03789a9b1d4de1717005961d443ae486962",
+   "sha256": "1ac9b9a151a5910c4f229e5b0f588783933c4f6d1ed3ff8764acd2a1589ba187",
    "size": 287216
   },
   {
