@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r212",
+ "version": "r213",
  "abi": 3,
  "date": "2026-11-19",
- "notes": "Window transparency only touches the background (frosted), text and pictures stay solid. Settings: Blur strength + Glass transparency.",
+ "notes": "Editable keyboard shortcuts + your own (open apps, run programs). Settings > Keyboard.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/9e/9e2905c61c40ff2cb3872488b13dfa9c2ce36b35",
+   "path": "os/b9/b9642277c0a62ff9e488897d42d9a628989aa09e",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "9e2905c61c40ff2cb3872488b13dfa9c2ce36b35b9c309cb5b6de59cec251437",
-   "size": 1134584
+   "sha256": "b9642277c0a62ff9e488897d42d9a628989aa09effbef92c9de6b2a826cac7e1",
+   "size": 1141400
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -258,9 +258,9 @@
    "size": 208272
   },
   {
-   "path": "os/49/497d0e57ca4c7311beb9b30e0725cd8f1dd4c308",
+   "path": "os/c4/c4776bbd38e196197f5b4e504ea8dcd88cc6a346",
    "dest": "/system/apps/gui/gsettings.elf",
-   "sha256": "497d0e57ca4c7311beb9b30e0725cd8f1dd4c30884f92462a97b1435ef1f29bd",
+   "sha256": "c4776bbd38e196197f5b4e504ea8dcd88cc6a346d053cd9cc92fe639a9974e70",
    "size": 1036784
   },
   {
@@ -268,6 +268,12 @@
    "dest": "/system/apps/gui/gsetup.elf",
    "sha256": "1aa210d690a5c940a28de7c72ac3bf7df6e2cd5bcef3d01c5f421d87c7256d93",
    "size": 626208
+  },
+  {
+   "path": "os/14/1457259e26fed7e944eb3a60cd993892a309c379",
+   "dest": "/system/apps/gui/gshortcuts.elf",
+   "sha256": "1457259e26fed7e944eb3a60cd993892a309c37972201fb15d81f0d43e856bcd",
+   "size": 221584
   },
   {
    "path": "os/ff/ffa5c23a9ffae61306e3a2cbcd4076a3906ea344",
@@ -570,9 +576,9 @@
    "size": 100
   },
   {
-   "path": "os/e5/e5ff21ecbabb8f15840d887615a9f967ddb802db",
+   "path": "os/78/78d7f7b2b2e723048ff65d32d178896338ebfaa2",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "e5ff21ecbabb8f15840d887615a9f967ddb802dbc144446e837c4461b27f3fb3",
+   "sha256": "78d7f7b2b2e723048ff65d32d178896338ebfaa2b2770ea5676ba14d69d45eb8",
    "size": 1019344
   },
   {
