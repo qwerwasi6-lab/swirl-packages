@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r215",
+ "version": "r216",
  "abi": 3,
  "date": "2026-11-19",
- "notes": "Every app uses the system file picker: Paint, Settings (wallpaper), Lock screen, SwirlyMP, Editor (Ctrl+O, Save as), ZIP Archives.",
+ "notes": "The file picker fills its window (no frame inside a frame).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -186,9 +186,9 @@
    "size": 538864
   },
   {
-   "path": "os/2a/2a3690dbc95040a69f3ab147668a066f845804e8",
+   "path": "os/ab/abb8e812123f31542505187ebad3e531b48343ff",
    "dest": "/system/apps/gui/garchive.elf",
-   "sha256": "2a3690dbc95040a69f3ab147668a066f845804e8397a73c822501ebf5970b163",
+   "sha256": "abb8e812123f31542505187ebad3e531b48343ff328485fbae63753f0c39da6e",
    "size": 480016
   },
   {
@@ -216,9 +216,9 @@
    "size": 598320
   },
   {
-   "path": "os/a0/a02a8f9dab0946411648120f929cadb1d4c930fc",
+   "path": "os/9e/9eb5d3ce71b2b1785119a4b34969317956981c45",
    "dest": "/system/apps/gui/gfilepick.elf",
-   "sha256": "a02a8f9dab0946411648120f929cadb1d4c930fcacdd4edddff9fea36186831a",
+   "sha256": "9eb5d3ce71b2b1785119a4b34969317956981c45f2607bc7ee0499358ecbde62",
    "size": 191136
   },
   {
@@ -240,28 +240,28 @@
    "size": 402128
   },
   {
-   "path": "os/86/868b4764c2ca27b57ef3d2391fd5f02406354b21",
+   "path": "os/90/9015502c51c6e03850ccae0da03bb9e0df9f28a8",
    "dest": "/system/apps/gui/gmixer.elf",
-   "sha256": "868b4764c2ca27b57ef3d2391fd5f02406354b21406f5188e94a24352276a346",
-   "size": 204184
+   "sha256": "9015502c51c6e03850ccae0da03bb9e0df9f28a85e3500287a1c54bb48082c46",
+   "size": 204224
   },
   {
-   "path": "os/bd/bddbbc58ccfa997c6a8f0157f8feefa47ec5a63d",
+   "path": "os/cc/ccdf4d071d4218e2b490c96bd48c4e8d4b7b4156",
    "dest": "/system/apps/gui/gopenwith.elf",
-   "sha256": "bddbbc58ccfa997c6a8f0157f8feefa47ec5a63d5c9088b7022271356bf27995",
-   "size": 453296
+   "sha256": "ccdf4d071d4218e2b490c96bd48c4e8d4b7b4156b8a1c671eac0c4e310009bae",
+   "size": 453344
   },
   {
-   "path": "os/c8/c8c7ad0eb60b748059230c7eeb1f8b1fae7ac8a6",
+   "path": "os/1e/1e3a1f74e6571798b377ad2d58df47627a5fd8c0",
    "dest": "/system/apps/gui/gresconfirm.elf",
-   "sha256": "c8c7ad0eb60b748059230c7eeb1f8b1fae7ac8a61bc583b8f424e32b7d92ac36",
-   "size": 195464
+   "sha256": "1e3a1f74e6571798b377ad2d58df47627a5fd8c03ff06752c918dad742f40d19",
+   "size": 195512
   },
   {
-   "path": "os/7c/7cdd05abf62eff0c0cd9ff728a701f67c437d6e2",
+   "path": "os/c9/c9a426c392f8bf7f6c7ba171761eba258a7c7b55",
    "dest": "/system/apps/gui/gsetlock.elf",
-   "sha256": "7cdd05abf62eff0c0cd9ff728a701f67c437d6e20b22bc233bca979b7c77f972",
-   "size": 208480
+   "sha256": "c9a426c392f8bf7f6c7ba171761eba258a7c7b5577deaf064f167bc5acbe4cb4",
+   "size": 212576
   },
   {
    "path": "os/d1/d1384c51d40ebeb1230beb76a831d0c86f2d2076",
@@ -276,10 +276,10 @@
    "size": 626208
   },
   {
-   "path": "os/cf/cf713c4b5d319ad4a680d5c5ffd621e29459fae6",
+   "path": "os/fe/fe7aa0a484b1192a1688a7e91901d32bb1ea4fa9",
    "dest": "/system/apps/gui/gshortcuts.elf",
-   "sha256": "cf713c4b5d319ad4a680d5c5ffd621e29459fae64334dfa18f3bab0cb78cc355",
-   "size": 221640
+   "sha256": "fe7aa0a484b1192a1688a7e91901d32bb1ea4fa97dc4abfbabc7137bebbdfb4b",
+   "size": 221688
   },
   {
    "path": "os/ff/ffa5c23a9ffae61306e3a2cbcd4076a3906ea344",
@@ -288,10 +288,10 @@
    "size": 444872
   },
   {
-   "path": "os/da/daed58c8a9e06dd79fa1d38a08b2fab33a76d9cf",
+   "path": "os/e0/e019dceaf68bf82d85acabaf3cdf60e724d9c3a7",
    "dest": "/system/apps/gui/gtaskman.elf",
-   "sha256": "daed58c8a9e06dd79fa1d38a08b2fab33a76d9cfae5b6690899c0cb903979b12",
-   "size": 213680
+   "sha256": "e019dceaf68bf82d85acabaf3cdf60e724d9c3a7da5c4a70bb5ba4cf797ef3bf",
+   "size": 213720
   },
   {
    "path": "os/c7/c7cfb31337a639d5251f9cbe03bf013195c74abf",
@@ -330,9 +330,9 @@
    "size": 67232
   },
   {
-   "path": "os/46/46e5f287bde1bb55c9e36ee4c993d96ff1821f7e",
+   "path": "os/a3/a3df3692101bed05ddf1c80d5d75da7bb734202f",
    "dest": "/system/apps/gui/paint.elf",
-   "sha256": "46e5f287bde1bb55c9e36ee4c993d96ff1821f7efba926d89f9855628c30c91b",
+   "sha256": "a3df3692101bed05ddf1c80d5d75da7bb734202f661e09d6f1524b77ba1963f7",
    "size": 476760
   },
   {
