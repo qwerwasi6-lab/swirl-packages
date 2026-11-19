@@ -1,12 +1,12 @@
 {
  "name": "screen-recorder",
- "version": "1.0.0",
+ "version": "1.1.0",
  "description": "Record your screen to a video in the Videos folder.",
  "author": "Swirl",
  "title": "Screen Recorder",
  "category": "Apps",
  "tagline": "Record your screen - apps, games, everything.",
- "long": "Records the whole screen (every window, games and the mouse pointer) to a video in your Videos folder.\\nPick 10, 15 or 24 frames per second, full or half size, and the quality. A 3 second countdown, then a Stop button.\\nVideos are Motion-JPEG .avi files: they play in SwirlyMP and in VLC or any media player on other computers.\\nNo sound yet.\\nNeeds SwirlOS r199 or newer.",
+ "long": "Records your whole screen - windows, games, the cursor - WITH SOUND (everything you hear) to your Videos folder.\\nSave as MP4 (H.264 + AAC, plays anywhere: phones, Discord, Windows) or AVI (no waiting). Recording stays light so games keep their frame rate; the MP4 is made right after you stop, in the background.\\nPick 10, 15 or 24 fps, full or half size, and the quality.\\nNeeds SwirlOS r209 or newer.",
  "publisher": "Swirl",
  "license": "MIT",
  "color": "E84034",
@@ -15,8 +15,21 @@
  "launch": "/system/apps/gui/gscreenrec.elf",
  "menu": "Multimedia",
  "files": [
-  { "src": "gscreenrec.elf", "dest": "/system/apps/gui/gscreenrec.elf" },
-  { "src": "screenrec.app", "dest": "/system/apps/registry/screenrec.app" },
-  { "src": "logo.png", "dest": "/system/apps/icons/gscreenrec.png" }
+  {
+   "src": "gscreenrec.elf",
+   "dest": "/system/apps/gui/gscreenrec.elf"
+  },
+  {
+   "src": "screenrec.app",
+   "dest": "/system/apps/registry/screenrec.app"
+  },
+  {
+   "src": "logo.png",
+   "dest": "/system/apps/icons/gscreenrec.png"
+  },
+  {
+   "src": "mp4save.elf",
+   "dest": "/system/apps/mp4save.elf"
+  }
  ]
 }

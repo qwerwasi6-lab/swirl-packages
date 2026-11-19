@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r208",
+ "version": "r209",
  "abi": 3,
- "date": "2026-11-18",
- "notes": "Discord and other web apps stay signed in: their saved site data (local storage) works now. The Web Browser 1.7.2 keeps cookies too.",
+ "date": "2026-11-19",
+ "notes": "SwirlyMP plays MP4/MOV (H.264, HEVC, MPEG-4 + AAC/MP3) with sound, natively. Screen Recorder 1.1 records sound and saves MP4.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -144,9 +144,9 @@
    "size": 1230728
   },
   {
-   "path": "os/77/77896a61bd09a98bcced46c57abad542730ffbd4",
+   "path": "os/c5/c5eb7d6d3f80f807443c3bb2ca0d125e34c9ca23",
    "dest": "/system/apps/swirlrunbig2.elf",
-   "sha256": "77896a61bd09a98bcced46c57abad542730ffbd41bb3b935e894d46ad2d71f8b",
+   "sha256": "c5eb7d6d3f80f807443c3bb2ca0d125e34c9ca23602aacdaab89b7556c9b3198",
    "size": 1230728
   },
   {
@@ -294,10 +294,16 @@
    "size": 687008
   },
   {
-   "path": "os/78/7825b6c7a8624e9196b04a6159e91464fed9204e",
-   "dest": "/system/apps/gui/gvideo.elf",
-   "sha256": "7825b6c7a8624e9196b04a6159e91464fed9204e5e98a280be4f7f1fa5d0cb7a",
+   "path": "os/aa/aa100caf8285eb146ad4675aa2726ecf38177646",
+   "dest": "/system/apps/gui/gvideo-lite.elf",
+   "sha256": "aa100caf8285eb146ad4675aa2726ecf381776463bf60c4b16afe165fe2ccb4c",
    "size": 287216
+  },
+  {
+   "path": "os/49/4933de1646d4a64ee6c1817a7134101708fb4350",
+   "dest": "/system/apps/gui/gvideo.elf",
+   "sha256": "4933de1646d4a64ee6c1817a7134101708fb43505f0d3e90331978fd287fd5db",
+   "size": 4980784
   },
   {
    "path": "os/ab/abb00b0a02593376157f08dd060de5b08b669757",
@@ -564,10 +570,10 @@
    "size": 100
   },
   {
-   "path": "os/46/460bab608e58b10eb1d6131445f63dc8c41ce3c4",
+   "path": "os/33/332c3f9cf06147e4cb30a32455f33fd907e716a1",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "460bab608e58b10eb1d6131445f63dc8c41ce3c452c4bbeb8b3564461261311e",
-   "size": 1018752
+   "sha256": "332c3f9cf06147e4cb30a32455f33fd907e716a1541c9c37c43687c6f51530f7",
+   "size": 1018872
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
