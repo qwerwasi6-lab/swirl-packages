@@ -54,7 +54,9 @@ while [ $n -lt 5 ]; do
     # browser 1.7.1: the JIT is on for web apps too (the 1.5.1 "stall" was the storage bug and
     # the console pipe, both fixed). A crash restarts it on the interpreter; touch
     # /home/user/.webapp-nojit to keep web apps on the interpreter for good.
-    WJ=true; { [ $n -gt 0 ] || [ -e /home/user/.webapp-nojit ]; } && WJ=false
+    # browser 1.7.3: back OFF by default (Discord stopped opening with it on real hardware);
+    # touch /home/user/.webapp-jit to try it.
+    WJ=false; [ $n -eq 0 ] && [ -e /home/user/.webapp-jit ] && WJ=true
     JSC_useJIT=$WJ /usr/bin/swirl-webapp "$APP" "$1" > /system/debug/webapp-$APP-log.txt 2>&1
     # browser 1.7.0: a clean exit (the window was closed) is not a crash - don't start it again
     [ $? -eq 0 ] && break
