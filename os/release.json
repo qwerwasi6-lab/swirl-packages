@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r214",
+ "version": "r215",
  "abi": 3,
  "date": "2026-11-19",
- "notes": "System file picker: games and apps can ask you to open or save a file (ClassiCube texture packs and maps).",
+ "notes": "Every app uses the system file picker: Paint, Settings (wallpaper), Lock screen, SwirlyMP, Editor (Ctrl+O, Save as), ZIP Archives.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -186,10 +186,10 @@
    "size": 538864
   },
   {
-   "path": "os/b5/b5e1ee0072fc0c8c4d4acba29f48778bc3afb036",
+   "path": "os/2a/2a3690dbc95040a69f3ab147668a066f845804e8",
    "dest": "/system/apps/gui/garchive.elf",
-   "sha256": "b5e1ee0072fc0c8c4d4acba29f48778bc3afb0360f5e12e7fc0f17e48bc69b46",
-   "size": 479808
+   "sha256": "2a3690dbc95040a69f3ab147668a066f845804e8397a73c822501ebf5970b163",
+   "size": 480016
   },
   {
    "path": "os/dd/dd0adbc6254b1088b2023559775d90b1d9aa2c14",
@@ -210,16 +210,16 @@
    "size": 583968
   },
   {
-   "path": "os/c0/c0030e1d03865d98dbea6add5e257c3caa52596d",
+   "path": "os/60/60a7053c2c96d19d9fabb4bd34d290bf58146561",
    "dest": "/system/apps/gui/geditor.elf",
-   "sha256": "c0030e1d03865d98dbea6add5e257c3caa52596d2dde7bc418f788b374d5b418",
-   "size": 598184
+   "sha256": "60a7053c2c96d19d9fabb4bd34d290bf581465619e6a1554bbee0841dbda1633",
+   "size": 598320
   },
   {
-   "path": "os/c8/c8d5c9f386c0a1420c8aa3421b8cdd5b7c99020d",
+   "path": "os/a0/a02a8f9dab0946411648120f929cadb1d4c930fc",
    "dest": "/system/apps/gui/gfilepick.elf",
-   "sha256": "c8d5c9f386c0a1420c8aa3421b8cdd5b7c99020d562d35f471cf94302d9d95d9",
-   "size": 190928
+   "sha256": "a02a8f9dab0946411648120f929cadb1d4c930fcacdd4edddff9fea36186831a",
+   "size": 191136
   },
   {
    "path": "os/e3/e39f3b5f56bcefa8eb66bec88abbb180a96437e4",
@@ -240,34 +240,34 @@
    "size": 402128
   },
   {
-   "path": "os/eb/eb36febff8bae8017e96632fcaa6f2fa4b33c85c",
+   "path": "os/86/868b4764c2ca27b57ef3d2391fd5f02406354b21",
    "dest": "/system/apps/gui/gmixer.elf",
-   "sha256": "eb36febff8bae8017e96632fcaa6f2fa4b33c85c78646ba6bc536b1453bf1c91",
-   "size": 204120
+   "sha256": "868b4764c2ca27b57ef3d2391fd5f02406354b21406f5188e94a24352276a346",
+   "size": 204184
   },
   {
-   "path": "os/5f/5fbc2c3ae41e24a73526c68ecbe0c3776715e87c",
+   "path": "os/bd/bddbbc58ccfa997c6a8f0157f8feefa47ec5a63d",
    "dest": "/system/apps/gui/gopenwith.elf",
-   "sha256": "5fbc2c3ae41e24a73526c68ecbe0c3776715e87c2cac7308abbe6bdda3076054",
-   "size": 453240
+   "sha256": "bddbbc58ccfa997c6a8f0157f8feefa47ec5a63d5c9088b7022271356bf27995",
+   "size": 453296
   },
   {
-   "path": "os/5e/5e3aa2a37130880b5b0ca613e8950ba0c02a6da1",
+   "path": "os/c8/c8c7ad0eb60b748059230c7eeb1f8b1fae7ac8a6",
    "dest": "/system/apps/gui/gresconfirm.elf",
-   "sha256": "5e3aa2a37130880b5b0ca613e8950ba0c02a6da10ded3e5bf4e078fedd761989",
-   "size": 195408
+   "sha256": "c8c7ad0eb60b748059230c7eeb1f8b1fae7ac8a61bc583b8f424e32b7d92ac36",
+   "size": 195464
   },
   {
-   "path": "os/b6/b6b4318ff7f4b30810de9605281a80d105fe38ef",
+   "path": "os/7c/7cdd05abf62eff0c0cd9ff728a701f67c437d6e2",
    "dest": "/system/apps/gui/gsetlock.elf",
-   "sha256": "b6b4318ff7f4b30810de9605281a80d105fe38efbdf0a95a77941d0baf03b5c5",
-   "size": 208272
+   "sha256": "7cdd05abf62eff0c0cd9ff728a701f67c437d6e20b22bc233bca979b7c77f972",
+   "size": 208480
   },
   {
-   "path": "os/c4/c4776bbd38e196197f5b4e504ea8dcd88cc6a346",
+   "path": "os/d1/d1384c51d40ebeb1230beb76a831d0c86f2d2076",
    "dest": "/system/apps/gui/gsettings.elf",
-   "sha256": "c4776bbd38e196197f5b4e504ea8dcd88cc6a346d053cd9cc92fe639a9974e70",
-   "size": 1036784
+   "sha256": "d1384c51d40ebeb1230beb76a831d0c86f2d207642899dc1b98c2958423eb64e",
+   "size": 1036904
   },
   {
    "path": "os/1a/1aa210d690a5c940a28de7c72ac3bf7df6e2cd5b",
@@ -276,10 +276,10 @@
    "size": 626208
   },
   {
-   "path": "os/14/1457259e26fed7e944eb3a60cd993892a309c379",
+   "path": "os/cf/cf713c4b5d319ad4a680d5c5ffd621e29459fae6",
    "dest": "/system/apps/gui/gshortcuts.elf",
-   "sha256": "1457259e26fed7e944eb3a60cd993892a309c37972201fb15d81f0d43e856bcd",
-   "size": 221584
+   "sha256": "cf713c4b5d319ad4a680d5c5ffd621e29459fae64334dfa18f3bab0cb78cc355",
+   "size": 221640
   },
   {
    "path": "os/ff/ffa5c23a9ffae61306e3a2cbcd4076a3906ea344",
@@ -288,10 +288,10 @@
    "size": 444872
   },
   {
-   "path": "os/91/91689c602506d8e26494f8b723f4d14a489dc613",
+   "path": "os/da/daed58c8a9e06dd79fa1d38a08b2fab33a76d9cf",
    "dest": "/system/apps/gui/gtaskman.elf",
-   "sha256": "91689c602506d8e26494f8b723f4d14a489dc613a47de648d2073e862e6f3b3e",
-   "size": 213624
+   "sha256": "daed58c8a9e06dd79fa1d38a08b2fab33a76d9cfae5b6690899c0cb903979b12",
+   "size": 213680
   },
   {
    "path": "os/c7/c7cfb31337a639d5251f9cbe03bf013195c74abf",
@@ -306,16 +306,16 @@
    "size": 687112
   },
   {
-   "path": "os/53/531b137692a9f599885a14f406903c2e457f8ea4",
+   "path": "os/e5/e524534caf2b075089646994ad55c53e31478292",
    "dest": "/system/apps/gui/gvideo-lite.elf",
-   "sha256": "531b137692a9f599885a14f406903c2e457f8ea49bccf8881039effd255e13e2",
-   "size": 291416
+   "sha256": "e524534caf2b075089646994ad55c53e3147829266e53ea8853fd5d454eec5b5",
+   "size": 291512
   },
   {
-   "path": "os/cb/cbc79cdd8592010da56cfd6a68bbb7626e9d449f",
+   "path": "os/c3/c328d29e3276179a59312265745df6f1532f0ece",
    "dest": "/system/apps/gui/gvideo.elf",
-   "sha256": "cbc79cdd8592010da56cfd6a68bbb7626e9d449f31631e8099a8b49327881afb",
-   "size": 4981208
+   "sha256": "c328d29e3276179a59312265745df6f1532f0ece3c52028ac318a5c4b1245d93",
+   "size": 4982616
   },
   {
    "path": "os/2f/2f046108a9639c0fc0e3a53b998f3def07976c96",
@@ -330,10 +330,10 @@
    "size": 67232
   },
   {
-   "path": "os/f2/f2fbc97d80c86d833c5b7997bb0b9188d1cf2cb2",
+   "path": "os/46/46e5f287bde1bb55c9e36ee4c993d96ff1821f7e",
    "dest": "/system/apps/gui/paint.elf",
-   "sha256": "f2fbc97d80c86d833c5b7997bb0b9188d1cf2cb2f8e911db377238195303b5b0",
-   "size": 476560
+   "sha256": "46e5f287bde1bb55c9e36ee4c993d96ff1821f7efba926d89f9855628c30c91b",
+   "size": 476760
   },
   {
    "path": "os/c1/c136bbf956dedffac4be26f0eae4ac3fb33d54c5",
