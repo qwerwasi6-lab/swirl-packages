@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r213",
+ "version": "r214",
  "abi": 3,
  "date": "2026-11-19",
- "notes": "Editable keyboard shortcuts + your own (open apps, run programs). Settings > Keyboard.",
+ "notes": "System file picker: games and apps can ask you to open or save a file (ClassiCube texture packs and maps).",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -214,6 +214,12 @@
    "dest": "/system/apps/gui/geditor.elf",
    "sha256": "c0030e1d03865d98dbea6add5e257c3caa52596d2dde7bc418f788b374d5b418",
    "size": 598184
+  },
+  {
+   "path": "os/c8/c8d5c9f386c0a1420c8aa3421b8cdd5b7c99020d",
+   "dest": "/system/apps/gui/gfilepick.elf",
+   "sha256": "c8d5c9f386c0a1420c8aa3421b8cdd5b7c99020d562d35f471cf94302d9d95d9",
+   "size": 190928
   },
   {
    "path": "os/e3/e39f3b5f56bcefa8eb66bec88abbb180a96437e4",
