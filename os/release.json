@@ -1,9 +1,9 @@
 {
  "name": "SwirlOS",
- "version": "r210",
+ "version": "r211",
  "abi": 3,
  "date": "2026-11-19",
- "notes": "Sleep: Start menu, quick panel, power button and after N idle minutes. Settings > Power & sleep.",
+ "notes": "Keyboard shortcuts: Win (Start), Win+D, Win+M, Win+Shift+S, Win+E, Win+I, Win+A, Win+arrows, Alt+F4, Ctrl+Shift+Esc.",
  "files": [
   {
    "path": "os/63/63320282b00b8d576b718bdeb9955bdfe1a94ec9",
@@ -24,10 +24,10 @@
    "size": 351458
   },
   {
-   "path": "os/ac/ac43ede1519a4e4bef952793d3f916f592cb517b",
+   "path": "os/5d/5dda900e4bbbe42488340d828ef4b5cccdc3a5d7",
    "dest": "/system/apps/desktop.elf",
-   "sha256": "ac43ede1519a4e4bef952793d3f916f592cb517b7f8b5afa118af833ae2e7b41",
-   "size": 1128440
+   "sha256": "5dda900e4bbbe42488340d828ef4b5cccdc3a5d7a5653cef0c472a7b24c0cdc1",
+   "size": 1132152
   },
   {
    "path": "os/e2/e21d90c66541ace124567386a446d1d58107a20f",
@@ -570,10 +570,10 @@
    "size": 100
   },
   {
-   "path": "os/75/75677d4cb76d602e814ca278cba59715b6219882",
+   "path": "os/e5/e5ff21ecbabb8f15840d887615a9f967ddb802db",
    "dest": "/system/boot/swirlcore.boot.elf",
-   "sha256": "75677d4cb76d602e814ca278cba59715b621988231293eb9b6ad3f0255fbc7a1",
-   "size": 1019272
+   "sha256": "e5ff21ecbabb8f15840d887615a9f967ddb802dbc144446e837c4461b27f3fb3",
+   "size": 1019344
   },
   {
    "path": "os/82/82a140def807217c92dc9172603066a878a66439",
